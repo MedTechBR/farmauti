@@ -132,6 +132,45 @@ def checa_interacoes(d):
     for x in d: g[x.get("grav")] = g.get(x.get("grav"), 0) + 1
     print(f"  {len(d)} pares; por gravidade: {g}")
 
+TIPOS_RX = {"dose", "renal", "intervalo", "interacao", "via", "admin", "duplicidade", "semindicacao",
+            "contraindicacao", "redacao", "monitorizacao"}
+SEM_DE = {s: w["n"] for w in CUR["semanas"] for s in w["leituras"]}
+def checa_prescricoes(d):
+    ids, porSem, tipos = set(), {}, {}
+    for r in d:
+        i = r.get("id", "?")
+        if not str(i).startswith("rx-"): E(f"{i}: id deve começar com rx-")
+        if i in ids: E(f"{i}: id repetido")
+        ids.add(i)
+        for k in ("sem", "titulo", "setor", "nivel", "paciente", "contexto", "dados", "itens", "omissoes", "comentario", "leituras"):
+            if k not in r: E(f"{i}: falta '{k}'")
+        sem = r.get("sem", 0)
+        if not isinstance(sem, int) or not 1 <= sem <= len(CUR["semanas"]): E(f"{i}: sem inválida {sem}")
+        porSem[sem] = porSem.get(sem, 0) + 1
+        if r.get("nivel") not in ("basico", "intermediario", "avancado"): E(f"{i}: nivel inválido")
+        for s in r.get("leituras", []):
+            if s not in SLUGS: E(f"{i}: leitura desconhecida {s}")
+            elif SEM_DE.get(s, 99) > sem: E(f"{i}: leitura {s} é da semana {SEM_DE[s]}, depois da semana {sem}")
+        its = r.get("itens", [])
+        if not 8 <= len(its) <= 14: E(f"{i}: {len(its)} itens (8 a 14)")
+        np = 0
+        for k, it in enumerate(its):
+            if not it.get("texto"): E(f"{i}: item {k} sem texto")
+            p = it.get("problema")
+            if p:
+                np += 1
+                if not p.get("tipos"): E(f"{i}: item {k} sem tipos")
+                for t in p.get("tipos", []):
+                    if t not in TIPOS_RX: E(f"{i}: tipo inválido '{t}'")
+                    tipos[t] = tipos.get(t, 0) + 1
+                if not p.get("explicacao") or not p.get("correcao"): E(f"{i}: item {k} sem explicação ou correção")
+        if not 3 <= np <= 6: E(f"{i}: {np} linhas com problema (3 a 6)")
+        if len(r.get("omissoes", [])) > 2: E(f"{i}: mais de 2 omissões")
+        for o in r.get("omissoes", []):
+            if not (o.get("texto") and o.get("explicacao") and o.get("correcao")): E(f"{i}: omissão incompleta")
+    print(f"  {len(d)} prescrições; por semana: {dict(sorted(porSem.items()))}")
+    print(f"  tipos: {dict(sorted(tipos.items(), key=lambda x: -x[1]))}")
+
 def checa_casos(d):
     for c in d:
         i = c.get("id")
@@ -153,6 +192,7 @@ for arq in sys.argv[1:]:
     if b.startswith("bulario"): checa_bulario(d)
     elif b.startswith("interacoes"): checa_interacoes(d)
     elif b.startswith("casos"): checa_casos(d)
+    elif b.startswith("prescricoes"): checa_prescricoes(d)
     else: checa_leituras(d, b)
 
 for m in avisos: print("AVISO", m)

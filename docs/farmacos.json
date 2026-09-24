@@ -1,154 +1,1432 @@
 [
- {"id":"noradrenalina","nome":"Noradrenalina","grupo":"Vasoativos e inotrópicos"},
- {"id":"adrenalina","nome":"Adrenalina","grupo":"Vasoativos e inotrópicos"},
- {"id":"vasopressina","nome":"Vasopressina","grupo":"Vasoativos e inotrópicos"},
- {"id":"dopamina","nome":"Dopamina","grupo":"Vasoativos e inotrópicos"},
- {"id":"dobutamina","nome":"Dobutamina","grupo":"Vasoativos e inotrópicos"},
- {"id":"milrinona","nome":"Milrinona","grupo":"Vasoativos e inotrópicos"},
- {"id":"levosimendana","nome":"Levosimendana","grupo":"Vasoativos e inotrópicos"},
- {"id":"fenilefrina","nome":"Fenilefrina","grupo":"Vasoativos e inotrópicos"},
- {"id":"terlipressina","nome":"Terlipressina","grupo":"Vasoativos e inotrópicos"},
- {"id":"nitroprussiato","nome":"Nitroprussiato de sódio","grupo":"Vasodilatadores e anti-hipertensivos"},
- {"id":"nitroglicerina","nome":"Nitroglicerina","grupo":"Vasodilatadores e anti-hipertensivos"},
- {"id":"hidralazina","nome":"Hidralazina","grupo":"Vasodilatadores e anti-hipertensivos"},
- {"id":"anlodipino","nome":"Anlodipino","grupo":"Vasodilatadores e anti-hipertensivos"},
- {"id":"nimodipino","nome":"Nimodipino","grupo":"Vasodilatadores e anti-hipertensivos"},
- {"id":"captopril","nome":"Captopril","grupo":"Vasodilatadores e anti-hipertensivos"},
- {"id":"propofol","nome":"Propofol","grupo":"Sedação, analgesia e delirium"},
- {"id":"midazolam","nome":"Midazolam","grupo":"Sedação, analgesia e delirium"},
- {"id":"diazepam","nome":"Diazepam","grupo":"Sedação, analgesia e delirium"},
- {"id":"dexmedetomidina","nome":"Dexmedetomidina","grupo":"Sedação, analgesia e delirium"},
- {"id":"cetamina","nome":"Cetamina (escetamina)","grupo":"Sedação, analgesia e delirium"},
- {"id":"etomidato","nome":"Etomidato","grupo":"Sedação, analgesia e delirium"},
- {"id":"fentanil","nome":"Fentanil","grupo":"Sedação, analgesia e delirium"},
- {"id":"remifentanil","nome":"Remifentanil","grupo":"Sedação, analgesia e delirium"},
- {"id":"morfina","nome":"Morfina","grupo":"Sedação, analgesia e delirium"},
- {"id":"metadona","nome":"Metadona","grupo":"Sedação, analgesia e delirium"},
- {"id":"tramadol","nome":"Tramadol","grupo":"Sedação, analgesia e delirium"},
- {"id":"dipirona","nome":"Dipirona","grupo":"Sedação, analgesia e delirium"},
- {"id":"paracetamol","nome":"Paracetamol","grupo":"Sedação, analgesia e delirium"},
- {"id":"haloperidol","nome":"Haloperidol","grupo":"Sedação, analgesia e delirium"},
- {"id":"quetiapina","nome":"Quetiapina","grupo":"Sedação, analgesia e delirium"},
- {"id":"clonidina","nome":"Clonidina","grupo":"Sedação, analgesia e delirium"},
- {"id":"rocuronio","nome":"Rocurônio","grupo":"Bloqueadores neuromusculares e reversores"},
- {"id":"cisatracurio","nome":"Cisatracúrio","grupo":"Bloqueadores neuromusculares e reversores"},
- {"id":"succinilcolina","nome":"Succinilcolina","grupo":"Bloqueadores neuromusculares e reversores"},
- {"id":"sugamadex","nome":"Sugamadex","grupo":"Bloqueadores neuromusculares e reversores"},
- {"id":"neostigmina","nome":"Neostigmina","grupo":"Bloqueadores neuromusculares e reversores"},
- {"id":"heparina","nome":"Heparina não fracionada","grupo":"Anticoagulantes, antiplaquetários e reversores"},
- {"id":"enoxaparina","nome":"Enoxaparina","grupo":"Anticoagulantes, antiplaquetários e reversores"},
- {"id":"fondaparinux","nome":"Fondaparinux","grupo":"Anticoagulantes, antiplaquetários e reversores"},
- {"id":"varfarina","nome":"Varfarina","grupo":"Anticoagulantes, antiplaquetários e reversores"},
- {"id":"rivaroxabana","nome":"Rivaroxabana","grupo":"Anticoagulantes, antiplaquetários e reversores"},
- {"id":"apixabana","nome":"Apixabana","grupo":"Anticoagulantes, antiplaquetários e reversores"},
- {"id":"dabigatrana","nome":"Dabigatrana","grupo":"Anticoagulantes, antiplaquetários e reversores"},
- {"id":"argatrobana","nome":"Argatrobana","grupo":"Anticoagulantes, antiplaquetários e reversores"},
- {"id":"alteplase","nome":"Alteplase","grupo":"Anticoagulantes, antiplaquetários e reversores"},
- {"id":"aas","nome":"Ácido acetilsalicílico","grupo":"Anticoagulantes, antiplaquetários e reversores"},
- {"id":"clopidogrel","nome":"Clopidogrel","grupo":"Anticoagulantes, antiplaquetários e reversores"},
- {"id":"ticagrelor","nome":"Ticagrelor","grupo":"Anticoagulantes, antiplaquetários e reversores"},
- {"id":"protamina","nome":"Protamina","grupo":"Anticoagulantes, antiplaquetários e reversores"},
- {"id":"vitamina-k","nome":"Vitamina K (fitomenadiona)","grupo":"Anticoagulantes, antiplaquetários e reversores"},
- {"id":"complexo-protrombinico","nome":"Concentrado de complexo protrombínico","grupo":"Anticoagulantes, antiplaquetários e reversores"},
- {"id":"idarucizumabe","nome":"Idarucizumabe","grupo":"Anticoagulantes, antiplaquetários e reversores"},
- {"id":"acido-tranexamico","nome":"Ácido tranexâmico","grupo":"Anticoagulantes, antiplaquetários e reversores"},
- {"id":"amiodarona","nome":"Amiodarona","grupo":"Antiarrítmicos e cardiovasculares"},
- {"id":"adenosina","nome":"Adenosina","grupo":"Antiarrítmicos e cardiovasculares"},
- {"id":"lidocaina","nome":"Lidocaína","grupo":"Antiarrítmicos e cardiovasculares"},
- {"id":"esmolol","nome":"Esmolol","grupo":"Antiarrítmicos e cardiovasculares"},
- {"id":"metoprolol","nome":"Metoprolol","grupo":"Antiarrítmicos e cardiovasculares"},
- {"id":"diltiazem","nome":"Diltiazem","grupo":"Antiarrítmicos e cardiovasculares"},
- {"id":"digoxina","nome":"Digoxina","grupo":"Antiarrítmicos e cardiovasculares"},
- {"id":"sinvastatina","nome":"Sinvastatina","grupo":"Antiarrítmicos e cardiovasculares"},
- {"id":"atorvastatina","nome":"Atorvastatina","grupo":"Antiarrítmicos e cardiovasculares"},
- {"id":"furosemida","nome":"Furosemida","grupo":"Diuréticos, fluidos e eletrólitos"},
- {"id":"espironolactona","nome":"Espironolactona","grupo":"Diuréticos, fluidos e eletrólitos"},
- {"id":"manitol","nome":"Manitol","grupo":"Diuréticos, fluidos e eletrólitos"},
- {"id":"albumina","nome":"Albumina humana","grupo":"Diuréticos, fluidos e eletrólitos"},
- {"id":"cloreto-potassio","nome":"Cloreto de potássio","grupo":"Diuréticos, fluidos e eletrólitos"},
- {"id":"sulfato-magnesio","nome":"Sulfato de magnésio","grupo":"Diuréticos, fluidos e eletrólitos"},
- {"id":"gluconato-calcio","nome":"Gluconato de cálcio","grupo":"Diuréticos, fluidos e eletrólitos"},
- {"id":"fosfato-potassio","nome":"Fosfato de potássio","grupo":"Diuréticos, fluidos e eletrólitos"},
- {"id":"bicarbonato-sodio","nome":"Bicarbonato de sódio","grupo":"Diuréticos, fluidos e eletrólitos"},
- {"id":"salina-hipertonica","nome":"Cloreto de sódio hipertônico (3% / 20%)","grupo":"Diuréticos, fluidos e eletrólitos"},
- {"id":"fenitoina","nome":"Fenitoína","grupo":"Anticonvulsivantes"},
- {"id":"fosfenitoina","nome":"Fosfenitoína","grupo":"Anticonvulsivantes"},
- {"id":"levetiracetam","nome":"Levetiracetam","grupo":"Anticonvulsivantes"},
- {"id":"acido-valproico","nome":"Ácido valproico / valproato","grupo":"Anticonvulsivantes"},
- {"id":"fenobarbital","nome":"Fenobarbital","grupo":"Anticonvulsivantes"},
- {"id":"lacosamida","nome":"Lacosamida","grupo":"Anticonvulsivantes"},
- {"id":"carbamazepina","nome":"Carbamazepina","grupo":"Anticonvulsivantes"},
- {"id":"insulina-regular","nome":"Insulina regular","grupo":"Endócrino e corticoides"},
- {"id":"hidrocortisona","nome":"Hidrocortisona","grupo":"Endócrino e corticoides"},
- {"id":"dexametasona","nome":"Dexametasona","grupo":"Endócrino e corticoides"},
- {"id":"metilprednisolona","nome":"Metilprednisolona","grupo":"Endócrino e corticoides"},
- {"id":"levotiroxina","nome":"Levotiroxina","grupo":"Endócrino e corticoides"},
- {"id":"desmopressina","nome":"Desmopressina","grupo":"Endócrino e corticoides"},
- {"id":"octreotida","nome":"Octreotida","grupo":"Endócrino e corticoides"},
- {"id":"omeprazol","nome":"Omeprazol","grupo":"Trato gastrointestinal"},
- {"id":"pantoprazol","nome":"Pantoprazol","grupo":"Trato gastrointestinal"},
- {"id":"ondansetrona","nome":"Ondansetrona","grupo":"Trato gastrointestinal"},
- {"id":"metoclopramida","nome":"Metoclopramida","grupo":"Trato gastrointestinal"},
- {"id":"bromoprida","nome":"Bromoprida","grupo":"Trato gastrointestinal"},
- {"id":"lactulose","nome":"Lactulose","grupo":"Trato gastrointestinal"},
- {"id":"sucralfato","nome":"Sucralfato","grupo":"Trato gastrointestinal"},
- {"id":"tacrolimo","nome":"Tacrolimo","grupo":"Imunossupressores"},
- {"id":"ciclosporina","nome":"Ciclosporina","grupo":"Imunossupressores"},
- {"id":"micofenolato","nome":"Micofenolato","grupo":"Imunossupressores"},
- {"id":"sertralina","nome":"Sertralina","grupo":"Psicofármacos"},
- {"id":"fluoxetina","nome":"Fluoxetina","grupo":"Psicofármacos"},
- {"id":"escitalopram","nome":"Escitalopram","grupo":"Psicofármacos"},
- {"id":"amitriptilina","nome":"Amitriptilina","grupo":"Psicofármacos"},
- {"id":"trazodona","nome":"Trazodona","grupo":"Psicofármacos"},
- {"id":"ampicilina","nome":"Ampicilina","grupo":"Antibacterianos"},
- {"id":"ampicilina-sulbactam","nome":"Ampicilina-sulbactam","grupo":"Antibacterianos"},
- {"id":"amoxicilina-clavulanato","nome":"Amoxicilina-clavulanato","grupo":"Antibacterianos"},
- {"id":"penicilina-g-cristalina","nome":"Penicilina G cristalina","grupo":"Antibacterianos"},
- {"id":"oxacilina","nome":"Oxacilina","grupo":"Antibacterianos"},
- {"id":"piperacilina-tazobactam","nome":"Piperacilina-tazobactam","grupo":"Antibacterianos"},
- {"id":"cefazolina","nome":"Cefazolina","grupo":"Antibacterianos"},
- {"id":"ceftriaxona","nome":"Ceftriaxona","grupo":"Antibacterianos"},
- {"id":"ceftazidima","nome":"Ceftazidima","grupo":"Antibacterianos"},
- {"id":"cefepima","nome":"Cefepima","grupo":"Antibacterianos"},
- {"id":"ceftarolina","nome":"Ceftarolina","grupo":"Antibacterianos"},
- {"id":"ceftazidima-avibactam","nome":"Ceftazidima-avibactam","grupo":"Antibacterianos"},
- {"id":"ceftolozana-tazobactam","nome":"Ceftolozana-tazobactam","grupo":"Antibacterianos"},
- {"id":"cefiderocol","nome":"Cefiderocol","grupo":"Antibacterianos"},
- {"id":"aztreonam","nome":"Aztreonam","grupo":"Antibacterianos"},
- {"id":"meropenem","nome":"Meropenem","grupo":"Antibacterianos"},
- {"id":"imipenem","nome":"Imipenem-cilastatina","grupo":"Antibacterianos"},
- {"id":"ertapenem","nome":"Ertapenem","grupo":"Antibacterianos"},
- {"id":"vancomicina","nome":"Vancomicina","grupo":"Antibacterianos"},
- {"id":"teicoplanina","nome":"Teicoplanina","grupo":"Antibacterianos"},
- {"id":"linezolida","nome":"Linezolida","grupo":"Antibacterianos"},
- {"id":"daptomicina","nome":"Daptomicina","grupo":"Antibacterianos"},
- {"id":"tigeciclina","nome":"Tigeciclina","grupo":"Antibacterianos"},
- {"id":"amicacina","nome":"Amicacina","grupo":"Antibacterianos"},
- {"id":"gentamicina","nome":"Gentamicina","grupo":"Antibacterianos"},
- {"id":"polimixina-b","nome":"Polimixina B","grupo":"Antibacterianos"},
- {"id":"colistina","nome":"Colistimetato (colistina)","grupo":"Antibacterianos"},
- {"id":"ciprofloxacino","nome":"Ciprofloxacino","grupo":"Antibacterianos"},
- {"id":"levofloxacino","nome":"Levofloxacino","grupo":"Antibacterianos"},
- {"id":"moxifloxacino","nome":"Moxifloxacino","grupo":"Antibacterianos"},
- {"id":"azitromicina","nome":"Azitromicina","grupo":"Antibacterianos"},
- {"id":"claritromicina","nome":"Claritromicina","grupo":"Antibacterianos"},
- {"id":"eritromicina","nome":"Eritromicina","grupo":"Antibacterianos"},
- {"id":"clindamicina","nome":"Clindamicina","grupo":"Antibacterianos"},
- {"id":"metronidazol","nome":"Metronidazol","grupo":"Antibacterianos"},
- {"id":"sulfametoxazol-trimetoprima","nome":"Sulfametoxazol-trimetoprima","grupo":"Antibacterianos"},
- {"id":"fosfomicina","nome":"Fosfomicina","grupo":"Antibacterianos"},
- {"id":"doxiciclina","nome":"Doxiciclina","grupo":"Antibacterianos"},
- {"id":"rifampicina","nome":"Rifampicina","grupo":"Antibacterianos"},
- {"id":"fluconazol","nome":"Fluconazol","grupo":"Antifúngicos"},
- {"id":"voriconazol","nome":"Voriconazol","grupo":"Antifúngicos"},
- {"id":"posaconazol","nome":"Posaconazol","grupo":"Antifúngicos"},
- {"id":"isavuconazol","nome":"Isavuconazol","grupo":"Antifúngicos"},
- {"id":"anfotericina-b-lipossomal","nome":"Anfotericina B lipossomal","grupo":"Antifúngicos"},
- {"id":"anfotericina-b-desoxicolato","nome":"Anfotericina B desoxicolato","grupo":"Antifúngicos"},
- {"id":"micafungina","nome":"Micafungina","grupo":"Antifúngicos"},
- {"id":"anidulafungina","nome":"Anidulafungina","grupo":"Antifúngicos"},
- {"id":"caspofungina","nome":"Caspofungina","grupo":"Antifúngicos"},
- {"id":"aciclovir","nome":"Aciclovir","grupo":"Antivirais"},
- {"id":"ganciclovir","nome":"Ganciclovir","grupo":"Antivirais"},
- {"id":"oseltamivir","nome":"Oseltamivir","grupo":"Antivirais"}
+ {
+  "id": "noradrenalina",
+  "nome": "Noradrenalina",
+  "grupo": "Vasoativos e inotrópicos"
+ },
+ {
+  "id": "adrenalina",
+  "nome": "Adrenalina",
+  "grupo": "Vasoativos e inotrópicos"
+ },
+ {
+  "id": "vasopressina",
+  "nome": "Vasopressina",
+  "grupo": "Vasoativos e inotrópicos"
+ },
+ {
+  "id": "dopamina",
+  "nome": "Dopamina",
+  "grupo": "Vasoativos e inotrópicos"
+ },
+ {
+  "id": "dobutamina",
+  "nome": "Dobutamina",
+  "grupo": "Vasoativos e inotrópicos"
+ },
+ {
+  "id": "milrinona",
+  "nome": "Milrinona",
+  "grupo": "Vasoativos e inotrópicos"
+ },
+ {
+  "id": "levosimendana",
+  "nome": "Levosimendana",
+  "grupo": "Vasoativos e inotrópicos"
+ },
+ {
+  "id": "fenilefrina",
+  "nome": "Fenilefrina",
+  "grupo": "Vasoativos e inotrópicos"
+ },
+ {
+  "id": "terlipressina",
+  "nome": "Terlipressina",
+  "grupo": "Vasoativos e inotrópicos"
+ },
+ {
+  "id": "atropina",
+  "nome": "Atropina",
+  "grupo": "Vasoativos e inotrópicos"
+ },
+ {
+  "id": "efedrina",
+  "nome": "Efedrina",
+  "grupo": "Vasoativos e inotrópicos"
+ },
+ {
+  "id": "metaraminol",
+  "nome": "Metaraminol",
+  "grupo": "Vasoativos e inotrópicos"
+ },
+ {
+  "id": "isoprenalina",
+  "nome": "Isoprenalina",
+  "grupo": "Vasoativos e inotrópicos"
+ },
+ {
+  "id": "nitroprussiato",
+  "nome": "Nitroprussiato de sódio",
+  "grupo": "Vasodilatadores e anti-hipertensivos"
+ },
+ {
+  "id": "nitroglicerina",
+  "nome": "Nitroglicerina",
+  "grupo": "Vasodilatadores e anti-hipertensivos"
+ },
+ {
+  "id": "hidralazina",
+  "nome": "Hidralazina",
+  "grupo": "Vasodilatadores e anti-hipertensivos"
+ },
+ {
+  "id": "anlodipino",
+  "nome": "Anlodipino",
+  "grupo": "Vasodilatadores e anti-hipertensivos"
+ },
+ {
+  "id": "nimodipino",
+  "nome": "Nimodipino",
+  "grupo": "Vasodilatadores e anti-hipertensivos"
+ },
+ {
+  "id": "captopril",
+  "nome": "Captopril",
+  "grupo": "Vasodilatadores e anti-hipertensivos"
+ },
+ {
+  "id": "enalapril",
+  "nome": "Enalapril",
+  "grupo": "Vasodilatadores e anti-hipertensivos"
+ },
+ {
+  "id": "losartana",
+  "nome": "Losartana",
+  "grupo": "Vasodilatadores e anti-hipertensivos"
+ },
+ {
+  "id": "nifedipino",
+  "nome": "Nifedipino",
+  "grupo": "Vasodilatadores e anti-hipertensivos"
+ },
+ {
+  "id": "metildopa",
+  "nome": "Metildopa",
+  "grupo": "Vasodilatadores e anti-hipertensivos"
+ },
+ {
+  "id": "hidroclorotiazida",
+  "nome": "Hidroclorotiazida",
+  "grupo": "Vasodilatadores e anti-hipertensivos"
+ },
+ {
+  "id": "clortalidona",
+  "nome": "Clortalidona",
+  "grupo": "Vasodilatadores e anti-hipertensivos"
+ },
+ {
+  "id": "propofol",
+  "nome": "Propofol",
+  "grupo": "Sedação, analgesia e delirium"
+ },
+ {
+  "id": "midazolam",
+  "nome": "Midazolam",
+  "grupo": "Sedação, analgesia e delirium"
+ },
+ {
+  "id": "diazepam",
+  "nome": "Diazepam",
+  "grupo": "Sedação, analgesia e delirium"
+ },
+ {
+  "id": "dexmedetomidina",
+  "nome": "Dexmedetomidina",
+  "grupo": "Sedação, analgesia e delirium"
+ },
+ {
+  "id": "cetamina",
+  "nome": "Cetamina (escetamina)",
+  "grupo": "Sedação, analgesia e delirium"
+ },
+ {
+  "id": "etomidato",
+  "nome": "Etomidato",
+  "grupo": "Sedação, analgesia e delirium"
+ },
+ {
+  "id": "fentanil",
+  "nome": "Fentanil",
+  "grupo": "Sedação, analgesia e delirium"
+ },
+ {
+  "id": "remifentanil",
+  "nome": "Remifentanil",
+  "grupo": "Sedação, analgesia e delirium"
+ },
+ {
+  "id": "morfina",
+  "nome": "Morfina",
+  "grupo": "Sedação, analgesia e delirium"
+ },
+ {
+  "id": "metadona",
+  "nome": "Metadona",
+  "grupo": "Sedação, analgesia e delirium"
+ },
+ {
+  "id": "tramadol",
+  "nome": "Tramadol",
+  "grupo": "Sedação, analgesia e delirium"
+ },
+ {
+  "id": "dipirona",
+  "nome": "Dipirona",
+  "grupo": "Sedação, analgesia e delirium"
+ },
+ {
+  "id": "paracetamol",
+  "nome": "Paracetamol",
+  "grupo": "Sedação, analgesia e delirium"
+ },
+ {
+  "id": "haloperidol",
+  "nome": "Haloperidol",
+  "grupo": "Sedação, analgesia e delirium"
+ },
+ {
+  "id": "quetiapina",
+  "nome": "Quetiapina",
+  "grupo": "Sedação, analgesia e delirium"
+ },
+ {
+  "id": "clonidina",
+  "nome": "Clonidina",
+  "grupo": "Sedação, analgesia e delirium"
+ },
+ {
+  "id": "sufentanil",
+  "nome": "Sufentanil",
+  "grupo": "Sedação, analgesia e delirium"
+ },
+ {
+  "id": "meperidina",
+  "nome": "Meperidina (petidina)",
+  "grupo": "Sedação, analgesia e delirium"
+ },
+ {
+  "id": "oxicodona",
+  "nome": "Oxicodona",
+  "grupo": "Sedação, analgesia e delirium"
+ },
+ {
+  "id": "codeina",
+  "nome": "Codeína",
+  "grupo": "Sedação, analgesia e delirium"
+ },
+ {
+  "id": "nalbufina",
+  "nome": "Nalbufina",
+  "grupo": "Sedação, analgesia e delirium"
+ },
+ {
+  "id": "cetoprofeno",
+  "nome": "Cetoprofeno",
+  "grupo": "Sedação, analgesia e delirium"
+ },
+ {
+  "id": "tenoxicam",
+  "nome": "Tenoxicam",
+  "grupo": "Sedação, analgesia e delirium"
+ },
+ {
+  "id": "clonazepam",
+  "nome": "Clonazepam",
+  "grupo": "Sedação, analgesia e delirium"
+ },
+ {
+  "id": "lorazepam",
+  "nome": "Lorazepam",
+  "grupo": "Sedação, analgesia e delirium"
+ },
+ {
+  "id": "zolpidem",
+  "nome": "Zolpidem",
+  "grupo": "Sedação, analgesia e delirium"
+ },
+ {
+  "id": "olanzapina",
+  "nome": "Olanzapina",
+  "grupo": "Sedação, analgesia e delirium"
+ },
+ {
+  "id": "risperidona",
+  "nome": "Risperidona",
+  "grupo": "Sedação, analgesia e delirium"
+ },
+ {
+  "id": "gabapentina",
+  "nome": "Gabapentina",
+  "grupo": "Sedação, analgesia e delirium"
+ },
+ {
+  "id": "pregabalina",
+  "nome": "Pregabalina",
+  "grupo": "Sedação, analgesia e delirium"
+ },
+ {
+  "id": "melatonina",
+  "nome": "Melatonina",
+  "grupo": "Sedação, analgesia e delirium"
+ },
+ {
+  "id": "rocuronio",
+  "nome": "Rocurônio",
+  "grupo": "Bloqueadores neuromusculares e reversores"
+ },
+ {
+  "id": "cisatracurio",
+  "nome": "Cisatracúrio",
+  "grupo": "Bloqueadores neuromusculares e reversores"
+ },
+ {
+  "id": "succinilcolina",
+  "nome": "Succinilcolina",
+  "grupo": "Bloqueadores neuromusculares e reversores"
+ },
+ {
+  "id": "sugamadex",
+  "nome": "Sugamadex",
+  "grupo": "Bloqueadores neuromusculares e reversores"
+ },
+ {
+  "id": "neostigmina",
+  "nome": "Neostigmina",
+  "grupo": "Bloqueadores neuromusculares e reversores"
+ },
+ {
+  "id": "vecuronio",
+  "nome": "Vecurônio",
+  "grupo": "Bloqueadores neuromusculares e reversores"
+ },
+ {
+  "id": "atracurio",
+  "nome": "Atracúrio",
+  "grupo": "Bloqueadores neuromusculares e reversores"
+ },
+ {
+  "id": "heparina",
+  "nome": "Heparina não fracionada",
+  "grupo": "Anticoagulantes, antiplaquetários e reversores"
+ },
+ {
+  "id": "enoxaparina",
+  "nome": "Enoxaparina",
+  "grupo": "Anticoagulantes, antiplaquetários e reversores"
+ },
+ {
+  "id": "fondaparinux",
+  "nome": "Fondaparinux",
+  "grupo": "Anticoagulantes, antiplaquetários e reversores"
+ },
+ {
+  "id": "varfarina",
+  "nome": "Varfarina",
+  "grupo": "Anticoagulantes, antiplaquetários e reversores"
+ },
+ {
+  "id": "rivaroxabana",
+  "nome": "Rivaroxabana",
+  "grupo": "Anticoagulantes, antiplaquetários e reversores"
+ },
+ {
+  "id": "apixabana",
+  "nome": "Apixabana",
+  "grupo": "Anticoagulantes, antiplaquetários e reversores"
+ },
+ {
+  "id": "dabigatrana",
+  "nome": "Dabigatrana",
+  "grupo": "Anticoagulantes, antiplaquetários e reversores"
+ },
+ {
+  "id": "argatrobana",
+  "nome": "Argatrobana",
+  "grupo": "Anticoagulantes, antiplaquetários e reversores"
+ },
+ {
+  "id": "alteplase",
+  "nome": "Alteplase",
+  "grupo": "Anticoagulantes, antiplaquetários e reversores"
+ },
+ {
+  "id": "aas",
+  "nome": "Ácido acetilsalicílico",
+  "grupo": "Anticoagulantes, antiplaquetários e reversores"
+ },
+ {
+  "id": "clopidogrel",
+  "nome": "Clopidogrel",
+  "grupo": "Anticoagulantes, antiplaquetários e reversores"
+ },
+ {
+  "id": "ticagrelor",
+  "nome": "Ticagrelor",
+  "grupo": "Anticoagulantes, antiplaquetários e reversores"
+ },
+ {
+  "id": "protamina",
+  "nome": "Protamina",
+  "grupo": "Anticoagulantes, antiplaquetários e reversores"
+ },
+ {
+  "id": "vitamina-k",
+  "nome": "Vitamina K (fitomenadiona)",
+  "grupo": "Anticoagulantes, antiplaquetários e reversores"
+ },
+ {
+  "id": "complexo-protrombinico",
+  "nome": "Concentrado de complexo protrombínico",
+  "grupo": "Anticoagulantes, antiplaquetários e reversores"
+ },
+ {
+  "id": "idarucizumabe",
+  "nome": "Idarucizumabe",
+  "grupo": "Anticoagulantes, antiplaquetários e reversores"
+ },
+ {
+  "id": "acido-tranexamico",
+  "nome": "Ácido tranexâmico",
+  "grupo": "Anticoagulantes, antiplaquetários e reversores"
+ },
+ {
+  "id": "edoxabana",
+  "nome": "Edoxabana",
+  "grupo": "Anticoagulantes, antiplaquetários e reversores"
+ },
+ {
+  "id": "prasugrel",
+  "nome": "Prasugrel",
+  "grupo": "Anticoagulantes, antiplaquetários e reversores"
+ },
+ {
+  "id": "tirofibana",
+  "nome": "Tirofibana",
+  "grupo": "Anticoagulantes, antiplaquetários e reversores"
+ },
+ {
+  "id": "tenecteplase",
+  "nome": "Tenecteplase",
+  "grupo": "Anticoagulantes, antiplaquetários e reversores"
+ },
+ {
+  "id": "cilostazol",
+  "nome": "Cilostazol",
+  "grupo": "Anticoagulantes, antiplaquetários e reversores"
+ },
+ {
+  "id": "amiodarona",
+  "nome": "Amiodarona",
+  "grupo": "Antiarrítmicos e cardiovasculares"
+ },
+ {
+  "id": "adenosina",
+  "nome": "Adenosina",
+  "grupo": "Antiarrítmicos e cardiovasculares"
+ },
+ {
+  "id": "lidocaina",
+  "nome": "Lidocaína",
+  "grupo": "Antiarrítmicos e cardiovasculares"
+ },
+ {
+  "id": "esmolol",
+  "nome": "Esmolol",
+  "grupo": "Antiarrítmicos e cardiovasculares"
+ },
+ {
+  "id": "metoprolol",
+  "nome": "Metoprolol",
+  "grupo": "Antiarrítmicos e cardiovasculares"
+ },
+ {
+  "id": "diltiazem",
+  "nome": "Diltiazem",
+  "grupo": "Antiarrítmicos e cardiovasculares"
+ },
+ {
+  "id": "digoxina",
+  "nome": "Digoxina",
+  "grupo": "Antiarrítmicos e cardiovasculares"
+ },
+ {
+  "id": "sinvastatina",
+  "nome": "Sinvastatina",
+  "grupo": "Antiarrítmicos e cardiovasculares"
+ },
+ {
+  "id": "atorvastatina",
+  "nome": "Atorvastatina",
+  "grupo": "Antiarrítmicos e cardiovasculares"
+ },
+ {
+  "id": "propranolol",
+  "nome": "Propranolol",
+  "grupo": "Antiarrítmicos e cardiovasculares"
+ },
+ {
+  "id": "carvedilol",
+  "nome": "Carvedilol",
+  "grupo": "Antiarrítmicos e cardiovasculares"
+ },
+ {
+  "id": "atenolol",
+  "nome": "Atenolol",
+  "grupo": "Antiarrítmicos e cardiovasculares"
+ },
+ {
+  "id": "verapamil",
+  "nome": "Verapamil",
+  "grupo": "Antiarrítmicos e cardiovasculares"
+ },
+ {
+  "id": "propafenona",
+  "nome": "Propafenona",
+  "grupo": "Antiarrítmicos e cardiovasculares"
+ },
+ {
+  "id": "sotalol",
+  "nome": "Sotalol",
+  "grupo": "Antiarrítmicos e cardiovasculares"
+ },
+ {
+  "id": "deslanosideo",
+  "nome": "Deslanosídeo",
+  "grupo": "Antiarrítmicos e cardiovasculares"
+ },
+ {
+  "id": "rosuvastatina",
+  "nome": "Rosuvastatina",
+  "grupo": "Antiarrítmicos e cardiovasculares"
+ },
+ {
+  "id": "sacubitril-valsartana",
+  "nome": "Sacubitril-valsartana",
+  "grupo": "Antiarrítmicos e cardiovasculares"
+ },
+ {
+  "id": "ivabradina",
+  "nome": "Ivabradina",
+  "grupo": "Antiarrítmicos e cardiovasculares"
+ },
+ {
+  "id": "furosemida",
+  "nome": "Furosemida",
+  "grupo": "Diuréticos, fluidos e eletrólitos"
+ },
+ {
+  "id": "espironolactona",
+  "nome": "Espironolactona",
+  "grupo": "Diuréticos, fluidos e eletrólitos"
+ },
+ {
+  "id": "manitol",
+  "nome": "Manitol",
+  "grupo": "Diuréticos, fluidos e eletrólitos"
+ },
+ {
+  "id": "albumina",
+  "nome": "Albumina humana",
+  "grupo": "Diuréticos, fluidos e eletrólitos"
+ },
+ {
+  "id": "cloreto-potassio",
+  "nome": "Cloreto de potássio",
+  "grupo": "Diuréticos, fluidos e eletrólitos"
+ },
+ {
+  "id": "sulfato-magnesio",
+  "nome": "Sulfato de magnésio",
+  "grupo": "Diuréticos, fluidos e eletrólitos"
+ },
+ {
+  "id": "gluconato-calcio",
+  "nome": "Gluconato de cálcio",
+  "grupo": "Diuréticos, fluidos e eletrólitos"
+ },
+ {
+  "id": "fosfato-potassio",
+  "nome": "Fosfato de potássio",
+  "grupo": "Diuréticos, fluidos e eletrólitos"
+ },
+ {
+  "id": "bicarbonato-sodio",
+  "nome": "Bicarbonato de sódio",
+  "grupo": "Diuréticos, fluidos e eletrólitos"
+ },
+ {
+  "id": "salina-hipertonica",
+  "nome": "Cloreto de sódio hipertônico (3% / 20%)",
+  "grupo": "Diuréticos, fluidos e eletrólitos"
+ },
+ {
+  "id": "acetazolamida",
+  "nome": "Acetazolamida",
+  "grupo": "Diuréticos, fluidos e eletrólitos"
+ },
+ {
+  "id": "glicerofosfato-sodio",
+  "nome": "Glicerofosfato de sódio",
+  "grupo": "Diuréticos, fluidos e eletrólitos"
+ },
+ {
+  "id": "glicose-50",
+  "nome": "Glicose 50%",
+  "grupo": "Diuréticos, fluidos e eletrólitos"
+ },
+ {
+  "id": "tiamina",
+  "nome": "Tiamina",
+  "grupo": "Diuréticos, fluidos e eletrólitos"
+ },
+ {
+  "id": "cloreto-calcio",
+  "nome": "Cloreto de cálcio",
+  "grupo": "Diuréticos, fluidos e eletrólitos"
+ },
+ {
+  "id": "fenitoina",
+  "nome": "Fenitoína",
+  "grupo": "Anticonvulsivantes"
+ },
+ {
+  "id": "fosfenitoina",
+  "nome": "Fosfenitoína",
+  "grupo": "Anticonvulsivantes"
+ },
+ {
+  "id": "levetiracetam",
+  "nome": "Levetiracetam",
+  "grupo": "Anticonvulsivantes"
+ },
+ {
+  "id": "acido-valproico",
+  "nome": "Ácido valproico / valproato",
+  "grupo": "Anticonvulsivantes"
+ },
+ {
+  "id": "fenobarbital",
+  "nome": "Fenobarbital",
+  "grupo": "Anticonvulsivantes"
+ },
+ {
+  "id": "lacosamida",
+  "nome": "Lacosamida",
+  "grupo": "Anticonvulsivantes"
+ },
+ {
+  "id": "carbamazepina",
+  "nome": "Carbamazepina",
+  "grupo": "Anticonvulsivantes"
+ },
+ {
+  "id": "oxcarbazepina",
+  "nome": "Oxcarbazepina",
+  "grupo": "Anticonvulsivantes"
+ },
+ {
+  "id": "clobazam",
+  "nome": "Clobazam",
+  "grupo": "Anticonvulsivantes"
+ },
+ {
+  "id": "topiramato",
+  "nome": "Topiramato",
+  "grupo": "Anticonvulsivantes"
+ },
+ {
+  "id": "insulina-regular",
+  "nome": "Insulina regular",
+  "grupo": "Endócrino e corticoides"
+ },
+ {
+  "id": "hidrocortisona",
+  "nome": "Hidrocortisona",
+  "grupo": "Endócrino e corticoides"
+ },
+ {
+  "id": "dexametasona",
+  "nome": "Dexametasona",
+  "grupo": "Endócrino e corticoides"
+ },
+ {
+  "id": "metilprednisolona",
+  "nome": "Metilprednisolona",
+  "grupo": "Endócrino e corticoides"
+ },
+ {
+  "id": "levotiroxina",
+  "nome": "Levotiroxina",
+  "grupo": "Endócrino e corticoides"
+ },
+ {
+  "id": "desmopressina",
+  "nome": "Desmopressina",
+  "grupo": "Endócrino e corticoides"
+ },
+ {
+  "id": "octreotida",
+  "nome": "Octreotida",
+  "grupo": "Endócrino e corticoides"
+ },
+ {
+  "id": "insulina-glargina",
+  "nome": "Insulina glargina",
+  "grupo": "Endócrino e corticoides"
+ },
+ {
+  "id": "insulina-nph",
+  "nome": "Insulina NPH",
+  "grupo": "Endócrino e corticoides"
+ },
+ {
+  "id": "metformina",
+  "nome": "Metformina",
+  "grupo": "Endócrino e corticoides"
+ },
+ {
+  "id": "glibenclamida",
+  "nome": "Glibenclamida",
+  "grupo": "Endócrino e corticoides"
+ },
+ {
+  "id": "gliclazida",
+  "nome": "Gliclazida",
+  "grupo": "Endócrino e corticoides"
+ },
+ {
+  "id": "empagliflozina",
+  "nome": "Empagliflozina",
+  "grupo": "Endócrino e corticoides"
+ },
+ {
+  "id": "dapagliflozina",
+  "nome": "Dapagliflozina",
+  "grupo": "Endócrino e corticoides"
+ },
+ {
+  "id": "prednisona",
+  "nome": "Prednisona",
+  "grupo": "Endócrino e corticoides"
+ },
+ {
+  "id": "fludrocortisona",
+  "nome": "Fludrocortisona",
+  "grupo": "Endócrino e corticoides"
+ },
+ {
+  "id": "propiltiouracil",
+  "nome": "Propiltiouracil",
+  "grupo": "Endócrino e corticoides"
+ },
+ {
+  "id": "metimazol",
+  "nome": "Metimazol",
+  "grupo": "Endócrino e corticoides"
+ },
+ {
+  "id": "omeprazol",
+  "nome": "Omeprazol",
+  "grupo": "Trato gastrointestinal"
+ },
+ {
+  "id": "pantoprazol",
+  "nome": "Pantoprazol",
+  "grupo": "Trato gastrointestinal"
+ },
+ {
+  "id": "ondansetrona",
+  "nome": "Ondansetrona",
+  "grupo": "Trato gastrointestinal"
+ },
+ {
+  "id": "metoclopramida",
+  "nome": "Metoclopramida",
+  "grupo": "Trato gastrointestinal"
+ },
+ {
+  "id": "bromoprida",
+  "nome": "Bromoprida",
+  "grupo": "Trato gastrointestinal"
+ },
+ {
+  "id": "lactulose",
+  "nome": "Lactulose",
+  "grupo": "Trato gastrointestinal"
+ },
+ {
+  "id": "sucralfato",
+  "nome": "Sucralfato",
+  "grupo": "Trato gastrointestinal"
+ },
+ {
+  "id": "esomeprazol",
+  "nome": "Esomeprazol",
+  "grupo": "Trato gastrointestinal"
+ },
+ {
+  "id": "famotidina",
+  "nome": "Famotidina",
+  "grupo": "Trato gastrointestinal"
+ },
+ {
+  "id": "domperidona",
+  "nome": "Domperidona",
+  "grupo": "Trato gastrointestinal"
+ },
+ {
+  "id": "escopolamina",
+  "nome": "Butilbrometo de escopolamina",
+  "grupo": "Trato gastrointestinal"
+ },
+ {
+  "id": "dimenidrinato",
+  "nome": "Dimenidrinato",
+  "grupo": "Trato gastrointestinal"
+ },
+ {
+  "id": "bisacodil",
+  "nome": "Bisacodil",
+  "grupo": "Trato gastrointestinal"
+ },
+ {
+  "id": "polietilenoglicol",
+  "nome": "Macrogol (polietilenoglicol)",
+  "grupo": "Trato gastrointestinal"
+ },
+ {
+  "id": "rifaximina",
+  "nome": "Rifaximina",
+  "grupo": "Trato gastrointestinal"
+ },
+ {
+  "id": "loperamida",
+  "nome": "Loperamida",
+  "grupo": "Trato gastrointestinal"
+ },
+ {
+  "id": "droperidol",
+  "nome": "Droperidol",
+  "grupo": "Trato gastrointestinal"
+ },
+ {
+  "id": "tacrolimo",
+  "nome": "Tacrolimo",
+  "grupo": "Imunossupressores"
+ },
+ {
+  "id": "ciclosporina",
+  "nome": "Ciclosporina",
+  "grupo": "Imunossupressores"
+ },
+ {
+  "id": "micofenolato",
+  "nome": "Micofenolato",
+  "grupo": "Imunossupressores"
+ },
+ {
+  "id": "sirolimo",
+  "nome": "Sirolimo",
+  "grupo": "Imunossupressores"
+ },
+ {
+  "id": "everolimo",
+  "nome": "Everolimo",
+  "grupo": "Imunossupressores"
+ },
+ {
+  "id": "azatioprina",
+  "nome": "Azatioprina",
+  "grupo": "Imunossupressores"
+ },
+ {
+  "id": "metotrexato",
+  "nome": "Metotrexato",
+  "grupo": "Imunossupressores"
+ },
+ {
+  "id": "ciclofosfamida",
+  "nome": "Ciclofosfamida",
+  "grupo": "Imunossupressores"
+ },
+ {
+  "id": "sertralina",
+  "nome": "Sertralina",
+  "grupo": "Psicofármacos"
+ },
+ {
+  "id": "fluoxetina",
+  "nome": "Fluoxetina",
+  "grupo": "Psicofármacos"
+ },
+ {
+  "id": "escitalopram",
+  "nome": "Escitalopram",
+  "grupo": "Psicofármacos"
+ },
+ {
+  "id": "amitriptilina",
+  "nome": "Amitriptilina",
+  "grupo": "Psicofármacos"
+ },
+ {
+  "id": "trazodona",
+  "nome": "Trazodona",
+  "grupo": "Psicofármacos"
+ },
+ {
+  "id": "citalopram",
+  "nome": "Citalopram",
+  "grupo": "Psicofármacos"
+ },
+ {
+  "id": "paroxetina",
+  "nome": "Paroxetina",
+  "grupo": "Psicofármacos"
+ },
+ {
+  "id": "venlafaxina",
+  "nome": "Venlafaxina",
+  "grupo": "Psicofármacos"
+ },
+ {
+  "id": "duloxetina",
+  "nome": "Duloxetina",
+  "grupo": "Psicofármacos"
+ },
+ {
+  "id": "mirtazapina",
+  "nome": "Mirtazapina",
+  "grupo": "Psicofármacos"
+ },
+ {
+  "id": "bupropiona",
+  "nome": "Bupropiona",
+  "grupo": "Psicofármacos"
+ },
+ {
+  "id": "litio",
+  "nome": "Carbonato de lítio",
+  "grupo": "Psicofármacos"
+ },
+ {
+  "id": "clozapina",
+  "nome": "Clozapina",
+  "grupo": "Psicofármacos"
+ },
+ {
+  "id": "clorpromazina",
+  "nome": "Clorpromazina",
+  "grupo": "Psicofármacos"
+ },
+ {
+  "id": "prometazina",
+  "nome": "Prometazina",
+  "grupo": "Psicofármacos"
+ },
+ {
+  "id": "hidroxizina",
+  "nome": "Hidroxizina",
+  "grupo": "Psicofármacos"
+ },
+ {
+  "id": "ampicilina",
+  "nome": "Ampicilina",
+  "grupo": "Antibacterianos"
+ },
+ {
+  "id": "ampicilina-sulbactam",
+  "nome": "Ampicilina-sulbactam",
+  "grupo": "Antibacterianos"
+ },
+ {
+  "id": "amoxicilina-clavulanato",
+  "nome": "Amoxicilina-clavulanato",
+  "grupo": "Antibacterianos"
+ },
+ {
+  "id": "penicilina-g-cristalina",
+  "nome": "Penicilina G cristalina",
+  "grupo": "Antibacterianos"
+ },
+ {
+  "id": "oxacilina",
+  "nome": "Oxacilina",
+  "grupo": "Antibacterianos"
+ },
+ {
+  "id": "piperacilina-tazobactam",
+  "nome": "Piperacilina-tazobactam",
+  "grupo": "Antibacterianos"
+ },
+ {
+  "id": "cefazolina",
+  "nome": "Cefazolina",
+  "grupo": "Antibacterianos"
+ },
+ {
+  "id": "ceftriaxona",
+  "nome": "Ceftriaxona",
+  "grupo": "Antibacterianos"
+ },
+ {
+  "id": "ceftazidima",
+  "nome": "Ceftazidima",
+  "grupo": "Antibacterianos"
+ },
+ {
+  "id": "cefepima",
+  "nome": "Cefepima",
+  "grupo": "Antibacterianos"
+ },
+ {
+  "id": "ceftarolina",
+  "nome": "Ceftarolina",
+  "grupo": "Antibacterianos"
+ },
+ {
+  "id": "ceftazidima-avibactam",
+  "nome": "Ceftazidima-avibactam",
+  "grupo": "Antibacterianos"
+ },
+ {
+  "id": "ceftolozana-tazobactam",
+  "nome": "Ceftolozana-tazobactam",
+  "grupo": "Antibacterianos"
+ },
+ {
+  "id": "cefiderocol",
+  "nome": "Cefiderocol",
+  "grupo": "Antibacterianos"
+ },
+ {
+  "id": "aztreonam",
+  "nome": "Aztreonam",
+  "grupo": "Antibacterianos"
+ },
+ {
+  "id": "meropenem",
+  "nome": "Meropenem",
+  "grupo": "Antibacterianos"
+ },
+ {
+  "id": "imipenem",
+  "nome": "Imipenem-cilastatina",
+  "grupo": "Antibacterianos"
+ },
+ {
+  "id": "ertapenem",
+  "nome": "Ertapenem",
+  "grupo": "Antibacterianos"
+ },
+ {
+  "id": "vancomicina",
+  "nome": "Vancomicina",
+  "grupo": "Antibacterianos"
+ },
+ {
+  "id": "teicoplanina",
+  "nome": "Teicoplanina",
+  "grupo": "Antibacterianos"
+ },
+ {
+  "id": "linezolida",
+  "nome": "Linezolida",
+  "grupo": "Antibacterianos"
+ },
+ {
+  "id": "daptomicina",
+  "nome": "Daptomicina",
+  "grupo": "Antibacterianos"
+ },
+ {
+  "id": "tigeciclina",
+  "nome": "Tigeciclina",
+  "grupo": "Antibacterianos"
+ },
+ {
+  "id": "amicacina",
+  "nome": "Amicacina",
+  "grupo": "Antibacterianos"
+ },
+ {
+  "id": "gentamicina",
+  "nome": "Gentamicina",
+  "grupo": "Antibacterianos"
+ },
+ {
+  "id": "polimixina-b",
+  "nome": "Polimixina B",
+  "grupo": "Antibacterianos"
+ },
+ {
+  "id": "colistina",
+  "nome": "Colistimetato (colistina)",
+  "grupo": "Antibacterianos"
+ },
+ {
+  "id": "ciprofloxacino",
+  "nome": "Ciprofloxacino",
+  "grupo": "Antibacterianos"
+ },
+ {
+  "id": "levofloxacino",
+  "nome": "Levofloxacino",
+  "grupo": "Antibacterianos"
+ },
+ {
+  "id": "moxifloxacino",
+  "nome": "Moxifloxacino",
+  "grupo": "Antibacterianos"
+ },
+ {
+  "id": "azitromicina",
+  "nome": "Azitromicina",
+  "grupo": "Antibacterianos"
+ },
+ {
+  "id": "claritromicina",
+  "nome": "Claritromicina",
+  "grupo": "Antibacterianos"
+ },
+ {
+  "id": "eritromicina",
+  "nome": "Eritromicina",
+  "grupo": "Antibacterianos"
+ },
+ {
+  "id": "clindamicina",
+  "nome": "Clindamicina",
+  "grupo": "Antibacterianos"
+ },
+ {
+  "id": "metronidazol",
+  "nome": "Metronidazol",
+  "grupo": "Antibacterianos"
+ },
+ {
+  "id": "sulfametoxazol-trimetoprima",
+  "nome": "Sulfametoxazol-trimetoprima",
+  "grupo": "Antibacterianos"
+ },
+ {
+  "id": "fosfomicina",
+  "nome": "Fosfomicina",
+  "grupo": "Antibacterianos"
+ },
+ {
+  "id": "doxiciclina",
+  "nome": "Doxiciclina",
+  "grupo": "Antibacterianos"
+ },
+ {
+  "id": "rifampicina",
+  "nome": "Rifampicina",
+  "grupo": "Antibacterianos"
+ },
+ {
+  "id": "amoxicilina",
+  "nome": "Amoxicilina",
+  "grupo": "Antibacterianos"
+ },
+ {
+  "id": "cefuroxima",
+  "nome": "Cefuroxima",
+  "grupo": "Antibacterianos"
+ },
+ {
+  "id": "cefalexina",
+  "nome": "Cefalexina",
+  "grupo": "Antibacterianos"
+ },
+ {
+  "id": "imipenem-relebactam",
+  "nome": "Imipenem-relebactam",
+  "grupo": "Antibacterianos"
+ },
+ {
+  "id": "meropenem-vaborbactam",
+  "nome": "Meropenem-vaborbactam",
+  "grupo": "Antibacterianos"
+ },
+ {
+  "id": "aztreonam-avibactam",
+  "nome": "Aztreonam-avibactam",
+  "grupo": "Antibacterianos"
+ },
+ {
+  "id": "tobramicina",
+  "nome": "Tobramicina",
+  "grupo": "Antibacterianos"
+ },
+ {
+  "id": "minociclina",
+  "nome": "Minociclina",
+  "grupo": "Antibacterianos"
+ },
+ {
+  "id": "nitrofurantoina",
+  "nome": "Nitrofurantoína",
+  "grupo": "Antibacterianos"
+ },
+ {
+  "id": "isoniazida",
+  "nome": "Isoniazida",
+  "grupo": "Antibacterianos"
+ },
+ {
+  "id": "pirazinamida",
+  "nome": "Pirazinamida",
+  "grupo": "Antibacterianos"
+ },
+ {
+  "id": "etambutol",
+  "nome": "Etambutol",
+  "grupo": "Antibacterianos"
+ },
+ {
+  "id": "dapsona",
+  "nome": "Dapsona",
+  "grupo": "Antibacterianos"
+ },
+ {
+  "id": "tedizolida",
+  "nome": "Tedizolida",
+  "grupo": "Antibacterianos"
+ },
+ {
+  "id": "dalbavancina",
+  "nome": "Dalbavancina",
+  "grupo": "Antibacterianos"
+ },
+ {
+  "id": "fluconazol",
+  "nome": "Fluconazol",
+  "grupo": "Antifúngicos"
+ },
+ {
+  "id": "voriconazol",
+  "nome": "Voriconazol",
+  "grupo": "Antifúngicos"
+ },
+ {
+  "id": "posaconazol",
+  "nome": "Posaconazol",
+  "grupo": "Antifúngicos"
+ },
+ {
+  "id": "isavuconazol",
+  "nome": "Isavuconazol",
+  "grupo": "Antifúngicos"
+ },
+ {
+  "id": "anfotericina-b-lipossomal",
+  "nome": "Anfotericina B lipossomal",
+  "grupo": "Antifúngicos"
+ },
+ {
+  "id": "anfotericina-b-desoxicolato",
+  "nome": "Anfotericina B desoxicolato",
+  "grupo": "Antifúngicos"
+ },
+ {
+  "id": "micafungina",
+  "nome": "Micafungina",
+  "grupo": "Antifúngicos"
+ },
+ {
+  "id": "anidulafungina",
+  "nome": "Anidulafungina",
+  "grupo": "Antifúngicos"
+ },
+ {
+  "id": "caspofungina",
+  "nome": "Caspofungina",
+  "grupo": "Antifúngicos"
+ },
+ {
+  "id": "itraconazol",
+  "nome": "Itraconazol",
+  "grupo": "Antifúngicos"
+ },
+ {
+  "id": "aciclovir",
+  "nome": "Aciclovir",
+  "grupo": "Antivirais"
+ },
+ {
+  "id": "ganciclovir",
+  "nome": "Ganciclovir",
+  "grupo": "Antivirais"
+ },
+ {
+  "id": "oseltamivir",
+  "nome": "Oseltamivir",
+  "grupo": "Antivirais"
+ },
+ {
+  "id": "valganciclovir",
+  "nome": "Valganciclovir",
+  "grupo": "Antivirais"
+ },
+ {
+  "id": "valaciclovir",
+  "nome": "Valaciclovir",
+  "grupo": "Antivirais"
+ },
+ {
+  "id": "foscarnet",
+  "nome": "Foscarnet",
+  "grupo": "Antivirais"
+ },
+ {
+  "id": "remdesivir",
+  "nome": "Remdesivir",
+  "grupo": "Antivirais"
+ },
+ {
+  "id": "nirmatrelvir-ritonavir",
+  "nome": "Nirmatrelvir-ritonavir",
+  "grupo": "Antivirais"
+ },
+ {
+  "id": "dolutegravir",
+  "nome": "Dolutegravir",
+  "grupo": "Antivirais"
+ },
+ {
+  "id": "tenofovir-lamivudina",
+  "nome": "Tenofovir-lamivudina",
+  "grupo": "Antivirais"
+ },
+ {
+  "id": "efavirenz",
+  "nome": "Efavirenz",
+  "grupo": "Antivirais"
+ },
+ {
+  "id": "naloxona",
+  "nome": "Naloxona",
+  "grupo": "Antídotos e toxicologia"
+ },
+ {
+  "id": "flumazenil",
+  "nome": "Flumazenil",
+  "grupo": "Antídotos e toxicologia"
+ },
+ {
+  "id": "acetilcisteina",
+  "nome": "Acetilcisteína",
+  "grupo": "Antídotos e toxicologia"
+ },
+ {
+  "id": "azul-de-metileno",
+  "nome": "Azul de metileno",
+  "grupo": "Antídotos e toxicologia"
+ },
+ {
+  "id": "hidroxocobalamina",
+  "nome": "Hidroxocobalamina",
+  "grupo": "Antídotos e toxicologia"
+ },
+ {
+  "id": "glucagon",
+  "nome": "Glucagon",
+  "grupo": "Antídotos e toxicologia"
+ },
+ {
+  "id": "emulsao-lipidica",
+  "nome": "Emulsão lipídica 20%",
+  "grupo": "Antídotos e toxicologia"
+ },
+ {
+  "id": "carvao-ativado",
+  "nome": "Carvão ativado",
+  "grupo": "Antídotos e toxicologia"
+ },
+ {
+  "id": "fomepizol",
+  "nome": "Fomepizol",
+  "grupo": "Antídotos e toxicologia"
+ },
+ {
+  "id": "dantroleno",
+  "nome": "Dantroleno",
+  "grupo": "Antídotos e toxicologia"
+ },
+ {
+  "id": "salbutamol",
+  "nome": "Salbutamol",
+  "grupo": "Respiratório"
+ },
+ {
+  "id": "ipratropio",
+  "nome": "Brometo de ipratrópio",
+  "grupo": "Respiratório"
+ },
+ {
+  "id": "budesonida",
+  "nome": "Budesonida",
+  "grupo": "Respiratório"
+ },
+ {
+  "id": "aminofilina",
+  "nome": "Aminofilina (teofilina)",
+  "grupo": "Respiratório"
+ },
+ {
+  "id": "alopurinol",
+  "nome": "Alopurinol",
+  "grupo": "Hematologia e outros"
+ },
+ {
+  "id": "colchicina",
+  "nome": "Colchicina",
+  "grupo": "Hematologia e outros"
+ },
+ {
+  "id": "sacarato-ferro",
+  "nome": "Sacarato de hidróxido férrico",
+  "grupo": "Hematologia e outros"
+ },
+ {
+  "id": "filgrastim",
+  "nome": "Filgrastim",
+  "grupo": "Hematologia e outros"
+ },
+ {
+  "id": "alfaepoetina",
+  "nome": "Alfaepoetina",
+  "grupo": "Hematologia e outros"
+ },
+ {
+  "id": "ivermectina",
+  "nome": "Ivermectina",
+  "grupo": "Antiparasitários"
+ },
+ {
+  "id": "sulfadiazina",
+  "nome": "Sulfadiazina",
+  "grupo": "Antiparasitários"
+ },
+ {
+  "id": "pirimetamina",
+  "nome": "Pirimetamina",
+  "grupo": "Antiparasitários"
+ },
+ {
+  "id": "albendazol",
+  "nome": "Albendazol",
+  "grupo": "Antiparasitários"
+ }
 ]

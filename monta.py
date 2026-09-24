@@ -100,17 +100,26 @@ for c in sorted(casos, key=lambda c: (c["sem"], c["id"])):
     while carga.get(w, 0) >= 3 and w < ult: w += 1
     c["sem"] = w; carga[w] = carga.get(w, 0) + 1
 
+# avaliação de prescrições: 3 por semana, escritas por bloco de semanas
+prescricoes = []
+for p in sorted(glob.glob(os.path.join(T, "lotes", "prescricoes-*.json"))):
+    for r in carrega(p) or []:
+        if r.get("id") and r.get("itens") and isinstance(r.get("sem"), int):
+            r["leituras"] = [s for s in r.get("leituras", []) if s in leituras]
+            prescricoes.append(r)
+prescricoes.sort(key=lambda r: (r["sem"], int(re.sub(r"\D", "", r["id"]) or 0)))
+
 ids = {f["id"] for f in farm}
 for p in sorted(glob.glob(os.path.join(T, "lotes", "bulario-*.json"))):
     for f in carrega(p) or []:
         if f.get("id") in ids: bulario.append(f)
-p = os.path.join(T, "lotes", "interacoes.json")
-if os.path.exists(p):
-    vistos = set()
+vistos = set()
+for p in sorted(glob.glob(os.path.join(T, "lotes", "interacoes*.json"))):   # interacoes.json primeiro: o par original vence
     for x in carrega(p) or []:
         par = tuple(sorted((x.get("a", ""), x.get("b", ""))))
         if par[0] in ids and par[1] in ids and par not in vistos:
             vistos.add(par); interacoes.append(x)
+        elif par in vistos: avisos.append(f"par repetido ignorado em {os.path.basename(p)}: {par}")
 
 cartoes.sort(key=lambda c: ordem[c["l"]])
 questoes.sort(key=lambda q: ordem[q["l"]])
@@ -119,7 +128,7 @@ for l in lista: l.pop("agente", None)
 
 estudo = {"versao": 1, "conteudo": BASE, "areas": cur["areas"], "leituras": lista, "semanas": cur["semanas"],
           "residencia": cur["residencia"], "cartoes": cartoes, "questoes": questoes,
-          "casos": casos, "indice": indice}
+          "casos": casos, "prescricoes": prescricoes, "indice": indice}
 ref = {"farmacos": farm, "bulario": bulario, "interacoes": interacoes}
 
 os.makedirs(os.path.join(R, "dados"), exist_ok=True)
@@ -132,7 +141,7 @@ t2 = grava("referencia.js", "FU_REF", ref)
 
 prontas = [l for l in lista if l["ok"]]
 print(f"leituras: {len(prontas)}/{len(lista)} com conteúdo, {sum(l.get('palavras', 0) for l in prontas):,} palavras".replace(",", ".").replace("conteúdo.", "conteúdo,"))
-print(f"cartões: {len(cartoes)} · questões: {len(questoes)} · casos: {len(casos)}")
+print(f"cartões: {len(cartoes)} · questões: {len(questoes)} · casos: {len(casos)} · prescrições: {len(prescricoes)}")
 print(f"bulário: {len(bulario)}/{len(farm)} · interações: {len(interacoes)}")
 print(f"dados/estudo.js {t1 / 1024:.0f} KB · dados/referencia.js {t2 / 1024:.0f} KB")
 for a in avisos: print("AVISO", a)

@@ -6,7 +6,7 @@
   --papel:#F5F6FB; --sup:#FFFFFF; --sup2:#F1F3F9; --sup3:#E7EAF3;
   --ink:#141827; --ink2:#5D6579; --ink3:#8E96AA; --linha:#E6E9F2; --linhaF:#D3D8E5;
   --c-indigo:#5B5BF0; --c-azul:#2F7BF6; --c-laranja:#F76E1E; --c-verde:#11A870; --c-violeta:#8E5AF2;
-  --c-ambar:#E89A00; --c-ciano:#0AA5C2; --c-rosa:#E8468E; --c-cinza:#667085; --c-vermelho:#E5484D; --c-teal:#0E9384;
+  --c-ambar:#E89A00; --c-ciano:#0AA5C2; --c-rosa:#E8468E; --c-cinza:#667085; --c-vermelho:#E5484D; --c-teal:#0E9384; --c-lima:#4D9A12;
   --ac:var(--c-indigo);
   --ok:#0E9F6E; --okSup:#E3F8EF; --err:#E5484D; --errSup:#FFECEC; --warn:#D97706; --warnSup:#FFF4DE;
   --rG:24px; --r:16px;
@@ -39,6 +39,7 @@ body[data-aba="cartoes"]{--ac:var(--c-ambar)}
 body[data-aba="questoes"]{--ac:var(--c-azul)}
 body[data-aba="casos"]{--ac:var(--c-rosa)}
 body[data-aba="interacoes"]{--ac:var(--c-vermelho)}
+body[data-aba="prescricoes"]{--ac:var(--c-lima)}
 body[data-aba="bulario"]{--ac:var(--c-teal)}
 body[data-aba="calculadoras"]{--ac:var(--c-laranja)}
 body[data-aba="desempenho"]{--ac:var(--c-ciano)}
@@ -400,6 +401,36 @@ label.campo{display:flex;flex-direction:column;gap:6px;font-size:13px;font-weigh
 .prob b{font-size:14.5px}
 .prob dl{margin:6px 0 0;display:grid;grid-template-columns:auto 1fr;gap:3px 10px;font-size:13.5px}
 .prob dt{color:var(--ink3);font-weight:650}.prob dd{margin:0}
+
+/* ---------- avaliação de prescrições ---------- */
+.rxGrade{display:grid;grid-template-columns:minmax(0,1fr) 280px;gap:22px;align-items:start;max-width:1180px}
+@media(max-width:1100px){.rxGrade{grid-template-columns:1fr}.rxGrade .lado{position:static;order:-1}}
+.folhaRx{background:var(--sup);border:1px solid var(--linha);border-radius:24px;box-shadow:var(--sombra);overflow:hidden}
+.rxCab{padding:18px 22px;background:color-mix(in srgb,var(--c-lima) 7%,var(--sup));border-bottom:1px dashed var(--linhaF)}
+.rxCab p{margin:12px 0;line-height:1.6;font-size:14.5px}
+.rxDados{display:flex;flex-wrap:wrap;gap:8px}
+.rxDados span{background:var(--sup);border:1px solid var(--linha);border-radius:14px;padding:6px 12px;display:flex;flex-direction:column;min-width:0}
+.rxDados small{font-size:11.5px;color:var(--ink3);font-weight:600}.rxDados b{font-size:14px;font-variant-numeric:tabular-nums}
+.rxTit{display:flex;align-items:center;gap:8px;padding:12px 22px;font-weight:700;font-size:13px;text-transform:uppercase;letter-spacing:.05em;color:color-mix(in srgb,var(--c-lima) 75%,var(--ink))}
+.rxTit .sub{text-transform:none;letter-spacing:0;font-weight:500;margin-left:auto}
+.rxLinha{display:grid;grid-template-columns:30px minmax(0,1fr) 24px;gap:12px;align-items:start;padding:12px 22px;border-top:1px solid var(--linha);transition:background .15s;border-left:4px solid transparent}
+.rxLinha[data-rxl]{cursor:pointer}
+.rxLinha[data-rxl]:hover{background:var(--sup2)}
+.rxLinha .n{width:28px;height:28px;border-radius:50%;background:var(--sup2);color:var(--ink2);display:grid;place-items:center;font-weight:750;font-size:12.5px}
+.rxLinha .tx{font-size:15px;line-height:1.5;padding-top:3px;font-variant-numeric:tabular-nums}
+.rxLinha .bandeira{color:var(--ink3);font-size:18px;padding-top:5px}
+.rxLinha.marcada{background:color-mix(in srgb,var(--c-lima) 10%,var(--sup));border-left-color:var(--c-lima)}
+.rxLinha.marcada .n{background:var(--c-lima);color:#fff}.rxLinha.marcada .bandeira{color:var(--c-lima)}
+.rxTipos{display:flex;flex-wrap:wrap;gap:6px;margin-top:10px}
+.rxTipos .chip{padding:4px 11px;font-size:12px;--ac:var(--c-lima)}
+.rxLinha.tp{background:var(--okSup);border-left-color:var(--ok)}.rxLinha.tp .n{background:var(--ok);color:#fff}
+.rxLinha.fn{background:var(--errSup);border-left-color:var(--err)}.rxLinha.fn .n{background:var(--err);color:#fff}
+.rxLinha.fp{background:var(--warnSup);border-left-color:var(--warn)}.rxLinha.fp .n{background:var(--warn);color:#fff}
+.rxLinha.ok{opacity:.72}
+.rxEx{margin-top:8px;font-size:13.5px;line-height:1.55;animation:desliza .35s ease both}
+.rxEx p{margin:4px 0 0}.rxEx b .ti{font-size:15px;vertical-align:-2px}
+.rxRel{font-size:34px;font-weight:800;letter-spacing:-.02em;font-variant-numeric:tabular-nums;color:color-mix(in srgb,var(--c-lima) 80%,var(--ink))}
+@media(max-width:640px){.rxLinha{padding:11px 14px;gap:10px}.rxCab{padding:16px}.rxTit{padding:12px 16px}}
 
 /* ---------- interações e bulário ---------- */
 .seletor{position:relative}

@@ -3,7 +3,7 @@
    leituras em conteudo/<slug>.html, buscadas sob demanda. Progresso no aparelho (localStorage com
    espelho em IndexedDB) e backup por arquivo em Ajustes. */
 "use strict";
-const E = window.FU_ESTUDO || {areas:[],leituras:[],semanas:[],cartoes:[],questoes:[],casos:[],indice:[],conteudo:"conteudo/",residencia:"2027-03-01"};
+const E = window.FU_ESTUDO || {areas:[],leituras:[],semanas:[],cartoes:[],questoes:[],casos:[],prescricoes:[],indice:[],conteudo:"conteudo/",residencia:"2027-03-01"};
 const RF = window.FU_REF || {farmacos:[],bulario:[],interacoes:[]};
 const VERSAO = "1.0";
 const PREF = "fu_";
@@ -48,7 +48,7 @@ const debounce = (f, ms) => { let t; return (...a) => { clearTimeout(t); t = set
 /* ---------- armazenamento ---------- */
 const PADRAO = {
   cfg: {meta: {q: 20, c: 30, min: 60}, novos: 20, inicio: null, fonte: 1, nome: "", instalado: false},
-  lidas: {}, prog: {}, notas: {}, resp: {}, fav: {}, srs: {}, ativ: {}, tarefas: {}, casos: {}, sims: [],
+  lidas: {}, prog: {}, notas: {}, resp: {}, fav: {}, srs: {}, ativ: {}, tarefas: {}, casos: {}, presc: {}, sims: [],
   pos: {}, tema: "auto", recentes: []
 };
 const CHAVES = Object.keys(PADRAO);
@@ -100,7 +100,7 @@ function restauraDoEspelho() {
 
 /* ---------- dados derivados ---------- */
 const AREA = Object.fromEntries(E.areas.map(a => [a.id, a]));
-const COR = {azul:"var(--c-azul)", ciano:"var(--c-ciano)", verde:"var(--c-verde)", violeta:"var(--c-violeta)", laranja:"var(--c-laranja)", vermelho:"var(--c-vermelho)", indigo:"var(--c-indigo)", ambar:"var(--c-ambar)", rosa:"var(--c-rosa)", teal:"var(--c-teal)", cinza:"var(--c-cinza)"};
+const COR = {azul:"var(--c-azul)", ciano:"var(--c-ciano)", verde:"var(--c-verde)", violeta:"var(--c-violeta)", laranja:"var(--c-laranja)", vermelho:"var(--c-vermelho)", indigo:"var(--c-indigo)", ambar:"var(--c-ambar)", rosa:"var(--c-rosa)", teal:"var(--c-teal)", cinza:"var(--c-cinza)", lima:"var(--c-lima)"};
 const corA = a => COR[AREA[a]?.cor] || COR.indigo;
 const icA = a => AREA[a]?.icone || "book";
 const LEIT = Object.fromEntries(E.leituras.map(l => [l.slug, l]));
@@ -110,6 +110,8 @@ E.questoes.forEach(q => (QPL[q.l] ||= []).push(q));
 const CID = Object.fromEntries(E.cartoes.map(c => [c.id, c]));
 const QID = Object.fromEntries(E.questoes.map(q => [q.id, q]));
 const CASO = Object.fromEntries(E.casos.map(c => [c.id, c]));
+E.prescricoes ||= [];
+const RX = Object.fromEntries(E.prescricoes.map(r => [r.id, r]));
 const FARM = Object.fromEntries(RF.farmacos.map(f => [f.id, f]));
 const BUL = Object.fromEntries(RF.bulario.map(b => [b.id, b]));
 const par = (a, b) => a < b ? a + "|" + b : b + "|" + a;
@@ -125,6 +127,7 @@ const ABAS = [
   {id:"cartoes", nome:"Cartões", ic:"cards", cor:"ambar", g:"Estudo"},
   {id:"questoes", nome:"Questões", ic:"checklist", cor:"azul", g:"Estudo"},
   {id:"casos", nome:"Casos clínicos", ic:"clipboard-heart", cor:"rosa", g:"Estudo"},
+  {id:"prescricoes", nome:"Prescrições", ic:"prescription", cor:"lima", g:"Estudo"},
   {id:"interacoes", nome:"Interações", ic:"arrows-exchange", cor:"vermelho", g:"Ferramentas"},
   {id:"bulario", nome:"Bulário", ic:"pill", cor:"teal", g:"Ferramentas"},
   {id:"calculadoras", nome:"Calculadoras", ic:"calculator", cor:"laranja", g:"Ferramentas"},
@@ -133,7 +136,7 @@ const ABAS = [
 ];
 const ABA = Object.fromEntries(ABAS.map(a => [a.id, a]));
 const BARRA = ["inicio", "leituras", "cartoes", "questoes"];
-const ESTUDO = ["leituras", "cartoes", "questoes", "casos", "cronograma", "interacoes", "bulario", "calculadoras"];
+const ESTUDO = ["leituras", "cartoes", "questoes", "casos", "prescricoes", "cronograma", "interacoes", "bulario", "calculadoras"];
 let abaAtual = "inicio", paramAtual = "";
 
 function montaNav() {
@@ -272,7 +275,7 @@ function estatArea(a) {
 let PL = null;
 function plano() {
   const ini = ST.cfg.inicio || E.semanas[0]?.inicio || iso();
-  const assin = ini + "|" + E.casos.length;
+  const assin = ini + "|" + E.casos.length + "|" + E.prescricoes.length;
   if (PL && PL.assin === assin) return PL;
   const n = E.semanas.length;
   const semanas = E.semanas.map((w, wi) => {
@@ -283,6 +286,7 @@ function plano() {
     L.forEach((s, k) => dias[slots[k]].t.push({k: "L:" + s, tipo: "L", s}, {k: "C:" + s, tipo: "C", s}, {k: "Q:" + s, tipo: "Q", s}));
     if (wi > 0) [1, 3].forEach(di => { if (!slots.includes(di)) dias[di].t.push({k: `M:${w.n}:${di}`, tipo: "M", n: 10, ate: w.n - 1}); });
     E.casos.filter(c => Math.min(c.sem, n) === w.n).forEach((c, k) => dias[[3, 1, 5, 2, 4][k % 5]].t.push({k: "K:" + c.id, tipo: "K", id: c.id}));
+    E.prescricoes.filter(r => r.sem === w.n).forEach((r, k) => dias[[1, 3, 5, 2, 4, 0][k % 6]].t.push({k: "P:" + r.id, tipo: "P", id: r.id}));
     dias[5].t.push({k: `R:${w.n}`, tipo: "R", n: 20, sem: w.n});
     if (w.n === 12) dias[5].t.push({k: "X:12", tipo: "X", n: 30});
     if (w.n === n) dias[4].t.push({k: "X:final", tipo: "X", n: 60});
@@ -303,6 +307,7 @@ function feitaAuto(t) {
     case "C": { const cs = CPL[t.s] || []; return cs.length > 0 && cs.every(c => ST.srs[c.id]); }
     case "Q": { const qs = QPL[t.s] || []; return qs.length > 0 && qs.every(q => ST.resp[q.id]?.length); }
     case "K": return !!ST.casos[t.id]?.feito;
+    case "P": return !!ST.presc[t.id]?.feito;
     case "M": case "R": { const a = ST.ativ[t.data]; return !!a && (a.q || 0) >= t.n; }
     case "X": return (ST.sims || []).some(s => s.tarefa === t.k);
   }
@@ -317,6 +322,7 @@ function descTarefa(t) {
     case "Q": return {ic: "checklist", k: "var(--c-azul)", tt: `Resolver ${(QPL[t.s] || []).length} questões`, ds: l.titulo};
     case "M": return {ic: "arrows-shuffle", k: "var(--c-azul)", tt: `${t.n} questões intercaladas`, ds: `revisão das semanas 1 a ${t.ate}`};
     case "R": return {ic: "repeat", k: "var(--c-verde)", tt: `Revisão da semana ${t.sem}`, ds: `${t.n} questões da semana e caderno de erros`};
+    case "P": { const r = RX[t.id]; return {ic: "prescription", k: "var(--c-lima)", tt: `Avaliar prescrição: ${r ? r.titulo : t.id}`, ds: r ? `${r.setor} · ${r.itens.length} itens` : ""}; }
     case "K": { const c = CASO[t.id]; return {ic: "clipboard-heart", k: "var(--c-rosa)", tt: `Caso clínico: ${c ? c.titulo : t.id}`, ds: "acompanhamento farmacoterapêutico"}; }
     case "X": return {ic: "stopwatch", k: "var(--c-laranja)", tt: t.k === "X:final" ? `Simulado final de ${t.n} questões` : `Simulado de meio de percurso (${t.n} questões)`, ds: "com cronômetro, correção no fim"};
   }
@@ -330,6 +336,7 @@ function irTarefa(t) {
     case "M": QS.filtro = {...FILTRO0, ate: t.ate}; QS.misturar = true; return ir("questoes");
     case "R": QS.filtro = {...FILTRO0, sem: t.sem}; QS.misturar = true; return ir("questoes");
     case "K": return ir("casos", t.id);
+    case "P": return ir("prescricoes", t.id);
     case "X": SIM.cfg = {n: t.n, escopo: "liberadas", tarefa: t.k}; return ir("questoes", "simulado");
   }
 }
@@ -347,7 +354,7 @@ function alternaTarefa(k) {
   if (ST.tarefas[k]) delete ST.tarefas[k]; else ST.tarefas[k] = true;
   salva("tarefas"); rota();
 }
-function pendencias() { const h = iso(); return plano().todas.filter(t => t.data < h && ["L", "C", "Q", "K", "X"].includes(t.tipo) && !feita(t)); }
+function pendencias() { const h = iso(); return plano().todas.filter(t => t.data < h && ["L", "C", "Q", "K", "P", "X"].includes(t.tipo) && !feita(t)); }
 
 /* ======================================================================
    INÍCIO
@@ -441,7 +448,7 @@ function pintaCronograma() {
      <div class="kpi" style="--k:var(--c-violeta)"><b data-conta="${Object.keys(ST.lidas).filter(k => LEIT[k]).length}">0</b><span>de ${E.leituras.length} leituras</span></div>
      <div class="kpi" style="--k:${pend.length ? "var(--c-laranja)" : "var(--c-azul)"}"><b data-conta="${pend.length}">0</b><span>${pend.length === 1 ? "tarefa atrasada" : "tarefas atrasadas"}</span></div>
    </div>
-   <p class="sub" style="margin:-4px 0 18px">Segunda, quarta e sexta são dias de leitura (com os cartões e as questões do texto). Terça e quinta ficam para revisão intercalada e casos clínicos; sábado, para a revisão da semana. Domingo é livre. As tarefas de leitura, cartões, questões e casos se marcam sozinhas quando você as faz.${proj ? " " + proj : ""}</p>
+   <p class="sub" style="margin:-4px 0 18px">Segunda, quarta e sexta são dias de leitura (com os cartões e as questões do texto). Terça, quinta e sábado têm uma prescrição para avaliar; terça e quinta também trazem revisão intercalada e casos clínicos, e o sábado fecha a semana com a revisão. Domingo é livre. As tarefas de leitura, cartões, questões e casos se marcam sozinhas quando você as faz.${proj ? " " + proj : ""}</p>
    ${pend.length ? `<div class="cx" style="margin-bottom:18px;--ac:var(--c-laranja)"><h3><i class="ti ti-alert-circle"></i>Atrasadas</h3>${pend.slice(0, 8).map(htmlTarefa).join("")}${pend.length > 8 ? `<p class="sub">e mais ${pend.length - 8} nas semanas abaixo.</p>` : ""}</div>` : ""}
    <div id="semanas">${pl.semanas.map((w, i) => htmlSemana(w, i, wi, hoje)).join("")}</div>`;
   vivo(s);
@@ -914,6 +921,135 @@ function pintaCaso(id) {
 }
 
 /* ======================================================================
+   AVALIAÇÃO DE PRESCRIÇÕES
+   Triagem rápida, como no plantão: tocar nas linhas com problema, dizer o tipo, corrigir.
+   Nota = (problemas achados − metade dos falsos alarmes) ÷ total de problemas. O tipo certo é
+   informado à parte, porque achar o problema já é o que mais pesa na prática.
+   ====================================================================== */
+const TIPOS_RX = [
+  ["dose", "Dose"], ["renal", "Ajuste renal ou hepático"], ["intervalo", "Frequência ou duração"], ["interacao", "Interação"],
+  ["via", "Via ou forma farmacêutica"], ["admin", "Diluição, velocidade ou compatibilidade"], ["duplicidade", "Duplicidade"],
+  ["semindicacao", "Sem indicação"], ["contraindicacao", "Contraindicação ou alergia"], ["redacao", "Redação ou ambiguidade"],
+  ["monitorizacao", "Falta monitorização"]
+];
+const TIPO_RX = Object.fromEntries(TIPOS_RX);
+const RXS = {id: "", marc: {}, t0: 0, omiTxt: "", semFiltro: "liberadas"};
+function notaRx(r, st) {
+  const probs = r.itens.map((it, i) => it.problema ? i : -1).filter(i => i >= 0);
+  const marc = st.marc || {};
+  const tp = probs.filter(i => i in marc).length, fn = probs.length - tp;
+  const fp = Object.keys(marc).filter(i => !r.itens[i]?.problema).length;
+  const tipoOk = probs.filter(i => i in marc && marc[i] && r.itens[i].problema.tipos.includes(marc[i])).length;
+  const om = (st.omi || []).filter(Boolean).length, tot = probs.length + (r.omissoes || []).length;
+  const nota = Math.max(0, Math.round(100 * (tp + om - fp / 2) / Math.max(1, tot)));
+  return {tp, fn, fp, tipoOk, om, tot, nota, nprob: probs.length};
+}
+function estatRx() {
+  let n = 0, soma = 0, tp = 0, fn = 0, fp = 0; const perd = {};
+  for (const r of E.prescricoes) {
+    const st = ST.presc[r.id]; if (!st?.feito) continue;
+    const x = notaRx(r, st); n++; soma += x.nota; tp += x.tp; fn += x.fn; fp += x.fp;
+    r.itens.forEach((it, i) => { if (it.problema && !(i in (st.marc || {}))) it.problema.tipos.forEach(t => perd[t] = (perd[t] || 0) + 1); });
+  }
+  return {n, media: n ? Math.round(soma / n) : 0, sens: pct(tp, tp + fn), fpPor: n ? fp / n : 0, perd};
+}
+function pintaPrescricoes(id) {
+  if (id && RX[id]) return pintaRx(id);
+  const w = semanaLiberada(), e = estatRx();
+  titulo("prescription", "Avaliação de prescrições", `${E.prescricoes.length} prescrições fictícias de UTI com erros plantados: marque as linhas com problema, diga o tipo e compare com o gabarito`);
+  const s = $("#sec-prescricoes");
+  if (!E.prescricoes.length) { s.innerHTML = `<div class="cx vazio"><i class="ti ti-prescription"></i>As prescrições estão em preparação.</div>`; return; }
+  const lista = E.prescricoes.filter(r => RXS.semFiltro === "todas" || r.sem <= w || ST.presc[r.id]);
+  const porSem = {}; lista.forEach(r => (porSem[r.sem] ||= []).push(r));
+  s.innerHTML = `<div class="kpis anima">
+     <div class="kpi" style="--k:var(--c-lima)"><b data-conta="${e.n}">0</b><span>de ${E.prescricoes.length} avaliadas</span></div>
+     <div class="kpi" style="--k:var(--c-azul)"><b data-conta="${e.media}" data-suf="%">0</b><span>nota média</span></div>
+     <div class="kpi" style="--k:var(--c-verde)"><b data-conta="${e.sens}" data-suf="%">0</b><span>dos problemas encontrados</span></div>
+     <div class="kpi" style="--k:var(--c-laranja)"><b>${num(e.fpPor, 1)}</b><span>falsos alarmes por prescrição</span></div></div>
+   <div class="filtros"><div class="tabs2"><button data-rx-f="liberadas" aria-pressed="${RXS.semFiltro === "liberadas"}">Liberadas até a semana ${w}</button><button data-rx-f="todas" aria-pressed="${RXS.semFiltro === "todas"}">Todas</button></div>
+     <span class="sub">Como no plantão: leia em 3 a 5 minutos, toque nas linhas com problema e só então corrija.</span></div>
+   ${Object.keys(porSem).map(Number).sort((a, b) => a - b).map(sm => `<h2 class="grupoL" style="--k:var(--c-lima)"><i class="ti ti-calendar"></i>Semana ${sm} <small>${esc(E.semanas[sm - 1]?.tema || "")}</small></h2>
+     <div class="listaL anima">${porSem[sm].map(r => { const st = ST.presc[r.id]; const x = st?.feito ? notaRx(r, st) : null;
+       return `<button class="itemL" style="--k:var(--c-lima)" data-ir-rx="${r.id}"><div class="meta"><span>${esc(r.setor)}</span><span>·</span><span>${NIVEL[r.nivel] || r.nivel}</span></div>
+        <h3>${esc(r.titulo)}</h3><p>${r.paciente.idade} anos, ${r.paciente.sexo === "F" ? "feminino" : "masculino"}, ${num(r.paciente.peso)} kg · ${r.itens.length} itens na prescrição</p>
+        <div class="rod">${x ? `<span class="pil ${x.nota >= 70 ? "ok" : x.nota >= 40 ? "av" : "er"}">nota ${x.nota}% · ${x.tp + x.om}/${x.tot} problemas</span>` : `<span class="sub">não avaliada</span>`}</div></button>`; }).join("")}</div>`).join("")}`;
+  vivo(s);
+}
+function pintaRx(id) {
+  const r = RX[id], st = ST.presc[id] || {};
+  if (RXS.id !== id) { RXS.id = id; RXS.marc = st.feito && !st.refazer ? {...(st.marc || {})} : {}; RXS.t0 = Date.now(); RXS.omiTxt = st.omiTxt || ""; }
+  const corrigida = !!st.feito && !st.refazer;
+  const i0 = E.prescricoes.indexOf(r), prox = E.prescricoes[i0 + 1];
+  titulo("prescription", esc(r.titulo), `${esc(r.setor)} · ${NIVEL[r.nivel] || r.nivel} · semana ${r.sem} do cronograma`,
+    `<button class="bt sec mini" data-ir="prescricoes"><i class="ti ti-arrow-left"></i>Prescrições</button>`);
+  const p = r.paciente, x = corrigida ? notaRx(r, st) : null;
+  const linha = (it, i) => {
+    const m = i in RXS.marc, pr = it.problema;
+    let est = "", ex = "";
+    if (corrigida) {
+      if (pr && m) { est = " tp"; const tOk = RXS.marc[i] && pr.tipos.includes(RXS.marc[i]);
+        ex = `<div class="rxEx"><b><i class="ti ti-circle-check"></i> Problema encontrado</b>${RXS.marc[i] ? ` · você marcou <i>${esc(TIPO_RX[RXS.marc[i]])}</i>${tOk ? "" : `; o tipo esperado era <i>${pr.tipos.map(t => esc(TIPO_RX[t])).join(" ou ")}</i>`}` : ` · tipo: <i>${pr.tipos.map(t => esc(TIPO_RX[t])).join(" ou ")}</i>`}<p>${esc(pr.explicacao)}</p><p><b>Intervenção:</b> ${esc(pr.correcao)}</p></div>`; }
+      else if (pr) { est = " fn"; ex = `<div class="rxEx"><b><i class="ti ti-alert-circle"></i> Problema não marcado</b> · <i>${pr.tipos.map(t => esc(TIPO_RX[t])).join(" ou ")}</i><p>${esc(pr.explicacao)}</p><p><b>Intervenção:</b> ${esc(pr.correcao)}</p></div>`; }
+      else if (m) { est = " fp"; ex = `<div class="rxEx"><b><i class="ti ti-info-circle"></i> Falso alarme:</b> esta linha está adequada para o paciente.</div>`; }
+      else est = " ok";
+    }
+    return `<div class="rxLinha${m ? " marcada" : ""}${est}" ${corrigida ? "" : `data-rxl="${i}" role="button" tabindex="0" aria-pressed="${m}"`}>
+      <span class="n">${i + 1}</span><div class="tx">${esc(it.texto)}
+      ${!corrigida && m ? `<div class="rxTipos">${TIPOS_RX.map(([k, nm]) => `<button class="chip" data-rxt="${i}" data-t="${k}" aria-pressed="${RXS.marc[i] === k}">${nm}</button>`).join("")}</div>` : ""}${ex}</div>
+      ${corrigida ? "" : `<i class="ti ti-${m ? "flag-filled" : "flag"} bandeira"></i>`}</div>`;
+  };
+  const s = $("#sec-prescricoes");
+  s.innerHTML = `<div class="rxGrade">
+   <div>
+    <div class="folhaRx">
+     <div class="rxCab"><div class="dadoPac">${p.idade ? `<span class="pil">${p.idade} anos</span>` : ""}<span class="pil">${p.sexo === "F" ? "feminino" : "masculino"}</span>${p.peso ? `<span class="pil">${num(p.peso)} kg</span>` : ""}${p.altura ? `<span class="pil">${p.altura} cm</span>` : ""}
+       <span class="pil ${/nega|nenhuma|sem alerg|nkda/i.test(p.alergias || "nega") ? "" : "er"}">alergias: ${esc(p.alergias || "nega")}</span></div>
+       <p>${esc(r.contexto)}</p>
+       <div class="rxDados">${(r.dados || []).map(([k, v]) => `<span><small>${esc(k)}</small><b>${esc(v)}</b></span>`).join("")}</div></div>
+     <div class="rxTit"><i class="ti ti-prescription"></i>Prescrição médica de hoje ${corrigida ? "" : '<span class="sub">toque nas linhas com problema</span>'}</div>
+     ${r.itens.map(linha).join("")}
+    </div>
+    ${corrigida ? `${(r.omissoes || []).length ? `<div class="cx" style="margin-top:16px"><h3><i class="ti ti-square-plus"></i>O que faltava na prescrição</h3><p class="sub" style="margin:-4px 0 6px">Marque o que você tinha apontado no campo de omissões.</p>
+       ${r.omissoes.map((o, k) => `<div class="prob${st.omi?.[k] ? " on" : ""}" data-acao="rxOmi" data-k="${id}" data-i="${k}" role="checkbox" aria-checked="${!!st.omi?.[k]}" tabindex="0"><span class="chk"><i class="ti ti-check"></i></span><div><b>${esc(o.texto)}</b><dl><dt>Por quê</dt><dd>${esc(o.explicacao)}</dd><dt>Intervenção</dt><dd>${esc(o.correcao)}</dd></dl></div></div>`).join("")}</div>` : ""}
+      <div class="cx" style="margin-top:16px"><h3><i class="ti ti-message-2"></i>Comentário</h3><p style="margin:0;line-height:1.7">${esc(r.comentario)}</p>
+       ${r.leituras?.length ? `<div class="chips" style="margin-top:12px">${r.leituras.map(sl => LEIT[sl] ? `<a class="chip" href="#leituras/${sl}" style="text-decoration:none"><i class="ti ti-book-2"></i>${esc(LEIT[sl].titulo)}</a>` : "").join("")}</div>` : ""}</div>`
+    : `<div class="cx" style="margin-top:16px"><h3><i class="ti ti-square-plus"></i>Falta alguma coisa?</h3><textarea id="rxOmi" placeholder="Indicação sem tratamento, profilaxia ausente, exame ou nível sérico que deveria estar pedido…">${esc(RXS.omiTxt)}</textarea></div>`}
+   </div>
+   <aside class="lado">
+    <div class="cx">${corrigida ? `<h3><i class="ti ti-report-analytics"></i>Resultado</h3>
+       <div class="vAnel" style="width:120px;height:120px;margin:4px auto 10px">${anel(x.nota / 100, 120, "var(--c-lima)", "var(--sup3)", 11)}<div class="val"><b data-conta="${x.nota}" data-suf="%" style="color:color-mix(in srgb,var(--c-lima) 80%,var(--ink));font-size:28px">0</b><span class="sub">nota</span></div></div>
+       ${linhaRx("Problemas encontrados", `${x.tp} de ${x.nprob}`)}${(r.omissoes || []).length ? linhaRx("Omissões apontadas", `${x.om} de ${r.omissoes.length}`) : ""}${linhaRx("Tipo certo", `${x.tipoOk} de ${x.tp}`)}${linhaRx("Falsos alarmes", x.fp)}${linhaRx("Tempo", `${Math.floor((st.seg || 0) / 60)} min ${(st.seg || 0) % 60} s`)}
+       <div class="linhaBt" style="margin-top:14px">${prox ? `<button class="bt" style="--ac:var(--c-lima)" data-ir-rx="${prox.id}">Próxima<i class="ti ti-arrow-right"></i></button>` : ""}<button class="bt sec" data-acao="rxRefaz" data-k="${id}"><i class="ti ti-refresh"></i>Refazer</button></div>`
+      : `<h3><i class="ti ti-stopwatch"></i>Triagem</h3><div class="rxRel" id="rxRel">${(sg => `${p2(Math.floor(sg / 60))}:${p2(sg % 60)}`)(Math.floor((Date.now() - RXS.t0) / 1000))}</div>
+       <p class="sub" style="margin:4px 0 12px"><b id="rxN">${Object.keys(RXS.marc).length}</b> ${Object.keys(RXS.marc).length === 1 ? "linha marcada" : "linhas marcadas"}. Escolher o tipo é opcional, mas conta à parte.</p>
+       <button class="bt" style="--ac:var(--c-lima);width:100%" data-acao="rxCorrige" data-k="${id}"><i class="ti ti-checks"></i>Corrigir</button>`}</div>
+    <div class="cx"><h3><i class="ti ti-help"></i>Tipos de problema</h3><div class="sub" style="line-height:1.7">${TIPOS_RX.map(t => t[1]).join(" · ")}</div></div>
+   </aside></div>`;
+  if (!corrigida) {
+    $("#rxOmi").addEventListener("input", e => RXS.omiTxt = e.target.value);
+    clearInterval(rxRelogio);
+    rxRelogio = setInterval(() => { const el = $("#rxRel"); if (!el || RXS.id !== id) return clearInterval(rxRelogio); const sg = Math.floor((Date.now() - RXS.t0) / 1000); el.textContent = `${p2(Math.floor(sg / 60))}:${p2(sg % 60)}`; }, 1000);
+  }
+  vivo(s);
+}
+let rxRelogio = null;
+const linhaRx = (a, b) => `<div class="linhaR" style="display:flex;justify-content:space-between;padding:6px 0;border-top:1px solid var(--linha);font-size:14px"><span>${a}</span><b>${b}</b></div>`;
+function marcaLinhaRx(i) {
+  if (i in RXS.marc) delete RXS.marc[i]; else RXS.marc[i] = "";
+  const y = scrollY; pintaRx(RXS.id); scrollTo(0, y);
+}
+function corrigeRx(id) {
+  const r = RX[id], ant = ST.presc[id] || {};
+  const st = {marc: {...RXS.marc}, omi: (r.omissoes || []).map(() => false), omiTxt: RXS.omiTxt, seg: Math.round((Date.now() - RXS.t0) / 1000), feito: iso(), tent: (ant.tent || 0) + 1};
+  ST.presc[id] = st; salva("presc");
+  const a = ativ(); a.rx = (a.rx || 0) + 1; salva("ativ");
+  const x = notaRx(r, st);
+  if (x.nota >= 80) confete();
+  const y = scrollY; pintaRx(id); scrollTo(0, y);
+  aviso(`${x.tp} de ${x.nprob} problemas encontrados${x.fp ? `, ${x.fp} ${x.fp > 1 ? "falsos alarmes" : "falso alarme"}` : ""}.`);
+}
+
+/* ======================================================================
    INTERAÇÕES
    ====================================================================== */
 const GRAV = {
@@ -948,7 +1084,10 @@ const EXEMPLOS = [
   ["Transplantado renal", ["tacrolimo", "micofenolato", "fluconazol", "sulfametoxazol-trimetoprima", "omeprazol", "anlodipino"]],
   ["Delirium e QT", ["haloperidol", "ondansetrona", "azitromicina", "amiodarona", "quetiapina", "furosemida"]],
   ["Neurocrítico", ["fenitoina", "meropenem", "acido-valproico", "midazolam", "dexametasona", "nimodipino"]],
-  ["Cardiopata anticoagulado", ["varfarina", "amiodarona", "sinvastatina", "clopidogrel", "omeprazol", "espironolactona"]]
+  ["Cardiopata anticoagulado", ["varfarina", "amiodarona", "sinvastatina", "clopidogrel", "omeprazol", "espironolactona"]],
+  ["HIV com tuberculose", ["dolutegravir", "tenofovir-lamivudina", "rifampicina", "isoniazida", "sulfametoxazol-trimetoprima", "gluconato-calcio"]],
+  ["Covid com nirmatrelvir", ["nirmatrelvir-ritonavir", "tacrolimo", "rivaroxabana", "sinvastatina", "midazolam", "amiodarona"]],
+  ["Psiquiátrico na UTI", ["litio", "sertralina", "linezolida", "tramadol", "enalapril", "hidroclorotiazida"]]
 ];
 function pintaInteracoes(id) {
   INT.ids = (ST.pos.int || []).filter(x => FARM[x]);
@@ -1026,10 +1165,10 @@ function htmlInter(x) {
    BULÁRIO
    ====================================================================== */
 const BF = {q: "", g: ""};
-const IC_GRUPO = {"Vasoativos e inotrópicos": "heart-bolt", "Vasodilatadores e anti-hipertensivos": "activity-heartbeat", "Sedação, analgesia e delirium": "zzz", "Bloqueadores neuromusculares e reversores": "bone", "Anticoagulantes, antiplaquetários e reversores": "droplet", "Antiarrítmicos e cardiovasculares": "heartbeat", "Diuréticos, fluidos e eletrólitos": "droplet-half-2", "Anticonvulsivantes": "brain", "Endócrino e corticoides": "flask-2", "Trato gastrointestinal": "tools-kitchen-2", "Imunossupressores": "shield-half", "Psicofármacos": "mood-empty", "Antibacterianos": "bacteria", "Antifúngicos": "plant", "Antivirais": "virus"};
-const COR_GRUPO = {"Antibacterianos": "var(--c-laranja)", "Antifúngicos": "var(--c-laranja)", "Antivirais": "var(--c-laranja)", "Anticoagulantes, antiplaquetários e reversores": "var(--c-vermelho)", "Vasoativos e inotrópicos": "var(--c-rosa)", "Sedação, analgesia e delirium": "var(--c-violeta)"};
+const IC_GRUPO = {"Vasoativos e inotrópicos": "heart-bolt", "Vasodilatadores e anti-hipertensivos": "activity-heartbeat", "Sedação, analgesia e delirium": "zzz", "Bloqueadores neuromusculares e reversores": "bone", "Anticoagulantes, antiplaquetários e reversores": "droplet", "Antiarrítmicos e cardiovasculares": "heartbeat", "Diuréticos, fluidos e eletrólitos": "droplet-half-2", "Anticonvulsivantes": "brain", "Endócrino e corticoides": "flask-2", "Trato gastrointestinal": "tools-kitchen-2", "Imunossupressores": "shield-half", "Psicofármacos": "mood-empty", "Antibacterianos": "bacteria", "Antifúngicos": "plant", "Antivirais": "virus", "Antídotos e toxicologia": "first-aid-kit", "Respiratório": "lungs", "Hematologia e outros": "test-pipe", "Antiparasitários": "bug"};
+const COR_GRUPO = {"Antibacterianos": "var(--c-laranja)", "Antifúngicos": "var(--c-laranja)", "Antivirais": "var(--c-laranja)", "Anticoagulantes, antiplaquetários e reversores": "var(--c-vermelho)", "Vasoativos e inotrópicos": "var(--c-rosa)", "Sedação, analgesia e delirium": "var(--c-violeta)", "Antiparasitários": "var(--c-laranja)", "Antídotos e toxicologia": "var(--c-indigo)", "Respiratório": "var(--c-ciano)", "Psicofármacos": "var(--c-violeta)"};
 const corG = g => COR_GRUPO[g] || "var(--c-teal)";
-const LEIT_GRUPO = {"Vasoativos e inotrópicos": ["drogas-vasoativas"], "Vasodilatadores e anti-hipertensivos": ["cardiovasculares-antiarritmicos"], "Sedação, analgesia e delirium": ["analgesia-sedacao-delirium", "intubacao-sequencia-rapida"], "Bloqueadores neuromusculares e reversores": ["bloqueadores-neuromusculares"], "Anticoagulantes, antiplaquetários e reversores": ["anticoagulantes-reversao", "profilaxias-uti"], "Antiarrítmicos e cardiovasculares": ["cardiovasculares-antiarritmicos"], "Diuréticos, fluidos e eletrólitos": ["fluidos-diureticos", "eletrolitos"], "Anticonvulsivantes": ["anticonvulsivantes-status"], "Endócrino e corticoides": ["insulina-corticoides"], "Trato gastrointestinal": ["trato-gastrointestinal"], "Imunossupressores": ["interacoes-cyp-transportadores"], "Psicofármacos": ["interacoes-farmacodinamicas"], "Antibacterianos": ["betalactamicos", "carbapenemicos-novos-betalactamicos", "gram-positivos-resistentes", "aminoglicosideos-polimixinas", "outras-classes-antibacterianas"], "Antifúngicos": ["antifungicos"], "Antivirais": ["antivirais-uti"]};
+const LEIT_GRUPO = {"Vasoativos e inotrópicos": ["drogas-vasoativas"], "Vasodilatadores e anti-hipertensivos": ["cardiovasculares-antiarritmicos"], "Sedação, analgesia e delirium": ["analgesia-sedacao-delirium", "intubacao-sequencia-rapida"], "Bloqueadores neuromusculares e reversores": ["bloqueadores-neuromusculares"], "Anticoagulantes, antiplaquetários e reversores": ["anticoagulantes-reversao", "profilaxias-uti"], "Antiarrítmicos e cardiovasculares": ["cardiovasculares-antiarritmicos"], "Diuréticos, fluidos e eletrólitos": ["fluidos-diureticos", "eletrolitos"], "Anticonvulsivantes": ["anticonvulsivantes-status"], "Endócrino e corticoides": ["insulina-corticoides"], "Trato gastrointestinal": ["trato-gastrointestinal"], "Imunossupressores": ["interacoes-cyp-transportadores"], "Psicofármacos": ["interacoes-farmacodinamicas"], "Antibacterianos": ["betalactamicos", "carbapenemicos-novos-betalactamicos", "gram-positivos-resistentes", "aminoglicosideos-polimixinas", "outras-classes-antibacterianas"], "Antifúngicos": ["antifungicos"], "Antivirais": ["antivirais-uti", "interacoes-antimicrobianos"], "Antídotos e toxicologia": ["toxicologia-antidotos"], "Respiratório": ["fisiologia-respiratoria-vm"], "Hematologia e outros": ["figado-coagulacao"], "Antiparasitários": ["antivirais-uti"]};
 function pintaBulario(id) {
   if (id && FARM[id]) return pintaFicha(id);
   titulo("pill", "Bulário", `${RF.bulario.length} fichas de fármacos da UTI: dose, ajuste renal e hepático, administração, monitorização e interações`);
@@ -1327,6 +1466,9 @@ function pintaDesempenho() {
      <div class="cx"><h3><i class="ti ti-alert-triangle"></i>Leituras com mais erros</h3>${fracas.length ? fracas.map(({l, e}) => `<div class="tarefa" style="--k:${corA(l.area)}"><span class="chk" style="border:0;background:color-mix(in srgb,var(--k) 14%,var(--sup));color:var(--k);font-size:11px;font-weight:800">${e.taxa}%</span><div><div class="tt">${esc(l.titulo)}</div><div class="ds">${e.acTent}/${e.tent} acertos</div></div><button class="ir" data-acao="qLeitura" data-s="${l.slug}" aria-label="Treinar"><i class="ti ti-player-play"></i></button></div>`).join("") : '<p class="sub">Aparece depois de 3 respostas numa mesma leitura.</p>'}</div>
      <div class="cx"><h3><i class="ti ti-stairs"></i>Por nível</h3>${niveis.map(({n, e}) => `<div class="metaItem" style="--k:var(--c-azul)"><span class="ic"><i class="ti ti-stairs-up"></i></span><div><b>${NIVEL[n]}</b><div class="barra"><i data-w="${e.taxa}"></i></div></div><em>${e.tent ? e.taxa + "%" : "–"}</em></div>`).join("")}</div>
      <div class="cx"><h3><i class="ti ti-cards"></i>Cartões</h3>${[["novo", "Nunca vistos", "var(--ink3)"], ["aprend", "Aprendendo (menos de 3 dias)", "var(--c-laranja)"], ["jovem", "Jovens (3 a 20 dias)", "var(--c-ambar)"], ["maduro", "Maduros (21 dias ou mais)", "var(--c-verde)"]].map(([k, nm, cor]) => `<div class="metaItem" style="--k:${cor}"><span class="ic"><i class="ti ti-cards"></i></span><div><b>${nm}</b><div class="barra"><i data-w="${pct(est[k], E.cartoes.length)}"></i></div></div><em>${est[k]}</em></div>`).join("")}</div>
+     ${(() => { const r = estatRx(); if (!r.n) return ""; const perd = Object.entries(r.perd).sort((a, b) => b[1] - a[1]).slice(0, 4);
+       return `<div class="cx"><h3><i class="ti ti-prescription"></i>Prescrições</h3>${[["Nota média", r.media, "var(--c-lima)"], ["Problemas encontrados", r.sens, "var(--c-verde)"]].map(([nm, v, cor]) => `<div class="metaItem" style="--k:${cor}"><span class="ic"><i class="ti ti-prescription"></i></span><div><b>${nm}</b><div class="barra"><i data-w="${v}"></i></div></div><em>${v}%</em></div>`).join("")}
+        <p class="sub" style="margin:12px 0 4px">${r.n} avaliadas · ${num(r.fpPor, 1)} falso alarme por prescrição${perd.length ? " · o que mais escapa: " + perd.map(([t, n]) => `${TIPO_RX[t].toLowerCase()} (${n})`).join(", ") : ""}</p></div>`; })()}
      ${sims.length ? `<div class="cx"><h3><i class="ti ti-stopwatch"></i>Simulados</h3>${sims.slice(-6).map(x => `<div class="metaItem" style="--k:var(--c-laranja)"><span class="ic"><i class="ti ti-flag"></i></span><div><b>${new Date(x.ts).toLocaleDateString("pt-BR")} · ${x.n} questões</b><div class="barra"><i data-w="${pct(x.ok, x.n)}"></i></div></div><em>${pct(x.ok, x.n)}%</em></div>`).join("")}</div>` : ""}
     </div></div>`;
   vivo(s);
@@ -1426,6 +1568,7 @@ function abreBusca() {
       ["Seções das leituras", E.indice.map(([sl, i, t]) => ({p: pont(t), k: corA(LEIT[sl]?.area), ic: "section", t, s: LEIT[sl]?.titulo, h: "#leituras/" + sl, sec: i}))],
       ["Bulário", RF.bulario.map(b => ({p: Math.max(pont(b.nome) * 2, pont(b.classe)), k: corG(FARM[b.id]?.grupo), ic: "pill", t: b.nome, s: b.classe, h: "#bulario/" + b.id}))],
       ["Casos clínicos", E.casos.map(c => ({p: Math.max(pont(c.titulo), pont(c.resumo)), k: "var(--c-rosa)", ic: "clipboard-heart", t: c.titulo, s: c.resumo, h: "#casos/" + c.id}))],
+      ["Prescrições", E.prescricoes.map(r => ({p: Math.max(pont(r.titulo), pont(r.setor), pont(r.itens.map(i => i.texto).join(" ")) > 0 ? 1 : -1), k: "var(--c-lima)", ic: "prescription", t: r.titulo, s: `${r.setor} · semana ${r.sem}`, h: "#prescricoes/" + r.id}))],
       ["Calculadoras", CALCS.map(c => ({p: Math.max(pont(c.nm) * 2, pont(c.ds)), k: c.k, ic: c.ic, t: c.nm, s: c.ds, h: "#calculadoras/" + c.id}))],
       ["Cartões", E.cartoes.map(c => ({p: pont(c.f), k: "var(--c-ambar)", ic: "cards", t: c.f, s: LEIT[c.l]?.titulo, h: "#leituras/" + c.l}))]
     ];
@@ -1454,7 +1597,7 @@ function abreMais() {
 
 /* ---------- eventos (delegação única) ---------- */
 document.addEventListener("click", e => {
-  const t = e.target.closest("[data-ir],[data-ir-l],[data-ir-c],[data-ir-k],[data-ir-b],[data-ir-calc],[data-acao],[data-alt],[data-simalt],[data-simir],[data-nota],[data-qf],[data-lf-modo],[data-lf-st],[data-lf-area],[data-sim-n],[data-sim-e],[data-ex],[data-add],[data-rm],[data-bf-g],[data-fecha],#carta,.itR,.toc a");
+  const t = e.target.closest("[data-ir],[data-ir-l],[data-ir-c],[data-ir-k],[data-ir-b],[data-ir-calc],[data-ir-rx],[data-rxt],[data-rxl],[data-rx-f],[data-acao],[data-alt],[data-simalt],[data-simir],[data-nota],[data-qf],[data-lf-modo],[data-lf-st],[data-lf-area],[data-sim-n],[data-sim-e],[data-ex],[data-add],[data-rm],[data-bf-g],[data-fecha],#carta,.itR,.toc a");
   if (!t) return;
   if (t.dataset.fecha && e.target === t) return fechaCamada();
   if (t.classList.contains("itR")) { fechaCamada(); if (t.dataset.sec != null) LER_SECAO = +t.dataset.sec; location.hash = t.dataset.h; if (location.hash === t.dataset.h) rota(); return; }
@@ -1466,6 +1609,10 @@ document.addEventListener("click", e => {
   if (t.dataset.irK) return ir("casos", t.dataset.irK);
   if (t.dataset.irB) return ir("bulario", t.dataset.irB);
   if (t.dataset.irCalc) return ir("calculadoras", t.dataset.irCalc);
+  if (t.dataset.irRx) return ir("prescricoes", t.dataset.irRx);
+  if (t.dataset.rxt != null) { e.stopPropagation(); const i = t.dataset.rxt; RXS.marc[i] = RXS.marc[i] === t.dataset.t ? "" : t.dataset.t; const y = scrollY; pintaRx(RXS.id); scrollTo(0, y); return; }
+  if (t.dataset.rxl != null) return marcaLinhaRx(t.dataset.rxl);
+  if (t.dataset.rxF) { RXS.semFiltro = t.dataset.rxF; return pintaPrescricoes(); }
   if (t.dataset.alt != null) return responde(+t.dataset.alt);
   if (t.dataset.simalt != null) { const A = SIM.ativo, id = A.ids[A.i]; A.resp[id] = +t.dataset.simalt; return pintaQuestaoSim(); }
   if (t.dataset.simir != null) { SIM.ativo.i = +t.dataset.simir; return pintaQuestaoSim(); }
@@ -1506,6 +1653,9 @@ document.addEventListener("click", e => {
     case "revelaCaso": { const id = t.dataset.k; const st = ST.casos[id] ||= {}; st.txt = $("#casoTxt")?.value || st.txt || ""; st.rev = 1; salva("casos"); return pintaCaso(id); }
     case "marcaProb": { const id = t.dataset.k, i = +t.dataset.i, st = ST.casos[id]; const m = new Set(st.marc || []); m.has(i) ? m.delete(i) : m.add(i); st.marc = [...m]; salva("casos"); t.classList.toggle("on", m.has(i)); t.setAttribute("aria-checked", m.has(i)); const b = $('[data-acao="concluiCaso"]'); if (b) b.innerHTML = `<i class="ti ti-check"></i>${st.feito ? "Atualizar nota" : "Concluir caso"} (${m.size}/${CASO[id].gabarito.length})`; return; }
     case "concluiCaso": { const id = t.dataset.k, st = ST.casos[id]; const novo = !st.feito; st.feito = iso(); salva("casos"); if (novo) { confete(); aviso(`Caso concluído: ${st.marc?.length || 0} de ${CASO[id].gabarito.length} problemas identificados.`); } else aviso("Nota atualizada."); return ir("casos"); }
+    case "rxCorrige": return corrigeRx(t.dataset.k);
+    case "rxRefaz": { const st = ST.presc[t.dataset.k]; if (st) st.refazer = 1; RXS.id = ""; return pintaRx(t.dataset.k); }
+    case "rxOmi": { const st = ST.presc[t.dataset.k], i = +t.dataset.i; st.omi[i] = !st.omi[i]; salva("presc"); const y = scrollY; pintaRx(t.dataset.k); scrollTo(0, y); return; }
     case "limpaInt": INT.ids = []; ST.pos.int = []; salva("pos"); return pintaResultadoInt();
     case "verInt": INT.ids = [t.dataset.f]; ST.pos.int = INT.ids; salva("pos"); return ir("interacoes");
     case "instalar": if (promptInstalar) { promptInstalar.prompt(); promptInstalar.userChoice.finally(() => { promptInstalar = null; rota(); }); } return;
@@ -1547,6 +1697,7 @@ document.addEventListener("keydown", e => {
 
 /* ---------- partida ---------- */
 const PINTA = {
+  prescricoes: p => pintaPrescricoes(p),
   inicio: () => pintaInicio(), cronograma: () => pintaCronograma(), leituras: p => pintaLeituras(p), cartoes: p => pintaCartoes(p),
   questoes: p => pintaQuestoes(p), casos: p => pintaCasos(p), interacoes: p => pintaInteracoes(p), bulario: p => pintaBulario(p),
   calculadoras: p => pintaCalculadoras(p), desempenho: () => pintaDesempenho(), ajustes: () => pintaAjustes()

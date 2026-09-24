@@ -72,6 +72,20 @@ Achado do bulário A: a lista ISMP Brasil de MPP hospitalar vigente é a de 2019
 Limite de ~200 buscas web por sessão pode ter cortado a verificação de alguns agentes: os relatórios
 de cada um listam o que não conseguiram confirmar.
 
+## Avaliação de prescrições (24/09/2026)
+Aba "Prescrições": 66 prescrições fictícias de UTI (3 por semana, `lotes/prescricoes-a|b|c.json`, brief em
+`docs/BRIEF_PRESCRICOES.md`), cada uma com 8 a 14 linhas, 3 a 6 erros plantados em 11 tipos e até 2 omissões.
+O aluno marca as linhas e o tipo; nota = (achados + omissões − metade dos falsos alarmes) ÷ total. Tarefa "P"
+do cronograma em ter/qui/sáb, marcada sozinha ao corrigir. Gabaritos escritos a partir das leituras e do
+bulário do próprio app; os agentes apontaram contradições internas, corrigidas na mesma rodada.
+
+## Expansão do bulário e das interações (24/09/2026)
+`docs/farmacos.json` foi de 152 para 286 (lista dos novos em `docs/farmacos-novos.json`; grupos novos:
+antídotos, respiratório, hematologia, antiparasitários). Fichas em `lotes/bulario-d|e|f|g.json`; pares em
+`lotes/interacoes-2.json` (novos cardiovasculares/endócrino/GI/imuno) e `interacoes-3.json` (novos de
+sedação, psicofármacos, antídotos, anti-infecciosos). `monta.py` lê `interacoes*.json` em ordem e o par
+já existente vence. Total: 684 pares. Cota de 25 buscas por agente funcionou (usaram 0 a 12).
+
 ## Pendências e ideias
 - Sincronizar o progresso numa conta (hoje só aparelho + backup por arquivo).
 - Notificação diária de lembrete (precisa de push/servidor).
