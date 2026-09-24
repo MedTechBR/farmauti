@@ -1,0 +1,1543 @@
+{
+ "leituras": [
+  {
+   "slug": "principios-antibioticoterapia",
+   "titulo": "Princípios da antibioticoterapia no paciente crítico",
+   "dek": "Como decidir o primeiro antimicrobiano do paciente crítico, quando revê-lo, quando parar e como lidar com alergia a betalactâmico, com base no Surviving Sepsis Campaign 2026, no IDSA AMR Guidance 2026, em ensaios de duração de tratamento (BALANCE 2025, STOP-IT 2015) e no parâmetro de alergia a medicamentos AAAAI/ACAAI 2022.",
+   "palavras": 4466,
+   "fontes": [
+    "Surviving Sepsis Campaign 2026 (Prescott et al., Crit Care Med 2026)",
+    "IDSA AMR Gram-negative Guidance 2026 (v5.0)",
+    "BALANCE, N Engl J Med 2025",
+    "Seymour et al., N Engl J Med 2017",
+    "STOP-IT, N Engl J Med 2015",
+    "Yahav et al., Clin Infect Dis 2019",
+    "Chastre et al., JAMA 2003",
+    "ATS/IDSA CAP 2019",
+    "AAAAI/ACAAI Drug allergy practice parameter 2022",
+    "PEN-FAST, JAMA Intern Med 2020",
+    "OVIVA e POET, N Engl J Med 2019",
+    "CFF Resolução 585/2013"
+   ]
+  },
+  {
+   "slug": "pkpd-antimicrobianos",
+   "titulo": "PK/PD de antimicrobianos e otimização de dose",
+   "dek": "Índices PK/PD, alvos por classe, infusão prolongada de betalactâmicos, dose de ataque, depuração renal aumentada, hipoalbuminemia, monitorização sérica e simulação de Monte Carlo aplicados ao paciente crítico, com base no BLING III (JAMA 2024), na metanálise de Abdul-Aziz (JAMA 2024), no Surviving Sepsis Campaign 2026 e no Position Paper de TDM de antimicrobianos (Intensive Care Med 2020).",
+   "palavras": 4445,
+   "fontes": [
+    "BLING III, JAMA 2024",
+    "Abdul-Aziz et al., metanálise JAMA 2024",
+    "Surviving Sepsis Campaign 2026",
+    "Position Paper de TDM de antimicrobianos, Intensive Care Med 2020",
+    "SFPT/SFAR, Crit Care 2019",
+    "TARGET, Intensive Care Med 2022",
+    "Imani et al., J Antimicrob Chemother 2017",
+    "Udy et al., Crit Care Med 2014",
+    "BrCAST 2026 (EUCAST v16.0)",
+    "Consenso de vancomicina ASHP/IDSA/PIDS/SIDP 2020",
+    "Consenso internacional de polimixinas 2019"
+   ]
+  },
+  {
+   "slug": "betalactamicos",
+   "titulo": "Penicilinas, cefalosporinas e monobactâmicos",
+   "dek": "Mecanismo, espectro, resistência, dose no crítico, ajuste renal, administração e toxicidade das penicilinas, cefalosporinas de primeira a quinta geração e do aztreonam, com base no IDSA AMR Guidance 2026, na tabela de dosagens do BrCAST 2026, em ensaios como MERINO (2018) e ACORN (2023) e nas bulas.",
+   "palavras": 4480,
+   "fontes": [
+    "IDSA AMR Gram-negative Guidance 2026 (v5.0)",
+    "BrCAST 2026 (tabela de dosagens)",
+    "MERINO, JAMA 2018",
+    "ACORN, JAMA 2023",
+    "Luther et al., Crit Care Med 2018",
+    "ASHP/IDSA profilaxia cirúrgica 2013",
+    "AAAAI/ACAAI 2022",
+    "Bulas ANVISA/FDA"
+   ]
+  },
+  {
+   "slug": "carbapenemicos-novos-betalactamicos",
+   "titulo": "Carbapenêmicos e novas associações com inibidores de betalactamase",
+   "dek": "Meropenem, imipenem e ertapenem, e as novas associações de betalactâmico com inibidor (ceftazidima-avibactam, ceftolozana-tazobactam, meropenem-vaborbactam, imipenem-relebactam, aztreonam-avibactam, sulbactam-durlobactam) e o cefiderocol: qual cobre KPC, OXA-48, metalobetalactamase, P. aeruginosa DTR e CRAB, como dosar e o que existe no Brasil, com base no IDSA AMR Guidance 2026 (versão 5.0), no BrCAST 2026 e nas bulas.",
+   "palavras": 3863,
+   "fontes": [
+    "IDSA AMR Gram-negative Guidance 2026 (v5.0) e Tabela 1",
+    "IDSA AMR Guidance 2024 (Clin Infect Dis)",
+    "BrCAST 2026",
+    "MERINO, JAMA 2018",
+    "AAAAI/ACAAI 2022",
+    "ANVISA: registro de ceftazidima-avibactam, 2018",
+    "Bulas MSD Brasil: Recarbrio 2024, Zerbaxa 2025"
+   ]
+  },
+  {
+   "slug": "gram-positivos-resistentes",
+   "titulo": "Glicopeptídeos, linezolida, daptomicina e tigeciclina",
+   "dek": "Vancomicina, teicoplanina, linezolida, daptomicina e tigeciclina, e o lugar da ceftarolina no tratamento de MRSA e enterococo resistente à vancomicina no paciente crítico, com base no consenso ASHP/IDSA/PIDS/SIDP de vancomicina (2020), na diretriz IDSA de MRSA (2011), no IDSA AMR Guidance 2026, no BrCAST 2026 e nas bulas.",
+   "palavras": 3563,
+   "fontes": [
+    "Consenso de vancomicina ASHP/IDSA/PIDS/SIDP 2020",
+    "IDSA MRSA 2011",
+    "ZEPHyR, Clin Infect Dis 2012",
+    "Luther et al., Crit Care Med 2018",
+    "Position Paper de TDM 2020",
+    "IDSA AMR Guidance 2026",
+    "BrCAST 2026",
+    "FDA, tigeciclina 2010 e 2013",
+    "Bulas ANVISA e RCM europeu da teicoplanina"
+   ]
+  },
+  {
+   "slug": "aminoglicosideos-polimixinas",
+   "titulo": "Aminoglicosídeos e polimixinas",
+   "dek": "Mecanismo, espectro, dose por peso, monitorização e toxicidade dos aminoglicosídeos (amicacina e gentamicina) e das polimixinas (polimixina B e colistimetato), com as conversões de unidades e o papel atual de cada um, com base no consenso internacional de polimixinas de 2019, no IDSA AMR Guidance 2026, no BrCAST 2026 e nas bulas brasileiras.",
+   "palavras": 3589,
+   "fontes": [
+    "Consenso internacional de polimixinas, Pharmacotherapy 2019",
+    "IDSA AMR Gram-negative Guidance 2026 (v5.0)",
+    "BrCAST 2026",
+    "AIDA, Lancet Infect Dis 2018",
+    "OVERCOME, NEJM Evidence 2023",
+    "ATTACK, Lancet Infect Dis 2023",
+    "Position Paper de TDM 2020",
+    "Bulas brasileiras"
+   ]
+  },
+  {
+   "slug": "outras-classes-antibacterianas",
+   "titulo": "Quinolonas, macrolídeos, sulfonamidas e outras classes",
+   "dek": "Fluoroquinolonas, macrolídeos, sulfametoxazol-trimetoprima, metronidazol, clindamicina, fosfomicina, doxiciclina e minociclina, rifampicina e nitrofurantoína: mecanismo, espectro, dose no crítico, segurança e interações, com base no IDSA AMR Guidance 2026, nos alertas de segurança da FDA (2016 e 2018), na diretriz IDSA/SHEA de C. difficile (2021), no BrCAST 2026 e nas bulas.",
+   "palavras": 4174,
+   "fontes": [
+    "IDSA AMR Gram-negative Guidance 2026 (v5.0)",
+    "FDA Drug Safety Communications de fluoroquinolonas 2016 e 2018",
+    "IDSA/SHEA C. difficile 2021",
+    "ATS/IDSA CAP 2019",
+    "Ray et al., N Engl J Med 2012",
+    "ARREST, Lancet 2018",
+    "ZEUS, Clin Infect Dis 2019",
+    "IDSA pele e partes moles 2014",
+    "AGS Beers 2023",
+    "BrCAST 2026"
+   ]
+  }
+ ],
+ "cartoes": [
+  {
+   "leitura": "principios-antibioticoterapia",
+   "frente": "Segundo o SSC 2026, em quanto tempo iniciar o antimicrobiano no choque séptico?",
+   "verso": "Imediatamente, idealmente na primeira hora após o reconhecimento (recomendação forte, certeza muito baixa). O mesmo vale para sepse provável ou confirmada sem choque."
+  },
+  {
+   "leitura": "principios-antibioticoterapia",
+   "frente": "O que o SSC 2026 sugere na sepse apenas possível, sem choque?",
+   "verso": "Investigação rápida e limitada no tempo; se a suspeita de infecção persistir, iniciar o antimicrobiano em até 3 horas."
+  },
+  {
+   "leitura": "principios-antibioticoterapia",
+   "frente": "A procalcitonina deve ser usada para decidir iniciar antimicrobiano?",
+   "verso": "Não. O SSC 2026 sugere avaliação clínica isolada para iniciar; procalcitonina com avaliação clínica pode ajudar a decidir a suspensão."
+  },
+  {
+   "leitura": "principios-antibioticoterapia",
+   "frente": "Por que a primeira dose de betalactâmico não é ajustada pela creatinina?",
+   "verso": "A concentração inicial depende do volume de distribuição, aumentado na sepse, e não da depuração; além disso, a lesão renal da admissão costuma regredir em 24 a 48 horas."
+  },
+  {
+   "leitura": "principios-antibioticoterapia",
+   "frente": "Quais três dados o IDSA 2026 lista para orientar a terapia empírica?",
+   "verso": "Culturas e antibiogramas do próprio paciente nos últimos 12 meses, exposição a antibióticos nos 3 meses anteriores e epidemiologia local."
+  },
+  {
+   "leitura": "principios-antibioticoterapia",
+   "frente": "Quais perguntas estruturam a reavaliação em 48 a 72 horas?",
+   "verso": "A infecção é real? Qual o patógeno e o antibiograma? O foco foi controlado? Dose e via estão certas? Qual a data de término?"
+  },
+  {
+   "leitura": "principios-antibioticoterapia",
+   "frente": "O que o SSC 2026 diz sobre descalonamento?",
+   "verso": "Recomenda descalonar quando há diagnóstico microbiológico confirmado com antibiograma e sugere descalonar também com culturas finais negativas e melhora clínica."
+  },
+  {
+   "leitura": "principios-antibioticoterapia",
+   "frente": "Qual foi o resultado do ensaio BALANCE (NEJM 2025)?",
+   "verso": "Em 3.608 pacientes com bacteremia (55% na UTI), 7 dias foram não inferiores a 14 dias: mortalidade em 90 dias de 14,5% x 16,1%. Excluiu S. aureus e imunossupressão grave."
+  },
+  {
+   "leitura": "principios-antibioticoterapia",
+   "frente": "O que mostrou o STOP-IT (NEJM 2015)?",
+   "verso": "Na infecção intra-abdominal com foco controlado, 4 dias fixos de antimicrobiano tiveram desfecho semelhante a tratar até 2 dias após a resolução dos sinais."
+  },
+  {
+   "leitura": "principios-antibioticoterapia",
+   "frente": "A partir de quando se conta a duração do tratamento?",
+   "verso": "Do primeiro dia de terapia ativa contra o germe isolado (IDSA 2026), não do primeiro antimicrobiano recebido."
+  },
+  {
+   "leitura": "principios-antibioticoterapia",
+   "frente": "Quais os critérios do IDSA 2026 para trocar a via IV pela oral?",
+   "verso": "Germe sensível a agente oral adequado, estabilidade hemodinâmica, agente que atinja o local da infecção e absorção gastrointestinal suficiente."
+  },
+  {
+   "leitura": "principios-antibioticoterapia",
+   "frente": "De que depende a reatividade cruzada entre penicilina e cefalosporina?",
+   "verso": "Principalmente da semelhança da cadeia lateral R1. A reatividade real é baixa (cerca de 1% a 2%); cefazolina, ceftriaxona e cefepima diferem da amoxicilina."
+  },
+  {
+   "leitura": "principios-antibioticoterapia",
+   "frente": "Aztreonam pode ser usado em alérgico a penicilina?",
+   "verso": "Sim, não há reatividade cruzada com penicilinas. A exceção é a alergia à ceftazidima, que tem cadeia lateral idêntica à do aztreonam."
+  },
+  {
+   "leitura": "principios-antibioticoterapia",
+   "frente": "Quando indicar dessensibilização e qual sua principal limitação?",
+   "verso": "Alergia IgE provável ou confirmada com fármaco insubstituível. A tolerância é temporária: se houver interrupção prolongada, repetir. Contraindicada em Stevens-Johnson e DRESS."
+  },
+  {
+   "leitura": "pkpd-antimicrobianos",
+   "frente": "Qual o índice PK/PD dos betalactâmicos e o alvo usual no crítico?",
+   "verso": "fT>CIM, tempo em que a fração livre fica acima da CIM. No crítico, busca-se 100% fT>CIM; alguns protocolos, 100% fT>4×CIM."
+  },
+  {
+   "leitura": "pkpd-antimicrobianos",
+   "frente": "Qual o índice e o alvo da vancomicina?",
+   "verso": "AUC/CIM: AUC em 24 horas de 400 a 600 mg·h/L, assumindo CIM de 1 mg/L (consenso ASHP/IDSA/PIDS/SIDP 2020)."
+  },
+  {
+   "leitura": "pkpd-antimicrobianos",
+   "frente": "Qual o índice PK/PD dos aminoglicosídeos?",
+   "verso": "Cmáx/CIM (alvo de 8 a 10), com efeito pós-antibiótico prolongado; por isso a dose única diária."
+  },
+  {
+   "leitura": "pkpd-antimicrobianos",
+   "frente": "Qual foi o resultado primário do BLING III (JAMA 2024)?",
+   "verso": "Mortalidade em 90 dias de 24,9% com infusão contínua e 26,8% com intermitente (p = 0,08), sem significância; cura clínica maior com infusão contínua."
+  },
+  {
+   "leitura": "pkpd-antimicrobianos",
+   "frente": "O que mostrou a metanálise de infusão prolongada publicada com o BLING III?",
+   "verso": "Em 18 ensaios e 9.108 pacientes, risco relativo de morte em 90 dias de 0,86 com infusão prolongada (certeza alta)."
+  },
+  {
+   "leitura": "pkpd-antimicrobianos",
+   "frente": "O que o SSC 2026 recomenda sobre infusão de betalactâmicos?",
+   "verso": "Recomendação forte, certeza moderada: infusão prolongada na manutenção, após dose de ataque, em vez de bolus. Em 2021 era apenas sugestão."
+  },
+  {
+   "leitura": "pkpd-antimicrobianos",
+   "frente": "Como calcular a concentração de equilíbrio em infusão contínua?",
+   "verso": "Css = taxa de infusão / depuração. Ex.: meropenem 6 g/dia = 250 mg/h; com depuração de 12 L/h, Css de cerca de 20,8 mg/L."
+  },
+  {
+   "leitura": "pkpd-antimicrobianos",
+   "frente": "O que é depuração renal aumentada e como confirmá-la?",
+   "verso": "Depuração de creatinina acima de 130 mL/min/1,73 m². Confirma-se medindo a depuração em urina de 8 horas; equações subestimam."
+  },
+  {
+   "leitura": "pkpd-antimicrobianos",
+   "frente": "Quais fatores compõem o escore ARC?",
+   "verso": "Idade de 50 anos ou menos, trauma e SOFA de 4 ou menos."
+  },
+  {
+   "leitura": "pkpd-antimicrobianos",
+   "frente": "Por que o ertapenem é má escolha no crítico com hipoalbuminemia?",
+   "verso": "Ligação proteica de 85% a 95%: a fração livre é eliminada rapidamente e a dose diária não sustenta a exposição. O IDSA 2026 prefere meropenem ou imipenem."
+  },
+  {
+   "leitura": "pkpd-antimicrobianos",
+   "frente": "O que é PTA e qual o limiar aceito?",
+   "verso": "Probabilidade de alcance do alvo: proporção de pacientes simulados (Monte Carlo) que atinge o alvo para cada CIM. Aceita-se PTA de pelo menos 90%."
+  },
+  {
+   "leitura": "pkpd-antimicrobianos",
+   "frente": "O que significa a categoria I do BrCAST?",
+   "verso": "Sensível, aumentando exposição: o isolado é tratável se for usada a dose alta da tabela de dosagens do BrCAST."
+  },
+  {
+   "leitura": "pkpd-antimicrobianos",
+   "frente": "Por que o meropenem exige cuidado em infusão contínua?",
+   "verso": "Estabilidade limitada em temperatura ambiente, pior acima de 25 °C: trocar a bolsa a cada 6 a 8 horas. Piperacilina-tazobactam é estável por cerca de 24 horas."
+  },
+  {
+   "leitura": "pkpd-antimicrobianos",
+   "frente": "Quais vales de betalactâmicos foram associados a neurotoxicidade?",
+   "verso": "Cefepima acima de cerca de 20 mg/L, meropenem acima de cerca de 64 mg/L e piperacilina acima de cerca de 360 mg/L (Imani, 2017)."
+  },
+  {
+   "leitura": "betalactamicos",
+   "frente": "Qual o mecanismo de ação dos betalactâmicos?",
+   "verso": "Ligação covalente às PBPs (transpeptidases), bloqueando as ligações cruzadas do peptidoglicano; bactericidas, exceto contra enterococos quando isolados."
+  },
+  {
+   "leitura": "betalactamicos",
+   "frente": "Quais os fármacos de escolha para bacteremia por MSSA?",
+   "verso": "Oxacilina 2 g de 4/4 h ou cefazolina 2 g de 8/8 h. São superiores à vancomicina para MSSA."
+  },
+  {
+   "leitura": "betalactamicos",
+   "frente": "O que mostrou o ensaio MERINO (JAMA 2018)?",
+   "verso": "Em bacteremia por E. coli ou K. pneumoniae resistentes à ceftriaxona, mortalidade em 30 dias de 12% com piperacilina-tazobactam e 4% com meropenem."
+  },
+  {
+   "leitura": "betalactamicos",
+   "frente": "Piperacilina-tazobactam serve para Enterobacter cloacae invasivo?",
+   "verso": "Não. O IDSA 2026 não a sugere para infecções invasivas por espécies com AmpC induzível, pois o tazobactam protege mal contra AmpC."
+  },
+  {
+   "leitura": "betalactamicos",
+   "frente": "Qual o cuidado da ceftriaxona com cálcio?",
+   "verso": "Precipita com soluções que contêm cálcio: contraindicado em neonatos; em adultos, não administrar simultaneamente na mesma via e lavar a linha."
+  },
+  {
+   "leitura": "betalactamicos",
+   "frente": "Como ajustar cefepima 2 g de 8/8 h pela função renal?",
+   "verso": "Depuração de 30 a 60 mL/min: 2 g de 12/12 h; de 11 a 29: 2 g de 24/24 h; 10 ou menos: 1 g de 24/24 h (bula)."
+  },
+  {
+   "leitura": "betalactamicos",
+   "frente": "Quais os sinais de neurotoxicidade por cefepima?",
+   "verso": "Encefalopatia, confusão, mioclonias, afasia e estado de mal epiléptico não convulsivo, sobretudo com disfunção renal sem ajuste de dose."
+  },
+  {
+   "leitura": "betalactamicos",
+   "frente": "Qual o espectro distintivo e a dose alta da ceftarolina?",
+   "verso": "Ativa contra MRSA (liga-se à PBP2a); não cobre P. aeruginosa nem ESBL. Dose alta: 600 mg de 8/8 h em 2 horas."
+  },
+  {
+   "leitura": "betalactamicos",
+   "frente": "Por que o aztreonam é útil contra metalobetalactamases?",
+   "verso": "É estável à hidrólise por NDM, VIM e IMP, mas é destruído por ESBL, AmpC e KPC, por isso precisa do avibactam."
+  },
+  {
+   "leitura": "betalactamicos",
+   "frente": "Quanto potássio contém a penicilina G potássica?",
+   "verso": "Cerca de 1,7 mEq por milhão de UI; 24 milhões de UI/dia fornecem cerca de 40 mEq de potássio."
+  },
+  {
+   "leitura": "betalactamicos",
+   "frente": "Qual a dose de ampicilina-sulbactam para CRAB (IDSA 2026)?",
+   "verso": "Total de 9 g/dia de sulbactam: 9 g de 8/8 h em 4 horas ou 27 g em infusão contínua, com um segundo agente, como ponte ao sulbactam-durlobactam."
+  },
+  {
+   "leitura": "betalactamicos",
+   "frente": "Quais germes nenhuma cefalosporina cobre?",
+   "verso": "Enterococos e Listeria (além de atípicos). MRSA só é coberto pela ceftarolina e pelo ceftobiprol."
+  },
+  {
+   "leitura": "betalactamicos",
+   "frente": "Qual a dose de cefazolina na profilaxia cirúrgica?",
+   "verso": "2 g; 3 g se o peso for de 120 kg ou mais (ASHP/IDSA 2013)."
+  },
+  {
+   "leitura": "betalactamicos",
+   "frente": "O que mostrou o ensaio ACORN (JAMA 2023)?",
+   "verso": "Cefepima e piperacilina-tazobactam não diferiram em lesão renal aguda ou morte; o grupo cefepima teve menos dias vivos e livres de delirium e coma."
+  },
+  {
+   "leitura": "carbapenemicos-novos-betalactamicos",
+   "frente": "Quais agentes o IDSA 2026 prefere para enterobactéria KPC?",
+   "verso": "Ceftazidima-avibactam, imipenem-relebactam e meropenem-vaborbactam, com leve preferência pelo meropenem-vaborbactam."
+  },
+  {
+   "leitura": "carbapenemicos-novos-betalactamicos",
+   "frente": "Qual o preferido para enterobactéria OXA-48?",
+   "verso": "Ceftazidima-avibactam. Meropenem-vaborbactam e imipenem-relebactam não são sugeridos, mesmo com laudo sensível."
+  },
+  {
+   "leitura": "carbapenemicos-novos-betalactamicos",
+   "frente": "Quais os preferidos para enterobactéria NDM?",
+   "verso": "Aztreonam-avibactam ou cefiderocol; sem aztreonam-avibactam, ceftazidima-avibactam mais aztreonam é a alternativa."
+  },
+  {
+   "leitura": "carbapenemicos-novos-betalactamicos",
+   "frente": "Qual o preferido para pneumonia por P. aeruginosa DTR?",
+   "verso": "Ceftolozana-tazobactam (3 g de 8/8 h), pela menor recorrência e maior sucesso clínico em pneumonia em estudos observacionais."
+  },
+  {
+   "leitura": "carbapenemicos-novos-betalactamicos",
+   "frente": "Qual a dose de ceftazidima-avibactam e o ajuste com depuração de 31 a 50 mL/min?",
+   "verso": "2,5 g de 8/8 h em 2 horas (IDSA sugere 3 horas); com depuração de 31 a 50 mL/min, 1,25 g de 8/8 h."
+  },
+  {
+   "leitura": "carbapenemicos-novos-betalactamicos",
+   "frente": "Como administrar ceftazidima-avibactam com aztreonam?",
+   "verso": "Ceftazidima-avibactam 2,5 g e aztreonam 2 g, ambos de 8/8 h em 3 horas, iniciados ao mesmo tempo, em Y. Monitorar transaminases."
+  },
+  {
+   "leitura": "carbapenemicos-novos-betalactamicos",
+   "frente": "O que acontece com o valproato ao iniciar carbapenêmico?",
+   "verso": "Queda de 60% a 100% do nível em 24 horas, que persiste 1 a 2 semanas; aumentar a dose não compensa. Evitar a associação."
+  },
+  {
+   "leitura": "carbapenemicos-novos-betalactamicos",
+   "frente": "Quais as lacunas do ertapenem?",
+   "verso": "Não cobre P. aeruginosa, Acinetobacter nem enterococos; ligação proteica alta, pior no crítico hipoalbuminêmico."
+  },
+  {
+   "leitura": "carbapenemicos-novos-betalactamicos",
+   "frente": "Por que não fazer imipenem em infusão contínua?",
+   "verso": "Estabilidade em solução de cerca de 4 horas à temperatura ambiente. Além disso, tem maior potencial convulsivante que o meropenem."
+  },
+  {
+   "leitura": "carbapenemicos-novos-betalactamicos",
+   "frente": "Como ajustar meropenem com depuração de 26 a 50 mL/min?",
+   "verso": "Dose plena de 12/12 h. De 10 a 25 mL/min, metade da dose de 12/12 h; abaixo de 10, metade da dose de 24/24 h."
+  },
+  {
+   "leitura": "carbapenemicos-novos-betalactamicos",
+   "frente": "Qual a dose de cefiderocol e quando encurtar o intervalo?",
+   "verso": "2 g de 8/8 h em 3 horas; 2 g de 6/6 h com depuração de 120 mL/min ou mais."
+  },
+  {
+   "leitura": "carbapenemicos-novos-betalactamicos",
+   "frente": "O que mostrou o ensaio ATTACK?",
+   "verso": "Em CRAB, sobrevida em 28 dias de 81% com sulbactam-durlobactam mais imipenem contra 68% com colistina mais imipenem."
+  },
+  {
+   "leitura": "carbapenemicos-novos-betalactamicos",
+   "frente": "Quais novos betalactâmicos têm registro no Brasil (set/2026)?",
+   "verso": "Ceftazidima-avibactam (2018), ceftolozana-tazobactam e imipenem-relebactam (2024). Não identificamos registro de cefiderocol, meropenem-vaborbactam, aztreonam-avibactam e sulbactam-durlobactam."
+  },
+  {
+   "leitura": "carbapenemicos-novos-betalactamicos",
+   "frente": "Qual particularidade latino-americana muda o tratamento de P. aeruginosa resistente a carbapenêmico?",
+   "verso": "Cerca de 69% dos isolados produzem carbapenemase (KPC ou VIM), segundo o IDSA 2026; com metalo, só o cefiderocol entre os novos é confiável."
+  },
+  {
+   "leitura": "gram-positivos-resistentes",
+   "frente": "Qual o alvo de monitorização da vancomicina (consenso 2020)?",
+   "verso": "AUC em 24 h de 400 a 600 mg·h/L, por software bayesiano ou dois níveis. O vale isolado não é mais recomendado."
+  },
+  {
+   "leitura": "gram-positivos-resistentes",
+   "frente": "Qual a dose de ataque de vancomicina no crítico?",
+   "verso": "20 a 35 mg/kg de peso real, máximo de 3.000 mg, sem ajuste pela função renal."
+  },
+  {
+   "leitura": "gram-positivos-resistentes",
+   "frente": "Qual a velocidade máxima de infusão da vancomicina?",
+   "verso": "Cerca de 10 a 15 mg/min (1 g em pelo menos 60 minutos), para evitar a reação de infusão por liberação de histamina."
+  },
+  {
+   "leitura": "gram-positivos-resistentes",
+   "frente": "Qual o alvo da vancomicina em infusão contínua?",
+   "verso": "Concentração de equilíbrio de 20 a 25 mg/L (AUC de 480 a 600), após ataque de 15 a 20 mg/kg e 30 a 40 mg/kg/dia."
+  },
+  {
+   "leitura": "gram-positivos-resistentes",
+   "frente": "Como fazer o ataque de teicoplanina?",
+   "verso": "6 mg/kg de 12/12 h por 3 doses em infecção grave; 12 mg/kg de 12/12 h por 3 a 5 doses em endocardite e infecção osteoarticular."
+  },
+  {
+   "leitura": "gram-positivos-resistentes",
+   "frente": "Qual o vale-alvo da teicoplanina?",
+   "verso": "Pelo menos 15 mg/L em infecção grave e 20 mg/L (sem passar de 60) em endocardite e osteomielite, após o ataque."
+  },
+  {
+   "leitura": "gram-positivos-resistentes",
+   "frente": "Quais as principais toxicidades da linezolida?",
+   "verso": "Plaquetopenia após 10 a 14 dias, acidose láctica, neuropatia periférica e óptica em uso longo, síndrome serotoninérgica e hipoglicemia."
+  },
+  {
+   "leitura": "gram-positivos-resistentes",
+   "frente": "Por que a linezolida interage com antidepressivos?",
+   "verso": "É inibidora fraca e reversível da monoaminoxidase; com ISRS, IRSN, tramadol, metadona ou meperidina pode causar síndrome serotoninérgica."
+  },
+  {
+   "leitura": "gram-positivos-resistentes",
+   "frente": "O que mostrou o ZEPHyR (Clin Infect Dis 2012)?",
+   "verso": "Em pneumonia nosocomial por MRSA, sucesso clínico de 57,6% com linezolida e 46,6% com vancomicina (por protocolo), sem diferença de mortalidade."
+  },
+  {
+   "leitura": "gram-positivos-resistentes",
+   "frente": "Por que a daptomicina não trata pneumonia?",
+   "verso": "É inativada pelo surfactante pulmonar. Exceção: êmbolos sépticos da endocardite direita."
+  },
+  {
+   "leitura": "gram-positivos-resistentes",
+   "frente": "Qual a dose de daptomicina para VRE e o que monitorar?",
+   "verso": "10 a 12 mg/kg/dia. CPK basal e semanal (duas vezes por semana em dose alta) e suspender estatinas."
+  },
+  {
+   "leitura": "gram-positivos-resistentes",
+   "frente": "Qual a dose alta de tigeciclina e suas lacunas intrínsecas?",
+   "verso": "200 mg de ataque e 100 mg de 12/12 h. Não cobre P. aeruginosa, Proteus, Morganella nem Providencia."
+  },
+  {
+   "leitura": "gram-positivos-resistentes",
+   "frente": "Qual a advertência da FDA sobre a tigeciclina?",
+   "verso": "Aumento de mortalidade por todas as causas em metanálise de ensaios (2010, destaque em 2013). Não usar em bacteremia nem infecção urinária."
+  },
+  {
+   "leitura": "gram-positivos-resistentes",
+   "frente": "Como corrigir a dose de vancomicina pela AUC medida?",
+   "verso": "A AUC é proporcional à dose: nova dose = dose atual × AUC-alvo / AUC medida. Ex.: 1.500 × 500 / 705 = cerca de 1.064 mg."
+  },
+  {
+   "leitura": "aminoglicosideos-polimixinas",
+   "frente": "Por que aminoglicosídeos não agem contra anaeróbios?",
+   "verso": "A captação bacteriana depende de transporte ativo dependente de oxigênio; também perdem atividade em pH ácido e em abscessos."
+  },
+  {
+   "leitura": "aminoglicosideos-polimixinas",
+   "frente": "Por que aminoglicosídeos são dados uma vez ao dia?",
+   "verso": "Efeito concentração-dependente, efeito pós-antibiótico prolongado e captação renal e coclear saturável: mais eficácia e menos toxicidade."
+  },
+  {
+   "leitura": "aminoglicosideos-polimixinas",
+   "frente": "Qual a dose de amicacina no crítico e os alvos?",
+   "verso": "25 a 30 mg/kg uma vez ao dia; pico de 60 a 80 mg/L e vale abaixo de 2,5 mg/L."
+  },
+  {
+   "leitura": "aminoglicosideos-polimixinas",
+   "frente": "Como calcular o peso para aminoglicosídeo em obeso?",
+   "verso": "Se o peso real passar de 120% do ideal: peso ajustado = peso ideal + 0,4 × (peso real - peso ideal)."
+  },
+  {
+   "leitura": "aminoglicosideos-polimixinas",
+   "frente": "Como se manifesta a ototoxicidade dos aminoglicosídeos?",
+   "verso": "Perda auditiva de alta frequência (coclear) ou desequilíbrio e oscilopsia (vestibular); frequentemente irreversível, maior risco com a variante m.1555A>G."
+  },
+  {
+   "leitura": "aminoglicosideos-polimixinas",
+   "frente": "O que as metiltransferases do RNA 16S causam?",
+   "verso": "Resistência de alto nível a todos os aminoglicosídeos (genes como armA e rmtB), frequentemente junto com NDM."
+  },
+  {
+   "leitura": "aminoglicosideos-polimixinas",
+   "frente": "Qual a equivalência entre mg e UI da polimixina B?",
+   "verso": "1 mg = 10.000 UI. O frasco brasileiro comum tem 500.000 UI (50 mg)."
+  },
+  {
+   "leitura": "aminoglicosideos-polimixinas",
+   "frente": "A quanto equivale 1 milhão de UI de colistimetato?",
+   "verso": "Cerca de 80 mg de colistimetato de sódio e cerca de 33 mg de colistina base ativa (CBA)."
+  },
+  {
+   "leitura": "aminoglicosideos-polimixinas",
+   "frente": "Qual a dose de polimixina B do consenso de 2019?",
+   "verso": "Ataque de 2 a 2,5 mg/kg (20.000 a 25.000 UI/kg) e manutenção de 1,25 a 1,5 mg/kg de 12/12 h, pelo peso total, sem ajuste renal."
+  },
+  {
+   "leitura": "aminoglicosideos-polimixinas",
+   "frente": "Qual o ataque de colistimetato e como se ajusta a manutenção?",
+   "verso": "300 mg de CBA (cerca de 9 milhões de UI); manutenção de 12/12 h por faixas de depuração (360 mg de CBA/dia com 90 mL/min ou mais)."
+  },
+  {
+   "leitura": "aminoglicosideos-polimixinas",
+   "frente": "Por que colistimetato é preferido na infecção urinária baixa?",
+   "verso": "O pró-fármaco é eliminado pelo rim e convertido em colistina na urina; a polimixina B tem eliminação não renal e baixa concentração urinária."
+  },
+  {
+   "leitura": "aminoglicosideos-polimixinas",
+   "frente": "Qual o papel da polimixina B no CRAB segundo o IDSA 2026?",
+   "verso": "Alternativa, sempre combinada a outro agente (ampicilina-sulbactam em dose alta, cefiderocol ou minociclina), quando não há sulbactam-durlobactam."
+  },
+  {
+   "leitura": "aminoglicosideos-polimixinas",
+   "frente": "Quais bactérias têm resistência intrínseca às polimixinas?",
+   "verso": "Proteus, Providencia, Morganella, Serratia marcescens e Burkholderia, além de gram-positivos e anaeróbios."
+  },
+  {
+   "leitura": "aminoglicosideos-polimixinas",
+   "frente": "O que o IDSA 2026 diz sobre polimixinas e aminoglicosídeos nebulizados?",
+   "verso": "Não sugere uso rotineiro na pneumonia por P. aeruginosa DTR ou CRAB; adjuvante seletivo se nenhum betalactâmico novo for ativo e a resposta for insuficiente."
+  },
+  {
+   "leitura": "outras-classes-antibacterianas",
+   "frente": "Quais fluoroquinolonas cobrem P. aeruginosa?",
+   "verso": "Ciprofloxacino (a mais ativa) e levofloxacino 750 mg. Moxifloxacino não cobre P. aeruginosa e não serve para infecção urinária."
+  },
+  {
+   "leitura": "outras-classes-antibacterianas",
+   "frente": "Quais alertas da FDA sobre fluoroquinolonas foram emitidos em 2018?",
+   "verso": "Hipoglicemia grave e efeitos psiquiátricos (julho) e aumento do risco de aneurisma e dissecção de aorta (dezembro)."
+  },
+  {
+   "leitura": "outras-classes-antibacterianas",
+   "frente": "Como separar ciprofloxacino de cátions?",
+   "verso": "Tomar pelo menos 2 horas antes ou 6 horas depois de cálcio, magnésio, alumínio, ferro, zinco ou sucralfato; pausar a dieta enteral."
+  },
+  {
+   "leitura": "outras-classes-antibacterianas",
+   "frente": "Qual interação do ciprofloxacino por CYP1A2 é contraindicada?",
+   "verso": "Com tizanidina. Também aumenta teofilina, clozapina e olanzapina."
+  },
+  {
+   "leitura": "outras-classes-antibacterianas",
+   "frente": "Qual a diferença entre azitromicina e claritromicina quanto ao CYP3A4?",
+   "verso": "Claritromicina é inibidora potente de CYP3A4 e glicoproteína P; azitromicina inibe minimamente. Ambas prolongam o QT."
+  },
+  {
+   "leitura": "outras-classes-antibacterianas",
+   "frente": "Como infundir azitromicina intravenosa?",
+   "verso": "500 mg em 250 mL (2 mg/mL) em 1 hora, ou em 500 mL em 3 horas; nunca em bolus."
+  },
+  {
+   "leitura": "outras-classes-antibacterianas",
+   "frente": "Qual a dose de sulfametoxazol-trimetoprima na pneumocistose?",
+   "verso": "15 a 20 mg/kg/dia de trimetoprima divididos de 6/6 a 8/8 h por 21 dias, IV ou VO."
+  },
+  {
+   "leitura": "outras-classes-antibacterianas",
+   "frente": "Qual a posição do sulfametoxazol-trimetoprima para S. maltophilia no IDSA 2026?",
+   "verso": "Alternativa em combinação (8 a 15 mg/kg/dia de trimetoprima); o cefiderocol em monoterapia passou a ser o preferido."
+  },
+  {
+   "leitura": "outras-classes-antibacterianas",
+   "frente": "Qual o mecanismo da hipercalemia por trimetoprima?",
+   "verso": "Bloqueio do canal epitelial de sódio no túbulo coletor, efeito semelhante ao da amilorida."
+  },
+  {
+   "leitura": "outras-classes-antibacterianas",
+   "frente": "Por que a creatinina sobe com sulfametoxazol-trimetoprima?",
+   "verso": "A trimetoprima inibe a secreção tubular de creatinina (OCT2 e MATE), sem queda real da filtração; ureia e cistatina C ajudam a diferenciar."
+  },
+  {
+   "leitura": "outras-classes-antibacterianas",
+   "frente": "Qual o papel do metronidazol na infecção por C. difficile (IDSA/SHEA 2021)?",
+   "verso": "Fidaxomicina é preferida e vancomicina oral é alternativa; metronidazol oral só em episódio não grave sem acesso às outras."
+  },
+  {
+   "leitura": "outras-classes-antibacterianas",
+   "frente": "Por que associar clindamicina na fasciíte necrosante estreptocócica e como infundi-la?",
+   "verso": "Suprime a síntese de toxinas. Nunca em bolus: infusão de 10 a 60 minutos, no máximo cerca de 30 mg/min."
+  },
+  {
+   "leitura": "outras-classes-antibacterianas",
+   "frente": "Qual a carga de sódio da fosfomicina intravenosa?",
+   "verso": "Cerca de 14 mEq por grama; 18 g/dia fornecem mais de 250 mEq de sódio."
+  },
+  {
+   "leitura": "outras-classes-antibacterianas",
+   "frente": "Como evolui a indução enzimática da rifampicina?",
+   "verso": "Começa em dias, é máxima em cerca de 1 a 2 semanas e persiste cerca de 2 semanas após a suspensão."
+  }
+ ],
+ "questoes": [
+  {
+   "leitura": "principios-antibioticoterapia",
+   "nivel": "basico",
+   "enun": "Segundo o Surviving Sepsis Campaign 2026, quando deve ser iniciado o antimicrobiano em um adulto com choque séptico?",
+   "alts": [
+    "Imediatamente, idealmente na primeira hora após o reconhecimento",
+    "Em até 3 horas, após uma investigação rápida e limitada no tempo",
+    "Somente após o resultado da procalcitonina e das hemoculturas",
+    "Em até 6 horas, junto com o pacote completo de ressuscitação",
+    "Após a coleta de lactato e a confirmação do foco por exame de imagem"
+   ],
+   "gab": 0,
+   "coment": "No choque séptico, o atraso do antimicrobiano se associa a aumento progressivo da mortalidade (no estudo de Seymour, NEJM 2017, cerca de 4% a mais de chance de morte por hora). O SSC 2026 recomenda iniciar imediatamente, idealmente na primeira hora. Para sepse apenas possível sem choque, sugere investigação rápida e início em até 3 horas se a suspeita persistir. Hemoculturas devem ser colhidas antes, sem atrasar a dose.",
+   "porAlt": [
+    "Correta. É recomendação forte do SSC 2026 para choque séptico e para sepse provável ou confirmada.",
+    "Errada. O prazo de até 3 horas se aplica à sepse apenas possível, sem choque.",
+    "Errada. Esperar resultados atrasa o tratamento; a procalcitonina não deve guiar o início.",
+    "Errada. Seis horas é prazo inaceitável no choque séptico; cada hora de atraso aumenta a mortalidade.",
+    "Errada. Hemoculturas devem ser colhidas antes, mas nada deve atrasar o antimicrobiano no choque."
+   ],
+   "base": "Surviving Sepsis Campaign 2026 (Prescott et al., Crit Care Med 2026)"
+  },
+  {
+   "leitura": "principios-antibioticoterapia",
+   "nivel": "basico",
+   "enun": "Paciente de 72 anos, 70 kg, admitido na UTI com choque séptico de foco urinário e creatinina de 3,1 mg/dL. A prescrição traz meropenem 500 mg de 12/12 h desde a primeira dose. Qual a melhor intervenção farmacêutica?",
+   "alts": [
+    "Manter a prescrição, pois a dose já está ajustada à creatinina",
+    "Primeira dose plena de 1 g e reavaliar o ajuste após 24 a 48 horas",
+    "Trocar por ertapenem 1 g ao dia, que dispensa ajuste da dose renal",
+    "Reduzir para 500 mg de 24/24 h até a creatinina voltar ao normal",
+    "Aguardar o nível sérico de meropenem antes de dar a segunda dose"
+   ],
+   "gab": 1,
+   "coment": "No início da sepse, o volume de distribuição dos hidrofílicos aumenta e a concentração inicial depende dele, não da depuração. A creatinina da admissão frequentemente reflete lesão pré-renal que regride em 24 a 48 horas. Por isso a primeira dose é sempre plena, e muitos protocolos mantêm a dose plena de betalactâmico nas primeiras 24 a 48 horas, ajustando depois com a tendência da função renal. A infusão estendida de manutenção é recomendada pelo SSC 2026.",
+   "porAlt": [
+    "Errada. Reduzir a primeira dose causa subexposição quando a carga bacteriana é maior.",
+    "Correta. A primeira dose não se ajusta pela função renal; a lesão renal da sepse costuma ser transitória.",
+    "Errada. Ertapenem também é ajustado pela função renal e é pior no crítico hipoalbuminêmico.",
+    "Errada. Aprofunda a subdosagem; a creatinina da admissão não reflete a função estável.",
+    "Errada. A dosagem de betalactâmico é pouco disponível e não deve atrasar a terapia no choque."
+   ],
+   "base": "SSC 2026; IDSA AMR Guidance 2026"
+  },
+  {
+   "leitura": "principios-antibioticoterapia",
+   "nivel": "intermediario",
+   "enun": "O ensaio BALANCE (NEJM 2025) mostrou que 7 dias de antimicrobiano são não inferiores a 14 dias em bacteremia. Em qual dos pacientes abaixo esse resultado NÃO pode ser aplicado?",
+   "alts": [
+    "Bacteremia por E. coli de foco urinário, já afebril há 72 horas",
+    "Bacteremia por K. pneumoniae de foco abdominal já drenado",
+    "Bacteremia por S. aureus sensível à oxacilina, sem endocardite",
+    "Bacteremia por Proteus mirabilis de foco urinário, na UTI",
+    "Bacteremia por E. cloacae ligada a cateter venoso já retirado"
+   ],
+   "gab": 2,
+   "coment": "O BALANCE randomizou 3.608 pacientes hospitalizados com bacteremia, 55% na UTI, para 7 ou 14 dias; a mortalidade em 90 dias foi de 14,5% e 16,1%, demonstrando não inferioridade. Foram excluídos imunossupressão grave, focos que exigem tratamento prolongado (endocardite, osteomielite, abscesso não drenado), culturas únicas com possível contaminante e S. aureus. A bacteremia por S. aureus mantém duração mínima de 14 dias contados da primeira hemocultura negativa.",
+   "porAlt": [
+    "Errada. É o perfil mais frequente do BALANCE (foco urinário em 42%).",
+    "Errada. Foco abdominal controlado estava entre os incluídos.",
+    "Correta. O BALANCE excluiu S. aureus, que exige no mínimo 14 dias mesmo sem complicação.",
+    "Errada. Pacientes de UTI foram 55% da amostra.",
+    "Errada. Bacteremia por gram-negativo com foco removido foi incluída."
+   ],
+   "base": "BALANCE Investigators, N Engl J Med 2025;392:1065-1078"
+  },
+  {
+   "leitura": "principios-antibioticoterapia",
+   "nivel": "intermediario",
+   "enun": "Mulher de 55 anos com pielonefrite e bacteremia por E. coli sensível a ciprofloxacino e ceftriaxona recebe ceftriaxona 2 g/dia há 4 dias. Está afebril há 48 horas, sem vasopressor e aceitando dieta oral. Qual conduta segue o IDSA 2026?",
+   "alts": [
+    "Manter ceftriaxona intravenosa até completar 14 dias de tratamento",
+    "Trocar para nitrofurantoína oral, que concentra no trato urinário",
+    "Trocar para amoxicilina-clavulanato oral, de espectro mais estreito",
+    "Trocar para ciprofloxacino oral e completar 7 dias de terapia ativa",
+    "Trocar para cefuroxima axetil oral por mais 10 dias após a alta"
+   ],
+   "gab": 3,
+   "coment": "O IDSA 2026 lista quatro critérios para a transição oral: germe sensível a agente oral adequado, estabilidade hemodinâmica, agente que atinja o local e absorção gastrointestinal adequada. Fluoroquinolonas e sulfametoxazol-trimetoprima, pela alta biodisponibilidade, são as opções preferidas para transição de bacteremia por enterobactéria. A duração de 7 dias para bacteremia por gram-negativo com resposta tem suporte nos ensaios de Yahav (2019) e BALANCE (2025), contada do primeiro dia de terapia ativa.",
+   "porAlt": [
+    "Errada. Não há vantagem em manter a via intravenosa nem em estender para 14 dias.",
+    "Errada. Nitrofurantoína não atinge concentração em parênquima renal nem no sangue.",
+    "Errada. O germe não foi testado para ela, e a opção não é a preferida para bacteremia.",
+    "Correta. Cumpre os quatro critérios de troca oral e a duração curta tem suporte em ensaio.",
+    "Errada. Betalactâmico oral de baixa biodisponibilidade e duração excessiva."
+   ],
+   "base": "IDSA AMR Guidance 2026; Yahav et al., Clin Infect Dis 2019"
+  },
+  {
+   "leitura": "principios-antibioticoterapia",
+   "nivel": "avancado",
+   "enun": "Homem de 60 anos com bacteremia por S. aureus sensível à meticilina relata anafilaxia (edema de glote) com amoxicilina há 3 anos. Segundo o parâmetro de alergia AAAAI/ACAAI 2022, qual a melhor opção?",
+   "alts": [
+    "Cefalexina oral, pela boa biodisponibilidade e cadeia lateral semelhante",
+    "Vancomicina, porque toda cefalosporina está contraindicada no caso",
+    "Oxacilina após provocação com 10% da dose e observação por uma hora",
+    "Aztreonam, que não tem reatividade cruzada e cobre bem o MSSA grave",
+    "Cefazolina, cuja cadeia lateral difere da amoxicilina, sem teste prévio"
+   ],
+   "gab": 4,
+   "coment": "A reatividade cruzada entre penicilinas e cefalosporinas é de cerca de 1% a 2% e depende principalmente da semelhança da cadeia lateral R1. O parâmetro AAAAI/ACAAI 2022 permite cefalosporina com cadeia lateral diferente, sem teste, mesmo em quem teve anafilaxia a penicilina. A cefazolina tem cadeia lateral única e é tratamento de primeira linha para MSSA, superior à vancomicina. Cefalexina, cefadroxila e cefaclor compartilham cadeia lateral com amoxicilina e ampicilina.",
+   "porAlt": [
+    "Errada. Cadeia lateral semelhante à da amoxicilina aumenta o risco, e a via oral é inadequada para bacteremia.",
+    "Errada. A reatividade cruzada real é baixa e depende da cadeia lateral; vancomicina é inferior no MSSA.",
+    "Errada. Provocação é para baixo risco; com anafilaxia recente a penicilina, seria perigoso.",
+    "Errada. Aztreonam não tem atividade contra gram-positivos.",
+    "Correta. Cefalosporina com cadeia lateral R1 diferente pode ser dada sem teste mesmo após anafilaxia a penicilina."
+   ],
+   "base": "Khan et al., Drug allergy: a 2022 practice parameter update, J Allergy Clin Immunol 2022"
+  },
+  {
+   "leitura": "principios-antibioticoterapia",
+   "nivel": "avancado",
+   "enun": "Paciente com bacteremia por K. pneumoniae KPC recebe ceftazidima-avibactam mais amicacina empírica. O antibiograma confirma sensibilidade à ceftazidima-avibactam, e a creatinina subiu de 1 para 1,6 mg/dL. Qual a conduta mais adequada?",
+   "alts": [
+    "Suspender a amicacina e manter ceftazidima-avibactam em monoterapia",
+    "Manter a combinação até o fim para evitar resistência emergente",
+    "Trocar a amicacina por polimixina B para ampliar o efeito sinérgico",
+    "Suspender a ceftazidima-avibactam e manter só a amicacina isolada",
+    "Adicionar meropenem em infusão estendida ao esquema já em curso"
+   ],
+   "gab": 0,
+   "coment": "O IDSA 2026 não sugere combinação de rotina para CRE quando há betalactâmico com atividade confirmada: estudos observacionais, incluindo 577 pacientes com KPC tratados com ceftazidima-avibactam isolada ou combinada, mostraram sobrevida semelhante (cerca de 74% e 75%), e a combinação aumenta eventos adversos, como nefrotoxicidade. A combinação empírica se justifica para aumentar a chance de cobertura até o antibiograma; depois dele, a regra é monoterapia.",
+   "porAlt": [
+    "Correta. Com betalactâmico ativo confirmado, a combinação não traz benefício e aumenta toxicidade.",
+    "Errada. Não há dados de que a combinação previna resistência, segundo o IDSA 2026.",
+    "Errada. Troca um nefrotóxico por outro, sem benefício demonstrado.",
+    "Errada. Aminoglicosídeo isolado é inadequado fora do trato urinário.",
+    "Errada. Meropenem não acrescenta atividade contra KPC e amplia a pressão seletiva."
+   ],
+   "base": "IDSA AMR Guidance 2026 (Tamma et al.)"
+  },
+  {
+   "leitura": "pkpd-antimicrobianos",
+   "nivel": "basico",
+   "enun": "Qual índice farmacocinético-farmacodinâmico melhor prediz a eficácia dos betalactâmicos?",
+   "alts": [
+    "Razão entre a concentração máxima e a CIM do patógeno",
+    "Tempo em que a concentração livre permanece acima da CIM",
+    "Razão entre a área sob a curva de 24 horas e a CIM medida",
+    "Concentração de vale acima de dez vezes a CIM do germe",
+    "Meia-vida de eliminação comparada ao intervalo entre doses"
+   ],
+   "gab": 1,
+   "coment": "Para betalactâmicos, a morte bacteriana satura em concentrações de 4 a 5 vezes a CIM; o que importa é por quanto tempo do intervalo a fração livre permanece acima da CIM. Metas em modelos animais são cerca de 40% para carbapenêmicos, 50% para penicilinas e 60% a 70% para cefalosporinas; no crítico, busca-se 100% fT>CIM. Isso fundamenta doses frequentes e infusão prolongada, recomendada pelo SSC 2026.",
+   "porAlt": [
+    "Errada. Cmáx/CIM é o índice dos aminoglicosídeos.",
+    "Correta. Betalactâmicos são tempo-dependentes (fT>CIM).",
+    "Errada. AUC/CIM descreve vancomicina, fluoroquinolonas e linezolida.",
+    "Errada. Não é o índice clássico; morte por betalactâmico satura em 4 a 5 vezes a CIM.",
+    "Errada. A meia-vida influencia o fT>CIM, mas não é o índice PK/PD."
+   ],
+   "base": "Abdul-Aziz et al., Intensive Care Med 2020; SSC 2026"
+  },
+  {
+   "leitura": "pkpd-antimicrobianos",
+   "nivel": "basico",
+   "enun": "No ensaio BLING III (JAMA 2024), que comparou infusão contínua e intermitente de piperacilina-tazobactam ou meropenem em sepse, qual foi o resultado?",
+   "alts": [
+    "Redução significativa de 5,7 pontos percentuais na mortalidade em 90 dias",
+    "Mortalidade maior com infusão contínua por instabilidade do fármaco",
+    "Mortalidade em 90 dias 1,9 ponto menor, sem significância estatística",
+    "Redução significativa de mortalidade restrita ao braço do meropenem",
+    "Ausência de diferença tanto em cura clínica quanto em mortalidade em 90 dias"
+   ],
+   "gab": 2,
+   "coment": "O BLING III randomizou 7.031 pacientes em 104 UTIs. A mortalidade em 90 dias foi de 24,9% com infusão contínua e 26,8% com intermitente (diferença de -1,9 ponto; IC 95% de -4,9 a 1,1; p = 0,08). A cura clínica foi maior com infusão contínua. A metanálise publicada junto (18 ensaios, 9.108 pacientes) mostrou risco relativo de 0,86 para morte em 90 dias, e o SSC 2026 passou a recomendar infusão prolongada.",
+   "porAlt": [
+    "Errada. 5,7 pontos foi a diferença em cura clínica, não em mortalidade.",
+    "Errada. A tendência favoreceu a infusão contínua.",
+    "Correta. 24,9% x 26,8%, p = 0,08; a cura clínica foi maior com infusão contínua.",
+    "Errada. O ensaio não mostrou benefício significativo restrito a um fármaco.",
+    "Errada. A cura clínica em 14 dias foi maior com infusão contínua (55,7% x 50%)."
+   ],
+   "base": "Dulhunty et al., JAMA 2024;332:629-637"
+  },
+  {
+   "leitura": "pkpd-antimicrobianos",
+   "nivel": "intermediario",
+   "enun": "Paciente recebe meropenem 6 g/dia em infusão contínua. A depuração do meropenem estimada para ele é de 15 L/h. Qual a concentração aproximada no estado de equilíbrio?",
+   "alts": [
+    "Cerca de 400 mg/L",
+    "Cerca de 1,7 mg/L",
+    "Cerca de 41,7 mg/L",
+    "Cerca de 16,7 mg/L",
+    "Cerca de 10,4 mg/L"
+   ],
+   "gab": 3,
+   "coment": "Em infusão contínua, a concentração no estado de equilíbrio é a taxa de infusão dividida pela depuração: Css = R / CL. Com 6 g/dia, R = 250 mg/h; com CL de 15 L/h, Css = 16,7 mg/L, cerca de 8 vezes uma CIM de 2 mg/L. Se a depuração aumentar (depuração renal aumentada), a Css cai proporcionalmente. A dose de ataque antes da infusão é indispensável para atingir rapidamente essa concentração.",
+   "porAlt": [
+    "Errada. Dividiu a dose diária pela depuração horária sem converter para mg/h.",
+    "Errada. Erro de uma casa decimal.",
+    "Errada. Resultado de dividir 250 por 6, sem sentido farmacocinético.",
+    "Correta. 6.000 mg / 24 h = 250 mg/h; 250 / 15 = 16,7 mg/L.",
+    "Errada. Resultado de dividir 250 por 24, confundindo horas com depuração."
+   ],
+   "base": "Princípios de farmacocinética; Abdul-Aziz et al., JAMA 2024"
+  },
+  {
+   "leitura": "pkpd-antimicrobianos",
+   "nivel": "intermediario",
+   "enun": "Homem de 28 anos com traumatismo cranioencefálico, creatinina de 0,5 mg/dL e depuração de creatinina medida em urina de 8 horas de 180 mL/min, recebe cefepima 2 g de 12/12 h para pneumonia por P. aeruginosa. Qual a melhor conduta?",
+   "alts": [
+    "Manter a dose, pois creatinina normal indica função renal adequada",
+    "Reduzir para 1 g de 12/12 h pelo risco de neurotoxicidade da cefepima",
+    "Trocar por ertapenem 1 g ao dia, pela melhor penetração no sistema nervoso",
+    "Manter a dose e reestimar a função renal pela fórmula de Cockcroft-Gault",
+    "Aumentar para 2 g de 8/8 h em infusão prolongada e dosar o nível sérico"
+   ],
+   "gab": 4,
+   "coment": "Depuração renal aumentada (acima de 130 mL/min/1,73 m²) é comum em jovens, politraumatizados e neurocríticos e acelera a eliminação de betalactâmicos. Nesses pacientes, deve-se medir a depuração em urina de 8 horas, usar dose máxima (cefepima 2 g de 8/8 h) com infusão estendida de 3 a 4 horas e, se disponível, dosar o nível. O BrCAST 2026 categoriza P. aeruginosa selvagem como I para cefepima, exigindo dose alta.",
+   "porAlt": [
+    "Errada. Creatinina baixa em jovem com TCE sugere depuração aumentada e subexposição.",
+    "Errada. Neurotoxicidade ocorre por acúmulo, o oposto da situação.",
+    "Errada. Ertapenem não cobre P. aeruginosa.",
+    "Errada. Equações subestimam a depuração na ARC; a medida já está disponível.",
+    "Correta. Depuração renal aumentada exige dose máxima com infusão prolongada."
+   ],
+   "base": "Udy et al., Crit Care Med 2014; BrCAST 2026"
+  },
+  {
+   "leitura": "pkpd-antimicrobianos",
+   "nivel": "avancado",
+   "enun": "Uma simulação de Monte Carlo mostra, para meropenem 1 g de 8/8 h em 3 horas, probabilidade de alcance do alvo de 94% para CIM de 2 mg/L e de 45% para CIM de 8 mg/L. Qual a interpretação correta?",
+   "alts": [
+    "O esquema é adequado até CIM de 2 mg/L, mas não para CIM de 8 mg/L",
+    "94% dos pacientes terão cura clínica quando a CIM for de 2 mg/L",
+    "O esquema serve para as duas CIMs, pois a média das PTAs passa de 50%",
+    "A PTA indica a fração de isolados sensíveis circulando na instituição",
+    "Para CIM de 8 mg/L basta encurtar o intervalo mantendo a infusão"
+   ],
+   "gab": 0,
+   "coment": "A simulação de Monte Carlo sorteia milhares de pacientes virtuais com a variabilidade farmacocinética de um modelo populacional e calcula, para cada CIM, a proporção que atinge o alvo (PTA). Considera-se adequado o esquema com PTA de pelo menos 90%. Combinando a PTA com a distribuição de CIMs de uma população bacteriana, obtém-se a fração cumulativa de resposta, útil para decidir o empírico. PTA não é taxa de cura clínica.",
+   "porAlt": [
+    "Correta. O limiar usual de adequação é PTA de pelo menos 90%.",
+    "Errada. PTA é alcance de alvo farmacodinâmico, não taxa de cura.",
+    "Errada. A adequação é avaliada para cada CIM, não pela média.",
+    "Errada. Essa ideia se aproxima da fração cumulativa de resposta, que usa a distribuição de CIMs.",
+    "Errada. Não se pode concluir isso sem simular; em geral é preciso dose maior e infusão prolongada."
+   ],
+   "base": "Abdul-Aziz et al., Intensive Care Med 2020; BrCAST 2026"
+  },
+  {
+   "leitura": "pkpd-antimicrobianos",
+   "nivel": "avancado",
+   "enun": "O laudo de uma P. aeruginosa isolada em hemocultura mostra, pelos critérios do BrCAST 2026, categoria I para piperacilina-tazobactam. O paciente recebe 4,5 g de 8/8 h em 30 minutos. Qual a conduta?",
+   "alts": [
+    "Trocar de fármaco, pois I significa resistência intermediária ao agente",
+    "Passar a 4,5 g de 6/6 h em infusão de 3 horas, a dose alta do BrCAST",
+    "Manter a dose, pois I equivale a sensível para fins de prescrição",
+    "Associar amicacina para compensar a sensibilidade intermediária",
+    "Encurtar o intervalo para 6/6 h mantendo a infusão de 30 minutos"
+   ],
+   "gab": 1,
+   "coment": "No BrCAST (EUCAST v16.0, válido desde 15/04/2026), I significa sensível, aumentando exposição: alta probabilidade de sucesso com a dose alta descrita na tabela de dosagens. Para piperacilina-tazobactam, a dose padrão é 4,5 g de 6/6 h em 30 minutos e a dose alta, 4,5 g de 6/6 h em infusão de 3 horas (ou de 8/8 h em 4 horas). Isolados selvagens de P. aeruginosa são categorizados como I, portanto sempre exigem dose alta.",
+   "porAlt": [
+    "Errada. No BrCAST, I não é resistência: é sensível com exposição aumentada.",
+    "Correta. I significa sensível aumentando exposição; exige a dose alta da tabela.",
+    "Errada. A dose atual é inferior à padrão e muito inferior à alta.",
+    "Errada. Não corrige a exposição insuficiente ao betalactâmico.",
+    "Errada. Esse esquema é a dose padrão do BrCAST, não a alta exigida pela categoria I."
+   ],
+   "base": "BrCAST, tabela de pontos de corte e dosagens, 2026"
+  },
+  {
+   "leitura": "betalactamicos",
+   "nivel": "basico",
+   "enun": "Qual cefalosporina disponível no Brasil tem atividade contra MRSA?",
+   "alts": [
+    "Cefoxitina",
+    "Ceftriaxona",
+    "Ceftarolina",
+    "Ceftazidima",
+    "Cefazolina"
+   ],
+   "gab": 2,
+   "coment": "O MRSA produz PBP2a, codificada por mecA, de baixa afinidade pela maioria dos betalactâmicos. A ceftarolina, cefalosporina de quinta geração disponível no Brasil, liga-se à PBP2a e é ativa contra MRSA, além de pneumococo resistente. Não cobre P. aeruginosa nem ESBL. Dose de 600 mg de 12/12 h, ou 600 mg de 8/8 h em 2 horas em infecções graves por S. aureus (dose alta do BrCAST 2026).",
+   "porAlt": [
+    "Errada. Cefamicina com atividade anaeróbia, sem atividade contra MRSA.",
+    "Errada. Sem atividade contra MRSA.",
+    "Correta. Liga-se à PBP2a do MRSA.",
+    "Errada. Fraca contra gram-positivos em geral.",
+    "Errada. Excelente para MSSA, sem atividade contra MRSA."
+   ],
+   "base": "BrCAST 2026; bula de ceftarolina"
+  },
+  {
+   "leitura": "betalactamicos",
+   "nivel": "basico",
+   "enun": "Paciente em uso empírico de vancomicina tem hemoculturas positivas para S. aureus sensível à oxacilina. Qual a melhor intervenção?",
+   "alts": [
+    "Manter a vancomicina, pois já há resposta clínica e boa penetração",
+    "Trocar para ceftriaxona 1 g ao dia pela comodidade de dose diária",
+    "Associar gentamicina à vancomicina para acelerar a negativação",
+    "Trocar para oxacilina 2 g de 4/4 h ou cefazolina 2 g de 8/8 h",
+    "Trocar para linezolida oral para permitir uma alta mais precoce"
+   ],
+   "gab": 3,
+   "coment": "Betalactâmicos antiestafilocócicos (oxacilina, cefazolina) matam o MSSA mais rápido que a vancomicina e se associam a menor falha e mortalidade em bacteremia e endocardite. No dia em que o antibiograma mostra MSSA, a troca é obrigatória, salvo alergia grave comprovada. A cefazolina tem eficácia semelhante à da oxacilina, com melhor tolerância. Verifique também hemocultura de controle e ecocardiograma.",
+   "porAlt": [
+    "Errada. Manter vancomicina no MSSA se associa a mais falha e mortalidade.",
+    "Errada. Ceftriaxona não é tratamento de escolha para bacteremia por MSSA.",
+    "Errada. Aumenta nefrotoxicidade sem benefício e mantém o fármaco inferior.",
+    "Correta. Betalactâmicos antiestafilocócicos são superiores à vancomicina no MSSA.",
+    "Errada. Linezolida é bacteriostática e não é primeira escolha em bacteremia."
+   ],
+   "base": "Liu et al., IDSA MRSA Guidelines 2011; BrCAST 2026"
+  },
+  {
+   "leitura": "betalactamicos",
+   "nivel": "intermediario",
+   "enun": "Paciente na UTI com bacteremia por K. pneumoniae resistente à ceftriaxona (ESBL) recebe piperacilina-tazobactam, e o antibiograma mostra sensibilidade a ela. Albumina de 2,1 g/dL. Qual a conduta preferida pelo IDSA 2026?",
+   "alts": [
+    "Manter piperacilina-tazobactam, pois o laudo mostra sensibilidade",
+    "Trocar para cefepima, pois o laudo mostra CIM baixa para o fármaco",
+    "Trocar para ertapenem, preferido no crítico com albumina muito baixa",
+    "Trocar para ceftazidima-avibactam, preferida para qualquer ESBL",
+    "Trocar para meropenem, preferido para ESBL invasiva no crítico"
+   ],
+   "gab": 4,
+   "coment": "No ensaio MERINO (JAMA 2018), em bacteremia por E. coli ou K. pneumoniae resistentes à ceftriaxona, a mortalidade em 30 dias foi de 12% com piperacilina-tazobactam e 4% com meropenem. O IDSA 2026 prefere carbapenêmicos para ESBL fora do trato urinário, com meropenem ou imipenem em pacientes críticos ou hipoalbuminêmicos, e reserva as associações novas para organismos resistentes a carbapenêmicos. Cefepima não é sugerida para ESBL invasiva.",
+   "porAlt": [
+    "Errada. No MERINO, a mortalidade foi de 12% x 4% a favor do meropenem.",
+    "Errada. O IDSA 2026 sugere evitar cefepima para ESBL invasiva, mesmo sensível.",
+    "Errada. Ertapenem é pior no crítico hipoalbuminêmico pela ligação proteica alta.",
+    "Errada. Deve ser reservada para organismos resistentes a carbapenêmicos.",
+    "Correta. Carbapenêmico é preferido; meropenem ou imipenem no crítico hipoalbuminêmico."
+   ],
+   "base": "Harris et al., JAMA 2018;320:984-994; IDSA AMR Guidance 2026"
+  },
+  {
+   "leitura": "betalactamicos",
+   "nivel": "intermediario",
+   "enun": "Mulher de 68 anos, 60 kg, TFG não indexada de 28 mL/min (CKD-EPI 2021), recebe cefepima 2 g de 8/8 h há 4 dias para pneumonia por P. aeruginosa. Evolui com confusão e mioclonias. Qual a conduta mais adequada?",
+   "alts": [
+    "Reduzir para 2 g de 24/24 h e investigar neurotoxicidade por cefepima",
+    "Manter a dose e iniciar fenitoína para controle das mioclonias",
+    "Reduzir o tempo de infusão para 30 minutos para diminuir o vale",
+    "Manter a dose, pois a neurotoxicidade só ocorre acima de 6 g/dia",
+    "Trocar para ceftriaxona 2 g ao dia, que dispensa ajuste de dose"
+   ],
+   "gab": 0,
+   "coment": "Pela bula, com cefepima 2 g de 8/8 h, a depuração de 11 a 29 mL/min exige 2 g de 24/24 h. A paciente recebe o triplo da dose adequada. A neurotoxicidade por cefepima (encefalopatia, mioclonias, estado de mal não convulsivo) se associa a vales elevados, geralmente acima de cerca de 20 mg/L, e à disfunção renal sem ajuste. Deve-se reduzir ou suspender, pedir eletroencefalograma e considerar hemodiálise, que remove o fármaco.",
+   "porAlt": [
+    "Correta. A dose excede a da faixa de 11 a 29 mL/min, e o quadro é típico de neurotoxicidade.",
+    "Errada. Trata o sintoma e mantém a causa.",
+    "Errada. Encurtar a infusão aumenta o pico e não resolve o acúmulo.",
+    "Errada. Depende da exposição, que está alta pela disfunção renal.",
+    "Errada. Ceftriaxona não cobre P. aeruginosa."
+   ],
+   "base": "Bula de cefepima; Imani et al., J Antimicrob Chemother 2017"
+  },
+  {
+   "leitura": "betalactamicos",
+   "nivel": "avancado",
+   "enun": "Paciente com bacteremia por Enterobacter cloacae complex, com antibiograma inicial sensível a ceftriaxona, cefepima e meropenem, está em choque. Qual a melhor escolha segundo o IDSA 2026?",
+   "alts": [
+    "Ceftriaxona, mantida enquanto o laudo mostrar sensibilidade",
+    "Cefepima, se sensível, pelo baixo potencial de induzir AmpC",
+    "Piperacilina-tazobactam, pela boa proteção contra a AmpC",
+    "Ceftazidima, pela melhor estabilidade diante da AmpC induzida",
+    "Ceftolozana-tazobactam, preferida pelo IDSA para essas espécies"
+   ],
+   "gab": 1,
+   "coment": "E. cloacae, K. aerogenes, C. freundii e H. alvei têm AmpC cromossômica induzível; durante o tratamento com cefalosporina de terceira geração, mutantes desreprimidos podem ser selecionados, com falha em cerca de 20% dos casos. O IDSA 2026 sugere cefepima quando a CIM está no intervalo sensível, ou carbapenêmico, e não sugere ceftriaxona, piperacilina-tazobactam nem ceftolozana-tazobactam para infecções invasivas por essas espécies.",
+   "porAlt": [
+    "Errada. Seleciona mutantes desreprimidos de AmpC durante o tratamento.",
+    "Correta. É estável à AmpC e induz pouco sua produção.",
+    "Errada. Tazobactam protege mal contra AmpC; não sugerida pelo IDSA.",
+    "Errada. Ceftazidima, como ceftriaxona, é substrato da AmpC.",
+    "Errada. O IDSA 2026 não a sugere para AmpC em enterobactérias."
+   ],
+   "base": "IDSA AMR Guidance 2026 (Tamma et al.)"
+  },
+  {
+   "leitura": "betalactamicos",
+   "nivel": "avancado",
+   "enun": "Paciente com neurossífilis, lesão renal aguda e potássio de 5,6 mEq/L recebe penicilina G cristalina potássica 24 milhões de UI/dia. Quanto potássio essa prescrição fornece por dia, aproximadamente?",
+   "alts": [
+    "Cerca de 4 mEq",
+    "Cerca de 170 mEq",
+    "Cerca de 40 mEq",
+    "Cerca de 17 mEq",
+    "Cerca de 400 mEq"
+   ],
+   "gab": 2,
+   "coment": "A penicilina G potássica contém cerca de 1,7 mEq de potássio por milhão de UI. Com 24 milhões de UI/dia, são cerca de 40 mEq de potássio por dia, relevante em paciente com lesão renal aguda e hipercalemia. Opções: discutir a dose (18 milhões de UI/dia é o limite inferior para neurossífilis), infusão contínua com controle frequente de potássio e manejo da hipercalemia. Em dose alta com disfunção renal, a penicilina G também causa mioclonias e convulsões.",
+   "porAlt": [
+    "Errada. Subestima em dez vezes.",
+    "Errada. Multiplicou 1,7 por 100.",
+    "Correta. Cerca de 1,7 mEq por milhão de UI × 24 milhões de UI.",
+    "Errada. Considerou só 10 milhões de UI.",
+    "Errada. Superestima em dez vezes."
+   ],
+   "base": "Bula de benzilpenicilina potássica; BrCAST 2026 (tabela de dosagens)"
+  },
+  {
+   "leitura": "carbapenemicos-novos-betalactamicos",
+   "nivel": "basico",
+   "enun": "Segundo o IDSA 2026, qual o tratamento preferido para infecção invasiva por enterobactéria produtora de OXA-48?",
+   "alts": [
+    "Meropenem-vaborbactam",
+    "Imipenem-relebactam",
+    "Ceftolozana-tazobactam",
+    "Ceftazidima-avibactam",
+    "Piperacilina-tazobactam"
+   ],
+   "gab": 3,
+   "coment": "O avibactam, inibidor diazabiciclo-octano, inibe enzimas das classes A, C e parte da D, incluindo OXA-48. Vaborbactam e relebactam têm atividade limitada contra OXA-48, e em modelo animal a ceftazidima-avibactam foi superior a eles para esses isolados; por isso o IDSA 2026 não sugere meropenem-vaborbactam nem imipenem-relebactam para OXA-48, mesmo com sensibilidade in vitro. Aztreonam-avibactam, cefiderocol e tetraciclinas são alternativas.",
+   "porAlt": [
+    "Errada. Vaborbactam não inibe OXA-48; não sugerido mesmo com laudo sensível.",
+    "Errada. Relebactam não inibe OXA-48.",
+    "Errada. Não tem atividade contra carbapenemases.",
+    "Correta. O avibactam inibe OXA-48.",
+    "Errada. Tazobactam não inibe carbapenemases."
+   ],
+   "base": "IDSA AMR Guidance 2026 (Tamma et al.)"
+  },
+  {
+   "leitura": "carbapenemicos-novos-betalactamicos",
+   "nivel": "basico",
+   "enun": "Paciente epiléptico controlado com ácido valproico precisa iniciar meropenem para pneumonia por ESBL. Qual a conduta recomendada?",
+   "alts": [
+    "Dobrar a dose de valproato e dosar o nível sérico a cada 48 horas",
+    "Manter ambos, pois a interação só ocorre com o uso de imipenem",
+    "Trocar o meropenem por ertapenem, que não interage com valproato",
+    "Espaçar o meropenem para 12/12 h a fim de reduzir a interação",
+    "Trocar o anticonvulsivante durante o curso e por 1 a 2 semanas após"
+   ],
+   "gab": 4,
+   "coment": "Carbapenêmicos reduzem o nível de valproato em 60% a 100% em cerca de 24 horas, principalmente por inibir a hidrólise do glicuronídeo do valproato, aumentando sua eliminação. O efeito não é superado com aumento de dose e persiste por 1 a 2 semanas após a suspensão. A conduta é evitar a associação: trocar o anticonvulsivante (por exemplo, levetiracetam) ou escolher outro antimicrobiano ativo.",
+   "porAlt": [
+    "Errada. Aumentar a dose não compensa a interação.",
+    "Errada. Ocorre com todos os carbapenêmicos.",
+    "Errada. Ertapenem também reduz o valproato.",
+    "Errada. Subdosa o antimicrobiano e não evita a interação.",
+    "Correta. A interação reduz muito o valproato e persiste após a suspensão."
+   ],
+   "base": "Bulas de meropenem e valproato; IDSA AMR Guidance 2026"
+  },
+  {
+   "leitura": "carbapenemicos-novos-betalactamicos",
+   "nivel": "intermediario",
+   "enun": "Em hospital brasileiro sem cefiderocol nem aztreonam-avibactam, paciente tem bacteremia por K. pneumoniae produtora de NDM, sensível apenas a polimixina B e tigeciclina entre os testados. Qual o esquema mais adequado?",
+   "alts": [
+    "Ceftazidima-avibactam com aztreonam, em infusões simultâneas",
+    "Ceftazidima-avibactam isolada, em infusão estendida de 3 horas",
+    "Meropenem-vaborbactam, em infusão estendida de 3 horas cada",
+    "Tigeciclina em dose alta, com ataque de 200 mg e 100 mg 12/12 h",
+    "Polimixina B isolada, com dose de ataque de 2,5 mg/kg de peso"
+   ],
+   "gab": 0,
+   "coment": "NDM hidrolisa todos os betalactâmicos exceto o aztreonam, mas as enterobactérias NDM quase sempre coproduzem ESBL, AmpC ou KPC, que destroem o aztreonam. O avibactam inibe essas enzimas. O IDSA 2026 sugere ceftazidima-avibactam 2,5 g mais aztreonam 2 g, ambos de 8/8 h em 3 horas e iniciados simultaneamente, como alternativa quando o aztreonam-avibactam não está disponível; em coorte de bacteremia por metalo, a sobrevida foi de 81% com essa associação contra 56% com polimixina ou tigeciclina.",
+   "porAlt": [
+    "Correta. O avibactam protege o aztreonam das serino-betalactamases coproduzidas.",
+    "Errada. Avibactam não inibe metalobetalactamase.",
+    "Errada. Vaborbactam não inibe NDM.",
+    "Errada. Tigeciclina não é adequada para bacteremia.",
+    "Errada. Esquemas baseados em polimixina tiveram desfechos piores."
+   ],
+   "base": "IDSA AMR Guidance 2026, Question 3.5 e Tabela 1"
+  },
+  {
+   "leitura": "carbapenemicos-novos-betalactamicos",
+   "nivel": "intermediario",
+   "enun": "Paciente em ventilação mecânica com pneumonia por P. aeruginosa DTR, sem carbapenemase detectada, sensível a ceftolozana-tazobactam. Qual o esquema preferido pelo IDSA 2026?",
+   "alts": [
+    "Meropenem-vaborbactam 4 g de 8/8 h em infusão prolongada",
+    "Ceftolozana-tazobactam 3 g de 8/8 h em infusão prolongada",
+    "Ertapenem 1 g de 24/24 h associado a amicacina diária",
+    "Aztreonam-avibactam 2 g de 6/6 h em infusão prolongada",
+    "Tigeciclina 100 mg de 12/12 h após ataque de 200 mg IV"
+   ],
+   "gab": 1,
+   "coment": "O IDSA 2026 considera ceftazidima-avibactam, ceftolozana-tazobactam e imipenem-relebactam preferidos para P. aeruginosa DTR fora do trato urinário, e prefere ceftolozana-tazobactam na pneumonia: estudos observacionais mostraram mais sucesso clínico e menos recorrência do que com ceftazidima-avibactam. A dose para pneumonia é 3 g de 8/8 h; o IDSA sugere infusão de 3 horas. Se houver carbapenemase, ceftolozana-tazobactam não funciona.",
+   "porAlt": [
+    "Errada. Vaborbactam não acrescenta atividade contra P. aeruginosa.",
+    "Correta. É a opção preferida para pneumonia por P. aeruginosa DTR.",
+    "Errada. Ertapenem não cobre P. aeruginosa.",
+    "Errada. Não sugerido para P. aeruginosa DTR.",
+    "Errada. Tigeciclina não tem atividade contra P. aeruginosa."
+   ],
+   "base": "IDSA AMR Guidance 2026, Question 4.3 e Tabela 1"
+  },
+  {
+   "leitura": "carbapenemicos-novos-betalactamicos",
+   "nivel": "avancado",
+   "enun": "Paciente com infecção por KPC em uso de ceftazidima-avibactam 2,5 g de 8/8 h evolui com depuração de creatinina estável de 40 mL/min. Qual a dose adequada pela bula?",
+   "alts": [
+    "2,5 g a cada 12 horas",
+    "0,94 g a cada 12 horas",
+    "1,25 g a cada 8 horas",
+    "0,94 g a cada 24 horas",
+    "2,5 g a cada 8 horas"
+   ],
+   "gab": 2,
+   "coment": "Pela bula, a ceftazidima-avibactam é ajustada por faixas: 1,25 g de 8/8 h com depuração de 31 a 50 mL/min; 0,94 g de 12/12 h com 16 a 30; 0,94 g de 24/24 h com 6 a 15; 0,94 g de 48/48 h com 5 ou menos. O ajuste só deve ser feito com função renal estável, após as primeiras 24 a 48 horas. Em terapias contínuas de substituição renal, a dose costuma ser maior e deve seguir a leitura específica.",
+   "porAlt": [
+    "Errada. A bula reduz a dose e mantém o intervalo nessa faixa.",
+    "Errada. Corresponde à faixa de 16 a 30 mL/min.",
+    "Correta. Faixa de 31 a 50 mL/min.",
+    "Errada. Corresponde à faixa de 6 a 15 mL/min.",
+    "Errada. Dose de função renal normal."
+   ],
+   "base": "Bula de ceftazidima-avibactam; IDSA AMR Guidance 2026"
+  },
+  {
+   "leitura": "carbapenemicos-novos-betalactamicos",
+   "nivel": "avancado",
+   "enun": "Em UTI brasileira, isolado de P. aeruginosa de hemocultura é resistente a todos os carbapenêmicos, à ceftazidima-avibactam, à ceftolozana-tazobactam e ao imipenem-relebactam. Qual o raciocínio mais adequado?",
+   "alts": [
+    "Usar aztreonam-avibactam, preferido para metalo nessa espécie",
+    "Associar amicacina à ceftolozana-tazobactam e manter o esquema atual",
+    "Usar meropenem-vaborbactam, ativo contra metalo nessa espécie",
+    "Suspeitar de metalobetalactamase e buscar acesso ao cefiderocol",
+    "Atribuir a hiperprodução de AmpC e usar cefepima em dose alta"
+   ],
+   "gab": 3,
+   "coment": "Na América Latina, cerca de 69% das P. aeruginosa resistentes a carbapenêmicos produzem carbapenemase (principalmente KPC ou VIM), segundo o IDSA 2026. Resistência simultânea a ceftazidima-avibactam, ceftolozana-tazobactam e imipenem-relebactam deve levantar suspeita de metalobetalactamase. Nesse caso, o cefiderocol é o preferido; ceftazidima-avibactam com aztreonam fica para quando a resistência impede o cefiderocol. No Brasil, o acesso ao cefiderocol depende de importação.",
+   "porAlt": [
+    "Errada. O IDSA 2026 não sugere aztreonam-avibactam para P. aeruginosa com metalo.",
+    "Errada. Combinar com betalactâmico inativo não é tratamento adequado.",
+    "Errada. Vaborbactam não inibe metalobetalactamases.",
+    "Correta. Resistência simultânea aos três sugere metalo; cefiderocol é o preferido.",
+    "Errada. O isolado já é resistente aos betalactâmicos tradicionais."
+   ],
+   "base": "IDSA AMR Guidance 2026, Question 4.4"
+  },
+  {
+   "leitura": "gram-positivos-resistentes",
+   "nivel": "basico",
+   "enun": "Qual o parâmetro de monitorização da vancomicina recomendado pelo consenso ASHP/IDSA/PIDS/SIDP de 2020 para infecções graves por MRSA?",
+   "alts": [
+    "Vale entre 15 e 20 mg/L em todas as infecções graves por MRSA",
+    "Pico acima de 40 mg/L colhido uma hora após o fim da infusão",
+    "AUC acima de 800 mg·h/L para garantir a erradicação do MRSA",
+    "Vale abaixo de 5 mg/L para reduzir o risco de nefrotoxicidade",
+    "AUC de 400 a 600 mg·h/L, estimada por software ou dois níveis"
+   ],
+   "gab": 4,
+   "coment": "O consenso de 2020 (Rybak et al.) recomenda, para infecções graves por MRSA, AUC em 24 horas de 400 a 600 mg·h/L, assumindo CIM de 1 mg/L por microdiluição, estimada preferencialmente por software bayesiano ou por dois níveis (pico e vale) com equações de primeira ordem. A monitorização só pelo vale de 15 a 20 mg/L foi abandonada porque levava a exposições altas e mais nefrotoxicidade sem ganho de eficácia.",
+   "porAlt": [
+    "Errada. O vale isolado deixou de ser recomendado por aumentar nefrotoxicidade.",
+    "Errada. Pico isolado não é alvo da vancomicina.",
+    "Errada. AUC acima de 600 a 800 aumenta a lesão renal.",
+    "Errada. Vale tão baixo sugere subexposição.",
+    "Correta. Alvo de AUC em 24 horas, com CIM de 1 mg/L."
+   ],
+   "base": "Rybak et al., Am J Health Syst Pharm 2020;77:835-864"
+  },
+  {
+   "leitura": "gram-positivos-resistentes",
+   "nivel": "basico",
+   "enun": "Por que a daptomicina não deve ser usada para tratar pneumonia por MRSA?",
+   "alts": [
+    "É inativada pelo surfactante pulmonar",
+    "Não tem ação contra MRSA com a PBP2a",
+    "Causa pneumonia eosinofílica na 1ª dose",
+    "É bacteriostática contra estafilococos",
+    "Tem meia-vida curta demais no pulmão"
+   ],
+   "gab": 0,
+   "coment": "A daptomicina se insere na membrana dos gram-positivos de forma dependente de cálcio e é bactericida rápida contra MRSA e VRE. Porém, liga-se ao surfactante pulmonar, que a inativa, e falhou em ensaio de pneumonia comunitária. Por isso não trata pneumonia. A exceção prática são os êmbolos sépticos pulmonares da endocardite do lado direito, tratados pela via hematogênica. Para pneumonia por MRSA, usam-se vancomicina ou linezolida.",
+   "porAlt": [
+    "Correta. O surfactante liga e inativa a daptomicina.",
+    "Errada. A daptomicina age na membrana e é ativa contra MRSA.",
+    "Errada. A pneumonia eosinofílica surge após 2 a 4 semanas e não explica a ineficácia.",
+    "Errada. A daptomicina é bactericida rápida.",
+    "Errada. O problema é a inativação, não a meia-vida."
+   ],
+   "base": "Liu et al., IDSA MRSA Guidelines 2011; bula de daptomicina"
+  },
+  {
+   "leitura": "gram-positivos-resistentes",
+   "nivel": "intermediario",
+   "enun": "Paciente de 80 kg com endocardite por MRSA vai iniciar teicoplanina por intolerância à vancomicina. Qual esquema é adequado?",
+   "alts": [
+    "400 mg uma vez ao dia desde o primeiro dia, sem doses de ataque",
+    "12 mg/kg de 12/12 h por 3 a 5 doses, seguidos de 12 mg/kg ao dia",
+    "6 mg/kg uma vez ao dia, com vale-alvo acima de 60 mg/L sempre",
+    "12 mg/kg em dose única de ataque, seguida de 3 mg/kg ao dia até o fim",
+    "25 mg/kg em ataque único, como se faz com a vancomicina no crítico"
+   ],
+   "gab": 1,
+   "coment": "A teicoplanina tem meia-vida muito longa (80 a mais de 150 horas) e ligação proteica de cerca de 90%. Sem doses de ataque repetidas, o nível terapêutico demora dias. Para endocardite e infecção osteoarticular, o resumo europeu do produto indica 12 mg/kg de 12/12 h por 3 a 5 doses e depois 12 mg/kg uma vez ao dia, com vale de pelo menos 20 mg/L (sem ultrapassar 60 mg/L). Para 80 kg, cerca de 960 mg por dose.",
+   "porAlt": [
+    "Errada. Sem ataque, o nível terapêutico demora dias.",
+    "Correta. Esquema de ataque para endocardite e infecção osteoarticular.",
+    "Errada. Dose baixa e vale-alvo acima do limite superior.",
+    "Errada. Ataque insuficiente e manutenção muito baixa.",
+    "Errada. Não é o esquema da teicoplanina."
+   ],
+   "base": "Resumo das características do produto da teicoplanina (EMA); Abdul-Aziz et al., 2020"
+  },
+  {
+   "leitura": "gram-positivos-resistentes",
+   "nivel": "intermediario",
+   "enun": "Paciente com depuração de 25 mL/min está no 15º dia de linezolida para infecção de prótese por MRSA. As plaquetas caíram de 210.000 para 60.000/mm³, sem outra causa aparente. Qual a hipótese e a conduta?",
+   "alts": [
+    "Efeito dilucional pela reposição volêmica; manter sem mudanças",
+    "Deficiência de folato; iniciar ácido fólico e manter a linezolida",
+    "Mielotoxicidade da linezolida; considerar troca e dosar o vale",
+    "Hiperesplenismo; a linezolida não costuma causar plaquetopenia",
+    "Reação à tiramina da dieta; suspender a nutrição enteral"
+   ],
+   "gab": 2,
+   "coment": "A linezolida causa mielotoxicidade, principalmente plaquetopenia, após cerca de 10 a 14 dias de uso. O risco é maior com disfunção renal (maior exposição e acúmulo de metabólitos), plaquetas basais baixas e cursos longos. Monitorar hemograma pelo menos semanalmente; diante de queda importante, considerar troca de fármaco e, onde disponível, dosar o vale (alvo prático de 2 a 7 mg/L). O Position Paper de TDM de 2020 inclui a linezolida.",
+   "porAlt": [
+    "Errada. Queda progressiva e intensa não se explica por diluição.",
+    "Errada. Não é o mecanismo da plaquetopenia pela linezolida.",
+    "Correta. Plaquetopenia após 10 a 14 dias, mais comum com disfunção renal.",
+    "Errada. A plaquetopenia é efeito conhecido e frequente da linezolida.",
+    "Errada. Tiramina causa crise hipertensiva, não plaquetopenia."
+   ],
+   "base": "Abdul-Aziz et al., Intensive Care Med 2020; bula de linezolida"
+  },
+  {
+   "leitura": "gram-positivos-resistentes",
+   "nivel": "avancado",
+   "enun": "Paciente recebe vancomicina 1.500 mg de 12/12 h. A AUC em 24 horas estimada com dois níveis foi de 705 mg·h/L, com função renal estável. Qual nova dose leva a AUC mais próxima de 500 mg·h/L?",
+   "alts": [
+    "1.750 mg de 12/12 h, com AUC estimada perto de 820",
+    "Manter 1.500 mg de 12/12 h e repetir os níveis",
+    "500 mg de 12/12 h, com AUC estimada perto de 235",
+    "1.000 mg de 12/12 h, com AUC estimada perto de 470",
+    "1.500 mg de 24/24 h, com AUC estimada perto de 350"
+   ],
+   "gab": 3,
+   "coment": "Com cinética linear, a AUC é proporcional à dose diária. Nova dose = dose atual × AUC-alvo / AUC medida = 1.500 × 500 / 705, cerca de 1.064 mg. Arredondando, 1.000 mg de 12/12 h (AUC de cerca de 470) ou 1.250 mg de 12/12 h (cerca de 588), escolhidos conforme gravidade e tendência da creatinina, com nova dosagem em 24 a 48 horas.",
+   "porAlt": [
+    "Errada. Aumenta a exposição já excessiva.",
+    "Errada. AUC de 705 está acima do alvo e aumenta nefrotoxicidade.",
+    "Errada. Leva à subexposição.",
+    "Correta. Pela proporcionalidade: 1.500 × 500 / 705 = cerca de 1.064 mg.",
+    "Errada. Reduz a AUC para abaixo de 400."
+   ],
+   "base": "Rybak et al., Am J Health Syst Pharm 2020"
+  },
+  {
+   "leitura": "gram-positivos-resistentes",
+   "nivel": "avancado",
+   "enun": "Paciente com bacteremia de foco urinário por K. pneumoniae KPC tem tigeciclina entre as poucas opções ativas no antibiograma. Qual afirmação é correta?",
+   "alts": [
+    "Tigeciclina em dose alta é a preferida para KPC na corrente sanguínea",
+    "Tigeciclina cobre P. aeruginosa e Proteus que coinfectam o paciente",
+    "Tigeciclina exige ajuste de dose pela depuração de creatinina",
+    "Tigeciclina reduziu a mortalidade na pneumonia associada à ventilação",
+    "Tigeciclina não é adequada para bacteremia nem infecção urinária"
+   ],
+   "gab": 4,
+   "coment": "A tigeciclina tem volume de distribuição de 7 a 9 L/kg e concentrações séricas e urinárias baixas. O IDSA 2026 considera tigeciclina e eravaciclina alternativas para CRE apenas fora de corrente sanguínea e trato urinário. A FDA emitiu alerta de aumento de mortalidade por todas as causas (2010, destaque em 2013). A tigeciclina não cobre P. aeruginosa, Proteus, Morganella e Providencia e não requer ajuste renal.",
+   "porAlt": [
+    "Errada. O IDSA 2026 não sugere tetraciclinas para bacteremia ou ITU por CRE.",
+    "Errada. São resistências intrínsecas à tigeciclina.",
+    "Errada. Não requer ajuste renal; ajusta-se na insuficiência hepática grave.",
+    "Errada. A FDA alertou para aumento de mortalidade, sobretudo nessa indicação.",
+    "Correta. Concentrações séricas e urinárias baixas pelo grande volume de distribuição."
+   ],
+   "base": "IDSA AMR Guidance 2026, Question 3.7; FDA 2013"
+  },
+  {
+   "leitura": "aminoglicosideos-polimixinas",
+   "nivel": "basico",
+   "enun": "Quantas unidades internacionais correspondem a 1 mg de polimixina B, segundo o consenso internacional de 2019?",
+   "alts": [
+    "10.000 UI por mg",
+    "1.000 UI por mg",
+    "100.000 UI por mg",
+    "12.500 UI por mg",
+    "33.000 UI por mg"
+   ],
+   "gab": 0,
+   "coment": "O consenso internacional de 2019 padronizou: polimixina B, 1 mg = 10.000 UI; colistimetato, 1 milhão de UI = cerca de 80 mg de colistimetato de sódio = cerca de 33 mg de colistina base ativa. No Brasil, o frasco de polimixina B mais comum tem 500.000 UI (50 mg). Confundir mg e UI é o erro mais grave com polimixinas; a prescrição deve ser padronizada em UI, com a conversão por extenso.",
+   "porAlt": [
+    "Correta. 1 mg de polimixina B = 10.000 UI.",
+    "Errada. Subestima em dez vezes.",
+    "Errada. Superestima em dez vezes.",
+    "Errada. Confunde com a dose de manutenção por kg.",
+    "Errada. Confunde com a conversão do colistimetato."
+   ],
+   "base": "Tsuji et al., Pharmacotherapy 2019;39:10-39"
+  },
+  {
+   "leitura": "aminoglicosideos-polimixinas",
+   "nivel": "basico",
+   "enun": "Por que os aminoglicosídeos são administrados em dose única diária?",
+   "alts": [
+    "Efeito tempo-dependente e meia-vida muito longa no paciente séptico",
+    "Efeito concentração-dependente, pós-antibiótico e captação saturável",
+    "Menor custo do esquema, sem diferença de eficácia ou de toxicidade",
+    "Eliminação hepática que dispensa ajuste pela função renal do paciente",
+    "Necessidade de vale elevado para manter a atividade bactericida contínua"
+   ],
+   "gab": 1,
+   "coment": "Aminoglicosídeos matam de forma concentração-dependente (alvo Cmáx/CIM de 8 a 10) e têm efeito pós-antibiótico prolongado. A captação no córtex renal e na orelha interna é saturável: a mesma dose diária dada de uma vez expõe menos esses tecidos do que dividida. O esquema de dose única diária gera pico alto e vale baixo, com eficácia igual ou maior e menos toxicidade. A endocardite é exceção histórica.",
+   "porAlt": [
+    "Errada. São concentração-dependentes e têm meia-vida curta.",
+    "Correta. Pico alto e vale baixo: mais eficácia e menos toxicidade.",
+    "Errada. Há vantagem farmacodinâmica e de toxicidade.",
+    "Errada. A eliminação é renal por filtração glomerular.",
+    "Errada. Vale elevado aumenta nefro e ototoxicidade."
+   ],
+   "base": "Abdul-Aziz et al., Intensive Care Med 2020; BrCAST 2026"
+  },
+  {
+   "leitura": "aminoglicosideos-polimixinas",
+   "nivel": "intermediario",
+   "enun": "Homem de 1,70 m e 100 kg em choque séptico vai receber amicacina 25 mg/kg. Qual a dose calculada pelo peso adequado?",
+   "alts": [
+    "Cerca de 2.500 mg, pelo peso real total",
+    "Cerca de 1.650 mg, pelo peso ideal",
+    "Cerca de 2.000 mg, pelo peso ajustado",
+    "Cerca de 1.200 mg, com 15 mg/kg/dia",
+    "Cerca de 3.000 mg, com 30 mg/kg reais"
+   ],
+   "gab": 2,
+   "coment": "Peso ideal (Devine) para homem de 170 cm: 50 + 0,91 × (170 - 152,4) = 66,0 kg. O peso real (100 kg) passa de 120% do ideal, então usa-se o peso ajustado: 66 + 0,4 × (100 - 66) = 79,6 kg. Dose de 25 mg/kg: cerca de 1.990 mg, arredondada para 2.000 mg. Colher pico 30 minutos após o fim da infusão (alvo de 60 a 80 mg/L) e nível antes da próxima dose.",
+   "porAlt": [
+    "Errada. O peso real superestima o volume de distribuição no obeso.",
+    "Errada. O peso ideal subestima a dose no obeso.",
+    "Correta. Peso ideal de 66 kg; ajustado de cerca de 79,6 kg; × 25 = cerca de 1.990 mg.",
+    "Errada. Dose de 15 mg/kg é insuficiente no crítico.",
+    "Errada. Combina dose máxima com peso real."
+   ],
+   "base": "BrCAST 2026 (dose de referência de amicacina); Abdul-Aziz et al., 2020"
+  },
+  {
+   "leitura": "aminoglicosideos-polimixinas",
+   "nivel": "intermediario",
+   "enun": "Paciente estável tem cistite por K. pneumoniae resistente a carbapenêmicos, com CIM baixa para polimixinas e resistência às opções orais. Entre as polimixinas, qual é a escolha e por quê?",
+   "alts": [
+    "Polimixina B, que dispensa ajuste renal e concentra na urina",
+    "Polimixina B, por ser administrada já na sua forma ativa",
+    "Colistimetato, por ter menor nefrotoxicidade que a polimixina B",
+    "Colistimetato, pela conversão em colistina no trato urinário",
+    "Polimixina B associada a meropenem em infusão estendida"
+   ],
+   "gab": 3,
+   "coment": "O colistimetato é pró-fármaco eliminado pelo rim e convertido em colistina ativa no trato urinário, o que torna a colistina, mas não a polimixina B, opção para infecção urinária baixa. O IDSA 2026 lista a colistina como alternativa para cistite por CRE (não preferida, pela nefrotoxicidade de cerca de 30%) e o consenso de 2019 prefere a polimixina B para infecções sistêmicas.",
+   "porAlt": [
+    "Errada. Polimixina B tem eliminação não renal e baixa concentração urinária.",
+    "Errada. É vantagem sistêmica, não urinária.",
+    "Errada. O colistimetato é provavelmente mais nefrotóxico.",
+    "Correta. O pró-fármaco é eliminado pelo rim e ativado na urina.",
+    "Errada. Não resolve a baixa concentração urinária e acrescenta pressão seletiva."
+   ],
+   "base": "IDSA AMR Guidance 2026, Question 3.1; Tsuji et al., 2019"
+  },
+  {
+   "leitura": "aminoglicosideos-polimixinas",
+   "nivel": "avancado",
+   "enun": "Paciente de 70 kg com pneumonia por CRAB e lesão renal aguda (depuração de 20 mL/min) vai iniciar polimixina B. Qual prescrição segue o consenso de 2019?",
+   "alts": [
+    "Ataque de 175 mg e manutenção reduzida pela depuração de 20 mL/min",
+    "Ataque de 1,75 mg (17.500 UI) e manutenção de 1,5 mg de 12/12 h",
+    "Sem ataque pela lesão renal; manutenção de 1,5 mg/kg de 24/24 h",
+    "Ataque de 9 milhões de UI e manutenção de 4,5 milhões de 12/12 h",
+    "Ataque de 175 mg (1,75 milhão de UI) e manutenção sem ajuste renal"
+   ],
+   "gab": 4,
+   "coment": "O consenso de 2019 indica polimixina B com ataque de 2 a 2,5 mg/kg (20.000 a 25.000 UI/kg) de peso total e manutenção de 1,25 a 1,5 mg/kg (12.500 a 15.000 UI/kg) de 12/12 h, sem ajuste para função renal ou TRS, porque a eliminação é predominantemente não renal. Para 70 kg: ataque de 175 mg (1.750.000 UI) e manutenção de 105 mg (1.050.000 UI) de 12/12 h. No CRAB, sempre em combinação (IDSA 2026).",
+   "porAlt": [
+    "Errada. Reduzir a manutenção causa subexposição; o ajuste é do colistimetato.",
+    "Errada. Erro de unidade: a dose é por kg, não total.",
+    "Errada. O ataque é indispensável e não depende da função renal.",
+    "Errada. É o esquema de colistimetato, não de polimixina B.",
+    "Correta. 2,5 mg/kg × 70 kg; polimixina B não se ajusta pela função renal."
+   ],
+   "base": "Tsuji et al., Pharmacotherapy 2019;39:10-39; IDSA AMR Guidance 2026"
+  },
+  {
+   "leitura": "aminoglicosideos-polimixinas",
+   "nivel": "avancado",
+   "enun": "Em hospital brasileiro sem sulbactam-durlobactam nem cefiderocol, paciente tem bacteremia por A. baumannii resistente a carbapenêmicos. Qual esquema está mais alinhado ao IDSA 2026?",
+   "alts": [
+    "Polimixina B associada a ampicilina-sulbactam em dose alta",
+    "Colistimetato isolado em dose alta, com ataque de 9 milhões UI",
+    "Polimixina B associada a meropenem, como testado no OVERCOME",
+    "Polimixina B nebulizada isolada, sem terapia sistêmica junto",
+    "Amicacina isolada em dose única diária de 30 mg/kg de peso"
+   ],
+   "gab": 0,
+   "coment": "O IDSA 2026 prefere sulbactam-durlobactam com imipenem ou meropenem para CRAB invasivo. Na indisponibilidade, sugere ampicilina-sulbactam em dose alta (9 g/dia de sulbactam) com pelo menos um segundo agente (cefiderocol, minociclina ou polimixina B) como ponte, e coloca a polimixina B como alternativa sempre combinada. Os ensaios AIDA (2018) e OVERCOME (2023) não mostraram benefício de acrescentar meropenem à colistina.",
+   "porAlt": [
+    "Correta. Combinação de dois agentes, como ponte na falta do sulbactam-durlobactam.",
+    "Errada. Polimixina deve ser combinada, e a B é preferida em infecção sistêmica.",
+    "Errada. OVERCOME e AIDA não mostraram benefício de adicionar meropenem.",
+    "Errada. Nebulização não trata bacteremia e não é rotina nem na pneumonia.",
+    "Errada. Aminoglicosídeo isolado é inadequado fora do trato urinário."
+   ],
+   "base": "IDSA AMR Guidance 2026, Section 5; Paul et al., Lancet Infect Dis 2018"
+  },
+  {
+   "leitura": "outras-classes-antibacterianas",
+   "nivel": "basico",
+   "enun": "Qual fluoroquinolona não deve ser usada para infecção por P. aeruginosa nem para infecção urinária?",
+   "alts": [
+    "Ciprofloxacino 400 mg IV",
+    "Moxifloxacino 400 mg/dia",
+    "Levofloxacino 750 mg/dia",
+    "Ofloxacino 400 mg 12/12 h",
+    "Norfloxacino 400 mg VO"
+   ],
+   "gab": 1,
+   "coment": "O moxifloxacino tem boa atividade contra gram-positivos, atípicos e alguns anaeróbios, mas não contra P. aeruginosa, e sua eliminação é predominantemente não renal, com concentração urinária insuficiente. O ciprofloxacino é a fluoroquinolona mais ativa contra P. aeruginosa; o levofloxacino 750 mg também cobre e é uma fluoroquinolona respiratória. Todas compartilham os alertas de segurança da FDA.",
+   "porAlt": [
+    "Errada. É a mais ativa contra P. aeruginosa e concentra na urina.",
+    "Correta. Sem atividade útil contra P. aeruginosa e com baixa concentração urinária.",
+    "Errada. Na dose de 750 mg cobre P. aeruginosa e concentra na urina.",
+    "Errada. Tem eliminação renal e concentração urinária adequada.",
+    "Errada. Uso restrito justamente à infecção urinária baixa."
+   ],
+   "base": "BrCAST 2026; bulas de moxifloxacino, ciprofloxacino e levofloxacino"
+  },
+  {
+   "leitura": "outras-classes-antibacterianas",
+   "nivel": "basico",
+   "enun": "Qual o mecanismo da hipercalemia associada ao sulfametoxazol-trimetoprima?",
+   "alts": [
+    "Inibição da aldosterona sintase pelo sulfametoxazol",
+    "Lise de hemácias com saída do potássio intracelular",
+    "Bloqueio do canal epitelial de sódio pela trimetoprima",
+    "Inibição da Na/K-ATPase do músculo pela trimetoprima",
+    "Maior reabsorção de potássio na alça de Henle espessa"
+   ],
+   "gab": 2,
+   "coment": "A trimetoprima tem estrutura semelhante à da amilorida e bloqueia o canal epitelial de sódio (ENaC) no néfron distal, reduzindo o gradiente elétrico que impulsiona a secreção de potássio. A hipercalemia é mais frequente com doses altas (pneumocistose, Stenotrophomonas), disfunção renal, idade avançada e uso de IECA, BRA, espironolactona ou heparina. Potássio diário nos primeiros dias é a monitorização adequada.",
+   "porAlt": [
+    "Errada. Não é o mecanismo.",
+    "Errada. Hemólise ocorre em G6PD, mas não explica a hipercalemia usual.",
+    "Correta. Efeito semelhante ao da amilorida no túbulo coletor.",
+    "Errada. Não é o mecanismo descrito.",
+    "Errada. O efeito é no túbulo coletor."
+   ],
+   "base": "Bula de sulfametoxazol-trimetoprima; IDSA AMR Guidance 2026"
+  },
+  {
+   "leitura": "outras-classes-antibacterianas",
+   "nivel": "intermediario",
+   "enun": "Transplantado renal em uso de tacrolimo é internado na UTI com pneumonia comunitária grave e iniciará ceftriaxona. Qual a melhor escolha de macrolídeo?",
+   "alts": [
+    "Claritromicina 500 mg de 12/12 h, com nível de tacrolimo",
+    "Eritromicina 500 mg de 6/6 h, sem necessidade de ajustes",
+    "Claritromicina em dose menor, pois a interação é só renal",
+    "Azitromicina 500 mg ao dia, com monitorização diária do QTc",
+    "Nenhum macrolídeo, pois todos inibem com força o CYP3A4"
+   ],
+   "gab": 3,
+   "coment": "A claritromicina e a eritromicina inibem potentemente o CYP3A4 e a glicoproteína P, podendo multiplicar o nível de tacrolimo, com nefro e neurotoxicidade. A azitromicina inibe minimamente o CYP3A4 e é o macrolídeo preferido na UTI, combinada a betalactâmico na pneumonia comunitária grave (ATS/IDSA 2019). Ambas prolongam o QT, então ECG, potássio e magnésio devem ser checados.",
+   "porAlt": [
+    "Errada. Inibidor potente de CYP3A4, desnecessário havendo azitromicina.",
+    "Errada. Também inibe CYP3A4 e prolonga o QT.",
+    "Errada. A interação é metabólica (CYP3A4 e glicoproteína P).",
+    "Correta. Inibe minimamente o CYP3A4, sem grande impacto no tacrolimo.",
+    "Errada. A azitromicina é exceção."
+   ],
+   "base": "Metlay et al., ATS/IDSA 2019; bulas de claritromicina e azitromicina"
+  },
+  {
+   "leitura": "outras-classes-antibacterianas",
+   "nivel": "intermediario",
+   "enun": "Paciente recebe ciprofloxacino 500 mg por sonda de 12/12 h, com dieta enteral contínua e carbonato de cálcio três vezes ao dia, para infecção urinária complicada, e não melhora. Qual intervenção é mais adequada?",
+   "alts": [
+    "Dobrar a dose oral, mantendo a dieta contínua sem nenhuma pausa",
+    "Triturar e misturar o comprimido ao frasco da dieta enteral em curso",
+    "Associar sucralfato para proteger a mucosa e ajudar a absorção",
+    "Trocar por moxifloxacino oral, que não sofre quelação por cátions",
+    "Separar a dieta e os cátions da dose ou trocar para via intravenosa"
+   ],
+   "gab": 4,
+   "coment": "Cátions divalentes e trivalentes formam quelatos com fluoroquinolonas e reduzem a absorção em até 90%. Separar o ciprofloxacino pelo menos 2 horas antes ou 6 horas depois do cátion. A dieta enteral também reduz a absorção, sobretudo do ciprofloxacino; prática comum é pausar a dieta 1 hora antes e 2 horas depois, ou usar a via intravenosa em infecção grave. Moxifloxacino não trata infecção urinária.",
+   "porAlt": [
+    "Errada. Não resolve a quelação e aumenta a toxicidade.",
+    "Errada. Maximiza a interação e contamina a dieta.",
+    "Errada. Sucralfato contém alumínio e piora a quelação.",
+    "Errada. Todas quelam, e moxifloxacino não serve para ITU.",
+    "Correta. Quelação e dieta reduzem muito a absorção do ciprofloxacino."
+   ],
+   "base": "Bula de ciprofloxacino; FDA Drug Safety Communications de fluoroquinolonas, 2016"
+  },
+  {
+   "leitura": "outras-classes-antibacterianas",
+   "nivel": "avancado",
+   "enun": "Paciente com pneumocistose recebe sulfametoxazol-trimetoprima 20 mg/kg/dia. No terceiro dia, a creatinina passa de 0,9 para 1,15 mg/dL, com ureia estável, diurese preservada e potássio de 5,1 mEq/L. Qual a interpretação mais provável?",
+   "alts": [
+    "Efeito da trimetoprima na secreção de creatinina; manter e vigiar",
+    "Nefrite intersticial certa; suspender o fármaco e iniciar corticoide",
+    "Necrose tubular aguda; reduzir a dose do fármaco à metade de imediato",
+    "Hipovolemia por diurese osmótica; iniciar hidratação com cristaloide",
+    "Cristalúria por sulfonamida; alcalinizar a urina com bicarbonato"
+   ],
+   "gab": 0,
+   "coment": "A trimetoprima compete com a secreção tubular de creatinina pelos transportadores OCT2 e MATE, elevando a creatinina sérica em cerca de 10% a 30% sem redução da filtração glomerular. Ureia estável, diurese preservada e, se disponível, cistatina C normal favorecem esse mecanismo. Deve-se manter o tratamento, vigiar potássio (bloqueio do ENaC) e hemograma, e reavaliar se houver oligúria, ureia crescente ou sedimento ativo.",
+   "porAlt": [
+    "Correta. Inibição de OCT2 e MATE eleva a creatinina sem queda da filtração.",
+    "Errada. Não há dados que sustentem o diagnóstico; suspender seria prematuro.",
+    "Errada. Ureia estável e diurese normal não sugerem lesão tubular.",
+    "Errada. Não há indício de hipovolemia.",
+    "Errada. Não há sedimento ou oligúria que sugiram cristalúria."
+   ],
+   "base": "Bula de sulfametoxazol-trimetoprima; IDSA AMR Guidance 2026 (Tabela 1)"
+  },
+  {
+   "leitura": "outras-classes-antibacterianas",
+   "nivel": "avancado",
+   "enun": "Paciente transplantado usava rifampicina para infecção de prótese articular, e a dose de tacrolimo foi triplicada para manter o nível. A rifampicina foi suspensa hoje. Qual a conduta com o tacrolimo?",
+   "alts": [
+    "Manter a dose atual, pois a indução enzimática termina no mesmo dia da suspensão",
+    "Reduzir o tacrolimo aos poucos, com níveis frequentes, por cerca de 2 semanas",
+    "Reduzir o tacrolimo pela metade somente 30 dias após a suspensão dela",
+    "Aumentar ainda mais o tacrolimo pelo efeito rebote que se segue à indução",
+    "Suspender o tacrolimo por 48 horas e depois reiniciar na dose do transplante"
+   ],
+   "gab": 1,
+   "coment": "A rifampicina é indutora potente de CYP3A4 e glicoproteína P. A indução começa em dias, é máxima em 1 a 2 semanas e persiste por cerca de 2 semanas após a suspensão. Fármacos cujas doses foram aumentadas para compensar (tacrolimo, varfarina, metadona) precisam ser reduzidos gradualmente nesse período, com níveis ou RNI frequentes. O erro clássico ocorre no fim do tratamento, quando a indução se desfaz e a dose continua alta.",
+   "porAlt": [
+    "Errada. A indução persiste por cerca de 2 semanas e depois se desfaz.",
+    "Correta. A indução se desfaz em cerca de 2 semanas; sem redução, haverá toxicidade.",
+    "Errada. Tardio demais: o nível subirá antes disso.",
+    "Errada. Não há rebote; a exposição aumenta com o fim da indução.",
+    "Errada. Expõe a rejeição e não segue o nível sérico."
+   ],
+   "base": "Bula de rifampicina; FDA, Clinical Drug Interaction Studies guidance, 2020"
+  }
+ ]
+}

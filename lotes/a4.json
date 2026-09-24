@@ -1,0 +1,1530 @@
+{
+ "leituras": [
+  {
+   "slug": "drogas-vasoativas",
+   "titulo": "Drogas vasoativas e inotrópicos",
+   "dek": "Vasopressores e inotrópicos usados na UTI: receptores, doses, diluições, cálculo de vazão, via de acesso, extravasamento e escolha por tipo de choque, com base no Surviving Sepsis Campaign 2026, nos ensaios VASST, SOAP II e DOREMI e nas bulas brasileiras.",
+   "palavras": 4365,
+   "fontes": [
+    "Surviving Sepsis Campaign 2026",
+    "VASST, NEJM 2008",
+    "SOAP II, NEJM 2010",
+    "65 trial, JAMA 2020",
+    "LeoPARDS, NEJM 2016",
+    "DOREMI, NEJM 2021",
+    "OptimaCC, JACC 2018",
+    "ANZICS low-dose dopamine, Lancet 2000"
+   ]
+  },
+  {
+   "slug": "fluidos-diureticos",
+   "titulo": "Fluidos, albumina e diuréticos",
+   "dek": "Cristaloides, coloides e albumina, fases da fluidoterapia e desressuscitação, diuréticos de alça e bloqueio sequencial do néfron, manitol e salina hipertônica na hipertensão intracraniana, com base no Surviving Sepsis Campaign 2026, na diretriz de fluidos da ESICM (2024 e 2025), nos ensaios SMART, BaSICS, PLUS, CLASSIC, CLOVERS, DOSE, ADVOR e CLOROTIC e na diretriz de edema cerebral da Neurocritical Care Society (2020).",
+   "palavras": 3943,
+   "fontes": [
+    "Surviving Sepsis Campaign 2026",
+    "ESICM fluid therapy guideline part 1, 2024",
+    "ESICM fluid therapy guideline parts 2 e 3, 2025",
+    "SMART 2018; BaSICS 2021; PLUS 2022",
+    "SAFE 2004; ALBIOS 2014",
+    "CLASSIC 2022; CLOVERS 2023",
+    "DOSE 2011; ADVOR 2022; CLOROTIC 2023",
+    "ESC Heart Failure 2021",
+    "Neurocritical Care Society cerebral edema 2020; COBI 2021"
+   ]
+  },
+  {
+   "slug": "analgesia-sedacao-delirium",
+   "titulo": "Analgesia, sedação e delirium",
+   "dek": "Avaliação e tratamento de dor, agitação e delirium no adulto em UTI: analgesia primeiro, alvos de sedação, opioides, propofol, dexmedetomidina, midazolam e cetamina, analgesia multimodal, abstinência iatrogênica e o papel limitado dos antipsicóticos, com base na diretriz PADIS da SCCM (2018) e na sua atualização focada (2025) e nos ensaios MIND-USA, AID-ICU, SPICE III e MENDS2.",
+   "palavras": 3989,
+   "fontes": [
+    "SCCM PADIS 2018",
+    "SCCM PADIS focused update 2025",
+    "MIND-USA, NEJM 2018",
+    "AID-ICU, NEJM 2022",
+    "SPICE III, NEJM 2019",
+    "MENDS2, NEJM 2021",
+    "Wanzuita et al., Crit Care 2012"
+   ]
+  },
+  {
+   "slug": "bloqueadores-neuromusculares",
+   "titulo": "Bloqueadores neuromusculares e reversores",
+   "dek": "Farmacologia dos bloqueadores neuromusculares despolarizantes e adespolarizantes, reversão com neostigmina e sugamadex, uso na síndrome do desconforto respiratório agudo à luz de ACURASYS e ROSE, monitorização por sequência de quatro estímulos, sedação obrigatória, fraqueza adquirida e interações, com base nas diretrizes da SCCM (2016), na diretriz rápida da Intensive Care Medicine (2020) e na diretriz de SDRA da ESICM (2023).",
+   "palavras": 3258,
+   "fontes": [
+    "SCCM sustained neuromuscular blockade guideline 2016",
+    "Alhazzani, ICM rapid practice guideline 2020",
+    "ESICM ARDS guideline 2023",
+    "ACURASYS, NEJM 2010",
+    "ROSE, NEJM 2019",
+    "ISMP Brasil MPP 2019"
+   ]
+  },
+  {
+   "slug": "intubacao-sequencia-rapida",
+   "titulo": "Intubação em sequência rápida",
+   "dek": "Farmacologia da intubação em sequência rápida no paciente crítico: pré-oxigenação, otimização hemodinâmica, indutores e bloqueadores com doses e escolha conforme o estado hemodinâmico, vasopressor em bolus, sedação pós-intubação e a organização do carrinho e dos kits pelo farmacêutico, com base na diretriz de sequência rápida da SCCM (2023) e nos ensaios PREOXI (2024), PREPARE II (2022) e RSI (2025).",
+   "palavras": 3135,
+   "fontes": [
+    "SCCM rapid sequence intubation guideline 2023",
+    "RSI trial, NEJM 2025",
+    "PREOXI, NEJM 2024",
+    "PREPARE II, JAMA 2022",
+    "PreVent, NEJM 2019",
+    "INTUBE, JAMA 2021",
+    "ED-AWARENESS-2 protocol, Trials 2023",
+    "ANVISA RDC 7/2010"
+   ]
+  },
+  {
+   "slug": "anticonvulsivantes-status",
+   "titulo": "Anticonvulsivantes e estado de mal epiléptico",
+   "dek": "Tratamento do estado de mal epiléptico no adulto por fases e tempos, benzodiazepínicos, fármacos de segunda linha comparados no ESETT, anestésicos na fase refratária, farmacocinética e administração da fenitoína, levetiracetam, lacosamida, valproato e fenobarbital, profilaxia no traumatismo cranioencefálico e interações dos indutores enzimáticos, com base nas diretrizes da American Epilepsy Society (2016), da Neurocritical Care Society (2012), da Brain Trauma Foundation (2016), na definição da ILAE (2015) e no ESETT (2019).",
+   "palavras": 3353,
+   "fontes": [
+    "American Epilepsy Society guideline 2016",
+    "Neurocritical Care Society status epilepticus guideline 2012",
+    "ILAE definition 2015",
+    "ESETT, NEJM 2019; Lancet 2020",
+    "RAMPART, NEJM 2012",
+    "Brain Trauma Foundation 4th ed. 2016"
+   ]
+  },
+  {
+   "slug": "toxicologia-antidotos",
+   "titulo": "Intoxicações e antídotos",
+   "dek": "Abordagem do paciente intoxicado na UTI, descontaminação e principais antídotos (acetilcisteína, naloxona, flumazenil, fisostigmina, atropina e pralidoxima, glucagon, insulina em dose alta, emulsão lipídica, bicarbonato, hidroxocobalamina, azul de metileno, fomepizol e etanol, octreotida), com disponibilidade no Brasil e papel do CIATox, com base no consenso norte-americano de paracetamol (2023), na diretriz da Austrália e Nova Zelândia (2020), na Nota Técnica nº 459/2025 do Ministério da Saúde e em consensos de toxicologia clínica.",
+   "palavras": 4577,
+   "fontes": [
+    "Dart et al., consenso de paracetamol EUA/Canadá, JAMA Netw Open 2023",
+    "Chiew et al., diretriz ANZ de paracetamol, MJA 2020",
+    "SNAP, Lancet 2014",
+    "Ministério da Saúde, Nota Técnica 459/2025 (fomepizol)",
+    "Conitec, hidroxocobalamina, 2016",
+    "St-Onge et al., bloqueador de canal de cálcio, CCM 2017",
+    "ASRA LAST advisory 2018",
+    "Anvisa Disque-Intoxicação/Renaciat"
+   ]
+  }
+ ],
+ "cartoes": [
+  {
+   "leitura": "drogas-vasoativas",
+   "frente": "Qual o vasopressor de primeira linha no choque séptico segundo o SSC 2026?",
+   "verso": "Noradrenalina, recomendada em vez de dopamina, adrenalina ou selepressina (forte) e sugerida em vez de vasopressina ou angiotensina II. Meta inicial de PAM 65 mmHg."
+  },
+  {
+   "leitura": "drogas-vasoativas",
+   "frente": "Quando o SSC 2026 sugere associar vasopressina e em que dose?",
+   "verso": "Quando a dose de noradrenalina está em escalada (muitos protocolos usam 0,25 a 0,5 mcg/kg/min). Dose fixa de 0,03 UI/min, sem ajuste por peso, até 0,04 UI/min."
+  },
+  {
+   "leitura": "drogas-vasoativas",
+   "frente": "Qual a fórmula para calcular a vazão de uma catecolamina em mL/h?",
+   "verso": "Vazão (mL/h) = dose (mcg/kg/min) × peso (kg) × 60 ÷ concentração (mcg/mL)."
+  },
+  {
+   "leitura": "drogas-vasoativas",
+   "frente": "Quanto de noradrenalina base contém a ampola nacional típica de 4 mL com 8 mg de hemitartarato?",
+   "verso": "4 mg de noradrenalina base (1 mg/mL). Confundir sal e base gera erro de duas vezes na dose; confira o rótulo do produto padronizado."
+  },
+  {
+   "leitura": "drogas-vasoativas",
+   "frente": "Paciente de 70 kg, noradrenalina 16 mg em 250 mL a 0,1 mcg/kg/min. Qual a vazão?",
+   "verso": "Concentração 64 mcg/mL. 0,1 × 70 × 60 ÷ 64 = 6,6 mL/h."
+  },
+  {
+   "leitura": "drogas-vasoativas",
+   "frente": "Por que a dopamina saiu da primeira linha no choque?",
+   "verso": "No SOAP II causou o dobro de arritmias (24,1% contra 12,4%) e maior mortalidade no choque cardiogênico. A \"dose renal\" também não protege o rim (ANZICS 2000)."
+  },
+  {
+   "leitura": "drogas-vasoativas",
+   "frente": "Por que a adrenalina eleva o lactato mesmo sem hipoperfusão?",
+   "verso": "O estímulo beta-2 no músculo esquelético acelera a glicólise aeróbica e produz hiperlactatemia tipo B, o que reduz o valor do lactato como marcador de perfusão."
+  },
+  {
+   "leitura": "drogas-vasoativas",
+   "frente": "Qual inotrópico preferir em paciente com baixo débito em uso crônico de betabloqueador?",
+   "verso": "Milrinona (inibe PDE3, age abaixo do receptor beta) ou levosimendana. A resposta à dobutamina fica atenuada."
+  },
+  {
+   "leitura": "drogas-vasoativas",
+   "frente": "Que cuidado de dose a milrinona exige na disfunção renal?",
+   "verso": "Redução da infusão conforme clearance de creatinina, pois é eliminada inalterada pelo rim; a meia-vida se prolonga e a hipotensão persiste por horas."
+  },
+  {
+   "leitura": "drogas-vasoativas",
+   "frente": "Por que o efeito da levosimendana dura dias após infusão de 24 horas?",
+   "verso": "O metabólito ativo OR-1896 tem meia-vida de cerca de 70 a 80 horas. Hipotensão causada por ela não se resolve ao fechar a bomba."
+  },
+  {
+   "leitura": "drogas-vasoativas",
+   "frente": "Em que diluente a levosimendana deve ser preparada?",
+   "verso": "Apenas em glicose 5%, com validade curta da solução diluída conforme bula."
+  },
+  {
+   "leitura": "drogas-vasoativas",
+   "frente": "Qual o manejo do extravasamento de noradrenalina?",
+   "verso": "Parar a infusão, aspirar pelo cateter e retirá-lo, elevar o membro, compressa morna, fentolamina 5 a 10 mg em 10 mL SC na área (ou terbutalina SC ou nitroglicerina 2% tópica se não houver)."
+  },
+  {
+   "leitura": "drogas-vasoativas",
+   "frente": "A fentolamina funciona no extravasamento de vasopressina?",
+   "verso": "Não. A vasoconstrição da vasopressina é mediada por receptor V1, e a fentolamina é bloqueador alfa-adrenérgico."
+  },
+  {
+   "leitura": "drogas-vasoativas",
+   "frente": "Que condições costumam permitir noradrenalina por acesso periférico?",
+   "verso": "Cateter 18 a 20 G em veia calibrosa proximal, refluxo confirmado, solução diluída, inspeção a cada 1 a 2 horas e limite de tempo e dose definidos em protocolo. O SSC 2026 sugere não atrasar o vasopressor à espera do acesso central."
+  },
+  {
+   "leitura": "fluidos-diureticos",
+   "frente": "Qual cristaloide o SSC 2026 sugere na ressuscitação inicial da sepse?",
+   "verso": "Cristaloide balanceado em vez de SF 0,9% (condicional, certeza moderada), dentro da recomendação forte de usar cristaloide como primeira linha."
+  },
+  {
+   "leitura": "fluidos-diureticos",
+   "frente": "O Ringer simples é solução balanceada?",
+   "verso": "Não. Tem cloro semelhante ao do SF (cerca de 156 mEq/L) e não tem tampão. Balanceados são Ringer lactato e Plasma-Lyte."
+  },
+  {
+   "leitura": "fluidos-diureticos",
+   "frente": "Hipercalemia contraindica Ringer lactato?",
+   "verso": "Não. O potássio da solução (4 mEq/L) é fisiológico, e a acidose hiperclorêmica do SF desloca mais potássio para fora da célula."
+  },
+  {
+   "leitura": "fluidos-diureticos",
+   "frente": "Qual fluido a ESICM 2024 sugere no traumatismo cranioencefálico?",
+   "verso": "SF 0,9%, em vez de cristaloide balanceado (levemente hipotônico) e em vez de albumina (maior mortalidade no SAFE-TBI)."
+  },
+  {
+   "leitura": "fluidos-diureticos",
+   "frente": "O que mudou no SSC 2026 sobre albumina?",
+   "verso": "Passou a sugerir cristaloide isolado em vez de cristaloide com albumina na sepse; em 2021 sugeria albumina para quem recebia grandes volumes."
+  },
+  {
+   "leitura": "fluidos-diureticos",
+   "frente": "Qual a dose de albumina na paracentese de grande volume?",
+   "verso": "6 a 8 g de albumina por litro de ascite retirado, quando se retiram mais de 5 L."
+  },
+  {
+   "leitura": "fluidos-diureticos",
+   "frente": "Qual a dose de albumina na peritonite bacteriana espontânea?",
+   "verso": "1,5 g/kg no diagnóstico e 1 g/kg no terceiro dia, junto com o antibiótico."
+  },
+  {
+   "leitura": "fluidos-diureticos",
+   "frente": "Por que nunca diluir albumina 20% em água estéril?",
+   "verso": "A solução resultante é hipotônica e pode causar hemólise grave, já descrita com desfecho fatal. Dilui-se em SF 0,9% ou glicose 5%."
+  },
+  {
+   "leitura": "fluidos-diureticos",
+   "frente": "O que é fluid creep?",
+   "verso": "Volume de fluido que entra sem ter sido prescrito como fluido: diluentes, soro para manter veia, lavagens. Pode chegar a um terço do total na UTI."
+  },
+  {
+   "leitura": "fluidos-diureticos",
+   "frente": "Por que a furosemida perde efeito na hipoalbuminemia e na uremia?",
+   "verso": "Age pelo lúmen tubular após secreção proximal ligada à albumina. Hipoalbuminemia reduz a oferta ao túbulo e toxinas urêmicas competem pelos transportadores de ânions orgânicos."
+  },
+  {
+   "leitura": "fluidos-diureticos",
+   "frente": "Como avaliar resposta precoce à furosemida segundo a ESC 2021?",
+   "verso": "Sódio urinário 2 horas após a dose abaixo de 50 a 70 mEq/L ou diurese abaixo de 100 a 150 mL/h nas primeiras 6 horas indicam resposta insuficiente; dobrar a dose."
+  },
+  {
+   "leitura": "fluidos-diureticos",
+   "frente": "O que mostrou o ADVOR?",
+   "verso": "Acetazolamida 500 mg IV uma vez ao dia somada à alça aumentou a descongestão bem-sucedida em 3 dias (42,2% contra 30,5%) na insuficiência cardíaca descompensada."
+  },
+  {
+   "leitura": "fluidos-diureticos",
+   "frente": "Qual parâmetro indica suspender doses repetidas de manitol?",
+   "verso": "Gap osmolar acima de cerca de 20 mOsm/kg, sinal de manitol acumulado e risco de lesão renal."
+  },
+  {
+   "leitura": "fluidos-diureticos",
+   "frente": "Como preparar 500 mL de NaCl 3% com SF 0,9% e NaCl 20%?",
+   "verso": "Retirar 55 mL de uma bolsa de 500 mL de SF 0,9% e acrescentar 55 mL de NaCl 20%. Total de 15 g de NaCl em 500 mL."
+  },
+  {
+   "leitura": "analgesia-sedacao-delirium",
+   "frente": "O que a atualização PADIS 2025 sugeriu sobre dexmedetomidina e propofol?",
+   "verso": "Dexmedetomidina em vez de propofol em adultos ventilados quando sedação leve e redução de delirium são prioridades (condicional, certeza moderada)."
+  },
+  {
+   "leitura": "analgesia-sedacao-delirium",
+   "frente": "Qual o alvo usual de RASS na sedação leve?",
+   "verso": "RASS de 0 a −2. Sedação profunda (−3 a −5) só em indicações específicas, como bloqueio neuromuscular ou hipertensão intracraniana refratária."
+  },
+  {
+   "leitura": "analgesia-sedacao-delirium",
+   "frente": "Quais escalas avaliam dor no paciente que não se comunica e quais os pontos de corte?",
+   "verso": "BPS (3 a 12; acima de 5 sugere dor) e CPOT (0 a 8; acima de 2 sugere dor)."
+  },
+  {
+   "leitura": "analgesia-sedacao-delirium",
+   "frente": "Por que preferir fentanil à morfina na lesão renal aguda?",
+   "verso": "O fentanil gera metabólitos inativos pelo CYP3A4. A morfina gera morfina-6 e 3-glicuronídeo, que acumulam e causam sedação prolongada e neuroexcitação."
+  },
+  {
+   "leitura": "analgesia-sedacao-delirium",
+   "frente": "Qual o limiar de dose associado à síndrome de infusão do propofol?",
+   "verso": "Acima de 4 mg/kg/h (cerca de 67 mcg/kg/min) por mais de 48 horas, com risco somado por catecolaminas, corticoides e baixa oferta de carboidrato."
+  },
+  {
+   "leitura": "analgesia-sedacao-delirium",
+   "frente": "Quantas calorias fornece o propofol 1%?",
+   "verso": "Cerca de 1,1 kcal/mL, que devem ser descontadas da terapia nutricional."
+  },
+  {
+   "leitura": "analgesia-sedacao-delirium",
+   "frente": "Quando dosar triglicerídeos em paciente com propofol?",
+   "verso": "Após 48 horas de infusão e periodicamente depois; acima de 400 a 500 mg/dL, reduzir ou trocar de sedativo."
+  },
+  {
+   "leitura": "analgesia-sedacao-delirium",
+   "frente": "Por que não usar dose de ataque de dexmedetomidina na UTI?",
+   "verso": "O bolus de 1 mcg/kg causa bradicardia, hipotensão ou hipertensão transitória. Inicia-se diretamente a manutenção."
+  },
+  {
+   "leitura": "analgesia-sedacao-delirium",
+   "frente": "Qual a diferença de potência entre escetamina e cetamina racêmica?",
+   "verso": "A escetamina tem cerca do dobro da potência; a dose deve ser aproximadamente metade. Ambas são apresentadas a 50 mg/mL no Brasil."
+  },
+  {
+   "leitura": "analgesia-sedacao-delirium",
+   "frente": "Qual o cuidado ao suspender remifentanil?",
+   "verso": "Garantir analgesia de transição antes, porque a meia-vida curta causa dor intensa, hiperalgesia e abstinência logo após a suspensão."
+  },
+  {
+   "leitura": "analgesia-sedacao-delirium",
+   "frente": "Por que não escalar metadona a cada 24 horas no desmame de opioide?",
+   "verso": "A meia-vida longa e variável faz o nível subir por 3 a 5 dias; escalas diárias levam a sedação e depressão respiratória tardias."
+  },
+  {
+   "leitura": "analgesia-sedacao-delirium",
+   "frente": "Como prevenir abstinência após uma semana de fentanil e midazolam em infusão?",
+   "verso": "Redução de 10% a 20% ao dia, conversão para via enteral (metadona, benzodiazepínico de meia-vida longa se necessário) e alfa-2 agonista para sintomas adrenérgicos."
+  },
+  {
+   "leitura": "analgesia-sedacao-delirium",
+   "frente": "O que mostrou o AID-ICU?",
+   "verso": "Haloperidol 2,5 mg de 8/8 h não aumentou dias vivos fora do hospital em 90 dias. A menor mortalidade (36,3% contra 43,3%) foi desfecho secundário, gerador de hipótese."
+  },
+  {
+   "leitura": "analgesia-sedacao-delirium",
+   "frente": "A PADIS 2025 recomenda antipsicóticos no delirium?",
+   "verso": "Não se posicionou: declarou-se incapaz de recomendar a favor ou contra. O uso razoável é pontual para sintomas perigosos, com ECG e suspensão precoce."
+  },
+  {
+   "leitura": "bloqueadores-neuromusculares",
+   "frente": "Por que a succinilcolina causa hipercalemia grave em imobilizados e queimados?",
+   "verso": "Há suprarregulação de receptores nicotínicos imaturos por toda a membrana; a succinilcolina despolariza todos e causa efluxo maciço de potássio."
+  },
+  {
+   "leitura": "bloqueadores-neuromusculares",
+   "frente": "Qual a dose de rocurônio na sequência rápida?",
+   "verso": "1 a 1,2 mg/kg, com início em 60 a 90 segundos e duração que pode passar de 60 minutos."
+  },
+  {
+   "leitura": "bloqueadores-neuromusculares",
+   "frente": "Como o cisatracúrio é eliminado?",
+   "verso": "Pela via de Hofmann, degradação química dependente de pH e temperatura, independente de fígado e rim; acidose e hipotermia prolongam o efeito."
+  },
+  {
+   "leitura": "bloqueadores-neuromusculares",
+   "frente": "Qual foi a diferença-chave entre ACURASYS e ROSE?",
+   "verso": "No ACURASYS o controle estava em sedação profunda sem bloqueio; no ROSE, em sedação leve, e o bloqueio não reduziu mortalidade (42,5% contra 42,8%)."
+  },
+  {
+   "leitura": "bloqueadores-neuromusculares",
+   "frente": "O que recomenda a ESICM 2023 sobre bloqueio na SDRA?",
+   "verso": "Contra infusão contínua de rotina para reduzir mortalidade na SDRA moderada a grave não relacionada à covid-19 (forte, evidência moderada)."
+  },
+  {
+   "leitura": "bloqueadores-neuromusculares",
+   "frente": "Qual o alvo de TOF em infusão contínua de bloqueador na UTI?",
+   "verso": "Uma a duas respostas de quatro, combinado com avaliação clínica de sincronia (SCCM 2016)."
+  },
+  {
+   "leitura": "bloqueadores-neuromusculares",
+   "frente": "Qual a única recomendação forte da diretriz de bloqueio sustentado da SCCM 2016?",
+   "verso": "Proteção ocular programada com lubrificante e oclusão palpebral em pacientes com bloqueador em infusão."
+  },
+  {
+   "leitura": "bloqueadores-neuromusculares",
+   "frente": "Qual a dose de sugamadex para bloqueio moderado, profundo e reversão imediata?",
+   "verso": "2 mg/kg com duas respostas ao TOF; 4 mg/kg com 1 a 2 respostas pós-tetânicas; 16 mg/kg três minutos após rocurônio 1,2 mg/kg."
+  },
+  {
+   "leitura": "bloqueadores-neuromusculares",
+   "frente": "O sugamadex reverte cisatracúrio?",
+   "verso": "Não. Encapsula aminoesteroides (rocurônio, vecurônio). Cisatracúrio e succinilcolina não são revertidos por ele."
+  },
+  {
+   "leitura": "bloqueadores-neuromusculares",
+   "frente": "Qual a interação do sugamadex com contraceptivo hormonal?",
+   "verso": "Equivale a perder uma dose do contraceptivo oral; orientar método adicional por 7 dias."
+  },
+  {
+   "leitura": "bloqueadores-neuromusculares",
+   "frente": "Qual o limite da neostigmina como reversor?",
+   "verso": "Tem efeito teto: só reverte bloqueio superficial (duas a quatro respostas ao TOF) e exige atropina ou glicopirrolato para os efeitos muscarínicos."
+  },
+  {
+   "leitura": "bloqueadores-neuromusculares",
+   "frente": "Cite antimicrobianos que potencializam bloqueadores adespolarizantes.",
+   "verso": "Aminoglicosídeos, polimixinas e clindamicina."
+  },
+  {
+   "leitura": "bloqueadores-neuromusculares",
+   "frente": "Qual a associação mais relacionada à miopatia aguda do doente crítico?",
+   "verso": "Corticoide em dose alta com bloqueador neuromuscular, sobretudo aminoesteroide."
+  },
+  {
+   "leitura": "bloqueadores-neuromusculares",
+   "frente": "Que sedativo não deve ser usado isoladamente em paciente curarizado?",
+   "verso": "Dexmedetomidina, que não garante sedação profunda. Usa-se propofol ou midazolam com opioide."
+  },
+  {
+   "leitura": "intubacao-sequencia-rapida",
+   "frente": "Qual a única recomendação forte da diretriz de sequência rápida da SCCM 2023?",
+   "verso": "Usar bloqueador neuromuscular quando se usa indutor sedativo-hipnótico para intubar."
+  },
+  {
+   "leitura": "intubacao-sequencia-rapida",
+   "frente": "O que mostrou o ensaio RSI (2025)?",
+   "verso": "Mortalidade em 28 dias semelhante entre cetamina (28,1%) e etomidato (29,1%), com mais colapso cardiovascular com cetamina (22,1% contra 17,0%)."
+  },
+  {
+   "leitura": "intubacao-sequencia-rapida",
+   "frente": "Qual pré-oxigenação reduziu hipoxemia no PREOXI (2024)?",
+   "verso": "Ventilação não invasiva: hipoxemia de 9,1% contra 18,5% com máscara de oxigênio, e menos parada cardíaca."
+  },
+  {
+   "leitura": "intubacao-sequencia-rapida",
+   "frente": "O bolus de volume de rotina previne colapso na intubação?",
+   "verso": "Não. O PREPARE II (2022) não mostrou redução com 500 mL de cristaloide. Volume só com sinais de hipovolemia ou responsividade."
+  },
+  {
+   "leitura": "intubacao-sequencia-rapida",
+   "frente": "Qual a dose de etomidato e seu principal efeito adverso endócrino?",
+   "verso": "0,2 a 0,3 mg/kg. Inibe a 11-beta-hidroxilase adrenal e reduz a síntese de cortisol por 24 a 48 horas após dose única."
+  },
+  {
+   "leitura": "intubacao-sequencia-rapida",
+   "frente": "Qual a dose de cetamina na indução e quando ela pode baixar a pressão?",
+   "verso": "1 a 2 mg/kg, reduzida no choque. Com catecolaminas endógenas esgotadas, o efeito depressor miocárdico direto aparece e a pressão cai."
+  },
+  {
+   "leitura": "intubacao-sequencia-rapida",
+   "frente": "Qual indutor é o menos adequado no paciente em choque?",
+   "verso": "Propofol, pela vasodilatação e depressão miocárdica; midazolam também tem início lento e hipotensão frequente."
+  },
+  {
+   "leitura": "intubacao-sequencia-rapida",
+   "frente": "Como preparar adrenalina 10 mcg/mL para bolus?",
+   "verso": "1 mL da ampola de 1 mg/mL em 100 mL de SF 0,9%, aspirado em seringa rotulada. Dose de 5 a 20 mcg (0,5 a 2 mL) a cada 2 a 5 minutos."
+  },
+  {
+   "leitura": "intubacao-sequencia-rapida",
+   "frente": "Como preparar fenilefrina 100 mcg/mL para bolus?",
+   "verso": "1 mL da ampola de 10 mg/mL em 100 mL de SF 0,9%. Dose de 50 a 200 mcg (0,5 a 2 mL) a cada 2 a 5 minutos."
+  },
+  {
+   "leitura": "intubacao-sequencia-rapida",
+   "frente": "Qual o risco de atrasar a sedação após intubação com rocurônio?",
+   "verso": "Consciência sob paralisia: o indutor dura minutos e o rocurônio mais de 45 minutos. Estimada em 3% a 7% dos sobreviventes ventilados a partir da emergência."
+  },
+  {
+   "leitura": "intubacao-sequencia-rapida",
+   "frente": "Como dosar succinilcolina e rocurônio no obeso?",
+   "verso": "Succinilcolina pelo peso total; rocurônio pelo peso ideal ou ajustado, conforme protocolo."
+  },
+  {
+   "leitura": "intubacao-sequencia-rapida",
+   "frente": "Qual a dose de sugamadex que deve estar disponível no kit de intubação?",
+   "verso": "16 mg/kg para o maior paciente previsto, para reversão imediata após rocurônio 1,2 mg/kg."
+  },
+  {
+   "leitura": "intubacao-sequencia-rapida",
+   "frente": "O que é índice de choque e por que calcular antes da intubação?",
+   "verso": "Frequência cardíaca dividida pela pressão sistólica; acima de 0,8 a 0,9 prediz colapso cardiovascular e indica vasopressor antes da indução e dose menor de indutor."
+  },
+  {
+   "leitura": "intubacao-sequencia-rapida",
+   "frente": "Qual indutor preferir no broncoespasmo grave?",
+   "verso": "Cetamina, pela broncodilatação e preservação do drive respiratório."
+  },
+  {
+   "leitura": "anticonvulsivantes-status",
+   "frente": "Quais os tempos t1 e t2 do estado de mal tônico-clônico (ILAE 2015)?",
+   "verso": "t1 de 5 minutos para iniciar tratamento; t2 de 30 minutos a partir do qual há risco de lesão neuronal."
+  },
+  {
+   "leitura": "anticonvulsivantes-status",
+   "frente": "Qual a dose de midazolam intramuscular no estado de mal do adulto?",
+   "verso": "10 mg se acima de 40 kg (5 mg entre 13 e 40 kg), dose única; superior ao lorazepam IV no pré-hospitalar (RAMPART)."
+  },
+  {
+   "leitura": "anticonvulsivantes-status",
+   "frente": "Quais as doses de segunda linha usadas no ESETT?",
+   "verso": "Levetiracetam 60 mg/kg (máx. 4.500 mg), fosfenitoína 20 mg EF/kg (máx. 1.500 mg EF) e valproato 40 mg/kg (máx. 3.000 mg), com eficácia de 45% a 47%."
+  },
+  {
+   "leitura": "anticonvulsivantes-status",
+   "frente": "Em que diluente a fenitoína pode ser preparada?",
+   "verso": "Somente em SF 0,9%; em glicose precipita. Concentração final até cerca de 10 mg/mL e uso logo após o preparo, com filtro de linha."
+  },
+  {
+   "leitura": "anticonvulsivantes-status",
+   "frente": "Qual a velocidade máxima de infusão da fenitoína?",
+   "verso": "50 mg/min no adulto; 25 mg/min ou menos em idosos e cardiopatas, com ECG e pressão contínuos."
+  },
+  {
+   "leitura": "anticonvulsivantes-status",
+   "frente": "Qual a equação de Sheiner-Tozer?",
+   "verso": "Concentração corrigida = medida ÷ (0,2 × albumina em g/dL + 0,1); na insuficiência renal grave usa-se 0,1 no lugar de 0,2."
+  },
+  {
+   "leitura": "anticonvulsivantes-status",
+   "frente": "Por que ajustes de manutenção da fenitoína devem ser pequenos?",
+   "verso": "O metabolismo é saturável (Michaelis-Menten): pequenos aumentos de dose causam aumentos desproporcionais do nível sérico."
+  },
+  {
+   "leitura": "anticonvulsivantes-status",
+   "frente": "Qual a faixa terapêutica da fenitoína total e livre?",
+   "verso": "Total de 10 a 20 mg/L; livre de 1 a 2 mg/L."
+  },
+  {
+   "leitura": "anticonvulsivantes-status",
+   "frente": "Qual a interação mais grave do valproato na UTI?",
+   "verso": "Com carbapenêmicos, que reduzem o nível de valproato em 60% a 100%; aumentar a dose não compensa, troca-se um dos fármacos."
+  },
+  {
+   "leitura": "anticonvulsivantes-status",
+   "frente": "Por que o levetiracetam é conveniente na UTI?",
+   "verso": "Cinética linear, pouca ligação proteica, sem metabolismo pelo P450 e poucas interações. Exige ajuste renal e dose extra após hemodiálise."
+  },
+  {
+   "leitura": "anticonvulsivantes-status",
+   "frente": "Qual efeito da lacosamida exige ECG?",
+   "verso": "Prolongamento do intervalo PR, com risco de bloqueio atrioventricular, sobretudo com betabloqueador ou verapamil."
+  },
+  {
+   "leitura": "anticonvulsivantes-status",
+   "frente": "Por quanto tempo fazer profilaxia de crises no traumatismo cranioencefálico grave?",
+   "verso": "7 dias, para crises precoces (Brain Trauma Foundation 2016). Não previne epilepsia tardia."
+  },
+  {
+   "leitura": "anticonvulsivantes-status",
+   "frente": "Por que não usar diazepam em infusão contínua?",
+   "verso": "Contém propilenoglicol e etanol e precipita quando diluído. Para infusão, o benzodiazepínico é o midazolam."
+  },
+  {
+   "leitura": "anticonvulsivantes-status",
+   "frente": "Cite três fármacos cujo nível cai com fenitoína, fenobarbital ou carbamazepina.",
+   "verso": "Voriconazol, tacrolimo e nimodipino (também midazolam, fentanil, metadona e anticoagulantes orais diretos)."
+  },
+  {
+   "leitura": "toxicologia-antidotos",
+   "frente": "Qual o esquema de NAC em duas bolsas?",
+   "verso": "200 mg/kg em 4 horas e 100 mg/kg em 16 horas (Austrália e Nova Zelândia 2020); menos reações anafilactoides que o de três bolsas."
+  },
+  {
+   "leitura": "toxicologia-antidotos",
+   "frente": "Qual a dose mínima de NAC recomendada pelo consenso de 2023 e o teto de peso?",
+   "verso": "Pelo menos 300 mg/kg nas primeiras 20 a 24 horas, com peso de cálculo limitado a 100 kg."
+  },
+  {
+   "leitura": "toxicologia-antidotos",
+   "frente": "Quando a NAC pode ser suspensa?",
+   "verso": "Quando o paracetamol está indetectável ou muito baixo, transaminases normais ou em queda franca, INR em melhora (em geral abaixo de 2) e paciente bem."
+  },
+  {
+   "leitura": "toxicologia-antidotos",
+   "frente": "Como manejar reação anafilactoide à NAC?",
+   "verso": "Interromper, tratar com anti-histamínico (e broncodilatador se preciso) e reiniciar em velocidade menor. Não é alergia verdadeira."
+  },
+  {
+   "leitura": "toxicologia-antidotos",
+   "frente": "Como titular naloxona em dependente de opioide?",
+   "verso": "0,04 a 0,1 mg IV a cada 2 a 3 minutos com ventilação assistida, buscando ventilação adequada, não despertar completo."
+  },
+  {
+   "leitura": "toxicologia-antidotos",
+   "frente": "Quando o flumazenil é perigoso?",
+   "verso": "Em usuário crônico de benzodiazepínico, coingestão de pró-convulsivantes (tricíclicos, bupropiona, tramadol) e epilépticos: risco de convulsões e arritmias."
+  },
+  {
+   "leitura": "toxicologia-antidotos",
+   "frente": "Como se define atropinização?",
+   "verso": "Pulmões limpos, FC acima de 80 bpm, PAS acima de 80 mmHg, axilas secas e pupilas não mais puntiformes."
+  },
+  {
+   "leitura": "toxicologia-antidotos",
+   "frente": "Qual o esquema de insulina em dose alta na intoxicação por bloqueador de canal de cálcio?",
+   "verso": "Bolus de 1 unidade/kg, infusão de 1 unidade/kg/h titulada até 10 unidades/kg/h, com glicose contínua e potássio monitorizado."
+  },
+  {
+   "leitura": "toxicologia-antidotos",
+   "frente": "Qual a dose de emulsão lipídica 20% na toxicidade por anestésico local em adulto acima de 70 kg?",
+   "verso": "100 mL em 2 a 3 minutos seguidos de 200 a 250 mL em 15 a 20 minutos (checklist ASRA)."
+  },
+  {
+   "leitura": "toxicologia-antidotos",
+   "frente": "Quando indicar bicarbonato na intoxicação por tricíclico?",
+   "verso": "QRS acima de 100 ms, arritmia ventricular ou hipotensão; 1 a 2 mEq/kg em bolus até estreitar o QRS, com pH 7,45 a 7,55."
+  },
+  {
+   "leitura": "toxicologia-antidotos",
+   "frente": "Qual a dose de hidroxocobalamina na intoxicação por cianeto?",
+   "verso": "5 g (70 mg/kg) IV em 15 minutos, repetível uma vez. Cora pele e urina e interfere em exames colorimétricos."
+  },
+  {
+   "leitura": "toxicologia-antidotos",
+   "frente": "Quais as contraindicações do azul de metileno?",
+   "verso": "Deficiência de G6PD (ineficaz e causa hemólise) e uso de serotoninérgicos (inibe MAO-A e causa síndrome serotoninérgica)."
+  },
+  {
+   "leitura": "toxicologia-antidotos",
+   "frente": "Qual o esquema de fomepizol da Nota Técnica 459/2025?",
+   "verso": "15 mg/kg de ataque; após 12 horas, 10 mg/kg de 12/12 horas por 4 doses; depois 15 mg/kg de 12/12 horas; mais frequente durante hemodiálise."
+  },
+  {
+   "leitura": "toxicologia-antidotos",
+   "frente": "Por que a octreotida é útil na intoxicação por sulfonilureia?",
+   "verso": "Inibe a secreção de insulina estimulada por cada bolus de glicose e interrompe o ciclo de hipoglicemias recorrentes."
+  }
+ ],
+ "questoes": [
+  {
+   "leitura": "drogas-vasoativas",
+   "nivel": "basico",
+   "enun": "Segundo o Surviving Sepsis Campaign 2026, qual é o vasopressor de primeira linha no adulto com choque séptico?",
+   "alts": [
+    "Dopamina, pelo inotropismo associado à vasoconstrição dose-dependente",
+    "Vasopressina, por agir sem depender dos receptores adrenérgicos",
+    "Noradrenalina, com meta inicial de pressão arterial média de 65 mmHg",
+    "Adrenalina, por combinar inotropismo e vasoconstrição em qualquer dose",
+    "Fenilefrina, por elevar a pressão sem provocar taquiarritmias relevantes"
+   ],
+   "gab": 2,
+   "coment": "O SSC 2026 recomenda noradrenalina em vez de dopamina, adrenalina ou selepressina (forte) e sugere noradrenalina em vez de vasopressina ou angiotensina II como primeira escolha, com meta inicial de PAM de 65 mmHg (60 a 65 mmHg em quem tem 65 anos ou mais). Vasopressina entra como segunda droga quando a noradrenalina está em escalada e adrenalina como terceira. Dopamina causa mais arritmias (SOAP II) e fenilefrina não tem papel de primeira linha.",
+   "porAlt": [
+    "Errada: dopamina causou o dobro de arritmias no SOAP II e o SSC 2026 recomenda noradrenalina em vez dela com evidência de alta certeza.",
+    "Errada: a vasopressina é segunda droga, associada quando a noradrenalina escala; o SSC 2026 sugere noradrenalina em vez de vasopressina como primeira.",
+    "Correta: noradrenalina é a primeira linha, com PAM inicial de 65 mmHg.",
+    "Errada: adrenalina é terceira linha no choque séptico (ou alternativa na disfunção cardíaca associada), com mais lactato e arritmias.",
+    "Errada: fenilefrina é alfa-1 puro, sem inotropismo; útil em cenários específicos, não como primeira linha."
+   ],
+   "base": "Surviving Sepsis Campaign 2026"
+  },
+  {
+   "leitura": "drogas-vasoativas",
+   "nivel": "basico",
+   "enun": "Paciente de 80 kg recebe noradrenalina preparada com 16 mg de base em volume final de 250 mL, infundida a 15 mL/h. Qual a dose em mcg/kg/min?",
+   "alts": [
+    "0,05 mcg/kg/min",
+    "0,1 mcg/kg/min",
+    "0,15 mcg/kg/min",
+    "0,2 mcg/kg/min",
+    "0,4 mcg/kg/min"
+   ],
+   "gab": 3,
+   "coment": "Concentração: 16.000 mcg ÷ 250 mL = 64 mcg/mL. Dose por hora: 15 mL/h × 64 mcg/mL = 960 mcg/h. Por minuto: 960 ÷ 60 = 16 mcg/min. Por quilo: 16 ÷ 80 = 0,2 mcg/kg/min. A fórmula inversa é vazão = dose × peso × 60 ÷ concentração. Registrar a dose em mcg/kg/min, e não só a vazão, permite conferir prescrição, comparar com gatilhos de diretriz e detectar erro de concentração.",
+   "porAlt": [
+    "Errada: corresponde a um quarto da dose real; provável erro de concentração ou de conversão de hora para minuto.",
+    "Errada: seria o resultado usando 32 mcg/mL (8 mg em 250 mL), metade da concentração real.",
+    "Errada: não corresponde a nenhuma conversão correta dos dados.",
+    "Correta: 15 × 64 ÷ 60 ÷ 80 = 0,2 mcg/kg/min.",
+    "Errada: seria obtida com o dobro da concentração, como ao confundir hemitartarato com base no sentido oposto."
+   ],
+   "base": "Cálculo farmacêutico; Surviving Sepsis Campaign 2026"
+  },
+  {
+   "leitura": "drogas-vasoativas",
+   "nivel": "intermediario",
+   "enun": "Homem de 64 anos com choque séptico de foco pulmonar, após 30 mL/kg de cristaloide, está com noradrenalina a 0,4 mcg/kg/min e PAM de 61 mmHg. Qual a conduta mais alinhada ao SSC 2026?",
+   "alts": [
+    "Associar vasopressina em dose fixa de 0,03 UI/min à noradrenalina",
+    "Trocar noradrenalina por dopamina em dose alta, acima de 15 mcg/kg/min",
+    "Associar vasopressina titulada por peso até 0,1 UI/kg/min conforme PAM",
+    "Associar fenilefrina em bolus repetidos até atingir PAM de 75 mmHg",
+    "Iniciar levosimendana 0,1 mcg/kg/min para reduzir a dose do vasopressor"
+   ],
+   "gab": 0,
+   "coment": "Com noradrenalina em escalada (muitos protocolos usam 0,25 a 0,5 mcg/kg/min como gatilho), o SSC 2026 sugere associar vasopressina, em dose fixa de 0,03 UI/min, não titulada por peso. O VASST mostrou efeito poupador de catecolamina. A meta de PAM é 65 mmHg (60 a 65 em idosos), não 75. Dopamina aumenta arritmias; levosimendana tem sugestão contrária no choque séptico (LeoPARDS); bolus repetidos de fenilefrina não substituem uma segunda droga em infusão.",
+   "porAlt": [
+    "Correta: vasopressina 0,03 UI/min associada à noradrenalina em escalada.",
+    "Errada: dopamina é inferior à noradrenalina (SOAP II) e aumenta arritmias.",
+    "Errada: vasopressina é dose fixa em UI/min (0,03 a 0,04), nunca por peso; 0,1 UI/kg/min seria dose absurda.",
+    "Errada: bolus não substituem infusão e a meta de 75 mmHg é mais alta que a recomendada.",
+    "Errada: o SSC 2026 sugere não usar levosimendana no choque séptico."
+   ],
+   "base": "Surviving Sepsis Campaign 2026; VASST 2008"
+  },
+  {
+   "leitura": "drogas-vasoativas",
+   "nivel": "intermediario",
+   "enun": "Mulher de 58 anos com cardiomiopatia isquêmica em uso crônico de carvedilol evolui com baixo débito, extremidades frias e lactato de 4 mmol/L, PAM de 68 mmHg com noradrenalina em dose baixa e função renal normal. Qual inotrópico tem racional farmacológico mais favorável?",
+   "alts": [
+    "Dobutamina a 20 mcg/kg/min, dose alta para vencer o bloqueio beta",
+    "Milrinona em infusão sem bolus, por agir abaixo do receptor beta",
+    "Dopamina a 10 mcg/kg/min, para somar inotropismo e vasoconstrição",
+    "Fenilefrina em infusão, para elevar a pressão de perfusão coronariana",
+    "Adrenalina em dose alta isolada, suspendendo a noradrenalina em curso"
+   ],
+   "gab": 1,
+   "coment": "A milrinona inibe a fosfodiesterase 3 e eleva o AMPc sem depender do receptor beta-1, por isso mantém efeito no paciente betabloqueado. O bolus costuma ser omitido pelo risco de hipotensão, e a função renal normal dispensa redução de dose. Dobutamina em dose alta tem resposta atenuada e mais arritmia; dopamina aumenta arritmias; fenilefrina aumenta a pós-carga de um coração que falha; adrenalina isolada se associou a mais choque refratário que noradrenalina no choque cardiogênico (OptimaCC).",
+   "porAlt": [
+    "Errada: a resposta à dobutamina depende do receptor beta-1 bloqueado; escalar a dose aumenta arritmia com pouco ganho.",
+    "Correta: milrinona age abaixo do receptor beta e é adequada ao paciente betabloqueado com baixo débito.",
+    "Errada: dopamina aumenta arritmias e mortalidade no choque cardiogênico (SOAP II).",
+    "Errada: fenilefrina aumenta pós-carga sem inotropismo, piorando o baixo débito.",
+    "Errada: adrenalina isolada associou-se a mais choque refratário que noradrenalina no OptimaCC."
+   ],
+   "base": "DOREMI 2021; OptimaCC 2018; bula de milrinona"
+  },
+  {
+   "leitura": "drogas-vasoativas",
+   "nivel": "avancado",
+   "enun": "Durante infusão periférica de noradrenalina no antebraço, a enfermagem nota palidez, frio e endurecimento no sítio. O hospital não dispõe de fentolamina. Qual conduta é mais adequada?",
+   "alts": [
+    "Manter o cateter, reduzir a vazão pela metade e aplicar compressa fria no local",
+    "Lavar o cateter com 20 mL de SF para diluir a droga extravasada no subcutâneo",
+    "Infiltrar hialuronidase na área e manter a infusão no mesmo acesso periférico",
+    "Retirar o cateter imediatamente sem aspirar e aplicar corticoide tópico local",
+    "Parar, aspirar pelo cateter, retirar, elevar, compressa morna e terbutalina SC"
+   ],
+   "gab": 4,
+   "coment": "No extravasamento de vasoconstritor, interrompe-se a infusão, aspira-se o que for possível pelo próprio cateter antes de retirá-lo, eleva-se o membro e usa-se compressa morna (o frio agrava a isquemia). O antídoto clássico é a fentolamina subcutânea; na sua falta, relatos e séries descrevem terbutalina subcutânea (1 mg em 10 mL de SF infiltrados na área) ou nitroglicerina 2% tópica. O vasopressor deve ser reinstalado em outro acesso, de preferência central. Hialuronidase é usada em extravasamento de soluções hiperosmolares, não de vasoconstritores.",
+   "porAlt": [
+    "Errada: manter o acesso perpetua a lesão e o frio piora a vasoconstrição.",
+    "Errada: lavar o cateter empurra mais droga para o subcutâneo.",
+    "Errada: hialuronidase não reverte vasoconstrição e manter a infusão no mesmo acesso é inaceitável.",
+    "Errada: deve-se aspirar antes de retirar; corticoide tópico não trata isquemia por vasoconstrição.",
+    "Correta: sequência padrão com antídoto alternativo à fentolamina."
+   ],
+   "base": "Relatos e séries de manejo de extravasamento de vasopressores; SSC 2026 (via periférica)"
+  },
+  {
+   "leitura": "drogas-vasoativas",
+   "nivel": "avancado",
+   "enun": "Paciente com insuficiência cardíaca descompensada recebeu levosimendana 0,1 mcg/kg/min por 24 horas, encerrada há 36 horas. Evolui com hipotensão persistente sem sinais de infecção. Qual a explicação farmacocinética mais provável?",
+   "alts": [
+    "Acúmulo da levosimendana original, com meia-vida de cerca de 80 horas",
+    "Taquifilaxia aos receptores beta-1 induzida pela infusão prolongada",
+    "Interação com a noradrenalina, que acelera a formação do metabólito",
+    "Metabólito ativo OR-1896, com meia-vida de cerca de 70 a 80 horas",
+    "Hipercalemia induzida pela levosimendana, causando vasodilatação"
+   ],
+   "gab": 3,
+   "coment": "A levosimendana original tem meia-vida de cerca de 1 hora, mas é convertida no metabólito ativo OR-1896, de meia-vida longa (aproximadamente 70 a 80 horas), que mantém efeitos vasodilatador e inotrópico por dias. Por isso a hipotensão pode persistir após a suspensão e deve ser prevista antes de iniciar a droga. A levosimendana não age por receptor beta e causa hipocalemia, não hipercalemia.",
+   "porAlt": [
+    "Errada: a meia-vida longa é do metabólito OR-1896; a do fármaco original é de cerca de 1 hora.",
+    "Errada: a levosimendana é sensibilizadora de cálcio e não depende de receptor beta.",
+    "Errada: não há interação desse tipo descrita com a noradrenalina.",
+    "Correta: o OR-1896 mantém o efeito hemodinâmico por dias.",
+    "Errada: a levosimendana tende a causar hipocalemia; o potássio deve ser reposto antes do início."
+   ],
+   "base": "LeoPARDS 2016; bula de levosimendana"
+  },
+  {
+   "leitura": "fluidos-diureticos",
+   "nivel": "basico",
+   "enun": "Qual das soluções abaixo é um cristaloide balanceado?",
+   "alts": [
+    "Cloreto de sódio a 0,9% (SF)",
+    "Solução de Ringer simples",
+    "Solução de Plasma-Lyte 148",
+    "Solução glicosada a 5% (SG)",
+    "Solução salina a 3% (NaCl)"
+   ],
+   "gab": 2,
+   "coment": "Soluções balanceadas têm cloro próximo do plasmático e um ânion orgânico metabolizado a bicarbonato. O Plasma-Lyte 148 tem sódio 140, cloro 98 e acetato e gliconato como tampão. O Ringer lactato também é balanceado. O Ringer simples, comum em hospitais brasileiros, tem cloro semelhante ao do SF e não tem tampão. Glicose 5% oferece água livre e NaCl 3% é hipertônico.",
+   "porAlt": [
+    "Errada: cloro de 154 mEq/L, sem tampão; causa acidose hiperclorêmica em grandes volumes.",
+    "Errada: cloro de cerca de 156 mEq/L e sem tampão; não é balanceado.",
+    "Correta: cloro fisiológico e acetato e gliconato como tampão.",
+    "Errada: distribui-se pela água corporal total e não é fluido de ressuscitação.",
+    "Errada: solução hipertônica usada na hipertensão intracraniana e na hiponatremia grave."
+   ],
+   "base": "ESICM 2024 (escolha de fluidos); SSC 2026"
+  },
+  {
+   "leitura": "fluidos-diureticos",
+   "nivel": "basico",
+   "enun": "Sobre albumina na ressuscitação da sepse, o que diz o Surviving Sepsis Campaign 2026?",
+   "alts": [
+    "Sugere cristaloide isolado em vez de cristaloide associado a albumina",
+    "Sugere albumina 20% sempre que a albumina sérica estiver abaixo de 3 g/dL",
+    "Recomenda albumina 4% como fluido inicial em vez de cristaloide balanceado",
+    "Sugere albumina após mais de 2 L de cristaloide nas primeiras horas",
+    "Recomenda albumina associada a amido para reduzir o volume total infundido"
+   ],
+   "gab": 0,
+   "coment": "O SSC 2026 sugere cristaloide isolado em vez de cristaloide com albumina (condicional, certeza moderada), mudança em relação a 2021, que sugeria albumina para quem recebia grandes volumes de cristaloide. SAFE e ALBIOS não mostraram redução de mortalidade. Amidos têm recomendação forte contra. A albumina mantém indicações em cirrose (paracentese, peritonite bacteriana espontânea, síndrome hepatorrenal).",
+   "porAlt": [
+    "Correta: sugestão do SSC 2026, certeza moderada.",
+    "Errada: o ALBIOS, com albumina 20% para manter acima de 3 g/dL, não reduziu mortalidade.",
+    "Errada: cristaloide é a primeira linha (recomendação forte); o SAFE não mostrou vantagem da albumina 4%.",
+    "Errada: essa era a lógica da edição de 2021, substituída em 2026.",
+    "Errada: amidos têm recomendação forte contra por lesão renal e mortalidade."
+   ],
+   "base": "Surviving Sepsis Campaign 2026"
+  },
+  {
+   "leitura": "fluidos-diureticos",
+   "nivel": "intermediario",
+   "enun": "Homem de 70 kg, cirrótico, é internado na UTI com peritonite bacteriana espontânea e creatinina de 1,6 mg/dL. Qual a prescrição de albumina 20% com melhor evidência, além do antibiótico?",
+   "alts": [
+    "35 g no dia 1 e 35 g no dia 3, correndo junto com furosemida",
+    "70 g por dia até normalizar a albumina sérica acima de 3,5 g/dL",
+    "20 g por dia por 5 dias, dose fixa independente do peso",
+    "8 g por litro de ascite retirado, sem dose no diagnóstico",
+    "105 g no dia 1 e 70 g no dia 3 (1,5 g/kg e 1 g/kg de peso)"
+   ],
+   "gab": 4,
+   "coment": "O esquema de Sort (NEJM 1999) usa 1,5 g/kg no diagnóstico e 1 g/kg no terceiro dia, reduzindo lesão renal e mortalidade, especialmente com creatinina ou bilirrubina elevadas. Para 70 kg: 105 g (cerca de 10 frascos de 10 g) e 70 g. Dose por litro retirado é o esquema da paracentese de grande volume. Corrigir o número da albumina sérica não é objetivo terapêutico.",
+   "porAlt": [
+    "Errada: dose menor que a estudada, e a associação rotineira com furosemida não tem evidência.",
+    "Errada: o alvo não é normalizar a albumina sérica.",
+    "Errada: dose fixa e menor que a do esquema com benefício demonstrado.",
+    "Errada: esse é o esquema da paracentese de grande volume.",
+    "Correta: 1,5 g/kg no dia 1 e 1 g/kg no dia 3."
+   ],
+   "base": "Sort et al., NEJM 1999; AASLD e EASL"
+  },
+  {
+   "leitura": "fluidos-diureticos",
+   "nivel": "intermediario",
+   "enun": "Mulher de 76 anos com doença renal crônica (TFG estimada de 25 mL/min/1,73 m²) e insuficiência cardíaca congesta recebe furosemida 20 mg IV de 12/12 horas, com diurese baixa. Qual a intervenção mais racional?",
+   "alts": [
+    "Fracionar para 20 mg IV de 6/6 horas, mantendo a dose diária",
+    "Dose única maior, como 80 mg IV, e sódio urinário 2 horas depois",
+    "Associar albumina 20% a cada dose de furosemida para puxar o líquido",
+    "Trocar por furosemida oral na mesma dose, mais biodisponível",
+    "Iniciar espironolactona isolada como primeira medida de escalonamento"
+   ],
+   "gab": 1,
+   "coment": "Na disfunção renal, o limiar natriurético da furosemida sobe e doses pequenas ficam abaixo dele. A curva é sigmoide: aumentar a dose individual, e não a frequência, é o que produz natriurese. A ESC 2021 propõe avaliar a resposta com sódio urinário em 2 horas (abaixo de 50 a 70 mEq/L indica resposta insuficiente) e dobrar a dose se necessário. A biodisponibilidade oral é menor (cerca de 50%), e albumina com furosemida não tem evidência consistente.",
+   "porAlt": [
+    "Errada: doses frequentes abaixo do limiar não produzem natriurese.",
+    "Correta: dose acima do limiar e avaliação objetiva da resposta.",
+    "Errada: a associação rotineira não tem benefício clínico demonstrado.",
+    "Errada: a via oral tem biodisponibilidade menor e variável; a equivalência é cerca de 40 mg oral para 20 mg IV.",
+    "Errada: espironolactona tem efeito natriurético modesto e risco de hipercalemia na doença renal."
+   ],
+   "base": "ESC 2021 (insuficiência cardíaca); DOSE 2011"
+  },
+  {
+   "leitura": "fluidos-diureticos",
+   "nivel": "avancado",
+   "enun": "Paciente com traumatismo cranioencefálico grave recebe manitol 20% 1 g/kg de 6/6 horas. Osmolalidade medida de 312 mOsm/kg, calculada de 284 mOsm/kg, creatinina subindo e PAM de 72 mmHg. Qual a conduta mais adequada para a próxima dose?",
+   "alts": [
+    "Repetir o manitol, pois a osmolalidade ainda está abaixo de 320 mOsm/kg",
+    "Associar furosemida ao manitol para potencializar o efeito osmótico",
+    "Trocar o manitol por albumina 4% para reduzir a pressão intracraniana",
+    "Suspender o manitol e usar salina hipertônica se houver nova elevação",
+    "Manter o manitol e acrescentar bolus de Ringer lactato para a diurese"
+   ],
+   "gab": 3,
+   "coment": "O gap osmolar é 312 − 284 = 28 mOsm/kg, acima de cerca de 20, o que indica manitol acumulado; com creatinina em alta, há risco de lesão renal. A conduta é suspender novas doses e, se a pressão intracraniana voltar a subir, usar salina hipertônica, que não causa diurese osmótica e expande o intravascular. O teto de 320 mOsm/kg é menos específico que o gap osmolar. Albumina aumentou mortalidade no traumatismo (SAFE-TBI), e Ringer lactato é levemente hipotônico.",
+   "porAlt": [
+    "Errada: o gap osmolar de 28 mOsm/kg indica acúmulo, apesar da osmolalidade abaixo de 320.",
+    "Errada: a furosemida agrava a hipovolemia e não resolve o acúmulo de manitol.",
+    "Errada: albumina aumentou mortalidade no traumatismo cranioencefálico (SAFE-TBI).",
+    "Correta: suspender o manitol acumulado e usar salina hipertônica.",
+    "Errada: o Ringer lactato é hipotônico e desaconselhado no traumatismo; manter o manitol piora o rim."
+   ],
+   "base": "Neurocritical Care Society 2020; SAFE-TBI 2007; ESICM 2024"
+  },
+  {
+   "leitura": "fluidos-diureticos",
+   "nivel": "avancado",
+   "enun": "A farmácia precisa preparar 500 mL de NaCl 3% a partir de uma bolsa de 500 mL de SF 0,9% e ampolas de NaCl 20%. Qual é o preparo correto?",
+   "alts": [
+    "Acrescentar 75 mL de NaCl 20% à bolsa, sem retirar volume do SF 0,9%",
+    "Retirar 15 mL do SF 0,9% e acrescentar 15 mL de NaCl 20% na bolsa",
+    "Retirar 55 mL do SF 0,9% e acrescentar 55 mL de NaCl 20% na bolsa",
+    "Retirar 75 mL do SF 0,9% e acrescentar 75 mL de NaCl 20% na bolsa",
+    "Acrescentar 55 mL de NaCl 20% à bolsa, sem retirar volume do SF 0,9%"
+   ],
+   "gab": 2,
+   "coment": "São necessários 15 g de NaCl em 500 mL. Se x mL de SF 0,9% forem substituídos por x mL de NaCl 20%: 0,009 × (500 − x) + 0,2 × x = 15, logo 4,5 + 0,191x = 15 e x = 55 mL. Conferência: 445 mL × 0,009 = 4 g e 55 mL × 0,2 = 11 g, total de 15 g em 500 mL (3%). Acrescentar sem retirar muda o volume final e a concentração; 75 mL de substituição dariam cerca de 3,8%.",
+   "porAlt": [
+    "Errada: resultaria em 575 mL com 19,5 g, cerca de 3,4%.",
+    "Errada: resultaria em cerca de 1,5%.",
+    "Correta: 445 mL de SF 0,9% mais 55 mL de NaCl 20% contêm 15 g em 500 mL.",
+    "Errada: resultaria em cerca de 3,8% (18,8 g em 500 mL).",
+    "Errada: resultaria em 555 mL com 15,5 g, cerca de 2,8%."
+   ],
+   "base": "Cálculo farmacêutico; Neurocritical Care Society 2020"
+  },
+  {
+   "leitura": "analgesia-sedacao-delirium",
+   "nivel": "basico",
+   "enun": "Na atualização focada da diretriz PADIS de 2025, qual foi a sugestão sobre a escolha do sedativo em adultos ventilados?",
+   "alts": [
+    "Midazolam em vez de propofol quando a prioridade é a estabilidade hemodinâmica",
+    "Propofol em vez de dexmedetomidina em todos os adultos ventilados com sepse",
+    "Benzodiazepínico para tratar ansiedade, com evidência de certeza moderada",
+    "Dexmedetomidina em vez de propofol quando se priorizam sedação leve e delirium",
+    "Cetamina como sedativo único de primeira linha na ventilação mecânica inicial"
+   ],
+   "gab": 3,
+   "coment": "A atualização de 2025 (Lewis, Critical Care Medicine) sugere dexmedetomidina em vez de propofol em adultos ventilados quando sedação leve e redução de delirium são prioridades (condicional, certeza moderada). Declarou evidência insuficiente para recomendar benzodiazepínicos na ansiedade e não se posicionou sobre antipsicóticos no delirium. A PADIS 2018 já sugeria propofol ou dexmedetomidina em vez de benzodiazepínicos.",
+   "porAlt": [
+    "Errada: benzodiazepínicos se associam a delirium e não são preferidos pela PADIS.",
+    "Errada: o MENDS2 não mostrou superioridade de nenhum dos dois na sepse, e a diretriz não sugere propofol universalmente.",
+    "Errada: a atualização considerou a evidência insuficiente para recomendar benzodiazepínicos na ansiedade.",
+    "Correta: sugestão condicional, certeza moderada.",
+    "Errada: cetamina é adjuvante analgésico ou sedativo de resgate, não primeira linha isolada."
+   ],
+   "base": "SCCM PADIS focused update 2025"
+  },
+  {
+   "leitura": "analgesia-sedacao-delirium",
+   "nivel": "basico",
+   "enun": "Qual opioide é preferível em infusão contínua no paciente ventilado com lesão renal aguda grave?",
+   "alts": [
+    "Morfina, pela meia-vida curta e ausência de metabólitos ativos",
+    "Meperidina, por causar menos depressão respiratória repetida",
+    "Metadona intravenosa, pois não acumula na insuficiência renal",
+    "Tramadol, por não depender da função renal para sua eliminação",
+    "Fentanil, pela metabolização hepática a compostos inativos"
+   ],
+   "gab": 4,
+   "coment": "O fentanil é metabolizado pelo CYP3A4 a metabólitos inativos e é o opioide de escolha na disfunção renal, embora acumule no tecido adiposo em infusões longas. A morfina gera morfina-6-glicuronídeo (analgésico) e morfina-3-glicuronídeo (neuroexcitatório), que acumulam na lesão renal. A meperidina gera normeperidina, pró-convulsivante. O tramadol e seu metabólito ativo têm eliminação renal e baixam o limiar convulsivo.",
+   "porAlt": [
+    "Errada: a morfina tem metabólitos ativos que acumulam na lesão renal.",
+    "Errada: a normeperidina acumula e causa convulsões; a meperidina deve ser evitada.",
+    "Errada: a metadona tem meia-vida longa e acúmulo imprevisível; é usada por via enteral no desmame.",
+    "Errada: o tramadol depende do rim e tem risco convulsivo e serotoninérgico.",
+    "Correta: metabólitos inativos, adequado na lesão renal."
+   ],
+   "base": "SCCM PADIS 2018"
+  },
+  {
+   "leitura": "analgesia-sedacao-delirium",
+   "nivel": "intermediario",
+   "enun": "Homem de 60 kg, SDRA, em propofol 1% a 25 mL/h há 4 dias, com noradrenalina e hidrocortisona. Surgem acidose metabólica, CPK de 9.000 U/L, triglicerídeos de 820 mg/dL e bloqueio de ramo direito novo. Qual a conduta?",
+   "alts": [
+    "Reduzir o propofol pela metade e dosar triglicerídeos de novo em 72 horas",
+    "Suspender o propofol, trocar o sedativo e dar suporte à síndrome de infusão",
+    "Manter o propofol e associar heparina para acelerar a depuração dos lipídios",
+    "Trocar o propofol 1% pelo propofol 2%, reduzindo o volume lipídico infundido",
+    "Manter o propofol e iniciar bicarbonato até corrigir o pH e a hipercalemia"
+   ],
+   "gab": 1,
+   "coment": "A dose é de 250 mg/h ÷ 60 kg = 4,2 mg/kg/h, acima do limiar de 4 mg/kg/h, por mais de 48 horas, com catecolamina e corticoide associados. Acidose, rabdomiólise, hipertrigliceridemia e alteração eletrocardiográfica configuram suspeita de síndrome de infusão do propofol, com mortalidade alta. A conduta é suspender imediatamente, trocar o sedativo e dar suporte (incluindo terapia renal substitutiva se necessário). Trocar a concentração mantém a mesma dose de propofol.",
+   "porAlt": [
+    "Errada: a suspeita de síndrome de infusão exige suspensão, não redução.",
+    "Correta: suspender, trocar e dar suporte.",
+    "Errada: heparina não trata a síndrome e manter o propofol é perigoso.",
+    "Errada: a dose de propofol continuaria a mesma; o problema é o fármaco, não o volume.",
+    "Errada: tratar a acidose sem retirar a causa é inadequado."
+   ],
+   "base": "SCCM PADIS 2018; bula de propofol"
+  },
+  {
+   "leitura": "analgesia-sedacao-delirium",
+   "nivel": "intermediario",
+   "enun": "Paciente em midazolam 8 mg/h e fentanil 150 mcg/h inicia voriconazol para aspergilose. Três dias depois, está em RASS −5 após suspensão da sedação há 36 horas. Qual a explicação e a intervenção mais adequada?",
+   "alts": [
+    "Inibição do CYP3A4 pelo voriconazol; trocar o midazolam por propofol",
+    "Indução do CYP3A4 pelo voriconazol; aumentar o midazolam na infusão",
+    "Acúmulo de morfina-6-glicuronídeo; trocar o fentanil por morfina em bolus",
+    "Encefalopatia pelo voriconazol; manter a sedação e suspender o antifúngico",
+    "Deficiência de pseudocolinesterase; aguardar o fim do efeito sem intervir"
+   ],
+   "gab": 0,
+   "coment": "O voriconazol é inibidor potente do CYP3A4, via de metabolização do midazolam e do fentanil. A exposição a ambos aumenta muito, e o metabólito ativo do midazolam acumula ainda mais se houver disfunção renal. A conduta é suspender o benzodiazepínico, reduzir o opioide e preferir sedativos que não dependam do 3A4 (propofol, dexmedetomidina), além de investigar outras causas de coma. Morfina-6-glicuronídeo não tem relação com fentanil, e pseudocolinesterase metaboliza succinilcolina.",
+   "porAlt": [
+    "Correta: interação por inibição do CYP3A4 e troca do sedativo.",
+    "Errada: o voriconazol é inibidor, não indutor, do CYP3A4.",
+    "Errada: fentanil não gera morfina-6-glicuronídeo.",
+    "Errada: a explicação principal é a interação farmacocinética com os sedativos.",
+    "Errada: a pseudocolinesterase não participa do metabolismo de midazolam ou fentanil."
+   ],
+   "base": "SCCM PADIS 2018; bula de voriconazol"
+  },
+  {
+   "leitura": "analgesia-sedacao-delirium",
+   "nivel": "avancado",
+   "enun": "Mulher de 71 anos, ventilada por pneumonia, tem CAM-ICU positivo com delirium hipoativo e recebe haloperidol 5 mg IV de 8/8 horas fixo há 5 dias; QTc de 498 ms. Qual intervenção é mais coerente com a evidência atual?",
+   "alts": [
+    "Dobrar o haloperidol, pois MIND-USA mostrou mais dias sem delirium com a dose alta",
+    "Trocar o haloperidol por midazolam em infusão para reduzir o tempo de delirium",
+    "Suspender o haloperidol fixo, tratar causas e aplicar medidas não farmacológicas",
+    "Manter o haloperidol e associar quetiapina para potencializar o efeito no delirium",
+    "Manter o haloperidol até a alta hospitalar para prevenir a recorrência do delirium"
+   ],
+   "gab": 2,
+   "coment": "MIND-USA (2018) não mostrou benefício de haloperidol ou ziprasidona em dias vivos sem delirium ou coma, e o AID-ICU (2022) não mostrou benefício no desfecho primário; a PADIS 2025 não se posicionou a favor. No delirium hipoativo, antipsicótico não trata sintoma perigoso, e o QTc de 498 ms aumenta o risco. A conduta é suspender o uso fixo, buscar e tratar causas, retirar deliriogênicos e aplicar medidas não farmacológicas. Benzodiazepínico piora delirium.",
+   "porAlt": [
+    "Errada: MIND-USA não mostrou benefício com haloperidol.",
+    "Errada: benzodiazepínicos são fator de risco para delirium.",
+    "Correta: suspender o antipsicótico fixo e tratar a causa.",
+    "Errada: somar antipsicóticos aumenta QTc e efeitos adversos sem benefício demonstrado.",
+    "Errada: antipsicótico iniciado na UTI não deve seguir para a alta sem indicação."
+   ],
+   "base": "MIND-USA 2018; AID-ICU 2022; SCCM PADIS 2025"
+  },
+  {
+   "leitura": "analgesia-sedacao-delirium",
+   "nivel": "avancado",
+   "enun": "Prescrição de cetamina 0,3 mg/kg/h como adjuvante analgésico em paciente de 80 kg. A farmácia do hospital só dispõe de escetamina 50 mg/mL. Qual a dose equivalente aproximada de escetamina?",
+   "alts": [
+    "0,6 mg/kg/h, pois a escetamina tem metade da potência da racêmica",
+    "0,3 mg/kg/h, pois as duas formulações têm a mesma concentração",
+    "0,9 mg/kg/h, para compensar a meia-vida mais curta do isômero S",
+    "0,03 mg/kg/h, pois a escetamina é dez vezes mais potente",
+    "0,15 mg/kg/h, pois a escetamina tem cerca do dobro da potência"
+   ],
+   "gab": 4,
+   "coment": "A escetamina (isômero S) tem cerca do dobro da potência da cetamina racêmica, e a dose deve ser aproximadamente metade: 0,15 mg/kg/h, ou 12 mg/h para 80 kg. As duas são apresentadas a 50 mg/mL no Brasil, o que facilita a troca inadvertida sem ajuste. Esse é um erro de medicação conhecido e deve constar do protocolo de substituição da farmácia.",
+   "porAlt": [
+    "Errada: inverte a relação de potência e dobraria o efeito.",
+    "Errada: mesma concentração não significa mesma potência.",
+    "Errada: não há justificativa farmacocinética para triplicar a dose.",
+    "Errada: a diferença de potência é de cerca de duas vezes, não dez.",
+    "Correta: aproximadamente metade da dose da racêmica."
+   ],
+   "base": "SCCM PADIS 2018 (cetamina adjuvante); bulas de cetamina e escetamina"
+  },
+  {
+   "leitura": "bloqueadores-neuromusculares",
+   "nivel": "basico",
+   "enun": "O sugamadex reverte o bloqueio neuromuscular causado por qual fármaco?",
+   "alts": [
+    "Cisatracúrio em infusão",
+    "Rocurônio em bolus único",
+    "Succinilcolina em bolus",
+    "Atracúrio em bolus único",
+    "Mivacúrio em bolus inicial"
+   ],
+   "gab": 1,
+   "coment": "O sugamadex é uma gamaciclodextrina modificada que encapsula aminoesteroides, com alta afinidade pelo rocurônio e menor pelo vecurônio. Não age sobre benzilisoquinolínicos (cisatracúrio, atracúrio, mivacúrio) nem sobre a succinilcolina. As doses variam com a profundidade do bloqueio: 2 mg/kg (duas respostas ao TOF), 4 mg/kg (bloqueio profundo) e 16 mg/kg (reversão imediata após 1,2 mg/kg de rocurônio).",
+   "porAlt": [
+    "Errada: benzilisoquinolínico, não encapsulado pelo sugamadex.",
+    "Correta: aminoesteroide com alta afinidade pelo sugamadex.",
+    "Errada: despolarizante, não revertido por sugamadex.",
+    "Errada: benzilisoquinolínico.",
+    "Errada: benzilisoquinolínico metabolizado por colinesterase plasmática."
+   ],
+   "base": "Bula de sugamadex; SCCM 2016"
+  },
+  {
+   "leitura": "bloqueadores-neuromusculares",
+   "nivel": "basico",
+   "enun": "Por que o cisatracúrio é o bloqueador preferido em infusão prolongada em pacientes com disfunção renal e hepática?",
+   "alts": [
+    "Tem meia-vida de 3 minutos e dispensa monitorização por TOF",
+    "É revertido por sugamadex em qualquer profundidade de bloqueio",
+    "Tem eliminação renal exclusiva, sem metabólitos que acumulem",
+    "Sofre eliminação de Hofmann, independente de fígado e rim",
+    "Libera histamina, o que ajuda a manter a pressão arterial"
+   ],
+   "gab": 3,
+   "coment": "O cisatracúrio sofre degradação química espontânea (eliminação de Hofmann), dependente de pH e temperatura, sem depender de função hepática ou renal. Por isso é preferido em infusão prolongada com disfunção orgânica. Gera laudanosina em pequena quantidade. Acidose e hipotermia prolongam o efeito. Não é revertido por sugamadex e não libera histamina em doses usuais, ao contrário do atracúrio.",
+   "porAlt": [
+    "Errada: a duração clínica é de 45 a 60 minutos, e a monitorização continua indicada.",
+    "Errada: o sugamadex não age em benzilisoquinolínicos.",
+    "Errada: a eliminação é química, não renal.",
+    "Correta: eliminação de Hofmann, independente de órgãos.",
+    "Errada: não libera histamina em doses usuais, e liberação de histamina causaria hipotensão."
+   ],
+   "base": "SCCM 2016; bula de cisatracúrio"
+  },
+  {
+   "leitura": "bloqueadores-neuromusculares",
+   "nivel": "intermediario",
+   "enun": "Homem de 55 anos está no nono dia de UTI por choque séptico, acamado, com potássio de 4,2 mEq/L, e precisa ser reintubado. Qual bloqueador é mais adequado para a sequência rápida?",
+   "alts": [
+    "Rocurônio 1,2 mg/kg, com sugamadex disponível para reversão imediata",
+    "Succinilcolina 1,5 mg/kg, pois o potássio sérico está normal agora",
+    "Succinilcolina 0,6 mg/kg, dose reduzida para limitar a saída de potássio",
+    "Cisatracúrio 0,1 mg/kg, pelo início de ação mais rápido que os demais",
+    "Vecurônio 0,1 mg/kg, pela eliminação independente da função renal"
+   ],
+   "gab": 0,
+   "coment": "Imobilização prolongada e sepse induzem receptores nicotínicos imaturos por toda a membrana; a succinilcolina pode causar hipercalemia grave mesmo com potássio basal normal, e reduzir a dose não elimina o risco. Rocurônio 1,2 mg/kg oferece início rápido e condições de intubação comparáveis, com reversão possível por sugamadex. Cisatracúrio tem início lento (2 a 3 minutos) e o metabólito ativo do vecurônio acumula na disfunção renal.",
+   "porAlt": [
+    "Correta: evita hipercalemia e permite reversão.",
+    "Errada: o risco vem da suprarregulação de receptores, não do potássio basal.",
+    "Errada: dose menor não elimina a hipercalemia e piora as condições de intubação.",
+    "Errada: cisatracúrio tem início lento, inadequado para sequência rápida.",
+    "Errada: o metabólito ativo do vecurônio acumula na disfunção renal."
+   ],
+   "base": "SCCM 2016; SCCM 2023 (sequência rápida)"
+  },
+  {
+   "leitura": "bloqueadores-neuromusculares",
+   "nivel": "intermediario",
+   "enun": "Paciente com SDRA, PaO2/FiO2 de 120 com PEEP de 12 cmH2O, está em sedação leve (RASS −2), sincrônico com o ventilador e com pressão de platô de 26 cmH2O. A equipe pergunta sobre cisatracúrio por 48 horas. Qual a orientação mais alinhada às diretrizes atuais?",
+   "alts": [
+    "Iniciar cisatracúrio, pois toda SDRA com relação abaixo de 150 se beneficia",
+    "Iniciar cisatracúrio em dose fixa de 37,5 mg/h, como no ensaio ACURASYS",
+    "Não iniciar de rotina; reservar a assincronia refratária ou prona profunda",
+    "Iniciar vecurônio em infusão, que tem menos fraqueza que o cisatracúrio",
+    "Iniciar bloqueio e retirar a sedação para favorecer despertar precoce"
+   ],
+   "gab": 2,
+   "coment": "Após o ROSE, que não mostrou benefício de mortalidade do bloqueio contra sedação leve, a diretriz rápida da Intensive Care Medicine (2020) desaconselha infusão de rotina e considera razoável bloqueio por 48 horas em quem precisa de sedação profunda para ventilação protetora ou prona. A ESICM 2023 recomenda contra infusão contínua de rotina na SDRA moderada a grave não relacionada à covid-19. O paciente está sincrônico e com platô aceitável. Bloqueio sem sedação é erro grave.",
+   "porAlt": [
+    "Errada: essa era a leitura pré-ROSE; a ESICM 2023 recomenda contra o uso de rotina.",
+    "Errada: o esquema fixo do ACURASYS não se aplica a paciente sincrônico em sedação leve.",
+    "Correta: bloqueio reservado a indicações específicas.",
+    "Errada: vecurônio tem metabólito ativo e não reduz fraqueza.",
+    "Errada: bloqueio exige sedação profunda; retirá-la causa consciência sob paralisia."
+   ],
+   "base": "ESICM 2023 (SDRA); Alhazzani, ICM 2020; ROSE 2019"
+  },
+  {
+   "leitura": "bloqueadores-neuromusculares",
+   "nivel": "avancado",
+   "enun": "Paciente de 90 kg recebeu rocurônio e, ao fim do procedimento, apresenta zero respostas ao TOF e duas respostas na contagem pós-tetânica. Qual a dose de sugamadex indicada?",
+   "alts": [
+    "90 mg (1 mg/kg)",
+    "360 mg (4 mg/kg)",
+    "180 mg (2 mg/kg)",
+    "540 mg (6 mg/kg)",
+    "720 mg (8 mg/kg)"
+   ],
+   "gab": 1,
+   "coment": "Com zero respostas ao TOF e uma a duas respostas na contagem pós-tetânica, o bloqueio é profundo, e a dose de sugamadex é 4 mg/kg: 360 mg para 90 kg (3,6 mL da solução de 100 mg/mL), calculada pelo peso real. A dose de 2 mg/kg é para quando reaparece a segunda resposta ao TOF, e 16 mg/kg é para reversão imediata três minutos após rocurônio 1,2 mg/kg.",
+   "porAlt": [
+    "Errada: dose abaixo de qualquer faixa aprovada; risco de recurarização.",
+    "Correta: 4 mg/kg para bloqueio profundo.",
+    "Errada: 2 mg/kg exige duas respostas ao TOF.",
+    "Errada: 6 mg/kg não corresponde a faixa da bula; a reversão imediata usa 16 mg/kg.",
+    "Errada: não corresponde a nenhuma faixa de dose da bula."
+   ],
+   "base": "Bula de sugamadex; SCCM 2016"
+  },
+  {
+   "leitura": "bloqueadores-neuromusculares",
+   "nivel": "avancado",
+   "enun": "Paciente com SDRA em cisatracúrio 3 mcg/kg/min recebe gentamicina e sulfato de magnésio contínuo. O TOF no nervo ulnar mostra 0 de 4 respostas há 24 horas, com normotermia. Qual a intervenção farmacêutica mais adequada?",
+   "alts": [
+    "Manter a dose, pois 0 de 4 garante sincronia e menos consciência",
+    "Administrar neostigmina com atropina para reverter o bloqueio excessivo",
+    "Trocar o cisatracúrio por rocurônio para permitir reversão por sugamadex",
+    "Aumentar apenas a sedação, mantendo o bloqueador na mesma velocidade",
+    "Reduzir o cisatracúrio até 1 a 2 de 4, lembrando a potencialização"
+   ],
+   "gab": 4,
+   "coment": "Em infusão contínua, o alvo usual é uma a duas respostas de quatro, com avaliação clínica. Aminoglicosídeos e magnésio potencializam bloqueadores adespolarizantes, e TOF de 0 de 4 por 24 horas indica bloqueio excessivo, com mais consumo, custo e possível risco de paralisia prolongada. A conduta é reduzir a infusão e titular pelo TOF. Neostigmina não reverte bloqueio profundo e não faz sentido com infusão em curso. Sugamadex não age em cisatracúrio, mas trocar de fármaco não resolve o excesso de dose.",
+   "porAlt": [
+    "Errada: bloqueio completo sustentado não é alvo e aumenta risco de paralisia prolongada.",
+    "Errada: neostigmina tem efeito teto e não reverte bloqueio profundo.",
+    "Errada: a troca não resolve a potencialização nem o excesso de dose.",
+    "Errada: a sedação deve ser profunda, mas o problema aqui é o excesso de bloqueador.",
+    "Correta: titular para 1 a 2 respostas, considerando as interações."
+   ],
+   "base": "SCCM 2016 (bloqueio sustentado)"
+  },
+  {
+   "leitura": "intubacao-sequencia-rapida",
+   "nivel": "basico",
+   "enun": "Qual é a única recomendação forte da diretriz de sequência rápida da SCCM de 2023?",
+   "alts": [
+    "Usar bloqueador neuromuscular quando o indutor é sedativo-hipnótico",
+    "Usar etomidato como indutor preferencial em todos os pacientes críticos",
+    "Usar lidocaína intravenosa antes da indução para baixar a PIC",
+    "Usar succinilcolina em vez de rocurônio em toda intubação de urgência",
+    "Usar fentanil antes da indução em todos os pacientes com choque instalado"
+   ],
+   "gab": 0,
+   "coment": "A diretriz de Acquisto e colaboradores (Critical Care Medicine 2023) emitiu uma recomendação forte, de evidência de baixa qualidade: administrar bloqueador neuromuscular quando um sedativo-hipnótico é usado para intubação, porque o bloqueio melhora as condições de laringoscopia e o sucesso na primeira tentativa. Sobre indutores, não encontrou diferença de mortalidade entre etomidato e os demais. Lidocaína não tem evidência consistente, e fentanil deve ser omitido ou reduzido no choque.",
+   "porAlt": [
+    "Correta: a única recomendação forte da diretriz.",
+    "Errada: a diretriz não encontrou diferença de mortalidade entre etomidato e outros indutores.",
+    "Errada: o pré-tratamento com lidocaína não tem evidência consistente.",
+    "Errada: rocurônio em dose alta oferece condições comparáveis e evita contraindicações da succinilcolina.",
+    "Errada: fentanil agrava a hipotensão no choque e deve ser omitido ou reduzido."
+   ],
+   "base": "SCCM 2023 (sequência rápida)"
+  },
+  {
+   "leitura": "intubacao-sequencia-rapida",
+   "nivel": "basico",
+   "enun": "Como preparar adrenalina a 10 mcg/mL para uso em bolus (push-dose) a partir da ampola de 1 mg/mL?",
+   "alts": [
+    "Diluir 1 mL da ampola em 10 mL de SF 0,9% e aspirar em seringa de 10 mL",
+    "Diluir 10 mL da ampola em 100 mL de SF 0,9% e aspirar em seringa de 10 mL",
+    "Aspirar 1 mL da ampola sem diluir e administrar 0,1 mL por bolus rápido",
+    "Diluir 1 mL da ampola em 100 mL de SF 0,9% e aspirar em seringa rotulada",
+    "Diluir 1 mL da ampola em 1.000 mL de SF 0,9% e aspirar em seringa de 20 mL"
+   ],
+   "gab": 3,
+   "coment": "1 mg (1.000 mcg) em 100 mL resulta em 10 mcg/mL. A dose usual é de 5 a 20 mcg (0,5 a 2 mL) a cada 2 a 5 minutos, com seringa rotulada com nome, concentração e dose por mL. Diluir 1 mg em 10 mL gera 100 mcg/mL, dez vezes mais concentrada. Administrar a ampola pura, mesmo em volume pequeno, é fonte conhecida de erro grave. Se forem necessários bolus repetidos, inicia-se infusão contínua.",
+   "porAlt": [
+    "Errada: gera cerca de 91 mcg/mL, quase dez vezes a concentração desejada.",
+    "Errada: 10 mg em 100 mL geram 100 mcg/mL.",
+    "Errada: usar a ampola pura é prática de alto risco de erro de dose.",
+    "Correta: 1.000 mcg em 100 mL = 10 mcg/mL.",
+    "Errada: gera 1 mcg/mL, concentração baixa demais para bolus."
+   ],
+   "base": "SCCM 2023 (sequência rápida); ISMP Brasil 2019"
+  },
+  {
+   "leitura": "intubacao-sequencia-rapida",
+   "nivel": "intermediario",
+   "enun": "Homem de 90 kg com choque séptico, PA 82/48 mmHg, FC 118 bpm, em noradrenalina 0,1 mcg/kg/min, precisa ser intubado. Qual plano farmacológico é mais adequado?",
+   "alts": [
+    "Propofol 2 mg/kg e succinilcolina 1,5 mg/kg, sem ajuste do vasopressor",
+    "Midazolam 0,3 mg/kg e fentanil 3 mcg/kg, seguidos de rocurônio 1,2 mg/kg",
+    "Aumentar a noradrenalina, etomidato 0,2 mg/kg e rocurônio 1,2 mg/kg",
+    "Bolus de 2 L de cristaloide de rotina e depois propofol em dose plena",
+    "Intubar apenas com sedação por cetamina, sem bloqueador neuromuscular"
+   ],
+   "gab": 2,
+   "coment": "O índice de choque é 118 ÷ 82 = 1,4, preditor de colapso cardiovascular. O plano racional é aumentar o vasopressor antes da indução, usar indutor com menor efeito hemodinâmico em dose reduzida (etomidato 0,2 mg/kg ou cetamina reduzida) e bloqueador em dose adequada, com vasopressor em bolus preparado. Propofol e midazolam em dose plena derrubam a pressão, fentanil agrava a hipotensão, o bolus de volume de rotina não funcionou no PREPARE II, e omitir bloqueador contraria a recomendação forte da SCCM 2023.",
+   "porAlt": [
+    "Errada: propofol em dose plena é a pior escolha no choque.",
+    "Errada: midazolam em dose alta e fentanil aumentam hipotensão.",
+    "Correta: vasopressor otimizado, indutor ajustado e bloqueador adequado.",
+    "Errada: bolus de volume de rotina não reduziu colapso no PREPARE II.",
+    "Errada: a SCCM 2023 recomenda fortemente o uso de bloqueador."
+   ],
+   "base": "SCCM 2023; PREPARE II 2022; RSI 2025"
+  },
+  {
+   "leitura": "intubacao-sequencia-rapida",
+   "nivel": "intermediario",
+   "enun": "Qual afirmação resume corretamente os resultados do ensaio RSI (NEJM 2025), que comparou cetamina e etomidato em adultos críticos?",
+   "alts": [
+    "Etomidato aumentou a mortalidade em 28 dias pela supressão adrenal após dose única",
+    "Cetamina reduziu a mortalidade e o colapso cardiovascular em relação ao etomidato",
+    "Não houve diferença em nenhum desfecho, e a escolha é indiferente em qualquer caso",
+    "Cetamina reduziu a hipoxemia, sem diferença em hipotensão ou uso de vasopressor",
+    "Mortalidade semelhante, com mais colapso cardiovascular no grupo da cetamina"
+   ],
+   "gab": 4,
+   "coment": "O RSI randomizou 2.365 adultos críticos. A morte hospitalar em 28 dias foi de 28,1% com cetamina e 29,1% com etomidato, sem diferença significativa. O colapso cardiovascular durante a intubação (pressão sistólica abaixo de 65 mmHg, vasopressor novo ou aumentado, ou parada) foi de 22,1% com cetamina e 17,0% com etomidato. Os dados mantêm o etomidato como opção segura e favorável na instabilidade, e reforçam a necessidade de reduzir a dose de cetamina no choque.",
+   "porAlt": [
+    "Errada: não houve aumento de mortalidade com etomidato.",
+    "Errada: a mortalidade foi semelhante e o colapso foi maior com cetamina.",
+    "Errada: houve diferença em colapso cardiovascular.",
+    "Errada: o desfecho diferente foi o colapso cardiovascular, não a hipoxemia.",
+    "Correta: mortalidade semelhante e mais colapso com cetamina."
+   ],
+   "base": "Casey et al., NEJM 2025 (RSI)"
+  },
+  {
+   "leitura": "intubacao-sequencia-rapida",
+   "nivel": "avancado",
+   "enun": "Paciente intubado com etomidato 0,3 mg/kg e rocurônio 1,2 mg/kg está sem sedação 25 minutos após a confirmação do tubo; FC subiu de 95 para 130 bpm e PA de 110/70 para 160/95 mmHg. Qual a interpretação e a conduta?",
+   "alts": [
+    "Efeito simpático do rocurônio; administrar betabloqueador e observar evolução",
+    "Risco de consciência sob paralisia; iniciar analgesia e sedação de imediato",
+    "Hipertermia maligna pelo rocurônio; iniciar dantroleno 2,5 mg/kg sem demora",
+    "Insuficiência adrenal pelo etomidato; administrar hidrocortisona 100 mg IV",
+    "Resposta esperada ao tubo; aguardar o fim do bloqueio para avaliar o RASS"
+   ],
+   "gab": 1,
+   "coment": "O etomidato dura 3 a 5 minutos e o rocurônio em dose alta mais de 45 minutos. Sem sedação, o paciente pode estar consciente, com dor, sem conseguir se mover. Taquicardia e hipertensão são sinais inespecíficos, mas compatíveis. A conduta é iniciar analgesia e sedação imediatamente (bolus de opioide e infusão de propofol ou cetamina conforme a hemodinâmica). A consciência sob paralisia associa-se a estresse pós-traumático e foi estimada em 3% a 7% dos sobreviventes ventilados a partir da emergência.",
+   "porAlt": [
+    "Errada: o rocurônio não tem efeito simpático relevante; betabloqueio mascara o problema.",
+    "Correta: janela de consciência sob paralisia; sedar e analgesiar já.",
+    "Errada: rocurônio não desencadeia hipertermia maligna, e não há hipertermia descrita.",
+    "Errada: insuficiência adrenal causaria hipotensão, não hipertensão.",
+    "Errada: esperar o fim do bloqueio prolonga a consciência sob paralisia."
+   ],
+   "base": "SCCM 2023; Fuller et al., Trials 2023 (ED-AWARENESS)"
+  },
+  {
+   "leitura": "intubacao-sequencia-rapida",
+   "nivel": "avancado",
+   "enun": "Mulher de 150 kg (peso ideal de 60 kg) será intubada em sequência rápida sem contraindicação à succinilcolina. Qual combinação de base de peso para os bloqueadores está correta?",
+   "alts": [
+    "Succinilcolina pelo peso total; rocurônio pelo peso ideal ou ajustado",
+    "Succinilcolina pelo peso ideal; rocurônio pelo peso total da paciente",
+    "Ambos pelo peso total, para garantir bloqueio completo na obesidade grave",
+    "Ambos pelo peso ideal, para reduzir o risco de bloqueio prolongado",
+    "Succinilcolina pelo peso ajustado; rocurônio pelo peso magro medido"
+   ],
+   "gab": 0,
+   "coment": "A succinilcolina é dosada pelo peso total, porque a atividade da butirilcolinesterase e o volume extracelular aumentam com a obesidade; subdose piora as condições de intubação. O rocurônio, hidrofílico, é dosado pelo peso ideal ou ajustado, conforme protocolo; pelo peso total, a duração se prolonga muito. Os indutores, em geral, pelo peso magro ou ajustado, com redução adicional se houver instabilidade.",
+   "porAlt": [
+    "Correta: succinilcolina pelo peso total e rocurônio pelo peso ideal ou ajustado.",
+    "Errada: inverte as bases e gera subdose de succinilcolina e bloqueio prolongado com rocurônio.",
+    "Errada: rocurônio pelo peso total prolonga muito o bloqueio.",
+    "Errada: succinilcolina pelo peso ideal resulta em subdose.",
+    "Errada: não corresponde às recomendações usuais para os dois fármacos."
+   ],
+   "base": "SCCM 2023; bulas de succinilcolina e rocurônio"
+  },
+  {
+   "leitura": "anticonvulsivantes-status",
+   "nivel": "basico",
+   "enun": "Em qual diluente a fenitoína intravenosa pode ser preparada para infusão?",
+   "alts": [
+    "Solução de glicose a 5% (SG)",
+    "Solução de glicose a 10% (SG)",
+    "Solução de Ringer com lactato (RL)",
+    "Água destilada para injetáveis",
+    "Solução fisiológica a 0,9% (SF)"
+   ],
+   "gab": 4,
+   "coment": "A fenitoína injetável tem pH em torno de 12 e é mantida em solução com propilenoglicol e etanol. Em glicose, que é ácida, precipita. Dilui-se somente em SF 0,9%, em concentração final de cerca de 1 a 10 mg/mL, com uso logo após o preparo, filtro de linha, velocidade máxima de 50 mg/min e via exclusiva lavada com SF antes e depois.",
+   "porAlt": [
+    "Errada: a fenitoína precipita em glicose.",
+    "Errada: a fenitoína precipita em glicose.",
+    "Errada: não é o diluente indicado nas bulas e referências de compatibilidade.",
+    "Errada: não é diluente de infusão e resultaria em solução inadequada.",
+    "Correta: o único diluente recomendado."
+   ],
+   "base": "Brophy, Neurocritical Care 2012; bula de fenitoína sódica injetável"
+  },
+  {
+   "leitura": "anticonvulsivantes-status",
+   "nivel": "basico",
+   "enun": "O que mostrou o ensaio ESETT (2019) no estado de mal convulsivo refratário a benzodiazepínico?",
+   "alts": [
+    "Fosfenitoína foi superior aos demais, com menos hipotensão e intubação",
+    "Levetiracetam, fosfenitoína e valproato tiveram eficácia semelhante",
+    "Valproato foi inferior em idosos pela maior hepatotoxicidade aguda",
+    "Levetiracetam foi superior aos demais, com eficácia acima de 80%",
+    "Nenhum dos três superou o placebo no desfecho primário do estudo"
+   ],
+   "gab": 1,
+   "coment": "O ESETT comparou levetiracetam 60 mg/kg, fosfenitoína 20 mg EF/kg e valproato 40 mg/kg. O desfecho primário (fim das crises e melhora da consciência em 60 minutos) ocorreu em 47%, 45% e 46%, sem diferença, e a análise por idade confirmou equivalência em crianças, adultos e idosos. Hipotensão e intubação foram numericamente mais frequentes com fosfenitoína, sem significância. Não houve grupo placebo.",
+   "porAlt": [
+    "Errada: não houve superioridade, e hipotensão e intubação foram numericamente maiores com fosfenitoína.",
+    "Correta: eficácia semelhante, em torno de 45% a 47%.",
+    "Errada: a eficácia foi semelhante em todas as faixas etárias.",
+    "Errada: a eficácia foi de cerca de 47%, sem superioridade.",
+    "Errada: não houve grupo placebo."
+   ],
+   "base": "Kapur et al., NEJM 2019 (ESETT)"
+  },
+  {
+   "leitura": "anticonvulsivantes-status",
+   "nivel": "intermediario",
+   "enun": "Paciente de 70 kg em fenitoína 100 mg IV de 8/8 horas há 6 dias, sem crises, tem fenitoína total de 7 mg/L e albumina de 2 g/dL, com função renal normal. O médico propõe nova dose de ataque. Qual a análise correta?",
+   "alts": [
+    "O nível está subterapêutico e deve receber novo ataque adicional de 10 mg/kg",
+    "O nível corrigido é 3,5 mg/L e a dose de manutenção deve ser dobrada",
+    "O nível total baixo indica má absorção e exige troca para a via enteral",
+    "O nível corrigido é cerca de 14 mg/L, na faixa terapêutica; manter a dose",
+    "O nível corrigido é 28 mg/L e a dose de manutenção deve ser suspensa"
+   ],
+   "gab": 3,
+   "coment": "Pela equação de Sheiner-Tozer: 7 ÷ (0,2 × 2 + 0,1) = 7 ÷ 0,5 = 14 mg/L, dentro da faixa de 10 a 20 mg/L. Com hipoalbuminemia, a fração livre aumenta e o total subestima o efeito. Um novo ataque arrisca toxicidade. A equação erra com frequência no paciente crítico, por isso o ideal é confirmar com fenitoína livre (alvo de 1 a 2 mg/L). O paciente já recebe a droga por via intravenosa.",
+   "porAlt": [
+    "Errada: o nível corrigido está na faixa terapêutica.",
+    "Errada: a correção aumenta o valor, não diminui.",
+    "Errada: a via já é intravenosa, e o total baixo se explica pela albumina.",
+    "Correta: 14 mg/L corrigido, sem indicação de novo ataque.",
+    "Errada: erro de cálculo; o valor corrigido é 14 mg/L."
+   ],
+   "base": "Sheiner-Tozer; Brophy, Neurocritical Care 2012"
+  },
+  {
+   "leitura": "anticonvulsivantes-status",
+   "nivel": "intermediario",
+   "enun": "Paciente com epilepsia controlada com ácido valproico 1 g/dia por sonda inicia meropeném para pneumonia associada à ventilação. No terceiro dia apresenta crises. Qual a conduta mais adequada?",
+   "alts": [
+    "Trocar o valproato por levetiracetam enquanto durar o meropeném",
+    "Dobrar a dose de valproato e dosar o nível sérico em 24 horas",
+    "Manter os dois e associar fenitoína para compensar a queda do nível",
+    "Trocar o meropeném por ertapeném, que não interage com valproato",
+    "Manter o esquema, pois a crise decorre da febre e não da interação"
+   ],
+   "gab": 0,
+   "coment": "Carbapenêmicos reduzem o nível de valproato em 60% a 100% em 24 a 48 horas, por inibição da hidrólise do glicuronídeo, e o efeito persiste por dias após a suspensão. Aumentar a dose não compensa. A conduta é trocar o anticonvulsivante (em geral para levetiracetam, com poucas interações) ou o antimicrobiano por outra classe. O ertapeném também é carbapenêmico e causa a mesma interação.",
+   "porAlt": [
+    "Correta: trocar o anticonvulsivante enquanto durar o carbapenêmico.",
+    "Errada: dobrar a dose não compensa a interação.",
+    "Errada: somar fenitoína acrescenta interações e não resolve a queda do valproato.",
+    "Errada: o ertapeném também reduz o valproato.",
+    "Errada: a interação é causa conhecida e provável das crises."
+   ],
+   "base": "Bula de ácido valproico (advertência sobre carbapenêmicos); AES 2016"
+  },
+  {
+   "leitura": "anticonvulsivantes-status",
+   "nivel": "avancado",
+   "enun": "Paciente em fenitoína enteral 300 mg/dia tem nível total de 12 mg/L com albumina normal. A equipe aumenta para 400 mg/dia. Qual o comportamento esperado do nível sérico?",
+   "alts": [
+    "Subir proporcionalmente, para cerca de 16 mg/L, em 3 a 5 dias",
+    "Permanecer estável, pela autoindução do metabolismo hepático",
+    "Subir de forma desproporcional, podendo passar de 20 mg/L",
+    "Cair, pela saturação da ligação da fenitoína à albumina",
+    "Subir apenas se a dieta enteral for suspensa durante a dose"
+   ],
+   "gab": 2,
+   "coment": "O metabolismo da fenitoína (CYP2C9 e CYP2C19) é saturável na faixa terapêutica e segue a cinética de Michaelis-Menten. Perto da saturação, pequenos aumentos de dose provocam aumentos desproporcionais do nível, e a meia-vida se prolonga com a concentração, retardando o equilíbrio. Um aumento de 33% na dose pode levar o nível para faixa tóxica. Ajustes devem ser de 30 a 50 mg/dia, com monitorização.",
+   "porAlt": [
+    "Errada: a proporcionalidade vale para cinética linear, não para a fenitoína.",
+    "Errada: a fenitoína não induz o próprio metabolismo de forma a estabilizar o nível.",
+    "Correta: cinética não linear com aumento desproporcional.",
+    "Errada: a ligação à albumina não satura dessa forma na faixa terapêutica.",
+    "Errada: a dieta interfere na absorção, mas não explica o comportamento principal."
+   ],
+   "base": "Farmacocinética clínica da fenitoína; Brophy, Neurocritical Care 2012"
+  },
+  {
+   "leitura": "anticonvulsivantes-status",
+   "nivel": "avancado",
+   "enun": "Mulher de 60 kg em crise tônico-clônica há 15 minutos recebeu diazepam 10 mg IV duas vezes, sem controle. O hospital não dispõe de fosfenitoína nem de valproato IV. Qual a próxima prescrição mais adequada?",
+   "alts": [
+    "Diazepam 10 mg IV a cada 5 minutos até a crise cessar por completo",
+    "Fenitoína 1.200 mg em SF 0,9% a até 50 mg/min, com ECG e pressão",
+    "Fenitoína 1.200 mg em glicose 5%, infundida em 10 minutos em Y",
+    "Levetiracetam 1.200 mg IV em 10 minutos, dose de 20 mg/kg de ataque",
+    "Midazolam 10 mg IM e reavaliar a crise após mais 30 minutos de espera"
+   ],
+   "gab": 1,
+   "coment": "Após duas doses plenas de benzodiazepínico, a crise é estado de mal estabelecido, e o próximo passo é droga de segunda linha. No Brasil, com fenitoína ou levetiracetam: fenitoína 20 mg/kg (1.200 mg para 60 kg) em SF 0,9% a até 50 mg/min (pelo menos 24 minutos), com ECG e pressão; ou levetiracetam 60 mg/kg (3.600 mg). Repetir benzodiazepínico indefinidamente só soma depressão respiratória. Glicose precipita a fenitoína, e infusão em 10 minutos excede a velocidade segura.",
+   "porAlt": [
+    "Errada: após duas doses, repetir benzodiazepínico atrasa a segunda linha e aumenta depressão respiratória.",
+    "Correta: segunda linha em dose e administração corretas.",
+    "Errada: glicose precipita a fenitoína e 120 mg/min excede muito o limite.",
+    "Errada: a dose de ataque do levetiracetam no ESETT foi 60 mg/kg (3.600 mg), não 20 mg/kg.",
+    "Errada: benzodiazepínico já falhou, e esperar 30 minutos ultrapassa o t2."
+   ],
+   "base": "AES 2016; ESETT 2019; bula de fenitoína"
+  },
+  {
+   "leitura": "toxicologia-antidotos",
+   "nivel": "basico",
+   "enun": "Qual é o esquema intravenoso de acetilcisteína em duas bolsas recomendado pela diretriz da Austrália e Nova Zelândia (2020)?",
+   "alts": [
+    "150 mg/kg em 1 h, 50 mg/kg em 4 h e 100 mg/kg em 16 h",
+    "100 mg/kg em 2 h e depois 200 mg/kg em 10 h, em infusão",
+    "200 mg/kg em 4 h e depois 100 mg/kg em 16 h de infusão",
+    "140 mg/kg de ataque e 70 mg/kg de 4/4 h por 17 doses",
+    "300 mg/kg em 1 h e depois 100 mg/kg em 20 h de infusão"
+   ],
+   "gab": 2,
+   "coment": "O esquema de duas bolsas (200 mg/kg em 4 horas e 100 mg/kg em 16 horas) tem eficácia semelhante ao clássico de três bolsas (150, 50 e 100 mg/kg) e menos reações anafilactoides e erros de preparo. O SNAP usa 100 mg/kg em 2 horas e 200 mg/kg em 10 horas. O de 140 mg/kg seguido de 70 mg/kg é o esquema oral de 72 horas. O consenso norte-americano de 2023 exige ao menos 300 mg/kg nas primeiras 20 a 24 horas, com peso limitado a 100 kg.",
+   "porAlt": [
+    "Errada: é o esquema clássico de três bolsas.",
+    "Errada: é o esquema SNAP.",
+    "Correta: esquema de duas bolsas.",
+    "Errada: é o esquema oral de 72 horas.",
+    "Errada: não corresponde a nenhum esquema validado."
+   ],
+   "base": "Chiew et al., MJA 2020; Dart et al., JAMA Netw Open 2023"
+  },
+  {
+   "leitura": "toxicologia-antidotos",
+   "nivel": "basico",
+   "enun": "Em qual situação o azul de metileno é ineficaz e pode causar hemólise?",
+   "alts": [
+    "Deficiência de glicose-6-fosfato desidrogenase",
+    "Metemoglobinemia induzida por dapsona em uso",
+    "Metemoglobina acima de 30% por benzocaína tópica",
+    "Uso simultâneo de noradrenalina em dose moderada",
+    "Metemoglobinemia com saturação de pulso de 85%"
+   ],
+   "gab": 0,
+   "coment": "O azul de metileno é reduzido a azul de leucometileno pela via da NADPH-metemoglobina redutase, e o NADPH vem da via da glicose-6-fosfato desidrogenase. Na deficiência de G6PD, falta NADPH, o azul não age e pode causar hemólise. Outra contraindicação importante é o uso de serotoninérgicos, pelo efeito inibidor da MAO-A. Dapsona e benzocaína são causas clássicas de metemoglobinemia tratadas com azul de metileno.",
+   "porAlt": [
+    "Correta: sem NADPH, o azul de metileno não age e causa hemólise.",
+    "Errada: dapsona é indicação, não contraindicação (embora a metemoglobinemia possa recorrer).",
+    "Errada: nível acima de 30% é indicação de tratamento.",
+    "Errada: não há contraindicação por noradrenalina; o azul é usado até em vasoplegia.",
+    "Errada: a saturação em torno de 85% é achado típico da metemoglobinemia."
+   ],
+   "base": "Toxicologia clínica; FDA Drug Safety Communication sobre azul de metileno, 2011"
+  },
+  {
+   "leitura": "toxicologia-antidotos",
+   "nivel": "intermediario",
+   "enun": "Mulher de 32 anos ingeriu amitriptilina há 3 horas. Está sonolenta, PA 84/50 mmHg, FC 128 bpm e ECG com QRS de 130 ms. Qual o tratamento imediato mais específico?",
+   "alts": [
+    "Flumazenil 0,2 mg IV para reverter o rebaixamento do nível de consciência",
+    "Fisostigmina 1 mg IV para reverter a síndrome anticolinérgica associada",
+    "Amiodarona 150 mg IV em 10 min para prevenir arritmia ventricular por QRS largo",
+    "Procainamida 15 mg/kg IV para estreitar o QRS e controlar a frequência",
+    "Bicarbonato de sódio 1 a 2 mEq/kg IV em bolus, repetido até estreitar o QRS"
+   ],
+   "gab": 4,
+   "coment": "QRS acima de 100 ms com hipotensão indica bloqueio de canais de sódio pelo tricíclico. O bicarbonato de sódio age pela carga de sódio e pela alcalinização: 1 a 2 mEq/kg em bolus, repetido até estreitar o QRS, mantendo pH arterial de 7,45 a 7,55 e corrigindo o potássio. Flumazenil e fisostigmina são contraindicados (convulsões e assistolia). Procainamida é classe IA e agrava o bloqueio de sódio; amiodarona também prolonga a condução e não é a escolha.",
+   "porAlt": [
+    "Errada: flumazenil pode precipitar convulsões na intoxicação por tricíclico.",
+    "Errada: fisostigmina com QRS alargado pode causar assistolia.",
+    "Errada: amiodarona não trata o bloqueio de sódio e prolonga a condução.",
+    "Errada: antiarrítmicos classe IA são contraindicados.",
+    "Correta: bicarbonato é o tratamento específico."
+   ],
+   "base": "Guia Farmacêutico do Hospital Sírio-Libanês, intoxicações e antídotos (consultado em 2026)"
+  },
+  {
+   "leitura": "toxicologia-antidotos",
+   "nivel": "intermediario",
+   "enun": "Homem de 120 kg com ingestão de paracetamol e indicação de acetilcisteína pelo esquema de duas bolsas. Qual a dose da primeira bolsa, segundo o consenso norte-americano de 2023?",
+   "alts": [
+    "24 g em 4 horas, calculados pelo peso real de 120 kg",
+    "14 g em 4 horas, calculados pelo peso ideal estimado",
+    "18 g em 1 hora, calculados como 150 mg/kg do peso total",
+    "20 g em 4 horas, calculados com o teto de peso de 100 kg",
+    "10 g em 4 horas, calculados como 100 mg/kg com teto de 100 kg"
+   ],
+   "gab": 3,
+   "coment": "O consenso de 2023 recomenda calcular a acetilcisteína com peso limitado a 100 kg. No esquema de duas bolsas, a primeira é 200 mg/kg em 4 horas: 200 × 100 = 20.000 mg (20 g, 200 mL da solução de 100 mg/mL), e a segunda 100 mg/kg em 16 horas (10 g). Pelo peso real, a dose seria excessiva; pelo peso ideal, poderia ficar abaixo do necessário. 150 mg/kg em 1 hora é a primeira bolsa do esquema de três bolsas.",
+   "porAlt": [
+    "Errada: não aplica o teto de 100 kg.",
+    "Errada: o consenso usa teto de 100 kg, não o peso ideal.",
+    "Errada: corresponde ao esquema de três bolsas, e sem o teto.",
+    "Correta: 200 mg/kg × 100 kg = 20 g em 4 horas.",
+    "Errada: 100 mg/kg é a dose da segunda bolsa."
+   ],
+   "base": "Dart et al., JAMA Netw Open 2023; Chiew et al., MJA 2020"
+  },
+  {
+   "leitura": "toxicologia-antidotos",
+   "nivel": "avancado",
+   "enun": "Paciente de 45 anos em uso crônico de clonazepam é admitido rebaixado após ingestão de clonazepam e imipramina, com QRS de 118 ms. O plantonista solicita flumazenil. Qual a posição farmacêutica mais adequada?",
+   "alts": [
+    "Liberar 0,2 mg IV lento, repetindo até 1 mg, pois o risco é baixo com titulação",
+    "Contraindicar, pelo risco de convulsão e arritmia com tricíclico e dependência",
+    "Liberar 1 mg em bolus único rápido, para reduzir o número de administrações",
+    "Liberar o flumazenil associado a fisostigmina para reverter as duas substâncias",
+    "Liberar o flumazenil somente depois da lavagem gástrica e do carvão ativado"
+   ],
+   "gab": 1,
+   "coment": "O flumazenil é perigoso em usuários crônicos de benzodiazepínico (abstinência e convulsões) e na coingestão de pró-convulsivantes como tricíclicos, em que retira a proteção anticonvulsivante e pode desencadear estado de mal e arritmias. O QRS alargado reforça a contraindicação. O tratamento é suporte, via aérea e bicarbonato para o QRS. A fisostigmina também é contraindicada com QRS alargado. Titulação lenta não elimina o risco.",
+   "porAlt": [
+    "Errada: a titulação não elimina o risco de convulsões na coingestão de tricíclico e na dependência.",
+    "Correta: contraindicação por dependência e tricíclico com QRS alargado.",
+    "Errada: bolus maior aumenta o risco.",
+    "Errada: a fisostigmina é contraindicada com QRS alargado.",
+    "Errada: descontaminação não muda a contraindicação, e a lavagem gástrica não é rotina."
+   ],
+   "base": "Guia Farmacêutico do Hospital Sírio-Libanês, intoxicações e antídotos (consultado em 2026)"
+  },
+  {
+   "leitura": "toxicologia-antidotos",
+   "nivel": "avancado",
+   "enun": "Paciente de 70 kg com intoxicação por metanol recebe fomepizol e será submetido a hemodiálise. Qual orientação está de acordo com a Nota Técnica nº 459/2025?",
+   "alts": [
+    "Suspender o fomepizol durante a hemodiálise, pois a diálise o torna desnecessário",
+    "Associar etanol intravenoso ao fomepizol para potencializar o bloqueio enzimático",
+    "Aumentar a frequência das doses durante a diálise, pois o fomepizol é dialisável",
+    "Reduzir a dose de manutenção à metade, pelo risco de acúmulo na lesão renal",
+    "Trocar o fomepizol por flumazenil, que bloqueia a álcool desidrogenase na diálise"
+   ],
+   "gab": 2,
+   "coment": "O fomepizol (15 mg/kg de ataque, 10 mg/kg de 12/12 horas por 4 doses e depois 15 mg/kg de 12/12 horas) é removido pela hemodiálise, e a nota técnica orienta aumentar a frequência das doses durante o procedimento. A diálise remove metanol e formato, mas o bloqueio da álcool desidrogenase deve continuar até que o álcool atinja níveis seguros. Fomepizol e etanol não devem ser associados, e flumazenil não tem relação com o tratamento. Ácido fólico ou folínico é adjuvante no metanol.",
+   "porAlt": [
+    "Errada: o bloqueio enzimático deve continuar durante e após a diálise.",
+    "Errada: fomepizol e etanol não devem ser associados.",
+    "Correta: doses mais frequentes durante a diálise.",
+    "Errada: o problema na diálise é remoção, não acúmulo.",
+    "Errada: flumazenil é antagonista benzodiazepínico e não age na álcool desidrogenase."
+   ],
+   "base": "Ministério da Saúde, Nota Técnica nº 459/2025"
+  }
+ ]
+}

@@ -1,0 +1,1096 @@
+{
+ "leituras": [
+  {
+   "slug": "avaliacao-paciente-critico",
+   "titulo": "Avaliação do paciente crítico pelo farmacêutico",
+   "dek": "Como o farmacêutico coleta e organiza os dados do paciente crítico (prontuário, passagem de plantão, sinais vitais, balanço hídrico, peso e dispositivos) e os converte em um roteiro sistemático de revisão da prescrição, com base no checklist FAST HUG, na Surviving Sepsis Campaign 2026 e na Resolução CFF 585/2013.",
+   "palavras": 4263,
+   "fontes": [
+    "CFF, Resolução 585/2013",
+    "ANVISA, RDC 7/2010",
+    "Vincent JL, FAST HUG, Crit Care Med 2005",
+    "Van Regenmortel N et al., Intensive Care Med 2018",
+    "Surviving Sepsis Campaign 2026",
+    "Ranzani OT et al., SOFA-2, JAMA 2025"
+   ]
+  },
+  {
+   "slug": "exames-laboratoriais",
+   "titulo": "Interpretação de exames laboratoriais na UTI",
+   "dek": "Leitura farmacoterapêutica dos exames laboratoriais mais pedidos na UTI (hemograma, função renal, eletrólitos, função hepática, coagulação, gasometria e lactato, PCR e procalcitonina, troponina e BNP, glicemia, albumina, CPK, amilase e lipase, níveis séricos), com as alterações induzidas por fármacos e as interferências analíticas, com base em KDIGO, CKD-EPI 2021, Surviving Sepsis Campaign 2026 e consenso de vancomicina de 2020.",
+   "palavras": 4113,
+   "fontes": [
+    "KDIGO AKI 2012",
+    "KDIGO CKD 2024",
+    "Inker LA et al., CKD-EPI 2021, N Engl J Med 2021",
+    "Surviving Sepsis Campaign 2026",
+    "de Jong E et al., Lancet Infect Dis 2016",
+    "Rybak MJ et al., ASHP/IDSA/PIDS/SIDP 2020",
+    "Kane SP et al., Ann Pharmacother 2013",
+    "Li D et al., JAMA 2017"
+   ]
+  },
+  {
+   "slug": "escores-uti",
+   "titulo": "Escores e escalas da terapia intensiva",
+   "dek": "Escores de gravidade (APACHE II, SAPS 3, SOFA e SOFA-2, qSOFA), escalas neurológicas e de sedação (Glasgow, RASS, CAM-ICU, ICDSC), de dor (escala numérica, CPOT, BPS), de risco nutricional (NRS-2002, NUTRIC), de lesão por pressão (Braden), de tromboembolismo (Padua, Caprini) e de sangramento (HAS-BLED), e como o farmacêutico usa cada um, com base em Sepsis-3, SOFA-2 (2025), SCCM PADIS 2018 e atualização de 2025, ESPEN 2023 e ESC 2024.",
+   "palavras": 4370,
+   "fontes": [
+    "Singer M et al., Sepsis-3, JAMA 2016",
+    "Ranzani OT et al., SOFA-2, JAMA 2025",
+    "Surviving Sepsis Campaign 2026",
+    "Devlin JW et al., SCCM PADIS 2018",
+    "Lewis K et al., PADIS focused update 2025",
+    "Singer P et al., ESPEN 2023",
+    "Van Gelder IC et al., ESC 2024",
+    "Schünemann HJ et al., ASH 2018"
+   ]
+  },
+  {
+   "slug": "semiologia-sistemas",
+   "titulo": "Semiologia por sistemas e sinais de toxicidade",
+   "dek": "Exame físico orientado ao medicamento (neurológico, cardiovascular, respiratório, abdominal, pele e mucosas) e reconhecimento à beira do leito das reações adversas graves da UTI: síndrome serotoninérgica, síndrome neuroléptica maligna, hipertermia maligna, toxicidade por opioides, benzodiazepínicos, anticolinérgicos, digoxina e lítio, síndrome de infusão do propofol, flebite e extravasamento, e reações cutâneas graves (SJS/NET e DRESS), com base nos critérios de Hunter, no consenso de 2011 para síndrome neuroléptica maligna, no EXTRIP 2015, nos critérios RegiSCAR e nos padrões da INS de 2024.",
+   "palavras": 3909,
+   "fontes": [
+    "Dunkley EJ et al., Hunter criteria, QJM 2003",
+    "Gurrera RJ et al., J Clin Psychiatry 2011",
+    "Glahn KPE et al., EMHG, Br J Anaesth 2020",
+    "Decker BS et al., EXTRIP, Clin J Am Soc Nephrol 2015",
+    "Hemphill S et al., Br J Anaesth 2019",
+    "Drew BJ et al., AHA/ACCF 2010",
+    "INS Infusion Therapy Standards of Practice, 9ª ed., 2024",
+    "Kardaun SH et al., RegiSCAR, Br J Dermatol 2013"
+   ]
+  },
+  {
+   "slug": "microbiologia-laudo",
+   "titulo": "Culturas, antibiograma e leitura do laudo microbiológico",
+   "dek": "Da coleta ao laudo final: amostras adequadas, hemocultura e contaminação, Gram e tempos de resultado, identificação rápida e testes moleculares, CIM e pontos de corte BrCAST/EUCAST com as categorias S, I (sensível, aumentando exposição) e R, detecção de ESBL e carbapenemases, antibiograma cumulativo e armadilhas de interpretação, com base na tabela BrCAST válida a partir de 15/04/2026 (EUCAST v16.0), na Surviving Sepsis Campaign 2026, no CLSI M47 de 2022 e na orientação IDSA 2026 para Gram-negativos resistentes.",
+   "palavras": 4131,
+   "fontes": [
+    "BrCAST, tabela de pontos de corte válida a partir de 15/04/2026 (EUCAST v16.0)",
+    "EUCAST v16.1, 2026",
+    "Surviving Sepsis Campaign 2026",
+    "CLSI M47, 2ª ed., 2022",
+    "Simner PJ et al., CLSI M39, J Clin Microbiol 2022",
+    "IDSA AMR Guidance 2026 (v5.0)",
+    "Harris PNA et al., MERINO, JAMA 2018",
+    "Kiffer CRV et al., Clin Infect Dis 2023"
+   ]
+  }
+ ],
+ "cartoes": [
+  {
+   "leitura": "avaliacao-paciente-critico",
+   "frente": "Como estimar a PAM quando não há cateter arterial?",
+   "verso": "PAM ≈ PAD + (PAS − PAD)/3. Exemplo: 120 × 60 mmHg → 60 + 20 = 80 mmHg."
+  },
+  {
+   "leitura": "avaliacao-paciente-critico",
+   "frente": "Qual o alvo inicial de PAM no choque séptico segundo a Surviving Sepsis Campaign 2026?",
+   "verso": "65 mmHg, depois individualizado conforme perfusão e comorbidades."
+  },
+  {
+   "leitura": "avaliacao-paciente-critico",
+   "frente": "O que é fluid creep e qual a sua magnitude na UTI?",
+   "verso": "Volume dos diluentes de medicamentos e das soluções para manter cateteres. Em Van Regenmortel (2018) foi cerca de um terço do volume diário total, mais que os fluidos de ressuscitação, e fonte importante de sódio e cloreto."
+  },
+  {
+   "leitura": "avaliacao-paciente-critico",
+   "frente": "Qual a fórmula de Devine para peso ideal em centímetros?",
+   "verso": "Homem: 50 + 0,91 × (altura em cm − 152,4). Mulher: 45,5 + 0,91 × (altura em cm − 152,4)."
+  },
+  {
+   "leitura": "avaliacao-paciente-critico",
+   "frente": "Como se calcula o peso ajustado?",
+   "verso": "Peso ajustado = peso ideal + 0,4 × (peso real − peso ideal). Usado em obesos para aminoglicosídeos e algumas metas nutricionais."
+  },
+  {
+   "leitura": "avaliacao-paciente-critico",
+   "frente": "Por que o peso aferido após ressuscitação volêmica é armadilha para doses?",
+   "verso": "Pode estar 5 a 10 kg acima do peso seco por edema, inflando doses por kg e infusões em mcg/kg/min. Documente e mantenha um peso de referência."
+  },
+  {
+   "leitura": "avaliacao-paciente-critico",
+   "frente": "Por que não se administram medicamentos pelo cateter arterial?",
+   "verso": "Injeção intra-arterial pode causar vasoespasmo, isquemia e necrose distal. O cateter serve para PAM contínua e gasometrias seriadas."
+  },
+  {
+   "leitura": "avaliacao-paciente-critico",
+   "frente": "O que fazer com medicamento prescrito por sonda nasogástrica aberta em drenagem?",
+   "verso": "Sonda em sifonagem drena o fármaco antes da absorção. Fechar a sonda pelo tempo definido em protocolo após a dose ou escolher outra via."
+  },
+  {
+   "leitura": "avaliacao-paciente-critico",
+   "frente": "Por que reservar um lúmen do CVC para a droga vasoativa?",
+   "verso": "Para evitar bólus inadvertido quando o lúmen é lavado ou recebe outra medicação, e para evitar incompatibilidades em Y com a infusão contínua."
+  },
+  {
+   "leitura": "avaliacao-paciente-critico",
+   "frente": "Quais itens compõem o FAST HUG?",
+   "verso": "Alimentação, analgesia, sedação, profilaxia de tromboembolismo, cabeceira elevada, profilaxia de úlcera de estresse e controle glicêmico (Vincent, 2005)."
+  },
+  {
+   "leitura": "avaliacao-paciente-critico",
+   "frente": "Qual débito urinário define oligúria no adulto crítico?",
+   "verso": "Menos de 0,5 mL/kg/h. Por 6 a 12 horas já caracteriza estágio 1 de lesão renal aguda pelo KDIGO, antes da elevação da creatinina."
+  },
+  {
+   "leitura": "avaliacao-paciente-critico",
+   "frente": "Quando suspeitar de depuração renal aumentada?",
+   "verso": "Paciente jovem com trauma, TCE, queimadura ou sepse hiperdinâmica, creatinina baixa e diurese alta. Confirmar com depuração de creatinina em urina de 8 a 24 horas; risco de subexposição a betalactâmicos e vancomicina."
+  },
+  {
+   "leitura": "avaliacao-paciente-critico",
+   "frente": "Cite três siglas ambíguas do prontuário de UTI.",
+   "verso": "PCR (proteína C reativa ou parada cardiorrespiratória), AVC (acesso venoso central ou acidente vascular cerebral) e ECG (eletrocardiograma ou escala de Glasgow)."
+  },
+  {
+   "leitura": "avaliacao-paciente-critico",
+   "frente": "Como priorizar as intervenções a levar para a visita multiprofissional?",
+   "verso": "Primeiro o que causa dano em horas (dose tóxica, alergia, antimicrobiano inadequado, QTc crítico); depois o que causa dano em dias (ajuste renal, profilaxias); o operacional (diluição, horário) resolve-se com a enfermagem."
+  },
+  {
+   "leitura": "exames-laboratoriais",
+   "frente": "Quais fármacos elevam a creatinina sem reduzir a filtração glomerular?",
+   "verso": "Trimetoprima, cimetidina, dolutegravir e cobicistate, por inibirem a secreção tubular de creatinina. A elevação é pequena, estável e sem aumento de ureia."
+  },
+  {
+   "leitura": "exames-laboratoriais",
+   "frente": "Como converter a TFG indexada do CKD-EPI 2021 em TFG não indexada?",
+   "verso": "TFG (mL/min) = TFG (mL/min/1,73 m²) × superfície corporal / 1,73. É a TFG que o KDIGO recomenda para dose."
+  },
+  {
+   "leitura": "exames-laboratoriais",
+   "frente": "Que exame orienta a reposição de cálcio no paciente crítico?",
+   "verso": "O cálcio ionizado. As fórmulas de correção do cálcio total pela albumina são imprecisas na UTI."
+  },
+  {
+   "leitura": "exames-laboratoriais",
+   "frente": "Que achado sugere acúmulo de citrato na anticoagulação regional da TRS?",
+   "verso": "Relação cálcio total/cálcio ionizado elevada, em geral acima de 2,5, com cálcio ionizado baixo e tendência a acidose."
+  },
+  {
+   "leitura": "exames-laboratoriais",
+   "frente": "Como se calcula e interpreta a razão R na lesão hepática por fármaco?",
+   "verso": "R = (ALT/LSN) ÷ (FA/LSN). R ≥ 5: hepatocelular; R ≤ 2: colestático; entre 2 e 5: misto."
+  },
+  {
+   "leitura": "exames-laboratoriais",
+   "frente": "Qual a interação entre ácido valproico e carbapenêmicos?",
+   "verso": "Carbapenêmicos reduzem de forma rápida e intensa o nível de valproato, com risco de convulsões, e o aumento de dose não compensa. Evite a associação."
+  },
+  {
+   "leitura": "exames-laboratoriais",
+   "frente": "O que a Surviving Sepsis Campaign 2026 sugere sobre procalcitonina?",
+   "verso": "Não usar para decidir iniciar antimicrobiano (avaliação clínica isolada) e usar com a avaliação clínica para decidir suspender quando o foco está controlado. Ambas condicionais."
+  },
+  {
+   "leitura": "exames-laboratoriais",
+   "frente": "Que critérios de procalcitonina os ensaios de suspensão guiada usaram?",
+   "verso": "Queda de pelo menos 80% em relação ao pico ou valor de 0,5 ng/mL ou menos (PRORATA 2010, SAPS 2016)."
+  },
+  {
+   "leitura": "exames-laboratoriais",
+   "frente": "Por que usar NT-proBNP em vez de BNP em paciente com sacubitril-valsartana?",
+   "verso": "O sacubitril inibe a neprilisina, que degrada o BNP, elevando-o sem piora clínica. O NT-proBNP não é substrato da neprilisina."
+  },
+  {
+   "leitura": "exames-laboratoriais",
+   "frente": "Qual a interferência laboratorial da biotina em dose alta?",
+   "verso": "Interfere em imunoensaios com estreptavidina-biotina, podendo falsear troponina e exames de tireoide (Li, 2017)."
+  },
+  {
+   "leitura": "exames-laboratoriais",
+   "frente": "Como corrigir a fenitoína total pela albumina?",
+   "verso": "Winter-Tozer: C corrigida = C medida / (0,2 × albumina + 0,1). Em UTI foram propostos coeficientes de 0,25 a 0,29. Sempre que possível, dose a fenitoína livre (1 a 2 mcg/mL)."
+  },
+  {
+   "leitura": "exames-laboratoriais",
+   "frente": "Cite causas medicamentosas de hiperlactatemia sem hipoperfusão.",
+   "verso": "Epinefrina, salbutamol em dose alta, metformina, linezolida prolongada e síndrome de infusão do propofol."
+  },
+  {
+   "leitura": "exames-laboratoriais",
+   "frente": "Quando a plaquetopenia por linezolida é mais provável?",
+   "verso": "Com uso acima de 10 a 14 dias e em disfunção renal. Monitorar plaquetas seriadas durante o tratamento."
+  },
+  {
+   "leitura": "exames-laboratoriais",
+   "frente": "Que monitorização laboratorial acompanha o propofol prolongado?",
+   "verso": "Triglicerídeos após 48 horas (reavaliar o propofol se acima de cerca de 400 mg/dL), CPK e lactato; lembrar que o propofol fornece cerca de 1,1 kcal/mL."
+  },
+  {
+   "leitura": "escores-uti",
+   "frente": "Qual a diferença entre escore prognóstico e escore de disfunção orgânica?",
+   "verso": "APACHE II e SAPS 3 estimam mortalidade de grupos com dados das primeiras horas. O SOFA descreve disfunção orgânica e é recalculado diariamente."
+  },
+  {
+   "leitura": "escores-uti",
+   "frente": "Como a Sepsis-3 define sepse e choque séptico?",
+   "verso": "Sepse: aumento agudo de 2 ou mais pontos no SOFA por resposta desregulada à infecção. Choque: vasopressor para PAM de pelo menos 65 mmHg e lactato acima de 2 mmol/L apesar de volume adequado."
+  },
+  {
+   "leitura": "escores-uti",
+   "frente": "Como o SOFA-2 pontua o componente cardiovascular?",
+   "verso": "Soma de noradrenalina e epinefrina em mcg/kg/min: até 0,2 = 2; acima de 0,2 até 0,4 = 3; acima de 0,4 = 4, com pontos adicionais para outro vasopressor, inotrópico ou suporte mecânico."
+  },
+  {
+   "leitura": "escores-uti",
+   "frente": "Por que o farmacêutico precisa saber se a noradrenalina está em sal ou base para o SOFA-2?",
+   "verso": "O SOFA-2 usa a dose em base. O hemitartarato tem massa cerca de duas vezes a da base, então confundir as duas dobra ou divide a dose calculada."
+  },
+  {
+   "leitura": "escores-uti",
+   "frente": "Quais são os critérios do qSOFA?",
+   "verso": "Frequência respiratória de 22 irpm ou mais, alteração do nível de consciência e PAS de 100 mmHg ou menos."
+  },
+  {
+   "leitura": "escores-uti",
+   "frente": "Quais os componentes e a faixa da escala de Glasgow?",
+   "verso": "Abertura ocular (1 a 4), resposta verbal (1 a 5) e motora (1 a 6); total de 3 a 15. Em intubado, registra-se o verbal como T."
+  },
+  {
+   "leitura": "escores-uti",
+   "frente": "Que alvo de sedação a PADIS 2018 sugere para adultos ventilados?",
+   "verso": "Sedação leve, em geral RASS de −2 a 0, salvo indicação de sedação profunda."
+  },
+  {
+   "leitura": "escores-uti",
+   "frente": "O que a atualização PADIS 2025 sugere sobre sedativos?",
+   "verso": "Dexmedetomidina em vez de propofol para manter sedação leve em adultos ventilados (condicional), com atenção à bradicardia."
+  },
+  {
+   "leitura": "escores-uti",
+   "frente": "Qual o pré-requisito e o critério diagnóstico do CAM-ICU?",
+   "verso": "RASS de −3 ou mais alto. Delirium: característica 1 (alteração aguda ou flutuante) e 2 (desatenção), mais 3 (consciência alterada) ou 4 (pensamento desorganizado)."
+  },
+  {
+   "leitura": "escores-uti",
+   "frente": "Como se interpreta o ICDSC?",
+   "verso": "Oito itens observados no turno, 0 ou 1 cada. Quatro ou mais indicam delirium; 1 a 3, delirium subsindrômico."
+  },
+  {
+   "leitura": "escores-uti",
+   "frente": "Quais os pontos de corte de dor significativa na CPOT e na BPS?",
+   "verso": "CPOT acima de 2 (escala de 0 a 8); BPS acima de 5 (escala de 3 a 12)."
+  },
+  {
+   "leitura": "escores-uti",
+   "frente": "Quais os componentes do mNUTRIC e o corte de alto risco?",
+   "verso": "Idade, APACHE II, SOFA, número de comorbidades e dias de hospital antes da UTI; de 0 a 9, alto risco a partir de 5."
+  },
+  {
+   "leitura": "escores-uti",
+   "frente": "Qual o corte de alto risco do escore de Padua e quais itens valem 3 pontos?",
+   "verso": "Quatro ou mais pontos. Valem 3: câncer ativo, tromboembolismo prévio, mobilidade reduzida e trombofilia conhecida."
+  },
+  {
+   "leitura": "escores-uti",
+   "frente": "Como a ESC 2024 orienta o uso do HAS-BLED?",
+   "verso": "HAS-BLED de 3 ou mais indica alto risco de sangramento: corrigir fatores modificáveis e acompanhar mais de perto, sem negar anticoagulação por isso."
+  },
+  {
+   "leitura": "semiologia-sistemas",
+   "frente": "Quais achados definem síndrome serotoninérgica pelos critérios de Hunter?",
+   "verso": "Com agente serotoninérgico: clônus espontâneo; ou clônus induzível ou ocular com agitação ou sudorese; ou tremor com hiper-reflexia; ou hipertonia, temperatura acima de 38 °C e clônus ocular ou induzível."
+  },
+  {
+   "leitura": "semiologia-sistemas",
+   "frente": "Quais fármacos de UTI são inibidores da MAO escondidos?",
+   "verso": "Linezolida e azul de metileno. Associados a inibidores de recaptação de serotonina, fentanil, tramadol ou metadona podem precipitar síndrome serotoninérgica."
+  },
+  {
+   "leitura": "semiologia-sistemas",
+   "frente": "Como se apresenta a síndrome neuroléptica maligna?",
+   "verso": "Instalação em dias após antagonista dopaminérgico (haloperidol, metoclopramida, bromoprida) ou retirada de levodopa, com rigidez em cano de chumbo, hipertermia, CPK muito alta e instabilidade autonômica."
+  },
+  {
+   "leitura": "semiologia-sistemas",
+   "frente": "Qual o sinal mais precoce e o tratamento da hipertermia maligna?",
+   "verso": "Aumento inexplicado do CO2 expirado. Tratar suspendendo o gatilho e com dantroleno 2,5 mg/kg IV, repetido até controle."
+  },
+  {
+   "leitura": "semiologia-sistemas",
+   "frente": "Quais os sinais da síndrome anticolinérgica?",
+   "verso": "Pele quente, seca e rubra, midríase, taquicardia, hipertermia, retenção urinária, íleo e delirium agitado."
+  },
+  {
+   "leitura": "semiologia-sistemas",
+   "frente": "Como administrar naloxona a paciente dependente de opioide com depressão respiratória?",
+   "verso": "Diluir 0,4 mg em 10 mL (0,04 mg/mL) e dar 0,04 mg IV a cada 2 a 3 minutos até frequência respiratória adequada, sem buscar despertar completo."
+  },
+  {
+   "leitura": "semiologia-sistemas",
+   "frente": "Por que preferir Fridericia a Bazett na taquicardia?",
+   "verso": "Bazett (QT/√RR) superestima o QTc em frequências altas. Fridericia (QT/∛RR) corrige menos e é mais adequada na taquicardia."
+  },
+  {
+   "leitura": "semiologia-sistemas",
+   "frente": "Que QTc indica risco relevante de torsades de pointes?",
+   "verso": "QTc acima de 500 ms ou aumento de mais de 60 ms em relação ao basal (AHA/ACCF, 2010)."
+  },
+  {
+   "leitura": "semiologia-sistemas",
+   "frente": "Quais sinais sugerem toxicidade digitálica?",
+   "verso": "Náuseas, vômitos, visão amarelada, confusão, bigeminismo, taquicardia atrial com bloqueio, bloqueios AV e taquicardia ventricular bidirecional; hipercalemia indica gravidade na intoxicação aguda."
+  },
+  {
+   "leitura": "semiologia-sistemas",
+   "frente": "Por que repetir o nível de lítio horas após a hemodiálise?",
+   "verso": "O lítio intracelular redistribui-se para o plasma após a sessão (rebote). Repetir cerca de 6 horas depois antes de encerrar o tratamento."
+  },
+  {
+   "leitura": "semiologia-sistemas",
+   "frente": "Quais são os componentes da síndrome de infusão do propofol?",
+   "verso": "Acidose lática, rabdomiólise, hipercalemia, hipertrigliceridemia, lesão renal, insuficiência cardíaca e arritmias; classicamente com mais de 4 mg/kg/h por mais de 48 horas."
+  },
+  {
+   "leitura": "semiologia-sistemas",
+   "frente": "Como diferenciar reação à infusão de vancomicina de alergia?",
+   "verso": "É liberação não imunológica de histamina ligada à velocidade: rubor em face e tronco. Reduz-se a velocidade (pelo menos 60 minutos por grama) e não contraindica reexposição."
+  },
+  {
+   "leitura": "semiologia-sistemas",
+   "frente": "Qual a conduta inicial no extravasamento de noradrenalina?",
+   "verso": "Parar a infusão, aspirar pelo cateter, retirá-lo, delimitar e elevar o membro e aplicar fentolamina local ou, na falta, nitroglicerina tópica ou terbutalina conforme protocolo."
+  },
+  {
+   "leitura": "semiologia-sistemas",
+   "frente": "Como se classificam SJS e NET pela área de descolamento?",
+   "verso": "SJS: menos de 10% da superfície corporal; sobreposição: 10 a 30%; NET: mais de 30%."
+  },
+  {
+   "leitura": "microbiologia-laudo",
+   "frente": "Como o BrCAST/EUCAST define S, I e R?",
+   "verso": "S: sucesso provável com dose padrão. I: sensível, aumentando exposição (dose alta ou concentração no sítio). R: falha provável mesmo com exposição aumentada."
+  },
+  {
+   "leitura": "microbiologia-laudo",
+   "frente": "O que significa ponto de corte S ≤ 0,001 mg/L?",
+   "verso": "Ponto fora da escala: a população selvagem é reportada como I e nunca como S. Ocorre, por exemplo, em P. aeruginosa com piperacilina-tazobactam, cefepima e ciprofloxacino."
+  },
+  {
+   "leitura": "microbiologia-laudo",
+   "frente": "O que indicam pontos de corte entre parênteses?",
+   "verso": "Baseiam-se no ECOFF e separam isolados com e sem resistência adquirida; faltam dados de eficácia em monoterapia (aminoglicosídeos sistêmicos, polimixinas), então usar em combinação ou indicação específica."
+  },
+  {
+   "leitura": "microbiologia-laudo",
+   "frente": "O que significam o traço (−) e EI nas tabelas BrCAST?",
+   "verso": "Traço: fármaco inadequado para o microrganismo; reportar R se incluído. EI: evidência insuficiente de que seja bom alvo terapêutico."
+  },
+  {
+   "leitura": "microbiologia-laudo",
+   "frente": "O que é a área de incerteza técnica (AIT)?",
+   "verso": "Faixa de CIM ou halo em que a categorização é incerta. Não é categoria de sensibilidade; o laboratório repete, confirma ou libera com comentário."
+  },
+  {
+   "leitura": "microbiologia-laudo",
+   "frente": "Qual a dose alta de meropeném na tabela de dosagens do BrCAST 2026?",
+   "verso": "2 g de 8/8 h em infusão de 3 horas (dose padrão: 1 g de 8/8 h em 30 minutos)."
+  },
+  {
+   "leitura": "microbiologia-laudo",
+   "frente": "O que é o tempo diferencial de positividade?",
+   "verso": "Hemocultura do CVC positivando pelo menos 2 horas antes da periférica colhida ao mesmo tempo e com mesmo volume sugere infecção relacionada ao cateter."
+  },
+  {
+   "leitura": "microbiologia-laudo",
+   "frente": "Quais microrganismos costumam ser contaminantes de hemocultura?",
+   "verso": "Estafilococos coagulase-negativos, Cutibacterium acnes, Micrococcus, Bacillus não anthracis e corinebactérias, sobretudo em apenas um de dois ou mais conjuntos."
+  },
+  {
+   "leitura": "microbiologia-laudo",
+   "frente": "Qual a meta de contaminação de hemoculturas do CLSI M47 (2022)?",
+   "verso": "Referência de menos de 3%, com meta de 1% quando as boas práticas são seguidas."
+  },
+  {
+   "leitura": "microbiologia-laudo",
+   "frente": "Que espécies têm AmpC induzível de risco moderado e o que a IDSA 2026 orienta?",
+   "verso": "Enterobacter cloacae complexo, Klebsiella aerogenes e Citrobacter freundii. Não usar ceftriaxona em infecção invasiva; cefepima se sensível."
+  },
+  {
+   "leitura": "microbiologia-laudo",
+   "frente": "Qual a posição sobre piperacilina-tazobactam em ESBL?",
+   "verso": "A IDSA 2026 não a sugere para infecções por Enterobacterales ESBL fora do trato urinário, mesmo com sensibilidade in vitro (base: MERINO, 2018)."
+  },
+  {
+   "leitura": "microbiologia-laudo",
+   "frente": "Contra quais carbapenemases a ceftazidima-avibactam é ativa?",
+   "verso": "KPC (classe A) e OXA-48-like (classe D). É inativa contra metalobetalactamases (NDM, VIM, IMP)."
+  },
+  {
+   "leitura": "microbiologia-laudo",
+   "frente": "Como deve ser determinada a CIM de polimixinas?",
+   "verso": "Por microdiluição em caldo. Disco-difusão e fitas de gradiente não são confiáveis."
+  },
+  {
+   "leitura": "microbiologia-laudo",
+   "frente": "Como montar o antibiograma cumulativo segundo o CLSI M39?",
+   "verso": "Incluir apenas o primeiro isolado por paciente no período e reportar espécies com pelo menos 30 isolados, idealmente estratificando por unidade e amostra."
+  }
+ ],
+ "questoes": [
+  {
+   "leitura": "avaliacao-paciente-critico",
+   "nivel": "basico",
+   "enun": "Paciente em choque séptico, sem cateter arterial, tem PA de 90 × 45 mmHg no manguito. Qual a PAM estimada e sua relação com o alvo inicial recomendado pela Surviving Sepsis Campaign 2026?",
+   "alts": [
+    "PAM de 67,5 mmHg, acima do alvo inicial de 65 mmHg",
+    "PAM de 75 mmHg, bem acima do alvo inicial de 65 mmHg",
+    "PAM de 60 mmHg, abaixo do alvo inicial de 65 mmHg",
+    "PAM de 55 mmHg, abaixo do alvo inicial de 70 mmHg",
+    "PAM de 60 mmHg, dentro do alvo inicial de 60 mmHg"
+   ],
+   "gab": 2,
+   "coment": "A PAM estimada é PAD + (PAS − PAD)/3 = 45 + (90 − 45)/3 = 45 + 15 = 60 mmHg. A Surviving Sepsis Campaign 2026 mantém 65 mmHg como alvo inicial no choque séptico, portanto a paciente está abaixo do alvo. Antes de concluir que é preciso aumentar o vasopressor, o farmacêutico verifica bólus recentes de sedativo, anti-hipertensivos de uso domiciliar mantidos por engano e interrupções da infusão na troca de seringa.",
+   "porAlt": [
+    "Errada: 67,5 mmHg é a média simples entre PAS e PAD, que superestima a PAM porque a diástole dura mais que a sístole.",
+    "Errada: 75 mmHg não corresponde a nenhuma fórmula válida com esses valores de pressão.",
+    "Correta: 45 + 45/3 = 60 mmHg, abaixo do alvo inicial de 65 mmHg.",
+    "Errada: o cálculo dá 60 mmHg, e o alvo inicial recomendado é 65 mmHg, não 70 mmHg.",
+    "Errada: o valor de 60 mmHg está certo, mas o alvo inicial recomendado é 65 mmHg."
+   ],
+   "base": "Surviving Sepsis Campaign 2026"
+  },
+  {
+   "leitura": "avaliacao-paciente-critico",
+   "nivel": "basico",
+   "enun": "Durante a revisão do mapa de acessos de um paciente de UTI, qual dispositivo NÃO deve ser usado como via de administração de medicamentos?",
+   "alts": [
+    "Cateter arterial radial usado para pressão invasiva",
+    "Cateter central de inserção periférica (PICC) íntegro",
+    "Lúmen distal livre do cateter venoso central jugular",
+    "Sonda nasoenteral com posição confirmada por raio X",
+    "Gastrostomia com calibre adequado à forma farmacêutica"
+   ],
+   "gab": 0,
+   "coment": "O cateter arterial serve para monitorização contínua da PAM e coleta de gasometrias. Injeção intra-arterial pode causar vasoespasmo, trombose, isquemia e necrose distal, e por isso não é via de medicamentos. CVC, PICC, sonda nasoenteral com posição confirmada e gastrostomia são vias válidas, cada uma com suas restrições de compatibilidade, osmolaridade ou forma farmacêutica.",
+   "porAlt": [
+    "Correta: o cateter arterial não é via de medicamentos pelo risco de isquemia e necrose distal.",
+    "Errada: o PICC é acesso venoso central válido, com atenção ao calibre e à compatibilidade.",
+    "Errada: o lúmen distal livre do CVC é via adequada, inclusive para vesicantes.",
+    "Errada: com posição confirmada, a sonda nasoenteral é via válida para formas adequadas.",
+    "Errada: a gastrostomia é via enteral válida, com menor risco de obstrução que sondas finas."
+   ],
+   "base": "Prática assistencial usual; INS Infusion Therapy Standards of Practice 2024"
+  },
+  {
+   "leitura": "avaliacao-paciente-critico",
+   "nivel": "intermediario",
+   "enun": "Homem em D5 de UTI, balanço hídrico acumulado de +8 L, equipe discute desressuscitação. Recebe meropeném, vancomicina, micafungina e pantoprazol intermitentes, cada um em 100 a 250 mL de SF 0,9%, além de soro para manter veia a 10 mL/h e noradrenalina diluída. Sódio sérico de 149 mEq/L. Qual a intervenção farmacêutica mais adequada?",
+   "alts": [
+    "Suspender os antimicrobianos intermitentes até o balanço hídrico ficar bem negativo",
+    "Trocar todos os diluentes por água para injetáveis a fim de reduzir a carga de sódio",
+    "Aumentar o volume das diluições para reduzir o risco de flebite no cateter central",
+    "Substituir todas as infusões intermitentes por bólus sem diluição, em qualquer fármaco",
+    "Concentrar as diluições nos limites de estabilidade e trocar SF por SG 5% quando possível"
+   ],
+   "gab": 4,
+   "coment": "O volume de diluentes e de soluções para manter veia (fluid creep) chega a cerca de um terço do volume diário do paciente de UTI (Van Regenmortel, 2018) e é fonte relevante de sódio e cloreto. Com sobrecarga hídrica e hipernatremia, o farmacêutico pode concentrar as diluições dentro dos limites de estabilidade e do acesso disponível, preferir SG 5% quando compatível e suspender o soro para manter veia desnecessário. Suspender antimicrobianos, usar água pura como diluente ou fazer bólus indiscriminados trazem risco maior que o benefício.",
+   "porAlt": [
+    "Errada: suspender antimicrobianos para reduzir volume sacrifica o tratamento da infecção.",
+    "Errada: água para injetáveis pura é hipotônica e pode causar hemólise; não é diluente de infusão.",
+    "Errada: aumentar o volume piora a sobrecarga; em cateter central, flebite química é incomum.",
+    "Errada: muitos fármacos não podem ser dados em bólus sem diluição (vancomicina, por exemplo).",
+    "Correta: concentrar diluições e escolher diluente conforme o sódio reduz volume e sódio com segurança."
+   ],
+   "base": "Van Regenmortel N et al., Intensive Care Med 2018"
+  },
+  {
+   "leitura": "avaliacao-paciente-critico",
+   "nivel": "intermediario",
+   "enun": "Homem de 1,70 m e 120 kg recebe prescrição de amicacina 25 mg/kg 1 vez ao dia. Usando a fórmula de Devine para o peso ideal, qual a dose calculada pelo peso ajustado?",
+   "alts": [
+    "Cerca de 3.000 mg, calculada pelo peso total",
+    "Cerca de 2.190 mg, calculada pelo peso ajustado",
+    "Cerca de 1.650 mg, calculada pelo peso ideal",
+    "Cerca de 2.600 mg, calculada pelo peso ajustado",
+    "Cerca de 1.900 mg, calculada pelo peso ajustado"
+   ],
+   "gab": 1,
+   "coment": "Peso ideal (Devine) = 50 + 0,91 × (170 − 152,4) = 50 + 16 = 66 kg. Peso ajustado = 66 + 0,4 × (120 − 66) = 66 + 21,6 = 87,6 kg. Dose = 25 × 87,6 = 2.190 mg. Em obesos, aminoglicosídeos costumam ser dosados pelo peso ajustado, porque se distribuem no líquido extracelular e o tecido adiposo contribui pouco para esse volume. A dose inicial deve ser seguida de dosagem sérica.",
+   "porAlt": [
+    "Errada: 3.000 mg usa o peso total, que superestima o volume de distribuição do aminoglicosídeo no obeso.",
+    "Correta: peso ideal 66 kg, peso ajustado 87,6 kg, dose de cerca de 2.190 mg.",
+    "Errada: 1.650 mg corresponde ao peso ideal, que subestima o volume de distribuição no obeso.",
+    "Errada: 2.600 mg não corresponde ao peso ajustado calculado corretamente (87,6 kg).",
+    "Errada: 1.900 mg resulta de erro no cálculo do peso ajustado ou do peso ideal."
+   ],
+   "base": "Devine BJ, 1974; prática de dosagem de aminoglicosídeos em obesos"
+  },
+  {
+   "leitura": "avaliacao-paciente-critico",
+   "nivel": "avancado",
+   "enun": "Mulher de 70 anos, D3 de choque séptico urinário, noradrenalina 0,2 mcg/kg/min, creatinina 1,0 → 1,8 → 2,5 mg/dL, diurese 0,3 mL/kg/h. Urocultura: E. coli sensível a ceftriaxona, sem ESBL. Prescrição: meropeném 1 g de 8/8 h, vancomicina 1 g de 12/12 h (sem foco Gram-positivo), losartana 50 mg por sonda (uso domiciliar) e midazolam 10 mg/h com RASS −5 (alvo −1 a −2). Qual conjunto de intervenções é o mais adequado?",
+   "alts": [
+    "Manter vancomicina com nível sérico, subir meropeném e manter losartana",
+    "Trocar meropeném por polimixina B, suspender losartana e subir midazolam",
+    "Suspender meropeném, manter vancomicina e trocar losartana por captopril",
+    "Suspender vancomicina e losartana, descalonar para ceftriaxona e rever sedação",
+    "Manter o esquema atual e reavaliar tudo após nova creatinina em 48 horas"
+   ],
+   "gab": 3,
+   "coment": "O roteiro por sistemas encontra quatro problemas: vancomicina sem indicação e nefrotóxica em lesão renal em progressão; carbapenêmico que pode ser descalonado para ceftriaxona conforme antibiograma; bloqueador do receptor de angiotensina em paciente chocada com lesão renal; e sedação muito acima do alvo com benzodiazepínico em infusão. A resposta correta endereça os quatro. Esperar 48 horas mantém exposição a nefrotóxico e a hipotensor desnecessários e prolonga sedação profunda.",
+   "porAlt": [
+    "Errada: vancomicina não tem indicação; manter losartana piora perfusão renal e pressão.",
+    "Errada: polimixina é nefrotóxica e desnecessária; subir midazolam agrava o excesso de sedação.",
+    "Errada: o problema é a vancomicina, não o meropeném; captopril tem o mesmo problema da losartana.",
+    "Correta: resolve nefrotóxico sem indicação, anti-hipertensivo inadequado, espectro e sedação.",
+    "Errada: adiar mantém nefrotoxicidade, hipotensão e sedação profunda evitáveis."
+   ],
+   "base": "Surviving Sepsis Campaign 2026; SCCM PADIS 2018"
+  },
+  {
+   "leitura": "avaliacao-paciente-critico",
+   "nivel": "avancado",
+   "enun": "Homem de 24 anos, politrauma, D4 de UTI, creatinina 0,5 mg/dL, diurese de 4,5 L em 24 h, febre persistente. Recebe piperacilina-tazobactam 4 g/0,5 g de 8/8 h em 30 minutos para pneumonia. Culturas pendentes. Qual a hipótese farmacoterapêutica e a conduta mais adequadas?",
+   "alts": [
+    "Insuficiência renal oculta; reduzir as doses de todos os fármacos renais",
+    "Falha por resistência provável; trocar empiricamente para carbapenêmico",
+    "Depuração renal aumentada; medir ClCr urinário e otimizar a exposição",
+    "Sobrecarga hídrica; restringir volume e suspender os antimicrobianos",
+    "Febre por fármaco; suspender a piperacilina-tazobactam imediatamente"
+   ],
+   "gab": 2,
+   "coment": "Jovem politraumatizado com creatinina baixa e diurese alta tem perfil clássico de depuração renal aumentada, situação em que betalactâmicos de eliminação renal ficam subexpostos. A conduta é medir a depuração de creatinina em urina de 8 a 24 horas e otimizar a exposição (intervalo menor, infusão estendida ou contínua, dose maior dentro do permitido e, se disponível, dosagem sérica). Trocar o antimicrobiano sem cultura ou atribuir a febre ao fármaco sem outros achados ignora a causa mais provável.",
+   "porAlt": [
+    "Errada: creatinina baixa com diurese alta sugere depuração aumentada, não reduzida.",
+    "Errada: sem cultura, subexposição é mais provável que resistência; carbapenêmico não resolve a PK.",
+    "Correta: perfil típico de depuração renal aumentada; medir e otimizar a exposição.",
+    "Errada: diurese alta não indica sobrecarga, e suspender antimicrobiano é inadequado.",
+    "Errada: febre por fármaco é diagnóstico de exclusão e não explica creatinina baixa com poliúria."
+   ],
+   "base": "Prática de PK no crítico; KDIGO 2012"
+  },
+  {
+   "leitura": "exames-laboratoriais",
+   "nivel": "basico",
+   "enun": "No paciente crítico com hipoalbuminemia, qual exame deve orientar a decisão de repor cálcio?",
+   "alts": [
+    "Cálcio total corrigido pela albumina com a fórmula de Payne",
+    "Cálcio ionizado medido em gasometria arterial ou venosa",
+    "Cálcio urinário de 24 horas associado ao fósforo sérico",
+    "Paratormônio sérico dosado antes de cada reposição feita",
+    "Relação cálcio total/fósforo em amostra colhida de manhã"
+   ],
+   "gab": 1,
+   "coment": "As fórmulas de correção do cálcio total pela albumina são pouco acuradas no paciente crítico e classificam erradamente muitos pacientes. O cálcio ionizado, fração fisiologicamente ativa, está disponível na gasometria e é o parâmetro para decidir reposição. Em anticoagulação regional com citrato, o cálcio ionizado baixo e a relação cálcio total/ionizado elevada orientam o ajuste da reposição.",
+   "porAlt": [
+    "Errada: a correção pela albumina é imprecisa no crítico e pode levar a reposição desnecessária.",
+    "Correta: o cálcio ionizado é a fração ativa e o parâmetro de decisão na UTI.",
+    "Errada: cálcio urinário não orienta reposição aguda no paciente crítico.",
+    "Errada: PTH não é exame para decidir cada reposição aguda de cálcio.",
+    "Errada: essa relação não tem papel na decisão de reposição de cálcio."
+   ],
+   "base": "Prática laboratorial em terapia intensiva; KDIGO AKI 2012"
+  },
+  {
+   "leitura": "exames-laboratoriais",
+   "nivel": "basico",
+   "enun": "Paciente em uso de sulfametoxazol-trimetoprima em dose alta apresenta creatinina de 0,9 mg/dL no D1 e 1,1 mg/dL no D3, estável no D4, com ureia e diurese normais e sedimento urinário sem alterações. Qual a interpretação mais provável?",
+   "alts": [
+    "Lesão renal aguda estágio 2 com indicação de suspender o fármaco",
+    "Nefrite intersticial aguda confirmada pela elevação isolada",
+    "Rabdomiólise induzida pelo fármaco, com necessidade de CPK seriada",
+    "Inibição da secreção tubular de creatinina, sem queda real da TFG",
+    "Erro laboratorial por interferência no método enzimático de creatinina"
+   ],
+   "gab": 3,
+   "coment": "A trimetoprima inibe a secreção tubular de creatinina, elevando a creatinina sérica em cerca de 0,1 a 0,3 mg/dL sem reduzir a filtração glomerular. O padrão é elevação pequena, precoce e estável, sem aumento de ureia, oligúria ou alteração do sedimento. A cistatina C estável ajuda a confirmar. A trimetoprima também eleva o potássio por bloqueio do canal epitelial de sódio, efeito que deve ser monitorado.",
+   "porAlt": [
+    "Errada: aumento de 0,2 mg/dL não define estágio 2 e o padrão sugere efeito secretor.",
+    "Errada: nefrite intersticial não se confirma por elevação isolada e estável de creatinina.",
+    "Errada: não há dados de rabdomiólise, e a trimetoprima não é causa típica.",
+    "Correta: a trimetoprima bloqueia a secreção tubular de creatinina sem reduzir a TFG.",
+    "Errada: a interferência conhecida no método de Jaffé é da cefoxitina, não da trimetoprima."
+   ],
+   "base": "KDIGO AKI 2012; farmacologia da trimetoprima"
+  },
+  {
+   "leitura": "exames-laboratoriais",
+   "nivel": "intermediario",
+   "enun": "D6 de tratamento de pneumonia associada à ventilação, foco controlado e melhora clínica. Procalcitonina: pico de 8 ng/mL no D1 e 1,4 ng/mL hoje. Com base na Surviving Sepsis Campaign 2026 e nos ensaios de suspensão guiada, qual a melhor leitura?",
+   "alts": [
+    "Queda de 82,5% do pico; o dado apoia discutir a suspensão do antimicrobiano",
+    "Valor ainda acima de 0,5 ng/mL; manter antimicrobiano por mais 7 dias no mínimo",
+    "Queda de 17,5% do pico; o dado indica falha e necessidade de escalonar o esquema",
+    "Queda de 82,5% do pico; o dado indica reduzir a dose do antimicrobiano à metade",
+    "Procalcitonina não se aplica à suspensão; decidir apenas pela PCR do mesmo dia"
+   ],
+   "gab": 0,
+   "coment": "Queda = (8 − 1,4)/8 = 0,825, ou 82,5%. Os ensaios de suspensão guiada (PRORATA 2010, SAPS 2016) usaram queda de pelo menos 80% do pico ou valor de 0,5 ng/mL ou menos. A Surviving Sepsis Campaign 2026 sugere usar procalcitonina associada à avaliação clínica para decidir a suspensão quando o foco está controlado e a duração ideal é incerta. O dado apoia discutir a suspensão; não autoriza reduzir dose.",
+   "porAlt": [
+    "Correta: queda acima de 80% com melhora clínica apoia discutir suspensão.",
+    "Errada: basta um dos critérios (queda de 80% ou valor de 0,5 ng/mL ou menos).",
+    "Errada: 17,5% é o valor remanescente, não a queda; houve queda de 82,5%.",
+    "Errada: procalcitonina orienta duração, não redução de dose do antimicrobiano.",
+    "Errada: a SSC 2026 sugere procalcitonina com clínica para decidir a suspensão."
+   ],
+   "base": "Surviving Sepsis Campaign 2026; de Jong E et al., Lancet Infect Dis 2016"
+  },
+  {
+   "leitura": "exames-laboratoriais",
+   "nivel": "intermediario",
+   "enun": "Paciente em fenitoína para profilaxia de crises após TCE tem fenitoína total de 6 mcg/mL, albumina de 2,2 g/dL e função renal normal. Não há crises. Qual a interpretação mais adequada?",
+   "alts": [
+    "Nível subterapêutico; aumentar a dose em 50% sem pedir novos exames",
+    "Nível corrigido de 30 mcg/mL; suspender a fenitoína por toxicidade",
+    "Nível corrigido de 6 mcg/mL; a albumina não interfere na leitura",
+    "Nível corrigido de 8,5 mcg/mL; associar segundo anticonvulsivante",
+    "Nível corrigido perto de 11 mcg/mL; idealmente dosar fenitoína livre"
+   ],
+   "gab": 4,
+   "coment": "Pela equação de Winter-Tozer clássica, C corrigida = 6 / (0,2 × 2,2 + 0,1) = 6 / 0,54 = 11,1 mcg/mL, dentro da faixa de 10 a 20 mcg/mL. Na hipoalbuminemia, a fração livre de fenitoína aumenta e o nível total subestima a exposição ativa. As equações erram em críticos (coeficientes revisados de 0,25 a 0,29 foram propostos), por isso a fenitoína livre, com faixa de 1 a 2 mcg/mL, é o exame preferido. Aumentar a dose com base no total poderia causar toxicidade.",
+   "porAlt": [
+    "Errada: aumentar a dose sem corrigir pela albumina arrisca toxicidade.",
+    "Errada: 30 mcg/mL resulta de erro de cálculo; o corrigido é cerca de 11 mcg/mL.",
+    "Errada: a hipoalbuminemia aumenta a fração livre e muda a interpretação do total.",
+    "Errada: o cálculo correto dá cerca de 11 mcg/mL, e não há crises que justifiquem associação.",
+    "Correta: corrigido de cerca de 11 mcg/mL; a fenitoína livre é o exame ideal."
+   ],
+   "base": "Kane SP et al., Ann Pharmacother 2013; Winter-Tozer"
+  },
+  {
+   "leitura": "exames-laboratoriais",
+   "nivel": "avancado",
+   "enun": "Paciente em D16 de linezolida por pneumonia por MRSA, epinefrina 0,05 mcg/kg/min em desmame, PAM de 78 mmHg, enchimento capilar de 2 segundos, sem sinais de isquemia. Lactato de 2,1 → 3,9 → 5,8 mmol/L nos últimos 3 dias, pH 7,28. Plaquetas caíram de 210.000 para 60.000/mm³. Qual a hipótese mais provável e a conduta?",
+   "alts": [
+    "Choque refratário; aumentar a epinefrina para melhorar a perfusão",
+    "Isquemia mesentérica certa; indicar laparotomia sem outros exames",
+    "Toxicidade mitocondrial da linezolida; rever duração e alternativa",
+    "Contaminação da amostra; ignorar o lactato e repetir em 72 horas",
+    "Deficiência de tiamina; manter a linezolida e repor tiamina apenas"
+   ],
+   "gab": 2,
+   "coment": "Linezolida em uso prolongado (sobretudo acima de 10 a 14 dias) inibe a síntese proteica mitocondrial e causa acidose lática, além de mielossupressão dependente de duração, especialmente plaquetopenia. Com perfusão adequada e epinefrina em dose baixa, a hiperlactatemia progressiva associada a plaquetopenia aponta para a linezolida. A conduta é discutir suspensão ou troca por alternativa ativa contra MRSA e acompanhar lactato e plaquetas. Isquemia deve ser considerada, mas não é certa sem exames.",
+   "porAlt": [
+    "Errada: há perfusão adequada; aumentar epinefrina pode até elevar o lactato por efeito beta-2.",
+    "Errada: isquemia é diagnóstico a considerar, mas não é certo nem indica cirurgia sem investigação.",
+    "Correta: acidose lática e plaquetopenia após 16 dias sugerem toxicidade da linezolida.",
+    "Errada: a tendência crescente em três dias com acidose afasta artefato isolado.",
+    "Errada: manter a linezolida ignora a causa mais provável; tiamina não trata toxicidade mitocondrial."
+   ],
+   "base": "Bula da linezolida (consultada em 2026); toxicidade mitocondrial de oxazolidinonas"
+  },
+  {
+   "leitura": "exames-laboratoriais",
+   "nivel": "avancado",
+   "enun": "Paciente com epilepsia controlada com ácido valproico (nível de 78 mcg/mL) inicia meropeném por pneumonia. Após 48 horas, apresenta duas crises e nível de valproato de 12 mcg/mL. Qual a conduta mais adequada?",
+   "alts": [
+    "Trocar o carbapenêmico, se possível, ou usar outro anticonvulsivante",
+    "Dobrar a dose de valproato e manter o meropeném sem outras medidas",
+    "Manter tudo, pois a queda é artefato de coleta próxima da infusão",
+    "Associar ertapeném ao meropeném para estabilizar o nível do valproato",
+    "Suspender o valproato e iniciar fenitoína, que interage com o meropeném"
+   ],
+   "gab": 0,
+   "coment": "Carbapenêmicos reduzem rápida e intensamente o nível sérico de valproato (inibição da hidrólise do glicuronídeo de valproato e outros mecanismos), com queda em 24 a 48 horas e risco de crises. Aumentar a dose de valproato não compensa a interação. A conduta é trocar o carbapenêmico por alternativa adequada à infecção ou, se o carbapenêmico for indispensável, usar anticonvulsivante alternativo durante o tratamento e por alguns dias após.",
+   "porAlt": [
+    "Correta: a interação não se corrige com dose; trocar um dos dois fármacos.",
+    "Errada: aumentar a dose de valproato não restaura níveis durante o uso de carbapenêmico.",
+    "Errada: a queda é real e clinicamente manifesta por crises.",
+    "Errada: ertapeném também é carbapenêmico e causa a mesma interação.",
+    "Errada: a fenitoína é opção possível, mas não interage com o meropeném, ao contrário do que diz a alternativa."
+   ],
+   "base": "Bulas de meropeném e ácido valproico (consultadas em 2026)"
+  },
+  {
+   "leitura": "escores-uti",
+   "nivel": "basico",
+   "enun": "Qual a posição da Surviving Sepsis Campaign 2026 sobre o qSOFA na triagem de sepse em pacientes agudamente doentes no hospital?",
+   "alts": [
+    "Recomenda o qSOFA como ferramenta única de triagem da sepse hospitalar",
+    "Recomenda o qSOFA para definir choque séptico em pacientes já na UTI",
+    "Recomenda substituir o SOFA pelo qSOFA no diagnóstico formal de sepse",
+    "Recomenda o qSOFA com procalcitonina para iniciar o antimicrobiano",
+    "Recomenda NEWS, MEWS ou SIRS em vez do qSOFA como ferramenta única"
+   ],
+   "gab": 4,
+   "coment": "A SSC 2026 recomenda (recomendação forte, certeza moderada) usar NEWS, NEWS2, MEWS ou SIRS em vez do qSOFA como ferramenta única de triagem de sepse, mantendo a posição de 2021. O qSOFA foi concebido como alerta prognóstico fora da UTI e tem baixa sensibilidade. Dentro da UTI usa-se o SOFA, e a sepse continua definida pela Sepsis-3 como aumento agudo de 2 ou mais pontos no SOFA.",
+   "porAlt": [
+    "Errada: é exatamente o que a SSC 2026 recomenda não fazer.",
+    "Errada: choque séptico é definido por vasopressor e lactato, não pelo qSOFA.",
+    "Errada: o diagnóstico pela Sepsis-3 usa o SOFA, não o qSOFA.",
+    "Errada: a SSC 2026 sugere não usar procalcitonina para decidir o início do antimicrobiano.",
+    "Correta: NEWS, NEWS2, MEWS ou SIRS são preferidos ao qSOFA como ferramenta única."
+   ],
+   "base": "Surviving Sepsis Campaign 2026"
+  },
+  {
+   "leitura": "escores-uti",
+   "nivel": "basico",
+   "enun": "Paciente intubado e sedado apresenta, durante a aspiração traqueal, CPOT de 4. Qual a interpretação e a conduta coerentes com a PADIS?",
+   "alts": [
+    "Ausência de dor; manter a sedação e reavaliar no próximo turno",
+    "Delirium hipoativo; aplicar CAM-ICU e iniciar antipsicótico",
+    "Dor significativa (acima de 2); tratar a dor antes de sedar mais",
+    "Sedação excessiva; reduzir o opioide e aumentar o midazolam",
+    "Dor leve (abaixo de 5); nenhuma intervenção é necessária agora"
+   ],
+   "gab": 2,
+   "coment": "A CPOT varia de 0 a 8 e valores acima de 2 indicam dor significativa. A PADIS orienta a abordagem analgesia primeiro: tratar a dor (por exemplo, bólus de opioide antes de procedimentos dolorosos e ajuste da infusão) antes de aprofundar a sedação. A CPOT não diagnostica delirium, e o corte de 5 é da BPS, não da CPOT.",
+   "porAlt": [
+    "Errada: CPOT de 4 está acima do corte de 2 e indica dor.",
+    "Errada: a CPOT avalia dor, não delirium; antipsicótico não trata dor.",
+    "Correta: CPOT acima de 2 indica dor; tratar a dor antes de sedar mais.",
+    "Errada: é o oposto; a dor pede analgesia, não mais benzodiazepínico.",
+    "Errada: o corte acima de 5 é da BPS; na CPOT o corte é acima de 2."
+   ],
+   "base": "Devlin JW et al., SCCM PADIS 2018; Gélinas C et al., 2006"
+  },
+  {
+   "leitura": "escores-uti",
+   "nivel": "intermediario",
+   "enun": "Paciente em ventilação mecânica com RASS de −4. A enfermeira pergunta se deve aplicar o CAM-ICU agora. Qual a resposta correta?",
+   "alts": [
+    "Aplicar; o RASS de −4 torna a característica 3 positiva e fecha o diagnóstico",
+    "Não aplicar; o teste exige RASS de −3 ou mais alto; rever a sedação e reaplicar",
+    "Aplicar; o CAM-ICU dispensa a resposta à voz quando o paciente está intubado",
+    "Não aplicar; o CAM-ICU só é validado para pacientes sem ventilação mecânica",
+    "Aplicar o ICDSC no lugar, pois ele exige RASS de −5 para ter validade clínica"
+   ],
+   "gab": 1,
+   "coment": "O CAM-ICU só pode ser aplicado quando o paciente responde à voz, isto é, com RASS de −3 ou mais alto. Com RASS de −4 ou −5, registra-se como não avaliável. O CAM-ICU foi validado justamente em pacientes ventilados (Ely, 2001), usando respostas não verbais. A conduta farmacêutica útil é rever se a sedação profunda tem indicação e, se não tiver, propor redução para permitir avaliação neurológica.",
+   "porAlt": [
+    "Errada: sem resposta à voz não se testam desatenção e pensamento; o teste não é válido.",
+    "Correta: o pré-requisito é RASS de −3 ou mais alto; rever sedação e reaplicar.",
+    "Errada: o CAM-ICU usa respostas não verbais, mas exige que o paciente responda à voz.",
+    "Errada: o CAM-ICU foi validado em pacientes em ventilação mecânica.",
+    "Errada: o ICDSC não exige RASS −5; o coma impede avaliação de delirium por qualquer escala."
+   ],
+   "base": "Ely EW et al., JAMA 2001; SCCM PADIS 2018"
+  },
+  {
+   "leitura": "escores-uti",
+   "nivel": "intermediario",
+   "enun": "Paciente de 80 kg recebe noradrenalina preparada com 16 mg de norepinefrina base em 250 mL, a 24 mL/h, sem outro vasoativo. Qual a dose em mcg/kg/min e a pontuação cardiovascular no SOFA-2?",
+   "alts": [
+    "0,19 mcg/kg/min; 2 pontos no componente cardiovascular",
+    "0,32 mcg/kg/min; 2 pontos no componente cardiovascular",
+    "0,48 mcg/kg/min; 4 pontos no componente cardiovascular",
+    "0,32 mcg/kg/min; 3 pontos no componente cardiovascular",
+    "0,26 mcg/kg/min; 4 pontos no componente cardiovascular"
+   ],
+   "gab": 3,
+   "coment": "Concentração = 16.000 mcg / 250 mL = 64 mcg/mL. Dose = 24 mL/h × 64 mcg/mL = 1.536 mcg/h = 25,6 mcg/min. Por kg: 25,6 / 80 = 0,32 mcg/kg/min. No SOFA-2, a soma de noradrenalina e epinefrina acima de 0,2 até 0,4 mcg/kg/min vale 3 pontos, sem outro agente associado. O SOFA-2 pede a dose de noradrenalina expressa como base, e aqui a preparação já está em base.",
+   "porAlt": [
+    "Errada: 0,19 mcg/kg/min resulta de erro na concentração ou na vazão.",
+    "Errada: a dose está certa, mas acima de 0,2 até 0,4 vale 3 pontos, não 2.",
+    "Errada: a dose calculada é 0,32, não 0,48 mcg/kg/min.",
+    "Correta: 0,32 mcg/kg/min, faixa acima de 0,2 até 0,4, igual a 3 pontos.",
+    "Errada: a dose é 0,32 e, sem outro agente, a faixa vale 3 pontos."
+   ],
+   "base": "Ranzani OT et al., SOFA-2, JAMA 2025"
+  },
+  {
+   "leitura": "escores-uti",
+   "nivel": "avancado",
+   "enun": "Homem em D4 de ventilação mecânica por pneumonia, sem SDRA grave nem hipertensão intracraniana. Alvo de RASS prescrito: −1 a 0. RASS medido: −4 nas últimas 24 h. Prescrição: midazolam 12 mg/h e fentanil 25 mcg/h. CPOT não registrado. Qual intervenção é mais coerente com a PADIS 2018 e sua atualização de 2025?",
+   "alts": [
+    "Avaliar dor, reduzir ou interromper o midazolam e buscar o alvo leve",
+    "Manter o midazolam, pois RASS −4 protege de extubação acidental",
+    "Associar haloperidol para prevenir delirium e manter a sedação atual",
+    "Trocar o midazolam por diazepam em bólus para reduzir o acúmulo renal",
+    "Iniciar bloqueador neuromuscular para melhorar a sincronia ventilatória"
+   ],
+   "gab": 0,
+   "coment": "O paciente está muito acima da sedação desejada, com benzodiazepínico em infusão e analgesia pouco avaliada. A PADIS orienta analgesia primeiro com escala validada (CPOT ou BPS), sedação leve e preferência por propofol ou dexmedetomidina em vez de benzodiazepínicos; a atualização de 2025 sugere dexmedetomidina em vez de propofol para sedação leve. Reduzir ou interromper o midazolam, tratar a dor e titular para o alvo é a intervenção central.",
+   "porAlt": [
+    "Correta: analgesia primeiro, redução do benzodiazepínico e busca do alvo de sedação leve.",
+    "Errada: sedação profunda sem indicação aumenta tempo de ventilação e delirium.",
+    "Errada: a PADIS não recomenda antipsicótico para prevenir delirium.",
+    "Errada: diazepam também é benzodiazepínico de meia-vida longa com metabólito ativo.",
+    "Errada: não há indicação de bloqueio neuromuscular e ele exige sedação profunda."
+   ],
+   "base": "Devlin JW et al., SCCM PADIS 2018; Lewis K et al., PADIS 2025"
+  },
+  {
+   "leitura": "escores-uti",
+   "nivel": "avancado",
+   "enun": "Mulher de 72 anos com fibrilação atrial, hipertensão não controlada (PAS 170 mmHg), AAS 100 mg sem indicação clara e ibuprofeno de uso frequente. HAS-BLED de 4 e CHA2DS2-VA de 3. Segundo a ESC 2024, qual a conduta mais adequada?",
+   "alts": [
+    "Não anticoagular, pois HAS-BLED de 3 ou mais contraindica o tratamento",
+    "Anticoagular e corrigir fatores modificáveis: pressão, AAS e AINE",
+    "Anticoagular com dose reduzida de DOAC para compensar o risco alto",
+    "Substituir a anticoagulação por dupla antiagregação com clopidogrel",
+    "Adiar a decisão até o HAS-BLED zerar com a retirada dos fármacos"
+   ],
+   "gab": 1,
+   "coment": "Com CHA2DS2-VA de 3, a anticoagulação está indicada. A ESC 2024 orienta usar o HAS-BLED para identificar e corrigir fatores de risco modificáveis e acompanhar mais de perto quem tem 3 ou mais pontos, não para negar anticoagulação. Aqui o farmacêutico atua diretamente: controlar a pressão, suspender AAS sem indicação e AINE. Reduzir a dose do DOAC fora dos critérios de bula aumenta o risco de AVC sem reduzir de forma comprovada o sangramento.",
+   "porAlt": [
+    "Errada: HAS-BLED alto não contraindica anticoagulação; indica corrigir fatores e vigiar.",
+    "Correta: anticoagular e corrigir hipertensão, AAS e AINE, que são fatores modificáveis.",
+    "Errada: dose reduzida só nos critérios de bula; fora deles aumenta risco tromboembólico.",
+    "Errada: dupla antiagregação é menos eficaz e sangra de forma semelhante.",
+    "Errada: idade e outros itens não se modificam; o escore não chega a zero, e adiar expõe a AVC."
+   ],
+   "base": "Van Gelder IC et al., ESC 2024; Pisters R et al., Chest 2010"
+  },
+  {
+   "leitura": "semiologia-sistemas",
+   "nivel": "basico",
+   "enun": "Qual achado favorece síndrome serotoninérgica em vez de síndrome neuroléptica maligna?",
+   "alts": [
+    "Rigidez plástica em cano de chumbo",
+    "Instalação lenta em vários dias",
+    "Hiporreflexia com pupilas normais",
+    "Clônus induzível e hiper-reflexia",
+    "Pele seca com retenção urinária"
+   ],
+   "gab": 3,
+   "coment": "Clônus (induzível, espontâneo ou ocular) e hiper-reflexia são marcas da toxicidade serotoninérgica e compõem os critérios de Hunter. A síndrome neuroléptica maligna tem rigidez em cano de chumbo, reflexos normais ou reduzidos e instalação em dias. Pele seca e retenção urinária sugerem síndrome anticolinérgica, que cursa com midríase e sem clônus.",
+   "porAlt": [
+    "Errada: rigidez em cano de chumbo é típica da síndrome neuroléptica maligna.",
+    "Errada: a síndrome serotoninérgica costuma se instalar em horas.",
+    "Errada: hiporreflexia com pupilas normais favorece a síndrome neuroléptica maligna.",
+    "Correta: clônus e hiper-reflexia são os marcadores da síndrome serotoninérgica.",
+    "Errada: pele seca e retenção urinária sugerem síndrome anticolinérgica."
+   ],
+   "base": "Dunkley EJ et al., QJM 2003; Gurrera RJ et al., 2011"
+  },
+  {
+   "leitura": "semiologia-sistemas",
+   "nivel": "basico",
+   "enun": "Segundo as recomendações EXTRIP de 2015, em qual situação a hemodiálise é recomendada na intoxicação por lítio?",
+   "alts": [
+    "Lítio de 1,8 mEq/L com tremor fino e função renal normal",
+    "Lítio de 2,5 mEq/L assintomático e com função renal normal",
+    "Lítio de 1,2 mEq/L com poliúria por diabetes insípido",
+    "Lítio de 3,0 mEq/L com náuseas e função renal normal",
+    "Lítio de 4,5 mEq/L com função renal comprometida pela LRA"
+   ],
+   "gab": 4,
+   "coment": "O EXTRIP recomenda hemodiálise quando o lítio passa de 4,0 mEq/L com função renal comprometida, ou quando há rebaixamento de consciência, convulsões ou arritmias graves independentemente do nível. Sugere hemodiálise com nível acima de 5,0 mEq/L, confusão significativa ou tempo previsto para chegar a menos de 1,0 mEq/L maior que 36 horas. As demais situações pedem suspensão, hidratação e nova dosagem.",
+   "porAlt": [
+    "Errada: nível pouco elevado com sintoma leve e rim normal não tem indicação.",
+    "Errada: sem sintomas e com rim normal, a eliminação renal costuma bastar.",
+    "Errada: poliúria por diabetes insípido nefrogênico não é critério de diálise.",
+    "Errada: 3,0 mEq/L com náuseas e rim normal não preenche critérios.",
+    "Correta: acima de 4,0 mEq/L com função renal comprometida é critério recomendado."
+   ],
+   "base": "Decker BS et al., EXTRIP, Clin J Am Soc Nephrol 2015"
+  },
+  {
+   "leitura": "semiologia-sistemas",
+   "nivel": "intermediario",
+   "enun": "Paciente com frequência cardíaca de 110 bpm tem QT medido de 420 ms. Recebe haloperidol e azitromicina. Qual o QTc mais adequado para decidir a conduta e por quê?",
+   "alts": [
+    "QTc de 569 ms por Fridericia, mais confiável em taquicardia",
+    "QTc de 514 ms por Bazett, mais confiável em taquicardia",
+    "QTc de 514 ms por Fridericia, mais confiável em taquicardia",
+    "QTc de 420 ms, pois a correção é dispensável em taquicardia",
+    "QTc de 569 ms por Bazett, mais confiável em taquicardia"
+   ],
+   "gab": 2,
+   "coment": "RR = 60/110 = 0,545 s. Fridericia: QT/∛RR = 420/0,817 = 514 ms. Bazett: QT/√RR = 420/0,738 = 569 ms. Bazett superestima o QTc em taquicardia, e Fridericia é mais adequada. Mesmo assim o QTc passa de 500 ms, faixa de risco para torsades (AHA/ACCF 2010), e exige corrigir potássio e magnésio e rever haloperidol e azitromicina.",
+   "porAlt": [
+    "Errada: 569 ms é o valor de Bazett, não de Fridericia.",
+    "Errada: 514 ms é o valor de Fridericia; Bazett dá 569 ms e é menos confiável.",
+    "Correta: Fridericia dá 514 ms e é a fórmula preferível na taquicardia.",
+    "Errada: o QT sempre deve ser corrigido pela frequência.",
+    "Errada: o valor de Bazett está certo, mas ela superestima o QTc na taquicardia."
+   ],
+   "base": "Drew BJ et al., AHA/ACCF 2010"
+  },
+  {
+   "leitura": "semiologia-sistemas",
+   "nivel": "intermediario",
+   "enun": "Paciente oncológico em uso crônico de morfina, internado na UTI, está sonolento, com frequência respiratória de 7 irpm, miose e SpO2 de 88% em cateter nasal. Qual a conduta mais adequada com naloxona?",
+   "alts": [
+    "Diluir e dar 0,04 mg IV a cada 2 a 3 minutos até FR adequada",
+    "Dar 2 mg IV em bólus único para reverter rapidamente o quadro",
+    "Dar flumazenil 0,2 mg IV, pois ele reverte depressão por opioide",
+    "Dar 0,4 mg IM uma só vez e não reavaliar, pela ação prolongada",
+    "Suspender o opioide e aguardar, pois naloxona é contraindicada"
+   ],
+   "gab": 0,
+   "coment": "Em paciente dependente de opioide, a naloxona deve ser titulada em doses pequenas (por exemplo, 0,4 mg diluídos em 10 mL, 0,04 mg a cada 2 a 3 minutos) para restaurar a ventilação sem precipitar abstinência aguda, dor intensa, edema pulmonar ou arritmias. A naloxona dura 30 a 90 minutos, menos que muitos opioides, então a reavaliação é obrigatória e pode ser preciso infusão contínua.",
+   "porAlt": [
+    "Correta: titulação em doses pequenas restaura a ventilação sem abstinência abrupta.",
+    "Errada: 2 mg em bólus em dependente causa abstinência grave e dor.",
+    "Errada: flumazenil reverte benzodiazepínicos, não opioides.",
+    "Errada: a naloxona tem ação curta e a depressão pode voltar; reavaliar sempre.",
+    "Errada: a naloxona é indicada; aguardar com FR de 7 irpm e hipoxemia é perigoso."
+   ],
+   "base": "Bula da naloxona (consultada em 2026)"
+  },
+  {
+   "leitura": "semiologia-sistemas",
+   "nivel": "avancado",
+   "enun": "Homem de 45 anos com sertralina domiciliar mantida e fentanil 100 mcg/h iniciou linezolida para MRSA há 18 horas. Agora: agitação, temperatura de 38,9 °C, sudorese, midríase, clônus induzível em membros inferiores e diarreia. Qual a conduta mais adequada?",
+   "alts": [
+    "Haloperidol IV para a agitação, mantendo todos os fármacos em curso",
+    "Suspender serotoninérgicos, benzodiazepínico e resfriar; rever o MRSA",
+    "Dantroleno 2,5 mg/kg IV, pois o quadro é de hipertermia maligna típica",
+    "Bromocriptina por sonda, pois o quadro é de síndrome neuroléptica",
+    "Contenção física e dipirona, mantendo a linezolida por ser essencial"
+   ],
+   "gab": 1,
+   "coment": "Clônus induzível com agitação, sudorese e hipertermia após associar linezolida (inibidora da MAO) a sertralina e fentanil preenche os critérios de Hunter para síndrome serotoninérgica. A conduta é suspender os serotoninérgicos, sedar com benzodiazepínico, resfriar e trocar a cobertura para MRSA por agente sem ação serotoninérgica (vancomicina, por exemplo). Contenção física aumenta a produção de calor, e haloperidol não é tratamento.",
+   "porAlt": [
+    "Errada: haloperidol não trata a síndrome e manter os serotoninérgicos a agrava.",
+    "Correta: suspender a causa, benzodiazepínico, resfriamento e trocar o anti-MRSA.",
+    "Errada: não houve exposição a anestésico halogenado nem succinilcolina.",
+    "Errada: clônus e instalação em horas apontam para síndrome serotoninérgica.",
+    "Errada: contenção piora a hipertermia e manter a linezolida perpetua o quadro."
+   ],
+   "base": "Dunkley EJ et al., QJM 2003; Boyer EW, Shannon M, N Engl J Med 2005"
+  },
+  {
+   "leitura": "semiologia-sistemas",
+   "nivel": "avancado",
+   "enun": "Paciente com D12 de carbamazepina, iniciada para crises após AVC, apresenta febre, máculas purpúricas dolorosas, bolhas com descolamento de 15% da superfície corporal e lesões em mucosa oral e ocular. Qual a conduta farmacêutica mais adequada?",
+   "alts": [
+    "Trocar carbamazepina por fenitoína e iniciar anti-histamínico oral",
+    "Manter carbamazepina em dose menor e associar corticoide sistêmico",
+    "Trocar carbamazepina por lamotrigina e notificar apenas se piorar",
+    "Suspender só os antimicrobianos, pois a carbamazepina é segura",
+    "Suspender carbamazepina, usar levetiracetam e notificar ao VigiMed"
+   ],
+   "gab": 4,
+   "coment": "O quadro é de sobreposição SJS/NET (descolamento entre 10 e 30%) na janela típica após carbamazepina. A conduta é suspender imediatamente o fármaco suspeito, dar suporte em unidade apropriada e evitar anticonvulsivantes aromáticos (fenitoína, fenobarbital, lamotrigina), que têm reatividade cruzada. Levetiracetam é alternativa adequada. A reação deve ser registrada de forma inequívoca e notificada à farmacovigilância (VigiMed, da ANVISA).",
+   "porAlt": [
+    "Errada: fenitoína é anticonvulsivante aromático com reatividade cruzada.",
+    "Errada: manter o fármaco causador em reação cutânea grave é contraindicado.",
+    "Errada: lamotrigina também causa SJS/NET, e a notificação deve ser imediata.",
+    "Errada: carbamazepina é causa clássica de SJS/NET e está na janela típica.",
+    "Correta: suspender, usar anticonvulsivante não aromático e notificar."
+   ],
+   "base": "Bastuji-Garin S et al., 2000; ANVISA VigiMed; literatura de reações cutâneas graves"
+  },
+  {
+   "leitura": "microbiologia-laudo",
+   "nivel": "basico",
+   "enun": "No laudo de antibiograma interpretado pelo BrCAST/EUCAST, o que significa a categoria I?",
+   "alts": [
+    "Sensível, aumentando exposição; exige o regime de dose alta",
+    "Intermediário; o fármaco deve ser evitado sempre que possível",
+    "Indeterminado; o laboratório precisa repetir por outro método",
+    "Sensível, dose padrão; qualquer regime usual é adequado aqui",
+    "Resistente de baixo nível; usar apenas em combinação com outro"
+   ],
+   "gab": 0,
+   "coment": "Desde 2019, o I do EUCAST, adotado pelo BrCAST, significa sensível, aumentando exposição: há alta probabilidade de sucesso quando a exposição é aumentada por ajuste do regime de dose ou pela concentração no sítio. A tabela de dosagens do BrCAST define a dose alta que sustenta a categoria. A incerteza técnica é sinalizada pela AIT, que não é categoria de sensibilidade.",
+   "porAlt": [
+    "Correta: I é sensível, aumentando exposição, e exige dose alta.",
+    "Errada: I não significa mais intermediário nem evitar o fármaco.",
+    "Errada: incerteza técnica é a AIT, que não é categoria de sensibilidade.",
+    "Errada: essa é a definição de S, não de I.",
+    "Errada: combinação obrigatória se aplica aos pontos de corte entre parênteses."
+   ],
+   "base": "BrCAST 2026 (EUCAST v16.0)"
+  },
+  {
+   "leitura": "microbiologia-laudo",
+   "nivel": "basico",
+   "enun": "Qual o volume de sangue recomendado por conjunto de hemocultura (frasco aeróbio e anaeróbio) no adulto?",
+   "alts": [
+    "Cerca de 5 mL por conjunto, divididos entre os dois frascos",
+    "Cerca de 20 mL por conjunto, de 8 a 10 mL em cada um dos frascos",
+    "Cerca de 50 mL por conjunto, em um único frasco aeróbio isolado",
+    "Cerca de 2 mL por frasco, para reduzir a perda sanguínea do dia",
+    "Cerca de 10 mL no total, colhidos apenas pelo cateter central"
+   ],
+   "gab": 1,
+   "coment": "O volume de sangue é o principal determinante da sensibilidade da hemocultura. No adulto, recomenda-se cerca de 20 mL por conjunto (8 a 10 mL por frasco), com 2 a 3 conjuntos de punções ou sítios diferentes, totalizando 40 a 60 mL por episódio. Volume baixo causa falso negativo, e coleta exclusiva por cateter dificulta distinguir colonização do dispositivo de bacteremia.",
+   "porAlt": [
+    "Errada: 5 mL por conjunto reduz muito a sensibilidade.",
+    "Correta: cerca de 20 mL por conjunto, 8 a 10 mL por frasco.",
+    "Errada: excede a capacidade do frasco e dispensa o frasco anaeróbio.",
+    "Errada: 2 mL por frasco causa falso negativo.",
+    "Errada: volume insuficiente e coleta só pelo cateter comprometem a interpretação."
+   ],
+   "base": "CLSI M47, 2022; Lamy B et al., Front Microbiol 2016"
+  },
+  {
+   "leitura": "microbiologia-laudo",
+   "nivel": "intermediario",
+   "enun": "Hemocultura com Pseudomonas aeruginosa: piperacilina-tazobactam CIM de 8 mg/L, categoria I (BrCAST 2026); meropeném CIM de 1 mg/L, S. Paciente recebe piperacilina-tazobactam 4 g/0,5 g de 8/8 h em 30 minutos, TFG de 90 mL/min, com melhora clínica. Qual a intervenção mais adequada?",
+   "alts": [
+    "Trocar por meropeném, pois o I indica resistência de baixo nível",
+    "Manter a dose atual, pois o I equivale a sensível em dose padrão",
+    "Associar amicacina e manter a dose de 8/8 h em infusão de 30 min",
+    "Ajustar para 4 g/0,5 g de 6/6 h em infusão estendida de 3 horas",
+    "Reduzir para 2 g/0,25 g de 6/6 h para diminuir a toxicidade renal"
+   ],
+   "gab": 3,
+   "coment": "Para P. aeruginosa, o ponto de corte S de piperacilina-tazobactam é 0,001 mg/L, fora da escala, de modo que isolados selvagens são reportados como I. Isso exige o regime de dose alta da tabela de dosagens do BrCAST: 4 g/0,5 g de 6/6 h em infusão estendida de 3 horas. Com melhora clínica, a intervenção é ajustar a dose, não trocar o antimicrobiano.",
+   "porAlt": [
+    "Errada: I não é resistência; trocar amplia espectro sem necessidade.",
+    "Errada: I exige dose alta; a dose padrão não sustenta a categoria.",
+    "Errada: associar amicacina não corrige a subexposição ao betalactâmico.",
+    "Correta: é o regime de dose alta da tabela de dosagens do BrCAST 2026.",
+    "Errada: reduzir a dose agrava a subexposição."
+   ],
+   "base": "BrCAST 2026 (EUCAST v16.0), tabela de dosagens"
+  },
+  {
+   "leitura": "microbiologia-laudo",
+   "nivel": "intermediario",
+   "enun": "Paciente com bacteremia por Enterobacter cloacae complexo, laudo com ceftriaxona S e cefepima S. Segundo a orientação IDSA 2026, qual a melhor escolha dirigida?",
+   "alts": [
+    "Ceftriaxona, pois o laudo mostra sensibilidade e o espectro é menor",
+    "Piperacilina-tazobactam, preferida à cefepima em AmpC induzível",
+    "Cefepima, se sensível, evitando ceftriaxona em infecção invasiva",
+    "Ertapeném, obrigatório para qualquer Enterobacterales hospitalar",
+    "Polimixina B, pois AmpC induzível confere resistência a betalactâmicos"
+   ],
+   "gab": 2,
+   "coment": "E. cloacae complexo, K. aerogenes e C. freundii têm risco moderado de desrepressão da AmpC cromossômica durante o tratamento com cefalosporinas de terceira geração, com falha mesmo quando o laudo inicial mostra sensibilidade. A IDSA 2026 não sugere ceftriaxona para infecções invasivas por esses microrganismos e sugere cefepima quando sensível, porque ela é estável à AmpC. Carbapenêmico fica reservado a situações específicas, e polimixina é desnecessária.",
+   "porAlt": [
+    "Errada: a ceftriaxona pode falhar por desrepressão da AmpC durante o tratamento.",
+    "Errada: a IDSA não prefere piperacilina-tazobactam à cefepima nesse cenário.",
+    "Correta: cefepima é estável à AmpC e é a escolha sugerida quando sensível.",
+    "Errada: carbapenêmico não é obrigatório e amplia espectro sem necessidade.",
+    "Errada: AmpC não confere resistência a cefepima nem a carbapenêmicos."
+   ],
+   "base": "IDSA AMR Guidance 2026 (v5.0)"
+  },
+  {
+   "leitura": "microbiologia-laudo",
+   "nivel": "avancado",
+   "enun": "Klebsiella pneumoniae em hemocultura, resistente a meropeném; imunocromatografia detecta NDM, sem KPC. O paciente está em ceftazidima-avibactam empírica há 24 horas, sem melhora. Qual a conduta mais adequada?",
+   "alts": [
+    "Manter ceftazidima-avibactam isolada, ativa contra todas as carbapenemases",
+    "Trocar por meropeném em dose alta, pois NDM não hidrolisa carbapenêmicos",
+    "Trocar por piperacilina-tazobactam em infusão estendida, estável à NDM",
+    "Associar ertapeném ao meropeném, pela dupla afinidade pelas carbapenemases",
+    "Usar aztreonam com ceftazidima-avibactam, ou cefiderocol, conforme o TSA"
+   ],
+   "gab": 4,
+   "coment": "NDM é metalobetalactamase (classe B), não inibida pelo avibactam. Ceftazidima-avibactam isolada não é ativa. O aztreonam é estável à hidrólise por metalobetalactamases, mas é destruído por ESBL e AmpC frequentemente coproduzidas; o avibactam protege o aztreonam dessas enzimas, por isso a associação aztreonam com ceftazidima-avibactam é opção, assim como o cefiderocol, conforme sensibilidade. Dados brasileiros mostram crescimento de NDM desde a pandemia (Kiffer, 2023).",
+   "porAlt": [
+    "Errada: avibactam não inibe metalobetalactamases como NDM.",
+    "Errada: NDM hidrolisa carbapenêmicos; dose alta não resolve.",
+    "Errada: piperacilina-tazobactam é hidrolisada por NDM.",
+    "Errada: a dupla carbapenêmica não tem papel contra metalobetalactamase.",
+    "Correta: aztreonam protegido pelo avibactam ou cefiderocol são as opções."
+   ],
+   "base": "IDSA AMR Guidance 2026 (v5.0); Kiffer CRV et al., Clin Infect Dis 2023"
+  },
+  {
+   "leitura": "microbiologia-laudo",
+   "nivel": "avancado",
+   "enun": "Paciente sem cateter central (retirado há 5 dias), sem prótese, afebril e estável. Um de dois conjuntos de hemocultura positivou em 38 horas com Staphylococcus epidermidis; o outro está negativo. O plantonista iniciou vancomicina. Qual a conduta mais adequada?",
+   "alts": [
+    "Manter vancomicina por 14 dias e trocar todos os acessos periféricos",
+    "Trocar a vancomicina por linezolida para reduzir a nefrotoxicidade",
+    "Manter vancomicina até o vale ficar entre 15 e 20 mg/L e reavaliar",
+    "Considerar contaminação, propor suspender e repetir hemoculturas",
+    "Associar rifampicina à vancomicina pela formação de biofilme local"
+   ],
+   "gab": 3,
+   "coment": "Estafilococo coagulase-negativo em apenas um de dois conjuntos, com tempo de positividade longo, em paciente sem dispositivo intravascular ou prótese e sem sinais de infecção, é provavelmente contaminação. A intervenção é propor suspender a vancomicina, com nova coleta se houver dúvida. Tratar contaminante expõe o paciente a nefrotoxicidade e seleção de resistência. O M47 do CLSI (2022) aponta meta de contaminação de 1%.",
+   "porAlt": [
+    "Errada: tratar contaminante por 14 dias é exposição desnecessária.",
+    "Errada: o problema é a indicação, não a escolha do anti-MRSA.",
+    "Errada: vale de 15 a 20 mg/L não é alvo atual, e não há indicação de tratar.",
+    "Correta: perfil de contaminação; suspender e repetir culturas se houver dúvida.",
+    "Errada: rifampicina só se usa em infecção de dispositivo, ausente aqui."
+   ],
+   "base": "CLSI M47, 2022; Rybak MJ et al., 2020"
+  }
+ ]
+}

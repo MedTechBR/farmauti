@@ -1,0 +1,1314 @@
+{
+ "leituras": [
+  {
+   "slug": "anticoagulantes-reversao",
+   "titulo": "Anticoagulantes, antiplaquetários e reversão",
+   "dek": "Heparinas, fondaparinux, varfarina, anticoagulantes orais diretos, inibidores diretos da trombina, antiplaquetários e trombolíticos no paciente crítico, com as estratégias de reversão do consenso ACC 2020, as diretrizes ASH 2018 de trombocitopenia induzida por heparina e CHEST 2022 de manejo perioperatório.",
+   "palavras": 4811,
+   "fontes": [
+    "ACC Expert Consensus Decision Pathway on Bleeding with Oral Anticoagulants, 2020",
+    "ASH guideline on heparin-induced thrombocytopenia, 2018",
+    "CHEST perioperative management of antithrombotic therapy, 2022",
+    "CHEST antithrombotic therapy for VTE, 2021",
+    "ANNEXA-I, NEJM 2024",
+    "ANVISA, registro de Ondexxya, 2023",
+    "HALT-IT, Lancet 2020"
+   ]
+  },
+  {
+   "slug": "profilaxias-uti",
+   "titulo": "Profilaxias na UTI: tromboembolismo e úlcera de estresse",
+   "dek": "Profilaxia de tromboembolismo venoso e de sangramento digestivo por estresse no paciente crítico: indicação, escolha do fármaco, ajuste renal e na obesidade, contraindicações e suspensão, com base nas diretrizes ASH 2018, Surviving Sepsis Campaign 2026, SCCM/ASHP 2024 e nos ensaios SUP-ICU (2018) e REVISE (2024).",
+   "palavras": 3007,
+   "fontes": [
+    "ASH VTE prophylaxis in hospitalized medical patients, 2018",
+    "Surviving Sepsis Campaign, 2026",
+    "SCCM/ASHP stress-related GI bleeding guideline, 2024",
+    "REVISE, NEJM 2024",
+    "SUP-ICU, NEJM 2018",
+    "PEPTIC, JAMA 2020",
+    "PROTECT, NEJM 2011",
+    "PREVENT, NEJM 2019",
+    "Saudi/Scandinavian SUP guideline, Acta Anaesthesiol Scand 2026"
+   ]
+  },
+  {
+   "slug": "cardiovasculares-antiarritmicos",
+   "titulo": "Antiarrítmicos e anti-hipertensivos parenterais",
+   "dek": "Antiarrítmicos, controle de frequência na fibrilação atrial do paciente crítico, vasodilatadores parenterais da emergência hipertensiva e ajustes farmacológicos na insuficiência cardíaca descompensada, com base nas diretrizes ACC/AHA/ACCP/HRS 2023 e ESC 2024 de fibrilação atrial, AHA 2020 de ressuscitação, ACC/AHA de hipertensão e AHA/ACC/HFSA 2022 de insuficiência cardíaca.",
+   "palavras": 3365,
+   "fontes": [
+    "ACC/AHA/ACCP/HRS atrial fibrillation guideline, 2023",
+    "ESC atrial fibrillation guidelines, 2024",
+    "AHA CPR and ECC guidelines, 2020",
+    "ACC/AHA high blood pressure guideline, 2017, e atualização AHA/ACC 2025",
+    "AHA/ACC/HFSA heart failure guideline, 2022",
+    "Guia Farmacêutico Hospital Sírio-Libanês (esmolol, deslanosídeo), 2026"
+   ]
+  },
+  {
+   "slug": "insulina-corticoides",
+   "titulo": "Insulina, controle glicêmico e corticoides",
+   "dek": "Insulina EV em infusão contínua, alvos glicêmicos e transição para subcutânea no paciente crítico, cetoacidose e estado hiperosmolar, e corticoides na UTI (choque séptico, pneumonia grave, SDRA, meningite, insuficiência adrenal), com base no ADA Standards of Care 2026, no consenso de crises hiperglicêmicas de 2024, no Surviving Sepsis Campaign 2026, na atualização SCCM de corticoides de 2024 e na diretriz ATS 2025 de pneumonia.",
+   "palavras": 3518,
+   "fontes": [
+    "ADA Standards of Care in Diabetes, seção 16, 2026",
+    "Consenso de crises hiperglicêmicas (Umpierrez et al.), Diabetes Care 2024",
+    "SCCM focused update on corticosteroids, 2024",
+    "Surviving Sepsis Campaign, 2026",
+    "ATS community-acquired pneumonia guideline, 2025",
+    "CAPE COD, NEJM 2023",
+    "APROCCHSS e ADRENAL, NEJM 2018",
+    "NICE-SUGAR, NEJM 2009",
+    "ESCMID bacterial meningitis guideline, 2016"
+   ]
+  },
+  {
+   "slug": "trato-gastrointestinal",
+   "titulo": "Farmacoterapia do trato gastrointestinal",
+   "dek": "Supressão ácida na hemorragia digestiva, antieméticos, procinéticos, protocolos de evacuação, diarreia e infecção por C. difficile, hemorragia varicosa, encefalopatia hepática e pancreatite aguda no paciente crítico, com base nas diretrizes ACG 2021 de hemorragia digestiva alta, Baveno VII (2022) e AASLD 2024 de hipertensão portal, IDSA/SHEA 2021 de C. difficile, ESPEN 2023 e ACG 2024 de pancreatite.",
+   "palavras": 3180,
+   "fontes": [
+    "ACG upper GI and ulcer bleeding guideline, 2021",
+    "Baveno VII, 2022",
+    "AASLD portal hypertension guidance, 2024",
+    "IDSA/SHEA C. difficile focused update, 2021",
+    "ESPEN ICU nutrition guideline, 2023",
+    "ACG acute pancreatitis guideline, 2024",
+    "WATERFALL, NEJM 2022",
+    "AASLD/EASL hepatic encephalopathy guideline, 2014"
+   ]
+  },
+  {
+   "slug": "terapia-nutricional",
+   "titulo": "Terapia nutricional enteral e parenteral",
+   "dek": "Triagem, via, momento e metas da terapia nutricional no paciente crítico, prescrição e estabilidade da nutrição parenteral, síndrome de realimentação, calorias não nutricionais e interações entre dieta e fármacos, com base nas diretrizes ESPEN 2023, ASPEN 2022, BRASPEN 2023 e no consenso ASPEN 2020 de síndrome de realimentação.",
+   "palavras": 3529,
+   "fontes": [
+    "ESPEN ICU nutrition guideline, 2023",
+    "ASPEN critical care nutrition guideline, 2022",
+    "Diretriz BRASPEN paciente grave, 2023",
+    "ASPEN refeeding syndrome consensus, 2020",
+    "EFFORT Protein, Lancet 2023",
+    "LOVIT, NEJM 2022",
+    "Portaria SVS/MS 272, 1998"
+   ]
+  }
+ ],
+ "cartoes": [
+  {
+   "leitura": "anticoagulantes-reversao",
+   "frente": "Qual o nomograma de HNF por peso para tromboembolismo venoso?",
+   "verso": "Bolus de 80 UI/kg e infusão inicial de 18 UI/kg/h, com TTPa ou anti-Xa 6 horas depois e ajuste pela tabela (Raschke, 1993)."
+  },
+  {
+   "leitura": "anticoagulantes-reversao",
+   "frente": "Qual o esquema de HNF na síndrome coronariana aguda e na FA?",
+   "verso": "Bolus de 60 UI/kg (máximo 4.000 UI) e 12 UI/kg/h (máximo 1.000 UI/h)."
+  },
+  {
+   "leitura": "anticoagulantes-reversao",
+   "frente": "Qual a faixa de anti-Xa alvo para HNF terapêutica?",
+   "verso": "0,3 a 0,7 UI/mL."
+  },
+  {
+   "leitura": "anticoagulantes-reversao",
+   "frente": "Por que o TTPa pode enganar no paciente inflamado em uso de HNF?",
+   "verso": "Fator VIII e fibrinogênio altos encurtam o TTPa; o paciente parece subanticoagulado e recebe doses crescentes, embora o anti-Xa já esteja no alvo."
+  },
+  {
+   "leitura": "anticoagulantes-reversao",
+   "frente": "Como ajustar a enoxaparina terapêutica com ClCr abaixo de 30 mL/min?",
+   "verso": "1 mg/kg SC 1×/dia em vez de 12/12 h, com anti-Xa de pico quando disponível; muitas UTIs preferem HNF."
+  },
+  {
+   "leitura": "anticoagulantes-reversao",
+   "frente": "Quando e como colher anti-Xa de enoxaparina?",
+   "verso": "Cerca de 4 horas após a 3ª ou 4ª dose. Alvo de 0,5 a 1,0 UI/mL no esquema de 12/12 h e de 1,0 a 2,0 UI/mL na dose única diária."
+  },
+  {
+   "leitura": "anticoagulantes-reversao",
+   "frente": "Quais anticoagulantes para TIH estão disponíveis no Brasil?",
+   "verso": "Fondaparinux e DOACs. Argatrobana, bivalirudina e danaparoide não têm comercialização regular no país."
+  },
+  {
+   "leitura": "anticoagulantes-reversao",
+   "frente": "Quando reduzir apixabana para 2,5 mg 12/12 h na FA?",
+   "verso": "Com 2 de 3 critérios: idade de 80 anos ou mais, peso de 60 kg ou menos, creatinina de 1,5 mg/dL ou mais."
+  },
+  {
+   "leitura": "anticoagulantes-reversao",
+   "frente": "Por que não abrir a cápsula de dabigatrana para a sonda?",
+   "verso": "A cápsula aberta aumenta a biodisponibilidade em cerca de 75%, com risco de sangramento."
+  },
+  {
+   "leitura": "anticoagulantes-reversao",
+   "frente": "Qual o cálculo da protamina para reverter HNF em infusão?",
+   "verso": "1 mg para cada 100 UI infundidas nas últimas 2 a 3 horas, máximo de 50 mg por dose, até 5 mg/min."
+  },
+  {
+   "leitura": "anticoagulantes-reversao",
+   "frente": "Qual a dose de CCP de 4 fatores para varfarina com RNI de 5 e sangramento maior?",
+   "verso": "35 UI/kg (teto de 100 kg), junto com vitamina K 5 a 10 mg EV lenta (ACC 2020)."
+  },
+  {
+   "leitura": "anticoagulantes-reversao",
+   "frente": "Qual a dose de idarucizumabe?",
+   "verso": "5 g EV, em dois frascos de 2,5 g."
+  },
+  {
+   "leitura": "anticoagulantes-reversao",
+   "frente": "Qual a situação do andexanete alfa no Brasil?",
+   "verso": "Registro na ANVISA desde setembro de 2023, disponibilidade restrita; o ANNEXA-I mostrou mais eventos trombóticos e o produto saiu do mercado norte-americano em dezembro de 2025. CCP de 4 fatores é a alternativa usual."
+  },
+  {
+   "leitura": "anticoagulantes-reversao",
+   "frente": "Qual IBP associar ao clopidogrel?",
+   "verso": "Pantoprazol. Omeprazol e esomeprazol inibem o CYP2C19 que ativa o clopidogrel."
+  },
+  {
+   "leitura": "profilaxias-uti",
+   "frente": "Qual a dose padrão de enoxaparina profilática no crítico?",
+   "verso": "40 mg SC 1×/dia."
+  },
+  {
+   "leitura": "profilaxias-uti",
+   "frente": "Como ajustar a enoxaparina profilática com ClCr abaixo de 30 mL/min?",
+   "verso": "20 a 30 mg SC 1×/dia (20 mg na bula brasileira, 30 mg nas referências norte-americanas) ou trocar por HNF 5.000 UI 12/12 h."
+  },
+  {
+   "leitura": "profilaxias-uti",
+   "frente": "Qual a prática usual de profilaxia com enoxaparina no IMC de 40 kg/m² ou mais?",
+   "verso": "40 mg SC 12/12 h ou 0,5 mg/kg/dia, com anti-Xa de pico de 0,2 a 0,5 UI/mL quando disponível."
+  },
+  {
+   "leitura": "profilaxias-uti",
+   "frente": "O que mostrou o ensaio PROTECT?",
+   "verso": "Dalteparina e HNF tiveram trombose proximal semelhante, mas a dalteparina reduziu embolia pulmonar e TIH."
+  },
+  {
+   "leitura": "profilaxias-uti",
+   "frente": "O que mostrou o ensaio PREVENT sobre compressão pneumática?",
+   "verso": "Associar compressão pneumática intermitente à heparina não reduziu trombose venosa proximal em pacientes ventilados."
+  },
+  {
+   "leitura": "profilaxias-uti",
+   "frente": "Quanto tempo suspender enoxaparina profilática antes de punção neuraxial?",
+   "verso": "12 horas antes; reiniciar ao menos 4 horas após a retirada do cateter (ASRA)."
+  },
+  {
+   "leitura": "profilaxias-uti",
+   "frente": "Quais fatores de risco para sangramento por estresse a SCCM/ASHP 2024 reconhece?",
+   "verso": "Coagulopatia, choque e doença hepática crônica."
+  },
+  {
+   "leitura": "profilaxias-uti",
+   "frente": "A ventilação mecânica isolada indica profilaxia de úlcera de estresse pela SCCM/ASHP 2024?",
+   "verso": "Não há evidência firme de que seja fator de risco isolado; a nutrição enteral provavelmente reduz o risco."
+  },
+  {
+   "leitura": "profilaxias-uti",
+   "frente": "Quais os resultados principais do REVISE (2024)?",
+   "verso": "Pantoprazol 40 mg EV/dia em ventilados: sangramento clinicamente importante de 1,0% versus 3,5%, sem diferença de mortalidade em 90 dias ou de pneumonia."
+  },
+  {
+   "leitura": "profilaxias-uti",
+   "frente": "O que mostrou o SUP-ICU (2018)?",
+   "verso": "Pantoprazol reduziu sangramento clinicamente importante (2,5% versus 4,2%) sem alterar a mortalidade em 90 dias."
+  },
+  {
+   "leitura": "profilaxias-uti",
+   "frente": "Qual a dose profilática de pantoprazol?",
+   "verso": "40 mg EV ou enteral 1×/dia. Doses de tratamento de HDA não têm papel na profilaxia."
+  },
+  {
+   "leitura": "profilaxias-uti",
+   "frente": "Quando suspender a profilaxia de úlcera de estresse?",
+   "verso": "Quando o fator de risco se resolve (choque, coagulopatia) ou na alta da UTI; não levar para casa sem nova indicação."
+  },
+  {
+   "leitura": "profilaxias-uti",
+   "frente": "Quais riscos associados à supressão ácida no crítico?",
+   "verso": "Associação com C. difficile e pneumonia em estudos observacionais, hipomagnesemia, interações por pH e CYP2C19; anti-H2 causa confusão e trombocitopenia."
+  },
+  {
+   "leitura": "profilaxias-uti",
+   "frente": "Por que o sucralfato perdeu espaço na profilaxia?",
+   "verso": "É menos eficaz que IBP e anti-H2, obstrui sondas, contém alumínio e quelata quinolonas, levotiroxina e fenitoína."
+  },
+  {
+   "leitura": "cardiovasculares-antiarritmicos",
+   "frente": "Qual o esquema clássico de amiodarona EV na FA ou TV estável?",
+   "verso": "150 mg em 10 min, 1 mg/min por 6 h e 0,5 mg/min por 18 h."
+  },
+  {
+   "leitura": "cardiovasculares-antiarritmicos",
+   "frente": "Qual a concentração máxima de amiodarona em acesso periférico?",
+   "verso": "Cerca de 2 mg/mL; acima disso, cateter central pelo risco de flebite. Diluir em SG 5%."
+  },
+  {
+   "leitura": "cardiovasculares-antiarritmicos",
+   "frente": "Quanto reduzir a digoxina ao associar amiodarona?",
+   "verso": "Cerca de 50%, com nível sérico, porque a amiodarona inibe a P-gp e eleva a digoxina."
+  },
+  {
+   "leitura": "cardiovasculares-antiarritmicos",
+   "frente": "Qual a dose de adenosina na TSV e quando começar com 3 mg?",
+   "verso": "6 mg em bolus rápido com flush, depois 12 mg. Começar com 3 mg em acesso central, transplante cardíaco, dipiridamol ou carbamazepina."
+  },
+  {
+   "leitura": "cardiovasculares-antiarritmicos",
+   "frente": "Qual a dose de esmolol?",
+   "verso": "500 mcg/kg em 1 minuto e 50 mcg/kg/min, titulando até 200 a 300 mcg/kg/min."
+  },
+  {
+   "leitura": "cardiovasculares-antiarritmicos",
+   "frente": "Por que o diltiazem é evitado na FA com FE abaixo de 40%?",
+   "verso": "É inotrópico negativo e pode precipitar baixo débito e edema pulmonar."
+  },
+  {
+   "leitura": "cardiovasculares-antiarritmicos",
+   "frente": "Qual a forma EV de digitálico disponível no Brasil e sua dose de digitalização rápida?",
+   "verso": "Deslanosídeo, 0,8 a 1,6 mg em 24 horas, fracionados em 1 a 4 doses EV lentas."
+  },
+  {
+   "leitura": "cardiovasculares-antiarritmicos",
+   "frente": "Quando colher o nível de digoxina e qual o alvo na insuficiência cardíaca?",
+   "verso": "No mínimo 6 a 8 horas após a dose; alvo de 0,5 a 0,9 ng/mL."
+  },
+  {
+   "leitura": "cardiovasculares-antiarritmicos",
+   "frente": "O que potencializa a toxicidade digitálica?",
+   "verso": "Hipocalemia, hipomagnesemia, hipercalcemia, hipotireoidismo, isquemia e insuficiência renal."
+  },
+  {
+   "leitura": "cardiovasculares-antiarritmicos",
+   "frente": "Qual a dose de sulfato de magnésio na torsades com pulso?",
+   "verso": "2 g EV em 5 a 15 minutos, podendo repetir, com correção de potássio e retirada dos prolongadores de QT."
+  },
+  {
+   "leitura": "cardiovasculares-antiarritmicos",
+   "frente": "Quais anti-hipertensivos EV não são comercializados no Brasil?",
+   "verso": "Labetalol e clevidipino EV."
+  },
+  {
+   "leitura": "cardiovasculares-antiarritmicos",
+   "frente": "Quais sinais sugerem toxicidade por cianeto no uso de nitroprussiato?",
+   "verso": "Acidose lática inexplicada, taquifilaxia e saturação venosa central alta, com doses acima de cerca de 2 mcg/kg/min ou hepatopatia."
+  },
+  {
+   "leitura": "cardiovasculares-antiarritmicos",
+   "frente": "Qual a meta pressórica inicial na emergência hipertensiva sem dissecção?",
+   "verso": "Reduzir a sistólica em até 25% na primeira hora, depois para 160/100-110 mmHg em 2 a 6 horas e ao normal em 24 a 48 horas."
+  },
+  {
+   "leitura": "cardiovasculares-antiarritmicos",
+   "frente": "Que cuidado de material a nitroglicerina EV exige?",
+   "verso": "Frasco e equipo sem PVC, porque o PVC adsorve grande parte do fármaco."
+  },
+  {
+   "leitura": "insulina-corticoides",
+   "frente": "Qual o alvo glicêmico da maioria dos pacientes críticos no ADA 2026?",
+   "verso": "140 a 180 mg/dL, com insulina iniciada em hiperglicemia persistente a partir de 180 mg/dL."
+  },
+  {
+   "leitura": "insulina-corticoides",
+   "frente": "O que mostrou o NICE-SUGAR?",
+   "verso": "Controle intensivo (81 a 108 mg/dL) aumentou mortalidade e hipoglicemia grave em relação ao alvo de até 180 mg/dL."
+  },
+  {
+   "leitura": "insulina-corticoides",
+   "frente": "Quando aplicar a insulina basal na transição da infusão EV?",
+   "verso": "Cerca de 2 horas antes de desligar a infusão (ADA 2026; o consenso de 2024 diz 1 a 2 horas)."
+  },
+  {
+   "leitura": "insulina-corticoides",
+   "frente": "Como estimar a dose diária subcutânea a partir da infusão?",
+   "verso": "Média das últimas 6 a 8 h estáveis × 24, usar 60% a 80%, dividindo entre basal e prandial conforme a dieta."
+  },
+  {
+   "leitura": "insulina-corticoides",
+   "frente": "Quais os critérios de CAD no consenso de 2024?",
+   "verso": "Diabetes ou glicemia de 200 mg/dL ou mais; beta-hidroxibutirato de 3,0 mmol/L ou mais; pH abaixo de 7,3 ou bicarbonato abaixo de 18 mmol/L."
+  },
+  {
+   "leitura": "insulina-corticoides",
+   "frente": "O que fazer com potássio abaixo de 3,5 mmol/L na CAD?",
+   "verso": "Repor cerca de 10 mmol/h e adiar a insulina até o potássio passar de 3,5 mmol/L."
+  },
+  {
+   "leitura": "insulina-corticoides",
+   "frente": "Quando acrescentar glicose na CAD?",
+   "verso": "Com glicemia abaixo de 250 mg/dL, SG 5% a 10%, mantendo a insulina até a cetose resolver."
+  },
+  {
+   "leitura": "insulina-corticoides",
+   "frente": "Qual a dose de insulina no estado hiperosmolar?",
+   "verso": "0,05 UI/kg/h, após reposição volêmica em curso, com queda de glicemia de 90 a 120 mg/dL/h."
+  },
+  {
+   "leitura": "insulina-corticoides",
+   "frente": "Quando dar bicarbonato na CAD?",
+   "verso": "Só com pH abaixo de 7,0."
+  },
+  {
+   "leitura": "insulina-corticoides",
+   "frente": "Qual o esquema do APROCCHSS?",
+   "verso": "Hidrocortisona 50 mg EV 6/6 h e fludrocortisona 50 mcg por sonda 1×/dia por 7 dias; reduziu mortalidade em 90 dias."
+  },
+  {
+   "leitura": "insulina-corticoides",
+   "frente": "Qual o esquema do CAPE COD?",
+   "verso": "Hidrocortisona 200 mg/dia por 4 dias, com redução até completar 8 ou 14 dias, iniciada em até 24 horas na pneumonia comunitária grave."
+  },
+  {
+   "leitura": "insulina-corticoides",
+   "frente": "Qual a dose de dexametasona na meningite bacteriana?",
+   "verso": "0,15 mg/kg EV 6/6 h (ou 10 mg 6/6 h) por 4 dias, antes ou junto da primeira dose do antimicrobiano."
+  },
+  {
+   "leitura": "insulina-corticoides",
+   "frente": "Quantos mg de dexametasona equivalem a 20 mg de hidrocortisona?",
+   "verso": "0,75 mg."
+  },
+  {
+   "leitura": "insulina-corticoides",
+   "frente": "Qual o esquema de dexametasona do DEXA-ARDS?",
+   "verso": "20 mg EV/dia por 5 dias e 10 mg/dia por mais 5 dias."
+  },
+  {
+   "leitura": "trato-gastrointestinal",
+   "frente": "Qual o esquema de IBP após hemostasia endoscópica de úlcera de alto risco?",
+   "verso": "Dose alta por 3 dias, contínua (80 mg + 8 mg/h) ou intermitente (40 mg EV 12/12 h ou mais), depois oral 2×/dia até 2 semanas."
+  },
+  {
+   "leitura": "trato-gastrointestinal",
+   "frente": "Qual a dose única EV máxima de ondansetrona?",
+   "verso": "16 mg; a dose de 32 mg foi retirada pela FDA em 2012 pelo risco de QT."
+  },
+  {
+   "leitura": "trato-gastrointestinal",
+   "frente": "Quais os limites de dose e duração da metoclopramida (EMA 2013)?",
+   "verso": "10 mg até 3×/dia, máximo de 0,5 mg/kg/dia e 5 dias; reduzir na disfunção renal."
+  },
+  {
+   "leitura": "trato-gastrointestinal",
+   "frente": "Qual o procinético de primeira linha na intolerância gástrica pela ESPEN 2023?",
+   "verso": "Eritromicina EV 100 a 250 mg 3×/dia por 2 a 4 dias; metoclopramida ou a combinação são alternativas."
+  },
+  {
+   "leitura": "trato-gastrointestinal",
+   "frente": "Por que suspender procinético após 72 horas?",
+   "verso": "A eficácia cai para cerca de um terço por taquifilaxia, e os riscos persistem."
+  },
+  {
+   "leitura": "trato-gastrointestinal",
+   "frente": "Quais interações a eritromicina procinética traz?",
+   "verso": "Inibição potente de CYP3A4 (midazolam, fentanil, tacrolimo, sinvastatina) e QT aditivo."
+  },
+  {
+   "leitura": "trato-gastrointestinal",
+   "frente": "Qual o tratamento do episódio inicial de C. difficile pela IDSA/SHEA 2021?",
+   "verso": "Fidaxomicina 200 mg 12/12 h por 10 dias (preferida) ou vancomicina 125 mg VO 6/6 h por 10 dias."
+  },
+  {
+   "leitura": "trato-gastrointestinal",
+   "frente": "Qual o tratamento de C. difficile fulminante?",
+   "verso": "Vancomicina 500 mg VO/sonda 6/6 h + metronidazol 500 mg EV 8/8 h; vancomicina retal se íleo."
+  },
+  {
+   "leitura": "trato-gastrointestinal",
+   "frente": "Qual a dose de terlipressina na hemorragia varicosa?",
+   "verso": "2 mg EV a cada 4 horas até o controle, depois 1 mg a cada 4 horas, por 2 a 5 dias."
+  },
+  {
+   "leitura": "trato-gastrointestinal",
+   "frente": "Qual a dose de octreotida na hemorragia varicosa?",
+   "verso": "50 mcg em bolus e 50 mcg/h por 2 a 5 dias."
+  },
+  {
+   "leitura": "trato-gastrointestinal",
+   "frente": "Qual a profilaxia antibiótica na hemorragia varicosa?",
+   "verso": "Ceftriaxona 1 g EV a cada 24 horas por até 7 dias."
+  },
+  {
+   "leitura": "trato-gastrointestinal",
+   "frente": "Como titular a lactulose na encefalopatia hepática?",
+   "verso": "20 a 30 mL a cada 1 a 2 horas até evacuar, depois para 2 a 3 evacuações pastosas por dia."
+  },
+  {
+   "leitura": "trato-gastrointestinal",
+   "frente": "Qual o papel da rifaximina na encefalopatia?",
+   "verso": "550 mg 12/12 h associada à lactulose, sobretudo para prevenir recorrência; no episódio agudo, se a lactulose não basta em 24 a 48 h."
+  },
+  {
+   "leitura": "trato-gastrointestinal",
+   "frente": "Qual a estratégia de fluidos na pancreatite aguda segundo o WATERFALL e a ACG 2024?",
+   "verso": "Ressuscitação moderada guiada por metas, preferindo Ringer lactato; a hidratação agressiva aumentou sobrecarga sem benefício."
+  },
+  {
+   "leitura": "terapia-nutricional",
+   "frente": "Em quanto tempo iniciar nutrição enteral no crítico?",
+   "verso": "Em até 48 horas (ESPEN 2023), após controle do choque; a Surviving Sepsis Campaign 2026 sugere até 72 horas na sepse."
+  },
+  {
+   "leitura": "terapia-nutricional",
+   "frente": "Qual a meta energética da primeira semana na ESPEN 2023?",
+   "verso": "Hipocalórica, até 70% do gasto; após o 3º dia, 80% a 100% do gasto medido por calorimetria."
+  },
+  {
+   "leitura": "terapia-nutricional",
+   "frente": "Qual a faixa energética da ASPEN 2022 nos primeiros 7 a 10 dias?",
+   "verso": "12 a 25 kcal/kg/dia."
+  },
+  {
+   "leitura": "terapia-nutricional",
+   "frente": "Qual a meta proteica da ESPEN 2023?",
+   "verso": "1,3 g/kg/dia, atingida de forma progressiva."
+  },
+  {
+   "leitura": "terapia-nutricional",
+   "frente": "O que mostrou o EFFORT Protein?",
+   "verso": "Proteína alta (cerca de 1,6 g/kg/dia) não trouxe benefício frente a 0,9 g/kg/dia e sugeriu dano na lesão renal aguda."
+  },
+  {
+   "leitura": "terapia-nutricional",
+   "frente": "Quantas kcal e gramas de lipídio há em cada mL de propofol 1%?",
+   "verso": "1,1 kcal/mL e 0,1 g de lipídio/mL."
+  },
+  {
+   "leitura": "terapia-nutricional",
+   "frente": "Qual o teto de glicose na NP do crítico?",
+   "verso": "5 mg/kg/min (ESPEN 2023)."
+  },
+  {
+   "leitura": "terapia-nutricional",
+   "frente": "Qual o teto de lipídio EV e o que entra na conta?",
+   "verso": "1,5 g/kg/dia, somando o propofol."
+  },
+  {
+   "leitura": "terapia-nutricional",
+   "frente": "Como estimar a osmolaridade de uma NP?",
+   "verso": "Cerca de 5 mOsm/g de glicose + 10 mOsm/g de aminoácidos + 2 mOsm/mEq de cátions, dividido pelo volume em litros."
+  },
+  {
+   "leitura": "terapia-nutricional",
+   "frente": "Qual o limite de osmolaridade para NP periférica?",
+   "verso": "Cerca de 900 mOsm/L (algumas instituições usam 800 a 850)."
+  },
+  {
+   "leitura": "terapia-nutricional",
+   "frente": "Como reduzir o risco de precipitação de fosfato de cálcio na NP?",
+   "verso": "Respeitar solubilidade, fosfato cedo e cálcio no fim, preferir glicerofosfato de sódio e usar filtro de 1,2 micrômetro na 3 em 1."
+  },
+  {
+   "leitura": "terapia-nutricional",
+   "frente": "Como iniciar a dieta com alto risco de realimentação (ASPEN 2020)?",
+   "verso": "100 a 150 g de glicose ou 10 a 20 kcal/kg nas primeiras 24 h, avançando 33% a cada 1 a 2 dias; eletrólitos a cada 12 h por 3 dias."
+  },
+  {
+   "leitura": "terapia-nutricional",
+   "frente": "Qual a dose de tiamina na prevenção da realimentação?",
+   "verso": "100 mg antes da dieta ou de glicose EV e 100 mg/dia por 5 a 7 dias ou mais nos de alto risco."
+  },
+  {
+   "leitura": "terapia-nutricional",
+   "frente": "O que fazer na hipofosfatemia de realimentação segundo a ESPEN 2023?",
+   "verso": "Restringir a energia por 48 horas e depois aumentar gradualmente, com eletrólitos 2 a 3 vezes ao dia."
+  }
+ ],
+ "questoes": [
+  {
+   "leitura": "anticoagulantes-reversao",
+   "nivel": "basico",
+   "enun": "Paciente de 80 kg com trombose venosa profunda proximal vai iniciar heparina não fracionada EV pelo nomograma por peso. Qual a prescrição inicial adequada?",
+   "alts": [
+    "Bolus de 5.000 UI e infusão fixa de 1.000 UI/h para todos",
+    "Bolus de 8.000 UI e infusão de 2.000 UI/h, anti-Xa em 2 horas",
+    "Sem bolus e infusão de 960 UI/h, com TTPa no dia seguinte",
+    "Bolus de 4.000 UI e infusão de 960 UI/h, TTPa em 12 horas",
+    "Bolus de 6.400 UI e infusão de 1.440 UI/h, TTPa em 6 horas"
+   ],
+   "gab": 4,
+   "coment": "O nomograma de Raschke para tromboembolismo venoso usa bolus de 80 UI/kg e infusão de 18 UI/kg/h. Para 80 kg: 80 × 80 = 6.400 UI e 18 × 80 = 1.440 UI/h. O primeiro controle é feito 6 horas após o início, e depois 6 horas após cada ajuste. O esquema de 60 UI/kg (máximo 4.000 UI) e 12 UI/kg/h (máximo 1.000 UI/h) é o da síndrome coronariana e da fibrilação atrial, com alvo e risco hemorrágico diferentes.",
+   "porAlt": [
+    "Dose fixa ignora o peso e subdoseia boa parte dos pacientes com TEV.",
+    "Superestima as doses e o anti-Xa em 2 horas não reflete o estado de equilíbrio.",
+    "Omitir o bolus e usar 12 UI/kg/h é esquema de SCA/AVC, e o controle no dia seguinte é tardio.",
+    "Corresponde aos tetos do esquema de SCA (60 UI/kg e 12 UI/kg/h), não ao de TEV.",
+    "Correta: 80 UI/kg e 18 UI/kg/h, com controle em 6 horas."
+   ],
+   "base": "Raschke et al., Ann Intern Med 1993; CHEST 2021"
+  },
+  {
+   "leitura": "anticoagulantes-reversao",
+   "nivel": "basico",
+   "enun": "Qual combinação de anticoagulante e agente de reversão está correta segundo o consenso ACC 2020?",
+   "alts": [
+    "Dabigatrana e protamina na dose de 1 mg por 100 UI dadas",
+    "Varfarina e idarucizumabe 5 g EV em dose única rápida",
+    "Enoxaparina e vitamina K 10 mg EV em bolus rápido",
+    "Rivaroxabana e CCP de 4 fatores quando sem andexanete",
+    "Apixabana e plasma fresco como primeira opção isolada"
+   ],
+   "gab": 3,
+   "coment": "Para inibidores do fator Xa (rivaroxabana, apixabana), o ACC 2020 recomenda andexanete alfa e, na indisponibilidade, complexo protrombínico de 4 fatores. No Brasil o andexanete tem registro desde 2023, mas acesso restrito, e o ANNEXA-I (2024) mostrou mais eventos trombóticos, de modo que o CCP é a opção usual. A dabigatrana é revertida por idarucizumabe, a varfarina por CCP com vitamina K, e as heparinas por protamina (parcialmente, no caso da HBPM).",
+   "porAlt": [
+    "A protamina não reverte dabigatrana, que é inibidor direto da trombina.",
+    "O idarucizumabe é específico para dabigatrana e não atua sobre a varfarina.",
+    "A vitamina K não reverte heparinas; a enoxaparina é parcialmente revertida por protamina.",
+    "Correta: CCP de 4 fatores é a alternativa ao andexanete para anti-Xa.",
+    "Plasma exige grande volume e não é primeira opção para inibidores de Xa."
+   ],
+   "base": "ACC Expert Consensus Decision Pathway 2020"
+  },
+  {
+   "leitura": "anticoagulantes-reversao",
+   "nivel": "intermediario",
+   "enun": "Homem de 72 kg, HNF a 1.300 UI/h há 2 dias, desliga-se a infusão por sangramento grave em sítio de punção. Qual a dose de protamina?",
+   "alts": [
+    "Cerca de 72 mg, 1 mg/kg, em bolus rápido de só 1 minuto",
+    "Cerca de 50 mg, pela heparina das últimas 24 horas, em 10 min",
+    "Cerca de 30 mg, pelas últimas 2,5 horas de infusão, em 6 min",
+    "Cerca de 13 mg, só pela última hora de infusão, em bolus rápido",
+    "Protamina não é indicada: a meia-vida da HNF já basta para parar"
+   ],
+   "gab": 2,
+   "coment": "A protamina neutraliza cerca de 1 mg para cada 100 UI de heparina presente. Como a meia-vida da HNF é de 60 a 90 minutos, considera-se a heparina infundida nas últimas 2 a 3 horas: 1.300 × 2,5 = 3.250 UI, ou cerca de 32 mg, arredondados para 30 mg. A dose máxima por administração é de 50 mg, e a velocidade não deve passar de 5 mg/min pelo risco de hipotensão, bradicardia e hipertensão pulmonar. Excesso de protamina tem efeito anticoagulante próprio.",
+   "porAlt": [
+    "Dose por peso não se aplica, e o bolus rápido causa hipotensão grave.",
+    "A heparina de 24 horas já foi depurada; o cálculo superestima a dose.",
+    "Correta: 1.300 × 2,5 h = 3.250 UI, cerca de 30 mg a até 5 mg/min.",
+    "Subestima a heparina circulante e o bolus rápido é inseguro.",
+    "Sangramento grave com HNF ativa justifica reversão imediata."
+   ],
+   "base": "ACC Expert Consensus Decision Pathway 2020"
+  },
+  {
+   "leitura": "anticoagulantes-reversao",
+   "nivel": "intermediario",
+   "enun": "Paciente em apixabana 5 mg 12/12 h por FA inicia tratamento para aspergilose invasiva. Qual antifúngico cria a interação mais relevante e qual a conduta?",
+   "alts": [
+    "Micafungina; aumentar a apixabana para 10 mg a cada 12 h",
+    "Anfotericina B lipossomal; trocar apixabana por varfarina",
+    "Voriconazol; manter dose e dosar TTPa diariamente no leito",
+    "Itraconazol; evitar a associação ou reduzir a apixabana a 50%",
+    "Fluconazol; suspender a apixabana e iniciar a dabigatrana 150 mg"
+   ],
+   "gab": 3,
+   "coment": "Rivaroxabana e apixabana são substratos do CYP3A4 e da glicoproteína P. Inibidores potentes combinados (cetoconazol, itraconazol, posaconazol, ritonavir) aumentam a exposição. A bula orienta evitar a associação ou, para a apixabana, reduzir a dose à metade quando ela é 5 ou 10 mg 12/12 h. O TTPa não mede a apixabana de forma confiável. Equinocandinas não têm interação relevante com os DOACs, e a troca para varfarina traz outras interações com azólicos.",
+   "porAlt": [
+    "Equinocandina não inibe CYP3A4/P-gp; aumentar a dose seria erro.",
+    "Anfotericina não tem essa interação e varfarina interage com azólicos.",
+    "TTPa não quantifica apixabana e manter dose ignora a interação.",
+    "Correta: inibidor potente de 3A4/P-gp; evitar ou reduzir 50%.",
+    "Fluconazol é inibidor moderado; dabigatrana também depende de P-gp."
+   ],
+   "base": "Bula de apixabana; CHEST 2021"
+  },
+  {
+   "leitura": "anticoagulantes-reversao",
+   "nivel": "avancado",
+   "enun": "Mulher em varfarina por prótese mecânica mitral chega com hematoma intraparenquimatoso, RNI de 7,2 e 68 kg. Qual a reversão adequada?",
+   "alts": [
+    "CCP 4 fatores 50 UI/kg (3.400 UI) + vitamina K 10 mg EV lenta",
+    "CCP 4 fatores 25 UI/kg (1.700 UI) isolado, sem vitamina K EV",
+    "Plasma fresco 5 mL/kg isolado, reavaliando RNI no dia seguinte",
+    "Vitamina K 10 mg VO isolada e suspensão da varfarina por 5 dias",
+    "Idarucizumabe 5 g EV seguido de CCP 4 fatores 25 UI/kg em bolus"
+   ],
+   "gab": 0,
+   "coment": "Hemorragia intracraniana é sangramento maior em sítio crítico. Pelo ACC 2020, a varfarina com RNI acima de 6 exige CCP de 4 fatores 50 UI/kg (teto de peso de 100 kg) ou dose fixa de 1.500 UI na hemorragia intracraniana, sempre com vitamina K 5 a 10 mg EV. A vitamina K é indispensável porque o CCP dura 6 a 8 horas e a varfarina, dias. A prótese mecânica não impede a reversão: a vida está em risco agora, e a anticoagulação será retomada após estabilização, em discussão com a neurocirurgia.",
+   "porAlt": [
+    "Correta: dose por RNI acima de 6 com vitamina K EV associada.",
+    "25 UI/kg é para RNI de 2 a menos de 4, e sem vitamina K o RNI volta.",
+    "Plasma em 5 mL/kg é dose insuficiente e lenta (necessários 15 a 30 mL/kg).",
+    "Vitamina K oral leva 18 a 24 horas; inaceitável em sangramento intracraniano.",
+    "Idarucizumabe reverte dabigatrana, sem efeito sobre a varfarina."
+   ],
+   "base": "ACC Expert Consensus Decision Pathway 2020"
+  },
+  {
+   "leitura": "anticoagulantes-reversao",
+   "nivel": "avancado",
+   "enun": "No 7º dia de enoxaparina, paciente de UTI tem queda de plaquetas de 210.000 para 85.000/mm³ e trombose venosa nova no braço; escore 4T de 7. Qual a conduta?",
+   "alts": [
+    "Trocar enoxaparina por HNF EV e transfundir plaquetas antes",
+    "Iniciar varfarina 5 mg já e manter a enoxaparina por 5 dias",
+    "Suspender heparinas e iniciar fondaparinux em dose por peso",
+    "Manter enoxaparina e reavaliar plaquetas após o imunoensaio",
+    "Suspender heparinas e iniciar argatrobana 2 mcg/kg/min EV"
+   ],
+   "gab": 2,
+   "coment": "Escore 4T alto (6 a 8) com trombose indica trombocitopenia induzida por heparina provável. A ASH 2018 orienta suspender toda heparina, incluindo flush, e iniciar anticoagulante não heparínico em dose terapêutica antes do resultado do teste. As opções citadas são argatrobana, bivalirudina, danaparoide, fondaparinux e DOAC; no Brasil, argatrobana, bivalirudina e danaparoide não têm comercialização regular, o que deixa o fondaparinux (paciente com função renal adequada) como opção parenteral real. Varfarina é proibida na fase aguda, e transfusão de plaquetas é evitada sem sangramento.",
+   "porAlt": [
+    "HNF tem reatividade cruzada e a transfusão de plaquetas é evitada.",
+    "Varfarina na TIH aguda pode causar gangrena venosa; heparina deve parar.",
+    "Correta: suspender heparinas e usar alternativa disponível no Brasil.",
+    "Aguardar o teste mantendo heparina expõe o paciente a nova trombose.",
+    "Conduta correta nas diretrizes, mas a argatrobana não está disponível aqui."
+   ],
+   "base": "ASH 2018 (trombocitopenia induzida por heparina)"
+  },
+  {
+   "leitura": "profilaxias-uti",
+   "nivel": "basico",
+   "enun": "Paciente clínico de UTI, 70 kg, ClCr de 85 mL/min, sem sangramento nem plaquetopenia. Qual a profilaxia de TEV preferida pelas diretrizes atuais?",
+   "alts": [
+    "Meias de compressão graduada isoladas até a alta hospitalar",
+    "Enoxaparina 40 mg SC 1×/dia, reavaliada diariamente na UTI",
+    "Enoxaparina 1 mg/kg SC 12/12 h pelo risco elevado da UTI",
+    "HNF 5.000 UI SC 1×/dia associada à compressão pneumática",
+    "Nenhuma profilaxia, pois escores de enfermaria dão baixo risco"
+   ],
+   "gab": 1,
+   "coment": "ASH 2018 e Surviving Sepsis Campaign 2026 recomendam profilaxia farmacológica em pacientes críticos sem contraindicação, com preferência por HBPM sobre HNF. O ensaio PROTECT mostrou menos embolia pulmonar e menos TIH com HBPM. A dose padrão de enoxaparina é 40 mg 1×/dia. Doses terapêuticas não são profilaxia, a HNF 1×/dia é insuficiente, e a compressão pneumática associada não trouxe benefício no PREVENT.",
+   "porAlt": [
+    "Meias isoladas têm pouca evidência no crítico e causam lesão de pele.",
+    "Correta: HBPM em dose profilática é a escolha preferida.",
+    "É dose terapêutica, com risco hemorrágico sem indicação.",
+    "HNF 1×/dia subdoseia, e associar compressão não trouxe benefício.",
+    "Escores de enfermaria não se aplicam; o crítico tem risco alto."
+   ],
+   "base": "ASH 2018; Surviving Sepsis Campaign 2026"
+  },
+  {
+   "leitura": "profilaxias-uti",
+   "nivel": "basico",
+   "enun": "Segundo a diretriz SCCM/ASHP 2024, qual paciente tem indicação de profilaxia de úlcera de estresse?",
+   "alts": [
+    "Pós-operatório eletivo em dieta oral plena sem outro risco",
+    "Ventilado há 12 horas em dieta enteral plena, sem choque",
+    "Paciente com pneumonia leve em uso de corticoide inalatório",
+    "Paciente com delirium hiperativo e uso de haloperidol",
+    "Paciente em choque séptico com noradrenalina em dose alta"
+   ],
+   "gab": 4,
+   "coment": "A SCCM/ASHP 2024 identificou coagulopatia, choque e doença hepática crônica como fatores que provavelmente aumentam o risco de sangramento clinicamente importante. Não encontrou evidência firme para ventilação mecânica isolada e reconheceu que a nutrição enteral provavelmente reduz o risco. A diretriz de 2026 das sociedades saudita e escandinava sugere não usar profilaxia em pacientes em dieta enteral sem fator de alto risco.",
+   "porAlt": [
+    "Sem fator de risco; o IBP só traria efeitos adversos.",
+    "Ventilação isolada, com dieta enteral, não é indicação firme.",
+    "Corticoide inalatório e pneumonia leve não indicam profilaxia.",
+    "Delirium e haloperidol não aumentam o risco de sangramento por estresse.",
+    "Correta: choque é fator de risco reconhecido."
+   ],
+   "base": "SCCM/ASHP 2024"
+  },
+  {
+   "leitura": "profilaxias-uti",
+   "nivel": "intermediario",
+   "enun": "Mulher de 64 anos, 58 kg, creatinina estável de 2,1 mg/dL (ClCr cerca de 25 mL/min). Qual a profilaxia de TEV mais adequada?",
+   "alts": [
+    "Enoxaparina 40 mg SC 12/12 h, por risco trombótico maior",
+    "Enoxaparina 40 mg SC 1×/dia, sem ajuste por ser profilaxia",
+    "Fondaparinux 2,5 mg SC 1×/dia, sem acúmulo relevante",
+    "Nenhuma farmacológica, pela insuficiência renal presente",
+    "Enoxaparina 20 a 30 mg SC 1×/dia ou HNF 5.000 UI 12/12 h"
+   ],
+   "gab": 4,
+   "coment": "A enoxaparina tem eliminação renal predominante e acumula com ClCr abaixo de 30 mL/min. A redução da dose profilática para 20 mg (bula brasileira, seguindo a europeia) ou 30 mg (referências norte-americanas) 1×/dia, ou o uso de HNF, que não depende do rim, são opções aceitas. O fondaparinux é contraindicado com ClCr abaixo de 30 mL/min. A insuficiência renal aumenta o risco de sangramento, mas não contraindica a profilaxia.",
+   "porAlt": [
+    "Dobra a dose em paciente que já acumula o fármaco.",
+    "Profilaxia também acumula: a dose precisa de ajuste renal.",
+    "Fondaparinux é contraindicado com ClCr abaixo de 30 mL/min.",
+    "Disfunção renal não é contraindicação à profilaxia.",
+    "Correta: dose reduzida de HBPM ou HNF sem ajuste renal."
+   ],
+   "base": "ASH 2018; bula de enoxaparina"
+  },
+  {
+   "leitura": "profilaxias-uti",
+   "nivel": "intermediario",
+   "enun": "Qual afirmação sobre os resultados do ensaio REVISE (2024) está correta?",
+   "alts": [
+    "Pantoprazol reduziu sangramento importante sem mudar a mortalidade",
+    "Pantoprazol reduziu mortalidade em 90 dias em todos os subgrupos",
+    "Pantoprazol aumentou pneumonia associada à ventilação de modo claro",
+    "Pantoprazol não reduziu sangramento, mas reduziu tempo de ventilação",
+    "Pantoprazol reduziu sangramento só nos pacientes sem ventilação"
+   ],
+   "gab": 0,
+   "coment": "O REVISE randomizou cerca de 4.800 pacientes em ventilação invasiva para pantoprazol 40 mg EV/dia ou placebo. O sangramento digestivo alto clinicamente importante caiu de 3,5% para 1,0% (HR 0,30), sem diferença de mortalidade em 90 dias (29,1% versus 30,9%), de pneumonia associada à ventilação ou, de forma significativa, de infecção por C. difficile. A análise de subgrupo sugeriu possível dano em pacientes mais graves, sem interação significativa.",
+   "porAlt": [
+    "Correta: benefício em sangramento sem efeito em mortalidade.",
+    "Não houve redução de mortalidade; o subgrupo mais grave sugeriu dano.",
+    "Pneumonia foi semelhante nos dois grupos (23,3% e 23,8%).",
+    "O sangramento caiu significativamente; tempo de ventilação não foi o achado.",
+    "Todos os incluídos estavam em ventilação invasiva."
+   ],
+   "base": "Cook et al., REVISE, NEJM 2024"
+  },
+  {
+   "leitura": "profilaxias-uti",
+   "nivel": "avancado",
+   "enun": "Homem em pós-operatório de colectomia recebeu pantoprazol 40 mg EV por choque séptico. Hoje, dia 6, está sem vasopressor, em dieta enteral plena, plaquetas e RNI normais, e vai de alta da UTI. Qual a conduta com o IBP?",
+   "alts": [
+    "Manter até a alta hospitalar e prescrever por 8 semanas em casa",
+    "Trocar por famotidina oral, que não tem os riscos do IBP",
+    "Suspender, pois o fator de risco que justificava se resolveu",
+    "Dobrar a dose para 40 mg 12/12 h pelo estresse cirúrgico",
+    "Manter enquanto houver antibiótico, para evitar C. difficile"
+   ],
+   "gab": 2,
+   "coment": "A SCCM/ASHP 2024 orienta suspender a profilaxia quando a doença crítica não está mais presente ou o fator de risco desapareceu, mesmo que o paciente siga internado. O choque, única indicação, resolveu-se; a dieta enteral protege; não há coagulopatia nem hepatopatia. O IBP de profilaxia de estresse não tem indicação após a UTI e não deve ir para casa. A supressão ácida associa-se a mais C. difficile, não menos.",
+   "porAlt": [
+    "Levar IBP sem indicação para casa é erro frequente e evitável.",
+    "Trocar de classe mantém supressão ácida sem indicação.",
+    "Correta: risco resolvido, suspender e não prescrever na alta.",
+    "Dose dobrada não tem benefício na profilaxia.",
+    "Supressão ácida aumenta, não reduz, o risco de C. difficile."
+   ],
+   "base": "SCCM/ASHP 2024"
+  },
+  {
+   "leitura": "profilaxias-uti",
+   "nivel": "avancado",
+   "enun": "Paciente em enoxaparina 40 mg/dia fará retirada de cateter peridural amanhã às 8 h; a última dose foi hoje às 20 h. Qual o plano coerente com a ASRA?",
+   "alts": [
+    "Manter a dose das 20 h e retirar às 8 h, com 12 horas de intervalo",
+    "Suspender a enoxaparina por 48 horas antes e 48 horas depois",
+    "Aplicar a dose às 6 h e retirar o cateter às 8 h do mesmo dia",
+    "Trocar por HNF 5.000 UI às 6 h, pois não interfere na retirada",
+    "Retirar às 8 h e reiniciar a enoxaparina 30 minutos depois dela"
+   ],
+   "gab": 0,
+   "coment": "Para enoxaparina profilática, a ASRA recomenda ao menos 12 horas entre a última dose e a punção ou retirada de cateter neuraxial, e ao menos 4 horas entre a retirada e a próxima dose. Dose às 20 h e retirada às 8 h cumprem as 12 horas; a próxima dose pode ser aplicada a partir de 12 h. Suspender por 48 horas é desnecessário e deixa o paciente sem profilaxia, e dar HNF 2 horas antes também viola o intervalo de segurança.",
+   "porAlt": [
+    "Correta: 12 horas entre a dose e a retirada, retomar após 4 horas.",
+    "Intervalo exagerado, deixa o paciente sem profilaxia sem motivo.",
+    "Dose 2 horas antes aumenta o risco de hematoma espinhal.",
+    "HNF também exige intervalo antes da retirada do cateter.",
+    "Reiniciar 30 minutos após viola o intervalo mínimo de 4 horas."
+   ],
+   "base": "Horlocker et al., ASRA 2018"
+  },
+  {
+   "leitura": "cardiovasculares-antiarritmicos",
+   "nivel": "basico",
+   "enun": "Paciente com TSV regular de QRS estreito, estável, tem acesso venoso central. Qual a dose inicial de adenosina?",
+   "alts": [
+    "6 mg em infusão contínua de 10 minutos por veia periférica",
+    "3 mg em bolus rápido pelo cateter central, com flush de SF",
+    "12 mg em bolus lento de 2 minutos pelo cateter central",
+    "0,25 mg/kg em 2 minutos, seguido de infusão de 10 mg/h",
+    "150 mg em 10 minutos, seguido de 1 mg/min por 6 horas"
+   ],
+   "gab": 1,
+   "coment": "A adenosina tem meia-vida inferior a 10 segundos; precisa de bolus rápido seguido de flush. A dose usual é 6 mg por veia periférica proximal, com 12 mg se necessário. Pelo cateter central, o fármaco chega ao coração mais concentrado e a dose inicial recomendada é 3 mg; o mesmo vale para transplantados cardíacos e usuários de dipiridamol ou carbamazepina. As alternativas D e E descrevem diltiazem e amiodarona.",
+   "porAlt": [
+    "Infusão lenta não funciona: a adenosina é degradada em segundos.",
+    "Correta: via central exige dose inicial menor, 3 mg.",
+    "Bolus lento anula o efeito e 12 mg central é dose excessiva.",
+    "É o esquema do diltiazem, não da adenosina.",
+    "É o esquema de ataque da amiodarona."
+   ],
+   "base": "AHA 2020 (ressuscitação)"
+  },
+  {
+   "leitura": "cardiovasculares-antiarritmicos",
+   "nivel": "basico",
+   "enun": "Qual anti-hipertensivo parenteral citado em protocolos internacionais NÃO é comercializado no Brasil?",
+   "alts": [
+    "Nitroprussiato sódico",
+    "Hidralazina injetável",
+    "Esmolol concentrado",
+    "Labetalol endovenoso",
+    "Nitroglicerina venosa"
+   ],
+   "gab": 3,
+   "coment": "Labetalol e clevidipino EV, muito usados em protocolos norte-americanos de emergência hipertensiva e de AVC, não são comercializados no Brasil. O arsenal disponível inclui nitroprussiato, nitroglicerina, esmolol (com registro e apresentações de 10 mg/mL, 250 mg/mL e bolsa pronta), metoprolol e hidralazina. Copiar protocolo estrangeiro sem adaptação gera prescrição impossível de dispensar.",
+   "porAlt": [
+    "Disponível no Brasil, ampola de 50 mg.",
+    "Disponível, usada sobretudo na gestação.",
+    "Registrado no Brasil em 10 mg/mL, 250 mg/mL e bolsa pronta.",
+    "Correta: labetalol EV não é comercializado no Brasil.",
+    "Disponível, com cuidado de usar material sem PVC."
+   ],
+   "base": "Mercado brasileiro (ANVISA), 2026; ACC/AHA 2017"
+  },
+  {
+   "leitura": "cardiovasculares-antiarritmicos",
+   "nivel": "intermediario",
+   "enun": "Paciente em digoxina 0,25 mg/dia por FA inicia amiodarona EV. Qual o ajuste esperado?",
+   "alts": [
+    "Manter a dose, pois as vias de eliminação são diferentes",
+    "Dobrar a digoxina, pois a amiodarona induz a glicoproteína P",
+    "Reduzir a digoxina em cerca de 50% e dosar o nível sérico",
+    "Suspender a amiodarona, pois a associação é contraindicada",
+    "Trocar a digoxina por diltiazem EV, qualquer que seja a FE"
+   ],
+   "gab": 2,
+   "coment": "A amiodarona inibe a glicoproteína P e reduz a depuração renal e não renal da digoxina, elevando o nível em cerca de 70%. A conduta é reduzir a digoxina em cerca de 50% e medir o nível sérico, colhido no mínimo 6 a 8 horas após a dose. A associação é comum e útil no controle da FA com insuficiência cardíaca; não é contraindicada. O diltiazem é evitado com fração de ejeção reduzida.",
+   "porAlt": [
+    "Ignora a inibição de P-gp que eleva a digoxina.",
+    "A amiodarona inibe, não induz, a P-gp.",
+    "Correta: redução empírica de metade e nível sérico.",
+    "A associação é frequente e manejável, não contraindicada.",
+    "Diltiazem é inotrópico negativo e evitado com FE reduzida."
+   ],
+   "base": "ACC/AHA/ACCP/HRS 2023 (fibrilação atrial)"
+  },
+  {
+   "leitura": "cardiovasculares-antiarritmicos",
+   "nivel": "intermediario",
+   "enun": "Paciente de 70 kg em choque séptico com noradrenalina e dobutamina desenvolve FA a 150 bpm; ecocardiograma com FE de 30%, K de 3,1 e Mg de 1,4 mg/dL. Qual a melhor sequência?",
+   "alts": [
+    "Diltiazem 0,25 mg/kg EV em bolus e depois infusão de 10 mg/h",
+    "Metoprolol 5 mg EV a cada 5 min até 15 mg e manter dobutamina",
+    "Cardioversão química com adenosina 12 mg EV em bolus rápido",
+    "Corrigir K e Mg, rever a dobutamina e usar amiodarona EV",
+    "Digoxina VO 0,25 mg e anticoagulação plena com HNF imediata"
+   ],
+   "gab": 3,
+   "coment": "Na FA nova do paciente séptico, o antiarrítmico é coadjuvante. Primeiro corrigem-se gatilhos: potássio e magnésio baixos e excesso de catecolamina beta-adrenérgica (dobutamina). Com choque e FE de 30%, diltiazem e metoprolol podem precipitar colapso hemodinâmico; a amiodarona EV é a opção mais segura para controle de frequência, e o deslanosídeo pode ser adjuvante. A adenosina não reverte FA, e a anticoagulação é decisão individual no crítico.",
+   "porAlt": [
+    "Diltiazem é inotrópico negativo, contraindicado com FE de 30% e choque.",
+    "Betabloqueio em choque com FE reduzida pode causar colapso.",
+    "Adenosina não reverte FA; apenas bloqueia o nó por segundos.",
+    "Correta: corrigir gatilhos e usar amiodarona.",
+    "Digoxina oral é lenta e anticoagular sem avaliar sangramento é precipitado."
+   ],
+   "base": "ACC/AHA/ACCP/HRS 2023; ESC 2024 (fibrilação atrial)"
+  },
+  {
+   "leitura": "cardiovasculares-antiarritmicos",
+   "nivel": "avancado",
+   "enun": "Paciente de 60 kg, desnutrido, com nitroprussiato a 4 mcg/kg/min há 36 horas por emergência hipertensiva, apresenta lactato subindo, bicarbonato caindo, taquifilaxia e SvcO2 de 88%. Qual a hipótese e conduta?",
+   "alts": [
+    "Tiocianato; manter a infusão e iniciar hemodiálise de urgência",
+    "Metemoglobinemia; iniciar azul de metileno e manter a infusão",
+    "Hipoperfusão; aumentar o nitroprussiato para 8 mcg/kg/min já",
+    "Choque séptico; iniciar noradrenalina e manter o nitroprussiato",
+    "Cianeto; suspender, dar hidroxocobalamina e tiossulfato de sódio"
+   ],
+   "gab": 4,
+   "coment": "Doses acima de cerca de 2 mcg/kg/min por tempo prolongado, sobretudo com desnutrição (pouco tiossulfato para a rodanase), saturam a detoxificação do cianeto. O quadro de acidose lática, taquifilaxia e saturação venosa alta (o tecido não consegue extrair oxigênio) é típico. Conduta: suspender o nitroprussiato, trocar o anti-hipertensivo e administrar hidroxocobalamina e tiossulfato. O tiocianato causa sintomas neurológicos após dias, sobretudo na insuficiência renal, e é removido por diálise.",
+   "porAlt": [
+    "Tiocianato dá quadro neurológico tardio, não acidose lática com SvcO2 alta.",
+    "Metemoglobinemia não explica a SvcO2 alta com acidose lática.",
+    "Aumentar a dose agrava a intoxicação.",
+    "Nada sugere sepse; o quadro é explicado pelo fármaco.",
+    "Correta: intoxicação por cianeto; suspender e dar antídotos."
+   ],
+   "base": "ACC/AHA 2017 (hipertensão); bula de nitroprussiato"
+  },
+  {
+   "leitura": "cardiovasculares-antiarritmicos",
+   "nivel": "avancado",
+   "enun": "Prescrição: amiodarona 900 mg em SF 0,9% 250 mL em 24 horas por veia periférica. Qual a intervenção farmacêutica mais adequada?",
+   "alts": [
+    "Nenhuma: a concentração de 3,6 mg/mL é segura na periferia",
+    "Diluir em SG 5% até 2 mg/mL, em volume próximo de 500 mL",
+    "Concentrar em SF 0,9% 100 mL e correr em 1 h pela periferia",
+    "Manter o volume e infundir em bolus de 150 mg a cada 4 horas",
+    "Trocar a amiodarona por lidocaína, incompatível com glicose"
+   ],
+   "gab": 1,
+   "coment": "A amiodarona em concentração acima de cerca de 2 mg/mL causa flebite e deve correr em cateter central. Em periférico, 900 mg exigem pelo menos 450 mL; na prática, 500 mL. O SG 5% é o diluente preferido pela maior estabilidade. Infusões prolongadas preferem frasco não PVC, porque a amiodarona extrai o plastificante DEHP. Concentrar mais ou dar bolus repetidos aumenta flebite e hipotensão.",
+   "porAlt": [
+    "3,6 mg/mL passa do limite periférico de cerca de 2 mg/mL.",
+    "Correta: 1,8 mg/mL em SG 5% é compatível com via periférica.",
+    "Concentra ainda mais e acelera a infusão: flebite e hipotensão.",
+    "Bolus repetidos aumentam hipotensão e não resolvem a concentração.",
+    "A lidocaína não substitui a indicação e a amiodarona é compatível com SG 5%."
+   ],
+   "base": "Bula de amiodarona; ACC/AHA/ACCP/HRS 2023"
+  },
+  {
+   "leitura": "insulina-corticoides",
+   "nivel": "basico",
+   "enun": "Qual o alvo glicêmico recomendado pelo ADA 2026 para a maioria dos pacientes críticos em insulina?",
+   "alts": [
+    "80 a 110 mg/dL, com insulina EV contínua e ajuste de hora em hora",
+    "140 a 180 mg/dL, com insulina EV contínua e ajuste por protocolo",
+    "180 a 250 mg/dL, com insulina regular SC só por escala móvel",
+    "100 a 140 mg/dL para todos, com correção SC a cada 4 horas",
+    "Abaixo de 200 mg/dL, com insulina NPH SC fixa duas vezes ao dia"
+   ],
+   "gab": 1,
+   "coment": "O ADA Standards of Care 2026 recomenda iniciar insulina com hiperglicemia persistente a partir de 180 mg/dL e alvo de 140 a 180 mg/dL para a maioria dos críticos, preferencialmente com infusão EV contínua. O alvo intensivo de 80 a 110 mg/dL aumentou mortalidade e hipoglicemia no NICE-SUGAR. Escala móvel isolada e NPH subcutânea não são adequadas ao crítico instável.",
+   "porAlt": [
+    "Alvo intensivo aumentou mortalidade e hipoglicemia (NICE-SUGAR).",
+    "Correta: alvo moderado com infusão EV contínua.",
+    "Alvo muito alto e escala móvel isolada são inadequados.",
+    "Alvo mais estrito é opção só para selecionados, não para todos.",
+    "NPH SC não permite titulação fina no crítico instável."
+   ],
+   "base": "ADA Standards of Care 2026; NICE-SUGAR 2009"
+  },
+  {
+   "leitura": "insulina-corticoides",
+   "nivel": "basico",
+   "enun": "Qual o equivalente anti-inflamatório aproximado de 200 mg/dia de hidrocortisona em dexametasona?",
+   "alts": [
+    "Cerca de 0,75 mg/dia de dexametasona",
+    "Cerca de 20 mg/dia de dexametasona",
+    "Cerca de 2,5 mg/dia de dexametasona",
+    "Cerca de 50 mg/dia de dexametasona",
+    "Cerca de 7,5 mg/dia de dexametasona"
+   ],
+   "gab": 4,
+   "coment": "A equivalência clássica é de 20 mg de hidrocortisona para 0,75 mg de dexametasona. Assim, 200 mg de hidrocortisona correspondem a 10 × 0,75 = 7,5 mg de dexametasona. A diferença é que a dexametasona praticamente não tem atividade mineralocorticoide, enquanto a hidrocortisona em dose de estresse retém sódio, o que pesa no choque séptico.",
+   "porAlt": [
+    "Equivale a apenas 20 mg de hidrocortisona.",
+    "Superestima em quase três vezes.",
+    "Subestima; corresponde a cerca de 67 mg de hidrocortisona.",
+    "Superestima em quase sete vezes.",
+    "Correta: 200/20 × 0,75 = 7,5 mg."
+   ],
+   "base": "Tabela de equivalência de corticoides; SCCM 2024"
+  },
+  {
+   "leitura": "insulina-corticoides",
+   "nivel": "intermediario",
+   "enun": "Homem de 80 kg com cetoacidose diabética grave, pH 7,05, glicemia 480 mg/dL e potássio de 3,1 mmol/L, recebeu 1 L de SF. Qual o próximo passo?",
+   "alts": [
+    "Insulina 8 UI/h e cloreto de potássio juntos a partir de agora",
+    "Bicarbonato de sódio 100 mEq EV e insulina em bolus de 8 UI",
+    "Insulina em bolus de 8 UI e 8 UI/h, repondo potássio após 2 h",
+    "Repor potássio cerca de 10 mmol/h e adiar a insulina até K > 3,5",
+    "Fosfato de potássio EV de rotina e insulina SC a cada 2 horas"
+   ],
+   "gab": 3,
+   "coment": "Pelo consenso de 2024, com potássio abaixo de 3,5 mmol/L a insulina deve ser adiada e o potássio reposto a cerca de 10 mmol/h, porque a insulina desloca potássio para dentro das células e pode causar arritmia e fraqueza respiratória. Quando o potássio passar de 3,5 mmol/L, inicia-se insulina a 0,1 UI/kg/h (8 UI/h). Bicarbonato só com pH abaixo de 7,0, e fosfato não é de rotina.",
+   "porAlt": [
+    "Iniciar insulina com K de 3,1 mmol/L arrisca hipocalemia grave.",
+    "pH de 7,05 não indica bicarbonato; insulina ainda não pode começar.",
+    "Insulina antes do potássio é a inversão da sequência correta.",
+    "Correta: potássio primeiro, insulina quando K passar de 3,5.",
+    "Fosfato não é de rotina, e CAD grave pede infusão EV."
+   ],
+   "base": "Umpierrez et al., consenso de crises hiperglicêmicas 2024"
+  },
+  {
+   "leitura": "insulina-corticoides",
+   "nivel": "intermediario",
+   "enun": "Paciente estável com insulina EV a 3 UI/h nas últimas 8 horas, em dieta enteral contínua plena, vai para insulina SC. Qual plano é mais adequado?",
+   "alts": [
+    "Glargina 29 UI e regular 7 UI 6/6 h, basal 2 h antes de desligar",
+    "Glargina 72 UI 1×/dia aplicada no momento de desligar a bomba",
+    "Só escala móvel de regular a cada 6 horas, sem insulina basal",
+    "Glargina 36 UI 1×/dia aplicada 12 horas depois de desligar",
+    "NPH 10 UI 12/12 h com a bomba desligada 6 horas antes da dose"
+   ],
+   "gab": 0,
+   "coment": "Dose de 24 horas: 3 × 24 = 72 UI; usa-se 60% a 80%, por exemplo cerca de 58 UI (80%). Com dieta enteral contínua, metade como basal (cerca de 29 UI de glargina) e metade como regular a cada 6 horas (cerca de 7 UI por dose), mais correção. A basal deve ser aplicada cerca de 2 horas antes de desligar a infusão (ADA 2026) para evitar rebote. Transferir 100% da dose aumenta hipoglicemia, e escala móvel isolada gera hiperglicemia.",
+   "porAlt": [
+    "Correta: 80% de 72 UI dividido entre basal e regular pela dieta.",
+    "100% como basal, sem sobreposição, gera hipoglicemia e rebote inicial.",
+    "Escala móvel isolada não cobre a necessidade basal.",
+    "Basal 12 horas depois deixa o paciente sem insulina e em rebote.",
+    "Dose baixa e janela sem insulina levam a hiperglicemia e cetose."
+   ],
+   "base": "ADA Standards of Care 2026; consenso 2024"
+  },
+  {
+   "leitura": "insulina-corticoides",
+   "nivel": "avancado",
+   "enun": "Paciente em choque séptico com noradrenalina a 0,4 mcg/kg/min há 8 horas, com dieta enteral tolerada. A equipe quer reproduzir o esquema do APROCCHSS. Qual prescrição corresponde?",
+   "alts": [
+    "Hidrocortisona 50 mg 6/6 h + fludrocortisona 50 mcg/dia por 7 dias",
+    "Hidrocortisona 200 mg/dia em infusão contínua isolada por 7 dias",
+    "Metilprednisolona 1 g/dia por 3 dias seguida de retirada abrupta",
+    "Dexametasona 20 mg/dia por 5 dias e 10 mg/dia por mais 5 dias",
+    "Hidrocortisona 100 mg 8/8 h + fludrocortisona 50 mcg EV por 7 dias"
+   ],
+   "gab": 0,
+   "coment": "O APROCCHSS usou hidrocortisona 50 mg EV 6/6 h e fludrocortisona 50 mcg por sonda 1×/dia por 7 dias, em pacientes com vasopressor de 0,25 mcg/kg/min ou mais por pelo menos 6 horas, e reduziu mortalidade em 90 dias (43,0% versus 49,1%). A infusão isolada de 200 mg/dia é o esquema do ADRENAL. Doses altas por curto período são desaconselhadas (SCCM 2024), o esquema de dexametasona é o do DEXA-ARDS, e a fludrocortisona não tem forma EV.",
+   "porAlt": [
+    "Correta: esquema do APROCCHSS, fludrocortisona por sonda.",
+    "É o esquema do ADRENAL, sem fludrocortisona.",
+    "Pulso de metilprednisolona é desaconselhado no choque séptico.",
+    "É o esquema do DEXA-ARDS, de SDRA.",
+    "A dose de hidrocortisona é excessiva e não existe fludrocortisona EV."
+   ],
+   "base": "Annane et al., APROCCHSS 2018; SCCM 2024"
+  },
+  {
+   "leitura": "insulina-corticoides",
+   "nivel": "avancado",
+   "enun": "Paciente com pneumonia comunitária grave na UTI, sem choque, influenza negativa, admitido há 10 horas. A equipe pergunta sobre corticoide. Qual resposta é coerente com a evidência atual?",
+   "alts": [
+    "Hidrocortisona 200 mg/dia 4 dias, com redução até 8 ou 14 dias",
+    "Não usar: corticoide só tem benefício na pneumonia por influenza",
+    "Metilprednisolona 1 g/dia por 3 dias, iniciada após 72 horas",
+    "Dexametasona 6 mg/dia por 10 dias, como na covid-19 com O2",
+    "Prednisona 50 mg/dia VO por 7 dias, iniciada após a alta da UTI"
+   ],
+   "gab": 0,
+   "coment": "O CAPE COD (2023) usou hidrocortisona 200 mg/dia por 4 dias, com redução até completar 8 ou 14 dias conforme a resposta, iniciada nas primeiras 24 horas, em pneumonia comunitária grave sem choque séptico e sem influenza, com mortalidade em 28 dias de 6,2% versus 11,9%. A SCCM 2024 recomenda corticoide na pneumonia comunitária grave, e a ATS 2025 sugere na forma grave e recomenda contra na pneumonia grave por influenza.",
+   "porAlt": [
+    "Correta: esquema do CAPE COD, iniciado precocemente.",
+    "Inverte a evidência: na influenza grave a ATS 2025 recomenda contra.",
+    "Pulso tardio não corresponde a nenhum ensaio positivo.",
+    "É o esquema da covid-19, não o testado na pneumonia bacteriana grave.",
+    "Início após a alta da UTI perde a janela precoce testada."
+   ],
+   "base": "Dequin et al., CAPE COD 2023; ATS 2025; SCCM 2024"
+  },
+  {
+   "leitura": "trato-gastrointestinal",
+   "nivel": "basico",
+   "enun": "Qual o tratamento de primeira escolha para o episódio inicial de infecção por C. difficile não fulminante segundo a IDSA/SHEA 2021?",
+   "alts": [
+    "Vancomicina EV 1 g 12/12 h por 10 dias",
+    "Metronidazol EV 500 mg 8/8 h por 14 dias",
+    "Ciprofloxacino VO 500 mg 12/12 h por 7 dias",
+    "Loperamida VO 2 mg após cada evacuação",
+    "Fidaxomicina VO 200 mg 12/12 h por 10 dias"
+   ],
+   "gab": 4,
+   "coment": "A atualização IDSA/SHEA 2021 prefere fidaxomicina 200 mg 12/12 h por 10 dias pela menor recorrência; vancomicina oral 125 mg 6/6 h por 10 dias é alternativa aceitável. Metronidazol oral fica para quando nenhum dos dois estiver disponível, em doença não grave. A vancomicina EV não chega à luz intestinal e não trata colite, e antiperistálticos podem precipitar megacólon.",
+   "porAlt": [
+    "Vancomicina EV não atinge o cólon; precisa ser oral.",
+    "Metronidazol não é primeira escolha e EV isolado só no fulminante.",
+    "Quinolonas são fator de risco, não tratamento.",
+    "Antiperistáltico pode precipitar megacólon tóxico.",
+    "Correta: fidaxomicina é a preferida pela menor recorrência."
+   ],
+   "base": "IDSA/SHEA 2021"
+  },
+  {
+   "leitura": "trato-gastrointestinal",
+   "nivel": "basico",
+   "enun": "Cirrótico com hemorragia digestiva alta e suspeita de varizes chega ao pronto-socorro. Quais medidas farmacológicas iniciar antes da endoscopia?",
+   "alts": [
+    "Vasoativo, como terlipressina, e ceftriaxona 1 g EV ao dia",
+    "Propranolol EV e transfusão para hemoglobina acima de 10 g/dL",
+    "Ácido tranexâmico 1 g EV e omeprazol 80 mg EV em bolus",
+    "Vasopressina em dose alta e metronidazol EV 500 mg 8/8 h",
+    "Lactulose 30 mL e rifaximina 550 mg 12/12 h por sonda"
+   ],
+   "gab": 0,
+   "coment": "Baveno VII e AASLD 2024: vasoativo (terlipressina, octreotida ou somatostatina) iniciado na suspeita, antes da endoscopia, por 2 a 5 dias, e antibiótico profilático (ceftriaxona 1 g/dia por até 7 dias), que reduz infecção, ressangramento e mortalidade. A transfusão é restritiva (alvo de 7 a 8 g/dL). Betabloqueador é para profilaxia secundária após o controle, e o ácido tranexâmico não mostrou benefício na hemorragia digestiva (HALT-IT).",
+   "porAlt": [
+    "Correta: vasoativo e ceftriaxona precoces.",
+    "Betabloqueador na fase aguda piora o choque; transfusão liberal aumenta pressão portal.",
+    "Tranexâmico sem benefício no HALT-IT; IBP não trata varizes.",
+    "Vasopressina tem mais isquemia e metronidazol não é o esquema indicado.",
+    "Medidas de encefalopatia não controlam o sangramento."
+   ],
+   "base": "Baveno VII 2022; AASLD 2024"
+  },
+  {
+   "leitura": "trato-gastrointestinal",
+   "nivel": "intermediario",
+   "enun": "Paciente ventilado com volume residual gástrico de 600 mL/6 h, sem distensão ou sinais de abdome agudo, em uso de midazolam e fentanil. Qual conduta procinética segue a ESPEN 2023?",
+   "alts": [
+    "Eritromicina EV por 2 a 4 dias, revendo midazolam, fentanil e QT",
+    "Eritromicina VO 500 mg 6/6 h por 14 dias, como antibiótico",
+    "Metoclopramida 20 mg EV 6/6 h mantida até a alta hospitalar",
+    "Suspender a dieta por 72 horas e iniciar nutrição parenteral",
+    "Bromoprida EV associada ao haloperidol para somar o efeito D2"
+   ],
+   "gab": 0,
+   "coment": "A ESPEN 2023 recomenda eritromicina EV como primeira linha na intolerância gástrica (100 a 250 mg 3×/dia por 2 a 4 dias) e suspensão após 72 horas pela taquifilaxia. A eritromicina inibe fortemente o CYP3A4, o que eleva midazolam e fentanil, e prolonga QT; por isso revisar sedação e ECG. Metoclopramida é alternativa com dose e duração limitadas. Suspender a dieta e ir para parenteral antes de esgotar estratégias enterais contraria a diretriz.",
+   "porAlt": [
+    "Correta: primeira linha, curso curto e revisão das interações.",
+    "Dose e duração antimicrobianas não são procinéticas e induzem resistência.",
+    "Dose acima da recomendada e duração indefinida aumentam efeito neurológico.",
+    "A NP não deve começar antes de esgotar estratégias enterais.",
+    "Somar bloqueio D2 aumenta risco extrapiramidal e de síndrome neuroléptica."
+   ],
+   "base": "ESPEN 2023"
+  },
+  {
+   "leitura": "trato-gastrointestinal",
+   "nivel": "intermediario",
+   "enun": "Após ligadura endoscópica de úlcera duodenal com vaso visível, o médico prescreve pantoprazol. Qual esquema segue a ACG 2021?",
+   "alts": [
+    "Pantoprazol 40 mg VO 1×/dia desde o primeiro dia após a endoscopia",
+    "Pantoprazol 80 mg EV + 8 mg/h por 7 dias e depois suspender tudo",
+    "Dose alta por 3 dias, contínua ou intermitente, depois oral 2×/dia",
+    "Pantoprazol só se houver ressangramento, para evitar C. difficile",
+    "Famotidina EV 20 mg 12/12 h por 3 dias, depois suspender de vez"
+   ],
+   "gab": 2,
+   "coment": "A ACG 2021 recomenda, após hemostasia endoscópica de úlcera com estigma de alto risco, IBP em dose alta por 3 dias, contínuo (80 mg + 8 mg/h) ou intermitente (por exemplo, 40 mg EV 12/12 h ou mais), e depois IBP oral 2×/dia até completar 2 semanas. O pH acima de 6 estabiliza o coágulo. Sete dias de infusão não têm base, dose baixa inicial é insuficiente, e anti-H2 não mantém pH adequado.",
+   "porAlt": [
+    "Dose baixa desde o início não mantém o pH necessário.",
+    "Infusão por 7 dias não tem respaldo e suspender depois é precoce.",
+    "Correta: 3 dias de dose alta e manutenção oral 2×/dia.",
+    "Omitir IBP após hemostasia aumenta o ressangramento.",
+    "Anti-H2 não mantém pH acima de 6 por taquifilaxia."
+   ],
+   "base": "Laine et al., ACG 2021"
+  },
+  {
+   "leitura": "trato-gastrointestinal",
+   "nivel": "avancado",
+   "enun": "Cirrótico em terlipressina 2 mg 4/4 h há 3 dias por hemorragia varicosa controlada apresenta sódio de 122 mEq/L (era 134), bradicardia e extremidades frias e cianóticas. Qual a interpretação e conduta?",
+   "alts": [
+    "Efeitos esperados que dispensam ajuste até o 5º dia de terapia",
+    "Efeitos adversos da terlipressina; reduzir ou trocar por octreotida",
+    "Síndrome hepatorrenal; dobrar a dose e acrescentar albumina EV",
+    "Encefalopatia hepática; iniciar lactulose e manter a terlipressina",
+    "Choque séptico; associar a noradrenalina e manter a dose atual"
+   ],
+   "gab": 1,
+   "coment": "A terlipressina, análogo da vasopressina, causa isquemia periférica, mesentérica e miocárdica, bradicardia e hiponatremia por efeito V2 residual. Queda de 12 mEq/L de sódio em 3 dias e cianose de extremidades exigem reduzir a dose (o Baveno recomenda 1 mg 4/4 h após o controle do sangramento) ou trocar por octreotida, que tem melhor perfil de segurança. O vasoativo não precisa ser mantido por 5 dias a qualquer custo.",
+   "porAlt": [
+    "Isquemia e hiponatremia importante não são aceitáveis.",
+    "Correta: toxicidade da terlipressina; reduzir ou trocar.",
+    "Dobrar a dose agrava isquemia e hiponatremia.",
+    "O quadro não é encefalopatia, e manter a dose mantém a toxicidade.",
+    "Não há sinais de sepse; o quadro é explicado pelo fármaco."
+   ],
+   "base": "Baveno VII 2022; AASLD 2024"
+  },
+  {
+   "leitura": "trato-gastrointestinal",
+   "nivel": "avancado",
+   "enun": "Mulher com pancreatite aguda grave por hipertrigliceridemia (triglicerídeos 2.400 mg/dL), intubada, com propofol a 30 mL/h. Qual conjunto de medidas é mais adequado?",
+   "alts": [
+    "Hidratação agressiva de 20 mL/kg + 3 mL/kg/h e imipeném profilático",
+    "Manter propofol, jejum absoluto por 7 dias e nutrição parenteral total",
+    "Insulina EV com glicose, trocar o propofol e hidratação moderada",
+    "Emulsão lipídica EV para suprir energia e heparina em dose plena",
+    "Octreotida 50 mcg/h e meropeném profilático por 14 dias seguidos"
+   ],
+   "gab": 2,
+   "coment": "Na pancreatite por hipertrigliceridemia, insulina EV (com glicose para evitar hipoglicemia) reduz triglicerídeos ao ativar a lipase lipoproteica; propofol e emulsões lipídicas devem ser suspensos pela carga lipídica. A ACG 2024 e o WATERFALL orientam hidratação moderada guiada por metas, e não há antibiótico profilático nem na necrose estéril. A nutrição enteral é preferida à parenteral.",
+   "porAlt": [
+    "Hidratação agressiva causou sobrecarga no WATERFALL; profilaxia não é indicada.",
+    "Propofol mantém a carga lipídica e jejum com NP contraria a ACG 2024.",
+    "Correta: insulina com glicose, retirar lipídios e fluidos moderados.",
+    "Emulsão lipídica piora a hipertrigliceridemia.",
+    "Octreotida não trata pancreatite e antibiótico profilático não é indicado."
+   ],
+   "base": "Tenner et al., ACG 2024; WATERFALL 2022"
+  },
+  {
+   "leitura": "terapia-nutricional",
+   "nivel": "basico",
+   "enun": "Qual a meta proteica da ESPEN 2023 para o paciente crítico?",
+   "alts": [
+    "0,8 g/kg/dia, a mesma recomendação de adultos saudáveis",
+    "3,0 g/kg/dia quando houver lesão renal aguda sem diálise",
+    "2,5 g/kg/dia desde o primeiro dia, para todos os pacientes",
+    "0,5 g/kg/dia na primeira semana, pelo risco de uremia alta",
+    "1,3 g/kg/dia, atingida progressivamente ao longo da semana"
+   ],
+   "gab": 4,
+   "coment": "A ESPEN 2023 recomenda 1,3 g/kg/dia de proteína, atingida de forma progressiva. Estudos de isótopos mostram melhor aproveitamento de aminoácidos após a fase aguda, e o EFFORT Protein não mostrou benefício de doses altas, com sinal de dano na lesão renal aguda. A ASPEN 2022 aceita 1,2 a 2 g/kg/dia e a BRASPEN 2023 propõe 1,2 g/kg/dia no início e 1,3 a 2 g/kg/dia após o 4º dia.",
+   "porAlt": [
+    "Dose de indivíduo saudável, insuficiente no hipercatabolismo.",
+    "Dose excessiva, e o EFFORT sugeriu dano justamente na lesão renal.",
+    "Dose alta desde o início não tem benefício demonstrado.",
+    "Restrição proteica não é recomendada no crítico.",
+    "Correta: 1,3 g/kg/dia com progressão."
+   ],
+   "base": "ESPEN 2023"
+  },
+  {
+   "leitura": "terapia-nutricional",
+   "nivel": "basico",
+   "enun": "Paciente de 70 kg recebe propofol 1% a 25 mL/h. Quantas kcal por dia vêm do propofol?",
+   "alts": [
+    "Cerca de 250 kcal/dia",
+    "Cerca de 440 kcal/dia",
+    "Cerca de 1.100 kcal/dia",
+    "Cerca de 660 kcal/dia",
+    "Cerca de 900 kcal/dia"
+   ],
+   "gab": 3,
+   "coment": "O propofol em emulsão lipídica a 10% fornece 1,1 kcal/mL e 0,1 g de lipídio/mL. A 25 mL/h: 25 × 24 = 600 mL/dia × 1,1 = 660 kcal/dia, com 60 g de lipídio (0,86 g/kg/dia). Esse valor deve ser descontado da meta calórica e somado ao teto de lipídio EV de 1,5 g/kg/dia da ESPEN 2023.",
+   "porAlt": [
+    "Subestima: não multiplica pelas 24 horas corretamente.",
+    "Usa densidade calórica errada (cerca de 0,73 kcal/mL).",
+    "Superestima: usaria cerca de 1,8 kcal/mL.",
+    "Correta: 600 mL × 1,1 kcal/mL = 660 kcal.",
+    "Superestima: corresponderia a 1,5 kcal/mL."
+   ],
+   "base": "ESPEN 2023"
+  },
+  {
+   "leitura": "terapia-nutricional",
+   "nivel": "intermediario",
+   "enun": "Qual a osmolaridade aproximada de uma NP de 1.500 mL com 150 g de glicose, 60 g de aminoácidos e 150 mEq de cátions, e a via adequada?",
+   "alts": [
+    "Cerca de 700 mOsm/L, permitindo a infusão por via periférica",
+    "Cerca de 1.100 mOsm/L, exigindo infusão por via central",
+    "Cerca de 1.700 mOsm/L, exigindo infusão por via central",
+    "Cerca de 450 mOsm/L, permitindo a infusão por via periférica",
+    "Cerca de 1.400 mOsm/L, permitindo via periférica com filtro"
+   ],
+   "gab": 2,
+   "coment": "Glicose: 150 × 5 = 750 mOsm; aminoácidos: 60 × 10 = 600 mOsm; cátions: 150 × 2 = 300 mOsm. Total de 1.650 mOsm em 1,5 L: cerca de 1.100 mOsm/L. A NP periférica é aceita até cerca de 900 mOsm/L; acima disso, a via deve ser central. Filtro não reduz osmolaridade nem flebite química.",
+   "porAlt": [
+    "Subestima a conta e indica via periférica inadequada.",
+    "Correta: cerca de 1.100 mOsm/L, acima do limite periférico.",
+    "Superestima (divide por 1 L em vez de 1,5 L).",
+    "Subestima muito e indica via inadequada.",
+    "Superestima e o filtro não torna a via periférica segura."
+   ],
+   "base": "ASPEN; ESPEN 2023"
+  },
+  {
+   "leitura": "terapia-nutricional",
+   "nivel": "intermediario",
+   "enun": "Qual medida reduz o risco de precipitação de fosfato de cálcio na NP?",
+   "alts": [
+    "Adicionar o cálcio primeiro e o fosfato por último na bolsa",
+    "Usar glicerofosfato de sódio como fonte orgânica de fosfato",
+    "Reduzir a concentração de aminoácidos para baixar o pH",
+    "Aquecer a bolsa antes da infusão para dissolver cristais",
+    "Retirar o filtro da linha para evitar oclusão por cristais"
+   ],
+   "gab": 1,
+   "coment": "O fosfato orgânico (glicerofosfato de sódio) praticamente elimina a precipitação com cálcio. Outras medidas: respeitar curvas de solubilidade, adicionar o fosfato cedo e o cálcio perto do fim, manter concentração adequada de aminoácidos (que tamponam) e usar filtro de 1,2 micrômetro na mistura 3 em 1. Temperatura alta e pH alto aumentam a precipitação, que já causou mortes por embolia pulmonar.",
+   "porAlt": [
+    "A ordem correta é fosfato cedo e cálcio perto do fim.",
+    "Correta: fosfato orgânico evita o precipitado.",
+    "Menos aminoácidos reduz o tamponamento e aumenta o risco.",
+    "Calor aumenta a precipitação de fosfato de cálcio.",
+    "Retirar o filtro deixa o precipitado chegar ao pulmão."
+   ],
+   "base": "ASPEN; alerta FDA 1994"
+  },
+  {
+   "leitura": "terapia-nutricional",
+   "nivel": "avancado",
+   "enun": "Homem de 50 kg, etilista, com ingestão mínima há 10 dias, vai iniciar dieta enteral. Fósforo 2,4 mg/dL, potássio 3,4 e magnésio 1,6. Qual plano segue o consenso ASPEN 2020?",
+   "alts": [
+    "Dieta plena de 25 kcal/kg desde o 1º dia e eletrólitos diários",
+    "Tiamina após 5 dias de dieta, se surgir confusão mental aguda",
+    "Suspender a dieta por 7 dias até normalizar todos os eletrólitos",
+    "Corrigir eletrólitos, tiamina 100 mg e iniciar 10 a 20 kcal/kg",
+    "Iniciar NP plena com 5 mg/kg/min de glicose e fósforo semanal"
+   ],
+   "gab": 3,
+   "coment": "O consenso ASPEN 2020 recomenda, no paciente de risco, dosar e corrigir potássio, magnésio e fósforo, dar tiamina 100 mg antes de iniciar a dieta ou soluções com glicose (e 100 mg/dia por 5 a 7 dias no etilista), iniciar com 10 a 20 kcal/kg ou 100 a 150 g de glicose nas primeiras 24 horas, avançar 33% da meta a cada 1 a 2 dias e medir eletrólitos a cada 12 horas nos 3 primeiros dias.",
+   "porAlt": [
+    "Dieta plena no 1º dia é o gatilho clássico da realimentação.",
+    "A tiamina deve vir antes da glicose, não após os sintomas.",
+    "Jejum prolongado agrava a desnutrição; a correção é concomitante.",
+    "Correta: corrigir, tiamina antes e início lento.",
+    "NP plena com carga de glicose máxima é o cenário de maior risco."
+   ],
+   "base": "da Silva et al., ASPEN 2020"
+  },
+  {
+   "leitura": "terapia-nutricional",
+   "nivel": "avancado",
+   "enun": "No 2º dia de UTI, paciente de 80 kg em choque controlado, sem calorimetria, recebe propofol a 20 mL/h e SG 5% 1.000 mL/dia de diluentes. A nutricionista propõe 2.000 kcal/dia de dieta enteral. Qual a análise farmacêutica mais adequada?",
+   "alts": [
+    "A proposta é adequada, pois a meta plena reduz a perda muscular",
+    "Excede a meta: propofol e glicose somam cerca de 700 kcal/dia",
+    "É insuficiente, pois o crítico precisa de 40 kcal/kg na fase aguda",
+    "A dieta deve ser suspensa, pois o propofol já cobre a meta proteica",
+    "Deve-se trocar a enteral por NP, que dispensa contar o propofol"
+   ],
+   "gab": 1,
+   "coment": "Pela ESPEN 2023, na primeira semana sem calorimetria a oferta deve ser hipocalórica, até 70% da estimativa de 20 a 25 kcal/kg (80 kg × 25 × 0,7 = 1.400 kcal). O propofol fornece 20 × 24 × 1,1 = 528 kcal e o SG 5% fornece 50 g × 3,4 = 170 kcal, quase 700 kcal não nutricionais. Somados a 2.000 kcal, o paciente receberia cerca de 2.700 kcal, com risco de hiperalimentação e hiperglicemia. O propofol não contém proteína.",
+   "porAlt": [
+    "Meta plena no 2º dia soma-se à produção endógena e hiperalimenta.",
+    "Correta: calorias não nutricionais tornam a oferta excessiva.",
+    "40 kcal/kg é meta de recuperação em trauma, não da fase aguda.",
+    "Propofol não fornece proteína; suspender a dieta é erro.",
+    "As calorias do propofol contam em qualquer via de nutrição."
+   ],
+   "base": "ESPEN 2023"
+  }
+ ]
+}

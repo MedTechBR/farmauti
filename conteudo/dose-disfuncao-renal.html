@@ -1,0 +1,164 @@
+<p class="dek">Como estimar a função renal do paciente crítico e transformá-la em dose: creatinina fora do equilíbrio, CKD-EPI 2021 desindexada, Cockcroft-Gault, depuração em urina coletada, cistatina C, depuração renal aumentada e tabelas de ajuste dos fármacos mais usados na UTI, com base no KDIGO 2024 de doença renal crônica, no rascunho KDIGO 2026 de lesão renal aguda e nas bulas.</p>
+
+<h2>Por que a função renal decide tantas doses</h2>
+<p>Cerca de metade dos fármacos prescritos na UTI tem eliminação renal relevante, na forma inalterada ou de metabólitos ativos. Quando a depuração renal cai, a depuração total (CL) cai junto, a meia-vida se alonga e a concentração média no estado de equilíbrio sobe na mesma proporção, se a dose de manutenção não for corrigida. O raciocínio vem da relação básica da farmacocinética: a taxa de dose de manutenção necessária para uma concentração-alvo é CL × Css. Se a CL cai à metade, a dose por unidade de tempo também deve cair à metade para manter o mesmo alvo.</p>
+<p>A fração eliminada inalterada pela urina (fe) diz quanto a função renal pesa. Com fe acima de 0,7 (aminoglicosídeos, vancomicina, a maioria dos betalactâmicos, fluconazol, aciclovir, levetiracetam, gabapentina, enoxaparina, dabigatrana), o ajuste é quase proporcional à queda da depuração. Com fe baixa (ceftriaxona, linezolida, polimixina B, moxifloxacino, fentanil), a função renal quase não altera a dose do fármaco original, embora possa acumular metabólitos. Uma aproximação útil é a regra de Dettli: a fração da dose normal a ser dada é 1 − fe × (1 − razão entre a depuração do paciente e a normal).</p>
+<div class="cx calculo"><b>Exemplo de cálculo</b><p>Fármaco com fe de 0,9 e depuração renal do paciente de 30 mL/min (considerando 120 mL/min como normal, razão 0,25). Fração da dose = 1 − 0,9 × (1 − 0,25) = 1 − 0,675 = 0,325. A taxa de manutenção deve ficar em torno de um terço da habitual. Para fe de 0,3 com a mesma função renal: 1 − 0,3 × 0,75 = 0,775, isto é, cerca de 78% da dose, ajuste frequentemente dispensável na prática.</p></div>
+
+<h2>Estimar a função renal no paciente crítico</h2>
+<h3>Creatinina e seus limites</h3>
+<p>A creatinina sérica depende da produção (massa muscular, dieta, ingestão de carne), da secreção tubular (10% a 20% da excreção em função normal, proporção maior na doença renal) e da diluição. No crítico todos esses pontos falham ao mesmo tempo. A produção cai com imobilidade, sarcopenia, sepse e amputação; a ressuscitação volêmica dilui a creatinina e atrasa sua elevação; fármacos como trimetoprima, cimetidina, cobicistate e dolutegravir bloqueiam a secreção tubular e elevam a creatinina sem mudar a taxa de filtração glomerular (TFG). Em cirrose, a creatinina superestima a TFG por perda muscular, e em ensaios de Jaffe a bilirrubina alta pode interferir na dosagem.</p>
+<p>O ponto mais importante é outro: toda equação de TFG estimada (TFGe) supõe <b>estado de equilíbrio</b>, situação em que produção e excreção de creatinina se igualam. Na lesão renal aguda (LRA) a creatinina leva de 24 a 72 horas para refletir a nova TFG. Um paciente anúrico nas primeiras horas pode ter creatinina de 1,1 mg/dL e TFGe "normal"; um paciente em recuperação pode ter creatinina ainda alta com filtração já restabelecida. As diretrizes são explícitas: as equações de TFGe valem para função estável, e o rascunho KDIGO 2026 de LRA, em consulta pública desde março de 2026, reforça que a creatinina isolada é pouco confiável quando a função varia rapidamente.</p>
+
+<h3>CKD-EPI 2021 e a desindexação</h3>
+<p>A equação CKD-EPI 2021 (Inker e colaboradores, 2021) retirou o coeficiente racial e é o padrão recomendado no Brasil e pelo KDIGO 2024 para estimar a TFG a partir da creatinina:</p>
+<p>TFGe = 142 × mín(Scr/κ; 1)<sup>α</sup> × máx(Scr/κ; 1)<sup>−1,200</sup> × 0,9938<sup>idade</sup> × 1,012 (se mulher), com κ = 0,7 e α = −0,241 para mulheres, e κ = 0,9 e α = −0,302 para homens.</p>
+<p>O resultado sai em mL/min/1,73 m², ou seja, indexado para uma superfície corporal (SC) padrão. Isso serve para classificar a doença renal e comparar pessoas, mas não para dose: o fármaco é eliminado pelos rins daquele paciente, com o tamanho que ele tem. O KDIGO 2024 orienta usar, para ajuste de dose, a TFGe <b>não indexada</b>, em mL/min, obtida multiplicando o valor pela SC do paciente e dividindo por 1,73. A diferença é pequena em quem tem SC perto de 1,73 m² e grande nos extremos: subestima a depuração do paciente grande e superestima a do pequeno, justamente onde o erro de dose pesa mais.</p>
+<div class="cx calculo"><b>Exemplo de cálculo</b><p>Homem, 60 anos, 80 kg, 175 cm, creatinina estável de 1,5 mg/dL. Scr/κ = 1,5/0,9 = 1,667. Termo mínimo = 1. Termo máximo = 1,667<sup>−1,2</sup> = 0,542. Termo da idade = 0,9938<sup>60</sup> = 0,689. TFGe = 142 × 0,542 × 0,689 ≈ 53 mL/min/1,73 m². SC por Mosteller = √(175 × 80/3.600) = 1,97 m². TFGe não indexada = 53 × 1,97/1,73 ≈ 60 mL/min. Esse é o valor para consultar a tabela de ajuste. Cockcroft-Gault, para comparação: (140 − 60) × 80/(72 × 1,5) ≈ 59 mL/min, praticamente igual neste caso.</p></div>
+
+<h3>Cockcroft-Gault e por que as bulas o usam</h3>
+<p>A equação de Cockcroft-Gault (1976) estima a depuração de creatinina, e não a TFG: CLcr = (140 − idade) × peso/(72 × Scr), multiplicada por 0,85 em mulheres, em mL/min. Foi derivada em 249 homens hospitalizados, com creatinina dosada por método não padronizado, e inclui a secreção tubular, por isso tende a superestimar a TFG. A maioria dos estudos de farmacocinética que fundamentam as bulas, até os anos 2010, classificou os voluntários por Cockcroft-Gault, e as agências reguladoras só recentemente passaram a aceitar a TFGe. Por isso as faixas de ajuste de bula ("CLcr 30 a 50 mL/min") estão escritas em depuração de creatinina.</p>
+<p>O KDIGO 2024 recomenda usar equações validadas de TFGe (CKD-EPI) para a dose na maioria das situações e reconhece que as duas estimativas são intercambiáveis na maior parte dos pacientes. As divergências clinicamente importantes ocorrem em idosos, extremos de peso e desnutridos. Cockcroft-Gault depende do peso: com peso total em obeso, superestima muito; com peso ideal, subestima. Nos anticoagulantes orais diretos (DOAC), os ensaios pivotais usaram Cockcroft-Gault com peso total, e muitos serviços mantêm essa equação para esses fármacos, com o argumento de replicar a população estudada. O padrão de cálculo adotado no FarmaUTI é a CKD-EPI 2021 não indexada; quando a decisão ficar na fronteira de uma faixa de ajuste, calcule as duas e decida com o contexto clínico.</p>
+
+<h3>Depuração de creatinina em urina coletada</h3>
+<p>Quando a creatinina não está estável, ou a massa muscular é atípica, a medida direta é melhor do que qualquer equação. A depuração de creatinina medida é CLcr = (Ucr × V)/(Pcr × t), com a creatinina urinária (Ucr) e plasmática (Pcr) na mesma unidade, o volume urinário (V) em mL e o tempo (t) em minutos. Em UTI, coletas de 8 a 12 horas por sonda vesical são práticas e têm boa concordância com 24 horas; o erro mais comum é a perda de urina (coleta incompleta), que subestima a depuração. A dosagem plasmática deve ser feita no meio do período.</p>
+<div class="cx calculo"><b>Exemplo de cálculo</b><p>Paciente com trauma, 32 anos. Urina de 12 horas: 1.500 mL, creatinina urinária 55 mg/dL. Creatinina plasmática no meio da coleta: 0,6 mg/dL. Fluxo urinário = 1.500/720 = 2,08 mL/min. CLcr = 55 × 2,08/0,6 ≈ 191 mL/min, depuração renal aumentada importante, que nenhuma equação teria mostrado. Com meropeném 1 g a cada 8 horas em bolus, a probabilidade de manter a concentração livre acima da CIM durante todo o intervalo é baixa; infusão prolongada ou contínua passa a ser a escolha.</p></div>
+
+<h3>TFG cinética</h3>
+<p>Para a creatinina em ascensão ou queda, a TFG cinética (Chen, 2013) estima a filtração considerando a velocidade da mudança: TFGc = (Scr basal × TFG basal/Scr média) × [1 − (24 × ΔScr)/(Δt × ΔScr máxima por dia)]. A ΔScr máxima diária (aumento esperado em anúria) costuma ficar entre 1 e 1,5 mg/dL/dia, conforme a massa muscular. Não é uma medida, mas ajuda a perceber que a função é pior do que a TFGe estática sugere.</p>
+<div class="cx calculo"><b>Exemplo de cálculo</b><p>Homem de 50 anos com creatinina basal de 0,8 mg/dL (TFG ≈ 100 mL/min). Em 24 horas a creatinina sobe de 1 para 1,6 mg/dL. Scr média = 1,3; ΔScr = 0,6; ΔScr máxima assumida = 1,5 mg/dL/dia. Primeiro termo = 0,8 × 100/1,3 = 61,5. Segundo termo = 1 − (24 × 0,6)/(24 × 1,5) = 0,6. TFGc ≈ 37 mL/min, contra cerca de 52 mL/min/1,73 m² pela CKD-EPI com a creatinina de 1,6. Com a creatinina ainda subindo, a filtração verdadeira provavelmente é menor que ambas.</p></div>
+
+<h3>Cistatina C</h3>
+<p>A cistatina C é produzida por todas as células nucleadas em taxa relativamente constante, sofre filtração livre e não depende de massa muscular. Sobe mais cedo que a creatinina na LRA. Sofre influência de corticoide em dose alta, disfunção tireoidiana, obesidade e inflamação. O KDIGO 2024 sugere a equação combinada creatinina-cistatina (CKD-EPI 2021 cr-cys) quando a decisão depende de estimativa mais precisa, e cita explicitamente a dose de fármacos de índice terapêutico estreito em pessoas com massa muscular atípica: idosos frágeis, amputados, cirróticos, tetraplégicos e desnutridos. Onde houver o exame, esse é o melhor uso dele.</p>
+
+<div class="cx chave"><b>Ponto-chave</b><p>Para dose, a sequência de raciocínio é: a creatinina está estável? Se sim, CKD-EPI 2021 desindexada pela SC (ou cr-cys, se a massa muscular é atípica). Se não, use depuração medida em urina coletada ou TFG cinética, e trate a TFGe estática como limite superior em LRA em piora. Em qualquer caso, reavalie a cada 24 a 48 horas.</p></div>
+
+<h2>Depuração renal aumentada</h2>
+<p>A depuração renal aumentada (ARC, do inglês <i>augmented renal clearance</i>) é a depuração de creatinina medida igual ou superior a 130 mL/min/1,73 m². Ocorre em até metade dos pacientes jovens de UTI com trauma, TCE, queimadura, sepse sem disfunção renal, pós-operatório de grande porte e pancreatite. O mecanismo combina aumento do débito cardíaco, fluxo renal elevado pela resposta inflamatória, ressuscitação volêmica e vasopressores. A creatinina sérica fica baixa e as equações não identificam o fenômeno: CKD-EPI tem teto de validade e não enxerga valores muito altos com precisão. O diagnóstico exige urina coletada.</p>
+<p>O escore ARC de Udy (2013) ajuda a rastrear: idade até 50 anos (6 pontos), trauma (3 pontos) e SOFA até 4 (1 ponto); 7 pontos ou mais sugerem alto risco. As consequências práticas são subexposição a betalactâmicos, vancomicina, aminoglicosídeos, levetiracetam e enoxaparina. As estratégias são infusão prolongada ou contínua de betalactâmicos, doses no limite superior da bula, monitorização terapêutica quando disponível e anti-Xa para enoxaparina em alto risco trombótico.</p>
+<div class="cx farma"><b>Na prática do farmacêutico</b><p>Todo paciente jovem com trauma ou TCE e creatinina de 0,5 a 0,7 mg/dL em uso de betalactâmico merece uma pergunta: tem urina de 8 ou 12 horas? Se não tem, sugerir a coleta. Com depuração acima de 130 mL/min/1,73 m², proponha infusão estendida ou contínua e, para vancomicina, cálculo de AUC com dois níveis. O reverso também vale: quando a ARC se resolve, a dose aumentada precisa ser revista.</p></div>
+
+<h2>Princípios de ajuste</h2>
+<h3>Dose de ataque não muda</h3>
+<p>A dose de ataque depende do volume de distribuição (Vd) e da concentração-alvo: DA = Vd × Cp alvo. A disfunção renal não reduz o Vd; no crítico ele costuma estar aumentado por edema, capilares permeáveis e ressuscitação. Reduzir a primeira dose em "LRA" é o erro de ajuste renal mais danoso da UTI, porque atrasa a concentração eficaz de antimicrobianos justamente nas primeiras horas da sepse. Além disso, cerca de metade das LRA associadas à sepse se resolve em 48 horas. Por isso muitos serviços adotam a regra de não ajustar betalactâmicos nas primeiras 24 a 48 horas de LRA séptica, desde que a toxicidade seja tolerável (cefepima é a exceção em que o risco de neurotoxicidade pesa mais).</p>
+
+<h3>Reduzir a dose ou alongar o intervalo</h3>
+<p>Mantida a dose total por dia, existem duas formas de reduzir a exposição: diminuir cada dose mantendo o intervalo ou manter a dose e espaçar o intervalo. A escolha depende do alvo PK/PD:</p>
+<ul>
+<li><b>Tempo-dependentes</b> (betalactâmicos): preferir reduzir a dose e manter o intervalo, porque espaçar o intervalo cria períodos longos abaixo da CIM. O ideal é manter infusão estendida.</li>
+<li><b>Concentração-dependentes</b> (aminoglicosídeos): manter a dose de pico (mg/kg) e alongar o intervalo guiado por nível, preservando Cmáx/CIM e permitindo vale baixo, o que reduz nefrotoxicidade e ototoxicidade.</li>
+<li><b>AUC-dependentes</b> (vancomicina, fluoroquinolonas): o que importa é a exposição diária; tanto a redução de dose quanto o espaçamento servem, e a escolha segue a praticidade e os níveis.</li>
+<li><b>Fármacos com efeito relacionado ao vale</b> (anticonvulsivantes, sedativos): reduzir a dose e manter o intervalo evita flutuação.</li>
+</ul>
+
+<h3>Metabólitos ativos</h3>
+<p>Fármacos de eliminação hepática podem ter metabólitos de eliminação renal que acumulam: morfina (morfina-6-glicuronídeo, opioide potente, e morfina-3-glicuronídeo, neuroexcitatória), meperidina (normeperidina, convulsivante), midazolam (alfa-hidroximidazolam glicuronídeo, sedativo), tramadol (O-desmetiltramadol), codeína, alopurinol (oxipurinol) e nitroprussiato (tiocianato). O ajuste renal desses fármacos não aparece como "fe alta", mas o risco clínico é real.</p>
+
+<h2>Tabela de ajuste dos fármacos mais usados na UTI</h2>
+<p>A tabela resume ajustes de bula e de referências consolidadas para adultos sem terapia de substituição renal. As faixas estão em depuração (mL/min), que pode ser a TFGe não indexada ou a CLcr. Doses de TRS estão na leitura "Farmacoterapia nas terapias de substituição renal". Protocolos institucionais podem divergir, e para antimicrobianos em infecção grave com TDM disponível, o nível manda.</p>
+<div class="tab"><table><thead><tr><th>Fármaco (dose usual)</th><th>Ajuste por depuração</th><th>Observação</th></tr></thead><tbody>
+<tr><td>Meropeném 1 g IV a cada 8 h</td><td>26 a 50: 1 g a cada 12 h; 10 a 25: 500 mg a cada 12 h; abaixo de 10: 500 mg a cada 24 h</td><td>Em meningite ou Pseudomonas, partir de 2 g a cada 8 h e ajustar proporcionalmente</td></tr>
+<tr><td>Piperacilina-tazobactam 4,5 g IV a cada 6 h</td><td>20 a 40: 3,375 g a cada 6 h; abaixo de 20: 2,25 g a cada 6 h</td><td>Esquema de pneumonia hospitalar da bula; em infusão estendida, protocolos usam 3,375 a 4,5 g a cada 8 h e a cada 12 h abaixo de 20</td></tr>
+<tr><td>Cefepima 2 g IV a cada 8 h</td><td>30 a 60: 2 g a cada 12 h; 11 a 29: 2 g a cada 24 h; até 10: 1 g a cada 24 h</td><td>Neurotoxicidade (encefalopatia, estado de mal não convulsivo) quando o ajuste é esquecido</td></tr>
+<tr><td>Ceftriaxona 1 a 2 g a cada 24 h</td><td>Sem ajuste</td><td>Eliminação biliar e renal; rever se houver insuficiência renal e hepática juntas</td></tr>
+<tr><td>Vancomicina</td><td>Ataque 20 a 35 mg/kg pelo peso real, sem redução; manutenção por AUC 400 a 600 mg·h/L</td><td>Consenso ASHP/IDSA/PIDS/SIDP 2020; ver "Monitorização terapêutica de fármacos"</td></tr>
+<tr><td>Amicacina 15 a 20 mg/kg</td><td>Mesma dose por mg/kg; intervalo alongado (24, 36 ou 48 h) guiado por nível</td><td>Colher nível antes de redosar em LRA</td></tr>
+<tr><td>Polimixina B 1,25 a 1,5 mg/kg a cada 12 h</td><td>Sem ajuste</td><td>Eliminação não renal (consenso internacional 2019)</td></tr>
+<tr><td>Colistina (colistimetato)</td><td>Ajuste obrigatório por CLcr, conforme tabela do consenso 2019</td><td>Pró-fármaco eliminado pelo rim</td></tr>
+<tr><td>Fluconazol, ataque 12 mg/kg e manutenção 6 mg/kg/dia</td><td>Ataque integral; até 50: metade da manutenção</td><td>Fe de cerca de 80%</td></tr>
+<tr><td>Aciclovir 10 mg/kg a cada 8 h</td><td>25 a 50: a cada 12 h; 10 a 25: a cada 24 h; abaixo de 10: 5 mg/kg a cada 24 h</td><td>Hidratação; cristalúria e neurotoxicidade no acúmulo</td></tr>
+<tr><td>Sulfametoxazol-trimetoprima</td><td>15 a 30: 50% da dose; abaixo de 15: evitar ou 50% com TRS</td><td>Hipercalemia; eleva creatinina sem mudar TFG</td></tr>
+<tr><td>Levofloxacino 750 mg a cada 24 h</td><td>20 a 49: 750 mg a cada 48 h; 10 a 19: 750 mg e depois 500 mg a cada 48 h</td><td>Manter a dose alta, espaçar</td></tr>
+<tr><td>Enoxaparina</td><td>Abaixo de 30: tratamento 1 mg/kg a cada 24 h; profilaxia 30 mg/dia</td><td>Anti-Xa em obesos, gestantes e depuração limítrofe</td></tr>
+<tr><td>Heparina não fracionada</td><td>Sem ajuste</td><td>Preferida quando a função renal é instável ou há plano de procedimento</td></tr>
+<tr><td>Fondaparinux</td><td>Contraindicado abaixo de 30</td><td>Acúmulo e sangramento</td></tr>
+<tr><td>Dabigatrana</td><td>Evitar abaixo de 30</td><td>Fe de 80%; dialisável</td></tr>
+<tr><td>Rivaroxabana (FA)</td><td>15 a 50: 15 mg/dia; abaixo de 15: evitar</td><td>Bula brasileira</td></tr>
+<tr><td>Apixabana (FA)</td><td>2,5 mg a cada 12 h se dois de três: idade ≥ 80 anos, peso ≤ 60 kg, creatinina ≥ 1,5 mg/dL</td><td>Critério não é só renal</td></tr>
+<tr><td>Levetiracetam</td><td>50 a 80: 500 a 1.000 mg a cada 12 h; 30 a 50: 250 a 750 mg a cada 12 h; abaixo de 30: 250 a 500 mg a cada 12 h</td><td>Em hemodiálise: 500 a 1.000 mg/dia e suplemento de 250 a 500 mg após a sessão</td></tr>
+<tr><td>Fenitoína</td><td>Sem ajuste de dose</td><td>Uremia reduz a ligação proteica: usar fenitoína livre</td></tr>
+<tr><td>Gabapentina</td><td>30 a 59: 400 a 1.400 mg/dia em 2 tomadas; 15 a 29: 200 a 700 mg/dia; abaixo de 15: 100 a 300 mg/dia</td><td>Sedação, mioclonia e encefalopatia no acúmulo</td></tr>
+<tr><td>Pregabalina</td><td>30 a 60: 75 a 300 mg/dia; 15 a 30: 25 a 150 mg/dia; abaixo de 15: 25 a 75 mg/dia</td><td>Mesmo perfil de toxicidade</td></tr>
+<tr><td>Morfina</td><td>Evitar em depuração baixa; se usada, doses menores e intervalo maior</td><td>Morfina-6 e morfina-3-glicuronídeo acumulam</td></tr>
+<tr><td>Meperidina</td><td>Evitar</td><td>Normeperidina causa convulsão; naloxona não reverte</td></tr>
+<tr><td>Tramadol</td><td>Abaixo de 30: intervalo de 12 h, máximo 200 mg/dia</td><td>Convulsão e síndrome serotoninérgica</td></tr>
+<tr><td>Fentanil</td><td>Sem ajuste formal</td><td>Opção preferida na disfunção renal; titular pelo efeito</td></tr>
+<tr><td>Midazolam</td><td>Sem ajuste formal; reduzir por efeito</td><td>Metabólito glicuronídeo prolonga sedação</td></tr>
+<tr><td>Metformina</td><td>Contraindicada abaixo de 30; não iniciar entre 30 e 45</td><td>Suspender no crítico instável</td></tr>
+<tr><td>Famotidina</td><td>Abaixo de 50: 50% da dose ou dobrar o intervalo</td><td>Confusão mental em idosos</td></tr>
+</tbody></table></div>
+<div class="cx alerta"><b>Atenção</b><p>A tabela orienta a manutenção. Antimicrobiano de primeira dose, anticonvulsivante de ataque e dose de ataque de vancomicina não se reduzem pela função renal. E faixas de bula calculadas por Cockcroft-Gault não viram automaticamente faixas de TFGe indexada: em paciente de 1,4 m² de SC, 30 mL/min/1,73 m² são cerca de 24 mL/min reais.</p></div>
+
+<h2>Opioides, sedativos e gabapentinoides</h2>
+<p>No paciente com disfunção renal, a analgesia merece atenção específica porque a toxicidade é neurológica e confundida com a doença de base. A morfina é metabolizada no fígado em morfina-3-glicuronídeo (M3G), sem ação analgésica e com efeito neuroexcitatório (mioclonia, hiperalgesia, convulsão), e morfina-6-glicuronídeo (M6G), agonista mu mais potente que a própria morfina. Ambos são eliminados pelo rim e acumulam por dias. O resultado clínico é sedação prolongada e depressão respiratória tardia, às vezes após a suspensão da infusão. A meperidina gera normeperidina, de meia-vida longa na insuficiência renal, que provoca tremor, mioclonia e convulsões não revertidas por naloxona; não há lugar para ela como analgésico na UTI.</p>
+<p>O fentanil não tem metabólitos ativos relevantes e é a escolha habitual na disfunção renal, com a ressalva de acúmulo em infusões prolongadas por redistribuição (meia-vida contexto-dependente). A hidromorfona tem metabólito (hidromorfona-3-glicuronídeo) que pode acumular, mas em grau menor que a morfina. A metadona tem eliminação predominantemente fecal e pode ser usada com titulação cuidadosa. A cetamina e a dexmedetomidina não exigem ajuste renal.</p>
+<p>A gabapentina e a pregabalina são eliminadas quase integralmente pelo rim, sem metabolismo. Em LRA ou DRC avançada, doses usuais causam sonolência, ataxia, mioclonia, encefalopatia e quedas, e a toxicidade é frequentemente atribuída a delirium. São dialisáveis.</p>
+<div class="cx farma"><b>Na prática do farmacêutico</b><p>No paciente com encefalopatia sem causa clara, revise a lista: cefepima, gabapentina, pregabalina, morfina, meperidina, tramadol, aciclovir, baclofeno e levetiracetam em dose cheia com depuração baixa. Proponha suspender ou ajustar e, quando houver, dosar níveis. A intervenção costuma ser aceita quando vem com a conta pronta: depuração não indexada, faixa da bula e dose sugerida.</p></div>
+
+<h2>Nefrotóxicos a evitar</h2>
+<p>O ajuste de dose protege o paciente do acúmulo; evitar nefrotóxicos protege o rim. A carga nefrotóxica é cumulativa: cada fármaco adicional aumenta o risco de LRA, e o programa NINJA, criado em hospitais pediátricos, reduziu LRA apenas com a vigilância diária da creatinina de quem recebe três ou mais nefrotóxicos.</p>
+<div class="tab"><table><thead><tr><th>Fármaco ou classe</th><th>Mecanismo</th><th>Alternativa ou manejo</th></tr></thead><tbody>
+<tr><td>Aminoglicosídeos</td><td>Necrose tubular proximal, dependente de vale e duração</td><td>Dose única diária, curso curto, nível</td></tr>
+<tr><td>Vancomicina</td><td>Lesão tubular oxidativa; risco cresce com AUC acima de 600 e associação com piperacilina-tazobactam</td><td>Dose por AUC; considerar cefepima ou meropeném como parceiro</td></tr>
+<tr><td>Polimixinas</td><td>Lesão tubular dose-dependente</td><td>Reservar para gram-negativos resistentes sem alternativa</td></tr>
+<tr><td>Anfotericina B desoxicolato</td><td>Vasoconstrição aferente e lesão tubular</td><td>Formulação lipídica; hidratação com salina</td></tr>
+<tr><td>AINE</td><td>Bloqueio das prostaglandinas vasodilatadoras aferentes</td><td>Evitar em hipovolemia, choque, cirrose, IECA/BRA e diurético</td></tr>
+<tr><td>IECA e BRA</td><td>Queda da pressão de filtração por dilatação eferente</td><td>Suspender em choque e LRA, reintroduzir após estabilização</td></tr>
+<tr><td>Aciclovir IV</td><td>Cristalização intratubular</td><td>Infusão em 1 hora, hidratação, ajuste de dose</td></tr>
+<tr><td>Contraste iodado</td><td>Vasoconstrição e toxicidade tubular</td><td>Não negar exame necessário; volume mínimo e euvolemia</td></tr>
+<tr><td>Inibidores de calcineurina</td><td>Vasoconstrição aferente, microangiopatia</td><td>Nível sérico; atenção a inibidores do CYP3A4</td></tr>
+<tr><td>Manitol em dose alta</td><td>Nefrose osmótica</td><td>Monitorizar gap osmolar</td></tr>
+</tbody></table></div>
+
+<div class="fluxo"><div class="leg"><b>Fluxograma</b> decisão de ajuste renal no crítico</div><pre class="mermaid">
+flowchart TD
+  A["Fármaco com eliminação renal relevante"] --> B["Primeira dose ou ataque:<br/>dose cheia"]
+  B --> C{"Creatinina estável<br/>há 48 h?"}
+  C -->|"Sim"| D["CKD-EPI 2021<br/>desindexada pela SC"]
+  C -->|"Não"| E["Urina de 8 a 12 h<br/>ou TFG cinética"]
+  D --> F{"Massa muscular atípica?"}
+  F -->|"Sim"| G["Cistatina C ou<br/>equação cr-cys"]
+  F -->|"Não"| H["Consultar faixa de ajuste"]
+  G --> H
+  E --> H
+  H --> I["Escolher reduzir dose<br/>ou alongar intervalo pelo alvo PK/PD"]
+  I --> J["Reavaliar em 24 a 48 h<br/>e usar TDM quando houver"]
+</pre></div>
+
+<h2>Casos de aplicação</h2>
+<div class="cx calculo"><b>Caso</b><p>Mulher de 68 anos, 62 kg, 158 cm, pneumonia hospitalar, creatinina estável de 1,4 mg/dL. Prescrição: cefepima 2 g a cada 8 horas. CKD-EPI 2021: Scr/κ = 1,4/0,7 = 2; termo máximo = 2<sup>−1,2</sup> = 0,435; idade = 0,9938<sup>68</sup> = 0,655; TFGe = 142 × 0,435 × 0,655 × 1,012 ≈ 41 mL/min/1,73 m². SC = √(158 × 62/3.600) = 1,65 m². TFGe não indexada = 41 × 1,65/1,73 ≈ 39 mL/min. Faixa da bula 30 a 60: cefepima 2 g a cada 12 horas. Intervenção: manter a dose, alongar o intervalo, orientar a equipe sobre sinais de neurotoxicidade.</p></div>
+<div class="cx farma"><b>Na prática do farmacêutico</b><p>Crie uma rotina diária de triagem: listar pacientes com variação de creatinina de 0,3 mg/dL ou mais em 48 horas, com débito urinário abaixo de 0,5 mL/kg/h ou em uso de fármacos de fe alta e índice terapêutico estreito. Para cada um, registrar a depuração usada, a equação e a data, porque a próxima revisão depende de saber de onde veio o número.</p></div>
+
+<h2>Erros frequentes</h2>
+<ul>
+<li>Reduzir a dose de ataque de antimicrobiano ou de vancomicina porque o paciente "está com LRA".</li>
+<li>Calcular TFGe com creatinina de LRA em ascensão e tratar o valor como real.</li>
+<li>Usar a TFGe indexada (mL/min/1,73 m²) em tabela de bula que pede mL/min, sem corrigir pela superfície corporal em paciente muito pequeno ou muito grande.</li>
+<li>Aplicar Cockcroft-Gault com peso total em obeso grave, superestimando a depuração.</li>
+<li>Arredondar creatinina baixa de idoso para 1 mg/dL "por segurança", o que subdosa sem base (prefira cistatina C ou urina coletada).</li>
+<li>Não reajustar para cima quando a função renal se recupera, mantendo betalactâmico reduzido em paciente que voltou a filtrar bem.</li>
+<li>Esquecer os metabólitos ativos: morfina, meperidina e midazolam em infusão prolongada na LRA.</li>
+<li>Ignorar a ARC em jovem com trauma e manter dose padrão de betalactâmico em bolus.</li>
+<li>Somar vancomicina, piperacilina-tazobactam, AINE e contraste no mesmo paciente sem vigilância de creatinina.</li>
+</ul>
+
+<h2>Perguntas de revisão</h2>
+<details class="rev"><summary>Por que a dose de ataque não é reduzida na disfunção renal?</summary><p>Porque ela depende do volume de distribuição e da concentração-alvo, e o volume não diminui com a queda da filtração; no crítico costuma estar aumentado. A função renal altera a depuração, que governa a manutenção.</p></details>
+<details class="rev"><summary>Como transformar a TFGe da CKD-EPI 2021 em valor para dose?</summary><p>Multiplicando a TFGe (mL/min/1,73 m²) pela superfície corporal do paciente e dividindo por 1,73, obtendo mL/min, como recomenda o KDIGO 2024 para ajuste de fármacos.</p></details>
+<details class="rev"><summary>Quando a creatinina sérica não serve para estimar a TFG?</summary><p>Fora do estado de equilíbrio (LRA em evolução ou recuperação), em massa muscular atípica (sarcopenia, amputação, cirrose) e na presença de inibidores da secreção tubular como trimetoprima, que elevam a creatinina sem alterar a filtração.</p></details>
+<details class="rev"><summary>Como se diagnostica a depuração renal aumentada?</summary><p>Pela depuração de creatinina medida em urina coletada (8 a 24 horas) igual ou maior que 130 mL/min/1,73 m². O escore de Udy (idade até 50 anos, trauma, SOFA até 4) ajuda a rastrear quem deve coletar.</p></details>
+<details class="rev"><summary>Para betalactâmicos, é melhor reduzir a dose ou alongar o intervalo?</summary><p>Reduzir a dose mantendo o intervalo, de preferência com infusão estendida, porque o alvo é o tempo acima da CIM. Alongar o intervalo cria períodos prolongados abaixo da CIM.</p></details>
+<details class="rev"><summary>Por que a morfina é má escolha na insuficiência renal?</summary><p>Seus metabólitos glicuronídeos acumulam: o M6G é agonista opioide potente e prolonga a depressão respiratória, e o M3G é neuroexcitatório. Fentanil é a alternativa habitual.</p></details>
+<details class="rev"><summary>Qual o papel da cistatina C no ajuste de dose?</summary><p>Estimar a TFG sem depender da massa muscular. O KDIGO 2024 sugere a equação combinada creatinina-cistatina quando a decisão de dose exige precisão, sobretudo em idosos frágeis, cirróticos e amputados.</p></details>
+
+<section class="fontes"><h2>Referências</h2><ol>
+<li>Kidney Disease: Improving Global Outcomes (KDIGO) CKD Work Group. KDIGO 2024 Clinical Practice Guideline for the Evaluation and Management of Chronic Kidney Disease. Kidney International, 105(4S):S117-S314, 2024.</li>
+<li>KDIGO. Clinical Practice Guideline for Acute Kidney Injury and Acute Kidney Disease: public review draft. Março de 2026.</li>
+<li>Inker LA, Eneanya ND, Coresh J et al. New creatinine- and cystatin C-based equations to estimate GFR without race. New England Journal of Medicine, 385:1737-1749, 2021.</li>
+<li>Cockcroft DW, Gault MH. Prediction of creatinine clearance from serum creatinine. Nephron, 16:31-41, 1976.</li>
+<li>Chen S. Retooling the creatinine clearance equation to estimate kinetic GFR when the plasma creatinine is changing acutely. Journal of the American Society of Nephrology, 24:877-888, 2013.</li>
+<li>Udy AA, Roberts JA, Shorr AF et al. Augmented renal clearance in septic and traumatized patients with normal plasma creatinine concentrations: identifying at-risk patients. Critical Care, 17:R35, 2013.</li>
+<li>Rybak MJ, Le J, Lodise TP et al. Therapeutic monitoring of vancomycin for serious MRSA infections: a revised consensus guideline (ASHP/IDSA/PIDS/SIDP). American Journal of Health-System Pharmacy, 77:835-864, 2020.</li>
+<li>Tsuji BT, Pogue JM, Zavascki AP et al. International consensus guidelines for the optimal use of the polymyxins. Pharmacotherapy, 39:10-39, 2019.</li>
+<li>Bulas aprovadas pela ANVISA de meropeném, piperacilina-tazobactam, cefepima, aciclovir, levetiracetam, gabapentina, pregabalina, enoxaparina, rivaroxabana e apixabana (consultadas em 2026).</li>
+</ol></section>

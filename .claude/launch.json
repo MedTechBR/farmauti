@@ -1,0 +1,1 @@
+{"version":"0.0.1","configurations":[{"name":"farmauti","runtimeExecutable":"python3","runtimeArgs":["servir.py","8731"],"port":8731}]}

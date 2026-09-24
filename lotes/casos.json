@@ -1,0 +1,4005 @@
+[
+ {
+  "id": "caso-01",
+  "titulo": "Conciliação medicamentosa na admissão de idosa com pneumonia grave e fibrilação atrial",
+  "area": "clin",
+  "nivel": "basico",
+  "resumo": "Idosa de 82 anos admitida na UTI por pneumonia comunitária grave, com a prescrição de admissão montada a partir da sacola de medicamentos de casa.",
+  "paciente": {
+   "idade": 82,
+   "sexo": "F",
+   "peso": 56,
+   "altura": 155,
+   "alergias": "Nega"
+  },
+  "historia": "Aposentada, viúva, mora com a filha. Procurou o pronto-socorro com três dias de febre, tosse produtiva e dispneia progressiva; a radiografia mostrou consolidação em lobo inferior direito e a saturação era de 86% em ar ambiente. Recebeu ceftriaxona e claritromicina no pronto-socorro e foi admitida na UTI em ventilação não invasiva intermitente, sem vasopressor. Antecedentes: fibrilação atrial permanente, hipotireoidismo, hipertensão, insuficiência cardíaca com fração de ejeção preservada, neuralgia pós-herpética, depressão, dislipidemia e osteoporose. A filha trouxe a sacola de medicamentos, e a lista de uso domiciliar conferida com ela é: apixabana 5 mg 12/12 h, succinato de metoprolol 50 mg 1x/dia, levotiroxina 75 mcg em jejum, sertralina 50 mg 1x/dia, gabapentina 300 mg 8/8 h, sinvastatina 40 mg à noite, omeprazol 20 mg 1x/dia (a filha não sabe a indicação), furosemida 40 mg 1x/dia e alendronato 70 mg semanal. A creatinina de seis meses atrás era 1,3 mg/dL. No primeiro dia de UTI está sonolenta (RASS -1, CAM-ICU negativo), aceitando dieta pastosa entre as sessões de ventilação não invasiva. O plantonista transcreveu a lista de casa junto com a prescrição de admissão, e a enfermagem aguarda a validação farmacêutica antes do aprazamento.",
+  "sinais": [
+   [
+    "PA",
+    "134/78 mmHg"
+   ],
+   [
+    "FC",
+    "118 bpm (FA)"
+   ],
+   [
+    "FR",
+    "26 irpm"
+   ],
+   [
+    "SpO2",
+    "93% (VNI, FiO2 0,4)"
+   ],
+   [
+    "Temp.",
+    "37,9 °C"
+   ],
+   [
+    "RASS",
+    "-1"
+   ],
+   [
+    "Diurese",
+    "0,6 mL/kg/h"
+   ]
+  ],
+  "labs": [
+   [
+    "Creatinina",
+    "1,6 mg/dL",
+    "0,5–1,1"
+   ],
+   [
+    "TFG CKD-EPI 2021",
+    "32 mL/min/1,73 m²",
+    "≥90"
+   ],
+   [
+    "Ureia",
+    "68 mg/dL",
+    "15–45"
+   ],
+   [
+    "Potássio",
+    "4,3 mEq/L",
+    "3,5–5,0"
+   ],
+   [
+    "Sódio",
+    "136 mEq/L",
+    "135–145"
+   ],
+   [
+    "Hemoglobina",
+    "11,8 g/dL",
+    "12–16"
+   ],
+   [
+    "Plaquetas",
+    "214.000/mm³",
+    "150.000–450.000"
+   ],
+   [
+    "Leucócitos",
+    "16.800/mm³",
+    "4.000–11.000"
+   ],
+   [
+    "PCR",
+    "212 mg/L",
+    "<5"
+   ],
+   [
+    "INR",
+    "1,3",
+    "0,9–1,2"
+   ],
+   [
+    "TSH",
+    "2,1 mUI/L",
+    "0,4–4,5"
+   ]
+  ],
+  "prescricao": [
+   {
+    "item": "Ceftriaxona",
+    "dose": "1 g",
+    "via": "IV",
+    "freq": "24/24 h",
+    "obs": "em 100 mL de SF 0,9%, 30 min"
+   },
+   {
+    "item": "Claritromicina",
+    "dose": "500 mg",
+    "via": "IV",
+    "freq": "12/12 h",
+    "obs": "em 250 mL de SF 0,9%, 60 min"
+   },
+   {
+    "item": "Enoxaparina",
+    "dose": "40 mg",
+    "via": "SC",
+    "freq": "1x/dia",
+    "obs": "profilaxia de TEV (protocolo)"
+   },
+   {
+    "item": "Apixabana",
+    "dose": "5 mg",
+    "via": "VO",
+    "freq": "12/12 h",
+    "obs": "uso domiciliar"
+   },
+   {
+    "item": "Pantoprazol",
+    "dose": "40 mg",
+    "via": "IV",
+    "freq": "1x/dia",
+    "obs": "profilaxia de úlcera de estresse"
+   },
+   {
+    "item": "Omeprazol",
+    "dose": "20 mg",
+    "via": "VO",
+    "freq": "1x/dia",
+    "obs": "uso domiciliar"
+   },
+   {
+    "item": "Levotiroxina",
+    "dose": "75 mcg",
+    "via": "VO",
+    "freq": "1x/dia às 6 h",
+    "obs": "em jejum"
+   },
+   {
+    "item": "Sertralina",
+    "dose": "50 mg",
+    "via": "VO",
+    "freq": "1x/dia",
+    "obs": "uso domiciliar"
+   },
+   {
+    "item": "Gabapentina",
+    "dose": "300 mg",
+    "via": "VO",
+    "freq": "8/8 h",
+    "obs": "uso domiciliar"
+   },
+   {
+    "item": "Sinvastatina",
+    "dose": "40 mg",
+    "via": "VO",
+    "freq": "1x/dia à noite",
+    "obs": "uso domiciliar"
+   },
+   {
+    "item": "Furosemida",
+    "dose": "20 mg",
+    "via": "IV",
+    "freq": "1x/dia",
+    "obs": ""
+   },
+   {
+    "item": "Dipirona",
+    "dose": "1 g",
+    "via": "IV",
+    "freq": "6/6 h se febre ou dor",
+    "obs": ""
+   }
+  ],
+  "tarefa": "Avalie a prescrição do dia, identifique os problemas relacionados a medicamentos e proponha as intervenções à equipe, em ordem de prioridade.",
+  "gabarito": [
+   {
+    "problema": "Duplicidade de anticoagulação: apixabana em dose terapêutica associada a enoxaparina profilática",
+    "tipo": "Necessidade: medicamento desnecessário",
+    "evidencia": "Apixabana transcrita do uso domiciliar e enoxaparina 40 mg SC do protocolo de profilaxia de TEV prescritas ao mesmo tempo. A paciente já está anticoagulada para FA, o que dispensa profilaxia farmacológica adicional e soma risco de sangramento em idosa de baixo peso com TFG reduzida.",
+    "intervencao": "Suspender a enoxaparina e registrar no protocolo de profilaxia que a paciente está em anticoagulação plena, para o item não reaparecer na prescrição seguinte.",
+    "prioridade": "alta"
+   },
+   {
+    "problema": "Apixabana em dose plena apesar de preencher os critérios de redução da bula",
+    "tipo": "Segurança: dose alta",
+    "evidencia": "Idade 82 anos (≥80), peso 56 kg (≤60 kg) e creatinina 1,6 mg/dL (≥1,5 mg/dL): três de três critérios, quando bastam dois para reduzir a dose na FA não valvar.",
+    "intervencao": "Propor apixabana 2,5 mg VO 12/12 h. O critério da bula usa creatinina, idade e peso, não a TFG; a TFG pelo CKD-EPI 2021 (32 mL/min/1,73 m², cerca de 28 mL/min sem indexar para a superfície corporal de 1,54 m²) só reforça o risco. Registrar que a dose domiciliar estava acima do recomendado, para corrigir na alta.",
+    "prioridade": "alta"
+   },
+   {
+    "problema": "Omissão não intencional do betabloqueador de uso contínuo em FA com resposta ventricular elevada",
+    "tipo": "Necessidade: necessita de medicamento adicional",
+    "evidencia": "Succinato de metoprolol 50 mg/dia confirmado com a filha e ausente da prescrição, sem justificativa registrada. FC 118 bpm em FA, PA 134/78 mmHg, sem vasopressor. A interrupção abrupta de betabloqueador favorece taquicardia de rebote.",
+    "intervencao": "Discutir a reintrodução do succinato de metoprolol 25 mg VO 1x/dia (metade da dose domiciliar), titulando pela FC e pela PA. Se a equipe preferir manter suspenso pela pneumonia, que a decisão fique documentada como omissão intencional.",
+    "prioridade": "média"
+   },
+   {
+    "problema": "Gabapentina em dose não ajustada à função renal, em idosa sonolenta",
+    "tipo": "Segurança: dose alta",
+    "evidencia": "Gabapentina 900 mg/dia. TFG CKD-EPI 2021 de 32 mL/min/1,73 m², cerca de 28 mL/min não indexada, e Cockcroft-Gault de 24 mL/min: pela bula, depuração de 15 a 29 mL/min comporta 200 a 700 mg/dia em dose única diária. RASS -1 e idade avançada; gabapentinoides em insuficiência renal constam dos critérios de Beers 2023.",
+    "intervencao": "Reduzir para 300 mg VO 1x/dia à noite e reavaliar dor e sedação diariamente. Não suspender de forma abrupta (risco de abstinência). Explicar à equipe que, para dose, vale a TFG não indexada (KDIGO 2024), que aqui cai na faixa de 15 a 29 mL/min.",
+    "prioridade": "média"
+   },
+   {
+    "problema": "Interação entre claritromicina e sinvastatina",
+    "tipo": "Segurança: reação adversa ou interação",
+    "evidencia": "Claritromicina é inibidor potente do CYP3A4, e a bula da sinvastatina contraindica a associação pelo risco de miopatia e rabdomiólise. Idade, baixo peso e TFG reduzida somam risco.",
+    "intervencao": "Trocar claritromicina por azitromicina 500 mg IV 1x/dia, opção equivalente na associação com betalactâmico (ATS/IDSA 2019), o que também elimina o aumento de exposição à apixabana. Se a claritromicina for mantida, suspender a sinvastatina durante o curso e reiniciar após o término.",
+    "prioridade": "alta"
+   },
+   {
+    "problema": "Duplicidade de inibidor de bomba de prótons",
+    "tipo": "Necessidade: medicamento desnecessário",
+    "evidencia": "Omeprazol VO de uso domiciliar e pantoprazol IV como profilaxia de úlcera de estresse. A paciente não está em ventilação invasiva nem tem coagulopatia, e aceita dieta; o IBP crônico não tem indicação conhecida.",
+    "intervencao": "Manter apenas omeprazol 20 mg VO e suspender o pantoprazol IV. Anotar para a alta a revisão da indicação do IBP crônico (desprescrição), lembrando a associação com pneumonia e com infecção por Clostridioides difficile.",
+    "prioridade": "baixa"
+   }
+  ],
+  "discussao": "A conciliação na admissão compara a lista domiciliar, obtida de pelo menos duas fontes (paciente ou família, sacola de medicamentos, receitas, prontuário anterior), com a prescrição hospitalar, e classifica cada diferença como intencional (documentada) ou não intencional. Aqui a transcrição automática da lista gerou os dois tipos clássicos de erro: duplicidade (anticoagulante e IBP em dobro) e omissão (betabloqueador). A suspensão do alendronato é intencional e correta, porque a paciente não consegue ficar sentada 30 minutos após a dose, e deve constar na evolução.\n\nA função renal ilustra a diferença entre estimar TFG e ajustar dose. O CKD-EPI 2021 fornece 32 mL/min/1,73 m²; desindexando pela superfície corporal (32 × 1,54 / 1,73), a TFG é de cerca de 28 mL/min, valor que o KDIGO recomenda usar para dose. Bulas antigas, como a da gabapentina, foram escritas com Cockcroft-Gault (24 mL/min nesta paciente). A apixabana tem critério próprio, que não depende de nenhuma das equações.\n\nMonitorizar FC e PA após reintrodução do betabloqueador, RASS e CAM-ICU a cada turno (gabapentina, idade, infecção), hemoglobina e sinais de sangramento, e CPK se surgir mialgia. Na alta, a reconciliação deve devolver à família a lista corrigida: apixabana 2,5 mg 12/12 h, gabapentina ajustada, estatina e IBP revistos e alendronato retomado quando a paciente voltar a deambular.",
+  "leituras": [
+   "conciliacao-medicamentosa",
+   "acompanhamento-farmacoterapeutico",
+   "dose-disfuncao-renal",
+   "anticoagulantes-reversao",
+   "interacoes-cyp-transportadores",
+   "profilaxias-uti"
+  ],
+  "fontes": [
+   "Metlay JP et al. Diagnosis and treatment of adults with community-acquired pneumonia (ATS/IDSA). Am J Respir Crit Care Med 2019;200:e45-e67",
+   "Joglar JA et al. 2023 ACC/AHA/ACCP/HRS Guideline for the Diagnosis and Management of Atrial Fibrillation. Circulation 2024;149:e1-e156",
+   "American Geriatrics Society 2023 Updated AGS Beers Criteria. J Am Geriatr Soc 2023;71:2052-2081",
+   "Inker LA et al. New creatinine- and cystatin C-based equations to estimate GFR without race. N Engl J Med 2021;385:1737-1749",
+   "KDIGO 2024 Clinical Practice Guideline for the Evaluation and Management of CKD. Kidney Int 2024;105(4S):S117-S314",
+   "Bulas de apixabana, gabapentina e sinvastatina (bulário eletrônico da ANVISA)"
+  ]
+ },
+ {
+  "id": "caso-02",
+  "titulo": "Medicamentos por sonda nasoenteral após AVC isquêmico",
+  "area": "inter",
+  "nivel": "basico",
+  "resumo": "Paciente com disfagia após AVC isquêmico, em dieta enteral contínua, com seis medicamentos orais prescritos para trituração pela sonda.",
+  "paciente": {
+   "idade": 68,
+   "sexo": "M",
+   "peso": 74,
+   "altura": 170,
+   "alergias": "Dipirona (urticária)"
+  },
+  "historia": "Aposentado, hipertenso, diabético tipo 2 e com epilepsia estrutural desde um AVC antigo, admitido há três dias com novo AVC isquêmico extenso em território de artéria cerebral média esquerda, fora da janela para trombólise e trombectomia. Evoluiu com afasia, hemiplegia direita e disfagia grave; foi passada sonda nasoenteral 12 Fr em posição pós-pilórica, confirmada por radiografia, com dieta polimérica contínua a 60 mL/h, 24 h por dia. Não está intubado. Uso domiciliar: fenitoína 100 mg 8/8 h (sem crises há dois anos), nifedipino de liberação prolongada (retard) 20 mg 12/12 h, metformina de liberação prolongada 500 mg dois comprimidos no jantar, sinvastatina 40 mg e omeprazol 20 mg. Ontem foi diagnosticada infecção urinária por Escherichia coli sensível a ciprofloxacino, e a equipe optou pela via enteral. Hoje às 8 h todos os comprimidos foram triturados juntos e dados pela sonda; às 9 h a PA caiu de 152/88 para 96/58 mmHg, com piora do rebaixamento, que melhorou após 500 mL de cristaloide. Ontem à noite a sonda obstruiu e foi desobstruída com água morna. A fenitoína sérica colhida hoje antes da dose da manhã veio abaixo da faixa, com albumina normal.",
+  "sinais": [
+   [
+    "PA",
+    "96/58 mmHg às 9 h (152/88 às 7 h)"
+   ],
+   [
+    "FC",
+    "88 bpm"
+   ],
+   [
+    "Temp.",
+    "37,6 °C"
+   ],
+   [
+    "Glasgow",
+    "11 (afásico)"
+   ],
+   [
+    "Glicemia capilar",
+    "212 mg/dL"
+   ],
+   [
+    "Diurese",
+    "1 mL/kg/h"
+   ]
+  ],
+  "labs": [
+   [
+    "Fenitoína total",
+    "6,8 mcg/mL",
+    "10–20"
+   ],
+   [
+    "Albumina",
+    "3,8 g/dL",
+    "3,5–5,2"
+   ],
+   [
+    "Creatinina",
+    "1,2 mg/dL",
+    "0,7–1,3"
+   ],
+   [
+    "TFG CKD-EPI 2021",
+    "66 mL/min/1,73 m²",
+    "≥90"
+   ],
+   [
+    "Sódio",
+    "139 mEq/L",
+    "135–145"
+   ],
+   [
+    "Potássio",
+    "4,1 mEq/L",
+    "3,5–5,0"
+   ],
+   [
+    "Glicemia",
+    "214 mg/dL",
+    "70–99"
+   ],
+   [
+    "HbA1c",
+    "7,9%",
+    "<5,7"
+   ]
+  ],
+  "prescricao": [
+   {
+    "item": "Dieta enteral polimérica 1,2 kcal/mL",
+    "dose": "60 mL/h",
+    "via": "SNE",
+    "freq": "contínua 24 h",
+    "obs": ""
+   },
+   {
+    "item": "Fenitoína 100 mg comprimido",
+    "dose": "100 mg",
+    "via": "SNE",
+    "freq": "8/8 h",
+    "obs": "triturar; dieta contínua"
+   },
+   {
+    "item": "Nifedipino retard 20 mg",
+    "dose": "20 mg",
+    "via": "SNE",
+    "freq": "12/12 h",
+    "obs": "triturar"
+   },
+   {
+    "item": "Metformina de liberação prolongada 500 mg",
+    "dose": "1.000 mg",
+    "via": "SNE",
+    "freq": "1x/dia no jantar",
+    "obs": "triturar os dois comprimidos"
+   },
+   {
+    "item": "Ciprofloxacino 500 mg comprimido",
+    "dose": "500 mg",
+    "via": "SNE",
+    "freq": "12/12 h",
+    "obs": "triturar; D2 de 7"
+   },
+   {
+    "item": "Omeprazol 20 mg cápsula",
+    "dose": "20 mg",
+    "via": "SNE",
+    "freq": "1x/dia",
+    "obs": "abrir a cápsula, triturar os grânulos e diluir em água"
+   },
+   {
+    "item": "Sucralfato suspensão",
+    "dose": "1 g",
+    "via": "SNE",
+    "freq": "6/6 h",
+    "obs": "proteção gástrica"
+   },
+   {
+    "item": "Sinvastatina",
+    "dose": "40 mg",
+    "via": "SNE",
+    "freq": "1x/dia à noite",
+    "obs": "triturar"
+   },
+   {
+    "item": "AAS",
+    "dose": "100 mg",
+    "via": "SNE",
+    "freq": "1x/dia",
+    "obs": "triturar"
+   },
+   {
+    "item": "Enoxaparina",
+    "dose": "40 mg",
+    "via": "SC",
+    "freq": "1x/dia",
+    "obs": ""
+   },
+   {
+    "item": "Insulina regular",
+    "dose": "conforme escala",
+    "via": "SC",
+    "freq": "6/6 h",
+    "obs": "glicemia capilar 6/6 h"
+   },
+   {
+    "item": "Orientação de enfermagem",
+    "dose": "",
+    "via": "",
+    "freq": "",
+    "obs": "triturar os comprimidos da manhã juntos e administrar pela sonda às 8 h"
+   }
+  ],
+  "tarefa": "Avalie a prescrição do dia, identifique os problemas relacionados a medicamentos e proponha as intervenções à equipe, em ordem de prioridade.",
+  "gabarito": [
+   {
+    "problema": "Nifedipino de liberação prolongada triturado",
+    "tipo": "Segurança: dose alta",
+    "evidencia": "A trituração destrói a matriz de liberação e entrega de uma vez a dose planejada para 12 h. Queda da PA de 152/88 para 96/58 mmHg uma hora após a administração, com piora neurológica, em paciente com AVC isquêmico extenso, no qual a hipotensão ameaça a área de penumbra.",
+    "intervencao": "Suspender o nifedipino retard pela sonda. Se houver indicação de anti-hipertensivo (o AHA/ASA 2019 considera razoável reiniciar após a fase aguda em paciente neurologicamente estável com PA ≥140/90 mmHg), usar anlodipino 5 mg 1x/dia, cujo comprimido comum pode ser triturado, com meta pressórica definida pela neurologia.",
+    "prioridade": "alta"
+   },
+   {
+    "problema": "Fenitoína administrada com dieta enteral contínua, com nível subterapêutico",
+    "tipo": "Efetividade: dose baixa",
+    "evidencia": "Fenitoína total 6,8 mcg/mL com albumina de 3,8 g/dL (não há necessidade de correção pela albumina). A dieta contínua reduz a absorção da fenitoína por adsorção a componentes da fórmula e ao PVC da sonda. Paciente epiléptico, com risco de crise sobre lesão cortical aguda.",
+    "intervencao": "Concentrar a dose em 150 mg 12/12 h e pausar a dieta 2 h antes e 2 h depois de cada dose, lavando a sonda com 30 mL de água antes e depois; recalcular a vazão da dieta para as 16 h restantes (1.440 mL em 16 h = 90 mL/h). Repetir o nível em 5 a 7 dias. Não aumentar a dose antes de resolver a absorção: a cinética é não linear, e o nível pode subir desproporcionalmente quando a interação cessar. Se não for possível pausar a dieta ou houver crise, usar fenitoína IV.",
+    "prioridade": "alta"
+   },
+   {
+    "problema": "Ciprofloxacino triturado com dieta contínua e com sucralfato",
+    "tipo": "Efetividade: dose baixa",
+    "evidencia": "Quinolonas formam quelatos com cálcio, magnésio e ferro da fórmula enteral e com o alumínio do sucralfato, o que reduz de forma importante a absorção. Sonda pós-pilórica e infecção urinária em tratamento.",
+    "intervencao": "Preferir ciprofloxacino 400 mg IV 12/12 h ou outro agente ativo pelo antibiograma enquanto a dieta for contínua. Se a via enteral for mantida, pausar a dieta 1 h antes e 2 h depois de cada dose e nunca administrar junto com sucralfato ou suplementos minerais.",
+    "prioridade": "alta"
+   },
+   {
+    "problema": "Omeprazol com grânulos triturados, sem indicação clara",
+    "tipo": "Efetividade: medicamento inefetivo",
+    "evidencia": "A trituração destrói o revestimento gastrorresistente dos grânulos e forma pasta que obstrui sondas finas; a sonda de 12 Fr obstruiu ontem. O paciente não está em ventilação mecânica nem tem coagulopatia, e o IBP domiciliar não tem indicação documentada.",
+    "intervencao": "Suspender o omeprazol. Se a equipe quiser manter supressão ácida, usar pantoprazol IV ou suspensão extemporânea de omeprazol com bicarbonato de sódio padronizada pela farmácia, nunca grânulos triturados.",
+    "prioridade": "média"
+   },
+   {
+    "problema": "Metformina de liberação prolongada triturada",
+    "tipo": "Segurança: dose alta",
+    "evidencia": "Comprimido de liberação prolongada perde o controle de liberação quando triturado, com pico maior e mais efeitos gastrointestinais. No paciente internado com dieta contínua e glicemia de 212 mg/dL, a insulina é a terapia preferida (ADA 2026).",
+    "intervencao": "Suspender a metformina XR. Controlar a glicemia com insulina basal (por exemplo, NPH ou glargina) mais correção, com meta de 140 a 180 mg/dL. Se a equipe insistir em metformina, usar comprimido de liberação imediata 500 mg 12/12 h triturado, com TFG de 66 mL/min/1,73 m².",
+    "prioridade": "média"
+   },
+   {
+    "problema": "Sucralfato sem indicação, em paciente com dieta enteral",
+    "tipo": "Necessidade: medicamento desnecessário",
+    "evidencia": "Sem úlcera ou sangramento documentado e já com IBP prescrito. Sucralfato com nutrição enteral forma bezoar e obstrui a sonda, e o alumínio reduz a absorção de ciprofloxacino e de fenitoína.",
+    "intervencao": "Suspender o sucralfato.",
+    "prioridade": "média"
+   }
+  ],
+  "discussao": "Antes de liberar qualquer medicamento pela sonda, o farmacêutico confere três pontos: a forma farmacêutica pode ser triturada ou aberta; a posição da ponta da sonda (gástrica ou pós-pilórica) altera absorção e tolerância; e há interação com a dieta. Não se trituram formas de liberação prolongada (retard, XR, CR, OROS), gastrorresistentes, sublinguais e fármacos perigosos, e cada medicamento deve ser preparado e administrado separadamente, com lavagem de 15 a 30 mL de água antes, entre e depois das doses, nunca misturado na bolsa de dieta. A orientação de triturar todos os comprimidos juntos, presente nesta prescrição, é erro de processo que deve ser corrigido com a enfermagem.\n\nFenitoína e ciprofloxacino são os exemplos clássicos de interação com a dieta. A fenitoína ainda tem cinética de Michaelis-Menten: pequenas mudanças de dose ou de biodisponibilidade provocam grandes mudanças de nível, por isso a primeira medida é regularizar a administração, e só depois ajustar dose com novo nível no estado de equilíbrio. Ciprofloxacino também pode alterar o nível de fenitoína, o que reforça a necessidade de dosagem.\n\nMonitorizar PA a cada hora nas próximas 24 h, glicemia capilar a cada 6 h, nível de fenitoína em 5 a 7 dias, resposta clínica da infecção urinária e patência da sonda. Revisar a lista a cada troca de via: quando a deglutição for liberada, reavaliar as formulações originais.",
+  "leituras": [
+   "administracao-sondas",
+   "anticonvulsivantes-status",
+   "interacoes-antimicrobianos",
+   "monitorizacao-terapeutica",
+   "insulina-corticoides",
+   "terapia-nutricional"
+  ],
+  "fontes": [
+   "White R, Bradnam V. Handbook of Drug Administration via Enteral Feeding Tubes. 3ª ed. Pharmaceutical Press, 2015",
+   "Boullata JI et al. ASPEN Safe Practices for Enteral Nutrition Therapy. JPEN J Parenter Enteral Nutr 2017;41:15-103",
+   "Powers WJ et al. Guidelines for the Early Management of Patients With Acute Ischemic Stroke: 2019 Update. Stroke 2019;50:e344-e418",
+   "American Diabetes Association. Standards of Care in Diabetes 2026, seção Diabetes Care in the Hospital. Diabetes Care 2026",
+   "Bulas de fenitoína, ciprofloxacino e nifedipino retard (bulário eletrônico da ANVISA)"
+  ]
+ },
+ {
+  "id": "caso-03",
+  "titulo": "Choque séptico abdominal no pós-operatório: vasopressores, vazões e antimicrobianos",
+  "area": "classes",
+  "nivel": "basico",
+  "resumo": "Pós-operatório de colectomia por diverticulite perfurada com peritonite fecal, em choque séptico com noradrenalina em dose crescente.",
+  "paciente": {
+   "idade": 59,
+   "sexo": "F",
+   "peso": 70,
+   "altura": 162,
+   "alergias": "Nega"
+  },
+  "historia": "Professora, hipertensa, com doença diverticular conhecida, operada ontem à noite (laparotomia, colectomia sigmoide e colostomia à Hartmann) por diverticulite perfurada com peritonite fecal. Chegou à UTI intubada, após 2.500 mL de cristaloide no intraoperatório. Nas últimas 6 h, a noradrenalina foi aumentada de forma progressiva para manter a PAM acima de 65 mmHg. O cirurgião considera o foco controlado. O lactato caiu de 4,6 para 3,8 mmol/L. O ecocardiograma à beira do leito não mostra disfunção ventricular importante, e a variação respiratória da veia cava é pequena. Balanço hídrico positivo de 4.100 mL em 18 h. Uso domiciliar: losartana 50 mg e hidroclorotiazida 25 mg, suspensos na admissão. A solução de noradrenalina da unidade é padronizada: quatro ampolas de 4 mg/4 mL (16 mg) em 234 mL de SG 5%, volume final de 250 mL. No momento a bomba está a 28 mL/h. A plantonista acaba de prescrever vasopressina e pede ao farmacêutico que confira as contas antes de a enfermagem instalar. A creatinina subiu de 0,8 mg/dL no pré-operatório para 1,4 mg/dL, e o meropenem foi prescrito com a dose da tabela de ajuste renal.",
+  "sinais": [
+   [
+    "PA",
+    "88/50 mmHg (PAM 63)"
+   ],
+   [
+    "FC",
+    "118 bpm"
+   ],
+   [
+    "Temp.",
+    "38,6 °C"
+   ],
+   [
+    "SpO2",
+    "96% (FiO2 0,5)"
+   ],
+   [
+    "Diurese",
+    "0,3 mL/kg/h (6 h)"
+   ],
+   [
+    "RASS",
+    "-3"
+   ],
+   [
+    "Noradrenalina",
+    "28 mL/h"
+   ]
+  ],
+  "labs": [
+   [
+    "Lactato",
+    "3,8 mmol/L",
+    "<2"
+   ],
+   [
+    "pH",
+    "7,22",
+    "7,35–7,45"
+   ],
+   [
+    "Bicarbonato",
+    "14 mEq/L",
+    "22–26"
+   ],
+   [
+    "Cloro",
+    "116 mEq/L",
+    "98–107"
+   ],
+   [
+    "Sódio",
+    "141 mEq/L",
+    "135–145"
+   ],
+   [
+    "Potássio",
+    "4,6 mEq/L",
+    "3,5–5,0"
+   ],
+   [
+    "Creatinina",
+    "1,4 mg/dL (0,8 no pré-operatório)",
+    "0,5–1,1"
+   ],
+   [
+    "TFG CKD-EPI 2021",
+    "43 mL/min/1,73 m² (creatinina fora do equilíbrio)",
+    "≥90"
+   ],
+   [
+    "Leucócitos",
+    "23.400/mm³",
+    "4.000–11.000"
+   ],
+   [
+    "Plaquetas",
+    "132.000/mm³",
+    "150.000–450.000"
+   ],
+   [
+    "Glicemia",
+    "188 mg/dL",
+    "70–99"
+   ]
+  ],
+  "prescricao": [
+   {
+    "item": "Meropenem",
+    "dose": "1 g",
+    "via": "IV",
+    "freq": "12/12 h",
+    "obs": "em 100 mL de SF 0,9%, 30 min; ajustado para TFG"
+   },
+   {
+    "item": "Metronidazol",
+    "dose": "500 mg",
+    "via": "IV",
+    "freq": "8/8 h",
+    "obs": ""
+   },
+   {
+    "item": "Noradrenalina 16 mg + SG 5% 234 mL (64 mcg/mL)",
+    "dose": "0,1 a 1 mcg/kg/min",
+    "via": "IV contínua",
+    "freq": "",
+    "obs": "titular para PAM ≥65 mmHg; bomba a 28 mL/h"
+   },
+   {
+    "item": "Vasopressina 20 UI + SF 0,9% 100 mL (0,2 UI/mL)",
+    "dose": "0,03 UI/min",
+    "via": "IV contínua",
+    "freq": "",
+    "obs": "correr a 0,9 mL/h"
+   },
+   {
+    "item": "Bicarbonato de sódio 8,4%",
+    "dose": "100 mL",
+    "via": "IV",
+    "freq": "agora",
+    "obs": "em 1 h"
+   },
+   {
+    "item": "SF 0,9%",
+    "dose": "1.000 mL",
+    "via": "IV",
+    "freq": "8/8 h",
+    "obs": "manutenção"
+   },
+   {
+    "item": "Fentanil 2.500 mcg + SF 0,9% 200 mL (10 mcg/mL)",
+    "dose": "100 mcg/h",
+    "via": "IV contínua",
+    "freq": "",
+    "obs": "10 mL/h"
+   },
+   {
+    "item": "Propofol 1%",
+    "dose": "10 mL/h",
+    "via": "IV contínua",
+    "freq": "",
+    "obs": ""
+   },
+   {
+    "item": "Omeprazol",
+    "dose": "40 mg",
+    "via": "IV",
+    "freq": "1x/dia",
+    "obs": ""
+   },
+   {
+    "item": "Enoxaparina",
+    "dose": "40 mg",
+    "via": "SC",
+    "freq": "1x/dia",
+    "obs": ""
+   }
+  ],
+  "tarefa": "Avalie a prescrição do dia, identifique os problemas relacionados a medicamentos e proponha as intervenções à equipe, em ordem de prioridade.",
+  "gabarito": [
+   {
+    "problema": "Vazão da vasopressina calculada com erro de dez vezes",
+    "tipo": "Efetividade: dose baixa",
+    "evidencia": "0,03 UI/min × 60 min = 1,8 UI/h; 1,8 UI/h ÷ 0,2 UI/mL = 9 mL/h. A prescrição de 0,9 mL/h entregaria 0,003 UI/min, dose sem efeito vasopressor.",
+    "intervencao": "Corrigir para 9 mL/h (0,03 UI/min), dose fixa, sem titulação; a vasopressina entra para poupar noradrenalina, como sugere o Surviving Sepsis 2026 quando a noradrenalina está em escalada. Pedir dupla checagem da programação da bomba, por se tratar de medicamento de alta vigilância.",
+    "prioridade": "alta"
+   },
+   {
+    "problema": "Choque com noradrenalina elevada sem corticosteroide",
+    "tipo": "Necessidade: necessita de medicamento adicional",
+    "evidencia": "28 mL/h × 64 mcg/mL = 1.792 mcg/h = 29,9 mcg/min; ÷ 70 kg = 0,43 mcg/kg/min, em escalada há 6 h. A diretriz de 2026 sugere corticosteroide IV no choque séptico com necessidade persistente de vasopressor.",
+    "intervencao": "Propor hidrocortisona 50 mg IV 6/6 h (200 mg/dia), dose adotada pela atualização da SCCM de 2024. Monitorizar glicemia a cada 4 h e sódio; suspender quando o vasopressor for desligado.",
+    "prioridade": "alta"
+   },
+   {
+    "problema": "Meropenem em dose reduzida e infusão curta nas primeiras 24 h de sepse",
+    "tipo": "Efetividade: dose baixa",
+    "evidencia": "A creatinina subiu de 0,8 para 1,4 mg/dL em menos de 24 h: não está em equilíbrio, e a TFG estimada de 43 mL/min/1,73 m² não é interpretável. Reduzir dose de betalactâmico no primeiro dia de choque, com volume de distribuição aumentado, arrisca subexposição. Infusão em 30 min contraria a recomendação forte de infusão prolongada do Surviving Sepsis 2026.",
+    "intervencao": "Meropenem 1 g IV 8/8 h em infusão estendida de 3 h, sem redução nas primeiras 24 a 48 h, preparando cada dose imediatamente antes de instalar (estabilidade limitada em temperatura ambiente). Reavaliar a dose quando a função renal se estabilizar.",
+    "prioridade": "alta"
+   },
+   {
+    "problema": "Metronidazol associado a carbapenêmico",
+    "tipo": "Necessidade: medicamento desnecessário",
+    "evidencia": "Meropenem já tem atividade excelente contra anaeróbios, inclusive Bacteroides fragilis. A associação não amplia o espectro e acrescenta volume, custo e eventos adversos.",
+    "intervencao": "Suspender o metronidazol.",
+    "prioridade": "média"
+   },
+   {
+    "problema": "Bicarbonato de sódio para acidose lática com pH 7,22",
+    "tipo": "Necessidade: medicamento desnecessário",
+    "evidencia": "A diretriz de sepse sugere não usar bicarbonato para melhorar a hemodinâmica ou reduzir vasopressor em acidose lática por hipoperfusão com pH ≥7,2; o benefício observado restringe-se a pH ≤7,2 com lesão renal aguda grave. O bicarbonato acrescenta sódio e volume e reduz o cálcio ionizado.",
+    "intervencao": "Suspender o bicarbonato e tratar a causa (perfusão, foco já controlado). Reavaliar se o pH cair abaixo de 7,2 com LRA KDIGO 2 ou 3.",
+    "prioridade": "média"
+   },
+   {
+    "problema": "SF 0,9% de manutenção em paciente hiperclorêmica com balanço muito positivo",
+    "tipo": "Segurança: reação adversa ou interação",
+    "evidencia": "Cloro 116 mEq/L e bicarbonato 14 mEq/L (acidose hiperclorêmica somada à lática), balanço de +4.100 mL em 18 h e veia cava sem variação respiratória. A diretriz de 2026 sugere cristaloide balanceado em vez de SF 0,9%.",
+    "intervencao": "Suspender o SF 0,9% de manutenção, contabilizando o volume dos diluentes e infusões contínuas. Para novas provas de volume, usar Ringer lactato apenas se houver resposta a fluido em medida dinâmica.",
+    "prioridade": "média"
+   }
+  ],
+  "discussao": "O cálculo de vazão segue sempre a mesma lógica: dose por minuto (mcg/kg/min × peso) multiplicada por 60 dá a dose por hora; dividida pela concentração da solução, dá mL/h. Para esta solução de 64 mcg/mL e 70 kg, cada 0,1 mcg/kg/min corresponde a 6,6 mL/h, número que a equipe pode usar como conferência rápida. Confira no rótulo se a concentração da ampola está expressa como noradrenalina base ou como sal (hemitartarato), porque a diferença é de cerca de duas vezes. A vasopressina é usada em dose fixa de 0,03 UI/min; doses acima de 0,04 UI/min aumentam isquemia digital e mesentérica.\n\nNo antimicrobiano, as primeiras 24 a 48 h de choque séptico têm volume de distribuição aumentado e creatinina que ainda não reflete a função renal real. A regra prática é dar a dose plena no início e ajustar depois, com creatinina estável. A infusão estendida aumenta o tempo acima da CIM, alvo farmacodinâmico dos betalactâmicos.\n\nMonitorizar PAM contínua, lactato a cada 2 a 4 h, diurese horária, glicemia e sódio com a hidrocortisona, perfusão de extremidades com a vasopressina e balanço hídrico. Com as culturas, descalonar (recomendação reforçada em 2026) e definir a duração curta após controle do foco.",
+  "leituras": [
+   "drogas-vasoativas",
+   "calculos-farmaceuticos",
+   "sepse-choque-septico",
+   "fluidos-diureticos",
+   "pkpd-antimicrobianos",
+   "outras-infeccoes-uti"
+  ],
+  "fontes": [
+   "Prescott HC et al. Surviving Sepsis Campaign: International Guidelines for Management of Sepsis and Septic Shock 2026. Crit Care Med 2026;54:725-812",
+   "Evans L et al. Surviving Sepsis Campaign: International Guidelines for Management of Sepsis and Septic Shock 2021. Crit Care Med 2021;49:e1063-e1143",
+   "Chaudhuri D et al. 2024 Focused Update: Guidelines on Use of Corticosteroids in Sepsis, ARDS, and Community-Acquired Pneumonia. Crit Care Med 2024;52:e219-e233",
+   "Solomkin JS et al. Diagnosis and management of complicated intra-abdominal infection in adults and children (SIS/IDSA). Clin Infect Dis 2010;50:133-164"
+  ]
+ },
+ {
+  "id": "caso-04",
+  "titulo": "Cetoacidose diabética grave com potássio baixo na admissão",
+  "area": "classes",
+  "nivel": "basico",
+  "resumo": "Jovem com diabetes tipo 1 em cetoacidose grave, admitido com insulina e bicarbonato já correndo e potássio de 3,2 mEq/L.",
+  "paciente": {
+   "idade": 23,
+   "sexo": "M",
+   "peso": 62,
+   "altura": 175,
+   "alergias": "Nega"
+  },
+  "historia": "Estudante universitário, diabético tipo 1 há nove anos, em uso de insulina glargina 22 UI à noite e insulina asparte por contagem de carboidratos. Há três dias com vômitos, dor abdominal e poliúria após quadro gripal; parou a insulina por não estar se alimentando. Chegou ao pronto-socorro taquipneico, desidratado e sonolento, e a gasometria confirmou cetoacidose grave. Recebeu 1.000 mL de SF 0,9% na primeira hora e, antes de sair o resultado do potássio, foi iniciada infusão contínua de insulina regular; também foi prescrito bicarbonato de sódio. Foi transferido para a UTI 90 minutos depois, com a insulina e o bicarbonato correndo e o potássio recém-liberado pelo laboratório. Não há foco infeccioso bacteriano evidente e a radiografia de tórax é normal. O eletrocardiograma mostra ritmo sinusal com ondas U discretas. A prescrição de admissão da UTI repete a do pronto-socorro, com a glargina suspensa até resolver a cetoacidose, potássio condicionado a um item se necessário e glicemia capilar programada a cada 4 h.",
+  "sinais": [
+   [
+    "PA",
+    "102/64 mmHg"
+   ],
+   [
+    "FC",
+    "124 bpm"
+   ],
+   [
+    "FR",
+    "32 irpm (Kussmaul)"
+   ],
+   [
+    "Temp.",
+    "36,8 °C"
+   ],
+   [
+    "Glasgow",
+    "14"
+   ],
+   [
+    "Diurese",
+    "1,2 mL/kg/h após hidratação"
+   ],
+   [
+    "Glicemia capilar",
+    "486 mg/dL"
+   ]
+  ],
+  "labs": [
+   [
+    "Glicemia",
+    "486 mg/dL",
+    "70–99"
+   ],
+   [
+    "pH venoso",
+    "7,08",
+    "7,32–7,42"
+   ],
+   [
+    "Bicarbonato",
+    "6 mEq/L",
+    "22–26"
+   ],
+   [
+    "Beta-hidroxibutirato",
+    "6,2 mmol/L",
+    "<0,6"
+   ],
+   [
+    "Sódio",
+    "131 mEq/L",
+    "135–145"
+   ],
+   [
+    "Cloro",
+    "96 mEq/L",
+    "98–107"
+   ],
+   [
+    "Ânion gap",
+    "29 mEq/L",
+    "8–12"
+   ],
+   [
+    "Potássio",
+    "3,2 mEq/L",
+    "3,5–5,0"
+   ],
+   [
+    "Fósforo",
+    "2,6 mg/dL",
+    "2,5–4,5"
+   ],
+   [
+    "Magnésio",
+    "1,8 mg/dL",
+    "1,6–2,6"
+   ],
+   [
+    "Creatinina",
+    "1,5 mg/dL",
+    "0,7–1,3"
+   ],
+   [
+    "Ureia",
+    "48 mg/dL",
+    "15–45"
+   ]
+  ],
+  "prescricao": [
+   {
+    "item": "SF 0,9%",
+    "dose": "1.000 mL",
+    "via": "IV",
+    "freq": "1.000 mL/h",
+    "obs": ""
+   },
+   {
+    "item": "Insulina regular 100 UI + SF 0,9% 100 mL (1 UI/mL)",
+    "dose": "0,1 UI/kg/h",
+    "via": "IV contínua",
+    "freq": "",
+    "obs": "6 mL/h, iniciada às 10 h"
+   },
+   {
+    "item": "Bicarbonato de sódio 8,4%",
+    "dose": "150 mL",
+    "via": "IV",
+    "freq": "agora",
+    "obs": "em 1 h, iniciado às 10h15"
+   },
+   {
+    "item": "KCl 19,1% 10 mL + SF 0,9% 100 mL",
+    "dose": "10 mL",
+    "via": "IV",
+    "freq": "se K <3,5 mEq/L",
+    "obs": "infundir em 15 min"
+   },
+   {
+    "item": "Insulina glargina",
+    "dose": "",
+    "via": "SC",
+    "freq": "",
+    "obs": "suspensa até resolução da cetoacidose"
+   },
+   {
+    "item": "Ondansetrona",
+    "dose": "4 mg",
+    "via": "IV",
+    "freq": "8/8 h se náusea",
+    "obs": ""
+   },
+   {
+    "item": "Enoxaparina",
+    "dose": "40 mg",
+    "via": "SC",
+    "freq": "1x/dia",
+    "obs": ""
+   },
+   {
+    "item": "Glicemia capilar",
+    "dose": "",
+    "via": "",
+    "freq": "4/4 h",
+    "obs": ""
+   }
+  ],
+  "tarefa": "Avalie a prescrição do dia, identifique os problemas relacionados a medicamentos e proponha as intervenções à equipe, em ordem de prioridade.",
+  "gabarito": [
+   {
+    "problema": "Insulina em infusão com potássio abaixo de 3,5 mEq/L",
+    "tipo": "Segurança: reação adversa ou interação",
+    "evidencia": "Potássio 3,2 mEq/L e ondas U no ECG. A insulina desloca potássio para dentro das células e pode precipitar hipocalemia grave e arritmia. O consenso de crises hiperglicêmicas de 2024 manda adiar a insulina até o potássio passar de 3,5 mEq/L.",
+    "intervencao": "Pausar a infusão de insulina agora; repor potássio a 10 mEq/h, dosando potássio a cada 1 a 2 h, com ECG contínuo; reiniciar a insulina a 0,1 UI/kg/h (6,2 mL/h da solução de 1 UI/mL) quando o potássio for ≥3,5 mEq/L.",
+    "prioridade": "alta"
+   },
+   {
+    "problema": "Cloreto de potássio concentrado prescrito em infusão rápida",
+    "tipo": "Segurança: dose alta",
+    "evidencia": "KCl 19,1% tem 2,56 mEq/mL: 10 mL = 25,6 mEq. Em 15 min, equivale a cerca de 100 mEq/h, muito acima de qualquer limite seguro, com risco de parada cardíaca. KCl concentrado é medicamento de alta vigilância.",
+    "intervencao": "Substituir por KCl 20 mEq (7,8 mL de KCl 19,1%) em cada 1.000 mL de SF 0,9%, correndo a 500 mL/h, o que fornece 10 mEq/h por veia periférica. Quando o potássio estiver entre 3,5 e 5 mEq/L, manter 20 a 30 mEq por litro de fluido, com meta de 4 a 5 mEq/L.",
+    "prioridade": "alta"
+   },
+   {
+    "problema": "Bicarbonato de sódio com pH 7,08",
+    "tipo": "Necessidade: medicamento desnecessário",
+    "evidencia": "O consenso de 2024 não recomenda bicarbonato de rotina e só o considera com pH <7. O bicarbonato agrava a hipocalemia, acrescenta sódio e pode retardar a depuração de cetonas.",
+    "intervencao": "Interromper o bicarbonato em curso. A acidose corrige com fluido e insulina.",
+    "prioridade": "alta"
+   },
+   {
+    "problema": "Insulina basal suspensa durante a infusão IV",
+    "tipo": "Necessidade: necessita de medicamento adicional",
+    "evidencia": "O consenso de 2024 cita estudos em que glargina em dose baixa (0,15 a 0,3 UI/kg) durante a infusão IV encurta a resolução e reduz hiperglicemia de rebote na transição. O paciente usa glargina 22 UI/dia (0,35 UI/kg).",
+    "intervencao": "Propor glargina 12 UI SC hoje (0,2 UI/kg) e, na transição, retomar o esquema basal-bolus domiciliar com sobreposição de 1 a 2 h entre a primeira dose SC de insulina rápida e o desligamento da bomba.",
+    "prioridade": "média"
+   },
+   {
+    "problema": "Ausência de plano de glicose e de monitorização horária durante a insulina IV",
+    "tipo": "Necessidade: necessita de medicamento adicional",
+    "evidencia": "Com a correção, a glicemia costuma cair antes de a cetoacidose resolver. Sem soro glicosado, a insulina teria de ser interrompida precocemente ou causaria hipoglicemia. Glicemia capilar a cada 4 h é insuficiente para ajustar infusão de insulina.",
+    "intervencao": "Quando a glicemia ficar abaixo de 250 mg/dL, acrescentar SG 5% a 10% e reduzir a insulina para 0,05 UI/kg/h (3,1 mL/h), mantendo até a resolução (cetonemia <0,6 mmol/L e pH ≥7,3 ou bicarbonato ≥18 mEq/L). Glicemia capilar horária e potássio a cada 2 a 4 h.",
+    "prioridade": "média"
+   }
+  ],
+  "discussao": "Na cetoacidose, o potássio sérico costuma estar normal ou alto na chegada porque a acidose e a falta de insulina tiram potássio das células, embora o déficit corporal total seja grande (vômitos, diurese osmótica). Um potássio de 3,2 mEq/L na admissão indica depleção grave: é a situação em que a insulina deve esperar. A insulina, a correção da acidose e o bicarbonato baixam o potássio sérico; o consenso de 2024 descreve queda de 1 a 2 mEq/L nas primeiras 48 h.\n\nO sódio medido de 131 mEq/L precisa ser corrigido pela glicemia (cerca de 1,6 mEq/L para cada 100 mg/dL acima de 100): o sódio corrigido é próximo de 137 mEq/L, e a queda da glicemia deve ser acompanhada de elevação do sódio medido. O ânion gap de 29 mEq/L e o beta-hidroxibutirato guiam a resolução, que depende da depuração de cetonas e não da glicemia.\n\nMonitorizar glicemia a cada hora, potássio a cada 2 a 4 h, gasometria venosa e cetonemia a cada 4 h, fósforo (repor só se <1 mg/dL com fraqueza), estado neurológico e balanço hídrico. Na alta da UTI, revisar a técnica de insulina e as regras para dias de doença com o paciente.",
+  "leituras": [
+   "insulina-corticoides",
+   "endocrino-metabolico",
+   "eletrolitos",
+   "acido-base",
+   "medicamentos-alta-vigilancia",
+   "calculos-farmaceuticos"
+  ],
+  "fontes": [
+   "Umpierrez GE et al. Hyperglycemic Crises in Adults With Diabetes: A Consensus Report. Diabetes Care 2024;47:1257-1275",
+   "American Diabetes Association. Standards of Care in Diabetes 2026. Diabetes Care 2026",
+   "Kraft MD et al. Treatment of electrolyte disorders in adult patients in the intensive care unit. Am J Health Syst Pharm 2005;62:1663-1682"
+  ]
+ },
+ {
+  "id": "caso-05",
+  "titulo": "Obesidade grave e lesão renal aguda no pós-operatório: profilaxia de TEV e ajuste renal",
+  "area": "dose",
+  "nivel": "basico",
+  "resumo": "Mulher com IMC de 52,6 kg/m² no 2º dia após laparotomia, com lesão renal aguda e prescrição de rotina que ignora o peso e a função renal.",
+  "paciente": {
+   "idade": 46,
+   "sexo": "F",
+   "peso": 138,
+   "altura": 162,
+   "alergias": "Nega"
+  },
+  "historia": "Auxiliar administrativa com obesidade grau III, diabetes tipo 2, hipertensão e apneia obstrutiva do sono. Operada há dois dias por hérnia incisional encarcerada com sofrimento de alça (laparotomia, enterectomia segmentar e anastomose primária). Ficou 5 h em sala, com hipotensão intraoperatória e perda sanguínea estimada de 900 mL. Evoluiu com oligúria e elevação da creatinina de 0,8 mg/dL no pré-operatório para 3,1 mg/dL hoje, com potássio normal e sem indicação de diálise. Foi extubada no primeiro dia pós-operatório, está em cateter nasal, sem vasopressor, e ainda não deambulou. Não há sangramento pelo dreno. Sonolenta desde a madrugada, com frequência respiratória de 10 irpm após as doses de morfina, o que a enfermagem atribuiu à apneia do sono. Uso domiciliar: metformina 850 mg 12/12 h, losartana 100 mg e anlodipino 5 mg. O cirurgião reintroduziu a metformina ontem porque a glicemia estava alta e manteve a cefazolina até retirar o dreno. A losartana continua suspensa. Aceita dieta líquida.",
+  "sinais": [
+   [
+    "PA",
+    "142/86 mmHg"
+   ],
+   [
+    "FC",
+    "92 bpm"
+   ],
+   [
+    "FR",
+    "10 irpm"
+   ],
+   [
+    "SpO2",
+    "92% (cateter 3 L/min)"
+   ],
+   [
+    "Temp.",
+    "37,4 °C"
+   ],
+   [
+    "RASS",
+    "-2"
+   ],
+   [
+    "Diurese",
+    "0,3 mL/kg/h (41 mL/h)"
+   ]
+  ],
+  "labs": [
+   [
+    "Creatinina",
+    "3,1 mg/dL (0,8 no pré-operatório)",
+    "0,5–1,1"
+   ],
+   [
+    "TFG CKD-EPI 2021",
+    "18 mL/min/1,73 m²",
+    "≥90"
+   ],
+   [
+    "Ureia",
+    "98 mg/dL",
+    "15–45"
+   ],
+   [
+    "Potássio",
+    "5 mEq/L",
+    "3,5–5,0"
+   ],
+   [
+    "Bicarbonato",
+    "20 mEq/L",
+    "22–26"
+   ],
+   [
+    "Lactato",
+    "1,4 mmol/L",
+    "<2"
+   ],
+   [
+    "Hemoglobina",
+    "10,2 g/dL",
+    "12–16"
+   ],
+   [
+    "Plaquetas",
+    "248.000/mm³",
+    "150.000–450.000"
+   ],
+   [
+    "INR",
+    "1,1",
+    "0,9–1,2"
+   ],
+   [
+    "Glicemia",
+    "246 mg/dL",
+    "70–99"
+   ]
+  ],
+  "prescricao": [
+   {
+    "item": "Enoxaparina",
+    "dose": "40 mg",
+    "via": "SC",
+    "freq": "1x/dia",
+    "obs": "profilaxia de TEV"
+   },
+   {
+    "item": "Cefazolina",
+    "dose": "1 g",
+    "via": "IV",
+    "freq": "8/8 h",
+    "obs": "profilaxia cirúrgica até retirada do dreno; D3"
+   },
+   {
+    "item": "Cetoprofeno",
+    "dose": "100 mg",
+    "via": "IV",
+    "freq": "12/12 h",
+    "obs": ""
+   },
+   {
+    "item": "Morfina",
+    "dose": "4 mg",
+    "via": "IV",
+    "freq": "4/4 h",
+    "obs": "horário fixo"
+   },
+   {
+    "item": "Dipirona",
+    "dose": "1 g",
+    "via": "IV",
+    "freq": "6/6 h",
+    "obs": ""
+   },
+   {
+    "item": "Metformina",
+    "dose": "850 mg",
+    "via": "VO",
+    "freq": "12/12 h",
+    "obs": "reintroduzida ontem"
+   },
+   {
+    "item": "Pantoprazol",
+    "dose": "40 mg",
+    "via": "IV",
+    "freq": "1x/dia",
+    "obs": "profilaxia de úlcera de estresse"
+   },
+   {
+    "item": "Insulina regular",
+    "dose": "conforme escala",
+    "via": "SC",
+    "freq": "6/6 h",
+    "obs": ""
+   },
+   {
+    "item": "Ondansetrona",
+    "dose": "4 mg",
+    "via": "IV",
+    "freq": "8/8 h se náusea",
+    "obs": ""
+   }
+  ],
+  "tarefa": "Avalie a prescrição do dia, identifique os problemas relacionados a medicamentos e proponha as intervenções à equipe, em ordem de prioridade.",
+  "gabarito": [
+   {
+    "problema": "Profilaxia de TEV com enoxaparina em dose fixa, inadequada ao peso e à função renal ao mesmo tempo",
+    "tipo": "Efetividade: dose baixa",
+    "evidencia": "IMC 52,6 kg/m²: 40 mg/dia subdosa a obesidade grau III. Ao mesmo tempo, a TFG é de 18 mL/min/1,73 m² (cerca de 24 mL/min não indexada para a superfície corporal de 2,33 m²), faixa em que a enoxaparina acumula e a bula manda reduzir. Pós-operatório abdominal, imobilizada: alto risco de TEV.",
+    "intervencao": "Trocar para heparina não fracionada, que não depende do rim: 7.500 UI SC 8/8 h, esquema de dose aumentada adotado em muitos protocolos para IMC ≥40 kg/m², somada a compressão pneumática intermitente. Quando a função renal se recuperar, voltar à enoxaparina ajustada ao peso (por exemplo, 40 mg 12/12 h) com anti-Xa 4 h após a terceira dose (alvo profilático de 0,2 a 0,5 UI/mL). Plaquetas a cada 2 a 3 dias.",
+    "prioridade": "alta"
+   },
+   {
+    "problema": "Anti-inflamatório não esteroide em lesão renal aguda",
+    "tipo": "Segurança: reação adversa ou interação",
+    "evidencia": "Cetoprofeno reduz a perfusão renal mediada por prostaglandinas, justamente em paciente com LRA isquêmica em evolução (creatinina de 0,8 para 3,1 mg/dL, oligúria).",
+    "intervencao": "Suspender o cetoprofeno e manter analgesia com dipirona e opioide de resgate.",
+    "prioridade": "alta"
+   },
+   {
+    "problema": "Morfina em horário fixo na lesão renal aguda, com depressão respiratória",
+    "tipo": "Segurança: dose alta",
+    "evidencia": "Os metabólitos morfina-6-glicuronídeo (ativo) e morfina-3-glicuronídeo acumulam na LRA. FR 10 irpm, RASS -2, apneia do sono e obesidade: risco alto de depressão respiratória.",
+    "intervencao": "Suspender a morfina fixa. Analgesia com fentanil 25 a 50 mcg IV em resgate (ou analgesia controlada pelo paciente), guiada por escala de dor, mantendo a dipirona. Naloxona disponível à beira do leito (0,04 mg IV, repetindo se FR <8 irpm), com oximetria e capnografia se possível.",
+    "prioridade": "alta"
+   },
+   {
+    "problema": "Metformina reintroduzida com TFG abaixo de 30 mL/min/1,73 m²",
+    "tipo": "Segurança: reação adversa ou interação",
+    "evidencia": "A bula e a ADA 2026 contraindicam metformina com TFG <30 mL/min/1,73 m²; a paciente tem 18, em LRA ainda em evolução, com risco de acidose lática.",
+    "intervencao": "Suspender a metformina. Controlar a glicemia com insulina basal em dose reduzida pela LRA, mais correção, com meta de 140 a 180 mg/dL.",
+    "prioridade": "média"
+   },
+   {
+    "problema": "Profilaxia antimicrobiana cirúrgica prolongada",
+    "tipo": "Necessidade: medicamento desnecessário",
+    "evidencia": "Cefazolina no terceiro dia, justificada pela presença de dreno. A diretriz ASHP/IDSA/SIS/SHEA de 2013 limita a profilaxia a 24 h e não reconhece dreno como motivo para prolongá-la. A dose também não foi ajustada para a TFG.",
+    "intervencao": "Suspender a cefazolina.",
+    "prioridade": "média"
+   },
+   {
+    "problema": "Profilaxia de úlcera de estresse sem indicação",
+    "tipo": "Necessidade: medicamento desnecessário",
+    "evidencia": "Paciente extubada, sem coagulopatia, aceitando dieta. O benefício do pantoprazol foi demonstrado em pacientes em ventilação invasiva (REVISE, 2024).",
+    "intervencao": "Suspender o pantoprazol.",
+    "prioridade": "baixa"
+   }
+  ],
+  "discussao": "Estimar a função renal numa paciente obesa em LRA exige cuidado. A creatinina ainda está subindo, então qualquer equação superestima a TFG real. O CKD-EPI 2021 indexado dá 18 mL/min/1,73 m²; desindexado pela superfície corporal de 2,33 m², cerca de 24 mL/min. O Cockcroft-Gault com o peso total daria 49 mL/min, valor falso que levaria a manter doses plenas; com peso ideal (54 kg), cerca de 19 mL/min. Em todas as leituras sensatas a paciente está abaixo de 30 mL/min.\n\nA enoxaparina é o exemplo em que obesidade e disfunção renal puxam a dose em direções opostas. A saída é usar um anticoagulante de eliminação não renal (heparina não fracionada) ou, quando a enoxaparina for necessária, guiar pela atividade anti-Xa. O mesmo raciocínio vale para os outros fármacos da prescrição: suspender o que é nefrotóxico ou contraindicado (AINE, metformina), trocar o que acumula metabólito ativo (morfina) e retirar o que não tem indicação (cefazolina, pantoprazol).\n\nMonitorizar creatinina e diurese diárias, FR e RASS a cada 2 h enquanto houver opioide, glicemia capilar a cada 6 h, plaquetas entre o 5º e o 14º dia de heparina (trombocitopenia induzida por heparina) e sinais de TEV. Reavaliar todas as doses quando a creatinina estabilizar.",
+  "leituras": [
+   "profilaxias-uti",
+   "obesidade-populacoes-especiais",
+   "dose-disfuncao-renal",
+   "fisiologia-renal-lra",
+   "analgesia-sedacao-delirium",
+   "anticoagulantes-reversao"
+  ],
+  "fontes": [
+   "Nutescu EA et al. Low-molecular-weight heparins in renal impairment and obesity. Ann Pharmacother 2009;43:1064-1083",
+   "Gould MK et al. Prevention of VTE in nonorthopedic surgical patients: ACCP Evidence-Based Clinical Practice Guidelines. Chest 2012;141:e227S-e277S",
+   "Bratzler DW et al. Clinical practice guidelines for antimicrobial prophylaxis in surgery. Am J Health Syst Pharm 2013;70:195-283",
+   "Cook D et al. Stress Ulcer Prophylaxis during Invasive Mechanical Ventilation (REVISE). N Engl J Med 2024;391:9-20",
+   "American Diabetes Association. Standards of Care in Diabetes 2026. Diabetes Care 2026",
+   "Inker LA et al. New creatinine- and cystatin C-based equations to estimate GFR without race. N Engl J Med 2021;385:1737-1749"
+  ]
+ },
+ {
+  "id": "caso-06",
+  "titulo": "Hipercalemia com alteração eletrocardiográfica por soma de fármacos em cardiopata com doença renal crônica",
+  "area": "inter",
+  "nivel": "intermediario",
+  "resumo": "Cardiopata com DRC em ventilação mecânica, tratando pneumonia por Stenotrophomonas com SMX-TMP em dose alta, amanhece com potássio de 6,4 mEq/L e ECG alterado.",
+  "paciente": {
+   "idade": 71,
+   "sexo": "M",
+   "peso": 78,
+   "altura": 170,
+   "alergias": "Nega"
+  },
+  "historia": "Aposentado com insuficiência cardíaca de fração de ejeção reduzida (FE 30%, miocardiopatia isquêmica), fibrilação atrial, diabetes tipo 2 e doença renal crônica (creatinina basal de 2,1 mg/dL). Internado há 12 dias por insuficiência cardíaca descompensada, evoluiu com pneumonia associada à ventilação mecânica. O aspirado traqueal quantitativo isolou Stenotrophomonas maltophilia sensível a sulfametoxazol-trimetoprima (SMX-TMP) e a levofloxacino, e há quatro dias ele recebe SMX-TMP em dose alta. Nos últimos três dias a creatinina subiu de 2,1 para 2,6 mg/dL e o potássio de 4,8 para 6,4 mEq/L. O ECG de hoje mostra ondas T apiculadas e alargamento discreto do QRS (118 ms). Para a hipercalemia, o plantonista prescreveu apenas insulina regular 10 UI IV e poliestirenossulfonato de cálcio por sonda. A digoxina é mantida desde a internação para controle de frequência, e o nível colhido hoje veio elevado. Recebe dieta enteral contínua e soro de manutenção com potássio, prescrito na semana passada quando o potássio estava em 3,6 mEq/L. Diurese de 0,5 mL/kg/h com furosemida intermitente.",
+  "sinais": [
+   [
+    "PA",
+    "112/68 mmHg"
+   ],
+   [
+    "FC",
+    "58 bpm (FA)"
+   ],
+   [
+    "Temp.",
+    "37,2 °C"
+   ],
+   [
+    "SpO2",
+    "95% (FiO2 0,4)"
+   ],
+   [
+    "RASS",
+    "-2"
+   ],
+   [
+    "Diurese",
+    "0,5 mL/kg/h"
+   ],
+   [
+    "ECG",
+    "T apiculada, QRS 118 ms"
+   ]
+  ],
+  "labs": [
+   [
+    "Potássio",
+    "6,4 mEq/L",
+    "3,5–5,0"
+   ],
+   [
+    "Creatinina",
+    "2,6 mg/dL (basal 2,1)",
+    "0,7–1,3"
+   ],
+   [
+    "TFG CKD-EPI 2021",
+    "26 mL/min/1,73 m²",
+    "≥90"
+   ],
+   [
+    "Ureia",
+    "132 mg/dL",
+    "15–45"
+   ],
+   [
+    "pH",
+    "7,31",
+    "7,35–7,45"
+   ],
+   [
+    "Bicarbonato",
+    "19 mEq/L",
+    "22–26"
+   ],
+   [
+    "Glicemia",
+    "162 mg/dL",
+    "70–99"
+   ],
+   [
+    "Digoxina",
+    "2,4 ng/mL",
+    "0,5–0,9 (alvo na IC)"
+   ],
+   [
+    "Magnésio",
+    "2,1 mg/dL",
+    "1,6–2,6"
+   ],
+   [
+    "Sódio",
+    "134 mEq/L",
+    "135–145"
+   ],
+   [
+    "Hemoglobina",
+    "10,8 g/dL",
+    "13–17"
+   ]
+  ],
+  "prescricao": [
+   {
+    "item": "SMX-TMP 400/80 mg por 5 mL",
+    "dose": "5 ampolas (400 mg de TMP)",
+    "via": "IV",
+    "freq": "8/8 h",
+    "obs": "15 mg/kg/dia de TMP; D5"
+   },
+   {
+    "item": "Espironolactona",
+    "dose": "25 mg",
+    "via": "SNE",
+    "freq": "1x/dia",
+    "obs": ""
+   },
+   {
+    "item": "Enalapril",
+    "dose": "10 mg",
+    "via": "SNE",
+    "freq": "12/12 h",
+    "obs": ""
+   },
+   {
+    "item": "Digoxina",
+    "dose": "0,25 mg",
+    "via": "SNE",
+    "freq": "1x/dia",
+    "obs": ""
+   },
+   {
+    "item": "Carvedilol",
+    "dose": "6,25 mg",
+    "via": "SNE",
+    "freq": "12/12 h",
+    "obs": ""
+   },
+   {
+    "item": "Furosemida",
+    "dose": "40 mg",
+    "via": "IV",
+    "freq": "12/12 h",
+    "obs": ""
+   },
+   {
+    "item": "SF 0,9% 1.000 mL + KCl 19,1% 10 mL",
+    "dose": "40 mL/h",
+    "via": "IV",
+    "freq": "contínuo",
+    "obs": "manutenção"
+   },
+   {
+    "item": "Insulina regular",
+    "dose": "10 UI",
+    "via": "IV",
+    "freq": "agora",
+    "obs": "hipercalemia"
+   },
+   {
+    "item": "Poliestirenossulfonato de cálcio",
+    "dose": "30 g",
+    "via": "SNE",
+    "freq": "agora e 8/8 h",
+    "obs": ""
+   },
+   {
+    "item": "Enoxaparina",
+    "dose": "20 mg",
+    "via": "SC",
+    "freq": "1x/dia",
+    "obs": ""
+   },
+   {
+    "item": "Fentanil e propofol",
+    "dose": "",
+    "via": "IV contínua",
+    "freq": "",
+    "obs": "sedoanalgesia, RASS -2"
+   }
+  ],
+  "tarefa": "Avalie a prescrição do dia, identifique os problemas relacionados a medicamentos e proponha as intervenções à equipe, em ordem de prioridade.",
+  "gabarito": [
+   {
+    "problema": "Hipercalemia com alteração no ECG sem estabilização de membrana",
+    "tipo": "Necessidade: necessita de medicamento adicional",
+    "evidencia": "Potássio 6,4 mEq/L com T apiculada e QRS de 118 ms: emergência. Nenhum cálcio IV prescrito. O quelante intestinal leva horas para agir e não protege o miocárdio.",
+    "intervencao": "Gluconato de cálcio 10% 30 mL IV em 10 min, repetindo se o ECG não melhorar em 5 a 10 min; em paciente digitalizado, dados observacionais não mostraram dano com cálcio IV, mas é prudente infundir em 20 a 30 min. Associar salbutamol inalatório pelo circuito e monitorização eletrocardiográfica contínua. Discutir hemodiálise se refratário.",
+    "prioridade": "alta"
+   },
+   {
+    "problema": "Insulina IV sem glicose",
+    "tipo": "Segurança: reação adversa ou interação",
+    "evidencia": "Insulina regular 10 UI IV isolada, com glicemia de 162 mg/dL: risco alto de hipoglicemia nas 4 a 6 h seguintes, maior ainda na DRC, que prolonga a ação da insulina.",
+    "intervencao": "Associar glicose 25 g (SG 50% 50 mL) à insulina e manter glicemia capilar em 30 min e a cada hora por 6 h; considerar infusão de SG 10% se a glicemia cair abaixo de 126 mg/dL.",
+    "prioridade": "alta"
+   },
+   {
+    "problema": "Potássio no soro de manutenção",
+    "tipo": "Segurança: dose alta",
+    "evidencia": "SF 0,9% com KCl 25,6 mEq por litro a 40 mL/h, prescrito quando o potássio era 3,6 mEq/L e nunca revisto: cerca de 25 mEq/dia de aporte em paciente com potássio de 6,4 mEq/L.",
+    "intervencao": "Suspender o KCl e reavaliar a necessidade do soro de manutenção. Revisar o teor de potássio da dieta enteral com a nutrição.",
+    "prioridade": "alta"
+   },
+   {
+    "problema": "Espironolactona e enalapril com TFG de 26 mL/min/1,73 m² e potássio de 6,4 mEq/L",
+    "tipo": "Segurança: reação adversa ou interação",
+    "evidencia": "Os dois reduzem a ação da aldosterona e a excreção renal de potássio. A diretriz de insuficiência cardíaca de 2022 contraindica antagonista mineralocorticoide com potássio >5 mEq/L ou TFG <30 mL/min/1,73 m².",
+    "intervencao": "Suspender espironolactona e enalapril temporariamente. Reintroduzir o IECA em dose baixa após normalização do potássio e estabilização da creatinina; a espironolactona só com potássio <5 mEq/L e TFG ≥30.",
+    "prioridade": "alta"
+   },
+   {
+    "problema": "Intoxicação digitálica provável",
+    "tipo": "Segurança: dose alta",
+    "evidencia": "Digoxina 2,4 ng/mL (alvo de 0,5 a 0,9 ng/mL na insuficiência cardíaca), dose de 0,25 mg/dia com TFG de 26 mL/min/1,73 m², FC de 58 bpm em FA. A hipercalemia pode ser tanto causa de risco quanto marcador de gravidade da intoxicação.",
+    "intervencao": "Suspender a digoxina, repetir o nível pelo menos 6 h após a última dose e manter ECG contínuo. Se houver arritmia grave, discutir anticorpo antidigoxina com o centro de informação toxicológica (CIATox), conforme disponibilidade. Se for retomada, 0,125 mg em dias alternados, guiada por nível.",
+    "prioridade": "alta"
+   },
+   {
+    "problema": "SMX-TMP em dose plena com TFG abaixo de 30 mL/min",
+    "tipo": "Segurança: dose alta",
+    "evidencia": "A trimetoprima bloqueia o canal epitelial de sódio no néfron distal, como a amilorida, e reduz a excreção de potássio; o efeito depende da dose. TFG de 26 mL/min/1,73 m² (28 mL/min não indexada; Cockcroft-Gault 29 mL/min): a bula manda reduzir a dose em 50% com depuração de 15 a 30 mL/min.",
+    "intervencao": "Discutir com a infectologia: reduzir para 200 mg de TMP IV 8/8 h (cerca de 7,7 mg/kg/dia) ou trocar por outro agente ativo contra S. maltophilia previsto no guia da IDSA de 2026, como levofloxacino, sensível no antibiograma, com dose ajustada à função renal.",
+    "prioridade": "média"
+   }
+  ],
+  "discussao": "A hipercalemia deste paciente é soma de mecanismos: menos aldosterona (IECA e espironolactona), bloqueio do canal de sódio distal (trimetoprima), aporte exógeno (KCl no soro), piora da função renal e, possivelmente, inibição da bomba sódio-potássio pela digoxina em nível tóxico. O betabloqueador contribui pouco. Nenhum fármaco isolado explicaria o potássio de 6,4 mEq/L; a soma, sim, e é isso que o farmacêutico precisa enxergar ao revisar a prescrição.\n\nO tratamento segue três passos: estabilizar a membrana (cálcio), deslocar o potássio para dentro das células (insulina com glicose, beta-2 agonista, bicarbonato apenas se houver acidose importante) e remover do corpo (diurético de alça se houver diurese, quelante intestinal, diálise). O poliestirenossulfonato age em horas e é coadjuvante; o risco de necrose intestinal descrito com a forma sódica associada a sorbitol pede cautela em paciente com baixa perfusão.\n\nMonitorizar potássio 1 a 2 h após as medidas de deslocamento e depois a cada 4 a 6 h, porque há rebote quando o efeito da insulina passa; glicemia horária por 6 h; ECG contínuo; nível de digoxina; creatinina diária. Registrar a reação adversa no Notivisa e deixar escrito, para a alta, o plano de reintrodução do IECA e da espironolactona.",
+  "leituras": [
+   "interacoes-farmacodinamicas",
+   "eletrolitos",
+   "dose-disfuncao-renal",
+   "monitorizacao-terapeutica",
+   "outras-classes-antibacterianas",
+   "cardiovasculares-antiarritmicos"
+  ],
+  "fontes": [
+   "Clase CM et al. Potassium homeostasis and management of dyskalemia in kidney diseases: KDIGO Controversies Conference. Kidney Int 2020;97:42-61",
+   "UK Kidney Association. Clinical Practice Guidelines: Treatment of Acute Hyperkalaemia in Adults, 2020",
+   "Perazella MA. Trimethoprim-induced hyperkalaemia: clinical data, mechanism, prevention and management. Drug Saf 2000;22:227-236",
+   "Heidenreich PA et al. 2022 AHA/ACC/HFSA Guideline for the Management of Heart Failure. Circulation 2022;145:e895-e1032",
+   "Levine M et al. The effects of intravenous calcium in patients with digoxin toxicity. J Emerg Med 2011;40:41-46",
+   "IDSA. Guidance on the Treatment of Antimicrobial-Resistant Gram-Negative Infections, versão 5.0, 2026"
+  ]
+ },
+ {
+  "id": "caso-07",
+  "titulo": "QT longo por soma de fármacos com hipocalemia e hipomagnesemia na DPOC exacerbada",
+  "area": "inter",
+  "nivel": "intermediario",
+  "resumo": "Idosa com DPOC exacerbada em ventilação mecânica, com FA e delirium, que amanhece com QTc de 548 ms, potássio e magnésio baixos e quatro fármacos que prolongam o QT.",
+  "paciente": {
+   "idade": 64,
+   "sexo": "F",
+   "peso": 60,
+   "altura": 158,
+   "alergias": "Penicilina (angioedema há 20 anos)"
+  },
+  "historia": "Ex-tabagista (50 anos-maço), com DPOC grave, duas internações por exacerbação no último ano e fibrilação atrial paroxística. Internada há quatro dias por exacerbação com acidose respiratória; falhou a ventilação não invasiva e foi intubada. Por causa da alergia à penicilina, recebeu levofloxacino, além de metilprednisolona e broncodilatadores. No segundo dia teve FA com resposta ventricular de 150 bpm, controlada com amiodarona em infusão contínua, e voltou ao ritmo sinusal. Com a redução da sedação, apresentou agitação e delirium hiperativo (CAM-ICU positivo), e foi prescrito haloperidol em horário fixo. A ondansetrona está prescrita de horário desde a admissão, sem registro de náusea ou vômito. O balanço hídrico foi negativo em 1.800 mL nas últimas 48 h com furosemida. A cultura de escarro foi negativa e ela não tem fatores de risco documentados para Pseudomonas aeruginosa. Não há história de síncope nem de QT longo; o ECG da admissão tinha QTc de 452 ms. Hoje o ECG mostra ritmo sinusal, QTc (Fridericia) de 548 ms e extrassístoles ventriculares isoladas. Uso domiciliar: tiotrópio, formoterol-budesonida inalatórios, hidroclorotiazida 25 mg e apixabana 5 mg 12/12 h, esta substituída por enoxaparina na UTI.",
+  "sinais": [
+   [
+    "PA",
+    "118/70 mmHg"
+   ],
+   [
+    "FC",
+    "96 bpm (sinusal)"
+   ],
+   [
+    "Temp.",
+    "37,1 °C"
+   ],
+   [
+    "SpO2",
+    "93% (FiO2 0,35)"
+   ],
+   [
+    "RASS",
+    "+2"
+   ],
+   [
+    "CAM-ICU",
+    "positivo"
+   ],
+   [
+    "ECG",
+    "QTc Fridericia 548 ms, extrassístoles ventriculares"
+   ]
+  ],
+  "labs": [
+   [
+    "Potássio",
+    "2,9 mEq/L",
+    "3,5–5,0"
+   ],
+   [
+    "Magnésio",
+    "1,3 mg/dL",
+    "1,6–2,6"
+   ],
+   [
+    "Cálcio iônico",
+    "1,16 mmol/L",
+    "1,12–1,32"
+   ],
+   [
+    "Sódio",
+    "146 mEq/L",
+    "135–145"
+   ],
+   [
+    "Creatinina",
+    "0,8 mg/dL",
+    "0,5–1,1"
+   ],
+   [
+    "TFG CKD-EPI 2021",
+    "82 mL/min/1,73 m²",
+    "≥90"
+   ],
+   [
+    "pH",
+    "7,38",
+    "7,35–7,45"
+   ],
+   [
+    "pCO2",
+    "52 mmHg",
+    "35–45"
+   ],
+   [
+    "Bicarbonato",
+    "31 mEq/L",
+    "22–26"
+   ],
+   [
+    "Glicemia",
+    "214 mg/dL",
+    "70–99"
+   ],
+   [
+    "TSH",
+    "1,8 mUI/L",
+    "0,4–4,5"
+   ]
+  ],
+  "prescricao": [
+   {
+    "item": "Levofloxacino",
+    "dose": "750 mg",
+    "via": "IV",
+    "freq": "24/24 h",
+    "obs": "D4"
+   },
+   {
+    "item": "Metilprednisolona",
+    "dose": "40 mg",
+    "via": "IV",
+    "freq": "24/24 h",
+    "obs": "D4"
+   },
+   {
+    "item": "Amiodarona 900 mg + SG 5% 500 mL",
+    "dose": "900 mg/24 h",
+    "via": "IV contínua",
+    "freq": "",
+    "obs": "21 mL/h; D3"
+   },
+   {
+    "item": "Haloperidol",
+    "dose": "5 mg",
+    "via": "IV",
+    "freq": "6/6 h",
+    "obs": "horário fixo, delirium"
+   },
+   {
+    "item": "Ondansetrona",
+    "dose": "8 mg",
+    "via": "IV",
+    "freq": "8/8 h",
+    "obs": "horário fixo"
+   },
+   {
+    "item": "Furosemida",
+    "dose": "40 mg",
+    "via": "IV",
+    "freq": "12/12 h",
+    "obs": ""
+   },
+   {
+    "item": "Salbutamol + brometo de ipratrópio",
+    "dose": "",
+    "via": "inalatória",
+    "freq": "4/4 h",
+    "obs": ""
+   },
+   {
+    "item": "Enoxaparina",
+    "dose": "60 mg",
+    "via": "SC",
+    "freq": "12/12 h",
+    "obs": "anticoagulação da FA"
+   },
+   {
+    "item": "Fentanil",
+    "dose": "50 mcg/h",
+    "via": "IV contínua",
+    "freq": "",
+    "obs": ""
+   },
+   {
+    "item": "Propofol 1%",
+    "dose": "10 mL/h",
+    "via": "IV contínua",
+    "freq": "",
+    "obs": ""
+   },
+   {
+    "item": "Pantoprazol",
+    "dose": "40 mg",
+    "via": "IV",
+    "freq": "1x/dia",
+    "obs": ""
+   }
+  ],
+  "tarefa": "Avalie a prescrição do dia, identifique os problemas relacionados a medicamentos e proponha as intervenções à equipe, em ordem de prioridade.",
+  "gabarito": [
+   {
+    "problema": "Hipocalemia e hipomagnesemia sem reposição em paciente com QTc de 548 ms",
+    "tipo": "Necessidade: necessita de medicamento adicional",
+    "evidencia": "Potássio 2,9 mEq/L e magnésio 1,3 mg/dL, com extrassístoles ventriculares e QTc acima de 500 ms: combinação de maior risco de torsades de pointes. Diurético de alça, beta-2 agonista e corticoide explicam as perdas.",
+    "intervencao": "Sulfato de magnésio 2 g IV em 1 h (4 mL de MgSO4 50% em 100 mL de SF 0,9%), repetindo conforme o nível, com meta de magnésio ≥2 mg/dL; cloreto de potássio 20 mEq/h pelo cateter central (7,8 mL de KCl 19,1% em 100 mL de SF em 1 h), com potássio a cada 4 a 6 h e meta ≥4 mEq/L. Corrigir o magnésio junto, porque a hipomagnesemia torna a hipocalemia refratária.",
+    "prioridade": "alta"
+   },
+   {
+    "problema": "Haloperidol em horário fixo com QTc de 548 ms",
+    "tipo": "Segurança: reação adversa ou interação",
+    "evidencia": "Haloperidol IV prolonga o QT de forma dose-dependente. A PADIS 2018 sugere não usar haloperidol de rotina para tratar delirium, e a atualização de 2025 não conseguiu emitir recomendação sobre antipsicóticos no tratamento do delirium.",
+    "intervencao": "Suspender o haloperidol. Para a agitação que impede o desmame, dexmedetomidina 0,2 a 0,7 mcg/kg/h (12 a 42 mcg/h), atenção a bradicardia com a amiodarona, além de medidas não farmacológicas e revisão da analgesia.",
+    "prioridade": "alta"
+   },
+   {
+    "problema": "Ondansetrona de horário sem indicação",
+    "tipo": "Necessidade: medicamento desnecessário",
+    "evidencia": "Sem náusea ou vômito registrados desde a admissão; ondansetrona IV prolonga o QT.",
+    "intervencao": "Suspender a ondansetrona. Se houver náusea, preferir medida não farmacológica ou antiemético de menor impacto no QT, em dose única.",
+    "prioridade": "média"
+   },
+   {
+    "problema": "Levofloxacino em paciente com QT prolongado",
+    "tipo": "Segurança: reação adversa ou interação",
+    "evidencia": "Quinolona com risco conhecido de torsades, em quarta dose, com cultura negativa e sem fator de risco para Pseudomonas. A alergia à penicilina foi angioedema há 20 anos.",
+    "intervencao": "Trocar por ceftriaxona 1 g IV 24/24 h, cefalosporina de cadeia lateral diferente da penicilina, cujo uso após reação imediata remota à penicilina é aceito pelo parâmetro de alergia a fármacos de 2022, com observação na primeira dose. Completar 5 dias de antimicrobiano no total.",
+    "prioridade": "média"
+   },
+   {
+    "problema": "Furosemida mantida com hipocalemia, hipernatremia e alcalose metabólica",
+    "tipo": "Segurança: dose alta",
+    "evidencia": "Balanço negativo de 1.800 mL em 48 h, sódio 146 mEq/L, bicarbonato 31 mEq/L e potássio 2,9 mEq/L: o objetivo de retirar volume já foi atingido e a perda de potássio e magnésio agrava o risco arrítmico.",
+    "intervencao": "Suspender a furosemida e reavaliar diariamente pelo balanço e pela oxigenação.",
+    "prioridade": "média"
+   },
+   {
+    "problema": "Hiperglicemia induzida por corticoide sem insulina",
+    "tipo": "Necessidade: necessita de medicamento adicional",
+    "evidencia": "Glicemia de 214 mg/dL com metilprednisolona, sem insulina prescrita. A ADA 2026 recomenda meta de 140 a 180 mg/dL no paciente crítico.",
+    "intervencao": "Iniciar protocolo de insulina (correção SC ou infusão IV se a glicemia persistir acima de 180 mg/dL) e reduzir quando o corticoide for suspenso.",
+    "prioridade": "baixa"
+   }
+  ],
+  "discussao": "O risco de torsades raramente vem de um fármaco só. Esta paciente soma fatores clássicos da declaração da AHA de 2020 sobre arritmias induzidas por fármacos: sexo feminino, idade acima de 60 anos, hipocalemia, hipomagnesemia, diurético, extrassístoles e quatro fármacos que prolongam o QT. QTc acima de 500 ms ou aumento de mais de 60 ms em relação ao basal pede intervenção. Com frequência cardíaca acima de 90 bpm, a fórmula de Bazett superestima o QTc; Fridericia é preferível.\n\nA prioridade é retirar o que não tem indicação (ondansetrona, haloperidol, levofloxacino) e corrigir eletrólitos. A amiodarona prolonga bastante o QT, mas raramente causa torsades isolada e aqui tem indicação clara; a conduta é mantê-la com monitorização e rever se o QTc continuar acima de 500 ms depois da correção. Se ocorrer torsades, o tratamento é sulfato de magnésio 2 g IV em bolus, desfibrilação se instável e aumento da frequência cardíaca (marca-passo ou isoproterenol).\n\nMonitorizar ECG diário (ou telemetria com medida do QTc), potássio e magnésio a cada 6 a 12 h até estabilizar, RASS e CAM-ICU por turno, glicemia e sinais de reação alérgica na primeira dose de ceftriaxona.",
+  "leituras": [
+   "interacoes-farmacodinamicas",
+   "eletrolitos",
+   "analgesia-sedacao-delirium",
+   "cardiovasculares-antiarritmicos",
+   "outras-classes-antibacterianas",
+   "betalactamicos"
+  ],
+  "fontes": [
+   "Tisdale JE et al. Drug-Induced Arrhythmias: A Scientific Statement From the American Heart Association. Circulation 2020;142:e214-e233",
+   "Devlin JW et al. Clinical Practice Guidelines for PADIS in Adult Patients in the ICU. Crit Care Med 2018;46:e825-e873",
+   "Lewis K et al. A Focused Update to the Clinical Practice Guidelines for PADIS in Adult Patients in the ICU. Crit Care Med 2025;53:e711-e727",
+   "Khan DA et al. Drug allergy: A 2022 practice parameter update. J Allergy Clin Immunol 2022;150:1333-1393",
+   "Kraft MD et al. Treatment of electrolyte disorders in adult patients in the intensive care unit. Am J Health Syst Pharm 2005;62:1663-1682",
+   "Global Initiative for Chronic Obstructive Lung Disease. Global Strategy for Prevention, Diagnosis and Management of COPD, relatório 2025"
+  ]
+ },
+ {
+  "id": "caso-08",
+  "titulo": "Estado de mal epiléptico após carbapenêmico em paciente com valproato, e fenitoína com hipoalbuminemia",
+  "area": "classes",
+  "nivel": "avancado",
+  "resumo": "Epiléptico controlado com valproato, internado por pneumonia bacterêmica por Klebsiella ESBL tratada com meropenem, que entra em estado de mal no 3º dia.",
+  "paciente": {
+   "idade": 38,
+   "sexo": "M",
+   "peso": 70,
+   "altura": 172,
+   "alergias": "Nega"
+  },
+  "historia": "Mecânico com epilepsia generalizada desde a adolescência, sem crises há três anos com valproato de sódio 500 mg 8/8 h (nível de 78 mcg/mL em consulta há dois meses). Internado há seis dias por pneumonia grave com bacteremia por Klebsiella pneumoniae produtora de ESBL, sensível a meropenem, ertapenem e amicacina e resistente a ciprofloxacino, piperacilina-tazobactam e SMX-TMP; já era colonizado desde internação recente. Recebe meropenem desde o primeiro dia; o valproato foi mantido por via IV. No 3º dia teve crises tônico-clônicas generalizadas repetidas sem recuperar a consciência. Recebeu diazepam 10 mg IV duas vezes e fenitoína 1.000 mg IV; pela persistência, foi intubado e iniciou midazolam contínuo, com controle eletroencefalográfico das crises após 36 h. Hoje, 6º dia, está em redução do midazolam, sem crises no EEG há 24 h. O valproato dosado no 4º dia veio 12 mcg/mL. A fenitoína total de hoje, em vale, com 100 mg 8/8 h, veio 8 mcg/mL, e a equipe propõe aumentar para 150 mg 8/8 h. A albumina caiu para 2 g/dL. Na urina colhida por sonda vesical cresceu Candida albicans (>100.000 UFC/mL), sem febre nova e com hemoculturas de controle negativas, e foi iniciado fluconazol.",
+  "sinais": [
+   [
+    "PA",
+    "124/72 mmHg"
+   ],
+   [
+    "FC",
+    "92 bpm"
+   ],
+   [
+    "Temp.",
+    "37,4 °C"
+   ],
+   [
+    "SpO2",
+    "97% (FiO2 0,35)"
+   ],
+   [
+    "RASS",
+    "-4"
+   ],
+   [
+    "EEG",
+    "sem crises eletrográficas há 24 h"
+   ],
+   [
+    "Diurese",
+    "1,1 mL/kg/h"
+   ]
+  ],
+  "labs": [
+   [
+    "Valproato (4º dia)",
+    "12 mcg/mL",
+    "50–100"
+   ],
+   [
+    "Fenitoína total (vale)",
+    "8 mcg/mL",
+    "10–20"
+   ],
+   [
+    "Albumina",
+    "2 g/dL",
+    "3,5–5,2"
+   ],
+   [
+    "Creatinina",
+    "0,7 mg/dL",
+    "0,7–1,3"
+   ],
+   [
+    "TFG CKD-EPI 2021",
+    "121 mL/min/1,73 m²",
+    "≥90"
+   ],
+   [
+    "TGO",
+    "38 U/L",
+    "<40"
+   ],
+   [
+    "TGP",
+    "42 U/L",
+    "<41"
+   ],
+   [
+    "Amônia",
+    "48 mcg/dL",
+    "<80"
+   ],
+   [
+    "Plaquetas",
+    "168.000/mm³",
+    "150.000–450.000"
+   ],
+   [
+    "Leucócitos",
+    "11.200/mm³",
+    "4.000–11.000"
+   ],
+   [
+    "PCR",
+    "64 mg/L",
+    "<5"
+   ]
+  ],
+  "prescricao": [
+   {
+    "item": "Meropenem",
+    "dose": "1 g",
+    "via": "IV",
+    "freq": "8/8 h",
+    "obs": "infusão estendida de 3 h; D6"
+   },
+   {
+    "item": "Valproato de sódio",
+    "dose": "500 mg",
+    "via": "IV",
+    "freq": "8/8 h",
+    "obs": ""
+   },
+   {
+    "item": "Fenitoína 100 mg + SG 5% 100 mL",
+    "dose": "100 mg",
+    "via": "IV",
+    "freq": "8/8 h",
+    "obs": "em 30 min; equipe propõe 150 mg 8/8 h a partir de hoje"
+   },
+   {
+    "item": "Midazolam 100 mg/100 mL",
+    "dose": "5 mL/h",
+    "via": "IV contínua",
+    "freq": "",
+    "obs": "em desmame"
+   },
+   {
+    "item": "Fentanil",
+    "dose": "50 mcg/h",
+    "via": "IV contínua",
+    "freq": "",
+    "obs": ""
+   },
+   {
+    "item": "Fluconazol",
+    "dose": "400 mg",
+    "via": "IV",
+    "freq": "24/24 h",
+    "obs": "candidúria; D2"
+   },
+   {
+    "item": "Omeprazol",
+    "dose": "40 mg",
+    "via": "IV",
+    "freq": "1x/dia",
+    "obs": ""
+   },
+   {
+    "item": "Enoxaparina",
+    "dose": "40 mg",
+    "via": "SC",
+    "freq": "1x/dia",
+    "obs": ""
+   }
+  ],
+  "tarefa": "Avalie a prescrição do dia, identifique os problemas relacionados a medicamentos e proponha as intervenções à equipe, em ordem de prioridade.",
+  "gabarito": [
+   {
+    "problema": "Valproato ineficaz por interação com meropenem",
+    "tipo": "Efetividade: medicamento inefetivo",
+    "evidencia": "Nível de valproato caiu de 78 para 12 mcg/mL após o meropenem, com estado de mal no 3º dia. Carbapenêmicos inibem a acilpeptídeo hidrolase que devolve o glicuronídeo de valproato à forma ativa; a queda é de 60 a 100% em 24 a 48 h e não se corrige aumentando a dose.",
+    "intervencao": "Não insistir no valproato enquanto houver carbapenêmico e por cerca de 7 dias após a suspensão. Como a bacteremia por Enterobacterales ESBL tem carbapenêmico como opção preferida (IDSA 2026), manter o meropenem e trocar o anticonvulsivante, em conjunto com a neurologia. Retomar o valproato depois, se desejado, com nível sérico.",
+    "prioridade": "alta"
+   },
+   {
+    "problema": "Necessidade de anticonvulsivante eficaz em substituição ao valproato",
+    "tipo": "Necessidade: necessita de medicamento adicional",
+    "evidencia": "Estado de mal refratário controlado com midazolam, em desmame, sem um segundo anticonvulsivante eficaz de manutenção além da fenitoína.",
+    "intervencao": "Levetiracetam 60 mg/kg IV (4.200 mg; máximo 4.500 mg) em 15 min, seguido de 1.500 mg IV 12/12 h, sem ajuste com TFG de 121 mL/min/1,73 m². Não interage com carbapenêmicos. Monitorizar irritabilidade e alterações de comportamento após o despertar.",
+    "prioridade": "alta"
+   },
+   {
+    "problema": "Proposta de aumentar a fenitoína com base em nível total na hipoalbuminemia",
+    "tipo": "Segurança: dose alta",
+    "evidencia": "Fenitoína total de 8 mcg/mL com albumina de 2 g/dL. Pela equação de Sheiner-Tozer, 8 ÷ (0,2 × 2 + 0,1) = 16 mcg/mL; pela variante com coeficiente 0,29, 8 ÷ (0,29 × 2 + 0,1) = 11,8 mcg/mL. As duas colocam o paciente na faixa terapêutica. O valproato também desloca a fenitoína da albumina, e a cinética não linear faz um aumento de 50% na dose elevar o nível muito mais que 50%.",
+    "intervencao": "Não aumentar a dose agora. Solicitar fenitoína livre (alvo de 1 a 2 mcg/mL); se indisponível, interpretar pelo valor corrigido e pelo EEG. Se for preciso subir, fazer incrementos de 30 a 50 mg/dia com novo nível após 5 a 7 dias.",
+    "prioridade": "alta"
+   },
+   {
+    "problema": "Fenitoína diluída em soro glicosado",
+    "tipo": "Segurança: reação adversa ou interação",
+    "evidencia": "A fenitoína sódica precipita em SG 5% por causa do pH; o precipitado pode obstruir o cateter e embolizar.",
+    "intervencao": "Diluir somente em SF 0,9%, na concentração de 1 a 10 mg/mL, com filtro em linha de 0,22 mcm, infusão não superior a 50 mg/min, administração logo após o preparo e lavagem com SF antes e depois. Preferir veia calibrosa ou cateter central (risco de síndrome da luva roxa).",
+    "prioridade": "média"
+   },
+   {
+    "problema": "Fluconazol para candidúria assintomática, com interação com fenitoína",
+    "tipo": "Necessidade: medicamento desnecessário",
+    "evidencia": "Candidúria em paciente com sonda vesical, sem febre nova, sem neutropenia e sem procedimento urológico previsto: a IDSA 2016 não recomenda tratar. O fluconazol inibe o CYP2C9 e eleva o nível de fenitoína, somando risco de toxicidade à hipoalbuminemia.",
+    "intervencao": "Suspender o fluconazol e trocar a sonda vesical ou retirá-la, se possível.",
+    "prioridade": "média"
+   }
+  ],
+  "discussao": "A interação entre carbapenêmico e valproato é das mais graves e previsíveis da UTI. A queda do nível acontece em 24 a 48 h, é independente da dose e dura cerca de uma semana após retirar o antimicrobiano. Quando o carbapenêmico é o tratamento de escolha, como na bacteremia por ESBL (o ensaio MERINO mostrou pior desfecho com piperacilina-tazobactam), troca-se o anticonvulsivante. Quando existe alternativa antimicrobiana ativa, pode-se trocar o antimicrobiano. O erro é perceber a interação só depois da crise, como aqui.\n\nNo estado de mal, o esquema é benzodiazepínico nos primeiros 5 minutos, seguido de fármaco de segunda linha em dose de ataque plena: fenitoína 20 mg/kg (1.400 mg neste paciente, não os 1.000 mg recebidos, cerca de 14 mg/kg), levetiracetam 60 mg/kg ou valproato 40 mg/kg, que tiveram eficácia semelhante no ESETT. A fenitoína admite 5 a 10 mg/kg adicionais se as crises persistirem.\n\nA fenitoína é cerca de 90% ligada à albumina. Na hipoalbuminemia, o nível total subestima a fração livre, que é a ativa; as equações de correção são imprecisas no crítico, e a fenitoína livre é o padrão. Monitorizar EEG no desmame do midazolam, fenitoína livre ou corrigida, função hepática, plaquetas, amônia e comportamento após o despertar.",
+  "leituras": [
+   "anticonvulsivantes-status",
+   "interacoes-antimicrobianos",
+   "monitorizacao-terapeutica",
+   "carbapenemicos-novos-betalactamicos",
+   "compatibilidade-iv",
+   "antifungicos"
+  ],
+  "fontes": [
+   "Brophy GM et al. Guidelines for the evaluation and management of status epilepticus. Neurocrit Care 2012;17:3-23",
+   "Glauser T et al. Evidence-Based Guideline: Treatment of Convulsive Status Epilepticus in Children and Adults (AES). Epilepsy Curr 2016;16:48-61",
+   "Kapur J et al. Randomized Trial of Three Anticonvulsant Medications for Status Epilepticus (ESETT). N Engl J Med 2019;381:2103-2113",
+   "Kiang TK, Ensom MH. A Comprehensive Review on the Predictive Performance of the Sheiner-Tozer and Derivative Equations for the Correction of Phenytoin Concentrations. Ann Pharmacother 2016;50:311-325",
+   "Wen ZP et al. Drug-drug interaction between valproic acid and meropenem: a retrospective analysis. J Clin Pharm Ther 2017;42:221-227",
+   "Pappas PG et al. Clinical Practice Guideline for the Management of Candidiasis: 2016 Update by the IDSA. Clin Infect Dis 2016;62:e1-e50",
+   "IDSA. Guidance on the Treatment of Antimicrobial-Resistant Gram-Negative Infections, versão 5.0, 2026"
+  ]
+ },
+ {
+  "id": "caso-09",
+  "titulo": "Síndrome serotoninérgica após linezolida no pós-operatório de cirurgia cardíaca",
+  "area": "inter",
+  "nivel": "intermediario",
+  "resumo": "Pós-operatório de revascularização com mediastinite por MRSA, em uso de sertralina, tramadol e antieméticos, que desenvolve agitação, clônus e hipertermia três dias após iniciar linezolida.",
+  "paciente": {
+   "idade": 66,
+   "sexo": "M",
+   "peso": 88,
+   "altura": 174,
+   "alergias": "Nega"
+  },
+  "historia": "Comerciante, diabético, hipertenso e com depressão tratada com sertralina 100 mg/dia há cinco anos. Submetido a revascularização miocárdica com três enxertos há 12 dias, extubado no 1º dia pós-operatório. No 3º dia teve fibrilação atrial, revertida com amiodarona, mantida por via oral. No 9º dia apresentou febre, secreção purulenta e instabilidade esternal; a tomografia mostrou mediastinite, e as hemoculturas (2/2) e a cultura de tecido isolaram Staphylococcus aureus resistente à meticilina (MRSA), com CIM de vancomicina de 2 mg/L por fita gradiente. Foi reoperado para desbridamento e, pela CIM elevada, a equipe trocou vancomicina por linezolida há três dias. Para dor recebe tramadol de horário, e para náuseas ondansetrona e metoclopramida de horário. Desde a noite passada está agitado, sudoreico, com tremor, mioclonias, clônus induzível e sustentado nos tornozelos, hiper-reflexia mais evidente em membros inferiores, midríase e diarreia. A temperatura de 38,9 °C foi atribuída à mediastinite. O plantonista deixou haloperidol se agitação. As hemoculturas de controle do 11º dia estão negativas até o momento.",
+  "sinais": [
+   [
+    "PA",
+    "162/94 mmHg"
+   ],
+   [
+    "FC",
+    "124 bpm"
+   ],
+   [
+    "FR",
+    "26 irpm"
+   ],
+   [
+    "Temp.",
+    "38,9 °C"
+   ],
+   [
+    "SpO2",
+    "95% (cateter 2 L/min)"
+   ],
+   [
+    "RASS",
+    "+2"
+   ],
+   [
+    "Exame neurológico",
+    "clônus induzível sustentado, hiper-reflexia, midríase, sudorese"
+   ]
+  ],
+  "labs": [
+   [
+    "CPK",
+    "820 U/L",
+    "<190"
+   ],
+   [
+    "Creatinina",
+    "1,1 mg/dL",
+    "0,7–1,3"
+   ],
+   [
+    "TFG CKD-EPI 2021",
+    "74 mL/min/1,73 m²",
+    "≥90"
+   ],
+   [
+    "Leucócitos",
+    "13.900/mm³",
+    "4.000–11.000"
+   ],
+   [
+    "Plaquetas",
+    "186.000/mm³",
+    "150.000–450.000"
+   ],
+   [
+    "Potássio",
+    "4,2 mEq/L",
+    "3,5–5,0"
+   ],
+   [
+    "Glicemia",
+    "188 mg/dL",
+    "70–99"
+   ],
+   [
+    "PCR",
+    "96 mg/L",
+    "<5"
+   ],
+   [
+    "Lactato",
+    "1,6 mmol/L",
+    "<2"
+   ],
+   [
+    "TGO",
+    "52 U/L",
+    "<40"
+   ]
+  ],
+  "prescricao": [
+   {
+    "item": "Linezolida",
+    "dose": "600 mg",
+    "via": "IV",
+    "freq": "12/12 h",
+    "obs": "D3"
+   },
+   {
+    "item": "Sertralina",
+    "dose": "100 mg",
+    "via": "VO",
+    "freq": "1x/dia",
+    "obs": "uso domiciliar"
+   },
+   {
+    "item": "Tramadol",
+    "dose": "100 mg",
+    "via": "IV",
+    "freq": "6/6 h",
+    "obs": ""
+   },
+   {
+    "item": "Ondansetrona",
+    "dose": "8 mg",
+    "via": "IV",
+    "freq": "8/8 h",
+    "obs": "horário fixo"
+   },
+   {
+    "item": "Metoclopramida",
+    "dose": "10 mg",
+    "via": "IV",
+    "freq": "8/8 h",
+    "obs": "horário fixo"
+   },
+   {
+    "item": "Dipirona",
+    "dose": "1 g",
+    "via": "IV",
+    "freq": "6/6 h",
+    "obs": ""
+   },
+   {
+    "item": "Amiodarona",
+    "dose": "200 mg",
+    "via": "VO",
+    "freq": "12/12 h",
+    "obs": ""
+   },
+   {
+    "item": "Sinvastatina",
+    "dose": "40 mg",
+    "via": "VO",
+    "freq": "1x/dia à noite",
+    "obs": ""
+   },
+   {
+    "item": "AAS",
+    "dose": "100 mg",
+    "via": "VO",
+    "freq": "1x/dia",
+    "obs": ""
+   },
+   {
+    "item": "Enoxaparina",
+    "dose": "40 mg",
+    "via": "SC",
+    "freq": "1x/dia",
+    "obs": ""
+   },
+   {
+    "item": "Insulina NPH e regular",
+    "dose": "conforme protocolo",
+    "via": "SC",
+    "freq": "",
+    "obs": ""
+   },
+   {
+    "item": "Haloperidol",
+    "dose": "5 mg",
+    "via": "IV",
+    "freq": "se agitação",
+    "obs": ""
+   }
+  ],
+  "tarefa": "Avalie a prescrição do dia, identifique os problemas relacionados a medicamentos e proponha as intervenções à equipe, em ordem de prioridade.",
+  "gabarito": [
+   {
+    "problema": "Síndrome serotoninérgica por linezolida associada a sertralina e tramadol",
+    "tipo": "Segurança: reação adversa ou interação",
+    "evidencia": "Início após a linezolida, que é inibidor fraco e reversível da monoamino-oxidase, em paciente com sertralina e tramadol. Critérios de Hunter preenchidos: clônus induzível com agitação e sudorese, além de hipertermia, taquicardia, midríase e diarreia.",
+    "intervencao": "Suspender linezolida e sertralina, com cuidados de suporte e resfriamento. Para agitação, benzodiazepínico (midazolam 1 a 2 mg IV, repetindo conforme resposta). Se os sintomas persistirem, cipro-heptadina 12 mg VO seguida de 2 mg a cada 2 h, se disponível. Temperatura acima de 41 °C exige sedação profunda, intubação e bloqueio neuromuscular. Notificar a reação no Notivisa.",
+    "prioridade": "alta"
+   },
+   {
+    "problema": "Mediastinite e bacteremia por MRSA sem antimicrobiano ativo após a suspensão da linezolida",
+    "tipo": "Necessidade: necessita de medicamento adicional",
+    "evidencia": "Infecção profunda com bacteremia por MRSA. A CIM de vancomicina de 2 mg/L por fita gradiente torna improvável atingir AUC de 400 a 600 mg·h/L sem nefrotoxicidade (consenso de 2020).",
+    "intervencao": "Daptomicina 8 a 10 mg/kg IV 24/24 h (800 mg, cerca de 9 mg/kg), dose usada por especialistas em infecção estafilocócica complicada, acima dos 6 mg/kg da bula. CPK basal já elevada: dosar duas vezes por semana. Duração a definir com a infectologia (em geral 4 a 6 semanas na mediastinite com osteomielite esternal).",
+    "prioridade": "alta"
+   },
+   {
+    "problema": "Tramadol em paciente com ISRS",
+    "tipo": "Segurança: reação adversa ou interação",
+    "evidencia": "Tramadol inibe a recaptação de serotonina e reduz o limiar convulsivo; a sertralina ainda inibe parcialmente o CYP2D6, que forma o metabólito opioide ativo, o que reduz a analgesia e mantém o efeito serotoninérgico.",
+    "intervencao": "Suspender o tramadol. Analgesia com dipirona e morfina 2 a 3 mg IV em resgate, opioide sem atividade serotoninérgica relevante. Evitar meperidina e metadona.",
+    "prioridade": "alta"
+   },
+   {
+    "problema": "Metoclopramida e ondansetrona de horário sem náusea",
+    "tipo": "Necessidade: medicamento desnecessário",
+    "evidencia": "Sem vômitos registrados. Ondansetrona tem alerta regulatório de contribuição para síndrome serotoninérgica, e metoclopramida pode causar acatisia e rigidez, que confundem o quadro.",
+    "intervencao": "Suspender os dois. Se houver náusea, dose única de antiemético não serotoninérgico e revisão das causas.",
+    "prioridade": "média"
+   },
+   {
+    "problema": "Haloperidol se necessário para agitação na síndrome serotoninérgica",
+    "tipo": "Segurança: reação adversa ou interação",
+    "evidencia": "Antipsicóticos prejudicam a dissipação de calor e confundem o diagnóstico com síndrome neuroléptica maligna; o haloperidol ainda soma prolongamento do QT à amiodarona.",
+    "intervencao": "Retirar o haloperidol e usar benzodiazepínico para a agitação enquanto durar o quadro.",
+    "prioridade": "média"
+   },
+   {
+    "problema": "Sinvastatina 40 mg com amiodarona, e estatina com CPK elevada",
+    "tipo": "Segurança: dose alta",
+    "evidencia": "A FDA limita a sinvastatina a 20 mg/dia com amiodarona pelo risco de miopatia. CPK de 820 U/L hoje e início previsto de daptomicina, que também causa miopatia.",
+    "intervencao": "Suspender a sinvastatina enquanto a CPK estiver elevada e durante a daptomicina, como sugere a bula da daptomicina. Ao término, reintroduzir atorvastatina 40 mg, estatina de alta intensidade indicada após revascularização e com menor interação com amiodarona.",
+    "prioridade": "média"
+   }
+  ],
+  "discussao": "A linezolida inibe de forma fraca e reversível a MAO-A e, sozinha, raramente causa síndrome serotoninérgica; o risco aparece com ISRS, IRSN, tramadol, metadona, meperidina, fentanil em dose alta e antieméticos serotoninérgicos. A FDA emitiu alerta em 2011: se a linezolida for indispensável, suspender o serotoninérgico e monitorizar por duas semanas (cinco no caso da fluoxetina) ou até 24 h após a última dose de linezolida, o que vier primeiro. A sertralina pode ser reiniciada 24 h após a última dose de linezolida.\n\nO diagnóstico é clínico, pelos critérios de Hunter: clônus espontâneo; clônus induzível com agitação ou sudorese; clônus ocular com agitação ou sudorese; tremor com hiper-reflexia; ou hipertonia com temperatura acima de 38 °C e clônus. A febre neste paciente tinha causa concorrente (mediastinite), o que atrasou o reconhecimento; clônus e hiper-reflexia não são explicados por infecção.\n\nMonitorizar temperatura a cada hora, clônus e reflexos por turno, CPK e creatinina (rabdomiólise), eletrólitos, ECG (amiodarona) e plaquetas. Com a daptomicina, CPK duas vezes por semana e atenção a pneumonia eosinofílica. Na alta, reconciliar sertralina, estatina e analgesia.",
+  "leituras": [
+   "interacoes-farmacodinamicas",
+   "gram-positivos-resistentes",
+   "interacoes-antimicrobianos",
+   "farmacovigilancia-ram",
+   "semiologia-sistemas",
+   "outras-infeccoes-uti"
+  ],
+  "fontes": [
+   "Boyer EW, Shannon M. The serotonin syndrome. N Engl J Med 2005;352:1112-1120",
+   "Dunkley EJ et al. The Hunter Serotonin Toxicity Criteria. QJM 2003;96:635-642",
+   "FDA Drug Safety Communication: serious CNS reactions possible when linezolid is given to patients taking serotonergic psychiatric medications, 2011",
+   "Liu C et al. Clinical practice guidelines by the IDSA for the treatment of MRSA infections in adults and children. Clin Infect Dis 2011;52:e18-e55",
+   "Rybak MJ et al. Therapeutic monitoring of vancomycin for serious MRSA infections: a revised consensus guideline (ASHP/IDSA/PIDS/SIDP). Am J Health Syst Pharm 2020;77:835-864",
+   "FDA Drug Safety Communication: new restrictions, contraindications, and dose limitations for Zocor (simvastatin), 2011"
+  ]
+ },
+ {
+  "id": "caso-10",
+  "titulo": "Aspergilose em transplantada renal: voriconazol e tacrolimo",
+  "area": "inter",
+  "nivel": "intermediario",
+  "resumo": "Receptora de transplante renal há quatro meses, com aspergilose pulmonar provável, cujo tacrolimo sobe para 24 ng/mL três dias após iniciar voriconazol.",
+  "paciente": {
+   "idade": 52,
+   "sexo": "F",
+   "peso": 64,
+   "altura": 160,
+   "alergias": "Nega"
+  },
+  "historia": "Professora com doença renal crônica por nefropatia diabética, transplantada renal de doador falecido há quatro meses, com creatinina basal de 1,2 mg/dL. Imunossupressão com tacrolimo 5 mg 12/12 h (níveis recentes entre 7 e 9 ng/mL), micofenolato de sódio 720 mg 12/12 h e prednisona 5 mg/dia, além de profilaxia com SMX-TMP 400/80 mg/dia. Internada na UTI há cinco dias por pneumonia com insuficiência respiratória, em cateter nasal de alto fluxo. A tomografia mostrou nódulos com sinal do halo e a galactomanana no lavado broncoalveolar veio 2,1. A equipe iniciou voriconazol IV há três dias (6 mg/kg 12/12 h nas duas primeiras doses e depois 4 mg/kg 12/12 h) e manteve a imunossupressão sem alteração. Hoje apresenta tremor fino, cefaleia, PA de 172/98 mmHg, potássio de 5,8 mEq/L e creatinina de 2,3 mg/dL; o tacrolimo em vale veio 24 ng/mL. O ECG mostra QTc de 492 ms. Aceita dieta oral e engole comprimidos sem dificuldade. Mantém omeprazol 40 mg/dia e sinvastatina 20 mg à noite, de uso prévio, e ondansetrona de horário prescrita na admissão, sem náusea desde então. Não há dosagem de voriconazol programada.",
+  "sinais": [
+   [
+    "PA",
+    "172/98 mmHg"
+   ],
+   [
+    "FC",
+    "96 bpm"
+   ],
+   [
+    "FR",
+    "24 irpm"
+   ],
+   [
+    "SpO2",
+    "94% (CNAF, FiO2 0,45)"
+   ],
+   [
+    "Temp.",
+    "37,2 °C"
+   ],
+   [
+    "Diurese",
+    "0,6 mL/kg/h"
+   ],
+   [
+    "ECG",
+    "QTc 492 ms"
+   ]
+  ],
+  "labs": [
+   [
+    "Tacrolimo (vale)",
+    "24 ng/mL",
+    "alvo da equipe 6–9"
+   ],
+   [
+    "Creatinina",
+    "2,3 mg/dL (basal 1,2)",
+    "0,5–1,1"
+   ],
+   [
+    "TFG CKD-EPI 2021",
+    "25 mL/min/1,73 m²",
+    "≥90"
+   ],
+   [
+    "Potássio",
+    "5,8 mEq/L",
+    "3,5–5,0"
+   ],
+   [
+    "Magnésio",
+    "1,5 mg/dL",
+    "1,6–2,6"
+   ],
+   [
+    "Glicemia",
+    "232 mg/dL",
+    "70–99"
+   ],
+   [
+    "TGO",
+    "48 U/L",
+    "<32"
+   ],
+   [
+    "TGP",
+    "56 U/L",
+    "<33"
+   ],
+   [
+    "Leucócitos",
+    "5.200/mm³",
+    "4.000–11.000"
+   ],
+   [
+    "Galactomanana no LBA",
+    "2,1 (índice)",
+    "<1"
+   ]
+  ],
+  "prescricao": [
+   {
+    "item": "Voriconazol",
+    "dose": "256 mg (4 mg/kg)",
+    "via": "IV",
+    "freq": "12/12 h",
+    "obs": "em 2 h; D3"
+   },
+   {
+    "item": "Tacrolimo",
+    "dose": "5 mg",
+    "via": "VO",
+    "freq": "12/12 h",
+    "obs": ""
+   },
+   {
+    "item": "Micofenolato de sódio",
+    "dose": "720 mg",
+    "via": "VO",
+    "freq": "12/12 h",
+    "obs": ""
+   },
+   {
+    "item": "Prednisona",
+    "dose": "5 mg",
+    "via": "VO",
+    "freq": "1x/dia",
+    "obs": ""
+   },
+   {
+    "item": "SMX-TMP",
+    "dose": "400/80 mg",
+    "via": "VO",
+    "freq": "1x/dia",
+    "obs": "profilaxia"
+   },
+   {
+    "item": "Omeprazol",
+    "dose": "40 mg",
+    "via": "VO",
+    "freq": "1x/dia",
+    "obs": ""
+   },
+   {
+    "item": "Sinvastatina",
+    "dose": "20 mg",
+    "via": "VO",
+    "freq": "1x/dia à noite",
+    "obs": ""
+   },
+   {
+    "item": "Ondansetrona",
+    "dose": "8 mg",
+    "via": "IV",
+    "freq": "8/8 h",
+    "obs": "horário fixo"
+   },
+   {
+    "item": "Heparina não fracionada",
+    "dose": "5.000 UI",
+    "via": "SC",
+    "freq": "8/8 h",
+    "obs": ""
+   },
+   {
+    "item": "Insulina regular",
+    "dose": "conforme escala",
+    "via": "SC",
+    "freq": "6/6 h",
+    "obs": ""
+   }
+  ],
+  "tarefa": "Avalie a prescrição do dia, identifique os problemas relacionados a medicamentos e proponha as intervenções à equipe, em ordem de prioridade.",
+  "gabarito": [
+   {
+    "problema": "Toxicidade do tacrolimo por inibição do CYP3A4 pelo voriconazol",
+    "tipo": "Segurança: reação adversa ou interação",
+    "evidencia": "Tacrolimo de 7 a 9 para 24 ng/mL em três dias, com tremor, cefaleia, hipertensão, hipercalemia e creatinina de 1,2 para 2,3 mg/dL. O voriconazol é inibidor potente do CYP3A4, e a bula manda reduzir a dose de tacrolimo para um terço ao iniciar o azol.",
+    "intervencao": "Suspender as próximas uma ou duas doses de tacrolimo, dosar o vale diariamente e reiniciar com cerca de um terço da dose (1,5 mg 12/12 h), titulando para o alvo da equipe. Estudos mostram aumento médio de cinco vezes na concentração corrigida pela dose, então a redução pode precisar ser maior. Ao suspender o voriconazol, a dose terá de subir de novo, também guiada por nível.",
+    "prioridade": "alta"
+   },
+   {
+    "problema": "Voriconazol IV com TFG de 25 mL/min/1,73 m² e sem nível sérico programado",
+    "tipo": "Segurança: reação adversa ou interação",
+    "evidencia": "A formulação IV contém sulfobutil éter beta-ciclodextrina, que acumula com depuração abaixo de 50 mL/min; a bula recomenda preferir a via oral nessa situação. A paciente engole comprimidos, e a biodisponibilidade oral do voriconazol passa de 90%. Não há vale programado, apesar de cinética não linear e grande variabilidade.",
+    "intervencao": "Passar para voriconazol 200 mg VO 12/12 h, 1 h antes ou depois das refeições, e dosar o vale no 5º dia de tratamento, com alvo de 1 a 5,5 mg/L (BSMM 2014), ajustando a dose pelo nível.",
+    "prioridade": "média"
+   },
+   {
+    "problema": "Sinvastatina com voriconazol",
+    "tipo": "Segurança: reação adversa ou interação",
+    "evidencia": "O voriconazol aumenta a exposição à sinvastatina, substrato sensível do CYP3A4, com risco de miopatia e rabdomiólise; a lesão renal aguda soma risco.",
+    "intervencao": "Suspender a sinvastatina durante o voriconazol, ou trocar por pravastatina ou rosuvastatina em dose baixa, que dependem menos do CYP3A4.",
+    "prioridade": "média"
+   },
+   {
+    "problema": "Ondansetrona de horário sem náusea, com QTc de 492 ms",
+    "tipo": "Necessidade: medicamento desnecessário",
+    "evidencia": "Sem náusea desde a admissão. Voriconazol, ondansetrona e hipomagnesemia (1,5 mg/dL) somam prolongamento do QT.",
+    "intervencao": "Suspender a ondansetrona, repor magnésio (sulfato de magnésio 2 g IV) e repetir o ECG em 24 h.",
+    "prioridade": "média"
+   },
+   {
+    "problema": "Omeprazol 40 mg com voriconazol",
+    "tipo": "Segurança: reação adversa ou interação",
+    "evidencia": "O voriconazol inibe o CYP2C19 e o CYP3A4 e aproximadamente dobra a exposição ao omeprazol; a bula recomenda reduzir pela metade a dose de omeprazol de 40 mg ou mais.",
+    "intervencao": "Reduzir o omeprazol para 20 mg/dia e reavaliar a indicação.",
+    "prioridade": "baixa"
+   }
+  ],
+  "discussao": "Os azólicos inibem o CYP3A4 em graus diferentes: cetoconazol, itraconazol, voriconazol e posaconazol são potentes; isavuconazol e fluconazol, moderados, este último de forma dependente da dose. Tacrolimo, ciclosporina, sirolimo e everolimo são substratos sensíveis. Ao iniciar voriconazol ou posaconazol, a bula sugere reduzir o tacrolimo a um terço, mas a variabilidade individual é grande, e a regra é dosar o nível diariamente nas primeiras semanas. O micofenolato não sofre essa interação.\n\nA nefrotoxicidade aguda do tacrolimo é principalmente hemodinâmica (vasoconstrição da arteríola aferente) e costuma regredir com a correção do nível. Hipercalemia, hipomagnesemia, hipertensão, tremor e hiperglicemia são outros sinais de exposição excessiva. A profilaxia com SMX-TMP em dose baixa é indispensável no primeiro ano após o transplante e deve ser mantida, com monitorização de potássio.\n\nO voriconazol é primeira linha na aspergilose invasiva, mas o isavuconazol é alternativa com menos interação e sem prolongamento do QT, útil em transplantado. Monitorizar tacrolimo diariamente até estabilizar, vale de voriconazol no 5º dia e após mudanças de dose, função hepática, ECG, potássio, magnésio, glicemia e efeitos visuais e neurológicos do voriconazol.",
+  "leituras": [
+   "interacoes-cyp-transportadores",
+   "antifungicos",
+   "monitorizacao-terapeutica",
+   "interacoes-antimicrobianos",
+   "dose-disfuncao-renal",
+   "interacoes-farmacodinamicas"
+  ],
+  "fontes": [
+   "Patterson TF et al. Practice Guidelines for the Diagnosis and Management of Aspergillosis: 2016 Update by the IDSA. Clin Infect Dis 2016;63:e1-e60",
+   "Ashbee HR et al. Therapeutic drug monitoring of antifungal agents: guidelines from the British Society for Medical Mycology. J Antimicrob Chemother 2014;69:1162-1176",
+   "Vanhove T et al. Determinants of the Magnitude of Interaction Between Tacrolimus and Voriconazole/Posaconazole in Solid Organ Recipients. Am J Transplant 2017;17:2372-2380",
+   "Tisdale JE et al. Drug-Induced Arrhythmias: A Scientific Statement From the American Heart Association. Circulation 2020;142:e214-e233",
+   "Bula de voriconazol (Vfend), bulário eletrônico da ANVISA"
+  ]
+ },
+ {
+  "id": "caso-11",
+  "titulo": "Bacteremia por MRSA em politraumatizado com depuração renal aumentada: vancomicina guiada por AUC",
+  "area": "atb",
+  "nivel": "avancado",
+  "resumo": "Jovem politraumatizado com bacteremia por MRSA relacionada a cateter, em vancomicina 1 g 12/12 h, com dois níveis séricos disponíveis para calcular a AUC.",
+  "paciente": {
+   "idade": 27,
+   "sexo": "M",
+   "peso": 85,
+   "altura": 180,
+   "alergias": "Nega"
+  },
+  "historia": "Motociclista previamente hígido, internado há 11 dias após colisão, com contusão pulmonar e fraturas de arcos costais, fratura de fêmur fixada no 2º dia e traumatismo cranioencefálico leve (contusão frontal pequena, sem indicação cirúrgica, sem crises). Iniciou levetiracetam na admissão. No 5º dia teve febre e secreção traqueal purulenta e recebeu piperacilina-tazobactam empírica para pneumonia associada à ventilação; o aspirado traqueal cresceu apenas microbiota habitual, e ele foi extubado no 7º dia. No 8º dia teve nova febre, e as hemoculturas periféricas e do cateter venoso central (inserido na admissão) isolaram Staphylococcus aureus resistente à meticilina, com CIM de vancomicina de 1 mg/L por microdiluição em caldo. Desde então recebe vancomicina 1 g 12/12 h, iniciada sem dose de ataque e infundida em 30 minutos; a enfermagem relata rubor em face e tronco durante as infusões, que cede com difenidramina. O cateter central continua no mesmo sítio e a hemocultura de controle do 10º dia também foi positiva. Hoje, após a 6ª dose, foram colhidos dois níveis: um 1 h após o fim da infusão (1,5 h após o início) e outro 30 min antes da dose seguinte (11,5 h após o início). Continua febril, estável, com diurese abundante.",
+  "sinais": [
+   [
+    "PA",
+    "128/76 mmHg"
+   ],
+   [
+    "FC",
+    "104 bpm"
+   ],
+   [
+    "Temp.",
+    "38,3 °C"
+   ],
+   [
+    "SpO2",
+    "97% (ar ambiente)"
+   ],
+   [
+    "Glasgow",
+    "15"
+   ],
+   [
+    "Diurese",
+    "2,1 mL/kg/h"
+   ]
+  ],
+  "labs": [
+   [
+    "Vancomicina 1,5 h após início da infusão",
+    "22 mg/L",
+    ""
+   ],
+   [
+    "Vancomicina 11,5 h após início da infusão",
+    "4,4 mg/L",
+    ""
+   ],
+   [
+    "Creatinina",
+    "0,6 mg/dL",
+    "0,7–1,3"
+   ],
+   [
+    "TFG CKD-EPI 2021",
+    "136 mL/min/1,73 m²",
+    "≥90"
+   ],
+   [
+    "Depuração de creatinina medida (urina de 8 h)",
+    "182 mL/min",
+    "90–140"
+   ],
+   [
+    "Leucócitos",
+    "17.600/mm³",
+    "4.000–11.000"
+   ],
+   [
+    "PCR",
+    "188 mg/L",
+    "<5"
+   ],
+   [
+    "Hemocultura de controle (10º dia)",
+    "MRSA",
+    "negativa"
+   ]
+  ],
+  "prescricao": [
+   {
+    "item": "Vancomicina",
+    "dose": "1 g",
+    "via": "IV",
+    "freq": "12/12 h",
+    "obs": "em 100 mL de SF 0,9%, infundir em 30 min; D4"
+   },
+   {
+    "item": "Piperacilina-tazobactam",
+    "dose": "4,5 g",
+    "via": "IV",
+    "freq": "6/6 h",
+    "obs": "D7"
+   },
+   {
+    "item": "Levetiracetam",
+    "dose": "500 mg",
+    "via": "IV",
+    "freq": "12/12 h",
+    "obs": "D11"
+   },
+   {
+    "item": "Difenidramina",
+    "dose": "50 mg",
+    "via": "IV",
+    "freq": "antes de cada dose de vancomicina",
+    "obs": ""
+   },
+   {
+    "item": "Enoxaparina",
+    "dose": "40 mg",
+    "via": "SC",
+    "freq": "1x/dia",
+    "obs": ""
+   },
+   {
+    "item": "Dipirona",
+    "dose": "1 g",
+    "via": "IV",
+    "freq": "6/6 h",
+    "obs": ""
+   },
+   {
+    "item": "Morfina",
+    "dose": "2 mg",
+    "via": "IV",
+    "freq": "se dor",
+    "obs": ""
+   }
+  ],
+  "tarefa": "Avalie a prescrição do dia, identifique os problemas relacionados a medicamentos e proponha as intervenções à equipe, em ordem de prioridade.",
+  "gabarito": [
+   {
+    "problema": "Exposição à vancomicina abaixo do alvo de AUC",
+    "tipo": "Efetividade: dose baixa",
+    "evidencia": "k = ln(22/4,4) ÷ (11,5 - 1,5) = 0,161 h⁻¹; meia-vida de 4,3 h. Concentração no fim da infusão (0,5 h) = 22 × e^(0,161 × 1) = 25,8 mg/L; vale verdadeiro (12 h) = 4,4 × e^(-0,161 × 0,5) = 4,1 mg/L. AUC da infusão = (25,8 + 4,1) ÷ 2 × 0,5 = 7,5; AUC de eliminação = (25,8 - 4,1) ÷ 0,161 = 135; AUC0-12 = 143 e AUC24 = 286 mg·h/L, abaixo de 400. Depuração da vancomicina = 1.000 ÷ 143 = 7 L/h; volume = 7 ÷ 0,161 = 43,5 L (0,51 L/kg). Depuração renal aumentada confirmada pela depuração de creatinina medida.",
+    "intervencao": "Dose diária necessária para AUC24 de 500 = 500 × 7 = 3.500 mg. Propor vancomicina 1.250 mg IV 8/8 h (3.750 mg/dia, AUC24 prevista de cerca de 535 mg·h/L), intervalo de 8 h pela meia-vida curta. Repetir dois níveis após a 4ª dose do novo esquema ou usar software bayesiano, se disponível.",
+    "prioridade": "alta"
+   },
+   {
+    "problema": "Reação infusional à vancomicina por infusão rápida",
+    "tipo": "Segurança: reação adversa ou interação",
+    "evidencia": "1 g em 30 min = 33 mg/min. Rubor de face e tronco durante as infusões é a reação infusional (antes chamada síndrome do homem vermelho), mediada por liberação de histamina e dependente da velocidade.",
+    "intervencao": "Infundir a no máximo 10 mg/min: a dose de 1.250 mg em 2 h. Com a velocidade corrigida, suspender a difenidramina de rotina, que acrescenta sedação e efeito anticolinérgico.",
+    "prioridade": "média"
+   },
+   {
+    "problema": "Piperacilina-tazobactam sem indicação",
+    "tipo": "Necessidade: medicamento desnecessário",
+    "evidencia": "Pneumonia associada à ventilação não confirmada (microbiota habitual), paciente extubado desde o 7º dia, antimicrobiano no 7º dia. A associação de vancomicina com piperacilina-tazobactam está ligada a maior incidência de lesão renal aguda.",
+    "intervencao": "Suspender a piperacilina-tazobactam.",
+    "prioridade": "alta"
+   },
+   {
+    "problema": "Bacteremia persistente com foco mantido",
+    "tipo": "Efetividade: medicamento inefetivo",
+    "evidencia": "Hemocultura de controle positiva no 10º dia com o cateter central original ainda no mesmo sítio. Sem retirar o foco, o antimicrobiano isolado tende a falhar.",
+    "intervencao": "Retirar o cateter venoso central (IDSA 2009 e 2011) e, se ainda houver necessidade de acesso central, puncionar outro sítio. Hemoculturas a cada 24 a 48 h até negativar, ecocardiograma (transesofágico se persistir) e duração contada a partir da primeira hemocultura negativa: 14 dias na bacteremia não complicada; 4 a 6 semanas se complicada. Persistência apesar de AUC adequada e foco removido é motivo para discutir daptomicina em dose alta.",
+    "prioridade": "alta"
+   },
+   {
+    "problema": "Levetiracetam profilático mantido após o 7º dia",
+    "tipo": "Necessidade: medicamento desnecessário",
+    "evidencia": "TCE leve sem crises, no 11º dia. A diretriz da Brain Trauma Foundation (2017) sustenta profilaxia apenas para crises precoces, nos primeiros 7 dias.",
+    "intervencao": "Suspender o levetiracetam.",
+    "prioridade": "baixa"
+   }
+  ],
+  "discussao": "O consenso de 2020 abandonou o vale de 15 a 20 mg/L como alvo e recomenda AUC24 de 400 a 600 mg·h/L (assumindo CIM de 1 mg/L por microdiluição), estimada por software bayesiano ou por dois níveis com equações de primeira ordem, como aqui. O vale de 4,4 mg/L, pelo raciocínio antigo, levaria a aumentos agressivos até um vale de 15 mg/L, que corresponderia a AUC bem acima de 600 e a mais nefrotoxicidade sem ganho de eficácia. A dose de ataque de 20 a 35 mg/kg pelo peso real (máximo de 3 g) deve ser feita no início do tratamento; neste paciente, cerca de 2 g teria encurtado o tempo abaixo do alvo.\n\nPacientes jovens, politraumatizados, queimados e com TCE frequentemente têm depuração renal aumentada (depuração de creatinina acima de 130 mL/min), e a creatinina baixa engana. Nesses casos, as equações estimam mal e a depuração medida em urina de 8 a 24 h ajuda. A meia-vida de 4,3 h justifica intervalo de 8 h: com 12 h, o paciente passaria boa parte do intervalo com concentrações muito baixas.\n\nMonitorizar creatinina diariamente enquanto houver ajuste, níveis após cada mudança de dose, hemoculturas até negativar, ecocardiograma e resposta clínica. Se a função renal cair (a depuração aumentada costuma regredir), a dose terá de ser reduzida.",
+  "leituras": [
+   "gram-positivos-resistentes",
+   "pkpd-antimicrobianos",
+   "monitorizacao-terapeutica",
+   "pk-paciente-critico",
+   "parametros-pk",
+   "outras-infeccoes-uti",
+   "stewardship"
+  ],
+  "fontes": [
+   "Rybak MJ et al. Therapeutic monitoring of vancomycin for serious MRSA infections: a revised consensus guideline (ASHP/IDSA/PIDS/SIDP). Am J Health Syst Pharm 2020;77:835-864",
+   "Liu C et al. Clinical practice guidelines by the IDSA for the treatment of MRSA infections in adults and children. Clin Infect Dis 2011;52:e18-e55",
+   "Mermel LA et al. Clinical practice guidelines for the diagnosis and management of intravascular catheter-related infection: 2009 update by the IDSA. Clin Infect Dis 2009;49:1-45",
+   "Carney N et al. Guidelines for the Management of Severe Traumatic Brain Injury, Fourth Edition. Neurosurgery 2017;80:6-15"
+  ]
+ },
+ {
+  "id": "caso-12",
+  "titulo": "Choque séptico urinário em hemodiafiltração venovenosa contínua: dose de antimicrobianos e perdas na TRS",
+  "area": "dose",
+  "nivel": "avancado",
+  "resumo": "Idosa em choque séptico por pielonefrite obstrutiva com Klebsiella ESBL, em CVVHDF, com doses de antimicrobianos prescritas como se estivesse em hemodiálise intermitente.",
+  "paciente": {
+   "idade": 67,
+   "sexo": "F",
+   "peso": 72,
+   "altura": 160,
+   "alergias": "Nega"
+  },
+  "historia": "Dona de casa, hipertensa e diabética, com creatinina basal de 0,9 mg/dL. Admitida há três dias com choque séptico por pielonefrite obstrutiva (cálculo ureteral à direita), submetida a nefrostomia percutânea no primeiro dia. Hemoculturas e urocultura isolaram Klebsiella pneumoniae produtora de ESBL, sensível a meropenem, ertapenem e amicacina e resistente a piperacilina-tazobactam, cefepima e ciprofloxacino. Evoluiu com lesão renal aguda KDIGO 3, anúria e acidose metabólica, e iniciou hemodiafiltração venovenosa contínua (CVVHDF) há 36 h, com anticoagulação regional por citrato, dose de efluente prescrita de 25 mL/kg/h (1.800 mL/h) e perda líquida de 50 mL/h. O filtro tem funcionado cerca de 22 h por dia, e as soluções em uso não contêm fosfato. Está intubada, com noradrenalina em 0,18 mcg/kg/min e hidrocortisona. A vancomicina empírica da admissão foi mantida, com dose para hemodiálise. Na urina da nefrostomia cresceu Candida albicans, e foi iniciado fluconazol 200 mg/dia. Está sonolenta sob morfina intermitente, com RASS -3 sem sedativo contínuo e pupilas mióticas. Recebe dieta enteral a 50 mL/h. Toda a prescrição de antimicrobianos foi montada com a tabela de ajuste para TFG <10 mL/min ou hemodiálise.",
+  "sinais": [
+   [
+    "PA",
+    "104/60 mmHg (PAM 75)"
+   ],
+   [
+    "FC",
+    "98 bpm"
+   ],
+   [
+    "Temp.",
+    "37,6 °C"
+   ],
+   [
+    "SpO2",
+    "96% (FiO2 0,3)"
+   ],
+   [
+    "RASS",
+    "-3"
+   ],
+   [
+    "Diurese",
+    "anúria (<50 mL/24 h)"
+   ],
+   [
+    "CVVHDF",
+    "efluente 1.800 mL/h (25 mL/kg/h), 22 h/dia"
+   ]
+  ],
+  "labs": [
+   [
+    "Creatinina",
+    "2,8 mg/dL (em CVVHDF; basal 0,9)",
+    "0,5–1,1"
+   ],
+   [
+    "TFG CKD-EPI 2021",
+    "não interpretável (LRA em TRS contínua)",
+    "≥90"
+   ],
+   [
+    "Fósforo",
+    "1,6 mg/dL",
+    "2,5–4,5"
+   ],
+   [
+    "Magnésio",
+    "1,5 mg/dL",
+    "1,6–2,6"
+   ],
+   [
+    "Potássio",
+    "3,6 mEq/L",
+    "3,5–5,0"
+   ],
+   [
+    "Cálcio iônico sistêmico",
+    "1,08 mmol/L",
+    "1,12–1,32"
+   ],
+   [
+    "Lactato",
+    "2,1 mmol/L",
+    "<2"
+   ],
+   [
+    "Procalcitonina",
+    "6,2 ng/mL (18 na admissão)",
+    "<0,5"
+   ],
+   [
+    "Plaquetas",
+    "96.000/mm³",
+    "150.000–450.000"
+   ],
+   [
+    "Albumina",
+    "2,6 g/dL",
+    "3,5–5,2"
+   ]
+  ],
+  "prescricao": [
+   {
+    "item": "Meropenem",
+    "dose": "500 mg",
+    "via": "IV",
+    "freq": "12/12 h",
+    "obs": "em 30 min; ajuste para TFG <10"
+   },
+   {
+    "item": "Vancomicina",
+    "dose": "1 g",
+    "via": "IV",
+    "freq": "48/48 h",
+    "obs": "ajuste para hemodiálise; D3"
+   },
+   {
+    "item": "Fluconazol",
+    "dose": "200 mg",
+    "via": "IV",
+    "freq": "24/24 h",
+    "obs": "candidúria; D1"
+   },
+   {
+    "item": "Morfina",
+    "dose": "4 mg",
+    "via": "IV",
+    "freq": "4/4 h",
+    "obs": "horário fixo"
+   },
+   {
+    "item": "Noradrenalina 64 mcg/mL",
+    "dose": "0,18 mcg/kg/min",
+    "via": "IV contínua",
+    "freq": "",
+    "obs": "12,2 mL/h"
+   },
+   {
+    "item": "Hidrocortisona",
+    "dose": "50 mg",
+    "via": "IV",
+    "freq": "6/6 h",
+    "obs": ""
+   },
+   {
+    "item": "Heparina não fracionada",
+    "dose": "5.000 UI",
+    "via": "SC",
+    "freq": "12/12 h",
+    "obs": ""
+   },
+   {
+    "item": "Insulina regular",
+    "dose": "protocolo IV",
+    "via": "IV contínua",
+    "freq": "",
+    "obs": "meta 140–180 mg/dL"
+   },
+   {
+    "item": "Dieta enteral",
+    "dose": "50 mL/h",
+    "via": "SNE",
+    "freq": "contínua",
+    "obs": ""
+   }
+  ],
+  "tarefa": "Avalie a prescrição do dia, identifique os problemas relacionados a medicamentos e proponha as intervenções à equipe, em ordem de prioridade.",
+  "gabarito": [
+   {
+    "problema": "Meropenem em dose de hemodiálise intermitente para paciente em CVVHDF",
+    "tipo": "Efetividade: dose baixa",
+    "evidencia": "Efluente de 1.800 mL/h equivale a cerca de 30 mL/min de depuração para solutos pequenos e pouco ligados a proteína, como o meropenem, além da função renal residual (nula aqui). A tabela para TFG <10 mL/min subdosa quem está em TRS contínua, sobretudo nas primeiras 48 h, com volume de distribuição aumentado. Infusão em 30 min contraria a recomendação de infusão prolongada do Surviving Sepsis 2026.",
+    "intervencao": "Meropenem 1 g IV 8/8 h em infusão estendida de 3 h. Se a CVVHDF for interrompida por mais de 12 a 24 h, reavaliar a dose; monitorização por nível sérico, onde houver.",
+    "prioridade": "alta"
+   },
+   {
+    "problema": "Vancomicina empírica sem indicação",
+    "tipo": "Necessidade: medicamento desnecessário",
+    "evidencia": "Agente isolado em hemocultura e urina é Klebsiella ESBL; não há Gram-positivo em nenhuma cultura no 3º dia. O esquema de 1 g a cada 48 h também não se aplica à CVVHDF, que remove a vancomicina continuamente.",
+    "intervencao": "Suspender a vancomicina.",
+    "prioridade": "média"
+   },
+   {
+    "problema": "Fluconazol em dose de hemodiálise e com indicação a definir",
+    "tipo": "Efetividade: dose baixa",
+    "evidencia": "Candida albicans na urina de nefrostomia pode ser colonização; tratar se houver pielonefrite fúngica, bola fúngica ou manipulação urológica. Se tratada, 200 mg/dia é dose baixa para CVVHDF, que remove fluconazol de forma eficiente (fármaco pequeno, pouco ligado a proteína, eliminação renal).",
+    "intervencao": "Definir a indicação com a infectologia (urocultura de controle, imagem para bola fúngica). Se tratar, fluconazol 800 mg de ataque e 400 mg IV 12/12 h (800 mg/dia), faixa descrita para CVVHDF com efluente desta ordem.",
+    "prioridade": "média"
+   },
+   {
+    "problema": "Hipofosfatemia e hipomagnesemia pela TRS contínua sem reposição",
+    "tipo": "Necessidade: necessita de medicamento adicional",
+    "evidencia": "Fósforo 1,6 mg/dL e magnésio 1,5 mg/dL, com soluções sem fosfato e 36 h de CVVHDF. A TRS contínua remove fosfato e magnésio continuamente, e a hipofosfatemia prolonga a ventilação mecânica.",
+    "intervencao": "Glicerofosfato de sódio 20 mmol IV em 6 h (cerca de 0,3 mmol/kg) e sulfato de magnésio 2 g IV em 2 h, com fósforo e magnésio a cada 12 h. Discutir com a nefrologia solução de reposição com fosfato. Com citrato, acompanhar também cálcio iônico sistêmico e a relação cálcio total/cálcio iônico.",
+    "prioridade": "média"
+   },
+   {
+    "problema": "Morfina de horário na lesão renal aguda, com rebaixamento e miose",
+    "tipo": "Segurança: dose alta",
+    "evidencia": "Morfina-6-glicuronídeo acumula na LRA e a remoção pela CVVHDF é incompleta e variável; RASS -3 sem sedativo, miose e anúria.",
+    "intervencao": "Suspender a morfina fixa e usar fentanil em bolus de 25 a 50 mcg IV ou infusão titulada pela escala de dor (CPOT), com analgesia primeiro e reavaliação da necessidade de opioide.",
+    "prioridade": "média"
+   }
+  ],
+  "discussao": "Na TRS contínua, a depuração extracorpórea de um fármaco é aproximadamente o fluxo de efluente multiplicado pelo coeficiente de saturação (ou de peneiramento), que é próximo da fração livre para moléculas pequenas; com reposição pré-filtro, a diluição reduz um pouco essa depuração. Meropenem, piperacilina, fluconazol, levetiracetam e vancomicina são bem removidos. Tabelas de hemodiálise intermitente ou de TFG <10 mL/min subestimam a eliminação e produzem subdose justamente na fase de maior risco de morte por infecção. Também é preciso considerar o tempo real de filtro funcionando: 22 h por dia entregam menos do que a dose prescrita.\n\nA estimativa de TFG por CKD-EPI 2021 pressupõe creatinina em equilíbrio. Em LRA dialítica, o número não tem significado para dose. O raciocínio passa a ser: qual a depuração pela máquina, qual a função residual e qual o volume de distribuição do fármaco no choque.\n\nMonitorizar fósforo, magnésio, potássio e cálcio iônico a cada 12 h, sinais de acúmulo de citrato, glicemia, resposta clínica e procalcitonina. Quando a TRS for suspensa ou a diurese voltar, todas as doses precisam ser revistas no mesmo dia, para não deixar esquemas de TRS contínua em paciente sem depuração extracorpórea.",
+  "leituras": [
+   "trs-dialise-dose",
+   "fisiologia-renal-lra",
+   "pkpd-antimicrobianos",
+   "carbapenemicos-novos-betalactamicos",
+   "antifungicos",
+   "eletrolitos",
+   "sepse-choque-septico"
+  ],
+  "fontes": [
+   "Heintz BH, Matzke GR, Dager WE. Antimicrobial dosing concepts and recommendations for critically ill adult patients receiving continuous renal replacement therapy or intermittent hemodialysis. Pharmacotherapy 2009;29:562-577",
+   "Prescott HC et al. Surviving Sepsis Campaign: International Guidelines for Management of Sepsis and Septic Shock 2026. Crit Care Med 2026;54:725-812",
+   "IDSA. Guidance on the Treatment of Antimicrobial-Resistant Gram-Negative Infections, versão 5.0, 2026",
+   "Pappas PG et al. Clinical Practice Guideline for the Management of Candidiasis: 2016 Update by the IDSA. Clin Infect Dis 2016;62:e1-e50",
+   "KDIGO Clinical Practice Guideline for Acute Kidney Injury. Kidney Int Suppl 2012;2:1-138",
+   "Kraft MD et al. Treatment of electrolyte disorders in adult patients in the intensive care unit. Am J Health Syst Pharm 2005;62:1663-1682"
+  ]
+ },
+ {
+  "id": "caso-13",
+  "titulo": "Hematoma subdural agudo em uso de varfarina com INR de 5,8: reversão da anticoagulação",
+  "area": "classes",
+  "nivel": "intermediario",
+  "resumo": "Idoso anticoagulado com varfarina, com INR elevado três semanas após iniciar amiodarona, admitido com hematoma subdural agudo após queda.",
+  "paciente": {
+   "idade": 76,
+   "sexo": "M",
+   "peso": 80,
+   "altura": 172,
+   "alergias": "Nega"
+  },
+  "historia": "Aposentado com fibrilação atrial permanente não valvar, hipertenso, em uso de varfarina 5 mg/dia, com INR habitualmente entre 2 e 3, porque é o anticoagulante que recebe na unidade de saúde. Há três semanas o cardiologista iniciou amiodarona 200 mg/dia para controle de ritmo, sem alterar a dose de varfarina nem antecipar o controle do INR. Também toma AAS 100 mg/dia por conta própria, sem doença coronariana conhecida. Hoje pela manhã caiu da própria altura em casa e bateu a cabeça; chegou ao hospital 4 h depois, sonolento e confuso. A tomografia mostrou hematoma subdural agudo frontoparietal esquerdo de 11 mm, com desvio de linha média de 4 mm, e a neurocirurgia avalia drenagem nas próximas horas. Foi admitido na UTI 5 h após a queda, com Glasgow 12. A prescrição de admissão inclui plasma fresco congelado, vitamina K intramuscular, ácido tranexâmico, manutenção do AAS e profilaxia de TEV com enoxaparina a partir de hoje. O banco de sangue avisa que o plasma leva cerca de 40 minutos para descongelar. A farmácia tem complexo protrombínico de quatro fatores em estoque.",
+  "sinais": [
+   [
+    "PA",
+    "168/94 mmHg"
+   ],
+   [
+    "FC",
+    "76 bpm (FA)"
+   ],
+   [
+    "Temp.",
+    "36,4 °C"
+   ],
+   [
+    "SpO2",
+    "96% (ar ambiente)"
+   ],
+   [
+    "Glasgow",
+    "12 (AO 3, RV 4, RM 5)"
+   ],
+   [
+    "Pupilas",
+    "isocóricas e fotorreagentes"
+   ]
+  ],
+  "labs": [
+   [
+    "INR",
+    "5,8",
+    "0,9–1,2"
+   ],
+   [
+    "TTPa",
+    "38 s",
+    "25–35"
+   ],
+   [
+    "Hemoglobina",
+    "12,9 g/dL",
+    "13–17"
+   ],
+   [
+    "Plaquetas",
+    "182.000/mm³",
+    "150.000–450.000"
+   ],
+   [
+    "Fibrinogênio",
+    "310 mg/dL",
+    "200–400"
+   ],
+   [
+    "Creatinina",
+    "1,1 mg/dL",
+    "0,7–1,3"
+   ],
+   [
+    "TFG CKD-EPI 2021",
+    "70 mL/min/1,73 m²",
+    "≥90"
+   ],
+   [
+    "TSH",
+    "3,2 mUI/L",
+    "0,4–4,5"
+   ]
+  ],
+  "prescricao": [
+   {
+    "item": "Plasma fresco congelado",
+    "dose": "800 mL (10 mL/kg)",
+    "via": "IV",
+    "freq": "agora",
+    "obs": "correr em 2 h após descongelar"
+   },
+   {
+    "item": "Fitomenadiona (vitamina K1)",
+    "dose": "10 mg",
+    "via": "IM",
+    "freq": "dose única",
+    "obs": ""
+   },
+   {
+    "item": "Ácido tranexâmico",
+    "dose": "1 g",
+    "via": "IV",
+    "freq": "agora",
+    "obs": "em 10 min; depois 1 g em 8 h"
+   },
+   {
+    "item": "AAS",
+    "dose": "100 mg",
+    "via": "VO",
+    "freq": "1x/dia",
+    "obs": "uso domiciliar"
+   },
+   {
+    "item": "Enoxaparina",
+    "dose": "40 mg",
+    "via": "SC",
+    "freq": "1x/dia",
+    "obs": "iniciar hoje"
+   },
+   {
+    "item": "Amiodarona",
+    "dose": "200 mg",
+    "via": "VO",
+    "freq": "1x/dia",
+    "obs": "uso domiciliar"
+   },
+   {
+    "item": "Levetiracetam",
+    "dose": "500 mg",
+    "via": "IV",
+    "freq": "12/12 h",
+    "obs": ""
+   },
+   {
+    "item": "Varfarina",
+    "dose": "",
+    "via": "",
+    "freq": "",
+    "obs": "suspensa"
+   },
+   {
+    "item": "Dipirona",
+    "dose": "1 g",
+    "via": "IV",
+    "freq": "6/6 h se dor",
+    "obs": ""
+   }
+  ],
+  "tarefa": "Avalie a prescrição do dia, identifique os problemas relacionados a medicamentos e proponha as intervenções à equipe, em ordem de prioridade.",
+  "gabarito": [
+   {
+    "problema": "Reversão com plasma em vez de complexo protrombínico",
+    "tipo": "Efetividade: medicamento inefetivo",
+    "evidencia": "Hemorragia intracraniana com INR de 5,8 e possível cirurgia. O plasma demora a descongelar, exige grande volume (800 mL em cardiopata idoso, risco de sobrecarga) e corrige o INR mais devagar e de forma incompleta; o ensaio INCH mostrou correção mais rápida com complexo protrombínico. As diretrizes da NCS/SCCM (2016) e da AHA/ASA (2022) preferem complexo protrombínico de quatro fatores.",
+    "intervencao": "Complexo protrombínico de quatro fatores 35 UI/kg para INR entre 4 e 6: 35 × 80 = 2.800 UI IV, na velocidade indicada na bula do produto. Dosar o INR 15 a 60 min após o término (meta <1,4). Suspender o plasma se o complexo estiver disponível.",
+    "prioridade": "alta"
+   },
+   {
+    "problema": "Vitamina K por via intramuscular",
+    "tipo": "Efetividade: medicamento inefetivo",
+    "evidencia": "A via IM tem absorção errática e causa hematoma no paciente coagulopático. O complexo protrombínico age em minutos, mas os fatores repostos têm meia-vida curta (o fator VII, cerca de 6 h), e sem vitamina K IV o INR volta a subir.",
+    "intervencao": "Fitomenadiona 10 mg IV diluída em 50 mL de SF 0,9% ou SG 5%, infundida em 20 a 30 min (risco de reação anafilactoide com infusão rápida), junto com o complexo protrombínico.",
+    "prioridade": "alta"
+   },
+   {
+    "problema": "AAS mantido em hemorragia intracraniana sem indicação de antiagregação",
+    "tipo": "Necessidade: medicamento desnecessário",
+    "evidencia": "Sem doença coronariana ou arterial que justifique AAS; uso por conta própria, somado à varfarina. Em hemorragia intracraniana ativa, só aumenta o risco de expansão do hematoma.",
+    "intervencao": "Suspender o AAS e não reintroduzir na alta. Transfusão de plaquetas não está indicada para reverter AAS nesse cenário.",
+    "prioridade": "alta"
+   },
+   {
+    "problema": "Profilaxia farmacológica de TEV iniciada no dia do sangramento",
+    "tipo": "Segurança: reação adversa ou interação",
+    "evidencia": "Hematoma subdural agudo, possível drenagem nas próximas horas e INR ainda de 5,8.",
+    "intervencao": "Suspender a enoxaparina e usar compressão pneumática intermitente. Reintroduzir profilaxia farmacológica após tomografia de controle que mostre hematoma estável e liberação da neurocirurgia, em geral entre 24 e 72 h.",
+    "prioridade": "alta"
+   },
+   {
+    "problema": "Ácido tranexâmico fora da janela terapêutica",
+    "tipo": "Necessidade: medicamento desnecessário",
+    "evidencia": "No CRASH-3, o benefício do ácido tranexâmico no TCE leve a moderado ocorreu com administração até 3 h após o trauma. O paciente chegou à UTI 5 h após a queda, e no CRASH-2 a administração tardia no trauma hemorrágico esteve associada a pior desfecho. Há ainda risco trombótico em paciente com FA sem anticoagulação.",
+    "intervencao": "Suspender o ácido tranexâmico.",
+    "prioridade": "média"
+   },
+   {
+    "problema": "Interação entre amiodarona e varfarina como causa do INR elevado",
+    "tipo": "Segurança: reação adversa ou interação",
+    "evidencia": "INR estável entre 2 e 3 até o início da amiodarona há três semanas. A amiodarona inibe o CYP2C9, principal via da S-varfarina; o efeito aparece em 1 a 3 semanas e dura meses pela meia-vida longa.",
+    "intervencao": "Notificar a interação no Notivisa e registrar no plano de alta: quando a equipe decidir retomar a anticoagulação, reduzir a varfarina em 30 a 50% com INR semanal, ou considerar anticoagulante oral direto, se disponível ao paciente. Rever com a cardiologia a indicação da amiodarona.",
+    "prioridade": "baixa"
+   }
+  ],
+  "discussao": "A reversão da varfarina na hemorragia grave tem duas partes que se completam: o complexo protrombínico repõe imediatamente os fatores II, VII, IX e X, e a vitamina K IV permite que o fígado volte a sintetizá-los em 12 a 24 h. Usar só um deles falha: o complexo sozinho deixa o INR subir de novo; a vitamina K sozinha demora. A dose do complexo de quatro fatores é escalonada pelo INR (25 UI/kg entre 2 e 4, 35 UI/kg entre 4 e 6, 50 UI/kg acima de 6, com tetos por produto), e a infusão é rápida, o que importa quando há indicação cirúrgica.\n\nO caso também mostra a interação que causou o evento. A amiodarona reduz a necessidade de varfarina de forma lenta e prolongada, e a prescrição dela a um paciente anticoagulado deveria vir acompanhada de redução da dose e de controle precoce do INR. O AAS por conta própria e a queda em idoso completam o quadro.\n\nMonitorizar INR após o complexo, 6 h e 24 h depois, exame neurológico seriado e nova tomografia, hemoglobina, sinais de trombose (o complexo protrombínico tem risco trombótico) e PA conforme meta da neurocirurgia. A decisão de retomar a anticoagulação é multiprofissional, ponderando o risco de AVC da FA e o de novo sangramento.",
+  "leituras": [
+   "anticoagulantes-reversao",
+   "interacoes-cyp-transportadores",
+   "profilaxias-uti",
+   "medicamentos-alta-vigilancia",
+   "farmacovigilancia-ram"
+  ],
+  "fontes": [
+   "Frontera JA et al. Guideline for Reversal of Antithrombotics in Intracranial Hemorrhage (NCS/SCCM). Neurocrit Care 2016;24:6-46",
+   "Greenberg SM et al. 2022 Guideline for the Management of Patients With Spontaneous Intracerebral Hemorrhage (AHA/ASA). Stroke 2022;53:e282-e361",
+   "Steiner T et al. Fresh frozen plasma versus prothrombin complex concentrate in patients with intracranial haemorrhage related to vitamin K antagonists (INCH). Lancet Neurol 2016;15:566-573",
+   "CRASH-3 trial collaborators. Effects of tranexamic acid on death, disability, vascular occlusive events and other morbidities in patients with acute traumatic brain injury (CRASH-3). Lancet 2019;394:1713-1723",
+   "Carney N et al. Guidelines for the Management of Severe Traumatic Brain Injury, Fourth Edition. Neurosurgery 2017;80:6-15"
+  ]
+ },
+ {
+  "id": "caso-14",
+  "titulo": "Sedação profunda sem meta, benzodiazepínico contínuo e propofol com hipertrigliceridemia",
+  "area": "classes",
+  "nivel": "intermediario",
+  "resumo": "Paciente com SDRA em melhora, no 6º dia de ventilação, mantido em RASS -5 com midazolam e propofol, haloperidol profilático e prometazina para dormir.",
+  "paciente": {
+   "idade": 58,
+   "sexo": "M",
+   "peso": 95,
+   "altura": 178,
+   "alergias": "Nega"
+  },
+  "historia": "Motorista, obeso (IMC 30 kg/m²), hipertenso, sem uso de álcool ou psicofármacos. Internado há sete dias por pneumonia comunitária grave por influenza A com coinfecção pneumocócica, evoluiu com SDRA moderada, foi intubado no 1º dia e ficou 36 h em posição prona, já encerrada. Hoje, 6º dia de ventilação, está com FiO2 de 0,35, PEEP de 8 cmH2O e relação PaO2/FiO2 de 245, sem vasopressor desde ontem, recebendo dieta enteral plena a 50 mL/h (1,5 kcal/mL) desde o 3º dia. Continua com midazolam e propofol em infusão contínua, iniciados na fase de prona e nunca reduzidos, além de fentanil. Não há meta de RASS na prescrição e não foram feitos teste de despertar nem de respiração espontânea, porque o paciente está muito sedado. O CAM-ICU não pode ser aplicado pelo nível de sedação. Recebe haloperidol de horário para prevenir delirium desde o 2º dia e prometazina à noite para dormir. O fisioterapeuta quer iniciar mobilização precoce. Os triglicerídeos dosados hoje a pedido da nutrição vieram 480 mg/dL. Função renal normal.",
+  "sinais": [
+   [
+    "PA",
+    "138/82 mmHg"
+   ],
+   [
+    "FC",
+    "64 bpm"
+   ],
+   [
+    "Temp.",
+    "37 °C"
+   ],
+   [
+    "SpO2",
+    "96% (FiO2 0,35, PEEP 8)"
+   ],
+   [
+    "RASS",
+    "-5"
+   ],
+   [
+    "CPOT",
+    "0"
+   ],
+   [
+    "Diurese",
+    "1 mL/kg/h"
+   ]
+  ],
+  "labs": [
+   [
+    "Triglicerídeos",
+    "480 mg/dL",
+    "<150"
+   ],
+   [
+    "CPK",
+    "310 U/L",
+    "<190"
+   ],
+   [
+    "Lactato",
+    "1,3 mmol/L",
+    "<2"
+   ],
+   [
+    "pH",
+    "7,40",
+    "7,35–7,45"
+   ],
+   [
+    "Creatinina",
+    "1 mg/dL",
+    "0,7–1,3"
+   ],
+   [
+    "TFG CKD-EPI 2021",
+    "87 mL/min/1,73 m²",
+    "≥90"
+   ],
+   [
+    "TGP",
+    "58 U/L",
+    "<41"
+   ],
+   [
+    "Amilase",
+    "92 U/L",
+    "<100"
+   ],
+   [
+    "Glicemia",
+    "164 mg/dL",
+    "70–99"
+   ],
+   [
+    "Plaquetas",
+    "210.000/mm³",
+    "150.000–450.000"
+   ]
+  ],
+  "prescricao": [
+   {
+    "item": "Midazolam 100 mg/100 mL",
+    "dose": "20 mg/h",
+    "via": "IV contínua",
+    "freq": "",
+    "obs": "20 mL/h"
+   },
+   {
+    "item": "Propofol 1%",
+    "dose": "250 mg/h",
+    "via": "IV contínua",
+    "freq": "",
+    "obs": "25 mL/h"
+   },
+   {
+    "item": "Fentanil 2.500 mcg/250 mL (10 mcg/mL)",
+    "dose": "150 mcg/h",
+    "via": "IV contínua",
+    "freq": "",
+    "obs": "15 mL/h"
+   },
+   {
+    "item": "Haloperidol",
+    "dose": "5 mg",
+    "via": "IV",
+    "freq": "8/8 h",
+    "obs": "profilaxia de delirium"
+   },
+   {
+    "item": "Prometazina",
+    "dose": "25 mg",
+    "via": "IV",
+    "freq": "1x/dia à noite",
+    "obs": "para dormir"
+   },
+   {
+    "item": "Dieta enteral 1,5 kcal/mL",
+    "dose": "50 mL/h",
+    "via": "SNE",
+    "freq": "contínua",
+    "obs": "1.800 kcal/dia"
+   },
+   {
+    "item": "Ceftriaxona",
+    "dose": "2 g",
+    "via": "IV",
+    "freq": "24/24 h",
+    "obs": "D7"
+   },
+   {
+    "item": "Oseltamivir",
+    "dose": "75 mg",
+    "via": "SNE",
+    "freq": "12/12 h",
+    "obs": "D6"
+   },
+   {
+    "item": "Pantoprazol",
+    "dose": "40 mg",
+    "via": "IV",
+    "freq": "1x/dia",
+    "obs": ""
+   },
+   {
+    "item": "Enoxaparina",
+    "dose": "40 mg",
+    "via": "SC",
+    "freq": "1x/dia",
+    "obs": ""
+   }
+  ],
+  "tarefa": "Avalie a prescrição do dia, identifique os problemas relacionados a medicamentos e proponha as intervenções à equipe, em ordem de prioridade.",
+  "gabarito": [
+   {
+    "problema": "Sedação profunda sem meta e sem despertar diário",
+    "tipo": "Segurança: dose alta",
+    "evidencia": "RASS -5 no 6º dia, com SDRA em melhora (PaO2/FiO2 245, PEEP 8) e sem prona. A PADIS recomenda sedação leve (RASS -2 a 0) quando não há indicação de sedação profunda; a sedação profunda atrasa extubação e mobilização e impede avaliar delirium.",
+    "intervencao": "Registrar meta de RASS -2 a 0, reduzir a sedação por protocolo e fazer teste de despertar diário acoplado ao teste de respiração espontânea.",
+    "prioridade": "alta"
+   },
+   {
+    "problema": "Benzodiazepínico em infusão contínua",
+    "tipo": "Segurança: reação adversa ou interação",
+    "evidencia": "Midazolam 20 mg/h por seis dias em paciente obeso: acúmulo no tecido adiposo, despertar prolongado e associação com delirium e mais tempo de ventilação. A PADIS 2018 sugere propofol ou dexmedetomidina em vez de benzodiazepínico, e a atualização de 2025 sugere dexmedetomidina em vez de propofol quando a prioridade é sedação leve ou menos delirium.",
+    "intervencao": "Reduzir o midazolam 25 a 50% ao dia até suspender (seis dias de dose alta: risco de abstinência se a retirada for abrupta) e introduzir dexmedetomidina 0,5 mcg/kg/h (47,5 mcg/h; com a solução de 4 mcg/mL, 11,9 mL/h), na faixa de 0,2 a 0,7 mcg/kg/h. Atenção a bradicardia: FC basal de 64 bpm.",
+    "prioridade": "alta"
+   },
+   {
+    "problema": "Propofol com triglicerídeos de 480 mg/dL e excesso calórico",
+    "tipo": "Segurança: reação adversa ou interação",
+    "evidencia": "Propofol 250 mg/h (2,6 mg/kg/h) por seis dias. A emulsão fornece 1,1 kcal/mL: 25 mL/h × 24 h × 1,1 = 660 kcal/dia, somadas às 1.800 kcal da dieta, total de 2.460 kcal/dia. Pelo peso ajustado (73,2 + 0,4 × (95 - 73,2) = 81,9 kg), são 30 kcal/kg/dia, acima dos 20 a 25 kcal/kg/dia da ESPEN 2023. A hipertrigliceridemia é sinal precoce de intolerância e faz parte da síndrome de infusão do propofol.",
+    "intervencao": "Reduzir o propofol à medida que a dexmedetomidina assumir e a meta de RASS mudar, idealmente suspendendo. Enquanto houver propofol, descontar as calorias dele da dieta com a nutrição. Triglicerídeos a cada 48 a 72 h e vigilância de lactato, CPK, arritmia e acidose (síndrome de infusão do propofol).",
+    "prioridade": "média"
+   },
+   {
+    "problema": "Haloperidol para prevenção de delirium",
+    "tipo": "Necessidade: medicamento desnecessário",
+    "evidencia": "A PADIS 2018 sugere não usar haloperidol nem antipsicótico atípico para prevenir delirium, por falta de benefício; acrescenta prolongamento do QT e sintomas extrapiramidais.",
+    "intervencao": "Suspender o haloperidol e aplicar medidas não farmacológicas (sono, orientação, mobilização, óculos e aparelho auditivo, presença da família).",
+    "prioridade": "média"
+   },
+   {
+    "problema": "Prometazina para dormir",
+    "tipo": "Segurança: reação adversa ou interação",
+    "evidencia": "Anti-histamínico de primeira geração com forte efeito anticolinérgico, deliriogênico e sedativo; consta dos critérios de Beers como medicamento a evitar.",
+    "intervencao": "Suspender a prometazina. Higiene do sono (luz, ruído, agrupamento de cuidados noturnos); a atualização da PADIS de 2025 sugere melatonina, cuja disponibilidade como medicamento no Brasil deve ser conferida na padronização.",
+    "prioridade": "média"
+   },
+   {
+    "problema": "Analgesia sem componente não opioide",
+    "tipo": "Necessidade: necessita de medicamento adicional",
+    "evidencia": "Fentanil como único analgésico. A PADIS recomenda analgesia primeiro e sugere adjuvantes não opioides para poupar opioide; com a sedação mais leve, a dor ficará mais evidente.",
+    "intervencao": "Acrescentar dipirona 1 g IV 6/6 h (ou paracetamol) e reavaliar a dor pela CPOT a cada 4 h, titulando o fentanil para a menor dose eficaz.",
+    "prioridade": "baixa"
+   }
+  ],
+  "discussao": "A sedação profunda foi apropriada na fase de prona, mas não foi revista quando a indicação acabou. É o problema mais comum de sedação na UTI: a prescrição continua a mesma por inércia. O pacote ABCDEF organiza a revisão diária: avaliar e tratar a dor, testes de despertar e de respiração espontânea acoplados, escolha do sedativo, avaliação de delirium, mobilização precoce e família.\n\nA troca de benzodiazepínico por dexmedetomidina ou propofol reduz tempo de ventilação e delirium. Após cerca de 5 a 7 dias de opioide e benzodiazepínico em dose alta, a retirada deve ser gradual, observando sinais de abstinência (taquicardia, hipertensão, agitação, sudorese, tremor). Propofol é fonte de lipídio e de calorias e deve entrar na conta nutricional diária; triglicerídeos acima de 400 a 500 mg/dL costumam levar à redução ou suspensão, e dose acima de 4 mg/kg/h por mais de 48 h aumenta o risco de síndrome de infusão.\n\nMonitorizar RASS a cada 4 h, CAM-ICU por turno assim que o RASS for -3 ou mais leve, CPOT, FC e PA com a dexmedetomidina, triglicerídeos, CPK e lactato, e sinais de abstinência nas 72 h seguintes à retirada do midazolam.",
+  "leituras": [
+   "analgesia-sedacao-delirium",
+   "terapia-nutricional",
+   "escores-uti",
+   "farmacovigilancia-ram",
+   "fisiologia-respiratoria-vm",
+   "obesidade-populacoes-especiais"
+  ],
+  "fontes": [
+   "Devlin JW et al. Clinical Practice Guidelines for PADIS in Adult Patients in the ICU. Crit Care Med 2018;46:e825-e873",
+   "Lewis K et al. A Focused Update to the Clinical Practice Guidelines for PADIS in Adult Patients in the ICU. Crit Care Med 2025;53:e711-e727",
+   "Singer P et al. ESPEN practical and partially revised guideline: Clinical nutrition in the intensive care unit. Clin Nutr 2023;42:1671-1689",
+   "Kam PC, Cardone D. Propofol infusion syndrome. Anaesthesia 2007;62:690-701",
+   "American Geriatrics Society 2023 Updated AGS Beers Criteria. J Am Geriatr Soc 2023;71:2052-2081"
+  ]
+ },
+ {
+  "id": "caso-15",
+  "titulo": "Puérpera com pré-eclâmpsia e SDRA por influenza: bloqueio neuromuscular prolongado e potencialização por magnésio e aminoglicosídeo",
+  "area": "classes",
+  "nivel": "avancado",
+  "resumo": "Puérpera 52 h após cesárea por pré-eclâmpsia grave, em SDRA grave por influenza, com cisatracúrio há quatro dias, sulfato de magnésio ainda correndo e amicacina.",
+  "paciente": {
+   "idade": 31,
+   "sexo": "F",
+   "peso": 82,
+   "altura": 163,
+   "alergias": "Nega"
+  },
+  "historia": "Técnica de enfermagem, primigesta, sem comorbidades, com peso pré-gestacional de 70 kg. Com 34 semanas deu entrada com febre, tosse, dispneia, PA de 170/110 mmHg, proteinúria e cefaleia; o painel viral confirmou influenza A. Recebeu sulfato de magnésio pelo esquema de Zuspan (4 g IV de ataque e 1 g/h), foi intubada por hipoxemia grave e submetida a cesárea de urgência há 52 h; o recém-nascido está na UTI neonatal, estável. Evoluiu com SDRA grave (PaO2/FiO2 de 88 na pior gasometria), necessitando de posição prona e de cisatracúrio em infusão contínua, iniciado há quatro dias, ainda antes do parto, e mantido desde então na mesma vazão. Não há registro de monitorização com sequência de quatro estímulos (TOF). Recebe oseltamivir desde a admissão, metilprednisolona para a SDRA desde o 2º dia e amicacina associada a ceftriaxona como dupla cobertura desde a admissão, sem isolamento bacteriano nas culturas. A creatinina subiu para 1,6 mg/dL e a diurese caiu para 0,4 mL/kg/h. O sulfato de magnésio continua a 1 g/h, sem prazo definido. Os olhos estão ressecados e com hiperemia conjuntival.",
+  "sinais": [
+   [
+    "PA",
+    "150/96 mmHg"
+   ],
+   [
+    "FC",
+    "108 bpm"
+   ],
+   [
+    "Temp.",
+    "37,8 °C"
+   ],
+   [
+    "SpO2",
+    "93% (FiO2 0,6, PEEP 14)"
+   ],
+   [
+    "RASS",
+    "-5 (sob bloqueio neuromuscular)"
+   ],
+   [
+    "TOF",
+    "não realizado"
+   ],
+   [
+    "Diurese",
+    "0,4 mL/kg/h"
+   ]
+  ],
+  "labs": [
+   [
+    "Magnésio",
+    "7,6 mg/dL",
+    "1,6–2,6 (faixa terapêutica na pré-eclâmpsia 4,8–8,4)"
+   ],
+   [
+    "Creatinina",
+    "1,6 mg/dL",
+    "0,5–1,1"
+   ],
+   [
+    "TFG CKD-EPI 2021",
+    "44 mL/min/1,73 m² (equação não validada no puerpério)",
+    "≥90"
+   ],
+   [
+    "Potássio",
+    "4,8 mEq/L",
+    "3,5–5,0"
+   ],
+   [
+    "Cálcio iônico",
+    "1,10 mmol/L",
+    "1,12–1,32"
+   ],
+   [
+    "CPK",
+    "1.240 U/L",
+    "<170"
+   ],
+   [
+    "Glicemia",
+    "198 mg/dL",
+    "70–99"
+   ],
+   [
+    "Plaquetas",
+    "118.000/mm³",
+    "150.000–450.000"
+   ],
+   [
+    "TGO",
+    "62 U/L",
+    "<32"
+   ],
+   [
+    "Procalcitonina",
+    "0,3 ng/mL",
+    "<0,5"
+   ],
+   [
+    "Culturas (sangue, aspirado traqueal)",
+    "negativas",
+    ""
+   ]
+  ],
+  "prescricao": [
+   {
+    "item": "Cisatracúrio 200 mg/200 mL (1 mg/mL)",
+    "dose": "3 mcg/kg/min",
+    "via": "IV contínua",
+    "freq": "",
+    "obs": "15 mL/h; D4"
+   },
+   {
+    "item": "Sulfato de magnésio 10 g + SF 0,9% 480 mL (20 mg/mL)",
+    "dose": "1 g/h",
+    "via": "IV contínua",
+    "freq": "",
+    "obs": "50 mL/h; manter até segunda ordem"
+   },
+   {
+    "item": "Propofol 1%",
+    "dose": "20 mL/h",
+    "via": "IV contínua",
+    "freq": "",
+    "obs": ""
+   },
+   {
+    "item": "Fentanil",
+    "dose": "150 mcg/h",
+    "via": "IV contínua",
+    "freq": "",
+    "obs": ""
+   },
+   {
+    "item": "Metilprednisolona",
+    "dose": "80 mg",
+    "via": "IV",
+    "freq": "24/24 h",
+    "obs": "D4"
+   },
+   {
+    "item": "Amicacina",
+    "dose": "1 g",
+    "via": "IV",
+    "freq": "24/24 h",
+    "obs": "D5"
+   },
+   {
+    "item": "Ceftriaxona",
+    "dose": "2 g",
+    "via": "IV",
+    "freq": "24/24 h",
+    "obs": "D5"
+   },
+   {
+    "item": "Oseltamivir",
+    "dose": "75 mg",
+    "via": "SNE",
+    "freq": "12/12 h",
+    "obs": "D5"
+   },
+   {
+    "item": "Enoxaparina",
+    "dose": "40 mg",
+    "via": "SC",
+    "freq": "1x/dia",
+    "obs": ""
+   },
+   {
+    "item": "Hidralazina",
+    "dose": "5 mg",
+    "via": "IV",
+    "freq": "se PAS ≥160 ou PAD ≥110 mmHg",
+    "obs": ""
+   }
+  ],
+  "tarefa": "Avalie a prescrição do dia, identifique os problemas relacionados a medicamentos e proponha as intervenções à equipe, em ordem de prioridade.",
+  "gabarito": [
+   {
+    "problema": "Sulfato de magnésio mantido além de 24 h do parto, com oligúria e bloqueio neuromuscular",
+    "tipo": "Segurança: dose alta",
+    "evidencia": "52 h após a cesárea; os protocolos (Ministério da Saúde 2022, ACOG 2020) mantêm o sulfato de magnésio por 24 h após o parto. Magnésio de 7,6 mg/dL com creatinina de 1,6 mg/dL e oligúria: o magnésio é eliminado pelo rim e acumula. O magnésio reduz a liberação pré-sináptica de acetilcolina e potencializa o bloqueador neuromuscular. Sob bloqueio, os sinais clínicos de intoxicação (reflexo patelar, frequência respiratória) não podem ser avaliados.",
+    "intervencao": "Suspender o sulfato de magnésio, dosar o magnésio a cada 6 h e manter gluconato de cálcio 10% 10 mL (1 g) disponível para toxicidade (bradicardia, bloqueio de condução, hipotensão).",
+    "prioridade": "alta"
+   },
+   {
+    "problema": "Amicacina sem indicação, com nefrotoxicidade e potencialização do bloqueio",
+    "tipo": "Necessidade: medicamento desnecessário",
+    "evidencia": "Culturas negativas, procalcitonina de 0,3 ng/mL e quadro explicado pela influenza. Aminoglicosídeos potencializam o bloqueio neuromuscular e são nefro e ototóxicos, em paciente com creatinina em alta.",
+    "intervencao": "Suspender a amicacina. Discutir também a suspensão da ceftriaxona, sem evidência de coinfecção bacteriana após cinco dias.",
+    "prioridade": "alta"
+   },
+   {
+    "problema": "Bloqueio neuromuscular contínuo sem TOF e sem reavaliação diária",
+    "tipo": "Segurança: dose alta",
+    "evidencia": "Cisatracúrio a 3 mcg/kg/min fixo há quatro dias, sem monitorização da profundidade, com potencializadores (magnésio, aminoglicosídeo, corticoide) e CPK de 1.240 U/L. A diretriz da SCCM (2016) recomenda monitorizar com TOF associado à avaliação clínica, e o ensaio ROSE (2019) não mostrou benefício do bloqueio contínuo de rotina na SDRA moderada a grave.",
+    "intervencao": "Titular pelo TOF (alvo de 1 a 2 respostas em 4) e pela sincronia com o ventilador, buscando a menor dose eficaz (muitas vezes 1 a 2 mcg/kg/min); reavaliar diariamente a suspensão, garantindo sedação profunda antes e durante o bloqueio. O cisatracúrio sofre eliminação de Hofmann e não precisa de ajuste renal.",
+    "prioridade": "alta"
+   },
+   {
+    "problema": "Metilprednisolona em SDRA por influenza, com bloqueio neuromuscular",
+    "tipo": "Segurança: reação adversa ou interação",
+    "evidencia": "A atualização da SCCM de 2024 sugere corticosteroide na SDRA de forma condicional, mas a diretriz de influenza da IDSA recomenda não usar corticosteroide adjuvante na influenza, salvo outra indicação, pela associação com mais mortalidade e infecção secundária. Corticoide somado a bloqueio neuromuscular aumenta o risco de fraqueza adquirida na UTI; glicemia de 198 mg/dL.",
+    "intervencao": "Levar a questão à equipe. Se o corticoide for mantido, definir dose e duração e revisar diariamente; se não houver outra indicação, programar a retirada.",
+    "prioridade": "média"
+   },
+   {
+    "problema": "Ausência de proteção ocular em paciente sob bloqueio neuromuscular",
+    "tipo": "Necessidade: necessita de medicamento adicional",
+    "evidencia": "Paciente paralisada perde o piscar e o fechamento palpebral; olhos ressecados e com hiperemia conjuntival, risco de ceratite de exposição e úlcera de córnea. A diretriz da SCCM (2016) recomenda cuidado ocular sistemático durante o bloqueio.",
+    "intervencao": "Prescrever lubrificante ocular em gel ou pomada a cada 4 a 6 h com oclusão palpebral, e avaliação oftalmológica se houver lesão de córnea.",
+    "prioridade": "média"
+   },
+   {
+    "problema": "Hiperglicemia sem insulina",
+    "tipo": "Necessidade: necessita de medicamento adicional",
+    "evidencia": "Glicemia de 198 mg/dL com metilprednisolona e estresse, sem insulina prescrita. A ADA 2026 recomenda meta de 140 a 180 mg/dL no paciente crítico.",
+    "intervencao": "Iniciar protocolo de insulina com glicemia capilar a cada 4 a 6 h, ou infusão IV se persistir acima de 180 mg/dL.",
+    "prioridade": "baixa"
+   }
+  ],
+  "discussao": "Vários fármacos e condições potencializam bloqueadores neuromusculares não despolarizantes: magnésio, aminoglicosídeos, polimixinas, clindamicina, bloqueadores de canal de cálcio, hipotermia, acidose, hipocalemia e hipocalcemia. Nesta paciente, três deles estão presentes sem necessidade. O uso prolongado, sobretudo com corticoide, aumenta o risco de miopatia e polineuropatia do doente crítico. Por isso se busca a menor dose pelo TOF e a menor duração possível.\n\nO sulfato de magnésio na pré-eclâmpsia se mantém por 24 h após o parto; com oligúria ou elevação da creatinina, a manutenção deve ser reduzida ou suspensa conforme o nível sérico. O CKD-EPI 2021 não foi validado na gestação e no puerpério, e a creatinina de 1,6 mg/dL, que num adulto comum parece moderada, representa perda importante numa puérpera, cuja creatinina normal fica por volta de 0,5 mg/dL. Pelo mesmo motivo, não convém reduzir o oseltamivir com base numa estimativa instável de TFG em influenza grave; reavaliar se a LRA se confirmar.\n\nMonitorizar magnésio a cada 6 h até normalizar, TOF a cada 4 a 6 h durante a titulação, sedação profunda (índice bispectral, se disponível), CPK, creatinina e diurese, glicemia, PA com metas pós-parto e córneas. Os fármacos desta prescrição devem ser revistos quanto à compatibilidade com a lactação, se a paciente desejar extrair leite.",
+  "leituras": [
+   "bloqueadores-neuromusculares",
+   "obesidade-populacoes-especiais",
+   "eletrolitos",
+   "aminoglicosideos-polimixinas",
+   "antivirais-uti",
+   "analgesia-sedacao-delirium",
+   "stewardship"
+  ],
+  "fontes": [
+   "Murray MJ et al. Clinical Practice Guidelines for Sustained Neuromuscular Blockade in the Adult Critically Ill Patient. Crit Care Med 2016;44:2079-2103",
+   "Brasil. Ministério da Saúde. Manual de gestação de alto risco. Brasília, 2022",
+   "American College of Obstetricians and Gynecologists. Practice Bulletin 222: Gestational Hypertension and Preeclampsia. Obstet Gynecol 2020;135:e237-e260",
+   "Uyeki TM et al. Clinical Practice Guidelines by the IDSA: 2018 Update on Diagnosis, Treatment, Chemoprophylaxis, and Institutional Outbreak Management of Seasonal Influenza. Clin Infect Dis 2019;68:e1-e47",
+   "Chaudhuri D et al. 2024 Focused Update: Guidelines on Use of Corticosteroids in Sepsis, ARDS, and Community-Acquired Pneumonia. Crit Care Med 2024;52:e219-e233",
+   "National Heart, Lung, and Blood Institute PETAL Clinical Trials Network. Early Neuromuscular Blockade in the Acute Respiratory Distress Syndrome (ROSE). N Engl J Med 2019;380:1997-2008"
+  ]
+ },
+ {
+  "id": "caso-16",
+  "titulo": "Síndrome de realimentação no início da nutrição parenteral em paciente etilista desnutrido",
+  "area": "classes",
+  "nivel": "intermediario",
+  "resumo": "Homem com IMC de 16,2 kg/m² e fístula enterocutânea de alto débito que, no 2º dia de nutrição parenteral plena, apresenta hipofosfatemia grave, hipocalemia e hipomagnesemia.",
+  "paciente": {
+   "idade": 54,
+   "sexo": "M",
+   "peso": 48,
+   "altura": 172,
+   "alergias": "Nega"
+  },
+  "historia": "Pedreiro, etilista pesado (cerca de 1 L de cachaça por dia) e tabagista, que perdeu 9 kg (16% do peso) nos últimos três meses, com ingestão quase nula nos dez dias anteriores à internação. Operado há oito dias por úlcera duodenal perfurada, evoluiu com deiscência e fístula enterocutânea de alto débito (1.200 mL/dia), com indicação cirúrgica de repouso intestinal. A dieta enteral foi contraindicada, e há dois dias foi iniciada nutrição parenteral central com a meta calórica plena desde o primeiro dia. Recebe também soro glicosado de manutenção. Nas últimas 24 h ficou mais fraco, com parestesias, edema de membros inferiores, extrassístoles ventriculares frequentes no monitor e confusão leve. A síndrome de abstinência alcoólica foi tratada na primeira semana com diazepam, já retirado. Não há tiamina em nenhuma prescrição desde a internação. Não está intubado. No dia em que a nutrição parenteral começou, fósforo, potássio e magnésio estavam no limite inferior da normalidade. A bolsa de nutrição parenteral está sem polivitamínico e sem oligoelementos por falta no estoque. A glicemia tem ficado acima de 250 mg/dL, e só há insulina se passar de 300 mg/dL.",
+  "sinais": [
+   [
+    "PA",
+    "108/64 mmHg"
+   ],
+   [
+    "FC",
+    "112 bpm (extrassístoles)"
+   ],
+   [
+    "FR",
+    "22 irpm"
+   ],
+   [
+    "Temp.",
+    "36,8 °C"
+   ],
+   [
+    "SpO2",
+    "95% (ar ambiente)"
+   ],
+   [
+    "Glasgow",
+    "14 (confuso)"
+   ],
+   [
+    "Débito da fístula",
+    "1.200 mL/dia"
+   ]
+  ],
+  "labs": [
+   [
+    "Fósforo",
+    "1,1 mg/dL (3 antes da NP)",
+    "2,5–4,5"
+   ],
+   [
+    "Potássio",
+    "2,9 mEq/L (3,6 antes da NP)",
+    "3,5–5,0"
+   ],
+   [
+    "Magnésio",
+    "1,2 mg/dL (1,7 antes da NP)",
+    "1,6–2,6"
+   ],
+   [
+    "Glicemia",
+    "268 mg/dL",
+    "70–99"
+   ],
+   [
+    "Sódio",
+    "133 mEq/L",
+    "135–145"
+   ],
+   [
+    "Albumina",
+    "2,2 g/dL",
+    "3,5–5,2"
+   ],
+   [
+    "Creatinina",
+    "0,6 mg/dL",
+    "0,7–1,3"
+   ],
+   [
+    "TFG CKD-EPI 2021",
+    "115 mL/min/1,73 m²",
+    "≥90"
+   ],
+   [
+    "Triglicerídeos",
+    "190 mg/dL",
+    "<150"
+   ],
+   [
+    "Lactato",
+    "2,4 mmol/L",
+    "<2"
+   ],
+   [
+    "TGO",
+    "64 U/L",
+    "<40"
+   ]
+  ],
+  "prescricao": [
+   {
+    "item": "Nutrição parenteral central 3 em 1 (bolsa manipulada)",
+    "dose": "2.000 mL/24 h",
+    "via": "IV central",
+    "freq": "83 mL/h",
+    "obs": "glicose 300 g, aminoácidos 72 g, lipídios 50 g (emulsão 20%); sem polivitamínico e oligoelementos"
+   },
+   {
+    "item": "SG 5% + KCl 19,1% 10 mL",
+    "dose": "1.500 mL/24 h",
+    "via": "IV",
+    "freq": "62 mL/h",
+    "obs": "manutenção"
+   },
+   {
+    "item": "Omeprazol",
+    "dose": "40 mg",
+    "via": "IV",
+    "freq": "12/12 h",
+    "obs": "fístula"
+   },
+   {
+    "item": "Enoxaparina",
+    "dose": "40 mg",
+    "via": "SC",
+    "freq": "1x/dia",
+    "obs": ""
+   },
+   {
+    "item": "Insulina regular",
+    "dose": "4 UI",
+    "via": "SC",
+    "freq": "se glicemia >300 mg/dL",
+    "obs": ""
+   },
+   {
+    "item": "Dipirona",
+    "dose": "1 g",
+    "via": "IV",
+    "freq": "6/6 h se dor",
+    "obs": ""
+   }
+  ],
+  "tarefa": "Avalie a prescrição do dia, identifique os problemas relacionados a medicamentos e proponha as intervenções à equipe, em ordem de prioridade.",
+  "gabarito": [
+   {
+    "problema": "Aporte calórico pleno em paciente de alto risco para síndrome de realimentação",
+    "tipo": "Segurança: dose alta",
+    "evidencia": "Critérios da ASPEN (2020) para risco significativo: perda de 16% do peso em três meses, ingestão desprezível por dez dias, etilismo e eletrólitos baixos antes da nutrição. Aporte atual: glicose 300 g × 3,4 = 1.020 kcal; aminoácidos 72 g × 4 = 288 kcal; lipídios 50 g (250 mL de emulsão a 20%, cerca de 2 kcal/mL) = 500 kcal; soma de 1.808 kcal, mais 75 g de glicose do SG 5% (255 kcal): 2.063 kcal/dia, 43 kcal/kg. Velocidade de infusão de glicose = 375.000 mg ÷ 1.440 min ÷ 48 kg = 5,4 mg/kg/min, acima do limite de 5 da ESPEN 2023.",
+    "intervencao": "Reduzir o aporte à metade (cerca de 900 kcal/dia, 19 kcal/kg) já nesta bolsa, reduzindo a vazão, e suspender o SG 5%. Manter restrição por 48 h (ESPEN 2023) e só avançar cerca de 33% da meta a cada 1 a 2 dias quando fósforo, potássio e magnésio estiverem corrigidos (ASPEN 2020).",
+    "prioridade": "alta"
+   },
+   {
+    "problema": "Tiamina ausente em etilista desnutrido com confusão",
+    "tipo": "Necessidade: necessita de medicamento adicional",
+    "evidencia": "A glicose aumenta o consumo de tiamina; etilismo, desnutrição e confusão nova sugerem risco de encefalopatia de Wernicke. A ASPEN recomenda 100 mg antes da nutrição e por 5 a 7 dias nos pacientes de risco.",
+    "intervencao": "Tiamina IV imediatamente. Pela suspeita de encefalopatia de Wernicke, usar dose de tratamento: 200 mg IV 8/8 h, como sugere a diretriz da EFNS (2010), até melhora, seguida de 100 mg/dia. Nas próximas bolsas, a tiamina deve vir antes da glicose.",
+    "prioridade": "alta"
+   },
+   {
+    "problema": "Hipofosfatemia grave sem reposição",
+    "tipo": "Necessidade: necessita de medicamento adicional",
+    "evidencia": "Fósforo caiu de 3 para 1,1 mg/dL em dois dias de nutrição, com fraqueza e parestesias. Hipofosfatemia grave causa insuficiência respiratória, disfunção miocárdica, hemólise e rabdomiólise.",
+    "intervencao": "Glicerofosfato de sódio 30 mmol (cerca de 0,6 mmol/kg) IV em 6 h pelo cateter central, com fósforo a cada 6 a 12 h e repetição conforme o nível. Considerar o sódio da solução (2 mmol por mL de glicerofosfato) no balanço.",
+    "prioridade": "alta"
+   },
+   {
+    "problema": "Hipocalemia e hipomagnesemia com extrassístoles, com reposição insuficiente",
+    "tipo": "Necessidade: necessita de medicamento adicional",
+    "evidencia": "Potássio 2,9 mEq/L e magnésio 1,2 mg/dL com extrassístoles ventriculares frequentes; perdas pela fístula e entrada intracelular induzida pela insulina endógena. O KCl no soro de manutenção fornece só 25,6 mEq/dia.",
+    "intervencao": "Sulfato de magnésio 2 g IV em 1 h, seguido de mais 2 g em 4 h conforme o nível; cloreto de potássio 20 mEq/h pelo cateter central, com potássio a cada 4 a 6 h e ECG contínuo, até potássio ≥4 mEq/L. Corrigir o magnésio junto, porque a hipomagnesemia mantém a perda renal de potássio.",
+    "prioridade": "alta"
+   },
+   {
+    "problema": "Soro glicosado de manutenção paralelo à nutrição parenteral",
+    "tipo": "Necessidade: medicamento desnecessário",
+    "evidencia": "O SG 5% soma 75 g de glicose por dia, agrava a hiperglicemia e ultrapassa o limite de oferta de glicose, sem repor o sódio e o bicarbonato perdidos pela fístula duodenal.",
+    "intervencao": "Suspender o SG 5% e repor as perdas da fístula volume a volume com cristaloide isotônico, conforme o débito medido.",
+    "prioridade": "média"
+   },
+   {
+    "problema": "Nutrição parenteral sem polivitamínico e oligoelementos",
+    "tipo": "Necessidade: necessita de medicamento adicional",
+    "evidencia": "A ESPEN 2023 recomenda micronutrientes diariamente com a nutrição parenteral; o paciente é desnutrido, etilista e perde zinco pela fístula.",
+    "intervencao": "Acionar a farmácia para obter polivitamínico e oligoelementos parenterais e incluí-los diariamente na bolsa; enquanto faltarem, repor separadamente o que for disponível e registrar a falta.",
+    "prioridade": "média"
+   },
+   {
+    "problema": "Hiperglicemia persistente com insulina só acima de 300 mg/dL",
+    "tipo": "Efetividade: dose baixa",
+    "evidencia": "Glicemia de 268 mg/dL e valores acima de 250 mg/dL nos últimos dias; a escala só age acima de 300 mg/dL. A ADA 2026 recomenda meta de 140 a 180 mg/dL.",
+    "intervencao": "Com a redução da glicose, iniciar insulina regular na bolsa ou em infusão IV por protocolo, com glicemia a cada 4 a 6 h e meta de 140 a 180 mg/dL.",
+    "prioridade": "baixa"
+   }
+  ],
+  "discussao": "A síndrome de realimentação ocorre quando a oferta de glicose estimula a secreção de insulina, que leva fósforo, potássio e magnésio para dentro das células e consome tiamina. O critério da ASPEN define a síndrome pela queda de 10 a 20% (leve), 20 a 30% (moderada) ou mais de 30% (grave, ou com disfunção orgânica) de um desses eletrólitos nos primeiros cinco dias. Este paciente tem forma grave, com queda de 63% do fósforo, arritmia, fraqueza e confusão.\n\nA prevenção era possível: identificar o risco, começar com 10 a 20 kcal/kg/dia (ou 100 a 150 g de glicose), dar tiamina antes da glicose e dosar eletrólitos a cada 12 h nos três primeiros dias. A glicose do soro de manutenção e de diluentes conta no total. Quando a síndrome aparece, reduz-se o aporte e repõem-se eletrólitos antes de voltar a avançar.\n\nMonitorizar fósforo, potássio e magnésio a cada 6 a 12 h até estabilizar, glicemia a cada 4 a 6 h, peso e balanço hídrico diários (retenção de sódio e água), ECG contínuo, estado neurológico, débito e composição das perdas da fístula e função hepática.",
+  "leituras": [
+   "terapia-nutricional",
+   "eletrolitos",
+   "endocrino-metabolico",
+   "calculos-farmaceuticos",
+   "compatibilidade-iv"
+  ],
+  "fontes": [
+   "da Silva JSV et al. ASPEN Consensus Recommendations for Refeeding Syndrome. Nutr Clin Pract 2020;35:178-195",
+   "Singer P et al. ESPEN practical and partially revised guideline: Clinical nutrition in the intensive care unit. Clin Nutr 2023;42:1671-1689",
+   "Galvin R et al. EFNS guidelines for diagnosis, therapy and prevention of Wernicke encephalopathy. Eur J Neurol 2010;17:1408-1418",
+   "Kraft MD et al. Treatment of electrolyte disorders in adult patients in the intensive care unit. Am J Health Syst Pharm 2005;62:1663-1682",
+   "American Diabetes Association. Standards of Care in Diabetes 2026. Diabetes Care 2026"
+  ]
+ },
+ {
+  "id": "caso-17",
+  "titulo": "Bacteremia por Klebsiella pneumoniae produtora de NDM: escolha e dose do esquema",
+  "area": "atb",
+  "nivel": "avancado",
+  "resumo": "Pneumonia associada à ventilação com bacteremia por Klebsiella produtora de metalobetalactamase, tratada com ceftazidima-avibactam isolada, meropenem e polimixina B em dose reduzida.",
+  "paciente": {
+   "idade": 61,
+   "sexo": "M",
+   "peso": 76,
+   "altura": 170,
+   "alergias": "Nega"
+  },
+  "historia": "Aposentado com DPOC moderada e doença renal crônica (creatinina basal de 1,7 mg/dL), internado há 22 dias por pneumonia grave, com ventilação mecânica prolongada. A vigilância detectou colonização retal por Enterobacterales produtora de carbapenemase no 10º dia. No 19º dia teve nova febre, piora da troca gasosa e necessidade de noradrenalina em dose baixa. Aspirado traqueal e hemoculturas (2/2) isolaram Klebsiella pneumoniae resistente a carbapenêmicos. O teste imunocromatográfico de carbapenemases foi positivo para NDM e negativo para KPC, OXA-48, VIM e IMP. Antibiograma: resistente a meropenem (CIM >16 mg/L), ceftazidima-avibactam, piperacilina-tazobactam, cefepima, aztreonam, amicacina, ciprofloxacino e SMX-TMP; polimixina B com CIM de 0,5 mg/L; cefiderocol não testado. A equipe iniciou há 24 h uma terapia combinada com ceftazidima-avibactam, meropenem e polimixina B, esta ajustada para a função renal e sem dose de ataque. A vancomicina empírica do 19º dia foi mantida, embora o swab nasal para MRSA tenha sido negativo e não haja cocos Gram-positivos em nenhuma cultura. A creatinina está estável em 1,8 mg/dL há cinco dias. A farmácia tem aztreonam padronizado; aztreonam-avibactam e cefiderocol não são padronizados no hospital e dependem de compra especial.",
+  "sinais": [
+   [
+    "PA",
+    "110/64 mmHg (noradrenalina 0,08 mcg/kg/min)"
+   ],
+   [
+    "FC",
+    "106 bpm"
+   ],
+   [
+    "Temp.",
+    "38,4 °C"
+   ],
+   [
+    "SpO2",
+    "94% (FiO2 0,5)"
+   ],
+   [
+    "Diurese",
+    "0,8 mL/kg/h"
+   ]
+  ],
+  "labs": [
+   [
+    "Creatinina",
+    "1,8 mg/dL (estável há 5 dias)",
+    "0,7–1,3"
+   ],
+   [
+    "TFG CKD-EPI 2021",
+    "42 mL/min/1,73 m²",
+    "≥90"
+   ],
+   [
+    "Depuração de creatinina (Cockcroft-Gault)",
+    "46 mL/min",
+    ""
+   ],
+   [
+    "Leucócitos",
+    "18.900/mm³",
+    "4.000–11.000"
+   ],
+   [
+    "Procalcitonina",
+    "4,8 ng/mL",
+    "<0,5"
+   ],
+   [
+    "Lactato",
+    "2,2 mmol/L",
+    "<2"
+   ],
+   [
+    "Plaquetas",
+    "142.000/mm³",
+    "150.000–450.000"
+   ],
+   [
+    "Albumina",
+    "2,8 g/dL",
+    "3,5–5,2"
+   ],
+   [
+    "Potássio",
+    "4,4 mEq/L",
+    "3,5–5,0"
+   ]
+  ],
+  "prescricao": [
+   {
+    "item": "Ceftazidima-avibactam",
+    "dose": "2,5 g",
+    "via": "IV",
+    "freq": "8/8 h",
+    "obs": "infundir em 2 h; D2"
+   },
+   {
+    "item": "Meropenem",
+    "dose": "2 g",
+    "via": "IV",
+    "freq": "8/8 h",
+    "obs": "infusão estendida de 3 h; D2"
+   },
+   {
+    "item": "Polimixina B",
+    "dose": "500.000 UI",
+    "via": "IV",
+    "freq": "12/12 h",
+    "obs": "ajustada para função renal; sem ataque; D2"
+   },
+   {
+    "item": "Vancomicina",
+    "dose": "1 g",
+    "via": "IV",
+    "freq": "12/12 h",
+    "obs": "D4"
+   },
+   {
+    "item": "Noradrenalina",
+    "dose": "0,08 mcg/kg/min",
+    "via": "IV contínua",
+    "freq": "",
+    "obs": ""
+   },
+   {
+    "item": "Heparina não fracionada",
+    "dose": "5.000 UI",
+    "via": "SC",
+    "freq": "8/8 h",
+    "obs": ""
+   },
+   {
+    "item": "Fentanil e propofol",
+    "dose": "",
+    "via": "IV contínua",
+    "freq": "",
+    "obs": "sedoanalgesia"
+   }
+  ],
+  "tarefa": "Avalie a prescrição do dia, identifique os problemas relacionados a medicamentos e proponha as intervenções à equipe, em ordem de prioridade.",
+  "gabarito": [
+   {
+    "problema": "Ceftazidima-avibactam isolada contra produtora de metalobetalactamase",
+    "tipo": "Efetividade: medicamento inefetivo",
+    "evidencia": "NDM é metalobetalactamase, enzima dependente de zinco que o avibactam não inibe; a ceftazidima-avibactam sozinha não tem atividade, como o próprio antibiograma mostra. O aztreonam não é hidrolisado pelas metalobetalactamases, mas é destruído pelas ESBL e AmpC que a cepa costuma coproduzir; o avibactam protege o aztreonam dessas enzimas.",
+    "intervencao": "Associar aztreonam 2 g IV 8/8 h, infundido em 3 h e simultaneamente à ceftazidima-avibactam pela mesma via em Y, também em 3 h (IDSA 2026). Iniciar já com o que existe no hospital. Aztreonam-avibactam ou cefiderocol, preferidos pela IDSA 2026 para NDM (leve preferência pelo aztreonam-avibactam), podem ser solicitados por compra especial. Pedir ao laboratório o teste de sinergia da combinação, se disponível.",
+    "prioridade": "alta"
+   },
+   {
+    "problema": "Ceftazidima-avibactam sem ajuste para função renal estável reduzida",
+    "tipo": "Segurança: dose alta",
+    "evidencia": "Creatinina estável há cinco dias, depuração de 46 mL/min por Cockcroft-Gault (equação da bula) e TFG de 42 mL/min/1,73 m² pelo CKD-EPI 2021 (cerca de 46 mL/min não indexada). A bula indica 1,25 g 8/8 h para depuração de 31 a 50 mL/min. O aztreonam não precisa de ajuste com depuração acima de 30 mL/min.",
+    "intervencao": "Ceftazidima-avibactam 1,25 g IV 8/8 h em 3 h, junto com aztreonam 2 g 8/8 h em 3 h. Reavaliar a dose se a creatinina mudar.",
+    "prioridade": "média"
+   },
+   {
+    "problema": "Meropenem sem atividade contra a cepa",
+    "tipo": "Necessidade: medicamento desnecessário",
+    "evidencia": "CIM de meropenem >16 mg/L e carbapenemase do tipo NDM, que hidrolisa carbapenêmicos. Diferentemente de algumas situações com KPC e CIM baixa, não há papel para o meropenem aqui; ele só aumenta pressão seletiva e risco de Clostridioides difficile.",
+    "intervencao": "Suspender o meropenem.",
+    "prioridade": "média"
+   },
+   {
+    "problema": "Polimixina B em dose reduzida por ajuste renal indevido e sem dose de ataque",
+    "tipo": "Efetividade: dose baixa",
+    "evidencia": "500.000 UI (50 mg) 12/12 h equivalem a 1,3 mg/kg/dia. O consenso internacional de polimixinas (2019) recomenda ataque de 2 a 2,5 mg/kg e manutenção de 1,25 a 1,5 mg/kg 12/12 h pelo peso total, sem ajuste renal, porque a eliminação da polimixina B é predominantemente não renal.",
+    "intervencao": "Com ceftazidima-avibactam e aztreonam em curso, suspender a polimixina B: a IDSA 2026 não lhe dá papel preferencial em infecção invasiva e ela é nefrotóxica em paciente com DRC. Se precisar ser mantida enquanto o aztreonam não chega, corrigir: ataque de 2,5 mg/kg (190 mg = 1.900.000 UI) em 1 h e manutenção de 1,5 mg/kg (114 mg, cerca de 1.150.000 UI) 12/12 h, com creatinina diária.",
+    "prioridade": "média"
+   },
+   {
+    "problema": "Vancomicina empírica sem indicação",
+    "tipo": "Necessidade: medicamento desnecessário",
+    "evidencia": "Swab nasal negativo para MRSA (alto valor preditivo negativo para pneumonia por MRSA) e nenhum Gram-positivo nas culturas no 4º dia. Soma nefrotoxicidade à polimixina em paciente com DRC.",
+    "intervencao": "Suspender a vancomicina.",
+    "prioridade": "média"
+   }
+  ],
+  "discussao": "O tipo de carbapenemase muda o tratamento. Nas KPC e OXA-48, os novos inibidores de serino-betalactamases (avibactam, vaborbactam, relebactam) restauram a atividade do betalactâmico: a IDSA 2026 prefere ceftazidima-avibactam ou meropenem-vaborbactam para KPC. As metalobetalactamases (NDM, VIM, IMP) usam zinco no sítio ativo e não são inibidas por esses compostos. O aztreonam escapa das metalobetalactamases e, protegido pelo avibactam contra ESBL e AmpC coproduzidas, volta a ser ativo; por isso a associação ceftazidima-avibactam com aztreonam, o aztreonam-avibactam em formulação única e o cefiderocol são as opções. Um estudo observacional de 2021 com bacteremias por metalobetalactamase mostrou menor mortalidade com ceftazidima-avibactam e aztreonam do que com outros esquemas ativos.\n\nO teste rápido de carbapenemase, disponível em muitos laboratórios brasileiros, deve orientar a escolha antes do antibiograma completo. Terapia combinada por reflexo, com carbapenêmico e polimixina, não substitui um esquema ativo e aumenta toxicidade.\n\nMonitorizar resposta clínica, hemoculturas até negativar, creatinina, função hepática (aztreonam), sinais de Clostridioides difficile e a duração (em geral 7 dias na pneumonia associada à ventilação com boa resposta). Manter precaução de contato e notificar a comissão de controle de infecção.",
+  "leituras": [
+   "carbapenemicos-novos-betalactamicos",
+   "resistencia-bacteriana",
+   "aminoglicosideos-polimixinas",
+   "microbiologia-laudo",
+   "pneumonias-uti",
+   "dose-disfuncao-renal",
+   "stewardship"
+  ],
+  "fontes": [
+   "IDSA. Guidance on the Treatment of Antimicrobial-Resistant Gram-Negative Infections, versão 5.0, 2026 (inclui Tabela 1 de doses)",
+   "Tsuji BT et al. International Consensus Guidelines for the Optimal Use of the Polymyxins. Pharmacotherapy 2019;39:10-39",
+   "Falcone M et al. Efficacy of Ceftazidime-avibactam Plus Aztreonam in Patients With Bloodstream Infections Caused by Metallo-β-lactamase-Producing Enterobacterales. Clin Infect Dis 2021;72:1871-1878",
+   "Kalil AC et al. Management of Adults With Hospital-acquired and Ventilator-associated Pneumonia: 2016 Clinical Practice Guidelines by the IDSA and ATS. Clin Infect Dis 2016;63:e61-e111",
+   "Bula de ceftazidima-avibactam (bulário eletrônico da ANVISA)"
+  ]
+ },
+ {
+  "id": "caso-18",
+  "titulo": "Candidemia por Nakaseomyces glabratus (Candida glabrata) no pós-operatório abdominal com cateter central",
+  "area": "atb",
+  "nivel": "intermediario",
+  "resumo": "Idosa no 12º dia de pós-operatório abdominal, em nutrição parenteral, com candidemia por C. glabrata tratada com fluconazol e cateter central mantido.",
+  "paciente": {
+   "idade": 72,
+   "sexo": "F",
+   "peso": 58,
+   "altura": 155,
+   "alergias": "Nega"
+  },
+  "historia": "Aposentada, hipertensa, operada há 12 dias por neoplasia de cólon direito (hemicolectomia direita), com deiscência de anastomose no 4º dia e reoperação com ileostomia. Recebe nutrição parenteral por cateter venoso central em veia subclávia desde o 5º dia e meropenem com vancomicina desde a reoperação. O líquido peritoneal da reoperação cresceu apenas Escherichia coli produtora de ESBL, sensível a ertapenem, meropenem e amicacina. Há três dias teve nova febre; as hemoculturas periférica e do cateter mostraram leveduras e foi iniciado fluconazol 400 mg/dia. Hoje saiu a identificação: Nakaseomyces glabratus (Candida glabrata), fluconazol com CIM de 16 mg/L, micafungina sensível, anfotericina B sensível. Continua com febre baixa, estável, sem vasopressor. O cateter central não foi trocado, e não foram feitos fundo de olho nem hemocultura de controle. A tomografia de abdome não mostra coleções. A cirurgia prevê liberar dieta oral em dois a três dias. Foi prescrita nistatina oral para evitar candidíase. Função hepática normal.",
+  "sinais": [
+   [
+    "PA",
+    "124/70 mmHg"
+   ],
+   [
+    "FC",
+    "98 bpm"
+   ],
+   [
+    "Temp.",
+    "37,9 °C"
+   ],
+   [
+    "SpO2",
+    "96% (cateter 2 L/min)"
+   ],
+   [
+    "Diurese",
+    "1 mL/kg/h"
+   ]
+  ],
+  "labs": [
+   [
+    "Hemoculturas (9º dia)",
+    "N. glabratus em 2/2 (periférica e cateter)",
+    "negativas"
+   ],
+   [
+    "Fluconazol (CIM)",
+    "16 mg/L",
+    ""
+   ],
+   [
+    "Micafungina",
+    "sensível",
+    ""
+   ],
+   [
+    "Creatinina",
+    "0,9 mg/dL",
+    "0,5–1,1"
+   ],
+   [
+    "TFG CKD-EPI 2021",
+    "68 mL/min/1,73 m²",
+    "≥90"
+   ],
+   [
+    "Leucócitos",
+    "14.200/mm³",
+    "4.000–11.000"
+   ],
+   [
+    "PCR",
+    "124 mg/L",
+    "<5"
+   ],
+   [
+    "Albumina",
+    "3,1 g/dL",
+    "3,5–5,2"
+   ],
+   [
+    "Bilirrubina total",
+    "0,9 mg/dL",
+    "0,2–1,2"
+   ],
+   [
+    "TGP",
+    "28 U/L",
+    "<33"
+   ]
+  ],
+  "prescricao": [
+   {
+    "item": "Fluconazol",
+    "dose": "400 mg",
+    "via": "IV",
+    "freq": "24/24 h",
+    "obs": "D3, sem dose de ataque"
+   },
+   {
+    "item": "Meropenem",
+    "dose": "1 g",
+    "via": "IV",
+    "freq": "8/8 h",
+    "obs": "D8"
+   },
+   {
+    "item": "Vancomicina",
+    "dose": "1 g",
+    "via": "IV",
+    "freq": "12/12 h",
+    "obs": "D8"
+   },
+   {
+    "item": "Nistatina suspensão oral",
+    "dose": "500.000 UI",
+    "via": "VO",
+    "freq": "6/6 h",
+    "obs": "prevenir candidíase"
+   },
+   {
+    "item": "Nutrição parenteral central",
+    "dose": "1.400 kcal/dia",
+    "via": "IV central",
+    "freq": "contínua",
+    "obs": ""
+   },
+   {
+    "item": "Enoxaparina",
+    "dose": "40 mg",
+    "via": "SC",
+    "freq": "1x/dia",
+    "obs": ""
+   },
+   {
+    "item": "Dipirona",
+    "dose": "1 g",
+    "via": "IV",
+    "freq": "6/6 h se febre ou dor",
+    "obs": ""
+   }
+  ],
+  "tarefa": "Avalie a prescrição do dia, identifique os problemas relacionados a medicamentos e proponha as intervenções à equipe, em ordem de prioridade.",
+  "gabarito": [
+   {
+    "problema": "Fluconazol para candidemia por C. glabrata",
+    "tipo": "Efetividade: medicamento inefetivo",
+    "evidencia": "C. glabrata tem sensibilidade reduzida aos azólicos (CIM de 16 mg/L, categoria que exige exposição aumentada) e pode ter resistência cruzada. As equinocandinas são a primeira linha para candidemia na diretriz global de 2025 (ECMM/ISHAM/ASM) e na IDSA 2016. Febre persistente no 3º dia de fluconazol.",
+    "intervencao": "Trocar por micafungina 100 mg IV 24/24 h, sem ajuste renal ou hepático (alternativas: anidulafungina 200 mg de ataque e 100 mg/dia; caspofungina 70 mg de ataque e 50 mg/dia). Passar para azólico oral só se a cepa for sensível ao azólico escolhido, com hemoculturas negativas, estabilidade, foco controlado e tolerância à via oral; para C. glabrata, isso significaria fluconazol em dose alta (800 mg/dia) ou voriconazol, conforme sensibilidade.",
+    "prioridade": "alta"
+   },
+   {
+    "problema": "Cateter venoso central mantido e seguimento da candidemia não iniciado",
+    "tipo": "Efetividade: medicamento inefetivo",
+    "evidencia": "Hemocultura do cateter positiva, nutrição parenteral pelo mesmo cateter e nenhuma hemocultura de controle ou avaliação de complicações. A diretriz de 2025 recomenda fortemente retirar o cateter o mais cedo possível (em até 48 a 72 h).",
+    "intervencao": "Retirar o cateter central; se a nutrição parenteral ainda for necessária, novo acesso em outro sítio, e antecipar a transição para via oral prevista pela cirurgia. Hemoculturas a cada 24 a 48 h até negativar, fundo de olho com dilatação na primeira semana (IDSA 2016) e ecocardiograma se as hemoculturas persistirem positivas. Duração de 14 dias a partir da primeira hemocultura negativa, se não houver complicação metastática.",
+    "prioridade": "alta"
+   },
+   {
+    "problema": "Meropenem mantido após o tempo necessário",
+    "tipo": "Necessidade: medicamento desnecessário",
+    "evidencia": "Infecção intra-abdominal com foco controlado na reoperação do 4º dia e tomografia sem coleções; oito dias de meropenem. O ensaio STOP-IT mostrou que cerca de 4 dias após controle do foco bastam. A febre atual tem causa definida (candidemia). O uso prolongado de carbapenêmico é fator de risco para a própria candidemia.",
+    "intervencao": "Suspender o meropenem. Se a equipe entender que falta completar o curso, descalonar para ertapenem 1 g IV 24/24 h, ativo contra a E. coli ESBL, com albumina de 3,1 g/dL e paciente estável.",
+    "prioridade": "média"
+   },
+   {
+    "problema": "Vancomicina sem indicação",
+    "tipo": "Necessidade: medicamento desnecessário",
+    "evidencia": "Nenhum Gram-positivo isolado no líquido peritoneal nem nas hemoculturas; oito dias de uso.",
+    "intervencao": "Suspender a vancomicina.",
+    "prioridade": "média"
+   },
+   {
+    "problema": "Nistatina oral profilática",
+    "tipo": "Necessidade: medicamento desnecessário",
+    "evidencia": "Sem candidíase oral e sem benefício demonstrado de nistatina na prevenção de candidíase invasiva; com a equinocandina sistêmica, torna-se redundante.",
+    "intervencao": "Suspender a nistatina.",
+    "prioridade": "baixa"
+   }
+  ],
+  "discussao": "Os fatores de risco para candidemia neste caso são os clássicos do paciente cirúrgico crítico: cirurgia abdominal com deiscência, cateter venoso central, nutrição parenteral e antimicrobianos de amplo espectro por tempo prolongado. O tratamento tem dois pilares de mesma importância: o antifúngico certo e a retirada do foco. Manter o cateter prolonga a candidemia e aumenta a mortalidade.\n\nC. glabrata (hoje Nakaseomyces glabratus) e C. krusei (Pichia kudriavzevii) têm sensibilidade reduzida ou ausente ao fluconazol, e a C. auris costuma ser multirresistente; a espécie deve ser identificada e a sensibilidade testada. Há casos de resistência de C. glabrata às equinocandinas por mutação em FKS, sobretudo após exposição prévia, o que justifica acompanhar a resposta e repetir o teste se as hemoculturas não negativarem.\n\nMonitorizar hemoculturas até negativar, curva de febre e PCR, função hepática semanal com a equinocandina, fundo de olho e ecocardiograma conforme indicado. Registrar a data da primeira hemocultura negativa, que marca o início da contagem de 14 dias, e rever o esquema quando a paciente passar à via oral.",
+  "leituras": [
+   "antifungicos",
+   "outras-infeccoes-uti",
+   "stewardship",
+   "microbiologia-laudo",
+   "terapia-nutricional",
+   "carbapenemicos-novos-betalactamicos"
+  ],
+  "fontes": [
+   "Cornely OA et al. Global guideline for the diagnosis and management of candidiasis: an initiative of the ECMM in cooperation with ISHAM and ASM. Lancet Infect Dis 2025;25:e280-e293",
+   "Pappas PG et al. Clinical Practice Guideline for the Management of Candidiasis: 2016 Update by the IDSA. Clin Infect Dis 2016;62:e1-e50",
+   "Sawyer RG et al. Trial of Short-Course Antimicrobial Therapy for Intraabdominal Infection (STOP-IT). N Engl J Med 2015;372:1996-2005",
+   "IDSA. Guidance on the Treatment of Antimicrobial-Resistant Gram-Negative Infections, versão 5.0, 2026",
+   "Mermel LA et al. Clinical practice guidelines for the diagnosis and management of intravascular catheter-related infection: 2009 update by the IDSA. Clin Infect Dis 2009;49:1-45"
+  ]
+ }
+]

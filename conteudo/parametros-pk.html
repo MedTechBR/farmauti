@@ -1,0 +1,133 @@
+<p class="dek">Volume de distribuição, depuração, constante de eliminação, meia-vida, área sob a curva, estado de equilíbrio, dose de ataque e de manutenção, cinética de ordem zero e de primeira ordem, modelos compartimentais e cinética de Michaelis-Menten da fenitoína, com exemplos resolvidos. Bases: Rowland &amp; Tozer (5ª ed., 2019), Winter's Basic Clinical Pharmacokinetics (6ª ed., 2018) e consenso de vancomicina ASHP/IDSA/PIDS/SIDP (2020).</p>
+
+<h2>Por que calcular</h2>
+<p>Os parâmetros farmacocinéticos transformam a pergunta clínica ("qual dose leva este paciente ao alvo?") em conta. Com dois parâmetros primários, volume de distribuição (Vd) e depuração (CL), se deduz quase tudo: a dose de ataque vem do Vd, a dose de manutenção vem da CL, e a meia-vida resulta da relação entre os dois. O farmacêutico de UTI usa essas contas todos os dias em vancomicina, aminoglicosídeos, fenitoína e, cada vez mais, betalactâmicos. Os mecanismos por trás dos números estão em <i>Farmacocinética: absorção, distribuição, metabolismo e excreção</i>; as mudanças que a doença crítica provoca, em <i>Farmacocinética no paciente crítico</i>.</p>
+
+<h2>Volume de distribuição</h2>
+<p>O Vd é o volume aparente no qual a quantidade de fármaco presente no organismo teria de estar dissolvida para produzir a concentração plasmática medida:</p>
+<p><b>Vd = quantidade no organismo ÷ concentração plasmática</b></p>
+<p>É um volume "aparente" porque não corresponde a um espaço anatômico. Fármaco que fica no plasma tem Vd próximo do volume plasmático; fármaco que se concentra nos tecidos deixa pouca quantidade no plasma e tem Vd muito maior que a água corporal. Valores de referência ajudam a raciocinar: água corporal total de cerca de 0,6 L/kg, líquido extracelular de 0,2 a 0,25 L/kg, plasma de 0,04 a 0,05 L/kg.</p>
+<div class="tab"><table><thead><tr><th>Fármaco</th><th>Vd aproximado em adulto não crítico</th><th>Leitura clínica</th></tr></thead><tbody>
+<tr><td>Gentamicina, amicacina</td><td>0,25 a 0,3 L/kg</td><td>Restrita ao extracelular; aumenta com edema e ressuscitação volêmica</td></tr>
+<tr><td>Betalactâmicos (meropeném, piperacilina)</td><td>0,2 a 0,3 L/kg</td><td>Mesma lógica dos aminoglicosídeos</td></tr>
+<tr><td>Vancomicina</td><td>0,5 a 1 L/kg</td><td>Distribuição em dois compartimentos, fase de distribuição longa</td></tr>
+<tr><td>Fenitoína</td><td>0,7 L/kg</td><td>Base da dose de ataque de 15 a 20 mg/kg</td></tr>
+<tr><td>Digoxina</td><td>cerca de 7 L/kg</td><td>Grande ligação ao músculo; hemodiálise remove pouco</td></tr>
+<tr><td>Amiodarona</td><td>dezenas de L/kg</td><td>Semanas para equilibrar, efeito persiste meses</td></tr>
+</tbody></table></div>
+<p>O Vd determina quanto é preciso colocar no organismo para atingir uma concentração, e é por isso que ele define a dose de ataque. Também indica se a hemodiálise consegue remover um fármaco: com Vd grande, a quantidade no plasma é pequena e a diálise pouco adianta.</p>
+
+<h2>Depuração</h2>
+<p>Depuração (CL, de <i>clearance</i>) é o volume de plasma do qual o fármaco é completamente removido por unidade de tempo. Expressa-se em L/h ou mL/min. É o parâmetro mais importante para a dose de manutenção, porque liga a velocidade de eliminação à concentração:</p>
+<p><b>Velocidade de eliminação = CL × C</b></p>
+<p>A depuração total é a soma das depurações de cada órgão: CL<sub>total</sub> = CL<sub>renal</sub> + CL<sub>hepática</sub> + CL<sub>outras</sub>. Para um fármaco eliminado quase só pelo rim, a CL acompanha a TFG, e é por isso que tabelas de ajuste renal funcionam. No estado de equilíbrio, a velocidade de entrada iguala a de saída, e com isso:</p>
+<p><b>Css média = (F × dose ÷ τ) ÷ CL</b>, em que τ é o intervalo entre doses.</p>
+<p>Duas consequências decorrem da fórmula. Dobrar a dose dobra a concentração média no equilíbrio (na cinética linear). Reduzir a CL à metade, como na perda de metade da função renal, também dobra a concentração se a dose não for ajustada.</p>
+
+<h2>Constante de eliminação e meia-vida</h2>
+<p>Na cinética de primeira ordem, a velocidade de eliminação é proporcional à concentração, e a concentração cai exponencialmente:</p>
+<p><b>C = C<sub>0</sub> × e<sup>−ke × t</sup></b></p>
+<p>A constante de eliminação (ke, em h<sup>−1</sup>) é a fração do fármaco eliminada por unidade de tempo. Ela depende dos dois parâmetros primários: <b>ke = CL ÷ Vd</b>. A meia-vida (t½) é o tempo para a concentração cair à metade:</p>
+<p><b>t½ = 0,693 ÷ ke = 0,693 × Vd ÷ CL</b></p>
+<p>A última forma da equação é a que mais ensina. A meia-vida é um parâmetro <b>derivado</b>: aumenta quando o Vd aumenta ou quando a CL cai. No paciente séptico que recebeu muitos litros de cristaloide e mantém boa função renal, a meia-vida de um aminoglicosídeo pode aumentar por causa do Vd, embora a depuração esteja preservada. Olhar só a meia-vida leva a conclusões erradas sobre a função de eliminação.</p>
+<div class="cx calculo"><b>Exemplo de cálculo</b><p>Duas concentrações de gentamicina colhidas na fase de eliminação: 12 mg/L às 2 horas e 3 mg/L às 10 horas após o início da infusão. ke = ln(12 ÷ 3) ÷ (10 − 2) = ln 4 ÷ 8 = 1,386 ÷ 8 = 0,173 h<sup>−1</sup>. t½ = 0,693 ÷ 0,173 = 4 horas. Conferência intuitiva: de 12 para 6 (uma meia-vida), de 6 para 3 (outra meia-vida), duas meias-vidas em 8 horas.</p></div>
+<h3>Regra das meias-vidas</h3>
+<p>Em cinética de primeira ordem, a cada meia-vida se elimina metade do que restava: 50% após uma, 75% após duas, 87,5% após três, 93,75% após quatro e cerca de 97% após cinco. A mesma regra vale para chegar ao estado de equilíbrio sob doses repetidas: após quatro a cinco meias-vidas, a concentração alcança 94% a 97% do valor final. Por isso fármacos de meia-vida longa (amiodarona, digoxina, fenobarbital) precisam de dose de ataque quando o efeito é urgente.</p>
+
+<h2>Área sob a curva</h2>
+<p>A AUC (<i>area under the curve</i>) é a integral da concentração no tempo, em mg·h/L. Representa a exposição total e se relaciona com a dose pela depuração:</p>
+<p><b>AUC = F × dose ÷ CL</b></p>
+<p>Para uma dose única, a AUC de zero a infinito mede a exposição daquela dose. No estado de equilíbrio, a AUC em um intervalo de dose (AUCτ) é igual à AUC de zero a infinito de uma dose única. A AUC de 24 horas (AUC<sub>24</sub>) é o que se compara com o alvo da vancomicina: 400 a 600 mg·h/L, assumindo CIM de 1 mg/L (ASHP/IDSA/PIDS/SIDP, 2020). Se o paciente recebe 3.000 mg por dia e tem CL de vancomicina de 6 L/h, AUC<sub>24</sub> = 3.000 ÷ 6 = 500 mg·h/L.</p>
+<p>Na prática, a AUC é estimada de três formas: por software bayesiano (preferido pelo consenso de 2020, porque funciona fora do estado de equilíbrio e com uma ou duas amostras), por equações de primeira ordem com duas concentrações (pico e vale) e, de forma grosseira, pela CL populacional estimada a partir da função renal.</p>
+
+<h2>Estado de equilíbrio e acúmulo</h2>
+<p>Com doses repetidas em intervalo menor que o tempo necessário para eliminar tudo, cada dose se soma ao que restou da anterior. A concentração sobe até que a quantidade eliminada em um intervalo seja igual à dose administrada. A partir daí, pico e vale se repetem: é o estado de equilíbrio (<i>steady state</i>).</p>
+<p>O fator de acúmulo mede quanto o pico no equilíbrio supera o pico da primeira dose:</p>
+<p><b>R = 1 ÷ (1 − e<sup>−ke × τ</sup>)</b></p>
+<div class="cx calculo"><b>Exemplo de cálculo</b><p>Fármaco com t½ de 8 horas dado a cada 12 horas. ke = 0,693 ÷ 8 = 0,0866 h<sup>−1</sup>. e<sup>−0,0866 × 12</sup> = e<sup>−1,04</sup> = 0,353. R = 1 ÷ (1 − 0,353) = 1,55. No equilíbrio, as concentrações ficam cerca de 55% acima das da primeira dose. O equilíbrio chega em 4 a 5 meias-vidas, ou 32 a 40 horas.</p></div>
+<p>O tempo para atingir o equilíbrio depende só da meia-vida, não da dose, do intervalo nem da velocidade de infusão. Aumentar a dose de manutenção eleva o patamar final, mas não chega a ele mais rápido. Quem encurta o caminho é a dose de ataque.</p>
+
+<h2>Dose de ataque e dose de manutenção</h2>
+<h3>Dose de ataque</h3>
+<p>A dose de ataque (DA) enche o volume de distribuição até a concentração-alvo de uma vez:</p>
+<p><b>DA = Vd × C<sub>alvo</sub> ÷ F</b> (se já houver fármaco no organismo, usa-se C<sub>alvo</sub> − C<sub>atual</sub>)</p>
+<p>A dose de ataque <b>não depende da função renal nem hepática</b>, porque depende só do Vd. É um erro frequente reduzir a primeira dose de antimicrobiano no paciente com lesão renal aguda. Na UTI, o Vd de fármacos hidrofílicos costuma estar aumentado, e a dose de ataque tende a ser maior, não menor.</p>
+<div class="cx calculo"><b>Exemplo de cálculo</b><p>Paciente de 70 kg em estado de mal epiléptico. Vd da fenitoína de 0,7 L/kg, alvo de 15 mg/L de concentração total. DA = 0,7 × 70 × 15 = 735 mg. Para 20 mg/L, DA = 0,7 × 70 × 20 = 980 mg. A dose usual de ataque, 15 a 20 mg/kg (1.050 a 1.400 mg neste paciente), gera concentração inicial calculada de cerca de 21 a 29 mg/L. Como o Vd real varia, o nível pós-ataque costuma ficar próximo ou pouco acima do limite superior da faixa, o que se aceita no estado de mal epiléptico para garantir controle rápido; a manutenção começa depois, e o nível é conferido. A velocidade máxima de infusão de fenitoína em adultos é de 50 mg/min pelo risco de arritmia e hipotensão.</p></div>
+<h3>Dose de manutenção</h3>
+<p>A dose de manutenção (DM) repõe o que foi eliminado em cada intervalo, mantendo a Css média desejada:</p>
+<p><b>DM = CL × Css × τ ÷ F</b></p>
+<p>Em infusão contínua, a velocidade de infusão (R<sub>0</sub>) necessária para uma Css é <b>R<sub>0</sub> = CL × Css</b>. Por exemplo, para manter vancomicina em infusão contínua com Css de 22 mg/L em paciente com CL de 4 L/h: R<sub>0</sub> = 4 × 22 = 88 mg/h, cerca de 2.100 mg por dia. O consenso de 2020 sugere, para infusão contínua, ataque de 15 a 20 mg/kg e manutenção de 30 a 40 mg/kg por dia (até 60 mg/kg por dia) para Css de 20 a 25 mg/L.</p>
+
+<h2>Cinética de primeira ordem e de ordem zero</h2>
+<p>Na <b>primeira ordem</b>, uma fração constante do fármaco é eliminada por unidade de tempo. A quantidade eliminada por hora é proporcional à concentração, a meia-vida é constante e a relação dose-concentração é linear. É o comportamento da grande maioria dos fármacos em doses terapêuticas.</p>
+<p>Na <b>ordem zero</b>, uma quantidade constante é eliminada por unidade de tempo, independentemente da concentração, porque o sistema de eliminação está saturado. Não existe meia-vida fixa. O etanol é o exemplo clássico: o adulto elimina quantidade aproximadamente fixa por hora. Fenitoína, ácido acetilsalicílico em dose alta e, em parte, voriconazol entram em saturação na faixa terapêutica ou próxima dela.</p>
+<div class="tab"><table><thead><tr><th>Característica</th><th>Primeira ordem</th><th>Ordem zero (saturação)</th></tr></thead><tbody>
+<tr><td>O que é constante</td><td>Fração eliminada por hora</td><td>Quantidade eliminada por hora</td></tr>
+<tr><td>Meia-vida</td><td>Constante</td><td>Aumenta com a concentração</td></tr>
+<tr><td>Dose × Css</td><td>Proporcional</td><td>Aumento desproporcional</td></tr>
+<tr><td>Gráfico ln C × tempo</td><td>Reta</td><td>Curva côncava</td></tr>
+<tr><td>Exemplos</td><td>Aminoglicosídeos, vancomicina, betalactâmicos</td><td>Etanol, fenitoína, salicilato em superdosagem</td></tr>
+</tbody></table></div>
+
+<h2>Cinética de Michaelis-Menten e fenitoína</h2>
+<p>A eliminação enzimática saturável segue a equação de Michaelis-Menten. No estado de equilíbrio, a velocidade de administração (R, em mg/dia) iguala a de eliminação:</p>
+<p><b>R = Vmax × Css ÷ (Km + Css)</b></p>
+<p>Vmax é a velocidade máxima de eliminação (mg/dia) e Km é a concentração em que a eliminação está na metade da máxima (mg/L). Para a fenitoína, as médias populacionais em adultos ficam em torno de Vmax de 7 mg/kg/dia e Km de 4 mg/L, com grande variação individual. Como o Km (cerca de 4 mg/L) está abaixo da faixa terapêutica (10 a 20 mg/L de concentração total), a enzima já trabalha perto da saturação, e pequenas mudanças de dose produzem grandes mudanças de nível.</p>
+<p>Rearranjando: <b>Css = Km × R ÷ (Vmax − R)</b>. Quando R se aproxima de Vmax, o denominador tende a zero e a Css dispara. Se R excede Vmax, não há estado de equilíbrio: a concentração sobe indefinidamente.</p>
+<div class="cx calculo"><b>Exemplo de cálculo</b><p>Paciente recebe fenitoína 300 mg/dia, com nível total de 8 mg/L no equilíbrio e albumina normal. Deseja-se 15 mg/L. Assumindo Km de 4 mg/L: Vmax = R × (Km + Css) ÷ Css = 300 × (4 + 8) ÷ 8 = 450 mg/dia. Nova dose para 15 mg/L: R = 450 × 15 ÷ (4 + 15) = 355 mg/dia, na prática 350 mg/dia. Compare com o raciocínio linear, que proporia quase dobrar a dose (560 mg/dia). Se o prescritor subir para 400 mg/dia, a Css prevista é 4 × 400 ÷ (450 − 400) = 32 mg/L, faixa tóxica. Aumentos de fenitoína, quando o nível já está perto da faixa, costumam ser de 25 a 50 mg/dia por vez.</p></div>
+<div class="cx alerta"><b>Atenção</b><p>Na fenitoína, o tempo para atingir o equilíbrio também cresce com a concentração, e pode passar de uma a duas semanas em níveis altos. Colher nível dois ou três dias após mudança de dose e "confirmar" que está baixo leva a novo aumento quando a concentração ainda está subindo. Níveis antes do equilíbrio devem ser interpretados como parciais.</p></div>
+
+<h2>Modelos compartimentais</h2>
+<p>No <b>modelo de um compartimento</b>, o fármaco se distribui instantaneamente em um volume homogêneo, e o gráfico do logaritmo da concentração pelo tempo é uma reta. Serve bem para aminoglicosídeos e, com aproximação aceitável, para vancomicina quando as amostras são colhidas depois da fase de distribuição.</p>
+<p>No <b>modelo de dois compartimentos</b>, há um compartimento central (plasma e órgãos muito perfundidos) e um periférico (tecidos menos perfundidos). Depois de um bolus, a curva mostra uma queda rápida inicial (fase alfa, dominada pela distribuição) e uma queda lenta (fase beta, dominada pela eliminação). Vancomicina e digoxina têm fase de distribuição relevante, e é por isso que o pico de vancomicina é colhido 1 a 2 horas após o fim da infusão e o nível de digoxina, no mínimo 6 horas após a dose. Amostra colhida na fase de distribuição superestima a concentração no tecido e distorce qualquer cálculo.</p>
+<p>A <b>farmacocinética populacional</b> e a <b>estimativa bayesiana</b> combinam um modelo de parâmetros médios (com sua variabilidade) com as concentrações medidas no paciente. O programa ajusta os parâmetros individuais que melhor explicam as amostras, mesmo fora do equilíbrio, e projeta a dose para o alvo. É o método preferido pelo consenso de vancomicina de 2020.</p>
+
+<h2>Cálculo de AUC da vancomicina com duas concentrações</h2>
+<p>O método de primeira ordem (equações de Sawchuk-Zaske adaptadas) usa pico e vale colhidos no mesmo intervalo, de preferência no equilíbrio.</p>
+<div class="cx calculo"><b>Exemplo de cálculo</b><p>Vancomicina 1.500 mg a cada 12 horas, infusão de 1,5 hora. Pico colhido 1 hora após o fim da infusão (2,5 h do início): 30 mg/L. Vale colhido 30 minutos antes da dose seguinte (11,5 h do início): 12 mg/L.</p>
+<p>1. ke = ln(30 ÷ 12) ÷ (11,5 − 2,5) = 0,916 ÷ 9 = 0,102 h<sup>−1</sup>; t½ = 6,8 h.</p>
+<p>2. Extrapolar o pico verdadeiro ao fim da infusão (1 hora antes): Cmax = 30 × e<sup>0,102 × 1</sup> = 33,2 mg/L.</p>
+<p>3. Extrapolar o vale verdadeiro ao fim do intervalo (0,5 hora depois): Cmin = 12 × e<sup>−0,102 × 0,5</sup> = 11,4 mg/L.</p>
+<p>4. AUC da fase de infusão (trapézio): 1,5 × (33,2 + 11,4) ÷ 2 = 33,5 mg·h/L.</p>
+<p>5. AUC da fase de eliminação: (Cmax − Cmin) ÷ ke = (33,2 − 11,4) ÷ 0,102 = 214 mg·h/L.</p>
+<p>6. AUCτ = 33,5 + 214 = 247,5 mg·h/L. Como são dois intervalos por dia, AUC<sub>24</sub> = 495 mg·h/L, dentro da faixa de 400 a 600.</p>
+<p>Por consequência, CL = 1.500 ÷ 247,5 = 6,1 L/h e Vd = CL ÷ ke = 60 L. Se a AUC<sub>24</sub> estivesse em 700, a nova dose diária seria proporcional: dose atual × (alvo ÷ AUC atual), por exemplo 3.000 × 500 ÷ 700 ≈ 2.150 mg/dia.</p></div>
+<div class="cx farma"><b>Na prática do farmacêutico</b><p>Antes de calcular, confira os horários reais de início e fim da infusão e de cada coleta. Erros de registro de horário são a principal fonte de AUC absurda. Se a infusão atrasou, se a coleta do pico foi feita no braço da infusão ou se a dose anterior foi pulada, o cálculo não vale e a coleta deve ser repetida ou analisada por método bayesiano, que tolera horários irregulares desde que sejam verdadeiros.</p></div>
+
+<h2>Parâmetros e alterações de dose: síntese</h2>
+<div class="tab"><table><thead><tr><th>Mudança no paciente</th><th>Efeito no parâmetro</th><th>Consequência para a dose</th></tr></thead><tbody>
+<tr><td>Edema, balanço hídrico muito positivo</td><td>Vd de hidrofílicos aumenta</td><td>Dose de ataque maior; manutenção pode não mudar</td></tr>
+<tr><td>Lesão renal aguda</td><td>CL renal cai, t½ aumenta</td><td>Ataque integral; manutenção reduzida ou intervalo ampliado</td></tr>
+<tr><td>Depuração renal aumentada</td><td>CL renal sobe, t½ cai</td><td>Manutenção maior ou mais frequente; infusão prolongada em betalactâmicos</td></tr>
+<tr><td>Hipoalbuminemia</td><td>fu aumenta; CL e Vd aparentes de fármacos muito ligados sobem</td><td>Interpretar nível total com cautela; pode exigir dose ou frequência maior</td></tr>
+<tr><td>Saturação enzimática</td><td>CL cai com o aumento da concentração</td><td>Aumentos pequenos e escalonados (fenitoína)</td></tr>
+</tbody></table></div>
+<div class="cx farma"><b>Na prática do farmacêutico</b><p>Ao intervir, explique o parâmetro, não só o número. "A dose de ataque de amicacina deve ser integral mesmo com creatinina de 2,4 mg/dL, porque ela depende do volume, e o paciente recebeu 6 litros de cristaloide; o que se ajusta é o intervalo, guiado pelo nível" é um argumento que a equipe aceita com mais facilidade do que "a tabela manda".</p></div>
+
+<h2>Erros frequentes</h2>
+<ul>
+<li>Reduzir a dose de ataque pela função renal.</li>
+<li>Achar que aumentar a dose de manutenção faz o fármaco chegar mais rápido ao equilíbrio.</li>
+<li>Aplicar proporcionalidade linear à fenitoína e dobrar a dose por um nível baixo.</li>
+<li>Calcular ke com amostra colhida durante a fase de distribuição (pico de vancomicina logo ao fim da infusão).</li>
+<li>Usar horários prescritos em vez dos horários reais de infusão e de coleta.</li>
+<li>Interpretar meia-vida longa como sinal de má eliminação, sem considerar aumento de Vd.</li>
+<li>Somar AUC de um intervalo e esquecer de multiplicar pelo número de intervalos do dia para obter a AUC<sub>24</sub>.</li>
+<li>Considerar o nível de fenitoína "estável" poucos dias após ajuste de dose.</li>
+</ul>
+
+<h2>Perguntas de revisão</h2>
+<details class="rev"><summary>Qual parâmetro determina a dose de ataque e qual determina a de manutenção?</summary><p>A dose de ataque depende do volume de distribuição (DA = Vd × C<sub>alvo</sub> ÷ F). A de manutenção depende da depuração (DM = CL × Css × τ ÷ F).</p></details>
+<details class="rev"><summary>Um fármaco tem t½ de 10 horas. Quanto tempo leva para chegar ao equilíbrio sem dose de ataque?</summary><p>Cerca de 4 a 5 meias-vidas, ou 40 a 50 horas, independentemente da dose e do intervalo.</p></details>
+<details class="rev"><summary>Por que a meia-vida é um parâmetro derivado?</summary><p>Porque t½ = 0,693 × Vd ÷ CL. Ela muda quando muda o Vd ou a CL, e sozinha não revela qual dos dois mudou.</p></details>
+<details class="rev"><summary>Paciente com CL de vancomicina de 5 L/h recebe 2.500 mg/dia. Qual a AUC<sub>24</sub>?</summary><p>AUC<sub>24</sub> = dose diária ÷ CL = 2.500 ÷ 5 = 500 mg·h/L.</p></details>
+<details class="rev"><summary>Por que a fenitoína tem aumento desproporcional de nível com pequenos aumentos de dose?</summary><p>Porque sua eliminação segue Michaelis-Menten com Km (cerca de 4 mg/L) abaixo da faixa terapêutica. A enzima está próxima da saturação, e a Css = Km × R ÷ (Vmax − R) dispara quando R se aproxima de Vmax.</p></details>
+<details class="rev"><summary>Por que o pico de vancomicina é colhido 1 a 2 horas após o fim da infusão?</summary><p>Para evitar a fase de distribuição do modelo de dois compartimentos. Colhido cedo demais, o pico está alto por distribuição incompleta e distorce ke e AUC.</p></details>
+<details class="rev"><summary>Como se calcula a velocidade de infusão contínua para uma Css desejada?</summary><p>R<sub>0</sub> = CL × Css. Com CL de 4 L/h e Css de 22 mg/L, R<sub>0</sub> = 88 mg/h.</p></details>
+
+<section class="fontes"><h2>Referências</h2><ol>
+<li>Rowland M, Tozer TN. Clinical Pharmacokinetics and Pharmacodynamics: Concepts and Applications. 5ª ed. Wolters Kluwer; 2019.</li>
+<li>Beringer P (ed.). Winter's Basic Clinical Pharmacokinetics. 6ª ed. Wolters Kluwer; 2018.</li>
+<li>Bauer LA. Applied Clinical Pharmacokinetics. 3ª ed. McGraw Hill; 2014.</li>
+<li>Rybak MJ, Le J, Lodise TP, et al. Therapeutic monitoring of vancomycin for serious methicillin-resistant <i>Staphylococcus aureus</i> infections: a revised consensus guideline and review by ASHP, IDSA, PIDS and SIDP. Am J Health Syst Pharm. 2020;77(11):835-864 (publicado também em Clin Infect Dis. 2020;71(6):1361-1364).</li>
+</ol></section>

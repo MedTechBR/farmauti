@@ -1,0 +1,1098 @@
+{
+ "leituras": [
+  {
+   "slug": "dose-disfuncao-renal",
+   "titulo": "Ajuste de dose na disfunção renal",
+   "dek": "Como estimar a função renal do paciente crítico e transformá-la em dose: creatinina fora do equilíbrio, CKD-EPI 2021 desindexada, Cockcroft-Gault, depuração em urina coletada, cistatina C, depuração renal aumentada e tabelas de ajuste dos fármacos mais usados na UTI, com base no KDIGO 2024 de doença renal crônica, no rascunho KDIGO 2026 de lesão renal aguda e nas bulas.",
+   "palavras": 4453,
+   "fontes": [
+    "KDIGO 2024 CKD Guideline (Kidney Int 2024)",
+    "KDIGO AKI/AKD Guideline, rascunho para consulta pública, 2026",
+    "Inker et al., NEJM 2021 (CKD-EPI 2021)",
+    "Chen, JASN 2013 (TFG cinética)",
+    "Udy et al., Crit Care 2013 (ARC)",
+    "Rybak et al., AJHP 2020 (vancomicina)",
+    "Tsuji et al., Pharmacotherapy 2019 (polimixinas)"
+   ]
+  },
+  {
+   "slug": "trs-dialise-dose",
+   "titulo": "Farmacoterapia nas terapias de substituição renal",
+   "dek": "Modalidades de terapia de substituição renal, determinantes da remoção extracorpórea de fármacos, cálculo da depuração do circuito, doses de antimicrobianos em terapia contínua, anticoagulação com citrato e heparina, reposição de fósforo e potássio e horário das doses em relação à hemodiálise, com base no KDIGO de lesão renal aguda (2012 e rascunho 2026), na diretriz multidisciplinar de TRS em terapia intensiva de 2026 e em revisões de farmacocinética em TRS contínua.",
+   "palavras": 3866,
+   "fontes": [
+    "KDIGO AKI Guideline 2012",
+    "Meersch-Dini et al., Crit Care 2026 (TRS em terapia intensiva)",
+    "Heintz, Matzke e Dager, Pharmacotherapy 2009",
+    "Li et al., Front Pharmacol 2020",
+    "Tsuji et al., Pharmacotherapy 2019",
+    "Rybak et al., AJHP 2020",
+    "Novy et al., AAC 2024 (ASAP ECMO)",
+    "Singer et al., ESPEN 2023"
+   ]
+  },
+  {
+   "slug": "insuficiencia-hepatica-dose",
+   "titulo": "Ajuste de dose na insuficiência hepática",
+   "dek": "Como a doença hepática altera a farmacocinética e a farmacodinâmica, por que Child-Pugh e MELD servem só como aproximação, ajustes práticos de opioides, sedativos, analgésicos e antimicrobianos, fármacos que precipitam encefalopatia, manejo da coagulopatia e reconhecimento da lesão hepática induzida por fármacos, com base nas diretrizes EASL de 2019 e 2022, na orientação da AASLD de 2023, na diretriz ACG de 2021 e nas bulas.",
+   "palavras": 3443,
+   "fontes": [
+    "EASL DILI 2019 (J Hepatol 2019)",
+    "AASLD DILI 2023 (Hepatology 2023)",
+    "Chalasani et al., ACG 2021",
+    "Danan e Teschke, RUCAM 2016",
+    "EASL sangramento e trombose na cirrose 2022",
+    "EASL encefalopatia hepática 2022",
+    "Kim et al., MELD 3.0, 2021",
+    "Chandok e Watt, Mayo Clin Proc 2010"
+   ]
+  },
+  {
+   "slug": "obesidade-populacoes-especiais",
+   "titulo": "Obesidade, idosos, gestantes e grandes queimados",
+   "dek": "Escolha do escalar de peso para cada fármaco no obeso, prescrição segura no idoso crítico (Beers 2023 e STOPP/START versão 3), farmacoterapia da gestante e da puérpera na UTI e alterações farmacocinéticas do grande queimado, com base no consenso de vancomicina de 2020, no consenso de polimixinas de 2019, no Manual de Gestação de Alto Risco do Ministério da Saúde (2022) e nas bulas.",
+   "palavras": 3567,
+   "fontes": [
+    "Rybak et al., AJHP 2020",
+    "Tsuji et al., Pharmacotherapy 2019",
+    "Janmahasatian et al., Clin Pharmacokinet 2005",
+    "AGS Beers Criteria 2023",
+    "STOPP/START v3 (O'Mahony et al., 2023)",
+    "Ministério da Saúde, Manual de Gestação de Alto Risco, 2022",
+    "OMS, ácido tranexâmico na HPP, 2017",
+    "Ravichandran e Pruskowski, Eur Burn J 2023"
+   ]
+  },
+  {
+   "slug": "ecmo-hipotermia-plasmaferese",
+   "titulo": "ECMO, hipotermia terapêutica e plasmaférese",
+   "dek": "Alterações farmacocinéticas e condutas de dose em três terapias de suporte da UTI: oxigenação por membrana extracorpórea (sequestro no circuito, anticoagulação, sedoanalgesia e antimicrobianos, com os resultados do programa ASAP ECMO e a diretriz ELSO de 2021), controle de temperatura após parada cardíaca (TTM2, ERC-ESICM 2021 e 2025, AHA 2025) e plasmaférese terapêutica (remoção de fármacos e horário das doses, com a 10ª edição da ASFA, de 2026).",
+   "palavras": 3524,
+   "fontes": [
+    "ELSO Anticoagulation Guidelines 2021 (ASAIO J 2022)",
+    "Shekar et al., Crit Care 2012 e 2015",
+    "Estudos ASAP ECMO 2021-2026",
+    "Dankiewicz et al., NEJM 2021 (TTM2)",
+    "ERC-ESICM 2021, 2022 e 2025",
+    "AHA 2025 Post-Cardiac Arrest Care",
+    "Tortorici et al., Crit Care Med 2007",
+    "ASFA 10ª edição, J Clin Apher 2026",
+    "Ibrahim e Balogun, Semin Dial 2012"
+   ]
+  }
+ ],
+ "cartoes": [
+  {
+   "leitura": "dose-disfuncao-renal",
+   "frente": "O que a regra de Dettli estima no ajuste renal?",
+   "verso": "A fração da dose habitual a usar: 1 − fe × (1 − razão entre a depuração do paciente e a normal). Com fração excretada inalterada (fe) alta, o ajuste é quase proporcional à queda da depuração; com fe baixa, é pequeno."
+  },
+  {
+   "leitura": "dose-disfuncao-renal",
+   "frente": "Qual equação é o padrão para estimar a TFG e como convertê-la para ajuste de dose?",
+   "verso": "CKD-EPI 2021 sem raça. Para dose, o KDIGO 2024 orienta desindexar: TFGe × superfície corporal/1,73, obtendo mL/min."
+  },
+  {
+   "leitura": "dose-disfuncao-renal",
+   "frente": "Por que as faixas de ajuste das bulas estão em depuração de creatinina por Cockcroft-Gault?",
+   "verso": "Porque os estudos de farmacocinética que as fundamentaram classificaram os voluntários por essa equação. Ela estima depuração de creatinina, inclui secreção tubular e depende do peso usado."
+  },
+  {
+   "leitura": "dose-disfuncao-renal",
+   "frente": "Em que situações a TFGe baseada em creatinina não serve para dose?",
+   "verso": "Creatinina fora do equilíbrio (LRA em evolução ou recuperação), massa muscular atípica (sarcopenia, amputação, cirrose) e uso de inibidores da secreção tubular, como trimetoprima, cobicistate e dolutegravir."
+  },
+  {
+   "leitura": "dose-disfuncao-renal",
+   "frente": "Como se calcula a depuração de creatinina em urina coletada?",
+   "verso": "CLcr = (creatinina urinária × volume em mL)/(creatinina plasmática × tempo em minutos). Na UTI, coletas de 8 a 12 h por sonda são aceitas; perda de urina subestima o resultado."
+  },
+  {
+   "leitura": "dose-disfuncao-renal",
+   "frente": "Como se define a depuração renal aumentada (ARC)?",
+   "verso": "Depuração de creatinina medida igual ou maior que 130 mL/min/1,73 m². Comum em jovens com trauma, TCE, queimadura ou sepse sem disfunção renal; só a urina coletada confirma."
+  },
+  {
+   "leitura": "dose-disfuncao-renal",
+   "frente": "Quais são os itens do escore de ARC de Udy?",
+   "verso": "Idade até 50 anos (6 pontos), trauma (3 pontos) e SOFA até 4 (1 ponto). Pontuação de 7 ou mais indica alto risco de ARC."
+  },
+  {
+   "leitura": "dose-disfuncao-renal",
+   "frente": "A dose de ataque de vancomicina muda na lesão renal aguda?",
+   "verso": "Não. O ataque de 20 a 35 mg/kg pelo peso real depende do volume de distribuição. A função renal define a manutenção, guiada por AUC de 400 a 600 mg·h/L (consenso 2020)."
+  },
+  {
+   "leitura": "dose-disfuncao-renal",
+   "frente": "No aminoglicosídeo com depuração reduzida, reduz-se a dose ou alonga-se o intervalo?",
+   "verso": "Mantém-se a dose por mg/kg, preservando o pico e a razão Cmáx/CIM, e alonga-se o intervalo guiado por nível, permitindo vale baixo."
+  },
+  {
+   "leitura": "dose-disfuncao-renal",
+   "frente": "Por que evitar morfina na insuficiência renal?",
+   "verso": "Seus metabólitos acumulam: a morfina-6-glicuronídeo é opioide potente e prolonga sedação e depressão respiratória; a morfina-3-glicuronídeo causa mioclonia e hiperalgesia. O fentanil é a alternativa habitual."
+  },
+  {
+   "leitura": "dose-disfuncao-renal",
+   "frente": "Qual o ajuste do levetiracetam abaixo de 30 mL/min e em hemodiálise?",
+   "verso": "Abaixo de 30 mL/min: 250 a 500 mg a cada 12 h. Em hemodiálise: 500 a 1.000 mg a cada 24 h, com suplemento de 250 a 500 mg após a sessão."
+  },
+  {
+   "leitura": "dose-disfuncao-renal",
+   "frente": "Cefepima 2 g a cada 8 h em paciente com depuração de 40 mL/min: qual o ajuste?",
+   "verso": "2 g a cada 12 h (faixa de 30 a 60 mL/min). Sem ajuste, a cefepima acumula e causa encefalopatia e estado de mal não convulsivo."
+  },
+  {
+   "leitura": "dose-disfuncao-renal",
+   "frente": "Para que serve a TFG cinética?",
+   "verso": "Para estimar a filtração quando a creatinina está mudando, considerando a velocidade da variação (Chen, 2013). Em LRA em piora, mostra função pior do que a TFGe estática sugere."
+  },
+  {
+   "leitura": "dose-disfuncao-renal",
+   "frente": "Quando a cistatina C é mais útil para ajuste de dose?",
+   "verso": "Em massa muscular atípica: idoso frágil, amputado, cirrótico, tetraplégico, desnutrido. O KDIGO 2024 sugere a equação combinada creatinina-cistatina quando a decisão exige precisão."
+  },
+  {
+   "leitura": "trs-dialise-dose",
+   "frente": "Qual a dose de efluente recomendada em TRS contínua?",
+   "verso": "Entregar 20 a 25 mL/kg/h (KDIGO 2012 e diretriz multidisciplinar de 2026). Pelas interrupções, costuma-se prescrever 25 a 30 mL/kg/h."
+  },
+  {
+   "leitura": "trs-dialise-dose",
+   "frente": "Quais fatores determinam a remoção de um fármaco pela TRS?",
+   "verso": "Fração livre (só ela atravessa), volume de distribuição (acima de 1 a 2 L/kg, pouca remoção), peso molecular, coeficiente de peneiramento e a fração da depuração total que a TRS representa (relevante acima de 25% a 30%)."
+  },
+  {
+   "leitura": "trs-dialise-dose",
+   "frente": "O que é o coeficiente de peneiramento?",
+   "verso": "A razão entre a concentração do fármaco no ultrafiltrado e no plasma na convecção. Na prática aproxima-se da fração livre do fármaco."
+  },
+  {
+   "leitura": "trs-dialise-dose",
+   "frente": "Como estimar a depuração de um fármaco em CVVHDF?",
+   "verso": "Fração livre × efluente total entregue (ultrafiltrado + dialisato). Com reposição pré-filtro, a depuração é cerca de 10% a 20% menor pela diluição."
+  },
+  {
+   "leitura": "trs-dialise-dose",
+   "frente": "Um efluente de 2 L/h equivale a quanto de depuração para fármaco pouco ligado a proteínas?",
+   "verso": "Cerca de 33 mL/min (2.000 mL/60 min), somados à depuração não renal e à função renal residual."
+  },
+  {
+   "leitura": "trs-dialise-dose",
+   "frente": "Qual a dose de meropeném em TRS contínua com efluente de 25 a 35 mL/kg/h?",
+   "verso": "1 g a cada 8 h ou 500 mg a cada 6 h, de preferência em infusão estendida; 2 g a cada 8 h para SNC ou CIM alta, com TDM."
+  },
+  {
+   "leitura": "trs-dialise-dose",
+   "frente": "A polimixina B precisa de ajuste em TRS?",
+   "verso": "Não. Eliminação predominantemente não renal: ataque de 2 a 2,5 mg/kg e 1,25 a 1,5 mg/kg a cada 12 h (consenso internacional 2019)."
+  },
+  {
+   "leitura": "trs-dialise-dose",
+   "frente": "Qual a dose de colistimetato em TRS contínua pelo consenso de 2019?",
+   "verso": "Ataque de 300 mg de colistina base (cerca de 9 milhões de UI) e manutenção de 440 mg de colistina base por dia (cerca de 13,3 milhões de UI), divididos a cada 8 a 12 h."
+  },
+  {
+   "leitura": "trs-dialise-dose",
+   "frente": "Quais os alvos de cálcio na anticoagulação regional com citrato?",
+   "verso": "Cálcio ionizado pós-filtro de 0,25 a 0,35 mmol/L, cálcio ionizado sistêmico de 1 a 1,2 mmol/L e relação cálcio total/ionizado abaixo de 2,5."
+  },
+  {
+   "leitura": "trs-dialise-dose",
+   "frente": "Como diferenciar acúmulo de sobrecarga de citrato?",
+   "verso": "Acúmulo: citrato não metabolizado (insuficiência hepática, choque), com cálcio ionizado caindo, relação total/ionizado igual ou acima de 2,5 e acidose com ânion gap alto. Sobrecarga: entrega excessiva com metabolismo preservado, gerando alcalose e hipernatremia."
+  },
+  {
+   "leitura": "trs-dialise-dose",
+   "frente": "Quantas calorias fornecem citrato, lactato e glicose das soluções de TRS?",
+   "verso": "Citrato cerca de 0,59 kcal/mmol, lactato 0,33 kcal/mmol e glicose 0,73 kcal/mmol (3,4 kcal/g). A ESPEN manda contabilizá-las na oferta energética."
+  },
+  {
+   "leitura": "trs-dialise-dose",
+   "frente": "Como dosar vancomicina em hemodiálise intermitente de alto fluxo?",
+   "verso": "Ataque de 20 a 25 mg/kg; manutenção de 500 mg a 1 g (ou 5 a 10 mg/kg) após cada sessão, ajustada pelo nível pré-diálise (consenso 2020)."
+  },
+  {
+   "leitura": "trs-dialise-dose",
+   "frente": "O que fazer quando a TRS contínua é suspensa em paciente anúrico?",
+   "verso": "Recalcular todas as doses: a depuração cai de 30 a 50 mL/min para quase zero. Betalactâmicos, como cefepima, e aciclovir acumulam e causam neurotoxicidade."
+  },
+  {
+   "leitura": "trs-dialise-dose",
+   "frente": "Como prevenir hipofosfatemia na TRS contínua?",
+   "verso": "Usar soluções com fosfato quando disponíveis ou repor por via IV (glicerofosfato de sódio ou fosfato de potássio, conforme o potássio), com dosagem diária de fósforo, potássio e magnésio."
+  },
+  {
+   "leitura": "insuficiencia-hepatica-dose",
+   "frente": "Por que não existe um marcador equivalente à creatinina para ajuste hepático?",
+   "verso": "O fígado depura fármacos por muitas vias (isoformas do CYP, glicuronidação, excreção biliar) que se deterioram em ritmos diferentes; bilirrubina, albumina e INR medem síntese e excreção, não capacidade metabólica."
+  },
+  {
+   "leitura": "insuficiencia-hepatica-dose",
+   "frente": "Quais os componentes e as classes do Child-Pugh?",
+   "verso": "Bilirrubina, albumina, INR, ascite e encefalopatia, 1 a 3 pontos cada. Classe A: 5 a 6; B: 7 a 9; C: 10 a 15 pontos."
+  },
+  {
+   "leitura": "insuficiencia-hepatica-dose",
+   "frente": "Quais limitações do Child-Pugh na UTI?",
+   "verso": "Itens subjetivos (ascite, encefalopatia), albumina alterada por infusão, INR por anticoagulante ou vitamina K, sedação que impede graduar a encefalopatia e bilirrubina alta por sepse ou hemólise."
+  },
+  {
+   "leitura": "insuficiencia-hepatica-dose",
+   "frente": "O MELD serve para ajustar dose?",
+   "verso": "Não. MELD, MELD-Na e MELD 3.0 predizem mortalidade em 90 dias e ordenam a fila de transplante; nenhuma bula traduz MELD em dose."
+  },
+  {
+   "leitura": "insuficiencia-hepatica-dose",
+   "frente": "O que acontece com fármacos de alta extração hepática por via oral na cirrose com shunt?",
+   "verso": "A biodisponibilidade oral pode dobrar ou triplicar, pois o fármaco escapa da primeira passagem. Exemplos: morfina, propranolol, verapamil. A dose oral precisa de redução maior que a IV."
+  },
+  {
+   "leitura": "insuficiencia-hepatica-dose",
+   "frente": "Por que a fenitoína total engana no hepatopata com albumina baixa?",
+   "verso": "Com hipoalbuminemia e bilirrubina alta, a fração livre aumenta; uma fenitoína total baixa pode corresponder a concentração livre adequada ou tóxica. Dosar a fenitoína livre."
+  },
+  {
+   "leitura": "insuficiencia-hepatica-dose",
+   "frente": "Qual a dose máxima de paracetamol no cirrótico?",
+   "verso": "Entre 2 e 3 g/dia, adotando 2 g/dia em etilismo ativo, desnutrição ou jejum prolongado (condições que depletam glutationa)."
+  },
+  {
+   "leitura": "insuficiencia-hepatica-dose",
+   "frente": "Como ajustar tigeciclina na insuficiência hepática?",
+   "verso": "Child-Pugh C: ataque de 100 mg e manutenção de 25 mg a cada 12 h. Sem ajuste em A e B."
+  },
+  {
+   "leitura": "insuficiencia-hepatica-dose",
+   "frente": "Como ajustar caspofungina em Child-Pugh B?",
+   "verso": "Ataque de 70 mg e manutenção de 35 mg/dia. Micafungina e anidulafungina não exigem ajuste hepático."
+  },
+  {
+   "leitura": "insuficiencia-hepatica-dose",
+   "frente": "Como ajustar voriconazol na cirrose?",
+   "verso": "Child-Pugh A e B: ataque padrão e metade da dose de manutenção; Child-Pugh C só se o benefício justificar. Monitorar nível sérico."
+  },
+  {
+   "leitura": "insuficiencia-hepatica-dose",
+   "frente": "Quais fármacos mais precipitam encefalopatia hepática?",
+   "verso": "Benzodiazepínicos, opioides, anti-histamínicos e anticolinérgicos, diuréticos (hipocalemia, alcalose, hipovolemia) e, por associação, inibidores de bomba de prótons."
+  },
+  {
+   "leitura": "insuficiencia-hepatica-dose",
+   "frente": "Qual a meta da lactulose e o papel da rifaximina na encefalopatia?",
+   "verso": "Lactulose titulada para 2 a 3 evacuações pastosas por dia; rifaximina 550 mg a cada 12 h como adjuvante na prevenção de recorrência."
+  },
+  {
+   "leitura": "insuficiencia-hepatica-dose",
+   "frente": "Como se calcula a razão R e o que é a lei de Hy?",
+   "verso": "R = (ALT/LSN) ÷ (FA/LSN): 5 ou mais, hepatocelular; 2 ou menos, colestático; entre 2 e 5, misto. Lei de Hy: ALT acima de 3 vezes o LSN com bilirrubina acima de 2 vezes, sem obstrução, mortalidade em torno de 10%."
+  },
+  {
+   "leitura": "insuficiencia-hepatica-dose",
+   "frente": "Como o RUCAM classifica a causalidade da DILI?",
+   "verso": "Soma de pontos: 9 ou mais, altamente provável; 6 a 8, provável; 3 a 5, possível; 1 a 2, improvável; 0 ou menos, excluída (atualização de 2016)."
+  },
+  {
+   "leitura": "obesidade-populacoes-especiais",
+   "frente": "Como se calculam o peso ideal (Devine) e o peso ajustado?",
+   "verso": "Peso ideal: 50 kg (homens) ou 45,5 kg (mulheres) + 0,91 × (altura em cm − 152,4). Peso ajustado = peso ideal + 0,4 × (peso total − peso ideal)."
+  },
+  {
+   "leitura": "obesidade-populacoes-especiais",
+   "frente": "Qual a fórmula de massa magra de Janmahasatian?",
+   "verso": "Homens: 9.270 × peso/(6.680 + 216 × IMC). Mulheres: 9.270 × peso/(8.780 + 244 × IMC). Funciona bem nos extremos de peso."
+  },
+  {
+   "leitura": "obesidade-populacoes-especiais",
+   "frente": "Como dosar o ataque de vancomicina no obeso?",
+   "verso": "20 a 25 mg/kg pelo peso total, com máximo de 3 g; manutenção inicial pela função renal, em geral até 4,5 g/dia, e ajuste por AUC (consenso 2020)."
+  },
+  {
+   "leitura": "obesidade-populacoes-especiais",
+   "frente": "Qual peso usar para aminoglicosídeos no obeso?",
+   "verso": "Peso ajustado, quando o peso total excede cerca de 120% do ideal, com monitorização de pico e vale."
+  },
+  {
+   "leitura": "obesidade-populacoes-especiais",
+   "frente": "Qual peso usar para rocurônio e para succinilcolina no obeso?",
+   "verso": "Rocurônio e demais não despolarizantes: peso ideal. Succinilcolina: 1 mg/kg de peso total."
+  },
+  {
+   "leitura": "obesidade-populacoes-especiais",
+   "frente": "Como dosar enoxaparina terapêutica no obeso?",
+   "verso": "1 mg/kg de peso total a cada 12 h, evitando o esquema de 1,5 mg/kg/dia; anti-Xa em IMC acima de 40 ou peso acima de 150 kg."
+  },
+  {
+   "leitura": "obesidade-populacoes-especiais",
+   "frente": "Qual profilaxia com enoxaparina no IMC igual ou maior que 40?",
+   "verso": "40 mg a cada 12 h ou 0,5 mg/kg de peso total a cada 12 h, que atingem anti-Xa profilático com mais frequência que 40 mg/dia."
+  },
+  {
+   "leitura": "obesidade-populacoes-especiais",
+   "frente": "Qual peso usar para colistimetato e polimixina B no obeso?",
+   "verso": "Colistimetato: peso ideal quando o peso total é maior. Polimixina B: peso total pelo consenso de 2019, embora muitos serviços usem peso ajustado na obesidade extrema."
+  },
+  {
+   "leitura": "obesidade-populacoes-especiais",
+   "frente": "O que o Beers 2023 mudou sobre anticoagulantes?",
+   "verso": "Evitar varfarina como terapia inicial de FA não valvar e TEV, evitar rivaroxabana no tratamento prolongado e usar dabigatrana com cautela, preferindo apixabana."
+  },
+  {
+   "leitura": "obesidade-populacoes-especiais",
+   "frente": "Quantos critérios tem o STOPP/START versão 3?",
+   "verso": "190 critérios: 133 STOPP (prescrições potencialmente inapropriadas) e 57 START (omissões), publicados em 2023."
+  },
+  {
+   "leitura": "obesidade-populacoes-especiais",
+   "frente": "Por que não arredondar para 1 mg/dL a creatinina baixa do idoso?",
+   "verso": "Porque troca uma superestimativa por uma subestimativa arbitrária. A creatinina baixa reflete pouca massa muscular; o correto é medir com cistatina C ou urina coletada."
+  },
+  {
+   "leitura": "obesidade-populacoes-especiais",
+   "frente": "Quais critérios clínicos mantêm o sulfato de magnésio e qual o antídoto?",
+   "verso": "Diurese acima de 25 mL/h, reflexos patelares presentes e frequência respiratória acima de 12/min, a cada 4 h. Antídoto: gluconato de cálcio a 10%, 10 mL IV em 3 minutos."
+  },
+  {
+   "leitura": "obesidade-populacoes-especiais",
+   "frente": "Quais doses de hidralazina e nifedipino na crise hipertensiva da gestante?",
+   "verso": "Hidralazina 5 mg IV a cada 20 min, até 30 mg; nifedipino 10 mg VO a cada 20 a 30 min, até 30 mg (Manual de Gestação de Alto Risco, 2022)."
+  },
+  {
+   "leitura": "obesidade-populacoes-especiais",
+   "frente": "Por que a succinilcolina é contraindicada no grande queimado após 48 horas?",
+   "verso": "Pela proliferação de receptores nicotínicos extrajuncionais, que liberam potássio em excesso na despolarização e podem causar hipercalemia fatal."
+  },
+  {
+   "leitura": "ecmo-hipotermia-plasmaferese",
+   "frente": "Quais três mecanismos alteram a farmacocinética na ECMO?",
+   "verso": "Sequestro no circuito (fármacos lipofílicos e muito ligados a proteínas), aumento do volume de distribuição (hemodiluição, inflamação) e alteração da depuração (perfusão renal e hepática, LRA, TRS associada)."
+  },
+  {
+   "leitura": "ecmo-hipotermia-plasmaferese",
+   "frente": "Quanto de fentanil e midazolam foi recuperado no circuito ex vivo após 24 h?",
+   "verso": "Cerca de 3% do fentanil e 13% do midazolam (Shekar, 2012). Morfina e vancomicina foram recuperadas quase integralmente."
+  },
+  {
+   "leitura": "ecmo-hipotermia-plasmaferese",
+   "frente": "O que predisse o sequestro no estudo ex vivo de 2015?",
+   "verso": "Ligação proteica e lipofilicidade. Recuperação em 24 h: ciprofloxacino 96%, linezolida e fluconazol 91%, ceftriaxona 80%, caspofungina 56% e tiopental 12%."
+  },
+  {
+   "leitura": "ecmo-hipotermia-plasmaferese",
+   "frente": "Qual a mensagem geral do programa ASAP ECMO?",
+   "verso": "Nos circuitos modernos, a doença crítica, a função renal e a TRS explicam a maior parte da variabilidade; os esquemas habituais servem para a maioria dos fármacos, com TDM quando disponível."
+  },
+  {
+   "leitura": "ecmo-hipotermia-plasmaferese",
+   "frente": "Qual a faixa de anti-Xa para heparina na ECMO pela ELSO 2021?",
+   "verso": "0,3 a 0,7 UI/mL; TTPa e TCA conforme protocolo, lembrando que sofrem interferência de coagulopatia, hemodiluição e bilirrubina."
+  },
+  {
+   "leitura": "ecmo-hipotermia-plasmaferese",
+   "frente": "O que fazer diante de resistência à heparina na ECMO?",
+   "verso": "Antes de continuar escalando, dosar antitrombina e anti-Xa, e revisar coleta e proteínas de fase aguda que ligam heparina."
+  },
+  {
+   "leitura": "ecmo-hipotermia-plasmaferese",
+   "frente": "Como conduzir a trombocitopenia induzida por heparina na ECMO?",
+   "verso": "Suspender toda heparina, inclusive a de lavagem de cateteres, e trocar por inibidor direto da trombina (bivalirudina ou argatrobana), conforme disponibilidade."
+  },
+  {
+   "leitura": "ecmo-hipotermia-plasmaferese",
+   "frente": "Qual foi o resultado do TTM2 (2021)?",
+   "verso": "Hipotermia a 33 °C não reduziu mortalidade em 6 meses frente à normotermia com prevenção de febre (50% contra 48%) e teve mais arritmias com repercussão (24% contra 17%)."
+  },
+  {
+   "leitura": "ecmo-hipotermia-plasmaferese",
+   "frente": "O que recomendam ERC-ESICM e AHA 2025 sobre temperatura pós-parada?",
+   "verso": "ERC-ESICM: prevenir ativamente febre (acima de 37,7 °C) por pelo menos 72 h nos comatosos, foco mantido em 2025. AHA 2025: controle entre 32 e 37,5 °C por pelo menos 36 h."
+  },
+  {
+   "leitura": "ecmo-hipotermia-plasmaferese",
+   "frente": "Quanto a hipotermia reduz a depuração de fármacos metabolizados pelo CYP450?",
+   "verso": "Cerca de 7% a 22% por grau Celsius abaixo de 37 °C (Tortorici e colaboradores, 2007)."
+  },
+  {
+   "leitura": "ecmo-hipotermia-plasmaferese",
+   "frente": "Qual a escalada farmacológica para tremor no controle de temperatura?",
+   "verso": "Paracetamol, buspirona 30 mg a cada 8 h e magnésio no limite superior; depois dexmedetomidina ou opioide (meperidina 25 a 50 mg, evitada na LRA); propofol; BNM como último degrau."
+  },
+  {
+   "leitura": "ecmo-hipotermia-plasmaferese",
+   "frente": "Quanto uma troca plasmática remove de uma substância confinada ao plasma?",
+   "verso": "Cerca de 63% com 1 volume plasmático e 78% com 1,5 volume. Volume plasmático (L) = 0,065 × peso × (1 − hematócrito)."
+  },
+  {
+   "leitura": "ecmo-hipotermia-plasmaferese",
+   "frente": "Quais fármacos a plasmaférese remove de forma relevante?",
+   "verso": "Os de volume de distribuição pequeno (abaixo de 0,2 a 0,3 L/kg) e alta ligação proteica (acima de 80%), sobretudo se dados pouco antes da sessão: imunoglobulina IV e anticorpos monoclonais."
+  },
+  {
+   "leitura": "ecmo-hipotermia-plasmaferese",
+   "frente": "Como organizar imunoglobulina IV, rituximabe e IECA em relação à plasmaférese?",
+   "verso": "Imunoglobulina após a série de sessões; rituximabe após a sessão, com intervalo de 24 a 48 h até a próxima; IECA suspenso pelo menos 24 h antes da plasmaférese com albumina."
+  }
+ ],
+ "questoes": [
+  {
+   "leitura": "dose-disfuncao-renal",
+   "nivel": "basico",
+   "enun": "Segundo o KDIGO 2024, como a TFG estimada pela CKD-EPI 2021 deve ser usada para ajustar a dose de um fármaco de eliminação renal?",
+   "alts": [
+    "Convertida em mL/min, multiplicando pela superfície corporal do paciente e dividindo por 1,73",
+    "Mantida em mL/min/1,73 m², pois a indexação já corrige o valor para o tamanho do paciente",
+    "Substituída por Cockcroft-Gault com peso total, que é a única equação aceita nas bulas atuais",
+    "Multiplicada por 1,73 e dividida pelo peso ideal, para expressar a filtração em mL/min/kg",
+    "Aplicada só se a creatinina passar de 1 mg/dL, porque valores menores invalidam a equação"
+   ],
+   "gab": 0,
+   "coment": "A CKD-EPI 2021 devolve a TFG em mL/min/1,73 m², padronizada para comparar pessoas e classificar a doença renal crônica. O fármaco, porém, é eliminado pelos rins daquele paciente, com o tamanho que ele tem. Por isso o KDIGO 2024 recomenda, para ajuste de dose, a TFGe não indexada: multiplicar pela superfície corporal e dividir por 1,73. A diferença é pequena perto de 1,73 m² e grande nos extremos de tamanho.",
+   "porAlt": [
+    "Correta. Para dose, o KDIGO 2024 orienta a TFGe não indexada: valor × superfície corporal/1,73, em mL/min.",
+    "Incorreta. A indexação padroniza para 1,73 m² e serve para classificar a doença renal, não para dose individual.",
+    "Incorreta. O KDIGO 2024 recomenda equações de TFGe validadas para dose; Cockcroft-Gault com peso total superestima no obeso.",
+    "Incorreta. A desindexação usa a superfície corporal, não o peso ideal, e o resultado é mL/min, não mL/min/kg.",
+    "Incorreta. A equação vale para qualquer creatinina estável; o problema da creatinina baixa é a massa muscular, não a equação."
+   ],
+   "base": "KDIGO 2024 (Kidney Int 2024)"
+  },
+  {
+   "leitura": "dose-disfuncao-renal",
+   "nivel": "basico",
+   "enun": "Paciente em choque séptico, creatinina de 0,9 para 2,1 mg/dL em 24 horas, vai iniciar meropeném para pneumonia associada à ventilação. Qual a conduta para a primeira dose?",
+   "alts": [
+    "Dar metade da dose habitual, já que a depuração estimada está abaixo de 50 mL/min",
+    "Adiar a primeira dose até a creatinina ficar estável por pelo menos 48 horas seguidas",
+    "Dar a dose cheia só se a diurese estiver acima de 0,5 mL/kg/h nas últimas 6 horas",
+    "Dar a dose cheia habitual e reavaliar a manutenção conforme a evolução da função renal",
+    "Trocar o meropeném por polimixina B, que dispensa qualquer ajuste pela função renal"
+   ],
+   "gab": 3,
+   "coment": "A dose de ataque é calculada pelo volume de distribuição e pela concentração-alvo, e o volume não diminui na lesão renal aguda; na sepse, com extravasamento capilar e ressuscitação, ele costuma aumentar. Reduzir a primeira dose é o erro de ajuste renal mais danoso da UTI. Além disso, boa parte das LRA sépticas se resolve em 48 horas, e muitos serviços só ajustam betalactâmicos após esse período, salvo toxicidade relevante como a da cefepima.",
+   "porAlt": [
+    "Incorreta. Reduzir a primeira dose atrasa a concentração eficaz nas horas mais críticas; o ajuste vale para a manutenção.",
+    "Incorreta. Atrasar antimicrobiano em choque séptico aumenta mortalidade; não há motivo para esperar a estabilização.",
+    "Incorreta. A diurese não define a dose de ataque, que é sempre cheia.",
+    "Correta. A dose de ataque depende do volume de distribuição, que não diminui (e costuma aumentar) na sepse.",
+    "Incorreta. Trocar por polimixina sem indicação microbiológica é inadequado e não resolve uma dúvida de dose."
+   ],
+   "base": "KDIGO 2024 e Meersch-Dini et al., Crit Care 2026"
+  },
+  {
+   "leitura": "dose-disfuncao-renal",
+   "nivel": "intermediario",
+   "enun": "Mulher de 74 anos, 45 kg, 150 cm, creatinina estável, TFGe pela CKD-EPI 2021 de 40 mL/min/1,73 m² e superfície corporal de 1,37 m². Qual valor deve ser usado para consultar a tabela de ajuste?",
+   "alts": [
+    "Cerca de 40 mL/min",
+    "Cerca de 32 mL/min",
+    "Cerca de 51 mL/min",
+    "Cerca de 23 mL/min",
+    "Cerca de 45 mL/min"
+   ],
+   "gab": 1,
+   "coment": "Para desindexar, multiplica-se a TFGe pela superfície corporal e divide-se por 1,73: 40 × 1,37/1,73 ≈ 32 mL/min. A diferença tem consequência prática: com 40 mL/min a paciente estaria na faixa de 30 a 50 de muitas bulas, e com 32 mL/min continua nela, mas perto do limite inferior; em outra paciente ainda menor, o valor cairia abaixo de 30 e mudaria a dose de enoxaparina, cefepima ou levetiracetam.",
+   "porAlt": [
+    "Incorreta. É o valor indexado; superestima a depuração de uma paciente pequena.",
+    "Correta. 40 × 1,37/1,73 ≈ 31,7 mL/min.",
+    "Incorreta. Resulta de multiplicar por 1,73 e dividir por 1,37, operação invertida.",
+    "Incorreta. Não corresponde a nenhuma conversão válida da TFGe informada.",
+    "Incorreta. Confunde o peso em kg com a depuração."
+   ],
+   "base": "KDIGO 2024; Inker et al., NEJM 2021"
+  },
+  {
+   "leitura": "dose-disfuncao-renal",
+   "nivel": "intermediario",
+   "enun": "Homem de 24 anos, TCE grave, creatinina de 0,5 mg/dL, depuração medida em urina de 12 horas de 210 mL/min/1,73 m². Recebe piperacilina-tazobactam 4,5 g a cada 6 horas em bolus de 30 minutos. Qual a melhor intervenção?",
+   "alts": [
+    "Reduzir para 3,375 g a cada 6 horas, porque a creatinina baixa indica massa muscular pequena",
+    "Manter o esquema, pois a dose já é a máxima de bula e não há como melhorar a exposição",
+    "Trocar por ceftriaxona 2 g/dia, que não depende da função renal para atingir o alvo",
+    "Espaçar para 4,5 g a cada 8 horas em bolus, reduzindo o risco de nefrotoxicidade do esquema",
+    "Passar a infusão estendida ou contínua, mantendo a dose diária, e pedir TDM se disponível"
+   ],
+   "gab": 4,
+   "coment": "A depuração renal aumentada é definida por depuração medida igual ou maior que 130 mL/min/1,73 m², e o jovem com TCE é o perfil clássico (escore de Udy com 9 ou 10 pontos). Com betalactâmicos, o alvo é o tempo de concentração livre acima da CIM; com eliminação acelerada, o bolus gera longos períodos abaixo dela. Infusão estendida ou contínua, dose no limite superior e TDM são as estratégias. Espaçar ou reduzir a dose piora a exposição.",
+   "porAlt": [
+    "Incorreta. A ARC foi medida em urina coletada; reduzir a dose agravaria a subexposição.",
+    "Incorreta. A exposição melhora com infusão estendida ou contínua, sem aumentar a dose.",
+    "Incorreta. Ceftriaxona não substitui o espectro antipseudomonas e também sofre com a ARC.",
+    "Incorreta. Espaçar o intervalo reduz o tempo acima da CIM, o oposto do que o paciente precisa.",
+    "Correta. Na ARC, prolongar a infusão aumenta o tempo acima da CIM sem elevar a dose diária; o nível confirma."
+   ],
+   "base": "Udy et al., Crit Care 2013; KDIGO 2024"
+  },
+  {
+   "leitura": "dose-disfuncao-renal",
+   "nivel": "avancado",
+   "enun": "Paciente anúrico há 10 horas após choque hemorrágico, creatinina de 1,1 mg/dL (basal 0,8) e TFGe de 75 mL/min/1,73 m². Vai iniciar vancomicina para MRSA após ataque de 25 mg/kg. Como planejar a manutenção?",
+   "alts": [
+    "Usar a TFGe de 75 mL/min e prescrever manutenção de 15 mg/kg a cada 12 horas desde o início",
+    "Aplicar Cockcroft-Gault com a creatinina atual, que corrige o problema do estado de equilíbrio",
+    "Tratar a TFGe como superestimada e definir a manutenção por nível sérico nas primeiras 24 horas",
+    "Esperar a creatinina subir acima de 2 mg/dL para então calcular a TFGe e iniciar a manutenção",
+    "Prescrever manutenção pela TFGe e repetir a creatinina em 7 dias para avaliar o ajuste necessário"
+   ],
+   "gab": 2,
+   "coment": "Toda equação de TFGe supõe estado de equilíbrio. Nas primeiras horas de anúria, a creatinina ainda está perto do basal e a TFGe calculada parece normal, embora a filtração real seja mínima. A TFG cinética, a depuração em urina coletada (impossível em anúria) e sobretudo o nível sérico do fármaco resolvem o dilema. Para vancomicina, após o ataque cheio, dosar em 24 horas e redosar quando o nível cair ao alvo evita acúmulo e nefrotoxicidade.",
+   "porAlt": [
+    "Incorreta. A TFGe estática supõe equilíbrio e superestima muito a função do paciente anúrico.",
+    "Incorreta. Cockcroft-Gault também supõe equilíbrio e tem a mesma limitação.",
+    "Correta. Em anúria recente, a creatinina ainda não refletiu a queda da filtração; nível sérico guia a redose.",
+    "Incorreta. Esperar não é necessário: o nível sérico permite decidir a redose com segurança.",
+    "Incorreta. O intervalo de 7 dias ignora a evolução rápida da LRA e expõe o paciente a acúmulo."
+   ],
+   "base": "KDIGO 2024; Chen, JASN 2013; Rybak et al., AJHP 2020"
+  },
+  {
+   "leitura": "dose-disfuncao-renal",
+   "nivel": "avancado",
+   "enun": "Homem de 67 anos, LRA sem TRS, depuração medida de 10 mL/min, sonolento e com mioclonias. Prescrição: morfina 4 mg IV a cada 4 horas, gabapentina 600 mg a cada 8 horas e cefepima 2 g a cada 12 horas. Qual intervenção é mais adequada?",
+   "alts": [
+    "Manter todos os fármacos e associar haloperidol para controlar o quadro de delirium hiperativo atual",
+    "Trocar a morfina por meperidina e reduzir a gabapentina à metade, mantendo a cefepima atual",
+    "Suspender a gabapentina, trocar a morfina por fentanil e reduzir a cefepima a 1 g a cada 24 horas",
+    "Suspender apenas a cefepima e trocar a gabapentina por pregabalina na dose plena de bula",
+    "Espaçar a morfina para a cada 8 horas e manter a gabapentina e a cefepima como prescritas"
+   ],
+   "gab": 2,
+   "coment": "Sonolência com mioclonia em LRA deve disparar a busca por neurotoxicidade de fármacos de eliminação renal. A gabapentina é eliminada inalterada pelo rim e causa sedação e mioclonia; a morfina gera metabólitos glicuronídeos que acumulam; a cefepima, sem ajuste, causa encefalopatia e estado de mal não convulsivo. Para cefepima 2 g a cada 8 h de referência, a bula indica 1 g a cada 24 h com depuração até 10 mL/min. Fentanil é o opioide preferido.",
+   "porAlt": [
+    "Incorreta. Tratar sintoma com antipsicótico sem retirar as causas mantém a intoxicação.",
+    "Incorreta. A normeperidina acumula e causa convulsões; é pior que a morfina na LRA.",
+    "Correta. Os três fármacos acumulam na LRA e causam neurotoxicidade; a cefepima com até 10 mL/min vai a 1 g a cada 24 h.",
+    "Incorreta. A pregabalina também é eliminada pelo rim e exige redução; suspender cefepima sem motivo infeccioso é inadequado.",
+    "Incorreta. Os metabólitos da morfina continuam acumulando, e gabapentina e cefepima seguem sem ajuste."
+   ],
+   "base": "Bulas de cefepima e gabapentina (ANVISA, 2026); KDIGO 2024"
+  },
+  {
+   "leitura": "trs-dialise-dose",
+   "nivel": "basico",
+   "enun": "Na anticoagulação regional com citrato em TRS contínua, qual é o alvo usual de cálcio ionizado medido após o filtro?",
+   "alts": [
+    "1,05 a 1,25 mmol/L",
+    "0,65 a 0,85 mmol/L",
+    "1,35 a 1,55 mmol/L",
+    "0,05 a 0,15 mmol/L",
+    "0,25 a 0,35 mmol/L"
+   ],
+   "gab": 4,
+   "coment": "O citrato quela o cálcio ionizado no circuito, e a coagulação para quando o cálcio ionizado pós-filtro fica em torno de 0,25 a 0,35 mmol/L. O cálcio perdido no efluente é reposto por infusão separada para manter o cálcio ionizado sistêmico entre 1 e 1,2 mmol/L. Buscar cálcio pós-filtro muito baixo exige mais citrato e aumenta a carga devolvida ao paciente, com risco de acúmulo e alcalose.",
+   "porAlt": [
+    "Incorreta. Aproxima-se do alvo sistêmico do paciente (1 a 1,2 mmol/L), não do circuito.",
+    "Incorreta. Faixa insuficiente para anticoagular o circuito.",
+    "Incorreta. Faixa acima do normal, sem efeito anticoagulante.",
+    "Incorreta. Faixa baixa demais, que exigiria excesso de citrato e aumentaria o risco de acúmulo.",
+    "Correta. Cálcio ionizado pós-filtro nessa faixa impede a coagulação no circuito."
+   ],
+   "base": "KDIGO AKI 2012; revisões de citrato em TRS contínua"
+  },
+  {
+   "leitura": "trs-dialise-dose",
+   "nivel": "basico",
+   "enun": "Qual destes antimicrobianos mantém a mesma dose de manutenção em pacientes com e sem TRS contínua?",
+   "alts": [
+    "Polimixina B, cuja eliminação é predominantemente não renal",
+    "Colistimetato, pró-fármaco de eliminação predominantemente renal",
+    "Meropeném, que precisa de dose própria conforme o efluente",
+    "Vancomicina, cuja depuração acompanha o efluente entregue",
+    "Fluconazol, com fração livre alta e remoção importante na TRS"
+   ],
+   "gab": 0,
+   "coment": "A polimixina B é eliminada principalmente por vias não renais e o consenso internacional de 2019 recomenda a mesma dose em qualquer função renal, inclusive em TRS: ataque de 2 a 2,5 mg/kg e 1,25 a 1,5 mg/kg a cada 12 horas. O colistimetato, ao contrário, é pró-fármaco de eliminação renal, e tanto ele quanto a colistina são removidos pela TRS, o que exige dose própria. Meropeném, vancomicina e fluconazol têm depuração proporcional ao efluente.",
+   "porAlt": [
+    "Correta. A polimixina B não depende do rim; o consenso de 2019 mantém a dose.",
+    "Incorreta. O colistimetato exige dose específica em TRS (440 mg de colistina base por dia).",
+    "Incorreta. O meropeném é removido pela TRS e sua dose depende do efluente.",
+    "Incorreta. A depuração da vancomicina varia com o efluente e exige nível.",
+    "Incorreta. O fluconazol é bem removido e costuma exigir dose dobrada em TRS contínua."
+   ],
+   "base": "Tsuji et al., Pharmacotherapy 2019"
+  },
+  {
+   "leitura": "trs-dialise-dose",
+   "nivel": "intermediario",
+   "enun": "Paciente em CVVHDF com efluente entregue de 2,4 L/h, anúrico, recebe um fármaco com fração livre de 0,6 e depuração não renal desprezível. Qual a depuração extracorpórea estimada?",
+   "alts": [
+    "Cerca de 40 mL/min",
+    "Cerca de 24 mL/min",
+    "Cerca de 14 mL/min",
+    "Cerca de 144 mL/min",
+    "Cerca de 33 mL/min"
+   ],
+   "gab": 1,
+   "coment": "Na TRS contínua, a depuração do circuito é aproximadamente fração livre × efluente total: 0,6 × 2,4 L/h = 1,44 L/h. Convertendo, 1.440 mL em 60 minutos são 24 mL/min. Esse número funciona como uma depuração de creatinina artificial para consultar faixas de ajuste ou para calcular a dose diária (CL × concentração ou AUC alvo). Se a reposição for pré-filtro, a depuração real é 10% a 20% menor.",
+   "porAlt": [
+    "Incorreta. Corresponde ao efluente total (2,4 L/h ≈ 40 mL/min) sem considerar a fração livre.",
+    "Correta. 0,6 × 2,4 L/h = 1,44 L/h = 1.440 mL/60 min ≈ 24 mL/min.",
+    "Incorreta. Resultado de aplicar a fração ligada (0,4) em vez da livre.",
+    "Incorreta. Confunde 1,44 L/h com 144 mL/min, erro de conversão de unidade.",
+    "Incorreta. Seria a depuração com efluente de 2 L/h e fração livre de 1."
+   ],
+   "base": "Heintz, Matzke e Dager, Pharmacotherapy 2009"
+  },
+  {
+   "leitura": "trs-dialise-dose",
+   "nivel": "intermediario",
+   "enun": "Paciente em hemodiálise intermitente de alto fluxo às segundas, quartas e sextas recebe vancomicina para bacteremia por MRSA. Qual esquema de manutenção é o mais adequado?",
+   "alts": [
+    "Dose de 1 g imediatamente antes de cada sessão, para compensar a remoção durante toda a diálise",
+    "Dose diária fixa de 1 g às 8 horas, sem relação com os horários das sessões de diálise",
+    "Dose única de 2 g semanal, já que a meia-vida em anúria ultrapassa sete dias seguidos",
+    "Dose após cada sessão, de 500 mg a 1 g, ajustada pelo nível sérico colhido antes da diálise",
+    "Dose de 15 mg/kg a cada 12 horas, igual à de pacientes com função renal preservada"
+   ],
+   "gab": 3,
+   "coment": "Membranas de alto fluxo removem parcela relevante da vancomicina a cada sessão. O consenso ASHP/IDSA/PIDS/SIDP de 2020 orienta ataque de 20 a 25 mg/kg e manutenção de 500 mg a 1 g, ou 5 a 10 mg/kg, após cada sessão, com ajuste pelo nível pré-diálise. Administrar antes da diálise desperdiça a dose; doses diárias fixas acumulam entre as sessões.",
+   "porAlt": [
+    "Incorreta. Dar antes da sessão faz boa parte da dose ser removida pela diálise.",
+    "Incorreta. Doses diárias fixas ignoram a remoção intermitente e causam acúmulo nos dias sem diálise.",
+    "Incorreta. Membranas de alto fluxo removem vancomicina a cada sessão; a dose semanal gera subexposição.",
+    "Correta. O consenso de 2020 indica 500 mg a 1 g (ou 5 a 10 mg/kg) após cada sessão, guiado pelo nível pré-diálise.",
+    "Incorreta. É esquema de função renal normal e causaria acúmulo grave."
+   ],
+   "base": "Rybak et al., AJHP 2020"
+  },
+  {
+   "leitura": "trs-dialise-dose",
+   "nivel": "avancado",
+   "enun": "Paciente em CVVHDF com citrato, choque séptico com lactato de 8 mmol/L. Cálcio total 9,6 mg/dL, cálcio ionizado sistêmico 0,80 mmol/L, com três aumentos da infusão de cálcio em 12 horas. Qual a interpretação e a conduta?",
+   "alts": [
+    "Sobrecarga de citrato; aumentar o fluxo de sangue para diluir o citrato que chega ao paciente",
+    "Consumo de cálcio pelo filtro; manter o citrato e dobrar a infusão de cálcio até normalizar",
+    "Anticoagulação insuficiente; aumentar a dose de citrato para baixar o cálcio pós-filtro",
+    "Acúmulo de citrato; reduzir fluxo de sangue e citrato, subir o dialisato ou trocar o método",
+    "Erro laboratorial provável; repetir exames em 24 horas mantendo toda a prescrição atual"
+   ],
+   "gab": 3,
+   "coment": "O cálcio total de 9,6 mg/dL equivale a 2,4 mmol/L (dividir por 4). A relação total/ionizado é 2,4/0,8 = 3, acima do limiar de 2,5. Com choque e lactato alto, o citrato devolvido não é metabolizado, prende o cálcio e aparece no cálcio total, enquanto o ionizado cai. A conduta é reduzir o fluxo de sangue (e com ele o citrato), aumentar o dialisato para remover mais citrato ou trocar a anticoagulação.",
+   "porAlt": [
+    "Incorreta. Sobrecarga cursa com alcalose e hipernatremia; aumentar o fluxo de sangue aumenta o citrato entregue.",
+    "Incorreta. Só repor cálcio sem reduzir o citrato mantém o acúmulo e a acidose.",
+    "Incorreta. Mais citrato agravaria o acúmulo que o paciente não consegue metabolizar.",
+    "Correta. Relação total/ionizado de 2,4/0,8 = 3, com hiperlactatemia e necessidade crescente de cálcio: acúmulo.",
+    "Incorreta. O padrão é típico e progressivo; adiar a conduta expõe o paciente a hipocalcemia grave."
+   ],
+   "base": "KDIGO AKI 2012; Meersch-Dini et al., Crit Care 2026"
+  },
+  {
+   "leitura": "trs-dialise-dose",
+   "nivel": "avancado",
+   "enun": "Paciente anúrico em CVVHDF recebia cefepima 2 g a cada 8 horas. A TRS foi suspensa há 36 horas por coagulação repetida e plano de hemodiálise intermitente, sem mudança na prescrição. Surge rebaixamento com mioclonias. Qual a conduta farmacêutica?",
+   "alts": [
+    "Suspeitar de meningite por falha terapêutica e aumentar a cefepima para 2 g a cada 6 horas",
+    "Suspeitar de neurotoxicidade por cefepima, suspender a dose e sugerir EEG e diálise",
+    "Manter a cefepima, pois a hemodiálise planejada vai remover o excesso de fármaco acumulado",
+    "Trocar a cefepima por imipeném na mesma frequência, preservando a cobertura antipseudomonas",
+    "Associar fenitoína para as mioclonias e manter o esquema antimicrobiano sem alteração"
+   ],
+   "gab": 1,
+   "coment": "A cefepima em TRS contínua pede dose alta porque o circuito a remove. Quando a terapia para em paciente anúrico, a depuração cai a quase zero e o fármaco acumula em poucas doses, causando encefalopatia, mioclonias e estado de mal não convulsivo. A conduta é suspender, pedir EEG e considerar diálise, que remove a cefepima. Toda suspensão de TRS deve disparar revisão imediata da prescrição.",
+   "porAlt": [
+    "Incorreta. Aumentar a dose agravaria a toxicidade; o quadro é compatível com acúmulo.",
+    "Correta. Com a TRS parada em anúria, a cefepima acumula; EEG avalia estado de mal não convulsivo e a diálise remove o fármaco.",
+    "Incorreta. Manter o fármaco até a próxima sessão prolonga a exposição tóxica.",
+    "Incorreta. O imipeném também tem potencial convulsivante e exigiria ajuste à anúria.",
+    "Incorreta. Não trata a causa; o antiepiléptico sem retirar o fármaco não resolve a neurotoxicidade."
+   ],
+   "base": "Heintz, Matzke e Dager, Pharmacotherapy 2009; bula de cefepima (ANVISA, 2026)"
+  },
+  {
+   "leitura": "insuficiencia-hepatica-dose",
+   "nivel": "basico",
+   "enun": "Cirrótico com bilirrubina de 2,5 mg/dL, albumina de 3 g/dL, INR de 1,5, ascite leve controlada com diurético e sem encefalopatia. Qual a classificação de Child-Pugh?",
+   "alts": [
+    "Classe A, com 6 pontos",
+    "Classe C, com 10 pontos",
+    "Classe B, com 7 pontos",
+    "Classe C, com 11 pontos",
+    "Classe B, com 8 pontos"
+   ],
+   "gab": 4,
+   "coment": "Bilirrubina entre 2 e 3 mg/dL vale 2 pontos; albumina entre 2,8 e 3,5 g/dL, 2; INR abaixo de 1,7, 1; ascite leve ou controlada, 2; ausência de encefalopatia, 1. O total de 8 pontos coloca o paciente na classe B (7 a 9). É essa classe que a bula usa para indicar ajustes, como caspofungina 35 mg/dia ou voriconazol com metade da manutenção.",
+   "porAlt": [
+    "Incorreta. Subestima bilirrubina, albumina e ascite.",
+    "Incorreta. Superestima a pontuação; classe C começa em 10.",
+    "Incorreta. Deixa de somar um dos itens de 2 pontos.",
+    "Incorreta. Pontua o INR e a ascite como graves, o que não corresponde ao caso.",
+    "Correta. Bilirrubina 2, albumina 2, INR 1, ascite 2 e encefalopatia 1: total de 8, classe B."
+   ],
+   "base": "Child-Pugh conforme bulas e EASL 2022"
+  },
+  {
+   "leitura": "insuficiencia-hepatica-dose",
+   "nivel": "basico",
+   "enun": "Qual a dose diária máxima de paracetamol considerada prudente para um cirrótico estável, com etilismo ativo e desnutrição?",
+   "alts": [
+    "4 g por dia, a mesma dose máxima de adultos sem doença hepática",
+    "1 g por dia, porque qualquer dose maior é hepatotóxica na cirrose",
+    "2 g por dia, o limite inferior da faixa sugerida para cirróticos",
+    "6 g por dia, pois a glicuronidação aumenta muito no cirrótico etilista",
+    "Nenhuma, já que o paracetamol é contraindicado em toda hepatopatia"
+   ],
+   "gab": 2,
+   "coment": "O paracetamol em dose reduzida é o analgésico preferido no cirrótico, porque os AINE causam lesão renal, sangramento e resistência a diuréticos, e opioides precipitam encefalopatia. Revisões de hepatologia consideram segura a faixa de 2 a 3 g/dia em cirróticos estáveis; em etilismo ativo, desnutrição ou jejum, que depletam glutationa, a maioria dos serviços usa 2 g/dia.",
+   "porAlt": [
+    "Incorreta. Etilismo e desnutrição depletam glutationa; 4 g/dia aumenta o risco de lesão.",
+    "Incorreta. Doses de até 2 a 3 g/dia são consideradas seguras em cirróticos estáveis.",
+    "Correta. Em cirróticos a faixa segura é de 2 a 3 g/dia, e 2 g/dia é a escolha com etilismo e desnutrição.",
+    "Incorreta. Supera a dose máxima de qualquer adulto e não há aumento protetor da glicuronidação.",
+    "Incorreta. O paracetamol em dose reduzida é o analgésico de escolha na cirrose."
+   ],
+   "base": "Chandok e Watt, Mayo Clin Proc 2010"
+  },
+  {
+   "leitura": "insuficiencia-hepatica-dose",
+   "nivel": "intermediario",
+   "enun": "Cirrótico Child-Pugh B com candidemia vai iniciar caspofungina. Qual esquema está de acordo com a bula?",
+   "alts": [
+    "Ataque de 70 mg e manutenção de 35 mg por dia",
+    "Ataque de 35 mg e manutenção de 35 mg por dia",
+    "Ataque de 70 mg e manutenção de 70 mg por dia",
+    "Sem ataque e manutenção de 50 mg a cada 48 h",
+    "Ataque de 100 mg e manutenção de 50 mg por dia"
+   ],
+   "gab": 0,
+   "coment": "A caspofungina é metabolizada no fígado e, em Child-Pugh B, a bula mantém o ataque de 70 mg e reduz a manutenção para 35 mg/dia. Não há dados em Child-Pugh C. Micafungina e anidulafungina não exigem ajuste hepático e são alternativas quando a disfunção é grave. A regra geral de manter o ataque e reduzir a manutenção vale para quase todos os antimicrobianos.",
+   "porAlt": [
+    "Correta. Em Child-Pugh B, mantém-se o ataque e reduz-se a manutenção para 35 mg/dia.",
+    "Incorreta. A dose de ataque não é reduzida na insuficiência hepática.",
+    "Incorreta. Manutenção de 70 mg/dia é usada em pacientes acima de 80 kg sem hepatopatia moderada.",
+    "Incorreta. Omitir o ataque atrasa a concentração eficaz, e o intervalo de 48 h não é previsto.",
+    "Incorreta. Doses sem respaldo em bula."
+   ],
+   "base": "Bula de caspofungina (ANVISA, 2026)"
+  },
+  {
+   "leitura": "insuficiencia-hepatica-dose",
+   "nivel": "intermediario",
+   "enun": "Paciente com ALT de 400 U/L (limite superior 40) e fosfatase alcalina de 150 U/L (limite superior 120) após iniciar novo fármaco. Qual o padrão de lesão pela razão R?",
+   "alts": [
+    "Colestático, com R de cerca de 1,3",
+    "Hepatocelular, com R de cerca de 8",
+    "Padrão misto, com R de cerca de 3,5",
+    "Hepatocelular, com R de cerca de 2,7",
+    "Colestático, com R de cerca de 0,8"
+   ],
+   "gab": 1,
+   "coment": "A razão R = (ALT/LSN) ÷ (FA/LSN) usa valores normalizados pelo limite superior: 400/40 = 10 e 150/120 = 1,25, resultando em R = 8. Valores de 5 ou mais indicam lesão hepatocelular; 2 ou menos, colestática; entre 2 e 5, mista. A classificação orienta o diagnóstico diferencial e define qual tabela do RUCAM se aplica.",
+   "porAlt": [
+    "Incorreta. Seria o padrão com FA muito mais elevada que a ALT.",
+    "Correta. ALT/LSN = 10; FA/LSN = 1,25; R = 10/1,25 = 8, padrão hepatocelular (5 ou mais).",
+    "Incorreta. R entre 2 e 5 define o misto, o que não é o caso.",
+    "Incorreta. Resultado de dividir os valores absolutos (400/150) sem normalizar pelo LSN.",
+    "Incorreta. Inverte a razão, dividindo a FA pela ALT."
+   ],
+   "base": "EASL DILI 2019; Chalasani et al., ACG 2021"
+  },
+  {
+   "leitura": "insuficiencia-hepatica-dose",
+   "nivel": "avancado",
+   "enun": "Cirrótico Child-Pugh B com varizes e shunt portossistêmico recebia morfina 10 mg IV a cada 4 horas. A equipe quer converter para via oral mantendo a proporção usada em pacientes sem hepatopatia (oral cerca de 3 vezes a IV). Qual o principal risco dessa conversão?",
+   "alts": [
+    "Superdose, pois o shunt reduz a primeira passagem e eleva muito a biodisponibilidade oral",
+    "Subdose, pois o cirrótico metaboliza a morfina oral mais rápido por indução enzimática hepática",
+    "Subdose, pois a ascite retém a morfina oral no terceiro espaço e impede sua absorção",
+    "Nenhum, pois a morfina tem baixa extração hepática e a conversão habitual se mantém",
+    "Superdose, pois a morfina oral inibe o próprio metabolismo pelo CYP3A4 no cirrótico"
+   ],
+   "gab": 0,
+   "coment": "A morfina tem alta extração hepática, e a razão habitual de conversão oral:IV (cerca de 3:1) reflete a perda na primeira passagem. No cirrótico com shunt portossistêmico, parte do sangue portal desvia do fígado, a primeira passagem diminui e a biodisponibilidade oral pode dobrar ou triplicar. Aplicar a razão habitual resultaria em dose efetiva muito maior, com sedação, depressão respiratória e encefalopatia. Reduzir a dose oral e titular pelo efeito.",
+   "porAlt": [
+    "Correta. Fármaco de alta extração por via oral em cirrose com shunt tem biodisponibilidade muito maior.",
+    "Incorreta. A cirrose reduz, e não induz, a capacidade metabólica.",
+    "Incorreta. A ascite aumenta o Vd de fármacos hidrofílicos, mas não bloqueia a absorção oral dessa forma.",
+    "Incorreta. A morfina é de alta extração hepática, e por isso sua biodisponibilidade oral depende da primeira passagem.",
+    "Incorreta. A morfina é glicuronidada, não depende do CYP3A4, e não inibe o próprio metabolismo."
+   ],
+   "base": "EASL 2022; princípios de extração hepática (Rowland e Tozer)"
+  },
+  {
+   "leitura": "insuficiencia-hepatica-dose",
+   "nivel": "avancado",
+   "enun": "Cirrótico Child-Pugh C internado, INR de 2,2, plaquetas de 60.000/mm³, sem sangramento, vai a paracentese diagnóstica. A equipe propõe plasma fresco para corrigir o INR e suspender a enoxaparina profilática. Qual a recomendação mais adequada?",
+   "alts": [
+    "Transfundir plasma até INR abaixo de 1,5 e suspender a profilaxia até a alta da internação",
+    "Administrar vitamina K 10 mg IV e adiar a paracentese até o INR ficar abaixo de 1,7",
+    "Transfundir plaquetas até 100.000/mm³ e plasma, pois ambos predizem o sangramento",
+    "Não corrigir o INR antes do procedimento e reavaliar a profilaxia pelo risco individual",
+    "Suspender a profilaxia, pois o INR alargado já protege o cirrótico contra a trombose"
+   ],
+   "gab": 3,
+   "coment": "Na cirrose, caem fatores pró e anticoagulantes, e o fator VIII e o von Willebrand aumentam: a hemostasia se reequilibra, e o INR mede apenas o braço pró-coagulante. A diretriz EASL de 2022 desaconselha corrigir INR ou plaquetas antes de procedimentos de baixo risco, como a paracentese, e reconhece que cirróticos internados têm risco trombótico. A profilaxia deve ser decidida pelo risco individual de sangramento, e não pelo INR.",
+   "porAlt": [
+    "Incorreta. Plasma não tem benefício comprovado e causa sobrecarga volêmica e aumento da pressão portal.",
+    "Incorreta. A vitamina K não corrige a falha de síntese e não justifica adiar um procedimento de baixo risco.",
+    "Incorreta. Nem INR nem plaquetas nesses níveis predizem sangramento em paracentese.",
+    "Correta. A EASL 2022 desaconselha corrigir INR e plaquetas antes de procedimentos de baixo risco; INR alto não protege de trombose.",
+    "Incorreta. O cirrótico tem hemostasia reequilibrada e risco de tromboembolismo apesar do INR."
+   ],
+   "base": "EASL, J Hepatol 2022 (sangramento e trombose na cirrose)"
+  },
+  {
+   "leitura": "obesidade-populacoes-especiais",
+   "nivel": "basico",
+   "enun": "Qual o peso ideal, pela fórmula de Devine, de um homem com 180 cm de altura?",
+   "alts": [
+    "Cerca de 70 kg",
+    "Cerca de 80 kg",
+    "Cerca de 65 kg",
+    "Cerca de 85 kg",
+    "Cerca de 75 kg"
+   ],
+   "gab": 4,
+   "coment": "A fórmula de Devine para homens é 50 kg + 0,91 × (altura em cm − 152,4); para mulheres, a constante é 45,5 kg. Para 180 cm: 180 − 152,4 = 27,6; 27,6 × 0,91 = 25,1; 50 + 25,1 = 75,1 kg. O peso ideal é o escalar para BNM não despolarizantes, colistimetato e aciclovir, e a base do peso ajustado.",
+   "porAlt": [
+    "Incorreta. Seria o valor com a constante feminina (45,5 kg), usada só para mulheres.",
+    "Incorreta. Superestima o termo da altura.",
+    "Incorreta. Subestima o termo da altura.",
+    "Incorreta. Aproxima-se de um peso ajustado, não do ideal.",
+    "Correta. 50 + 0,91 × (180 − 152,4) = 50 + 25,1 ≈ 75 kg."
+   ],
+   "base": "Devine, 1974; Janmahasatian et al., Clin Pharmacokinet 2005"
+  },
+  {
+   "leitura": "obesidade-populacoes-especiais",
+   "nivel": "basico",
+   "enun": "Paciente com 150 kg (peso ideal de 62 kg) será intubado em sequência rápida com rocurônio. Qual escalar de peso deve ser usado para a dose?",
+   "alts": [
+    "Peso total, pois o rocurônio é lipofílico e acumula no tecido adiposo",
+    "Peso ajustado com fator 0,4, como se faz para os aminoglicosídeos",
+    "Peso ideal, pois o rocurônio se distribui pouco no tecido adiposo",
+    "Massa magra com fator de correção de 1,33, como na fenitoína de ataque",
+    "Peso total dividido por dois, regra aceita para todos os BNM no obeso"
+   ],
+   "gab": 2,
+   "coment": "Rocurônio, vecurônio e cisatracúrio são hidrofílicos e distribuem-se pouco na gordura. Dosados pelo peso total no obeso, prolongam o bloqueio sem ganho significativo de início de ação. Recomenda-se o peso ideal. A succinilcolina é exceção: usa-se 1 mg/kg de peso total, porque a atividade da pseudocolinesterase e o líquido extracelular aumentam com o peso.",
+   "porAlt": [
+    "Incorreta. O rocurônio é hidrofílico; dose por peso total prolonga o bloqueio.",
+    "Incorreta. O peso ajustado é o escalar dos aminoglicosídeos, não dos BNM.",
+    "Correta. BNM não despolarizantes são hidrofílicos e dosados pelo peso ideal no obeso.",
+    "Incorreta. O fator 1,33 pertence à fórmula de ataque da fenitoína.",
+    "Incorreta. Não é regra validada para nenhum BNM."
+   ],
+   "base": "Revisões de dose no obeso; Janmahasatian et al., 2005"
+  },
+  {
+   "leitura": "obesidade-populacoes-especiais",
+   "nivel": "intermediario",
+   "enun": "Mulher de 160 kg com bacteremia por MRSA e creatinina estável vai iniciar vancomicina. Qual a dose de ataque recomendada pelo consenso de 2020?",
+   "alts": [
+    "4 g, correspondente a 25 mg/kg do peso total, sem teto de dose",
+    "1,5 g, correspondente a 25 mg/kg do peso ideal da paciente obesa",
+    "2 g, correspondente a 20 mg/kg do peso ajustado, como na amicacina",
+    "1 g, dose fixa usada em todo adulto para evitar nefrotoxicidade",
+    "3 g, pois 20 a 25 mg/kg pelo peso total é limitado ao teto de 3 g"
+   ],
+   "gab": 4,
+   "coment": "O consenso ASHP/IDSA/PIDS/SIDP de 2020 recomenda, no obeso, ataque de 20 a 25 mg/kg pelo peso total, com teto de 3 g, e manutenção inicial pela função renal, em geral não superior a 4,5 g/dia, com ajuste por AUC. Para 160 kg, 20 a 25 mg/kg dariam 3,2 a 4 g, e o teto de 3 g se aplica.",
+   "porAlt": [
+    "Incorreta. O consenso limita o ataque a 3 g.",
+    "Incorreta. O peso ideal subestima o volume de distribuição da vancomicina no obeso.",
+    "Incorreta. O peso ajustado é usado para aminoglicosídeos, não para o ataque de vancomicina.",
+    "Incorreta. Dose fixa de 1 g gera subexposição em infecção grave.",
+    "Correta. O consenso indica 20 a 25 mg/kg pelo peso total, com máximo de 3 g no obeso."
+   ],
+   "base": "Rybak et al., AJHP 2020"
+  },
+  {
+   "leitura": "obesidade-populacoes-especiais",
+   "nivel": "intermediario",
+   "enun": "Gestante com pré-eclâmpsia grave em sulfato de magnésio 1 g/h apresenta reflexos patelares ausentes e frequência respiratória de 10 incursões por minuto. Qual a conduta imediata?",
+   "alts": [
+    "Reduzir a infusão para 0,5 g/h e reavaliar os reflexos após quatro horas",
+    "Aumentar a infusão para 2 g/h, pois a arreflexia sugere iminência de eclâmpsia",
+    "Suspender a infusão e dar gluconato de cálcio a 10%, 10 mL IV em 3 minutos",
+    "Dar cloreto de potássio IV, pois a arreflexia decorre de hipocalemia associada",
+    "Manter a infusão e dar naloxona IV para reverter a depressão respiratória"
+   ],
+   "gab": 2,
+   "coment": "O Manual de Gestação de Alto Risco (2022) condiciona a manutenção do sulfato de magnésio a diurese acima de 25 mL/h, reflexos presentes e frequência respiratória acima de 12. Arreflexia com depressão respiratória indica intoxicação (magnésio acima de 7 mEq/L). A conduta é suspender a infusão, dar gluconato de cálcio a 10%, 10 mL (1 g), IV lentamente em 3 minutos, suporte ventilatório e dosar o magnésio.",
+   "porAlt": [
+    "Incorreta. Com depressão respiratória, a infusão deve ser suspensa, não apenas reduzida.",
+    "Incorreta. A arreflexia é sinal de toxicidade, não de iminência de eclâmpsia.",
+    "Correta. Arreflexia e FR abaixo de 12 indicam intoxicação por magnésio; o antídoto é o gluconato de cálcio.",
+    "Incorreta. O quadro é de hipermagnesemia; potássio não é antídoto.",
+    "Incorreta. A naloxona reverte opioides, não o bloqueio neuromuscular pelo magnésio."
+   ],
+   "base": "Ministério da Saúde, Manual de Gestação de Alto Risco, 2022"
+  },
+  {
+   "leitura": "obesidade-populacoes-especiais",
+   "nivel": "avancado",
+   "enun": "Mulher de 82 anos, 48 kg, creatinina de 0,5 mg/dL, vai iniciar aciclovir por encefalite herpética. A TFGe desindexada é de cerca de 78 mL/min, e um colega propõe arredondar a creatinina para 1 mg/dL, obtendo cerca de 33 mL/min. Qual a melhor abordagem?",
+   "alts": [
+    "Arredondar a creatinina para 1 mg/dL, prática recomendada para qualquer idoso sarcopênico",
+    "Medir a função renal com cistatina C ou urina coletada e ajustar conforme o resultado",
+    "Usar a TFGe indexada, sem desindexar, porque idosos têm superfície corporal pequena",
+    "Calcular Cockcroft-Gault com peso ideal, que elimina o efeito da massa muscular baixa",
+    "Dar a dose de função renal normal sem monitorização, já que a creatinina está baixa"
+   ],
+   "gab": 1,
+   "coment": "No idoso sarcopênico, a creatinina baixa reflete pouca massa muscular, e as equações superestimam a TFG. Arredondar para 1 mg/dL cria outro erro, de sinal contrário. O KDIGO 2024 sugere a equação combinada creatinina-cistatina quando a decisão exige precisão, e a urina coletada é alternativa. Com aciclovir, o erro para cima causa neurotoxicidade e nefrotoxicidade; para baixo, falha no tratamento de encefalite.",
+   "porAlt": [
+    "Incorreta. O arredondamento não tem base e troca superestimativa por subestimativa arbitrária.",
+    "Correta. Em massa muscular atípica, medir é melhor que qualquer equação; o KDIGO 2024 sugere cistatina C.",
+    "Incorreta. A TFGe indexada superestima ainda mais a depuração de uma paciente pequena.",
+    "Incorreta. Cockcroft-Gault continua dependendo da creatinina, que reflete a sarcopenia.",
+    "Incorreta. A creatinina baixa pode superestimar a função; o aciclovir exige vigilância renal e neurológica."
+   ],
+   "base": "KDIGO 2024; AGS Beers 2023"
+  },
+  {
+   "leitura": "obesidade-populacoes-especiais",
+   "nivel": "avancado",
+   "enun": "Paciente com queimadura de 45% da superfície corporal, no 10º dia, precisa de reintubação. Recebe piperacilina-tazobactam 4,5 g a cada 6 horas em bolus e tem creatinina de 0,4 mg/dL. Qual conjunto de condutas é mais adequado?",
+   "alts": [
+    "Evitar succinilcolina, usar rocurônio em dose alta e prolongar a infusão do betalactâmico",
+    "Usar succinilcolina 1 mg/kg e reduzir a piperacilina pela creatinina muito baixa do paciente",
+    "Usar succinilcolina em dose dobrada e manter o betalactâmico em bolus a cada seis horas",
+    "Evitar rocurônio, pela sensibilidade aumentada, e espaçar o betalactâmico a cada oito horas",
+    "Usar rocurônio em dose reduzida à metade e trocar o betalactâmico por ceftriaxona diária"
+   ],
+   "gab": 0,
+   "coment": "Após 24 a 48 horas da queimadura, a proliferação de receptores extrajuncionais faz a succinilcolina liberar potássio em excesso, com risco de hipercalemia fatal. Os não despolarizantes, ao contrário, sofrem resistência e exigem doses 2 a 5 vezes maiores. Na fase hipermetabólica, a depuração renal aumentada reduz a exposição a betalactâmicos, e infusão estendida ou contínua com TDM é a estratégia.",
+   "porAlt": [
+    "Correta. Após 48 h a succinilcolina causa hipercalemia grave; há resistência aos não despolarizantes; a fase hipermetabólica causa ARC.",
+    "Incorreta. Succinilcolina é contraindicada e a creatinina baixa indica depuração aumentada, não reduzida.",
+    "Incorreta. Dose dobrada de succinilcolina agrava o risco de hipercalemia fatal.",
+    "Incorreta. O queimado é resistente, não sensível, aos não despolarizantes; espaçar reduz a exposição.",
+    "Incorreta. A resistência exige doses maiores, e a ceftriaxona não cobre Pseudomonas."
+   ],
+   "base": "Ravichandran e Pruskowski, Eur Burn J 2023"
+  },
+  {
+   "leitura": "ecmo-hipotermia-plasmaferese",
+   "nivel": "basico",
+   "enun": "No estudo ex vivo de Shekar e colaboradores (2012), qual fármaco teve a menor recuperação no circuito de ECMO após 24 horas?",
+   "alts": [
+    "Morfina, com cerca de 3% recuperado",
+    "Vancomicina, com cerca de 9% recuperado",
+    "Midazolam, com cerca de 90% recuperado",
+    "Fentanil, com cerca de 3% recuperado",
+    "Meropeném, com cerca de 3% recuperado"
+   ],
+   "gab": 3,
+   "coment": "O estudo ex vivo de 2012, com circuitos preenchidos com sangue humano e sem paciente, isolou o efeito do circuito: recuperação de cerca de 3% do fentanil e 13% do midazolam após 24 horas, com morfina e vancomicina recuperadas quase integralmente e o meropeném reduzido por instabilidade. O achado explica a necessidade de doses maiores de sedoanalgesia lipofílica em ECMO, sobretudo com circuitos novos.",
+   "porAlt": [
+    "Incorreta. A morfina, hidrofílica, foi recuperada quase integralmente.",
+    "Incorreta. A vancomicina foi estável e recuperada quase integralmente no circuito.",
+    "Incorreta. O midazolam teve recuperação de cerca de 13%, com metade perdida na primeira hora.",
+    "Correta. O fentanil, muito lipofílico, teve recuperação de cerca de 3%.",
+    "Incorreta. O meropeném caiu por instabilidade química, mas não a esse nível."
+   ],
+   "base": "Shekar et al., Crit Care 2012"
+  },
+  {
+   "leitura": "ecmo-hipotermia-plasmaferese",
+   "nivel": "basico",
+   "enun": "Paciente com síndrome de Guillain-Barré em programa de cinco sessões de plasmaférese tem prescrição de imunoglobulina IV no mesmo período. Qual a orientação correta?",
+   "alts": [
+    "Administrar a imunoglobulina antes de cada sessão, para potencializar o efeito",
+    "Administrar a imunoglobulina durante a sessão, pela linha de retorno do circuito",
+    "Administrar a imunoglobulina em qualquer horário, pois ela quase não é removida",
+    "Administrar a imunoglobulina após a última sessão, pois a plasmaférese a remove",
+    "Substituir a albumina de reposição pela imunoglobulina na mesma sessão de troca"
+   ],
+   "gab": 3,
+   "coment": "A plasmaférese remove o que está no plasma, e a imunoglobulina, com volume de distribuição de cerca de 0,05 a 0,1 L/kg, é quase toda intravascular. Intercalada com as sessões, seria descartada. Na síndrome de Guillain-Barré, as duas terapias têm eficácia semelhante e não se somam; se ambas forem usadas em sequência, a imunoglobulina vem após o término da série.",
+   "porAlt": [
+    "Incorreta. Dada antes, a imunoglobulina seria removida na sessão seguinte.",
+    "Incorreta. Infundida durante a sessão, parte retorna e é novamente removida.",
+    "Incorreta. A imunoglobulina é um dos fármacos mais removidos pela plasmaférese.",
+    "Correta. A IgG tem Vd pequeno e fica no plasma; intercalada com sessões, é descartada.",
+    "Incorreta. Não é prática recomendada e desperdiçaria a imunoglobulina."
+   ],
+   "base": "Ibrahim e Balogun, Semin Dial 2012; ASFA 2026"
+  },
+  {
+   "leitura": "ecmo-hipotermia-plasmaferese",
+   "nivel": "intermediario",
+   "enun": "Paciente de 70 kg em ECMO venovenosa com heparina não fracionada a 30 UI/kg/h tem anti-Xa de 0,15 UI/mL (alvo 0,3 a 0,7) em três dosagens seguidas. Qual o próximo passo mais adequado?",
+   "alts": [
+    "Dosar antitrombina e revisar a coleta antes de continuar escalando a heparina",
+    "Dobrar a infusão para 60 UI/kg/h e repetir o anti-Xa somente após 24 horas",
+    "Suspender a heparina, pois o anti-Xa baixo indica trombocitopenia por heparina",
+    "Trocar o controle para TCA, que dispensa ajuste por antitrombina ou inflamação",
+    "Associar enoxaparina em dose plena para somar o efeito anti-Xa ao da heparina"
+   ],
+   "gab": 0,
+   "coment": "A diretriz ELSO de 2021 sugere anti-Xa de 0,3 a 0,7 UI/mL com heparina não fracionada. Quando doses altas não atingem o alvo, as causas mais comuns são antitrombina baixa (consumo, hemodiluição), proteínas de fase aguda que ligam heparina e erros de coleta. Dosar antitrombina e revisar a amostra orienta a decisão; trocar para inibidor direto da trombina é opção em resistência verdadeira ou TIH.",
+   "porAlt": [
+    "Correta. Resistência à heparina sugere consumo de antitrombina ou proteínas de fase aguda; dosar antes de escalar.",
+    "Incorreta. Dobrar sem investigar expõe a sangramento quando a antitrombina for corrigida.",
+    "Incorreta. Anti-Xa baixo não diagnostica TIH, que se reconhece por plaquetopenia e testes específicos.",
+    "Incorreta. O TCA sofre ainda mais interferências e não resolve a resistência.",
+    "Incorreta. Duas heparinas simultâneas aumentam o risco de sangramento sem tratar a causa."
+   ],
+   "base": "McMichael et al., ASAIO J 2022 (ELSO 2021)"
+  },
+  {
+   "leitura": "ecmo-hipotermia-plasmaferese",
+   "nivel": "intermediario",
+   "enun": "Paciente em controle de temperatura a 33 °C após parada cardíaca recebe midazolam e fenitoína em infusão. O que se espera dessas duas medicações durante a hipotermia?",
+   "alts": [
+    "Depuração aumentada de ambos, exigindo doses maiores durante o resfriamento",
+    "Nenhuma alteração, pois a hipotermia só afeta fármacos de eliminação renal",
+    "Depuração reduzida de ambos, com risco de acúmulo e de sedação prolongada",
+    "Depuração reduzida só do midazolam, pois a fenitoína não depende do CYP450",
+    "Depuração aumentada da fenitoína, pela indução enzimática causada pelo frio"
+   ],
+   "gab": 2,
+   "coment": "A revisão de Tortorici e colaboradores (2007) estimou redução de 7% a 22% na depuração de fármacos metabolizados pelo CYP450 por grau abaixo de 37 °C. Midazolam (CYP3A4) e fenitoína (CYP2C9 e CYP2C19) acumulam, e a sedação residual confunde a avaliação neurológica. Preferir propofol ou dexmedetomidina e levetiracetam, e dosar fenitoína livre se ela for mantida.",
+   "porAlt": [
+    "Incorreta. O efeito da hipotermia sobre o metabolismo é de redução, não de aumento.",
+    "Incorreta. O efeito principal é sobre o metabolismo hepático pelo CYP450.",
+    "Correta. A hipotermia reduz a atividade do CYP450 em cerca de 7% a 22% por grau abaixo de 37 °C.",
+    "Incorreta. A fenitoína é metabolizada pelo CYP2C9 e CYP2C19 e também sofre redução.",
+    "Incorreta. O frio não induz enzimas; reduz sua atividade."
+   ],
+   "base": "Tortorici et al., Crit Care Med 2007"
+  },
+  {
+   "leitura": "ecmo-hipotermia-plasmaferese",
+   "nivel": "avancado",
+   "enun": "Sobre o controle de temperatura no adulto comatoso após parada cardíaca, qual afirmação está de acordo com as diretrizes vigentes?",
+   "alts": [
+    "A ERC-ESICM recomenda hipotermia a 33 °C por 24 h para todos, e a AHA 2025 proíbe qualquer alvo acima de 36 °C",
+    "A AHA 2025 recomenda resfriamento pré-hospitalar com soro gelado em grande volume logo após o retorno",
+    "O TTM2 mostrou menor mortalidade com 33 °C, e por isso ambas as diretrizes exigem hipotermia profunda",
+    "A ERC-ESICM contraindica paracetamol e recomenda só dispositivos, e a AHA 2025 fixa 34 °C por 48 horas",
+    "A ERC-ESICM recomenda prevenir febre acima de 37,7 °C por 72 h; a AHA 2025 admite 32 a 37,5 °C por 36 h"
+   ],
+   "gab": 4,
+   "coment": "Após o TTM2, que não mostrou benefício da hipotermia a 33 °C sobre a normotermia com prevenção de febre, a diretriz ERC-ESICM passou a recomendar prevenção ativa de febre (acima de 37,7 °C) por pelo menos 72 horas nos comatosos, com antitérmicos, exposição e, se necessário, dispositivos com alvo de 37,5 °C. A AHA 2025 recomenda controle entre 32 e 37,5 °C por pelo menos 36 horas. Ambas desaconselham fluido gelado pré-hospitalar em grande volume.",
+   "porAlt": [
+    "Incorreta. Nenhuma diretriz atual exige 33 °C para todos, e a AHA admite até 37,5 °C.",
+    "Incorreta. As diretrizes desaconselham o resfriamento pré-hospitalar com grande volume de fluido gelado.",
+    "Incorreta. O TTM2 não mostrou diferença de mortalidade e teve mais arritmias na hipotermia.",
+    "Incorreta. Antitérmicos fazem parte da prevenção de febre, e a AHA não fixa 34 °C por 48 horas.",
+    "Correta. Resume as recomendações ERC-ESICM (2021/2022, foco mantido em 2025) e AHA 2025."
+   ],
+   "base": "Nolan et al., Resuscitation 2022; Dankiewicz et al., NEJM 2021; AHA 2025"
+  },
+  {
+   "leitura": "ecmo-hipotermia-plasmaferese",
+   "nivel": "avancado",
+   "enun": "Homem de 70 kg, hematócrito de 0,45, fará plasmaférese com troca de 1,5 volume plasmático. Qual o volume de reposição aproximado e a fração removida de uma substância confinada ao plasma?",
+   "alts": [
+    "Cerca de 2,5 L, removendo cerca de 63%",
+    "Cerca de 3,75 L, removendo cerca de 78%",
+    "Cerca de 5,25 L, removendo cerca de 95%",
+    "Cerca de 3,75 L, removendo cerca de 100%",
+    "Cerca de 4,55 L, removendo cerca de 78%"
+   ],
+   "gab": 1,
+   "coment": "O volume plasmático estimado é 0,065 × peso × (1 − hematócrito) = 0,065 × 70 × 0,55 ≈ 2,5 L. A troca de 1,5 volume exige cerca de 3,75 L de reposição. A remoção segue cinética de primeira ordem: fração removida = 1 − e elevado a menos o número de volumes trocados, cerca de 63% para 1 volume e 78% para 1,5. Trocas maiores rendem pouco a mais e consomem mais albumina.",
+   "porAlt": [
+    "Incorreta. Corresponde a 1 volume plasmático e sua remoção de 63%.",
+    "Correta. Volume plasmático = 0,065 × 70 × 0,55 = 2,5 L; 1,5 × 2,5 = 3,75 L; remoção 1 − e^−1,5 ≈ 78%.",
+    "Incorreta. Usa o volume sanguíneo total em vez do plasmático.",
+    "Incorreta. O volume está certo, mas a remoção é exponencial e nunca chega a 100%.",
+    "Incorreta. Esquece de descontar o hematócrito no cálculo do volume plasmático."
+   ],
+   "base": "ASFA 2026 (Zantek et al., J Clin Apher 2026)"
+  }
+ ]
+}

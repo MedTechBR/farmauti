@@ -1,0 +1,1318 @@
+{
+ "leituras": [
+  {
+   "slug": "farmacia-clinica-uti",
+   "titulo": "O farmacêutico clínico na terapia intensiva",
+   "dek": "Atribuições legais, evidência de impacto e rotina de trabalho do farmacêutico clínico na UTI, com base nas Resoluções CFF 585/2013, 586/2013, 555/2011 e 675/2019, na RDC 7/2010 e no posicionamento SCCM/ACCP/ASHP de 2020, além das regras da residência multiprofissional no Brasil.",
+   "palavras": 4714,
+   "fontes": [
+    "CFF, Resoluções 585/2013, 586/2013, 555/2011, 675/2019, 730/2022 e 724/2022",
+    "Anvisa, RDC 7/2010 (alterada pelas RDC 26/2012 e 137/2017) e RDC 36/2013",
+    "Lat et al., Position paper on critical care pharmacy services: 2020 update, Crit Care Med 2020",
+    "Leape et al., JAMA 1999",
+    "Lee et al., Crit Care Med 2019",
+    "Soares et al., J Clin Oncol 2016",
+    "Reis et al., Einstein 2013",
+    "Vincent, Crit Care Med 2005; Vincent e Hatton, Crit Care Med 2009",
+    "Pun et al., Crit Care Med 2019 (ABCDEF)",
+    "CNRMS, Resoluções 2/2012 e 5/2014"
+   ]
+  },
+  {
+   "slug": "acompanhamento-farmacoterapeutico",
+   "titulo": "Acompanhamento farmacoterapêutico e problemas relacionados a medicamentos",
+   "dek": "Conceito, métodos (Dáder, PWDT, SOAP, TOM), classificação de problemas relacionados a medicamentos pelo Terceiro Consenso de Granada (2007), por Cipolle, Strand e Morley e pela PCNE V9.1 (2020), e o ciclo diário de acompanhamento do paciente crítico, com exemplos preenchidos.",
+   "palavras": 3610,
+   "fontes": [
+    "Comité de Consenso, Tercer Consenso de Granada, Ars Pharm 2007",
+    "Sabater, Silva e Faus, Método Dáder, 3ª ed., 2007",
+    "Cipolle, Strand e Morley, Pharmaceutical Care Practice, 3ª ed., 2012",
+    "PCNE Classification for DRP V9.1, 2020",
+    "Hepler e Strand, Am J Hosp Pharm 1990",
+    "Weed, N Engl J Med 1968",
+    "Grainger-Rousseau et al., J Am Pharm Assoc 1997",
+    "Gwynn et al., Am J Health Syst Pharm 2019 (MRC-ICU)",
+    "CFF, Resolução 675/2019"
+   ]
+  },
+  {
+   "slug": "conciliacao-medicamentosa",
+   "titulo": "Conciliação medicamentosa",
+   "dek": "Conceito, etapas e classificação de discrepâncias da conciliação medicamentosa nas transições da UTI (admissão, transferência e alta), conduta com os medicamentos de uso crônico no paciente crítico e indicadores, com base nas Resoluções CFF 585/2013 e 675/2019, no projeto High 5s da OMS, no boletim ISMP Brasil de 2019 e em estudos de discrepância como Cornish (2005) e Bell (2011).",
+   "palavras": 3304,
+   "fontes": [
+    "CFF, Resoluções 585/2013 e 675/2019",
+    "ISMP Brasil, Boletim 2019;8(2), transição do cuidado",
+    "OMS, High 5s Project, protocolo de conciliação",
+    "Cornish et al., Arch Intern Med 2005",
+    "Bell et al., JAMA 2011",
+    "Mueller et al., Arch Intern Med 2012",
+    "Tomichek et al., Crit Care 2016",
+    "Lat et al., Crit Care Med 2020"
+   ]
+  },
+  {
+   "slug": "farmacovigilancia-ram",
+   "titulo": "Farmacovigilância e reações adversas",
+   "dek": "Definições de farmacovigilância, classificação de reações adversas (Rawlins-Thompson estendida por Edwards e Aronson, 2000), causalidade (Naranjo, OMS-UMC), gravidade, notificação no VigiMed e no Notivisa, busca ativa pelo IHI Global Trigger Tool (2009), reações graves típicas da UTI e desprescrição (Scott, 2015).",
+   "palavras": 3374,
+   "fontes": [
+    "Edwards e Aronson, Lancet 2000",
+    "Naranjo et al., Clin Pharmacol Ther 1981",
+    "OMS-UMC, sistema de causalidade",
+    "Griffin e Resar, IHI Global Trigger Tool, 2ª ed., 2009",
+    "Anvisa, VigiMed (página institucional, consulta em 2026) e RDC 36/2013",
+    "Kardaun et al., Br J Dermatol 2007; Sassolas et al., Clin Pharmacol Ther 2010; Bastuji-Garin et al., J Invest Dermatol 2000",
+    "Lo et al., J Thromb Haemost 2006",
+    "Luther et al., Crit Care Med 2018",
+    "Scott et al., JAMA Intern Med 2015"
+   ]
+  },
+  {
+   "slug": "evolucao-farmaceutica",
+   "titulo": "Evolução farmacêutica e comunicação com a equipe",
+   "dek": "Registro farmacêutico em prontuário na UTI (estrutura SOAP, linguagem, o que deve e o que não deve constar), exemplos completos de evolução e de intervenções escritas, comunicação verbal pela técnica SBAR, argumentação com evidência, conduta diante da recusa e aspectos éticos e legais, com base nas Resoluções CFF 555/2011, 585/2013, 675/2019 e 724/2022.",
+   "palavras": 3183,
+   "fontes": [
+    "CFF, Resoluções 555/2011, 585/2013, 586/2013, 675/2019 e 724/2022",
+    "Haig et al., Jt Comm J Qual Patient Saf 2006 (SBAR)",
+    "ISMP Brasil, Boletim 2015;4(2), abreviaturas",
+    "Kalil et al., IDSA/ATS HAP/VAP, Clin Infect Dis 2016",
+    "Cook et al., N Engl J Med 2024 (REVISE)",
+    "Weed, N Engl J Med 1968"
+   ]
+  },
+  {
+   "slug": "indicadores-evidencia",
+   "titulo": "Indicadores clínicos e leitura crítica de evidências",
+   "dek": "Indicadores de farmácia clínica na UTI (aceitação de intervenções, PRM por paciente-dia, consumo de antimicrobianos em DOT e DDD, economia) e medicina baseada em evidências para o farmacêutico: desenhos de estudo, medidas de efeito, intervalo de confiança, valor de p, vieses, GRADE (2008), CONSORT 2025, leitura rápida de um ensaio de UTI, fontes de informação e journal club.",
+   "palavras": 3370,
+   "fontes": [
+    "Donabedian, JAMA 1988",
+    "OMS, índice ATC/DDD 2026",
+    "Sackett et al., BMJ 1996",
+    "Guyatt et al., BMJ 2008 (GRADE)",
+    "Sterne et al., BMJ 2019 (RoB 2)",
+    "Hopewell et al., BMJ 2025 (CONSORT 2025)",
+    "Walsh et al., J Clin Epidemiol 2014",
+    "Cook et al., N Engl J Med 2024 (REVISE)"
+   ]
+  }
+ ],
+ "cartoes": [
+  {
+   "leitura": "farmacia-clinica-uti",
+   "frente": "Qual resolução do CFF regulamenta as atribuições do farmacêutico clínico em UTI e em que ano?",
+   "verso": "Resolução CFF 675, de 31 de outubro de 2019. Exige dedicação exclusiva ao paciente crítico durante a carga horária e organiza as atribuições em cuidado, ensino e pesquisa, e gestão."
+  },
+  {
+   "leitura": "farmacia-clinica-uti",
+   "frente": "Qual a relação farmacêutico clínico por pacientes proposta pela Resolução CFF 675/2019?",
+   "verso": "No mínimo 1 farmacêutico clínico para até 15 pacientes críticos, com variação conforme estrutura física, tecnologia e complexidade dos pacientes."
+  },
+  {
+   "leitura": "farmacia-clinica-uti",
+   "frente": "O que o artigo 6º, parágrafo 3º, da Resolução CFF 586/2013 veda ao farmacêutico?",
+   "verso": "Modificar a prescrição emitida por outro prescritor, salvo quando previsto em acordo de colaboração; nesse caso a modificação deve ser justificada e comunicada ao prescritor."
+  },
+  {
+   "leitura": "farmacia-clinica-uti",
+   "frente": "Quais artigos da RDC 7/2010 tratam da assistência farmacêutica na UTI?",
+   "verso": "Art. 18: assistência farmacêutica garantida à beira do leito (meios próprios ou terceirizados). Art. 23: integrada às demais atividades assistenciais."
+  },
+  {
+   "leitura": "farmacia-clinica-uti",
+   "frente": "Que ordem de ação a Resolução CFF 555/2011 estabelece entre discutir e registrar?",
+   "verso": "Sempre que possível, discutir o caso com os profissionais envolvidos e só depois documentar no prontuário, registrando o que foi acatado ou não e a justificativa."
+  },
+  {
+   "leitura": "farmacia-clinica-uti",
+   "frente": "Qual foi o resultado principal de Leape e colaboradores (JAMA, 1999)?",
+   "verso": "Farmacêutico no round de UTI clínica reduziu em 66% os eventos adversos preveníveis por erro de prescrição (10,4 para 3,5 por 1.000 pacientes-dia); 99% das 366 recomendações aceitas."
+  },
+  {
+   "leitura": "farmacia-clinica-uti",
+   "frente": "Em quantos níveis o posicionamento SCCM/ACCP/ASHP de 2020 classifica as atividades e quais são?",
+   "verso": "Dois: fundamentais (essenciais à prática) e desejáveis (agregam valor). O documento de 2000 tinha três: fundamental, desejável e ótimo. Cada recomendação é atribuída a UTIs de nível I, II ou III."
+  },
+  {
+   "leitura": "farmacia-clinica-uti",
+   "frente": "Quantas recomendações tem o posicionamento de 2020 e em quantos domínios?",
+   "verso": "82 recomendações (44 revisadas e 38 novas) em cinco domínios: cuidado ao paciente, melhoria da qualidade, pesquisa, formação e ensino, e desenvolvimento profissional."
+  },
+  {
+   "leitura": "farmacia-clinica-uti",
+   "frente": "O que significa cada letra acrescentada em FAST HUGS BID em relação ao FAST HUG?",
+   "verso": "S: teste de respiração espontânea; B: hábito intestinal; I: cateteres (indwelling), retirar os desnecessários; D: descalonamento de antimicrobianos."
+  },
+  {
+   "leitura": "farmacia-clinica-uti",
+   "frente": "Quais letras do pacote ABCDEF envolvem diretamente o farmacêutico?",
+   "verso": "A (dor), B (despertar diário e teste de respiração espontânea), C (escolha de analgesia e sedação) e D (delirium). E é mobilização precoce e F, engajamento da família."
+  },
+  {
+   "leitura": "farmacia-clinica-uti",
+   "frente": "Qual a carga horária semanal e total da residência multiprofissional?",
+   "verso": "60 horas semanais em dedicação exclusiva; mínimo de 5.760 horas em dois anos, 80% práticas e teórico-práticas e 20% teóricas."
+  },
+  {
+   "leitura": "farmacia-clinica-uti",
+   "frente": "Qual a titulação mínima de preceptor e de tutor na residência multiprofissional?",
+   "verso": "Preceptor: especialista, da mesma profissão do residente, presente no cenário de prática. Tutor: mestre, com três anos de experiência (Resolução CNRMS 2/2012)."
+  },
+  {
+   "leitura": "farmacia-clinica-uti",
+   "frente": "Cite critérios que colocam um paciente na fila de revisão completa no dia.",
+   "verso": "Admissão recente, piora de função renal ou diálise, antimicrobiano novo ou cultura liberada, fármaco com nível sérico, anticoagulação plena ou plaquetopenia, múltiplas infusões ou NP, instabilidade, transição prevista."
+  },
+  {
+   "leitura": "farmacia-clinica-uti",
+   "frente": "O que mostrou Soares e colaboradores (J Clin Oncol, 2016) sobre farmacêutico em UTI?",
+   "verso": "Em 9.946 pacientes oncológicos de 70 UTIs brasileiras, a presença de farmacêutico clínico associou-se a menor mortalidade hospitalar (OR 0,67; IC 95% 0,49 a 0,90)."
+  },
+  {
+   "leitura": "acompanhamento-farmacoterapeutico",
+   "frente": "Como o Terceiro Consenso de Granada (2007) define PRM?",
+   "verso": "Situações no processo de uso dos medicamentos que causam ou podem causar o aparecimento de um resultado negativo associado à medicação. São causas."
+  },
+  {
+   "leitura": "acompanhamento-farmacoterapeutico",
+   "frente": "Como o Terceiro Consenso de Granada define RNM?",
+   "verso": "Resultados na saúde do paciente não adequados ao objetivo da farmacoterapia e associados ao uso ou à falta de uso de medicamentos. São efeitos."
+  },
+  {
+   "leitura": "acompanhamento-farmacoterapeutico",
+   "frente": "Quais as três categorias de RNM e os seis tipos?",
+   "verso": "Necessidade (problema não tratado; efeito de medicamento desnecessário), efetividade (inefetividade não quantitativa e quantitativa), segurança (insegurança não quantitativa e quantitativa)."
+  },
+  {
+   "leitura": "acompanhamento-farmacoterapeutico",
+   "frente": "Sedação profunda por acúmulo de midazolam na lesão renal é que tipo de RNM?",
+   "verso": "Insegurança quantitativa: o dano decorre de exposição excessiva ao fármaco."
+  },
+  {
+   "leitura": "acompanhamento-farmacoterapeutico",
+   "frente": "Quais são as sete categorias de problemas de Cipolle, Strand e Morley?",
+   "verso": "Terapia desnecessária; necessidade de terapia adicional; medicamento inefetivo; dose baixa; reação adversa; dose alta; não adesão."
+  },
+  {
+   "leitura": "acompanhamento-farmacoterapeutico",
+   "frente": "Em que ordem o Pharmacotherapy Workup avalia a farmacoterapia?",
+   "verso": "Indicação, efetividade, segurança e adesão."
+  },
+  {
+   "leitura": "acompanhamento-farmacoterapeutico",
+   "frente": "Qual a versão vigente da classificação PCNE e seus eixos?",
+   "verso": "V9.1 (2020). Eixos: problema (P1 efetividade, P2 segurança, P3 outros), causa (C1 a C9), intervenção (I0 a I4), aceitação (A1 a A3) e situação (O0 a O3)."
+  },
+  {
+   "leitura": "acompanhamento-farmacoterapeutico",
+   "frente": "Na PCNE V9.1, o que indicam os códigos O1, O2 e O3?",
+   "verso": "Situação final do problema: O1 resolvido, O2 parcialmente resolvido, O3 não resolvido (O0, desconhecida)."
+  },
+  {
+   "leitura": "acompanhamento-farmacoterapeutico",
+   "frente": "Qual o documento central do Método Dáder?",
+   "verso": "O estado de situação: relaciona cada problema de saúde ao medicamento que o trata e à avaliação de necessidade, efetividade e segurança."
+  },
+  {
+   "leitura": "acompanhamento-farmacoterapeutico",
+   "frente": "O que é o MRC-ICU?",
+   "verso": "Escore de complexidade do regime medicamentoso no paciente crítico (39 itens), validado por Gwynn e colaboradores em 2019; correlacionou-se com permanência, mortalidade e gravidade."
+  },
+  {
+   "leitura": "acompanhamento-farmacoterapeutico",
+   "frente": "Qual a diferença entre revisão da prescrição e acompanhamento farmacoterapêutico?",
+   "verso": "A revisão avalia cada item num momento. O acompanhamento é contínuo, sistemático e documentado: define objetivos, intervém, monitora e reavalia no tempo."
+  },
+  {
+   "leitura": "acompanhamento-farmacoterapeutico",
+   "frente": "Como escrever um objetivo terapêutico de sedação mensurável?",
+   "verso": "Parâmetro, prazo e estratégia: por exemplo, RASS entre 0 e -1 em 24 horas, com analgesia primeiro e redução do benzodiazepínico, reavaliado a cada turno."
+  },
+  {
+   "leitura": "acompanhamento-farmacoterapeutico",
+   "frente": "Uma interação detectada pelo software é PRM ou RNM?",
+   "verso": "PRM (causa). Só vira RNM se houver resultado negativo no paciente, ou suspeita de RNM se o risco for concreto e iminente."
+  },
+  {
+   "leitura": "acompanhamento-farmacoterapeutico",
+   "frente": "Calcule: 102 PRM em 340 pacientes-dia. Quantos PRM por 100 pacientes-dia?",
+   "verso": "102 ÷ 340 × 100 = 30 PRM por 100 pacientes-dia."
+  },
+  {
+   "leitura": "conciliacao-medicamentosa",
+   "frente": "O que é a melhor história medicamentosa possível?",
+   "verso": "Compilação sistemática dos medicamentos em uso obtida de pelo menos duas fontes, sendo uma a entrevista com o paciente ou cuidador (definição do ISMP Canadá)."
+  },
+  {
+   "leitura": "conciliacao-medicamentosa",
+   "frente": "Quais são os três tipos de discrepância na conciliação?",
+   "verso": "Intencional documentada, intencional não documentada e não intencional (esta é erro de medicação)."
+  },
+  {
+   "leitura": "conciliacao-medicamentosa",
+   "frente": "Qual a discrepância não intencional mais frequente na admissão?",
+   "verso": "Omissão de medicamento de uso regular (Cornish e colaboradores, 2005)."
+  },
+  {
+   "leitura": "conciliacao-medicamentosa",
+   "frente": "O que Cornish e colaboradores (2005) encontraram na admissão hospitalar?",
+   "verso": "53,6% dos pacientes com ao menos uma discrepância não intencional; 38,6% das discrepâncias com potencial de dano moderado a grave."
+  },
+  {
+   "leitura": "conciliacao-medicamentosa",
+   "frente": "O que Bell e colaboradores (JAMA, 2011) mostraram sobre UTI?",
+   "verso": "Passagem pela UTI aumentou a interrupção não intencional de crônicos; para antiplaquetários e anticoagulantes, OR ajustada de 2,31, com 22,8% sem renovar em 90 dias."
+  },
+  {
+   "leitura": "conciliacao-medicamentosa",
+   "frente": "Qual a pergunta de entrevista mais importante para anticoagulantes, antiepilépticos e insulina?",
+   "verso": "Quando foi a última dose (data e hora)."
+  },
+  {
+   "leitura": "conciliacao-medicamentosa",
+   "frente": "Que medicamentos iniciados na UTI devem ser revistos na transferência?",
+   "verso": "Supressor de acidez profilático, antipsicótico para delirium, sedativos e opioides enterais de desmame, antimicrobiano sem data de término, insulina desenhada para infusão, reposições."
+  },
+  {
+   "leitura": "conciliacao-medicamentosa",
+   "frente": "Que proporção de sobreviventes tratados com antipsicótico na UTI saiu do hospital com ele (Tomichek, 2016)?",
+   "verso": "24% dos sobreviventes que receberam antipsicótico na UTI tiveram prescrição de antipsicótico na alta hospitalar."
+  },
+  {
+   "leitura": "conciliacao-medicamentosa",
+   "frente": "Qual o risco da retirada abrupta de levodopa?",
+   "verso": "Síndrome de parkinsonismo e hiperpirexia, semelhante à síndrome neuroléptica maligna. Manter por sonda nos horários habituais."
+  },
+  {
+   "leitura": "conciliacao-medicamentosa",
+   "frente": "Qual a conduta com metformina e inibidores de SGLT2 na admissão na UTI?",
+   "verso": "Suspender: metformina por risco de acidose lática na hipoperfusão e lesão renal; SGLT2 por cetoacidose euglicêmica. Controlar glicemia com insulina."
+  },
+  {
+   "leitura": "conciliacao-medicamentosa",
+   "frente": "Qual o risco de interromper baclofeno, especialmente intratecal?",
+   "verso": "Síndrome de abstinência grave: febre, rigidez, convulsões e disautonomia. Manter e checar a bomba intratecal."
+  },
+  {
+   "leitura": "conciliacao-medicamentosa",
+   "frente": "Por que não se tritura metoprolol ou nifedipino de liberação prolongada para sonda?",
+   "verso": "A trituração destrói o sistema de liberação e libera a dose total de uma vez (risco de hipotensão e bradicardia). Converter para liberação imediata fracionada ou outra opção."
+  },
+  {
+   "leitura": "conciliacao-medicamentosa",
+   "frente": "Como calcular a cobertura da conciliação na admissão?",
+   "verso": "Admissões conciliadas em até 24 horas ÷ admissões elegíveis × 100."
+  },
+  {
+   "leitura": "conciliacao-medicamentosa",
+   "frente": "Qual a conduta usual com antiepiléptico de uso crônico sem via enteral?",
+   "verso": "Manter o tratamento, convertendo para formulação intravenosa disponível; levetiracetam e lacosamida têm conversão oral para IV de 1:1."
+  },
+  {
+   "leitura": "farmacovigilancia-ram",
+   "frente": "Qual a diferença entre RAM e erro de medicação?",
+   "verso": "RAM: resposta nociva e não intencional com uso em dose habitual, em geral não prevenível. Erro: falha evitável no processo, com ou sem dano."
+  },
+  {
+   "leitura": "farmacovigilancia-ram",
+   "frente": "Quais são os seis tipos de reação na classificação de Edwards e Aronson (2000)?",
+   "verso": "A (aumentada, dose), B (bizarra, imprevisível), C (crônica), D (tardia), E (fim do uso, retirada), F (falha terapêutica)."
+  },
+  {
+   "leitura": "farmacovigilancia-ram",
+   "frente": "Abstinência após infusão prolongada de opioide e benzodiazepínico é reação de que tipo?",
+   "verso": "Tipo E (end of use): surge na retirada. Manejo: reintroduzir e retirar gradualmente."
+  },
+  {
+   "leitura": "farmacovigilancia-ram",
+   "frente": "Quais as faixas do algoritmo de Naranjo?",
+   "verso": "9 ou mais: definida; 5 a 8: provável; 1 a 4: possível; 0 ou menos: duvidosa."
+  },
+  {
+   "leitura": "farmacovigilancia-ram",
+   "frente": "No Naranjo, quanto vale a resposta 'não' à pergunta sobre causas alternativas?",
+   "verso": "+2 (ausência de causa alternativa reforça a relação). A resposta 'sim' vale -1."
+  },
+  {
+   "leitura": "farmacovigilancia-ram",
+   "frente": "Quais as categorias do sistema OMS-UMC de causalidade?",
+   "verso": "Certa, provável, possível, improvável, condicional (não classificada) e não avaliável."
+  },
+  {
+   "leitura": "farmacovigilancia-ram",
+   "frente": "Quais critérios tornam um evento adverso grave?",
+   "verso": "Óbito, ameaça à vida, hospitalização ou prolongamento, incapacidade persistente, anomalia congênita ou outro evento clinicamente importante."
+  },
+  {
+   "leitura": "farmacovigilancia-ram",
+   "frente": "O que se notifica no VigiMed?",
+   "verso": "Suspeitas de eventos adversos a medicamentos e vacinas: reações, inefetividade, erros de medicação, uso abusivo, uso fora da bula e intoxicação. Queixas técnicas e outros produtos vão ao Notivisa."
+  },
+  {
+   "leitura": "farmacovigilancia-ram",
+   "frente": "Cite rastreadores do módulo de medicamentos do IHI Global Trigger Tool.",
+   "verso": "C. difficile positivo, TTPa > 100 s, INR > 6, glicemia < 50 mg/dL, creatinina 2x o basal, vitamina K, difenidramina, flumazenil, naloxona, antiemético, sedação excessiva, suspensão abrupta."
+  },
+  {
+   "leitura": "farmacovigilancia-ram",
+   "frente": "Quais categorias do NCC MERP indicam dano?",
+   "verso": "E (dano temporário com intervenção), F (dano temporário com internação ou prolongamento), G (dano permanente), H (intervenção para manter a vida), I (óbito)."
+  },
+  {
+   "leitura": "farmacovigilancia-ram",
+   "frente": "Qual a latência típica e as pistas de DRESS?",
+   "verso": "2 a 8 semanas após o início do fármaco; febre, exantema, edema facial, linfadenopatia, eosinofilia ou linfócitos atípicos e acometimento de órgão, sobretudo fígado. Escore RegiSCAR."
+  },
+  {
+   "leitura": "farmacovigilancia-ram",
+   "frente": "Como se classificam SJS, sobreposição e NET pela superfície descolada?",
+   "verso": "Menos de 10%: Stevens-Johnson; 10 a 30%: sobreposição; mais de 30%: necrólise epidérmica tóxica. ALDEN avalia causalidade e SCORTEN, prognóstico."
+  },
+  {
+   "leitura": "farmacovigilancia-ram",
+   "frente": "Quais elementos compõem o escore 4Ts para HIT?",
+   "verso": "Magnitude da queda das plaquetas, tempo em relação à heparina (típico 5 a 10 dias), trombose ou sequelas e outras causas de plaquetopenia."
+  },
+  {
+   "leitura": "farmacovigilancia-ram",
+   "frente": "Quais os cinco passos de desprescrição de Scott (2015)?",
+   "verso": "Levantar medicamentos e indicações; estimar risco global de dano; avaliar benefício e dano de cada um; priorizar os de pior relação e menor risco de retirada; implementar e monitorar."
+  },
+  {
+   "leitura": "evolucao-farmaceutica",
+   "frente": "Quais as três funções da evolução farmacêutica?",
+   "verso": "Comunicar à equipe, garantir continuidade do cuidado nas transições e documentar a responsabilidade (o prontuário define a corresponsabilidade de cada profissional)."
+  },
+  {
+   "leitura": "evolucao-farmaceutica",
+   "frente": "O que vai no campo A de uma evolução SOAP farmacêutica?",
+   "verso": "Os problemas relacionados a medicamentos identificados, com raciocínio curto: qual o problema, por que e qual o risco. Não repetir o diagnóstico médico."
+  },
+  {
+   "leitura": "evolucao-farmaceutica",
+   "frente": "O que todo registro de intervenção precisa conter?",
+   "verso": "O que estava errado (com o dado), o que foi proposto (fármaco, dose, via, duração), quem aceitou ou a justificativa da recusa, e o que monitorar e quando."
+  },
+  {
+   "leitura": "evolucao-farmaceutica",
+   "frente": "Quais regras do ISMP Brasil valem no próprio registro farmacêutico?",
+   "verso": "Não usar 'U' para unidades nem 'µg' (usar mcg); não usar zero à direita (5 mg); sempre zero à esquerda (0,5 mg)."
+  },
+  {
+   "leitura": "evolucao-farmaceutica",
+   "frente": "O que significa SBAR?",
+   "verso": "Situação, breve histórico, avaliação e recomendação: técnica de comunicação padronizada entre profissionais (Haig e colaboradores, 2006)."
+  },
+  {
+   "leitura": "evolucao-farmaceutica",
+   "frente": "O que fazer ao receber por telefone a decisão do prescritor?",
+   "verso": "Repetir em voz alta para confirmação (alça fechada) e registrar data, hora e nome de quem decidiu."
+  },
+  {
+   "leitura": "evolucao-farmaceutica",
+   "frente": "Qual o primeiro passo diante de uma recusa de recomendação?",
+   "verso": "Perguntar o motivo e ouvir: o prescritor pode ter informação que o farmacêutico não tinha. Se houver dado novo, reavaliar a própria recomendação."
+  },
+  {
+   "leitura": "evolucao-farmaceutica",
+   "frente": "Quando escalar uma recusa e para quem?",
+   "verso": "Quando houver risco de dano grave: ao preceptor e, conforme o fluxo, ao médico coordenador da UTI; em último caso, notificar o Núcleo de Segurança do Paciente."
+  },
+  {
+   "leitura": "evolucao-farmaceutica",
+   "frente": "Como corrigir um erro numa evolução já assinada?",
+   "verso": "Por nova anotação datada (errata) com a informação correta, sem apagar o registro original."
+  },
+  {
+   "leitura": "evolucao-farmaceutica",
+   "frente": "Por quanto tempo, no mínimo, devem ser guardadas as informações da assistência farmacêutica?",
+   "verso": "Cinco anos (Resolução CFF 555/2011, artigo 8º)."
+  },
+  {
+   "leitura": "evolucao-farmaceutica",
+   "frente": "Qual o risco de associar linezolida a sertralina?",
+   "verso": "Síndrome serotoninérgica: a linezolida inibe de forma não seletiva a monoaminoxidase. Alerta da FDA em 2011. Considerar alternativa ou vigiar hipertermia, clônus e agitação."
+  },
+  {
+   "leitura": "evolucao-farmaceutica",
+   "frente": "Qual a duração recomendada para a maioria das PAV pela IDSA/ATS 2016?",
+   "verso": "7 dias de terapia antimicrobiana."
+  },
+  {
+   "leitura": "evolucao-farmaceutica",
+   "frente": "Qual toxicidade vigiar ao usar cefepima com função renal instável?",
+   "verso": "Neurotoxicidade: encefalopatia, mioclonias e estado de mal não convulsivo, sobretudo sem ajuste de dose à função renal."
+  },
+  {
+   "leitura": "evolucao-farmaceutica",
+   "frente": "O residente assina a evolução com o número de quem?",
+   "verso": "Com o próprio número de inscrição no CRF; é farmacêutico e responde pelos seus registros. A supervisão do preceptor não transfere a autoria."
+  },
+  {
+   "leitura": "indicadores-evidencia",
+   "frente": "Quais são as três dimensões de Donabedian para avaliar qualidade?",
+   "verso": "Estrutura (recursos), processo (o que é feito) e resultado (o que acontece com o paciente)."
+  },
+  {
+   "leitura": "indicadores-evidencia",
+   "frente": "Como se calcula a taxa de aceitação de intervenções?",
+   "verso": "Intervenções aceitas ÷ intervenções propostas com desfecho conhecido × 100."
+  },
+  {
+   "leitura": "indicadores-evidencia",
+   "frente": "Qual a diferença entre DOT e DDD?",
+   "verso": "DOT conta os dias em que cada antimicrobiano foi administrado; DDD converte gramas consumidos pela dose diária definida da OMS. Ajuste de dose muda a DDD, não o DOT."
+  },
+  {
+   "leitura": "indicadores-evidencia",
+   "frente": "Qual a DDD da OMS para meropeném parenteral?",
+   "verso": "3 g (índice ATC/DDD, atualizado em 2026). Para vancomicina parenteral, 2 g."
+  },
+  {
+   "leitura": "indicadores-evidencia",
+   "frente": "Calcule: 180 g de meropeném em 300 pacientes-dia. DDD por 1.000 pacientes-dia?",
+   "verso": "180 ÷ 3 = 60 DDD; 60 ÷ 300 × 1.000 = 200 DDD por 1.000 pacientes-dia."
+  },
+  {
+   "leitura": "indicadores-evidencia",
+   "frente": "Como calcular o NNT?",
+   "verso": "NNT = 1 ÷ redução absoluta do risco (risco no controle menos risco na intervenção), arredondando para cima."
+  },
+  {
+   "leitura": "indicadores-evidencia",
+   "frente": "Qual o NNT do pantoprazol no REVISE para evitar um sangramento digestivo importante?",
+   "verso": "Risco 3,5% com placebo e 1,0% com pantoprazol: RAR de cerca de 2,5 pontos percentuais e NNT de cerca de 40."
+  },
+  {
+   "leitura": "indicadores-evidencia",
+   "frente": "O que significa um IC 95% de HR de 0,85 a 1,04?",
+   "verso": "O intervalo inclui 1: não há diferença demonstrada; os dados são compatíveis com redução de 15% a aumento de 4% no risco."
+  },
+  {
+   "leitura": "indicadores-evidencia",
+   "frente": "O que o valor de p não informa?",
+   "verso": "Não é a probabilidade de a hipótese nula ser verdadeira, não mede o tamanho do efeito e não diz se o efeito é clinicamente relevante."
+  },
+  {
+   "leitura": "indicadores-evidencia",
+   "frente": "O que é o índice de fragilidade?",
+   "verso": "Número de pacientes que precisariam mudar de sem evento para com evento no grupo intervenção para o resultado perder significância estatística (Walsh, 2014)."
+  },
+  {
+   "leitura": "indicadores-evidencia",
+   "frente": "Que fatores rebaixam a certeza da evidência no GRADE?",
+   "verso": "Risco de viés, inconsistência, evidência indireta, imprecisão e viés de publicação."
+  },
+  {
+   "leitura": "indicadores-evidencia",
+   "frente": "Que fatores podem elevar a certeza de evidência observacional no GRADE?",
+   "verso": "Efeito grande, gradiente dose-resposta e confusão plausível que atuaria contra o efeito observado."
+  },
+  {
+   "leitura": "indicadores-evidencia",
+   "frente": "Dê exemplos de fonte terciária, secundária e primária.",
+   "verso": "Terciária: Micromedex, Lexicomp, UpToDate, livros, bulas. Secundária: PubMed, Embase, Cochrane, LILACS. Primária: ensaio clínico publicado."
+  },
+  {
+   "leitura": "indicadores-evidencia",
+   "frente": "Quais os cinco domínios do RoB 2?",
+   "verso": "Processo de randomização, desvios da intervenção pretendida, dados faltantes do desfecho, aferição do desfecho e seleção do resultado relatado."
+  }
+ ],
+ "questoes": [
+  {
+   "leitura": "farmacia-clinica-uti",
+   "nivel": "basico",
+   "enun": "Segundo a Resolução CFF 675/2019, qual é a proporção mínima de farmacêuticos clínicos que a instituição deve propor para a UTI?",
+   "alts": [
+    "Um farmacêutico clínico para até 10 pacientes críticos, ajustável à estrutura e à complexidade",
+    "Um farmacêutico clínico para até 20 pacientes críticos, ajustável à estrutura e à complexidade",
+    "Um farmacêutico clínico para cada UTI, qualquer que seja o número de leitos ocupados na unidade",
+    "Um farmacêutico clínico para até 30 leitos hospitalares, somando enfermarias e unidades críticas",
+    "Um farmacêutico clínico para até 15 pacientes críticos, ajustável à estrutura e à complexidade"
+   ],
+   "gab": 4,
+   "coment": "O inciso VIII do artigo 4º da Resolução CFF 675/2019 atribui ao farmacêutico intensivista propor a inserção de, no mínimo, um farmacêutico clínico para até 15 pacientes críticos, com variação conforme a estrutura física e tecnológica e a complexidade dos pacientes. A mesma resolução exige dedicação exclusiva ao paciente crítico durante a carga horária, o que exclui modelos em que o farmacêutico divide o turno entre UTI e enfermarias.",
+   "porAlt": [
+    "Errada: 10 pacientes não é o número da resolução.",
+    "Errada: 20 pacientes excede a proporção proposta.",
+    "Errada: a proporção é por pacientes, não por unidade.",
+    "Errada: mistura leitos de enfermaria, contrariando a dedicação exclusiva.",
+    "Correta: é a proporção do inciso VIII do artigo 4º."
+   ],
+   "base": "Conselho Federal de Farmácia, Resolução 675/2019"
+  },
+  {
+   "leitura": "farmacia-clinica-uti",
+   "nivel": "basico",
+   "enun": "Qual exigência da RDC 7/2010 da Anvisa se refere diretamente à assistência farmacêutica na unidade de terapia intensiva?",
+   "alts": [
+    "Manter farmacêutico com título de especialista presente 24 horas em toda UTI de adultos",
+    "Restringir o farmacêutico à dispensação centralizada, sem atividade à beira do leito",
+    "Obrigar o farmacêutico a prescrever antimicrobianos segundo o protocolo da CCIH local",
+    "Manter um farmacêutico exclusivo para cada leito de UTI com ventilação mecânica invasiva",
+    "Garantir a assistência farmacêutica à beira do leito, por meios próprios ou terceirizados"
+   ],
+   "gab": 4,
+   "coment": "O artigo 18 da RDC 7/2010 lista os serviços que devem ser garantidos à beira do leito, por meios próprios ou terceirizados, e inclui a assistência farmacêutica; o artigo 23 determina que ela esteja integrada às demais atividades assistenciais. A norma não exige título de especialista, presença 24 horas nem proporção por leito; a proporção de 1 para 15 é proposta do CFF (Resolução 675/2019), não da Anvisa. A prescrição de antimicrobianos pelo farmacêutico depende da Resolução CFF 586/2013 e de protocolo institucional.",
+   "porAlt": [
+    "Errada: a RDC não exige título nem presença 24 horas.",
+    "Errada: a norma pede justamente atuação à beira do leito.",
+    "Errada: prescrição farmacêutica não é tema da RDC 7/2010.",
+    "Errada: não há proporção por leito na RDC; a proporção de 1:15 é do CFF.",
+    "Correta: é o texto do artigo 18, complementado pelo artigo 23."
+   ],
+   "base": "Anvisa, RDC 7/2010 (arts. 18 e 23)"
+  },
+  {
+   "leitura": "farmacia-clinica-uti",
+   "nivel": "intermediario",
+   "enun": "Residente revisa a prescrição de homem de 70 anos com TFG não indexada de 40 mL/min e encontra meropeném 1 g IV de 8/8 h, dose de função renal normal. Não há protocolo institucional de ajuste automático. Qual a conduta adequada?",
+   "alts": [
+    "Alterar a dose no sistema e comunicar o prescritor após a liberação da nova prescrição",
+    "Orientar a enfermagem a administrar metade da dose até o médico reavaliar o paciente",
+    "Discutir com o prescritor, propor a dose ajustada e registrar a intervenção e o aceite",
+    "Registrar a recomendação no prontuário antes de qualquer contato com o prescritor",
+    "Suspender o meropeném e aguardar a decisão do médico no round da manhã seguinte"
+   ],
+   "gab": 2,
+   "coment": "A Resolução CFF 586/2013 veda ao farmacêutico modificar a prescrição de outro prescritor sem acordo de colaboração ou protocolo aprovado, e a Resolução CFF 555/2011 estabelece que, sempre que possível, o caso seja discutido com os profissionais envolvidos antes do registro, anotando o que foi acatado ou não. A conduta é recomendar a dose ajustada (1 g de 12/12 h para TFG entre 26 e 50 mL/min, pela bula), obter a concordância e documentar. Orientar a enfermagem a mudar a dose ou suspender o antimicrobiano por conta própria expõe o paciente e o residente.",
+   "porAlt": [
+    "Errada: alterar a prescrição sem acordo de colaboração é vedado.",
+    "Errada: equivale a modificar a prescrição por via indireta.",
+    "Correta: segue as Resoluções CFF 586/2013 e 555/2011.",
+    "Errada: a norma pede discutir antes de registrar.",
+    "Errada: suspender antimicrobiano em choque séptico causa dano."
+   ],
+   "base": "CFF, Resoluções 586/2013 e 555/2011"
+  },
+  {
+   "leitura": "farmacia-clinica-uti",
+   "nivel": "intermediario",
+   "enun": "Qual foi o principal achado do estudo de Leape e colaboradores (JAMA, 1999) sobre a presença do farmacêutico no round de uma UTI clínica?",
+   "alts": [
+    "Redução de 66% da mortalidade hospitalar, com 99% de aceitação das recomendações feitas",
+    "Redução de 66% dos eventos adversos preveníveis por erro de prescrição, com 99% de aceitação",
+    "Redução de 30% dos eventos preveníveis, com aceitação de cerca de metade das recomendações",
+    "Redução de 3 dias no tempo de internação na UTI, sem efeito sobre os eventos adversos",
+    "Redução de 66% dos eventos adversos não preveníveis, sem mudança nos erros de prescrição"
+   ],
+   "gab": 1,
+   "coment": "Leape e colaboradores compararam uma UTI clínica antes e depois da entrada de um farmacêutico sênior no round, com uma unidade coronariana como controle. A taxa de eventos adversos preveníveis causados por erro de prescrição caiu 66%, de 10,4 para 3,5 por 1.000 pacientes-dia, e ficou estável no controle; 362 de 366 recomendações (99%) foram aceitas. O estudo não avaliou mortalidade como desfecho principal. A associação com menor mortalidade e permanência veio depois, na metanálise de Lee e colaboradores (2019).",
+   "porAlt": [
+    "Errada: mortalidade não foi o desfecho do estudo.",
+    "Correta: 10,4 para 3,5 por 1.000 pacientes-dia; 99% aceitas.",
+    "Errada: a redução foi de 66% e a aceitação, de 99%.",
+    "Errada: o desfecho foi evento adverso prevenível, não permanência.",
+    "Errada: o efeito foi sobre eventos preveníveis por erro de prescrição."
+   ],
+   "base": "Leape et al., JAMA 1999"
+  },
+  {
+   "leitura": "farmacia-clinica-uti",
+   "nivel": "avancado",
+   "enun": "No posicionamento SCCM/ACCP/ASHP de 2020, como é classificada, numa UTI de nível III (que estabiliza o paciente sem oferecer cuidado intensivo completo), a recomendação de que o farmacêutico participe regularmente do round para gerenciar a farmacoterapia de todos os pacientes?",
+   "alts": [
+    "Fundamental, como em todos os níveis de UTI descritos pelo documento",
+    "Ótima, categoria reservada às UTIs com missão acadêmica e pesquisa",
+    "Fundamental no nível III e desejável nos níveis I e II, por ser simples",
+    "Desejável, embora seja fundamental nas UTIs de nível I e de nível II",
+    "Não aplicável, pois o documento exclui as UTIs de nível III da análise"
+   ],
+   "gab": 3,
+   "coment": "O documento de 2020 simplificou os três níveis de 2000 (fundamental, desejável e ótimo) para dois, fundamental e desejável, e atribuiu cada recomendação a um nível de UTI. A participação regular no round para gerenciar a farmacoterapia de todos os pacientes é fundamental nos níveis I e II e desejável no nível III. Outras atividades, como fornecer informação sobre medicamentos e fazer monitorização farmacocinética, são fundamentais nos três níveis. A categoria ótima não existe mais na versão de 2020.",
+   "porAlt": [
+    "Errada: no nível III ela é desejável.",
+    "Errada: a categoria ótima foi extinta em 2020.",
+    "Errada: inverte a classificação dos níveis.",
+    "Correta: fundamental em I e II, desejável em III.",
+    "Errada: o nível III é contemplado pelo documento."
+   ],
+   "base": "Lat et al., Crit Care Med 2020 (SCCM/ACCP/ASHP)"
+  },
+  {
+   "leitura": "farmacia-clinica-uti",
+   "nivel": "avancado",
+   "enun": "Início do turno numa UTI de 12 leitos, com um farmacêutico. Qual destes pacientes deve receber a revisão completa em primeiro lugar?",
+   "alts": [
+    "D12 de UTI, estável, dieta plena, sem antimicrobiano e aguardando vaga na enfermaria hoje",
+    "D5 de UTI, extubado ontem, sem vasopressor, recebendo só as profilaxias habituais do setor",
+    "Admitido há 2 horas em choque séptico, vancomicina iniciada, creatinina subindo, epiléptico",
+    "D8 de UTI, traqueostomizado, estável, em desmame ventilatório e sem mudanças nas últimas 24 h",
+    "D3 de pós-operatório eletivo, sem intercorrências, analgesia por via oral e dieta liberada"
+   ],
+   "gab": 2,
+   "coment": "A triagem por risco prioriza admissão recente (prescrição montada às pressas e conciliação pendente), instabilidade, função renal em mudança, antimicrobiano recém-iniciado com nível sérico a programar e uso crônico de antiepiléptico, que exige checagem imediata de interações (por exemplo, carbapenêmico com valproato) e da última dose. Os demais pacientes precisam de revisão básica; o que aguarda vaga na enfermaria entra na fila da conciliação de saída, mas depois do paciente instável.",
+   "porAlt": [
+    "Errada: estável; revisão básica e conciliação de saída depois.",
+    "Errada: estável, sem vasopressor; revisão básica.",
+    "Correta: reúne vários critérios de alto risco.",
+    "Errada: sem mudanças; revisão básica.",
+    "Errada: baixo risco; revisão básica."
+   ],
+   "base": "Lat et al., Crit Care Med 2020; CFF, Resolução 675/2019"
+  },
+  {
+   "leitura": "acompanhamento-farmacoterapeutico",
+   "nivel": "basico",
+   "enun": "Segundo o Terceiro Consenso de Granada (2007), como se definem os problemas relacionados com medicamentos (PRM)?",
+   "alts": [
+    "Resultados na saúde não adequados ao objetivo terapêutico, associados ao uso de medicamentos",
+    "Situações no processo de uso que causam ou podem causar um resultado negativo da medicação",
+    "Reações nocivas e não intencionais que ocorrem com as doses usuais empregadas em humanos",
+    "Falhas evitáveis no processo de medicação que atingem o paciente e causam dano grave a ele",
+    "Discrepâncias não intencionais entre a lista de uso prévio e a prescrição feita no hospital"
+   ],
+   "gab": 1,
+   "coment": "O Terceiro Consenso de Granada separou causas e efeitos. PRM são situações no processo de uso (dose inadequada, interação, duplicidade, administração errada, entre outras) que causam ou podem causar um resultado negativo. RNM são os resultados na saúde não adequados ao objetivo da farmacoterapia, associados ao uso ou à falta de uso dos medicamentos. A definição de reação nociva com dose usual é de RAM; falha evitável é erro de medicação; discrepância entre listas é o objeto da conciliação.",
+   "porAlt": [
+    "Errada: essa é a definição de RNM.",
+    "Correta: definição de PRM do consenso.",
+    "Errada: essa é a definição de RAM.",
+    "Errada: descreve erro de medicação com dano.",
+    "Errada: descreve discrepância da conciliação."
+   ],
+   "base": "Comité de Consenso, Tercer Consenso de Granada, Ars Pharm 2007"
+  },
+  {
+   "leitura": "acompanhamento-farmacoterapeutico",
+   "nivel": "basico",
+   "enun": "No Pharmacotherapy Workup de Cipolle, Strand e Morley, em que ordem a farmacoterapia é avaliada?",
+   "alts": [
+    "Segurança, efetividade, indicação e adesão",
+    "Adesão, indicação, segurança e efetividade",
+    "Indicação, efetividade, segurança e adesão",
+    "Efetividade, segurança, adesão e indicação",
+    "Indicação, segurança, adesão e efetividade"
+   ],
+   "gab": 2,
+   "coment": "O raciocínio segue sempre a mesma ordem lógica: primeiro se pergunta se cada medicamento tem indicação e se há indicação sem tratamento; depois se ele é efetivo (fármaco adequado, dose suficiente); em seguida se é seguro (reação adversa, dose alta); e por último a adesão. Não faz sentido otimizar a dose de um medicamento sem indicação. As sete categorias de problemas (terapia desnecessária, necessidade de terapia adicional, inefetivo, dose baixa, reação adversa, dose alta, não adesão) seguem essa ordem.",
+   "porAlt": [
+    "Errada: começa pela segurança.",
+    "Errada: começa pela adesão.",
+    "Correta: ordem do PWDT.",
+    "Errada: deixa a indicação por último.",
+    "Errada: inverte efetividade e segurança com adesão."
+   ],
+   "base": "Cipolle, Strand e Morley, Pharmaceutical Care Practice, 3ª ed., 2012"
+  },
+  {
+   "leitura": "acompanhamento-farmacoterapeutico",
+   "nivel": "intermediario",
+   "enun": "Homem de 28 anos, politrauma, clearance de creatinina medido na urina de 24 h de 180 mL/min, em vancomicina 1 g IV de 12/12 h para pneumonia por MRSA. A AUC estimada está bem abaixo do alvo e a febre persiste. Pelo Terceiro Consenso de Granada, trata-se de que RNM?",
+   "alts": [
+    "Efetividade, inefetividade não quantitativa: fármaco sem atividade",
+    "Segurança, insegurança quantitativa: exposição acima do alvo usual",
+    "Efetividade, inefetividade quantitativa: exposição abaixo do alvo",
+    "Necessidade, problema de saúde não tratado: falta antimicrobiano",
+    "Segurança, insegurança não quantitativa: reação idiossincrásica"
+   ],
+   "gab": 2,
+   "coment": "O fármaco é adequado ao agente (vancomicina é ativa contra MRSA), mas a exposição é insuficiente por depuração renal aumentada: isso é inefetividade quantitativa, cuja solução é ajustar a dose (guiada por AUC, conforme o consenso ASHP/IDSA/PIDS/SIDP de 2020). Inefetividade não quantitativa seria um fármaco sem atividade contra o agente, independentemente da dose. Não há problema de segurança, e o problema de saúde está sendo tratado, apenas com dose insuficiente.",
+   "porAlt": [
+    "Errada: a vancomicina é ativa contra MRSA.",
+    "Errada: a exposição está abaixo, não acima.",
+    "Correta: fármaco certo, exposição insuficiente.",
+    "Errada: o problema está tratado, com dose insuficiente.",
+    "Errada: não há reação adversa descrita."
+   ],
+   "base": "Tercer Consenso de Granada, Ars Pharm 2007; ASHP/IDSA/PIDS/SIDP 2020"
+  },
+  {
+   "leitura": "acompanhamento-farmacoterapeutico",
+   "nivel": "intermediario",
+   "enun": "Paciente com TFG não indexada de 40 mL/min recebe meropeném 1 g de 8/8 h, dose de função renal normal. O farmacêutico propõe o ajuste ao prescritor. Como o problema e a causa são codificados na classificação PCNE V9.1?",
+   "alts": [
+    "P2 (segurança) com causa C3 (seleção de dose)",
+    "P1 (efetividade) com causa C3 (seleção de dose)",
+    "P2 (segurança) com causa C1 (seleção de fármaco)",
+    "P3 (outros) com causa C4 (duração do tratamento)",
+    "P1 (efetividade) com causa C6 (processo de uso)"
+   ],
+   "gab": 0,
+   "coment": "Na PCNE V9.1, o problema potencial de dose excessiva para a função renal pertence ao domínio P2 (segurança do tratamento, evento adverso possível) e a causa ao domínio C3 (seleção de dose). A intervenção proposta ao prescritor é codificada em I1; se aceita, A1; e se a dose for corrigida, a situação é O1. C1 seria escolha inadequada do fármaco, C4 duração e C6 processo de uso (administração, por exemplo).",
+   "porAlt": [
+    "Correta: segurança por dose excessiva.",
+    "Errada: o risco é de toxicidade, não de ineficácia.",
+    "Errada: o fármaco é adequado; o problema é a dose.",
+    "Errada: não se trata de duração.",
+    "Errada: não é problema de administração."
+   ],
+   "base": "Pharmaceutical Care Network Europe, Classification for DRP V9.1, 2020"
+  },
+  {
+   "leitura": "acompanhamento-farmacoterapeutico",
+   "nivel": "avancado",
+   "enun": "Homem de 70 anos com PAV em choque séptico, TFG não indexada de 40 mL/min, epiléptico em uso de valproato. Prescrição: meropeném 1 g 8/8 h, midazolam 10 mg/h com RASS -4 (alvo 0 a -1), valproato 500 mg 12/12 h, enoxaparina 40 mg 1x/dia, pantoprazol 40 mg 1x/dia. Qual problema deve ser levado primeiro ao round?",
+   "alts": [
+    "A interação do meropeném com o valproato, pelo risco de crise e estado de mal",
+    "A dose do meropeném, por ser o erro mais objetivo e o mais fácil de ser aceito",
+    "A sedação com midazolam, porque o RASS está fora do alvo definido pela equipe",
+    "O pantoprazol, que deveria ser suspenso em todo paciente sob ventilação mecânica",
+    "A enoxaparina, que deveria cair para 20 mg porque a TFG está abaixo de 50 mL/min"
+   ],
+   "gab": 0,
+   "coment": "As intervenções devem ser ordenadas pelo potencial de dano. Carbapenêmicos reduzem de forma marcante e rápida a concentração de valproato, com risco de crise e estado de mal epiléptico; a associação deve ser evitada, trocando o antiepiléptico ou o antimicrobiano. A dose do meropeném e a sedação acima do alvo também exigem intervenção no mesmo round, mas o dano potencial é menor. A profilaxia de úlcera está indicada no paciente ventilado, e a enoxaparina 40 mg 1 vez ao dia é adequada com TFG acima de 30 mL/min.",
+   "porAlt": [
+    "Correta: maior potencial de dano grave.",
+    "Errada: é real, mas de menor gravidade potencial.",
+    "Errada: é real, mas deve vir depois da interação.",
+    "Errada: a profilaxia está indicada durante a ventilação.",
+    "Errada: a redução só se aplica abaixo de 30 mL/min."
+   ],
+   "base": "Tercer Consenso de Granada, 2007; REVISE, N Engl J Med 2024"
+  },
+  {
+   "leitura": "acompanhamento-farmacoterapeutico",
+   "nivel": "avancado",
+   "enun": "Em um mês, a UTI teve 400 pacientes-dia acompanhados. Foram registrados 120 PRM e feitas 110 intervenções junto ao prescritor, das quais 88 foram aceitas; 80 problemas foram verificados como resolvidos. Quais são os indicadores corretos?",
+   "alts": [
+    "30 PRM por 100 pacientes-dia e aceitação de 73%",
+    "27,5 PRM por 100 pacientes-dia e aceitação de 80%",
+    "30 PRM por 100 pacientes-dia e aceitação de 91%",
+    "30 PRM por 100 pacientes-dia e aceitação de 80%",
+    "22 PRM por 100 pacientes-dia e aceitação de 80%"
+   ],
+   "gab": 3,
+   "coment": "PRM por 100 pacientes-dia = 120 ÷ 400 × 100 = 30. Taxa de aceitação = intervenções aceitas ÷ intervenções propostas = 88 ÷ 110 × 100 = 80%. Dividir aceitas pelo total de PRM (88 ÷ 120 = 73%) mistura denominadores, porque nem todo PRM gerou intervenção ao prescritor. A proporção de 91% (80 ÷ 88) é a taxa de resolução entre os aceitos, outro indicador. Usar as intervenções ou as aceitas no numerador do primeiro indicador também está errado.",
+   "porAlt": [
+    "Errada: usou PRM como denominador da aceitação.",
+    "Errada: usou intervenções em vez de PRM.",
+    "Errada: 91% é a taxa de resolução.",
+    "Correta: 120/400 e 88/110.",
+    "Errada: usou aceitas em vez de PRM."
+   ],
+   "base": "PCNE V9.1, 2020; CFF, Resolução 585/2013"
+  },
+  {
+   "leitura": "conciliacao-medicamentosa",
+   "nivel": "basico",
+   "enun": "O que caracteriza a melhor história medicamentosa possível na conciliação?",
+   "alts": [
+    "Lista obtida da última receita médica trazida pela família no momento da admissão",
+    "Lista copiada do prontuário da internação anterior, conferida pelo médico de plantão",
+    "Lista obtida apenas do registro de dispensação da farmácia do próprio hospital",
+    "Lista obtida de ao menos duas fontes, uma delas a entrevista com paciente ou cuidador",
+    "Lista obtida de uma fonte confiável, dispensando entrevista quando houver receita"
+   ],
+   "gab": 3,
+   "coment": "A melhor história medicamentosa possível, como definida pelo ISMP Canadá, é a compilação sistemática dos medicamentos em uso a partir de pelo menos duas fontes, sendo uma a entrevista com o paciente ou cuidador. Uma única fonte falha com frequência: a receita pode estar desatualizada, o prontuário anterior não mostra mudanças recentes e o registro de dispensação mostra o que foi retirado, não o que é usado. A entrevista revela automedicação, formas não orais e a última dose.",
+   "porAlt": [
+    "Errada: receita isolada pode estar desatualizada.",
+    "Errada: prontuário anterior não mostra mudanças recentes.",
+    "Errada: dispensação não prova uso.",
+    "Correta: duas fontes, com entrevista.",
+    "Errada: dispensa a entrevista, que é obrigatória."
+   ],
+   "base": "ISMP Canadá (BPMH); OMS, High 5s; ISMP Brasil, 2019"
+  },
+  {
+   "leitura": "conciliacao-medicamentosa",
+   "nivel": "basico",
+   "enun": "Paciente em choque séptico usava losartana 50 mg/dia. A losartana não foi prescrita na UTI e não há menção ao motivo na evolução médica; o intensivista confirma que a suspendeu pelo choque. Como se classifica a discrepância e qual a conduta?",
+   "alts": [
+    "Não intencional; solicitar a reintrodução imediata da losartana na prescrição",
+    "Intencional não documentada; solicitar o registro do motivo da suspensão",
+    "Intencional documentada; nenhuma ação é necessária no momento da conciliação",
+    "Não intencional; notificar o caso como erro de medicação no sistema VigiMed",
+    "Duplicidade terapêutica; pedir a suspensão do outro anti-hipertensivo em uso"
+   ],
+   "gab": 1,
+   "coment": "A suspensão foi deliberada (o prescritor confirma e ela é adequada no choque), mas não foi registrada: é discrepância intencional não documentada. A conduta é pedir que o motivo seja registrado, para que a próxima equipe saiba por que o medicamento saiu e quando reavaliar. Reintroduzir no choque seria perigoso, e não há erro a notificar. Só a discrepância não intencional é erro de medicação.",
+   "porAlt": [
+    "Errada: foi intencional e reintroduzir no choque é perigoso.",
+    "Correta: deliberada, mas sem registro.",
+    "Errada: não há registro do motivo.",
+    "Errada: não houve erro.",
+    "Errada: não há duplicidade descrita."
+   ],
+   "base": "OMS, High 5s; CFF, Resolução 555/2011"
+  },
+  {
+   "leitura": "conciliacao-medicamentosa",
+   "nivel": "intermediario",
+   "enun": "Mulher de 66 anos vai ser transferida da UTI para a enfermaria após 9 dias, extubada há 4 dias, com dieta oral plena, sem delirium há 3 dias. Prescrição: pantoprazol 40 mg IV (iniciado como profilaxia de úlcera de estresse), quetiapina 25 mg à noite (iniciada para delirium) e insulina conforme glicemia. Usava atorvastatina 40 mg em casa, suspensa na admissão. Qual conduta a conciliação de saída deve propor?",
+   "alts": [
+    "Manter pantoprazol e quetiapina até a alta hospitalar e reintroduzir a estatina",
+    "Suspender a quetiapina, manter o pantoprazol e deixar a estatina para a alta",
+    "Manter todos os itens, pois a conciliação só é refeita na alta hospitalar",
+    "Suspender o pantoprazol, manter a quetiapina e deixar a estatina suspensa",
+    "Suspender pantoprazol e quetiapina e discutir a reintrodução da atorvastatina"
+   ],
+   "gab": 4,
+   "coment": "Na transferência da UTI, a conciliação revê medicamentos iniciados na UTI que perderam indicação e crônicos suspensos na fase aguda. A profilaxia de úlcera de estresse não tem mais indicação em paciente extubado e com dieta oral; o antipsicótico iniciado para delirium resolvido deve ser suspenso (Tomichek e colaboradores, 2016, mostraram que 24% dos sobreviventes tratados saíram do hospital com antipsicótico). A estatina de uso crônico deve ter a reintrodução discutida, e a transferência é o momento certo, não só a alta.",
+   "porAlt": [
+    "Errada: mantém dois fármacos sem indicação.",
+    "Errada: mantém o supressor de acidez sem indicação.",
+    "Errada: a transferência é uma transição que exige conciliação.",
+    "Errada: mantém antipsicótico sem indicação e esquece a estatina.",
+    "Correta: retira o que perdeu indicação e reintroduz o crônico."
+   ],
+   "base": "Tomichek et al., Crit Care 2016; Bell et al., JAMA 2011"
+  },
+  {
+   "leitura": "conciliacao-medicamentosa",
+   "nivel": "intermediario",
+   "enun": "O que mostrou o estudo de Bell e colaboradores (JAMA, 2011) sobre medicamentos de uso crônico e internação em UTI?",
+   "alts": [
+    "A passagem pela UTI reduziu a interrupção de crônicos, pela presença do farmacêutico",
+    "A interrupção de crônicos foi igual entre pacientes de UTI, de enfermaria e controles",
+    "Só as estatinas foram interrompidas, sem efeito sobre anticoagulantes e antiplaquetários",
+    "A passagem pela UTI aumentou a interrupção não intencional de crônicos após a alta",
+    "A interrupção foi sempre intencional, motivada por contraindicações registradas na alta"
+   ],
+   "gab": 3,
+   "coment": "Na coorte populacional de Ontário, com quase 400 mil idosos, a internação associou-se a interrupção potencialmente não intencional de estatinas, antiplaquetários e anticoagulantes, levotiroxina, inaladores e supressores de acidez, e a passagem pela UTI aumentou o risco. Para antiplaquetários e anticoagulantes, a razão de chances ajustada nos pacientes de UTI foi de 2,31, com 22,8% sem renovar a prescrição em 90 dias. É um argumento direto para a conciliação na transferência e na alta.",
+   "porAlt": [
+    "Errada: o estudo não avaliou farmacêutico e o risco aumentou.",
+    "Errada: internação e UTI aumentaram o risco.",
+    "Errada: todos os grupos estudados foram afetados.",
+    "Correta: UTI aumentou o risco de interrupção.",
+    "Errada: o desfecho era interrupção potencialmente não intencional."
+   ],
+   "base": "Bell et al., JAMA 2011"
+  },
+  {
+   "leitura": "conciliacao-medicamentosa",
+   "nivel": "avancado",
+   "enun": "Homem de 74 anos com doença de Parkinson, em uso domiciliar de levodopa/benserazida, é admitido na UTI intubado após cirurgia abdominal de urgência. A levodopa não foi prescrita. No segundo dia apresenta febre de 39,5 °C, rigidez intensa, instabilidade autonômica e CK elevada; culturas colhidas sem foco novo. Qual a hipótese principal e a conduta?",
+   "alts": [
+    "Síndrome de parkinsonismo e hiperpirexia; reintroduzir a levodopa por sonda sem demora",
+    "Síndrome neuroléptica maligna pela levodopa; suspender de vez o antiparkinsoniano",
+    "Síndrome serotoninérgica; iniciar ciproeptadina e manter a levodopa suspensa por 48 horas",
+    "Hipertermia maligna pelo anestésico; iniciar dantroleno e manter a levodopa suspensa",
+    "Sepse de foco abdominal; ampliar o antimicrobiano e deixar a levodopa suspensa até a alta"
+   ],
+   "gab": 0,
+   "coment": "A retirada abrupta de levodopa pode causar síndrome de parkinsonismo e hiperpirexia, quadro semelhante à síndrome neuroléptica maligna, com febre, rigidez, disautonomia e elevação de CK. A conduta central é reintroduzir o antiparkinsoniano por sonda, com suporte e investigação de outras causas em paralelo. A levodopa não causa síndrome neuroléptica maligna; ao contrário, sua falta a mimetiza. É um exemplo de discrepância não intencional (omissão) com dano grave, que a conciliação na admissão teria evitado.",
+   "porAlt": [
+    "Correta: reação de retirada; reintroduzir.",
+    "Errada: a levodopa não causa o quadro; sua falta causa.",
+    "Errada: não há fármaco serotoninérgico descrito.",
+    "Errada: o quadro surgiu no segundo dia, após a omissão.",
+    "Errada: sem foco novo; manter a omissão perpetua o problema."
+   ],
+   "base": "Bell et al., JAMA 2011; ISMP Brasil, Boletim 2019"
+  },
+  {
+   "leitura": "conciliacao-medicamentosa",
+   "nivel": "avancado",
+   "enun": "Mulher de 62 anos admitida na UTI em choque séptico, sem via enteral nas primeiras horas. Usa em casa apixabana 5 mg 12/12 h (fibrilação atrial, última dose ontem às 21 h), metformina, dapagliflozina, sertralina 50 mg e baclofeno 20 mg 8/8 h por espasticidade. Qual conjunto de condutas é adequado?",
+   "alts": [
+    "Manter o baclofeno assim que possível, suspender a dapagliflozina e registrar a última dose da apixabana",
+    "Suspender o baclofeno, manter a dapagliflozina e reiniciar a apixabana na mesma dose usada em casa",
+    "Manter a dapagliflozina, suspender a sertralina e trocar a apixabana por varfarina oral imediatamente",
+    "Suspender o baclofeno e a sertralina de forma abrupta e manter a metformina por sonda assim que possível",
+    "Manter a metformina e a dapagliflozina por sonda e suspender o baclofeno até a alta da terapia intensiva"
+   ],
+   "gab": 0,
+   "coment": "Baclofeno não deve ser interrompido abruptamente pelo risco de abstinência com febre, convulsão e disautonomia; deve ser retomado por sonda assim que houver via. Inibidores de SGLT2 e metformina são suspensos no choque (cetoacidose euglicêmica e acidose lática), com glicemia controlada por insulina. Para o anticoagulante oral direto, registrar indicação e horário da última dose é decisivo para procedimentos e para planejar a anticoagulação parenteral na fase aguda. A sertralina deve ser retomada quando houver via, para evitar síndrome de descontinuação.",
+   "porAlt": [
+    "Correta: evita abstinência, cetoacidose e decisões sem saber a última dose.",
+    "Errada: suspende o baclofeno e mantém o SGLT2 no choque.",
+    "Errada: mantém o SGLT2 e troca o anticoagulante sem critério.",
+    "Errada: retiradas abruptas e metformina no choque.",
+    "Errada: mantém metformina e SGLT2 e retira o baclofeno."
+   ],
+   "base": "Bell et al., JAMA 2011; CFF, Resolução 675/2019"
+  },
+  {
+   "leitura": "farmacovigilancia-ram",
+   "nivel": "basico",
+   "enun": "Após 10 dias de infusão contínua de fentanil e midazolam, os dois são suspensos de uma vez para extubação. Em 24 horas o paciente apresenta agitação, taquicardia, sudorese, midríase e diarreia. Pela classificação de Edwards e Aronson, é uma reação de que tipo?",
+   "alts": [
+    "Tipo A, relacionada ao aumento da dose usada",
+    "Tipo B, imunológica e imprevisível ao usar",
+    "Tipo E, relacionada à retirada do fármaco",
+    "Tipo C, crônica, por dose e tempo de uso",
+    "Tipo F, falha terapêutica por interação"
+   ],
+   "gab": 2,
+   "coment": "Reações que surgem na retirada de um fármaco são do tipo E (end of use). Após infusões prolongadas de opioide e benzodiazepínico, a suspensão abrupta provoca abstinência, com hiperatividade autonômica, agitação e sintomas gastrointestinais. O manejo é reintroduzir e retirar gradualmente, por exemplo com conversão para via enteral e redução programada. Tipo A é dose-dependente pelo mecanismo; B é imprevisível; C depende de dose e tempo de uso contínuo; F é falha da terapia.",
+   "porAlt": [
+    "Errada: não houve aumento de dose.",
+    "Errada: é previsível e não imunológica.",
+    "Correta: reação de retirada.",
+    "Errada: o quadro surgiu na retirada.",
+    "Errada: não há falha de efeito terapêutico."
+   ],
+   "base": "Edwards e Aronson, Lancet 2000"
+  },
+  {
+   "leitura": "farmacovigilancia-ram",
+   "nivel": "basico",
+   "enun": "Ao preparar ceftriaxona, a enfermeira nota partículas visíveis que não se dissolvem em dois frascos do mesmo lote. Nenhum paciente recebeu o produto. Em qual sistema da Anvisa a situação deve ser notificada?",
+   "alts": [
+    "VigiMed, por se tratar de reação adversa a antimicrobiano",
+    "Notivisa, por se tratar de queixa técnica de medicamento",
+    "e-Notivisa, por ser evento adverso a dispositivo médico",
+    "VigiMed, por ser erro de medicação que foi interceptado",
+    "Nenhum, pois a queixa técnica é tratada pelo fabricante"
+   ],
+   "gab": 1,
+   "coment": "Partículas no produto são suspeita de desvio de qualidade, ou seja, queixa técnica. Segundo a página do VigiMed na Anvisa, o VigiMed recebe eventos adversos a medicamentos e vacinas (reações, inefetividade, erros de medicação, uso abusivo, uso fora da bula, intoxicação), e queixas técnicas vão ao Notivisa. O e-Notivisa é o canal do cidadão para dispositivos, cosméticos, saneantes e alimentos e exclui medicamentos. Antes de notificar, separe os frascos, registre o lote e peça o bloqueio do estoque.",
+   "porAlt": [
+    "Errada: não houve reação; o problema é do produto.",
+    "Correta: queixa técnica de medicamento vai ao Notivisa.",
+    "Errada: o e-Notivisa exclui medicamentos.",
+    "Errada: não houve erro de processo; o defeito é do produto.",
+    "Errada: a notificação sanitária é devida."
+   ],
+   "base": "Anvisa, página do VigiMed (consulta em 2026)"
+  },
+  {
+   "leitura": "farmacovigilancia-ram",
+   "nivel": "intermediario",
+   "enun": "Paciente com sepse em uso de vários fármacos desenvolve exantema maculopapular no quinto dia de um betalactâmico. Há relatos conclusivos prévios da reação; o exantema surgiu após o início do fármaco e regrediu após a suspensão; não houve reexposição; a própria infecção viral concomitante poderia explicar o quadro; não há dados de placebo, nível sérico, relação com dose ou reação prévia; a biópsia foi compatível com farmacodermia. Qual a pontuação de Naranjo e a classificação?",
+   "alts": [
+    "7 pontos: relação provável",
+    "4 pontos: relação provável",
+    "9 pontos: relação definida",
+    "0 pontos: relação duvidosa",
+    "4 pontos: relação possível"
+   ],
+   "gab": 4,
+   "coment": "Pontuação: relatos prévios conclusivos +1; surgiu após o fármaco +2; melhorou com a suspensão +1; reexposição não feita 0; causa alternativa presente -1; placebo, nível sérico, relação com dose e reação prévia, 0 cada; evidência objetiva +1. Total = 4, faixa de 1 a 4: relação possível. Quem soma +2 na pergunta de causas alternativas chega a 7 (provável), erro comum de sinal. A faixa provável começa em 5; definida, em 9.",
+   "porAlt": [
+    "Errada: pontuou como se não houvesse causa alternativa.",
+    "Errada: 4 pontos está na faixa possível.",
+    "Errada: não há reexposição nem nível tóxico.",
+    "Errada: há critérios positivos suficientes.",
+    "Correta: 1+2+1+0-1+0+0+0+0+1 = 4."
+   ],
+   "base": "Naranjo et al., Clin Pharmacol Ther 1981"
+  },
+  {
+   "leitura": "farmacovigilancia-ram",
+   "nivel": "intermediario",
+   "enun": "Pelo método original do IHI Global Trigger Tool (2ª edição, 2009), como os prontuários são amostrados para revisão?",
+   "alts": [
+    "Vinte prontuários sorteados por semana, apenas de pacientes que evoluíram a óbito",
+    "Todos os prontuários do mês, revisados sem limite de tempo por um único revisor",
+    "Dez prontuários por mês, escolhidos entre pacientes com notificação espontânea",
+    "Dez prontuários sorteados a cada duas semanas, de internações de ao menos 24 horas",
+    "Cinco prontuários sorteados por dia, de pacientes com internação de até 24 horas"
+   ],
+   "gab": 3,
+   "coment": "O manual recomenda sortear 10 prontuários a cada período de duas semanas (20 por mês), de pacientes com internação de pelo menos 24 horas, revisados em até 20 minutos por dois revisores, com confirmação médica. Os eventos são expressos por 1.000 pacientes-dia ou por 100 internações. Escolher prontuários com notificação espontânea introduz viés e anula a vantagem do método, que é captar eventos não notificados.",
+   "porAlt": [
+    "Errada: não restringe a óbitos nem usa 20 por semana.",
+    "Errada: a revisão é amostral e limitada a 20 minutos.",
+    "Errada: a amostra é aleatória, não de casos notificados.",
+    "Correta: 10 a cada duas semanas, internação de 24 horas ou mais.",
+    "Errada: exige internação de pelo menos 24 horas."
+   ],
+   "base": "Griffin e Resar, IHI Global Trigger Tool, 2009"
+  },
+  {
+   "leitura": "farmacovigilancia-ram",
+   "nivel": "avancado",
+   "enun": "Mulher de 58 anos no D7 de heparina não fracionada profilática após cirurgia ortopédica tem queda das plaquetas de 250 mil para 95 mil/mm³ e trombose venosa profunda nova, sem outra causa aparente. Qual a conduta adequada?",
+   "alts": [
+    "Suspender toda heparina, inclusive flush, e iniciar anticoagulante não heparínico",
+    "Trocar a heparina não fracionada por enoxaparina em dose plena e repetir plaquetas",
+    "Manter a heparina e transfundir plaquetas até a contagem ficar acima de 100 mil",
+    "Suspender a heparina e manter a paciente sem anticoagulação até normalizar plaquetas",
+    "Manter a heparina em dose profilática e aguardar o resultado do anticorpo anti-PF4"
+   ],
+   "gab": 0,
+   "coment": "Queda acima de 50%, entre o 5º e o 10º dia, com trombose nova e sem outra causa dá escore 4Ts alto (Lo e colaboradores, 2006). A conduta é suspender toda exposição à heparina, inclusive flush e cateteres impregnados, e iniciar anticoagulante não heparínico em dose terapêutica, sem esperar o resultado laboratorial. A enoxaparina tem reatividade cruzada; ficar sem anticoagulação expõe a novas tromboses; transfusão de plaquetas não é rotina e pode piorar a trombose.",
+   "porAlt": [
+    "Correta: 4Ts alto exige suspensão total e anticoagulação alternativa.",
+    "Errada: heparina de baixo peso tem reatividade cruzada.",
+    "Errada: manter heparina perpetua a HIT.",
+    "Errada: HIT é protrombótica; exige anticoagulação.",
+    "Errada: com probabilidade alta, não se aguarda o exame."
+   ],
+   "base": "Lo et al., J Thromb Haemost 2006"
+  },
+  {
+   "leitura": "farmacovigilancia-ram",
+   "nivel": "avancado",
+   "enun": "Homem de 45 anos, TCE grave, recebe fenitoína há 4 semanas. Há 2 dias apresenta febre, exantema difuso, edema facial, linfadenopatia, eosinófilos de 1.800/mm³ e transaminases 5 vezes o limite superior. Culturas negativas. A equipe fala em sepse. Qual a hipótese e a conduta mais adequadas?",
+   "alts": [
+    "Sepse de foco cutâneo; ampliar o espectro antimicrobiano e manter a fenitoína",
+    "Síndrome de Stevens-Johnson; manter a fenitoína e iniciar corticoide em pulso",
+    "DRESS por fenitoína; suspender e trocar o antiepiléptico, notificando a suspeita",
+    "Reação tipo A à fenitoína; reduzir a dose e dosar o nível sérico em 24 horas",
+    "Exantema viral benigno; manter a fenitoína e prescrever anti-histamínico oral"
+   ],
+   "gab": 2,
+   "coment": "Latência de 2 a 8 semanas, febre, exantema extenso com edema facial, linfadenopatia, eosinofilia e hepatite compõem o quadro de DRESS, pontuado pelo escore RegiSCAR (Kardaun e colaboradores, 2007). A fenitoína é um dos fármacos mais implicados. A conduta essencial é suspender o fármaco, trocar o antiepiléptico por um de estrutura não aromática (evitando carbamazepina, com reatividade cruzada), registrar a alergia e notificar. Stevens-Johnson exige descolamento epidérmico e lesão de mucosa, e manter o fármaco suspeito é erro em qualquer farmacodermia grave.",
+   "porAlt": [
+    "Errada: culturas negativas e eosinofilia apontam para DRESS.",
+    "Errada: não há descolamento; e o fármaco deve sair.",
+    "Correta: quadro típico; suspender, trocar e notificar.",
+    "Errada: é reação tipo B, não dependente de dose.",
+    "Errada: eosinofilia e hepatite indicam reação grave."
+   ],
+   "base": "Kardaun et al., Br J Dermatol 2007; Edwards e Aronson, Lancet 2000"
+  },
+  {
+   "leitura": "evolucao-farmaceutica",
+   "nivel": "basico",
+   "enun": "Na técnica de comunicação SBAR, o que corresponde à letra R?",
+   "alts": [
+    "Relato: a descrição completa da história do paciente",
+    "Revisão: a leitura de todas as prescrições anteriores",
+    "Risco: a classificação de gravidade pelo NCC MERP",
+    "Registro: a anotação da conversa feita no prontuário",
+    "Recomendação: o que se propõe fazer, de forma concreta"
+   ],
+   "gab": 4,
+   "coment": "SBAR significa situação, breve histórico, avaliação e recomendação (Haig e colaboradores, 2006). A recomendação é a proposta concreta: suspender a próxima dose, colher novo nível às 6 h, trocar o fármaco. Sem ela, a comunicação vira apenas relato de problema e transfere ao interlocutor todo o raciocínio. O registro da conversa é etapa posterior, prevista pela Resolução CFF 555/2011, mas não é uma letra do SBAR.",
+   "porAlt": [
+    "Errada: o histórico é a letra B e deve ser breve.",
+    "Errada: não é componente do SBAR.",
+    "Errada: a escala NCC MERP classifica erros.",
+    "Errada: o registro vem depois da comunicação.",
+    "Correta: R é a recomendação."
+   ],
+   "base": "Haig et al., Jt Comm J Qual Patient Saf 2006"
+  },
+  {
+   "leitura": "evolucao-farmaceutica",
+   "nivel": "basico",
+   "enun": "Qual destas anotações de dose está escrita de acordo com as recomendações do ISMP Brasil para prevenir erros?",
+   "alts": [
+    "Insulina regular 4 U; fentanil 50 mcg; varfarina 5 mg de manhã",
+    "Insulina regular 4 unidades; fentanil 50 µg; varfarina 5 mg",
+    "Insulina regular 4 unidades; fentanil 50 mcg; varfarina 5,0 mg",
+    "Insulina regular 4 unidades; fentanil ,05 mg; varfarina 5 mg",
+    "Insulina regular 4 unidades; fentanil 50 mcg; varfarina 5 mg"
+   ],
+   "gab": 4,
+   "coment": "O boletim do ISMP Brasil sobre abreviaturas, siglas e símbolos (2015) orienta escrever unidades por extenso (o U pode ser lido como 0 ou 4, multiplicando a dose), não usar o símbolo µg (confundido com mg; use mcg), não usar zero à direita (5,0 mg pode ser lido como 50 mg) e sempre usar zero à esquerda (0,05 mg, nunca ,05 mg). As regras valem também para o registro farmacêutico.",
+   "porAlt": [
+    "Errada: usa U para unidades.",
+    "Errada: usa o símbolo µg.",
+    "Errada: tem zero à direita.",
+    "Errada: falta zero à esquerda.",
+    "Correta: segue todas as regras."
+   ],
+   "base": "ISMP Brasil, Boletim 2015;4(2)"
+  },
+  {
+   "leitura": "evolucao-farmaceutica",
+   "nivel": "intermediario",
+   "enun": "Homem com TFG não indexada de 40 mL/min recebe meropeném 1 g 8/8 h. Qual registro de intervenção está mais adequado?",
+   "alts": [
+    "Sugiro avaliar a dose do meropeném, que me parece alta para a função renal atual do paciente",
+    "Discutido com Dr. X: aceito meropeném 1 g 12/12 h pela TFG de 40 mL/min; reavaliar diariamente",
+    "Prescrição inadequada do plantão: meropeném em dose de função renal normal, corrigir já",
+    "Meropeném reduzido para 1 g 12/12 h pela farmácia conforme bula, com aviso ao médico depois",
+    "Recomendo meropeném 1 g 12/12 h pela TFG de 40 mL/min (ainda não discutido com a equipe)"
+   ],
+   "gab": 1,
+   "coment": "O registro adequado traz o dado que sustenta a intervenção, a proposta específica, com quem foi discutida, se foi aceita e o plano de monitorização, na sequência discutir, pactuar e registrar (Resolução CFF 555/2011). Recomendações vagas não orientam a próxima equipe; juízo sobre colegas não cabe no prontuário; alterar a dose pela farmácia sem acordo contraria a Resolução CFF 586/2013; e registrar antes de discutir tem aceitação menor e cria documento de discordância evitável.",
+   "porAlt": [
+    "Errada: vaga, sem dose nem acordo.",
+    "Correta: dado, proposta, acordo e monitorização.",
+    "Errada: juízo sobre colegas e tom acusatório.",
+    "Errada: alteração sem acordo de colaboração.",
+    "Errada: registra antes de discutir."
+   ],
+   "base": "CFF, Resoluções 555/2011 e 586/2013"
+  },
+  {
+   "leitura": "evolucao-farmaceutica",
+   "nivel": "intermediario",
+   "enun": "Paciente com sonda nasoenteral tem prescrito nifedipino de liberação prolongada 20 mg via SNE 12/12 h para hipertensão. Qual a recomendação adequada?",
+   "alts": [
+    "Trocar por anlodipino, comprimido de liberação imediata que pode ser triturado",
+    "Manter o nifedipino retard triturado, diluído em volume maior de água filtrada",
+    "Manter o nifedipino retard triturado e administrar misturado à dieta enteral",
+    "Trocar por metoprolol de liberação prolongada triturado, de efeito mais estável",
+    "Abrir o comprimido de nifedipino retard e dispersar só o conteúdo na seringa"
+   ],
+   "gab": 0,
+   "coment": "Triturar formas de liberação prolongada destrói o sistema de liberação e expõe o paciente a toda a dose de uma vez, com risco de hipotensão (e, no caso do metoprolol, de bradicardia). Diluir em mais água ou misturar à dieta não resolve e pode obstruir a sonda. A alternativa é um fármaco de liberação imediata que possa ser triturado e disperso, como o anlodipino, com lavagem da sonda antes e depois. A leitura sobre administração por sonda aprofunda o tema.",
+   "porAlt": [
+    "Correta: forma que pode ser triturada.",
+    "Errada: mais água não restaura a liberação prolongada.",
+    "Errada: misturar à dieta não é recomendado e não resolve.",
+    "Errada: também é liberação prolongada.",
+    "Errada: comprimido retard não se abre como cápsula."
+   ],
+   "base": "ISMP Brasil, Boletim 2015; CFF, Resolução 675/2019"
+  },
+  {
+   "leitura": "evolucao-farmaceutica",
+   "nivel": "avancado",
+   "enun": "Paciente com vancomicina tem vale de 24 mg/L e creatinina em ascensão. O farmacêutico recomenda reduzir a dose; o médico mantém até o resultado da cultura do líquido pleural, por suspeita de empiema. Qual a conduta do farmacêutico?",
+   "alts": [
+    "Registrar a recomendação, o motivo da recusa e o plano de nível sérico e creatinina",
+    "Reduzir a dose no sistema, já que o nível sérico comprova o risco de nefrotoxicidade",
+    "Orientar a enfermagem a não administrar a próxima dose até sair um novo nível sérico",
+    "Notificar de imediato o Núcleo de Segurança do Paciente, sem registrar no prontuário",
+    "Não registrar nada, porque uma recomendação recusada não faz parte da evolução"
+   ],
+   "gab": 0,
+   "coment": "O prescritor apresentou motivo clínico (empiema, em que a equipe busca exposição maior), e a divergência não configura dano iminente se houver monitorização. O registro neutro com a recomendação, o motivo da recusa e o plano combinado (novo nível às 6 h, creatinina diária, reavaliação no round) protege o paciente e o farmacêutico, como prevê a Resolução CFF 555/2011. Alterar a prescrição ou orientar a enfermagem a omitir a dose contraria a Resolução CFF 586/2013. Escalonamento ao preceptor ou coordenador é reservado a risco de dano grave.",
+   "porAlt": [
+    "Correta: registro neutro com plano de monitorização.",
+    "Errada: alteração sem acordo de colaboração.",
+    "Errada: modifica a prescrição por via indireta.",
+    "Errada: não há evento a notificar e o registro é devido.",
+    "Errada: a recusa e sua justificativa devem constar."
+   ],
+   "base": "CFF, Resoluções 555/2011 e 586/2013; ASHP/IDSA/PIDS/SIDP 2020"
+  },
+  {
+   "leitura": "evolucao-farmaceutica",
+   "nivel": "avancado",
+   "enun": "Homem de 52 anos com pneumonia por MRSA, função renal normal, usa sertralina 100 mg/dia há anos. Foi prescrita linezolida 600 mg IV 12/12 h. Qual a intervenção mais adequada?",
+   "alts": [
+    "Manter as duas sem vigilância, porque a linezolida não inibe a monoaminoxidase",
+    "Discutir alternativa como vancomicina ou, se mantida, vigiar sinais serotoninérgicos",
+    "Suspender a linezolida porque ela prolonga muito o QT quando associada a ISRS",
+    "Trocar a sertralina por fluoxetina, de menor risco serotoninérgico com linezolida",
+    "Dobrar a dose da sertralina para compensar a indução enzimática da linezolida"
+   ],
+   "gab": 1,
+   "coment": "A linezolida é inibidor reversível e não seletivo da monoaminoxidase; associada a inibidores seletivos da recaptação de serotonina, há casos de síndrome serotoninérgica, objeto de alerta da FDA em 2011. Com função renal normal, a vancomicina guiada por AUC é alternativa para pneumonia por MRSA. Se a linezolida for necessária, a associação pode ser mantida com vigilância de hipertermia, clônus, hiper-reflexia e agitação. A fluoxetina tem meia-vida longa e não reduz o risco; a linezolida não é indutora enzimática.",
+   "porAlt": [
+    "Errada: a linezolida inibe a monoaminoxidase.",
+    "Correta: alternativa ou vigilância ativa.",
+    "Errada: o risco central é serotoninérgico.",
+    "Errada: a fluoxetina mantém o risco e tem meia-vida longa.",
+    "Errada: não há indução enzimática."
+   ],
+   "base": "Alerta da FDA, 2011; Kalil et al., IDSA/ATS 2016"
+  },
+  {
+   "leitura": "indicadores-evidencia",
+   "nivel": "basico",
+   "enun": "Num ensaio, o desfecho ocorreu em 10% do grupo controle e em 6% do grupo intervenção. Quantos pacientes precisam ser tratados para evitar um desfecho?",
+   "alts": [
+    "40 pacientes",
+    "17 pacientes",
+    "25 pacientes",
+    "4 pacientes",
+    "10 pacientes"
+   ],
+   "gab": 2,
+   "coment": "A redução absoluta do risco é 10% menos 6%, ou 4 pontos percentuais (0,04). NNT = 1 ÷ 0,04 = 25. O valor 40 vem de confundir a redução relativa (40%) com a absoluta; 17 corresponde a 1 ÷ 0,06; 4 é a redução absoluta em pontos percentuais; 10 corresponde a 1 ÷ 0,10. Apresentar o NNT junto da redução relativa evita superestimar o benefício.",
+   "porAlt": [
+    "Errada: confunde RRR (40%) com o NNT.",
+    "Errada: usa o risco da intervenção.",
+    "Correta: 1 ÷ 0,04 = 25.",
+    "Errada: é a RAR em pontos percentuais.",
+    "Errada: usa o risco do controle."
+   ],
+   "base": "Sackett et al., BMJ 1996; Guyatt et al., BMJ 2008"
+  },
+  {
+   "leitura": "indicadores-evidencia",
+   "nivel": "basico",
+   "enun": "Como se classifica o PubMed quanto ao nível da fonte de informação?",
+   "alts": [
+    "Primária, pois reúne os próprios artigos originais publicados",
+    "Secundária, pois indexa e localiza a literatura original",
+    "Terciária, pois sintetiza o conhecimento já estabelecido",
+    "Primária, pois é mantido pela biblioteca de medicina dos EUA",
+    "Terciária, pois resume diretrizes e recomendações clínicas"
+   ],
+   "gab": 1,
+   "coment": "Fontes secundárias são índices e bases que localizam a literatura primária, como PubMed/MEDLINE, Embase, LILACS e Cochrane Library. Primárias são os estudos originais publicados; terciárias sintetizam o conhecimento estabelecido (livros, compêndios, Micromedex, Lexicomp, UpToDate, bulas). A busca eficiente costuma ir do terciário ao primário, passando pelo secundário.",
+   "porAlt": [
+    "Errada: o PubMed indexa artigos; não é o estudo em si.",
+    "Correta: é índice da literatura.",
+    "Errada: não sintetiza; indexa.",
+    "Errada: quem mantém não define o nível.",
+    "Errada: resumo de diretrizes é fonte terciária."
+   ],
+   "base": "Sackett et al., BMJ 1996"
+  },
+  {
+   "leitura": "indicadores-evidencia",
+   "nivel": "intermediario",
+   "enun": "Após um programa de ajuste renal de antimicrobianos, a DDD de meropeném por 1.000 pacientes-dia caiu 30%, enquanto o DOT por 1.000 pacientes-dia ficou estável. Qual a interpretação correta?",
+   "alts": [
+    "O número de pacientes tratados com meropeném caiu cerca de 30% no período",
+    "A duração média dos tratamentos com meropeném caiu cerca de 30% no período",
+    "O consumo real não mudou, pois a DDD independe da dose administrada",
+    "Menos gramas por dia foram usados, sem redução nos dias de exposição",
+    "O DOT deveria cair junto, o que indica erro no cálculo do indicador"
+   ],
+   "gab": 3,
+   "coment": "A DDD é calculada a partir dos gramas consumidos divididos pela dose diária definida da OMS (3 g para meropeném parenteral). Reduzir a dose diária por ajuste renal diminui os gramas e, portanto, as DDD, sem alterar os dias de uso. O DOT conta os dias em que o antimicrobiano foi administrado, independentemente da dose, e por isso não muda. Menos pacientes tratados ou tratamentos mais curtos reduziriam também o DOT.",
+   "porAlt": [
+    "Errada: menos pacientes reduziria o DOT.",
+    "Errada: menor duração reduziria o DOT.",
+    "Errada: a DDD depende dos gramas consumidos.",
+    "Correta: a dose caiu, os dias não.",
+    "Errada: o DOT não depende da dose."
+   ],
+   "base": "OMS, índice ATC/DDD 2026"
+  },
+  {
+   "leitura": "indicadores-evidencia",
+   "nivel": "intermediario",
+   "enun": "Um ensaio relata para mortalidade em 90 dias hazard ratio de 0,94, com IC 95% de 0,85 a 1,04 e p = 0,25. Qual a interpretação correta?",
+   "alts": [
+    "Houve redução de 6% na mortalidade, pois o HR ficou abaixo de 1",
+    "Houve aumento de mortalidade, pois o limite superior passa de 1",
+    "Não houve diferença demonstrada, pois o intervalo inclui o valor 1",
+    "O tratamento é equivalente ao controle, pois o valor de p é alto",
+    "Houve redução de 15% na mortalidade, que é o limite inferior"
+   ],
+   "gab": 2,
+   "coment": "Para medidas relativas, o intervalo de confiança que cruza 1 é compatível com ausência de efeito; aqui os dados são compatíveis desde uma redução de 15% até um aumento de 4% no risco, e não demonstram diferença. A estimativa pontual abaixo de 1 não basta. Valor de p alto não prova equivalência, que exige desenho e margem próprios. O limite inferior não é o efeito estimado. Esses são os números de mortalidade do REVISE (2024).",
+   "porAlt": [
+    "Errada: a estimativa pontual isolada não demonstra efeito.",
+    "Errada: o intervalo também inclui redução.",
+    "Correta: o IC cruza 1.",
+    "Errada: p alto não prova equivalência.",
+    "Errada: o limite do IC não é a estimativa."
+   ],
+   "base": "Cook et al., N Engl J Med 2024 (REVISE)"
+  },
+  {
+   "leitura": "indicadores-evidencia",
+   "nivel": "avancado",
+   "enun": "No ensaio REVISE (2024), o sangramento digestivo alto clinicamente importante ocorreu em 3,5% dos ventilados com placebo e em 1,0% dos que receberam pantoprazol 40 mg IV ao dia. Quais os valores aproximados de redução absoluta do risco e de NNT?",
+   "alts": [
+    "RAR de cerca de 70% e NNT próximo de 1,4 pacientes tratados",
+    "RAR de cerca de 2,5 pontos percentuais e NNT próximo de 4",
+    "RAR de cerca de 1,8 ponto percentual e NNT próximo de 55",
+    "RAR de cerca de 2,5 pontos percentuais e NNT próximo de 40",
+    "RAR de cerca de 30% e NNT próximo de 3 pacientes tratados"
+   ],
+   "gab": 3,
+   "coment": "RAR = 3,5% menos 1,0% = 2,5 pontos percentuais (0,025); NNT = 1 ÷ 0,025 = 40 (com as proporções exatas, 40,2, arredondado para cima: 41). A redução de cerca de 70% é relativa (RR próximo de 0,30), e 0,30 é o próprio risco relativo, não a RAR. Tratar cerca de 40 pacientes ventilados para evitar um sangramento importante, sem diferença de mortalidade, é a informação útil para decidir a profilaxia.",
+   "porAlt": [
+    "Errada: 70% é a redução relativa.",
+    "Errada: erro de casa decimal no NNT.",
+    "Errada: cálculo sem base nos dados.",
+    "Correta: 0,025 e 1 ÷ 0,025.",
+    "Errada: 0,30 é o risco relativo."
+   ],
+   "base": "Cook et al., N Engl J Med 2024 (REVISE)"
+  },
+  {
+   "leitura": "indicadores-evidencia",
+   "nivel": "avancado",
+   "enun": "Uma diretriz de UTI traz, pelo sistema GRADE, uma recomendação fraca (condicional) apoiada em evidência de certeza baixa. Como o farmacêutico deve interpretá-la?",
+   "alts": [
+    "Benefício comprovado por ensaios; a conduta deve ser aplicada a todos os casos",
+    "Ausência de benefício; a conduta deve ser abandonada pelos serviços de saúde",
+    "Evidência só observacional; a conduta é proibida fora de um ensaio clínico",
+    "Benefício certo, mas caro; a conduta vale apenas para hospitais particulares",
+    "Benefício provável, mas incerto; a decisão depende do contexto e do paciente"
+   ],
+   "gab": 4,
+   "coment": "No GRADE, a certeza da evidência (alta, moderada, baixa, muito baixa) e a força da recomendação (forte ou fraca/condicional) são separadas. Recomendação condicional com certeza baixa indica que o balanço provavelmente favorece a conduta, mas com incerteza relevante: a decisão deve considerar o contexto, os valores do paciente e os recursos, e a conduta pode razoavelmente não ser adotada em alguns casos. Não é regra universal nem proibição.",
+   "porAlt": [
+    "Errada: descreve recomendação forte com certeza alta.",
+    "Errada: recomendação condicional a favor não é contra.",
+    "Errada: GRADE não proíbe condutas por nível de evidência.",
+    "Errada: custo é um fator, mas não define o sentido assim.",
+    "Correta: provável benefício com incerteza."
+   ],
+   "base": "Guyatt et al., BMJ 2008 (GRADE)"
+  }
+ ]
+}

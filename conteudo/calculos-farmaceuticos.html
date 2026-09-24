@@ -1,0 +1,165 @@
+<p class="dek">Concentração, porcentagem, diluição, conversão de mcg/kg/min para mL/h, mEq e mmol, osmolaridade, velocidade de infusão, peso ideal e ajustado e estimativa de função renal, com exemplos resolvidos a partir das apresentações brasileiras e das armadilhas de unidade mais comuns na UTI. Bases: lista de abreviaturas e designações de dose propensas a erro do ISMP (2024), consenso de segurança em nutrição parenteral da ASPEN (2014), CKD-EPI 2021, KDIGO 2024 e bulas registradas na ANVISA.</p>
+
+<h2>Princípios de segurança no cálculo</h2>
+<p>Erro de cálculo em UTI raramente é pequeno. Trocar miligrama por micrograma multiplica a dose por mil; esquecer que a dose é por minuto e programar a bomba por hora divide por sessenta; confundir sal com base, ou 10% com 19,1%, dobra a dose. Por isso o cálculo tem método, e o método tem conferência.</p>
+<ul>
+<li><b>Escreva as unidades em todas as etapas</b> e cancele-as como numa equação (análise dimensional). Se a unidade final não for a esperada, a conta está errada.</li>
+<li><b>Estime antes de calcular</b>. Uma ordem de grandeza aproximada ("vai dar uns 15 mL/h") detecta erros de vírgula.</li>
+<li><b>Refaça por outro caminho</b> (regra de três e fórmula, ou cálculo direto e inverso) nas doses de alta vigilância.</li>
+<li><b>Siga a notação do ISMP</b> (lista de 2024): sem zero à direita (5 mg, nunca 5,0 mg), sempre zero à esquerda (0,5 mg, nunca ,5 mg), "unidades" por extenso (a lista desaconselha "U" e "UI", que já foram lidos como zero ou como outro número), "mcg" em vez do símbolo grego, separador de milhar em números grandes (100.000 unidades).</li>
+</ul>
+<h3>Conversões básicas</h3>
+<div class="tab"><table><thead><tr><th>De</th><th>Para</th><th>Fator</th></tr></thead><tbody>
+<tr><td>1 g</td><td>mg</td><td>1.000 mg</td></tr>
+<tr><td>1 mg</td><td>mcg</td><td>1.000 mcg</td></tr>
+<tr><td>1 L</td><td>mL</td><td>1.000 mL</td></tr>
+<tr><td>Dose por minuto</td><td>Dose por hora</td><td>× 60</td></tr>
+<tr><td>Dose por hora</td><td>Dose por dia</td><td>× 24</td></tr>
+<tr><td>mmol</td><td>mEq</td><td>× valência (1 para Na e K; 2 para Ca e Mg)</td></tr>
+<tr><td>mg</td><td>mmol</td><td>÷ massa molar (g/mol)</td></tr>
+<tr><td>Macrogotas</td><td>mL</td><td>20 gotas = 1 mL</td></tr>
+<tr><td>Microgotas</td><td>mL</td><td>60 microgotas = 1 mL</td></tr>
+</tbody></table></div>
+
+<h2>Porcentagem e concentração</h2>
+<p>Em farmácia hospitalar, porcentagem de solução é quase sempre peso por volume: <b>X% = X g em 100 mL</b>. Daí vem uma regra útil: para passar de porcentagem a mg/mL, multiplique por 10. Glicose 50% tem 500 mg/mL; lidocaína 2% tem 20 mg/mL; cloreto de potássio 19,1% tem 191 mg/mL; sulfato de magnésio 50% tem 500 mg/mL.</p>
+<p>A notação em razão aparece na adrenalina: 1:1.000 significa 1 g em 1.000 mL, ou 1 mg/mL (a ampola brasileira); 1:10.000 é 0,1 mg/mL, a concentração de seringas pré-diluídas para parada cardíaca. A confusão entre as duas já causou eventos graves, como bolus intravenoso de adrenalina 1 mg/mL fora da parada cardíaca. O ISMP recomenda expressar sempre em mg/mL.</p>
+<div class="cx calculo"><b>Exemplo de cálculo</b><p>Quantos gramas de glicose há em 40 mL de glicose 50%? 50% = 50 g/100 mL = 0,5 g/mL. 40 mL × 0,5 g/mL = 20 g. Quantos mg de lidocaína em 5 mL de lidocaína 2%? 2% = 20 mg/mL; 5 × 20 = 100 mg.</p></div>
+
+<h2>Diluição</h2>
+<h3>C1 × V1 = C2 × V2</h3>
+<p>A quantidade de soluto não muda quando se acrescenta diluente. Por isso, concentração inicial × volume inicial = concentração final × volume final.</p>
+<div class="cx calculo"><b>Exemplo de cálculo</b><p>Preparar 100 mL de solução de fentanil a 10 mcg/mL a partir de ampolas de 50 mcg/mL. C1 × V1 = C2 × V2 → 50 × V1 = 10 × 100 → V1 = 20 mL de fentanil (1.000 mcg) + 80 mL de soro fisiológico. Conferência: 1.000 mcg ÷ 100 mL = 10 mcg/mL.</p></div>
+<h3>Mistura de duas concentrações</h3>
+<p>Quando se misturam duas soluções do mesmo soluto, a quantidade final é a soma das quantidades. É o cálculo de preparar glicose 10% a partir de glicose 5% e 50%, ou salina 3% a partir de soro fisiológico e cloreto de sódio 20%.</p>
+<div class="cx calculo"><b>Exemplo de cálculo</b><p>Salina hipertônica 3% (500 mL) a partir de soro fisiológico 0,9% e NaCl 20%. Meta: 500 mL × 3 g/100 mL = 15 g de NaCl. Seja x o volume de NaCl 20%: 0,2x + 0,009 × (500 − x) = 15 → 0,191x = 10,5 → x = 55 mL. Receita: retirar 55 mL de um frasco de 500 mL de soro fisiológico e acrescentar 55 mL de NaCl 20%. Conferência: 445 × 0,009 = 4 g + 55 × 0,2 = 11 g, total de 15 g em 500 mL, ou 3%.</p></div>
+<div class="cx calculo"><b>Exemplo de cálculo</b><p>Glicose 10% (500 mL) a partir de glicose 5% e 50%. Meta: 50 g. 0,5x + 0,05 × (500 − x) = 50 → 0,45x = 25 → x = 55,6 mL. Na prática, retirar cerca de 55 mL de uma bolsa de glicose 5% de 500 mL e acrescentar 55 mL de glicose 50%: 445 × 0,05 + 55 × 0,5 = 22,3 + 27,5 = 49,8 g em 500 mL, cerca de 10%.</p></div>
+
+<h2>Infusões contínuas: dose ↔ mL/h</h2>
+<h3>Fórmula geral</h3>
+<p>Para doses expressas por peso e por minuto (catecolaminas, nitroprussiato, dobutamina):</p>
+<p><b>mL/h = dose (mcg/kg/min) × peso (kg) × 60 ÷ concentração (mcg/mL)</b></p>
+<p><b>dose (mcg/kg/min) = mL/h × concentração (mcg/mL) ÷ (peso × 60)</b></p>
+<p>Para doses por hora sem peso (fentanil em mcg/h, midazolam em mg/h, insulina em unidades/h), basta dividir a dose horária pela concentração. Para doses por minuto sem peso (vasopressina em unidades/min, noradrenalina em mcg/min em alguns protocolos), multiplica-se por 60 antes de dividir.</p>
+<h3>Noradrenalina: sal e base</h3>
+<p>No Brasil, a ampola de noradrenalina é rotulada como hemitartarato de norepinefrina 2 mg/mL, <b>equivalente a 1 mg/mL de norepinefrina base</b>. A ampola de 4 mL contém 8 mg de sal e 4 mg de base. A literatura e os protocolos misturam as duas formas; comparar doses entre serviços ou com estudos exige saber qual foi usada. O essencial dentro da instituição é que prescrição, rótulo da solução e tabela de infusão usem a mesma forma, declarada por escrito.</p>
+<div class="cx calculo"><b>Exemplo de cálculo</b><p>Solução padrão: 4 ampolas (16 mg de base) em soro glicosado 5% até 250 mL. Concentração: 16.000 mcg ÷ 250 mL = 64 mcg/mL de base. Paciente de 80 kg, dose de 0,2 mcg/kg/min: mL/h = 0,2 × 80 × 60 ÷ 64 = 960 ÷ 64 = 15 mL/h. Cálculo inverso: bomba a 25 mL/h em paciente de 70 kg → dose = 25 × 64 ÷ (70 × 60) = 1.600 ÷ 4.200 = 0,38 mcg/kg/min.</p>
+<p>Se a mesma solução fosse descrita pelo sal (32 mg de hemitartarato em 250 mL = 128 mcg/mL), a bomba a 15 mL/h no paciente de 80 kg corresponderia a "0,4 mcg/kg/min de sal", que é exatamente a mesma quantidade de fármaco. O perigo aparece quando a prescrição é pensada em base e a solução é calculada em sal, ou o contrário: o paciente recebe metade ou o dobro do pretendido.</p></div>
+<h3>Outros exemplos com apresentações usuais</h3>
+<div class="tab"><table><thead><tr><th>Fármaco</th><th>Solução de exemplo</th><th>Concentração</th><th>Dose</th><th>Velocidade</th></tr></thead><tbody>
+<tr><td>Dobutamina (250 mg/20 mL)</td><td>1 ampola + 230 mL SG 5%</td><td>1.000 mcg/mL</td><td>5 mcg/kg/min, 70 kg</td><td>5 × 70 × 60 ÷ 1.000 = 21 mL/h</td></tr>
+<tr><td>Nitroprussiato de sódio (50 mg)</td><td>50 mg em SG 5% até 250 mL</td><td>200 mcg/mL</td><td>0,5 mcg/kg/min, 70 kg</td><td>0,5 × 70 × 60 ÷ 200 = 10,5 mL/h</td></tr>
+<tr><td>Vasopressina (20 unidades/mL)</td><td>1 mL + 99 mL SF 0,9%</td><td>0,2 unidade/mL</td><td>0,03 unidade/min</td><td>0,03 × 60 ÷ 0,2 = 9 mL/h</td></tr>
+<tr><td>Fentanil (50 mcg/mL)</td><td>20 mL + 80 mL SF 0,9%</td><td>10 mcg/mL</td><td>100 mcg/h</td><td>100 ÷ 10 = 10 mL/h</td></tr>
+<tr><td>Midazolam (5 mg/mL)</td><td>30 mL (150 mg) + 120 mL SF 0,9%</td><td>1 mg/mL</td><td>0,05 mg/kg/h, 80 kg</td><td>4 mg/h ÷ 1 = 4 mL/h</td></tr>
+<tr><td>Insulina regular (100 unidades/mL)</td><td>1 mL (100 unidades) + 99 mL SF 0,9%</td><td>1 unidade/mL</td><td>3 unidades/h</td><td>3 mL/h</td></tr>
+<tr><td>Heparina (5.000 unidades/mL)</td><td>5 mL (25.000 unidades) + 245 mL SF 0,9%</td><td>100 unidades/mL</td><td>18 unidades/kg/h, 80 kg</td><td>1.440 ÷ 100 = 14,4 mL/h</td></tr>
+</tbody></table></div>
+<p>As soluções da tabela são exemplos didáticos. Cada instituição padroniza suas concentrações, e a padronização é em si uma medida de segurança, porque permite tabelas prontas e bibliotecas de fármacos nas bombas inteligentes. Para vasopressina, a bula brasileira (Encrise) descreve 1 mL em 49 mL de SG 5% (0,4 unidade/mL), o que dá 4,5 mL/h para 0,03 unidade/min. A heparina no exemplo segue o nomograma por peso de Raschke e colaboradores (1993): bolus de 80 unidades/kg e infusão inicial de 18 unidades/kg/h.</p>
+<div class="cx alerta"><b>Atenção</b><p>Quando o volume do fármaco é relevante em relação ao volume final, "diluir X em 250 mL" é ambíguo: pode significar X + 250 mL (volume final maior) ou completar até 250 mL. Ao padronizar, escreva sempre o volume final. Bolsas comerciais também contêm sobrevolume (enchimento acima do nominal), o que dilui a solução alguns por cento; em fármacos de alta vigilância, prefira retirar o volume correspondente antes de adicionar o fármaco ou usar seringa em bomba.</p></div>
+<div class="cx farma"><b>Na prática do farmacêutico</b><p>Ao auditar uma bomba de infusão na visita, faça o cálculo inverso: parta dos mL/h programados, da concentração escrita no rótulo e do peso de prescrição, e compare a dose resultante com a prescrita. Discrepâncias acima de 10% merecem investigação (peso diferente, concentração não padronizada, troca de solução sem atualizar a bomba). Confirme também se o peso usado na bomba é o mesmo da prescrição, porque o peso do paciente crítico muda com o balanço hídrico.</p></div>
+
+<h2>Miliequivalentes e milimoles</h2>
+<h3>Definições</h3>
+<p>Milimol (mmol) é a quantidade em miligramas dividida pela massa molar. Miliequivalente (mEq) é o milimol multiplicado pela valência do íon. Para íons monovalentes (Na, K, Cl, HCO3), 1 mmol = 1 mEq. Para divalentes (Ca, Mg), 1 mmol = 2 mEq. O fosfato é exceção: sua valência varia com o pH, por isso a reposição de fosfato deve ser prescrita em <b>mmol</b>.</p>
+<div class="cx calculo"><b>Exemplo de cálculo</b><p>Quantos mEq de potássio em 1 mL de KCl 19,1%? 191 mg ÷ 74,55 mg/mmol = 2,56 mmol = 2,56 mEq de K (e 2,56 mEq de Cl). Uma ampola de 10 mL tem 25,6 mEq. Com KCl 10%: 100 mg ÷ 74,55 = 1,34 mEq/mL, ou 13,4 mEq por ampola de 10 mL.</p></div>
+<h3>Apresentações brasileiras de eletrólitos</h3>
+<div class="tab"><table><thead><tr><th>Apresentação</th><th>Conteúdo por mL</th><th>Observação</th></tr></thead><tbody>
+<tr><td>Cloreto de potássio 19,1%</td><td>2,56 mEq de K</td><td>Ampola de 10 mL com 25,6 mEq; alta vigilância</td></tr>
+<tr><td>Cloreto de potássio 10%</td><td>1,34 mEq de K</td><td>Não confundir com 19,1%</td></tr>
+<tr><td>Cloreto de sódio 20%</td><td>3,4 mEq de Na</td><td>Ampola de 10 mL com 34 mEq; alta vigilância</td></tr>
+<tr><td>Cloreto de sódio 0,9%</td><td>0,154 mEq de Na (154 mEq/L)</td><td>Osmolaridade de 308 mOsm/L</td></tr>
+<tr><td>Bicarbonato de sódio 8,4%</td><td>1 mEq de Na e de HCO3</td><td>Solução hipertônica (cerca de 2.000 mOsm/L)</td></tr>
+<tr><td>Sulfato de magnésio 50%</td><td>4 mEq (2 mmol) de Mg</td><td>1 g de MgSO4 = 8,1 mEq = 4 mmol de Mg</td></tr>
+<tr><td>Sulfato de magnésio 10%</td><td>0,8 mEq de Mg</td><td>Não confundir com 50%</td></tr>
+<tr><td>Gluconato de cálcio 10%</td><td>cerca de 0,46 mEq (9,3 mg de cálcio elementar)</td><td>Ampola de 10 mL com cerca de 93 mg de cálcio</td></tr>
+<tr><td>Cloreto de cálcio 10%</td><td>1,36 mEq (27 mg de cálcio elementar)</td><td>Cerca de 3 vezes mais cálcio que o gluconato; lesão grave se extravasar</td></tr>
+<tr><td>Fosfato de potássio 2 mEq/mL</td><td>2 mEq de K e 1,1 mmol de fósforo</td><td>Cada mmol de fósforo traz quase 2 mEq de potássio</td></tr>
+</tbody></table></div>
+<div class="cx calculo"><b>Exemplo de cálculo</b><p>Prescrição de 15 mmol de fosfato com fosfato de potássio 2 mEq/mL. Volume: 15 ÷ 1,1 = 13,6 mL. Potássio contido: 13,6 × 2 = 27 mEq. O paciente que recebe essa reposição recebe também 27 mEq de potássio, o que é perigoso na lesão renal ou quando já há reposição de KCl em curso. Se a necessidade for só de fósforo em paciente com potássio alto, discuta com a equipe uma fonte de fosfato sem potássio disponível na instituição.</p></div>
+<div class="cx calculo"><b>Exemplo de cálculo</b><p>Reposição de 40 mEq de potássio com KCl 19,1%: 40 ÷ 2,56 = 15,6 mL. Se alguém usar por engano a regra da ampola de 10% (1,34 mEq/mL) e aspirar 30 mL de 19,1% pensando em 40 mEq, o paciente recebe 77 mEq. A diluição e a velocidade seguem o protocolo institucional; limites usuais em adultos são de até 10 mEq/h em veia periférica e até 20 mEq/h em acesso central com monitorização cardíaca contínua, e o KCl concentrado nunca é administrado sem diluição.</p></div>
+<div class="cx calculo"><b>Exemplo de cálculo</b><p>Cálcio: 1 g de gluconato de cálcio (10 mL a 10%) fornece cerca de 93 mg de cálcio elementar (4,6 mEq). 1 g de cloreto de cálcio (10 mL a 10%) fornece 273 mg (13,6 mEq). Prescrever "1 ampola de cálcio" sem especificar o sal cria uma diferença de três vezes na dose. Magnésio: 2 g de sulfato de magnésio = 4 mL de MgSO4 50% ou 20 mL de MgSO4 10% = 16,2 mEq = 8,1 mmol de Mg.</p></div>
+
+<h2>Osmolaridade</h2>
+<h3>Cálculo teórico</h3>
+<p>Osmolaridade é o número de partículas osmoticamente ativas por litro de solução. Em aproximação ideal, cada mmol de um soluto que não se dissocia (glicose) gera 1 mOsm; cada mmol de NaCl gera 2 mOsm (Na e Cl); cada mmol de CaCl2, 3 mOsm. O soro fisiológico tem 154 mmol/L de NaCl, portanto 308 mOsm/L. A glicose 5% tem cerca de 250 a 280 mOsm/L, conforme a forma de glicose usada na fórmula; ela é isotônica no frasco, mas, como a glicose é metabolizada, comporta-se como água livre no organismo.</p>
+<div class="cx calculo"><b>Exemplo de cálculo</b><p>500 mL de SF 0,9% + 20 mL de KCl 19,1%. Partículas do soro: 0,5 L × 308 = 154 mOsm. Partículas do KCl: 20 mL × 2,56 mmol/mL × 2 = 102 mOsm. Total: 256 mOsm em 520 mL = 493 mOsm/L. Outro exemplo: salina 3% tem 30 g/L ÷ 58,44 = 513 mmol/L de NaCl, ou cerca de 1.027 mOsm/L. NaCl 20% tem cerca de 6.800 mOsm/L.</p></div>
+<p>A osmolaridade da solução importa para a escolha do acesso. Soluções muito hiperosmolares lesam o endotélio de veias periféricas (flebite, trombose, necrose se extravasarem). Para nutrição parenteral periférica, a ASPEN (Ayers e colaboradores, 2014) limita a osmolaridade a 900 mOsm/L. Para outros fármacos, os limites vêm de protocolos institucionais e das bulas, e os detalhes estão em <i>Estabilidade, compatibilidade e administração intravenosa</i>.</p>
+<h3>Osmolalidade plasmática calculada</h3>
+<p>Com os exames em unidades brasileiras (ureia, e não BUN): <b>Osm calculada = 2 × Na + glicose ÷ 18 + ureia ÷ 6</b> (Na em mEq/L, glicose e ureia em mg/dL). O intervalo osmolar (medida − calculada) acima de cerca de 10 mOsm/kg sugere soluto não medido, como etanol, metanol, etilenoglicol, manitol ou propilenoglicol, este último presente como veículo em formulações intravenosas de fenobarbital e diazepam, e que acumula em infusões prolongadas.</p>
+<div class="cx calculo"><b>Exemplo de cálculo</b><p>Na 140 mEq/L, glicose 180 mg/dL, ureia 60 mg/dL: 2 × 140 + 180 ÷ 18 + 60 ÷ 6 = 280 + 10 + 10 = 300 mOsm/kg. Se a medida for 325 mOsm/kg, o intervalo osmolar é de 25, compatível com soluto não medido.</p></div>
+
+<h2>Velocidade de infusão e gotejamento</h2>
+<p>Com bomba de infusão, a velocidade é programada em mL/h: volume ÷ tempo. Sem bomba, calcula-se o gotejamento:</p>
+<ul>
+<li><b>Macrogotas/min = volume (mL) ÷ (tempo em horas × 3)</b>, porque 20 gotas = 1 mL e 1 hora = 60 minutos.</li>
+<li><b>Microgotas/min = volume (mL) ÷ tempo em horas</b>, ou seja, numericamente igual a mL/h.</li>
+</ul>
+<div class="cx calculo"><b>Exemplo de cálculo</b><p>1.000 mL em 8 horas: 125 mL/h na bomba; sem bomba, 1.000 ÷ (8 × 3) = 41,7, cerca de 42 macrogotas/min. Antimicrobiano de 100 mL em 30 minutos: 200 mL/h. Meropeném em infusão prolongada de 3 horas em 100 mL: 33,3 mL/h.</p></div>
+<p>Na reconstituição de pós liofilizados, o pó ocupa volume (volume de deslocamento). Reconstituir 1 g com 10 mL não gera necessariamente 10 mL de solução a 100 mg/mL; o volume final é um pouco maior. Para doses fracionadas, use a concentração final declarada em bula após reconstituição.</p>
+
+<h2>Peso para cálculo de dose</h2>
+<h3>Pesos de referência</h3>
+<ul>
+<li><b>Peso atual (total)</b>: o medido. No paciente crítico, pode estar inflado por edema.</li>
+<li><b>Peso ideal (Devine, 1974)</b>: homens, 50 + 0,91 × (altura em cm − 152,4); mulheres, 45,5 + 0,91 × (altura em cm − 152,4). É estimativa populacional, não "peso saudável".</li>
+<li><b>Peso ajustado</b>: peso ideal + 0,4 × (peso atual − peso ideal). Usado em obesos para fármacos hidrofílicos que se distribuem parcialmente no tecido adiposo, como os aminoglicosídeos.</li>
+<li><b>Peso seco ou pré-internação</b>: útil quando o peso atual reflete principalmente edema.</li>
+</ul>
+<div class="cx calculo"><b>Exemplo de cálculo</b><p>Homem, 175 cm, 120 kg (IMC de 39,2 kg/m²). Peso ideal = 50 + 0,91 × (175 − 152,4) = 50 + 20,6 = 70,6 kg. Peso ajustado = 70,6 + 0,4 × (120 − 70,6) = 70,6 + 19,8 = 90,4 kg. Gentamicina a 5 mg/kg pelo peso ajustado: 452 mg, cerca de 450 mg. Pelo peso atual seriam 600 mg; pelo ideal, 353 mg. Vancomicina, pelo consenso de 2020, usa peso atual na dose de ataque do obeso (20 a 25 mg/kg, máximo de 3.000 mg): 120 × 20 = 2.400 mg a 120 × 25 = 3.000 mg.</p></div>
+<p>A escolha do peso para cada fármaco varia com sua lipossolubilidade e com a evidência disponível, e está discutida em <i>Obesidade, idosos, gestantes e grandes queimados</i>. A regra de ouro é registrar na prescrição qual peso foi usado.</p>
+
+<h2>Função renal no cálculo de dose</h2>
+<h3>CKD-EPI 2021 e desindexação</h3>
+<p>A equação CKD-EPI 2021, sem coeficiente de raça (Inker e colaboradores, 2021), é o padrão para estimar a TFG. Ela devolve o resultado em mL/min/1,73 m², normalizado para uma superfície corporal padrão. Para dose de fármaco, a KDIGO 2024 orienta usar a TFG não indexada, em mL/min, sobretudo em pacientes com tamanho corporal muito diferente da média: TFG em mL/min = TFG indexada × superfície corporal ÷ 1,73. Bulas e tabelas antigas foram construídas com Cockcroft-Gault (Cockcroft e Gault, 1976), que estima a depuração de creatinina em mL/min: (140 − idade) × peso ÷ (72 × creatinina), multiplicado por 0,85 em mulheres.</p>
+<div class="cx calculo"><b>Exemplo de cálculo</b><p>Mulher de 70 anos, 60 kg, 160 cm, creatinina de 1,2 mg/dL, estável. CKD-EPI 2021 (mulher: κ = 0,7; α = −0,241): creatinina ÷ κ = 1,714; o termo máximo vale 1,714<sup>−1,200</sup> = 0,524; o termo de idade vale 0,9938<sup>70</sup> = 0,647. TFG = 142 × 0,524 × 0,647 × 1,012 = 49 mL/min/1,73 m². Superfície corporal (Mosteller) = √(160 × 60 ÷ 3.600) = 1,63 m². TFG não indexada = 49 × 1,63 ÷ 1,73 = 46 mL/min. Cockcroft-Gault = (140 − 70) × 60 ÷ (72 × 1,2) × 0,85 = 41 mL/min. As estimativas caem na mesma faixa de ajuste para a maioria dos fármacos. Em pacientes com creatinina instável, nenhuma das duas vale, como discutido em <i>Farmacocinética no paciente crítico</i>.</p></div>
+
+<h2>Armadilhas de unidade</h2>
+<div class="tab"><table><thead><tr><th>Armadilha</th><th>Erro gerado</th><th>Prevenção</th></tr></thead><tbody>
+<tr><td>mg × mcg</td><td>1.000 vezes</td><td>"mcg" por extenso; conferência de ordem de grandeza</td></tr>
+<tr><td>Dose por minuto programada como por hora</td><td>60 vezes a menos (ou a mais, no erro inverso)</td><td>Fórmula com unidades explícitas; bomba com biblioteca de fármacos</td></tr>
+<tr><td>Dose por kg aplicada como dose total</td><td>Fator igual ao peso</td><td>Escrever "mcg/kg/min" completo na prescrição e no rótulo</td></tr>
+<tr><td>Sal × base (noradrenalina)</td><td>2 vezes</td><td>Declarar a forma na prescrição, no rótulo e na tabela</td></tr>
+<tr><td>KCl 10% × 19,1%; MgSO4 10% × 50%</td><td>1,9 a 5 vezes</td><td>Prescrever em mEq ou em gramas do sal, nunca em "ampolas"</td></tr>
+<tr><td>Gluconato × cloreto de cálcio</td><td>3 vezes</td><td>Prescrever o sal e a dose em gramas ou mEq</td></tr>
+<tr><td>Fosfato em mEq</td><td>Dose de fósforo imprevisível</td><td>Prescrever fosfato em mmol</td></tr>
+<tr><td>Adrenalina 1:1.000 × 1:10.000</td><td>10 vezes</td><td>Expressar em mg/mL</td></tr>
+<tr><td>"U" para unidades</td><td>Lido como 0 ou 4: 10 vezes ou mais</td><td>"unidades" por extenso (ISMP, 2024)</td></tr>
+<tr><td>Zero à direita (5,0 mg) ou vírgula sem zero à esquerda (,5 mg)</td><td>10 vezes</td><td>5 mg; 0,5 mg</td></tr>
+</tbody></table></div>
+<div class="cx farma"><b>Na prática do farmacêutico</b><p>Prescrições de eletrólitos em "ampolas" ("KCl 2 ampolas", "gluconato 1 ampola") devem ser convertidas para unidades inequívocas, com o sal e a concentração explícitos, em conjunto com o prescritor. O farmacêutico também ajuda muito ao manter uma tabela institucional de concentrações padronizadas, com a velocidade correspondente a cada dose por peso, validada por dupla checagem, e ao revisá-la sempre que muda o fornecedor ou a apresentação de uma ampola.</p></div>
+
+<h2>Erros frequentes</h2>
+<ul>
+<li>Calcular solução de noradrenalina pelo sal e prescrever a dose pensando em base.</li>
+<li>Usar a concentração de KCl 10% no cálculo com a ampola de 19,1% em mãos.</li>
+<li>Prescrever fosfato de potássio em mEq de fosfato e esquecer o potássio que vem junto.</li>
+<li>Programar a bomba em mcg/kg/h quando a prescrição é em mcg/kg/min.</li>
+<li>Usar peso atual inflado por edema em fármaco hidrofílico de janela estreita, ou peso ideal em dose de ataque de vancomicina.</li>
+<li>Escrever "diluir em 250 mL" sem definir o volume final.</li>
+<li>Calcular Cockcroft-Gault ou CKD-EPI com creatinina em subida rápida e tratar o resultado como função renal real.</li>
+<li>Prescrever "1 ampola de cálcio" sem o sal.</li>
+</ul>
+
+<h2>Perguntas de revisão</h2>
+<details class="rev"><summary>Quantos mg/mL há em uma solução a 0,5%?</summary><p>0,5% = 0,5 g/100 mL = 5 mg/mL (regra prática: porcentagem × 10).</p></details>
+<details class="rev"><summary>Noradrenalina 64 mcg/mL de base, paciente de 90 kg, 0,1 mcg/kg/min. Qual a velocidade?</summary><p>0,1 × 90 × 60 ÷ 64 = 540 ÷ 64 = 8,4 mL/h.</p></details>
+<details class="rev"><summary>Dobutamina 1.000 mcg/mL correndo a 30 mL/h em paciente de 75 kg. Qual a dose?</summary><p>30 × 1.000 ÷ (75 × 60) = 30.000 ÷ 4.500 = 6,7 mcg/kg/min.</p></details>
+<details class="rev"><summary>Quantos mL de KCl 19,1% contêm 20 mEq de potássio?</summary><p>20 ÷ 2,56 = 7,8 mL.</p></details>
+<details class="rev"><summary>Quanto potássio acompanha 10 mmol de fósforo prescritos como fosfato de potássio 2 mEq/mL?</summary><p>10 ÷ 1,1 = 9,1 mL; 9,1 × 2 = 18 mEq de potássio.</p></details>
+<details class="rev"><summary>Qual a osmolaridade aproximada da salina 3%?</summary><p>30 g/L ÷ 58,44 = 513 mmol/L de NaCl; × 2 partículas = cerca de 1.027 mOsm/L.</p></details>
+<details class="rev"><summary>Homem de 180 cm: qual o peso ideal de Devine?</summary><p>50 + 0,91 × (180 − 152,4) = 50 + 25,1 = 75,1 kg.</p></details>
+<details class="rev"><summary>Como desindexar uma TFG de 60 mL/min/1,73 m² em paciente com superfície corporal de 2,2 m²?</summary><p>60 × 2,2 ÷ 1,73 = 76 mL/min. Em paciente grande, a TFG não indexada é maior que a indexada.</p></details>
+
+<section class="fontes"><h2>Referências</h2><ol>
+<li>Institute for Safe Medication Practices. ISMP List of Error-Prone Abbreviations, Symbols, and Dose Designations. 2024.</li>
+<li>Ayers P, Adams S, Boullata J, et al. A.S.P.E.N. parenteral nutrition safety consensus recommendations. JPEN J Parenter Enteral Nutr. 2014;38(3):296-333.</li>
+<li>Inker LA, Eneanya ND, Coresh J, et al. New creatinine- and cystatin C-based equations to estimate GFR without race. N Engl J Med. 2021;385(19):1737-1749.</li>
+<li>Kidney Disease: Improving Global Outcomes (KDIGO) CKD Work Group. KDIGO 2024 Clinical Practice Guideline for the Evaluation and Management of Chronic Kidney Disease. Kidney Int. 2024;105(4S):S117-S314.</li>
+<li>Cockcroft DW, Gault MH. Prediction of creatinine clearance from serum creatinine. Nephron. 1976;16(1):31-41.</li>
+<li>Devine BJ. Gentamicin therapy. Drug Intell Clin Pharm. 1974;8:650-655.</li>
+<li>Mosteller RD. Simplified calculation of body-surface area. N Engl J Med. 1987;317(17):1098.</li>
+<li>Raschke RA, Reilly BM, Guidry JR, et al. The weight-based heparin dosing nomogram compared with a "standard care" nomogram: a randomized controlled trial. Ann Intern Med. 1993;119(9):874-881.</li>
+<li>Rybak MJ, Le J, Lodise TP, et al. Therapeutic monitoring of vancomycin for serious MRSA infections: a revised consensus guideline and review by ASHP, IDSA, PIDS and SIDP. Am J Health Syst Pharm. 2020;77(11):835-864.</li>
+<li>Bulas registradas na ANVISA: hemitartarato de norepinefrina 2 mg/mL (Hypofarma; Epikabi, Fresenius Kabi), Encrise (vasopressina 20 unidades/mL, Biolab), fosfato de potássio 2 mEq/mL (Isofarma; VMG).</li>
+</ol></section>

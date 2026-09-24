@@ -1,0 +1,1530 @@
+{
+ "leituras": [
+  {
+   "slug": "hemodinamica-choque",
+   "titulo": "Hemodinâmica e choque",
+   "dek": "Determinantes do débito cardíaco e da pressão arterial, oferta e consumo de oxigênio, lactato, perfis hemodinâmicos do choque e avaliação da fluidorresponsividade, com o ponto de ação de cada classe de fármaco. Baseado na Surviving Sepsis Campaign 2026, no rascunho KDIGO 2026 de LRA e nos ensaios de ressuscitação CLASSIC, CLOVERS e ANDROMEDA-SHOCK.",
+   "palavras": 4316,
+   "fontes": [
+    "Surviving Sepsis Campaign 2026 (Prescott et al., Crit Care Med 2026)",
+    "KDIGO 2026 AKI/AKD, rascunho de consulta pública (mar/2026)",
+    "ANDROMEDA-SHOCK (Hernández et al., JAMA 2019)",
+    "CLASSIC (Meyhoff et al., NEJM 2022)",
+    "CLOVERS (PETAL Network, NEJM 2023)",
+    "Monnet, Marik e Teboul, Ann Intensive Care 2016"
+   ]
+  },
+  {
+   "slug": "fisiologia-respiratoria-vm",
+   "titulo": "Fisiologia respiratória e ventilação mecânica",
+   "dek": "Troca gasosa, relação ventilação-perfusão, mecânica respiratória, modos ventilatórios básicos, PEEP, SDRA e ventilação protetora, desmame e o que tudo isso muda para sedação, bloqueio neuromuscular e aerossolterapia no circuito. Baseado na definição global de SDRA (Matthay, 2024), nas diretrizes ESICM 2023 e ATS 2024 de SDRA, na atualização PADIS 2025 e na revisão de Dhand (2017) sobre aerossóis na ventilação invasiva.",
+   "palavras": 4004,
+   "fontes": [
+    "Definição global de SDRA (Matthay et al., AJRCCM 2024)",
+    "ESICM 2023 SDRA (Grasselli et al., Intensive Care Med 2023)",
+    "ATS 2024 SDRA (Qadir et al., AJRCCM 2024)",
+    "SCCM 2024 corticoides (Chaudhuri et al., Crit Care Med 2024)",
+    "PADIS 2025 (Lewis et al., Crit Care Med 2025)",
+    "Dhand, Respir Care 2017",
+    "ESCMID 2017 antimicrobianos nebulizados (Rello et al.)"
+   ]
+  },
+  {
+   "slug": "fisiologia-renal-lra",
+   "titulo": "Fisiologia renal e lesão renal aguda",
+   "dek": "Filtração, secreção e reabsorção tubular de fármacos, autorregulação renal, definição e estadiamento da lesão renal aguda, causas, nefrotoxicidade por medicamentos e contraste, biomarcadores e limitações da creatinina no crítico. Baseado na diretriz KDIGO 2012, no rascunho KDIGO 2026 de LRA e doença renal aguda (consulta pública de março de 2026) e no consenso ACR-NKF 2020 sobre contraste iodado.",
+   "palavras": 3815,
+   "fontes": [
+    "KDIGO AKI 2012",
+    "KDIGO 2026 AKI/AKD, rascunho de consulta pública (mar/2026)",
+    "KDIGO 2024 DRC",
+    "CKD-EPI 2021 (Inker et al., NEJM 2021)",
+    "ACR-NKF 2020 contraste (Davenport et al., Radiology 2020)",
+    "ACORN (Qian et al., JAMA 2023)",
+    "Chawla et al., Crit Care 2013",
+    "STARRT-AKI (NEJM 2020)"
+   ]
+  },
+  {
+   "slug": "acido-base",
+   "titulo": "Equilíbrio ácido-base e gasometria",
+   "dek": "Interpretação sistemática da gasometria, compensações esperadas, ânion gap e delta, acidoses láctica, cetótica e hiperclorêmica, alcaloses, causas medicamentosas, uso racional do bicarbonato de sódio e a abordagem de Stewart em linhas gerais. Baseado nos ensaios BICAR-ICU (2018) e BICARICU-2 (2025), na Surviving Sepsis Campaign 2026, no rascunho KDIGO 2026 de LRA e no consenso de crises hiperglicêmicas de 2024.",
+   "palavras": 3806,
+   "fontes": [
+    "BICAR-ICU (Jaber et al., Lancet 2018)",
+    "BICARICU-2 (Jung et al., JAMA 2025)",
+    "Surviving Sepsis Campaign 2026",
+    "KDIGO 2026 AKI/AKD, rascunho (mar/2026)",
+    "Consenso de crises hiperglicêmicas (Umpierrez et al., Diabetes Care 2024)",
+    "SMART (Semler et al., NEJM 2018)",
+    "DIABOLO (Faisy et al., JAMA 2016)"
+   ]
+  },
+  {
+   "slug": "eletrolitos",
+   "titulo": "Distúrbios hidroeletrolíticos e reposição",
+   "dek": "Água corporal e tonicidade, distúrbios de sódio com correção segura, potássio, magnésio, fósforo e cálcio, reposições intravenosas com concentrações e velocidades máximas, escolha entre via periférica e central e causas medicamentosas. Baseado na diretriz europeia de hiponatremia (2014), nas recomendações do painel norte-americano (2013), no ensaio SALSA (2021), na conferência KDIGO sobre discalemias (2020), no consenso ASPEN de síndrome de realimentação (2020) e nas bulas brasileiras dos eletrólitos concentrados.",
+   "palavras": 4145,
+   "fontes": [
+    "Diretriz europeia de hiponatremia (Spasovski et al., Eur J Endocrinol 2014)",
+    "Painel norte-americano (Verbalis et al., Am J Med 2013)",
+    "SALSA (Baek et al., JAMA Intern Med 2021)",
+    "KDIGO Controversies Conference discalemias (Clase et al., Kidney Int 2020)",
+    "ASPEN realimentação (da Silva et al., Nutr Clin Pract 2020)",
+    "IMSN 2020, potássio intravenoso",
+    "Bulas brasileiras de fosfato de potássio 2 mEq/mL (2023-2025)"
+   ]
+  },
+  {
+   "slug": "figado-coagulacao",
+   "titulo": "Fígado, coagulação e hemostasia no paciente crítico",
+   "dek": "Funções do fígado que importam para a farmacoterapia, padrões de lesão hepática, escores de Child-Pugh e MELD, modelo celular da hemostasia, interpretação de TP/INR, TTPa, fibrinogênio e plaquetas, coagulação intravascular disseminada, trombocitopenia na UTI com ênfase na trombocitopenia induzida por heparina e testes viscoelásticos. Baseado na diretriz ASH 2018 de trombocitopenia induzida por heparina, na diretriz AABB/ICTMG 2025 de transfusão de plaquetas, nos escores ISTH de CIVD (2001) e de coagulopatia induzida por sepse (2019) e no MELD 3.0 (2021).",
+   "palavras": 3583,
+   "fontes": [
+    "ASH 2018 TIH (Cuker et al., Blood Adv 2018)",
+    "Escore 4T (Lo et al., J Thromb Haemost 2006)",
+    "AABB/ICTMG 2025 plaquetas (Metcalf et al., JAMA 2025)",
+    "ISTH CIVD (Taylor et al., Thromb Haemost 2001)",
+    "Coagulopatia induzida por sepse (Iba et al., J Thromb Haemost 2019)",
+    "Modelo celular (Hoffman e Monroe, Thromb Haemost 2001)",
+    "MELD 3.0 (Kim et al., Gastroenterology 2021)"
+   ]
+  },
+  {
+   "slug": "endocrino-metabolico",
+   "titulo": "Resposta metabólica ao estresse, glicemia e eixo adrenal",
+   "dek": "Resposta neuroendócrina e metabólica ao estresse, catabolismo, hiperglicemia de estresse e hipoglicemia, alvos glicêmicos atuais na UTI, insuficiência adrenal relacionada à doença crítica, uso de corticoide no choque séptico e na pneumonia grave e tireoide do doente crítico. Baseado nos Standards of Care da ADA 2026 (seção 16), na Surviving Sepsis Campaign 2026, na diretriz SCCM/ESICM de CIRCI (2017), na atualização focada SCCM 2024 de corticoides e nos ensaios NICE-SUGAR, TGC-fast, ADRENAL e APROCCHSS.",
+   "palavras": 3590,
+   "fontes": [
+    "ADA Standards of Care 2026, seção 16",
+    "Surviving Sepsis Campaign 2026",
+    "SCCM/ESICM CIRCI 2017 (Annane et al.)",
+    "SCCM 2024 corticoides (Chaudhuri et al.)",
+    "NICE-SUGAR (NEJM 2009)",
+    "TGC-fast (Gunst et al., NEJM 2023)",
+    "ADRENAL e APROCCHSS (NEJM 2018)",
+    "CAPE COD (Dequin et al., NEJM 2023)",
+    "ESPEN 2023 UTI",
+    "EFFORT Protein (Heyland et al., Lancet 2023)"
+   ]
+  }
+ ],
+ "cartoes": [
+  {
+   "leitura": "hemodinamica-choque",
+   "frente": "Qual equação relaciona pressão arterial média, débito cardíaco e resistência vascular sistêmica?",
+   "verso": "PAM − PVC = DC × RVS. Como DC = FC × VS, toda hipotensão resulta de queda da frequência, do volume sistólico ou da resistência."
+  },
+  {
+   "leitura": "hemodinamica-choque",
+   "frente": "Quais são os três determinantes do volume sistólico?",
+   "verso": "Pré-carga (estiramento diastólico final), pós-carga (tensão de parede necessária para ejetar) e contratilidade."
+  },
+  {
+   "leitura": "hemodinamica-choque",
+   "frente": "Como a norepinefrina aumenta o retorno venoso?",
+   "verso": "A venoconstrição alfa-1 converte volume não estressado em estressado, eleva a pressão média de enchimento sistêmico e aumenta o retorno venoso e a pré-carga."
+  },
+  {
+   "leitura": "hemodinamica-choque",
+   "frente": "Qual a fórmula da oferta de oxigênio (DO₂)?",
+   "verso": "DO₂ = DC × CaO₂ × 10, com CaO₂ = 1,34 × Hb × SaO₂ + 0,003 × PaO₂. Valor normal em torno de 1.000 mL/min."
+  },
+  {
+   "leitura": "hemodinamica-choque",
+   "frente": "ScvO₂ acima de 70% afasta hipoperfusão no choque séptico?",
+   "verso": "Não. A disfunção microcirculatória e mitocondrial impede a extração de O₂; a ScvO₂ fica normal ou alta com lactato elevado. Avaliar TEC, Pcv-aCO₂ e tendência do lactato."
+  },
+  {
+   "leitura": "hemodinamica-choque",
+   "frente": "Por que a epinefrina eleva o lactato?",
+   "verso": "Por estímulo beta-2, que acelera a glicólise aeróbia no músculo (hiperlactatemia tipo B). Não indica, por si, piora da perfusão."
+  },
+  {
+   "leitura": "hemodinamica-choque",
+   "frente": "Cite fármacos que causam hiperlactatemia tipo B.",
+   "verso": "Metformina, linezolida prolongada, propofol em dose alta, epinefrina e salbutamol, nitroprussiato (cianeto), propilenoglicol (diazepam, fenobarbital, etomidato) e análogos de nucleosídeo."
+  },
+  {
+   "leitura": "hemodinamica-choque",
+   "frente": "Qual o perfil hemodinâmico do choque cardiogênico?",
+   "verso": "Débito baixo, RVS alta, pressões de enchimento altas e ScvO₂ baixa."
+  },
+  {
+   "leitura": "hemodinamica-choque",
+   "frente": "Qual o perfil hemodinâmico do choque séptico típico?",
+   "verso": "RVS baixa, débito normal ou alto (baixo se houver cardiomiopatia séptica), pressões de enchimento baixas ou normais e ScvO₂ normal ou alta."
+  },
+  {
+   "leitura": "hemodinamica-choque",
+   "frente": "O que define fluidorresponsividade?",
+   "verso": "Aumento do volume sistólico ou do débito de pelo menos 10% a 15% após 250 a 500 mL de cristaloide, ou de pelo menos 10% no débito após elevação passiva das pernas."
+  },
+  {
+   "leitura": "hemodinamica-choque",
+   "frente": "Quais condições invalidam a variação da pressão de pulso?",
+   "verso": "Respiração espontânea, volume corrente abaixo de 8 mL/kg, arritmia, tórax aberto e hipertensão intra-abdominal."
+  },
+  {
+   "leitura": "hemodinamica-choque",
+   "frente": "Qual o alvo inicial de PAM no choque séptico segundo a Surviving Sepsis Campaign 2026?",
+   "verso": "65 mmHg, em vez de alvos mais altos (recomendação forte, certeza moderada)."
+  },
+  {
+   "leitura": "hemodinamica-choque",
+   "frente": "O que a Surviving Sepsis Campaign 2026 diz sobre o tipo de fluido?",
+   "verso": "Cristaloide como primeira linha (forte); balanceado em vez de SF 0,9% (condicional, moderada); cristaloide isolado em vez de associado à albumina, que pode caber após grandes volumes e em cirróticos."
+  },
+  {
+   "leitura": "hemodinamica-choque",
+   "frente": "Hemitartarato de norepinefrina 2 mg/mL corresponde a quanto de base?",
+   "verso": "Cerca de 1 mg/mL, porque a massa molar do sal mono-hidratado é o dobro da base. Padronize a unidade na prescrição e no prontuário."
+  },
+  {
+   "leitura": "fisiologia-respiratoria-vm",
+   "frente": "Qual é a equação do gás alveolar?",
+   "verso": "PAO₂ = FiO₂ × (Patm − PH₂O) − PaCO₂/0,8. Ao nível do mar, Patm 760 e PH₂O 47 mmHg."
+  },
+  {
+   "leitura": "fisiologia-respiratoria-vm",
+   "frente": "Quais mecanismos de hipoxemia têm gradiente alvéolo-arterial normal?",
+   "verso": "Hipoventilação e FiO₂ inspirada baixa. V/Q baixo, shunt e distúrbio de difusão aumentam o gradiente."
+  },
+  {
+   "leitura": "fisiologia-respiratoria-vm",
+   "frente": "Por que a hipoxemia do shunt responde mal ao aumento da FiO₂?",
+   "verso": "O sangue passa por alvéolos não ventilados e não entra em contato com o O₂ adicional. Trata-se abrindo alvéolos (PEEP, prona) e reduzindo o edema."
+  },
+  {
+   "leitura": "fisiologia-respiratoria-vm",
+   "frente": "Como calcular complacência estática e driving pressure?",
+   "verso": "Complacência = volume corrente / (platô − PEEP). Driving pressure = platô − PEEP; acima de 15 cmH₂O associa-se a pior prognóstico na SDRA."
+  },
+  {
+   "leitura": "fisiologia-respiratoria-vm",
+   "frente": "Pressão de pico alta com platô normal indica o quê?",
+   "verso": "Aumento de resistência das vias aéreas ou do tubo: broncoespasmo, secreção, tubo dobrado ou mordido."
+  },
+  {
+   "leitura": "fisiologia-respiratoria-vm",
+   "frente": "Qual a fórmula do peso predito para ventilação protetora?",
+   "verso": "Homens: 50 + 0,91 × (altura em cm − 152,4). Mulheres: 45,5 + 0,91 × (altura em cm − 152,4)."
+  },
+  {
+   "leitura": "fisiologia-respiratoria-vm",
+   "frente": "Quais os critérios de oxigenação da definição global de SDRA em não intubados?",
+   "verso": "PaO₂/FiO₂ ≤ 300 ou SpO₂/FiO₂ ≤ 315 (com SpO₂ ≤ 97%), em alto fluxo ≥ 30 L/min ou VNI/CPAP ≥ 5 cmH₂O."
+  },
+  {
+   "leitura": "fisiologia-respiratoria-vm",
+   "frente": "Qual volume corrente a ESICM 2023 recomenda na SDRA?",
+   "verso": "4 a 8 mL/kg de peso predito (recomendação forte), com 6 mL/kg como ponto de partida usual e platô até 30 cmH₂O."
+  },
+  {
+   "leitura": "fisiologia-respiratoria-vm",
+   "frente": "Quando indicar posição prona na SDRA?",
+   "verso": "SDRA moderada a grave, sobretudo com PaO₂/FiO₂ abaixo de 150, em sessões de pelo menos 12 a 16 horas (no PROSEVA, cerca de 17 horas)."
+  },
+  {
+   "leitura": "fisiologia-respiratoria-vm",
+   "frente": "O que a atualização PADIS 2025 sugere sobre dexmedetomidina e propofol?",
+   "verso": "Sugere dexmedetomidina em vez de propofol quando sedação leve e redução de delirium são prioridades (condicional); ambos preferidos a benzodiazepínicos."
+  },
+  {
+   "leitura": "fisiologia-respiratoria-vm",
+   "frente": "Quais fatores potencializam bloqueadores neuromusculares?",
+   "verso": "Aminoglicosídeos, polimixinas, clindamicina, hipermagnesemia, hipocalemia, acidose e hipotermia."
+  },
+  {
+   "leitura": "fisiologia-respiratoria-vm",
+   "frente": "Por que remover o HME durante a nebulização no ventilador?",
+   "verso": "O filtro trocador de calor e umidade retém o aerossol, e o fármaco não chega às vias aéreas do paciente."
+  },
+  {
+   "leitura": "fisiologia-respiratoria-vm",
+   "frente": "Qual a desvantagem do nebulizador a jato acoplado ao circuito?",
+   "verso": "Acrescenta fluxo ao circuito, altera o volume corrente e a sensibilidade de disparo e tem menor eficiência que o nebulizador de malha vibratória."
+  },
+  {
+   "leitura": "fisiologia-respiratoria-vm",
+   "frente": "Como prevenir estridor pós-extubação em paciente de alto risco?",
+   "verso": "Metilprednisolona 20 mg IV a cada 4 horas, iniciada 12 horas antes da extubação (4 doses), se teste de vazamento negativo (François, Lancet 2007)."
+  },
+  {
+   "leitura": "fisiologia-renal-lra",
+   "frente": "Como a trimetoprima altera a creatinina?",
+   "verso": "Inibe OCT2 e MATE e reduz a secreção tubular de creatinina: ela sobe 10% a 30% sem queda real da TFG."
+  },
+  {
+   "leitura": "fisiologia-renal-lra",
+   "frente": "Qual o papel das prostaglandinas e da angiotensina II na filtração em baixo fluxo?",
+   "verso": "Prostaglandinas dilatam a arteríola aferente; angiotensina II contrai a eferente. AINE e IECA/BRA retiram essas defesas."
+  },
+  {
+   "leitura": "fisiologia-renal-lra",
+   "frente": "O que é o \"triplo golpe\" renal?",
+   "verso": "Associação de AINE, IECA ou BRA e diurético, que remove as defesas da filtração e reduz o volume circulante, precipitando LRA."
+  },
+  {
+   "leitura": "fisiologia-renal-lra",
+   "frente": "Quais os critérios KDIGO 2012 de LRA?",
+   "verso": "Aumento de creatinina ≥ 0,3 mg/dL em 48 horas, ≥ 1,5 vez o basal em 7 dias, ou diurese < 0,5 mL/kg/h por 6 horas."
+  },
+  {
+   "leitura": "fisiologia-renal-lra",
+   "frente": "O que o rascunho KDIGO 2026 acrescenta à definição de LRA?",
+   "verso": "Cistatina C ≥ 1,5 vez em 7 dias, biomarcador de dano como critério estrutural (B0/B1), diurese pelo peso ideal e distinção entre LRA transitória e persistente."
+  },
+  {
+   "leitura": "fisiologia-renal-lra",
+   "frente": "O que é doença renal aguda (DRA) no rascunho KDIGO 2026?",
+   "verso": "Alterações funcionais ou estruturais renais com duração de até 3 meses, situadas entre a LRA e a doença renal crônica."
+  },
+  {
+   "leitura": "fisiologia-renal-lra",
+   "frente": "Por que a TFG estimada superestima a função logo após uma LRA?",
+   "verso": "A creatinina leva 24 a 72 horas para atingir o novo equilíbrio, e as equações assumem estado estável."
+  },
+  {
+   "leitura": "fisiologia-renal-lra",
+   "frente": "Como desindexar a TFG para ajuste de dose?",
+   "verso": "TFG em mL/min = TFG indexada × superfície corporal / 1,73."
+  },
+  {
+   "leitura": "fisiologia-renal-lra",
+   "frente": "O que é depuração renal aumentada e por que importa?",
+   "verso": "Depuração de creatinina acima de cerca de 130 mL/min/1,73 m², comum em jovens, trauma, TCE, queimados e sepse inicial. Causa subexposição a betalactâmicos e vancomicina."
+  },
+  {
+   "leitura": "fisiologia-renal-lra",
+   "frente": "Qual a profilaxia de LRA associada a contraste em alto risco segundo o rascunho KDIGO 2026?",
+   "verso": "SF 0,9% periprocedimento em quem não tem sobrecarga de volume (1B). N-acetilcisteína e bicarbonato sem benefício consistente."
+  },
+  {
+   "leitura": "fisiologia-renal-lra",
+   "frente": "Como manejar metformina antes de contraste iodado?",
+   "verso": "TFG > 30 sem LRA: manter. LRA ou TFG ≤ 30: suspender no exame e reintroduzir após pelo menos 48 horas, com função estável."
+  },
+  {
+   "leitura": "fisiologia-renal-lra",
+   "frente": "Como se faz o teste de estresse com furosemida?",
+   "verso": "Furosemida 1 mg/kg IV (1,5 mg/kg se já exposto); diurese < 200 mL em 2 horas prediz progressão para estágio 3. Não fazer em hipovolêmicos."
+  },
+  {
+   "leitura": "fisiologia-renal-lra",
+   "frente": "Dopamina em dose baixa protege o rim?",
+   "verso": "Não. O rascunho KDIGO 2026 recomenda contra seu uso para proteção renal (1A)."
+  },
+  {
+   "leitura": "fisiologia-renal-lra",
+   "frente": "A dose de ataque deve ser reduzida na LRA?",
+   "verso": "Não. Depende do volume de distribuição, que não cai e costuma aumentar na sepse; ajusta-se a manutenção."
+  },
+  {
+   "leitura": "acido-base",
+   "frente": "Qual a fórmula de Winter?",
+   "verso": "PaCO₂ esperada = 1,5 × HCO₃⁻ + 8 (± 2) na acidose metabólica. Fora da faixa, há distúrbio respiratório associado."
+  },
+  {
+   "leitura": "acido-base",
+   "frente": "Como corrigir o ânion gap pela albumina?",
+   "verso": "AG corrigido = AG medido + 2,5 × (4 − albumina em g/dL)."
+  },
+  {
+   "leitura": "acido-base",
+   "frente": "O que indica razão delta (ΔAG/ΔHCO₃⁻) abaixo de 1?",
+   "verso": "Acidose hiperclorêmica associada à acidose com AG elevado (por exemplo, diarreia ou soro fisiológico em grande volume)."
+  },
+  {
+   "leitura": "acido-base",
+   "frente": "O que indica razão delta acima de 2?",
+   "verso": "Alcalose metabólica associada (vômito, sonda gástrica, diurético) ou acidose respiratória crônica compensada."
+  },
+  {
+   "leitura": "acido-base",
+   "frente": "Quais os critérios de cetoacidose diabética no consenso de 2024?",
+   "verso": "Glicemia ≥ 200 mg/dL ou diabetes conhecido; beta-hidroxibutirato ≥ 3,0 mmol/L; pH < 7,30 e/ou bicarbonato < 18 mmol/L."
+  },
+  {
+   "leitura": "acido-base",
+   "frente": "Quando usar bicarbonato na cetoacidose diabética (consenso 2024)?",
+   "verso": "Apenas se o pH estiver abaixo de 7,0."
+  },
+  {
+   "leitura": "acido-base",
+   "frente": "Cite causas medicamentosas de acidose com ânion gap normal.",
+   "verso": "SF 0,9% em grande volume, acetazolamida e topiramato, anfotericina B (acidose tubular distal), trimetoprima e espironolactona (tipo 4)."
+  },
+  {
+   "leitura": "acido-base",
+   "frente": "O que é acidose piroglutâmica?",
+   "verso": "Acidose com AG alto por 5-oxoprolina, associada a paracetamol crônico com depleção de glutationa, agravada por sepse, desnutrição e flucloxacilina."
+  },
+  {
+   "leitura": "acido-base",
+   "frente": "Quais os fatores de manutenção da alcalose metabólica?",
+   "verso": "Contração de volume, depleção de cloreto, hipocalemia e excesso de mineralocorticoide."
+  },
+  {
+   "leitura": "acido-base",
+   "frente": "Qual o resultado do BICARICU-2?",
+   "verso": "Em acidemia grave com LRA estágio 2 ou 3, bicarbonato não mudou a mortalidade de 90 dias, mas reduziu a terapia renal substitutiva (35% contra 50%)."
+  },
+  {
+   "leitura": "acido-base",
+   "frente": "O que a Surviving Sepsis Campaign 2026 sugere sobre bicarbonato?",
+   "verso": "Bicarbonato no choque séptico com pH ≤ 7,2 e LRA (condicional, certeza muito baixa)."
+  },
+  {
+   "leitura": "acido-base",
+   "frente": "Por que o bicarbonato pode piorar o paciente mal ventilado?",
+   "verso": "Gera CO₂, que atravessa membranas e acidifica o intracelular e o liquor se a ventilação não aumentar."
+  },
+  {
+   "leitura": "acido-base",
+   "frente": "Qual a diferença de íons fortes do SF 0,9% e sua consequência?",
+   "verso": "Zero. Em grande volume, dilui a SID plasmática (cerca de 40 mEq/L) e causa acidose metabólica hiperclorêmica."
+  },
+  {
+   "leitura": "acido-base",
+   "frente": "Gap osmolar alto com ânion gap alto sugere o quê?",
+   "verso": "Álcoois tóxicos (metanol, etilenoglicol) ou propilenoglicol. Gap osmolar acima de cerca de 10 mOsm/kg."
+  },
+  {
+   "leitura": "eletrolitos",
+   "frente": "Qual o bolus inicial na hiponatremia com sintomas graves segundo a diretriz europeia de 2014?",
+   "verso": "NaCl 3% 150 mL em 20 minutos, repetido até 2 vezes, com meta de elevar cerca de 5 mEq/L na primeira hora."
+  },
+  {
+   "leitura": "eletrolitos",
+   "frente": "Quais os limites de correção da hiponatremia crônica na diretriz europeia de 2014?",
+   "verso": "Até 10 mEq/L nas primeiras 24 horas e 8 mEq/L a cada 24 horas seguintes."
+  },
+  {
+   "leitura": "eletrolitos",
+   "frente": "Quais pacientes têm alto risco de desmielinização osmótica?",
+   "verso": "Sódio ≤ 105 mEq/L, hipocalemia, alcoolismo, desnutrição e hepatopatia avançada. Limite de 8 mEq/L em 24 horas."
+  },
+  {
+   "leitura": "eletrolitos",
+   "frente": "Qual a fórmula de Adrogué-Madias?",
+   "verso": "Variação do sódio por litro infundido = (Na da solução − Na sérico) / (água corporal total + 1)."
+  },
+  {
+   "leitura": "eletrolitos",
+   "frente": "Como preparar 1 litro de NaCl 3% com NaCl 20%?",
+   "verso": "890 mL de SF 0,9% + 110 mL de NaCl 20% (3,42 mEq/mL), com concentração final de cerca de 513 mEq/L."
+  },
+  {
+   "leitura": "eletrolitos",
+   "frente": "Como estimar o déficit de água livre?",
+   "verso": "Água corporal total × (Na atual / 140 − 1)."
+  },
+  {
+   "leitura": "eletrolitos",
+   "frente": "Quantos mEq há em uma ampola de 10 mL de KCl 19,1% e de KCl 10%?",
+   "verso": "KCl 19,1%: 25,6 mEq (2,56 mEq/mL). KCl 10%: 13,4 mEq (1,34 mEq/mL)."
+  },
+  {
+   "leitura": "eletrolitos",
+   "frente": "Quais os limites usuais do KCl intravenoso?",
+   "verso": "Periférico: até 10 mEq/h e cerca de 40 mEq/L. Central: até 20 mEq/h com monitorização eletrocardiográfica. Nunca em bolus."
+  },
+  {
+   "leitura": "eletrolitos",
+   "frente": "Quais as três etapas do tratamento da hipercalemia grave?",
+   "verso": "Estabilizar a membrana (cálcio IV), deslocar o potássio para o intracelular (insulina com glicose, beta-2) e remover (diurético, quelante, diálise)."
+  },
+  {
+   "leitura": "eletrolitos",
+   "frente": "Por que a hipocalemia fica refratária à reposição?",
+   "verso": "A hipomagnesemia aumenta a perda renal de potássio pelos canais ROMK. Repor magnésio junto."
+  },
+  {
+   "leitura": "eletrolitos",
+   "frente": "Qual a composição do fosfato de potássio 2 mEq/mL comercializado no Brasil?",
+   "verso": "Por mL, 2 mEq de potássio e 1,1 mmol de fósforo. Ampola de 10 mL: 20 mEq de K⁺ e 11 mmol de P."
+  },
+  {
+   "leitura": "eletrolitos",
+   "frente": "Qual a diferença de cálcio elementar entre gliconato e cloreto de cálcio a 10%?",
+   "verso": "Gliconato: cerca de 9 mg/mL (0,45 mEq/mL). Cloreto: 27 mg/mL (1,36 mEq/mL), vesicante, preferir via central."
+  },
+  {
+   "leitura": "eletrolitos",
+   "frente": "Quais fármacos causam hipercalemia por bloqueio do canal de sódio epitelial?",
+   "verso": "Trimetoprima, amilorida e pentamidina."
+  },
+  {
+   "leitura": "eletrolitos",
+   "frente": "Como prevenir a síndrome de realimentação segundo o consenso ASPEN 2020?",
+   "verso": "Identificar o risco, iniciar a dieta com oferta reduzida, dosar P, K e Mg a cada 12 horas nos 3 primeiros dias e dar tiamina 100 mg antes de iniciar."
+  },
+  {
+   "leitura": "figado-coagulacao",
+   "frente": "De que depende a depuração hepática de fármacos de alta extração?",
+   "verso": "Do fluxo sanguíneo hepático; cai no choque e na insuficiência cardíaca. Exemplos: morfina, lidocaína, fentanil, propranolol."
+  },
+  {
+   "leitura": "figado-coagulacao",
+   "frente": "Por que a inflamação eleva níveis de voriconazol e midazolam?",
+   "verso": "Citocinas como a interleucina-6 reduzem a expressão do CYP3A4 e de outras enzimas hepáticas."
+  },
+  {
+   "leitura": "figado-coagulacao",
+   "frente": "Quais os componentes do escore de Child-Pugh?",
+   "verso": "Bilirrubina, albumina, INR, ascite e encefalopatia. Classe A 5-6, B 7-9, C 10-15 pontos."
+  },
+  {
+   "leitura": "figado-coagulacao",
+   "frente": "O que o MELD 3.0 acrescentou ao MELD-Na?",
+   "verso": "Sexo feminino e albumina, além de novos coeficientes para bilirrubina, INR, creatinina e sódio."
+  },
+  {
+   "leitura": "figado-coagulacao",
+   "frente": "Quais as três fases do modelo celular da hemostasia?",
+   "verso": "Iniciação (fator tecidual-VIIa), amplificação (ativação de plaquetas, V, VIII e XI) e propagação (tenase e protrombinase na superfície plaquetária)."
+  },
+  {
+   "leitura": "figado-coagulacao",
+   "frente": "Por que o INR se altera primeiro na deficiência de vitamina K?",
+   "verso": "O fator VII tem meia-vida de cerca de 6 horas, a menor entre os fatores dependentes de vitamina K."
+  },
+  {
+   "leitura": "figado-coagulacao",
+   "frente": "O que é hemostasia reequilibrada no cirrótico?",
+   "verso": "Queda de fatores pró e anticoagulantes, com VIII e von Willebrand altos. O paciente pode sangrar e trombosar; o INR não prediz sangramento."
+  },
+  {
+   "leitura": "figado-coagulacao",
+   "frente": "Como administrar vitamina K intravenosa?",
+   "verso": "10 mg diluídos em 20 a 30 minutos, pelo risco de reação anafilactoide. Sem resposta em 24 horas sugere falha de síntese."
+  },
+  {
+   "leitura": "figado-coagulacao",
+   "frente": "Quais parâmetros compõem o escore ISTH de CIVD manifesta?",
+   "verso": "Plaquetas, D-dímero, prolongamento do TP e fibrinogênio. Pontuação ≥ 5 é compatível com CIVD manifesta."
+  },
+  {
+   "leitura": "figado-coagulacao",
+   "frente": "Quais os componentes do escore 4T?",
+   "verso": "Trombocitopenia, Tempo da queda, Trombose e ouTras causas. Escore de 0 a 3 indica baixa probabilidade e dispensa teste."
+  },
+  {
+   "leitura": "figado-coagulacao",
+   "frente": "Qual a conduta na TIH de alta probabilidade?",
+   "verso": "Suspender toda heparina (inclusive flush e circuitos), anticoagulante não heparínico terapêutico, sem plaquetas de rotina e sem varfarina até plaquetas ≥ 150 × 10⁹/L."
+  },
+  {
+   "leitura": "figado-coagulacao",
+   "frente": "Qual o limiar para transfundir plaquetas antes de cateter central em sítio compressível (AABB/ICTMG 2025)?",
+   "verso": "Abaixo de 10 × 10⁹/L."
+  },
+  {
+   "leitura": "figado-coagulacao",
+   "frente": "O que indica FIBTEM com firmeza baixa no ROTEM?",
+   "verso": "Déficit de fibrinogênio: crioprecipitado ou concentrado de fibrinogênio."
+  },
+  {
+   "leitura": "figado-coagulacao",
+   "frente": "O que indica LY30 aumentado no TEG?",
+   "verso": "Hiperfibrinólise; considerar ácido tranexâmico."
+  },
+  {
+   "leitura": "endocrino-metabolico",
+   "frente": "Quais são os hormônios contrarreguladores da resposta ao estresse?",
+   "verso": "Cortisol, catecolaminas, glucagon e hormônio do crescimento, em conjunto com as citocinas IL-1, IL-6 e TNF."
+  },
+  {
+   "leitura": "endocrino-metabolico",
+   "frente": "Qual o alvo glicêmico da ADA 2026 para a maioria dos críticos?",
+   "verso": "Iniciar insulina com hiperglicemia persistente ≥ 180 mg/dL e manter entre 140 e 180 mg/dL; 110 a 140 em selecionados, sem hipoglicemia."
+  },
+  {
+   "leitura": "endocrino-metabolico",
+   "frente": "Qual foi o resultado do NICE-SUGAR?",
+   "verso": "Alvo de 81 a 108 mg/dL aumentou a mortalidade em 90 dias (27,5% contra 24,9%) e a hipoglicemia grave (6,8% contra 0,5%) em relação a alvo de até 180 mg/dL."
+  },
+  {
+   "leitura": "endocrino-metabolico",
+   "frente": "Como a ADA classifica a hipoglicemia?",
+   "verso": "Nível 1: abaixo de 70 mg/dL. Nível 2: abaixo de 54 mg/dL. Nível 3: evento grave com alteração mental que exige ajuda de terceiros."
+  },
+  {
+   "leitura": "endocrino-metabolico",
+   "frente": "Qual a causa mais previsível de hipoglicemia na UTI?",
+   "verso": "Suspensão da dieta com insulina mantida; também a redução do corticoide sem redução da insulina."
+  },
+  {
+   "leitura": "endocrino-metabolico",
+   "frente": "Por que evitar glicemia capilar em paciente chocado?",
+   "verso": "Perfusão periférica ruim, vasopressor, edema e anemia tornam o resultado impreciso; preferir sangue arterial ou venoso."
+  },
+  {
+   "leitura": "endocrino-metabolico",
+   "frente": "Como a diretriz de CIRCI de 2017 aborda o diagnóstico?",
+   "verso": "Não há teste único; delta de cortisol abaixo de 9 mcg/dL após 250 mcg de cosintropina ou cortisol aleatório abaixo de 10 mcg/dL podem ser usados."
+  },
+  {
+   "leitura": "endocrino-metabolico",
+   "frente": "Qual a dose de hidrocortisona no choque séptico?",
+   "verso": "200 mg/dia (50 mg a cada 6 horas ou infusão contínua). Evitar doses acima de 400 mg/dia por menos de 3 dias (SCCM 2024)."
+  },
+  {
+   "leitura": "endocrino-metabolico",
+   "frente": "Qual o esquema do APROCCHSS?",
+   "verso": "Hidrocortisona 50 mg IV a cada 6 horas e fludrocortisona 50 mcg enteral uma vez ao dia por 7 dias; reduziu a mortalidade em 90 dias."
+  },
+  {
+   "leitura": "endocrino-metabolico",
+   "frente": "Qual o resultado do ADRENAL?",
+   "verso": "Hidrocortisona 200 mg/dia em infusão contínua não mudou a mortalidade em 90 dias, mas acelerou a reversão do choque."
+  },
+  {
+   "leitura": "endocrino-metabolico",
+   "frente": "O que a atualização SCCM 2024 recomenda na pneumonia comunitária grave?",
+   "verso": "Recomendação forte a favor de corticoide, com esquemas em geral equivalentes a 40 a 80 mg/dia de metilprednisolona."
+  },
+  {
+   "leitura": "endocrino-metabolico",
+   "frente": "Como o etomidato afeta o eixo adrenal?",
+   "verso": "Inibe a 11-beta-hidroxilase e suprime a síntese de cortisol por 24 a 48 horas após dose única."
+  },
+  {
+   "leitura": "endocrino-metabolico",
+   "frente": "Quais os achados da síndrome da doença não tireoidiana?",
+   "verso": "T3 baixo, T3 reverso alto, T4 baixo nos casos graves e TSH normal ou baixo. Não repor hormônio tireoidiano."
+  },
+  {
+   "leitura": "endocrino-metabolico",
+   "frente": "Como a heparina interfere nos exames de tireoide?",
+   "verso": "Eleva artificialmente o T4 livre in vitro: a lipase ativada libera ácidos graxos que deslocam o T4 das proteínas de ligação."
+  }
+ ],
+ "questoes": [
+  {
+   "leitura": "hemodinamica-choque",
+   "nivel": "basico",
+   "enun": "Na equação PAM − PVC = DC × RVS, qual combinação descreve o perfil típico do choque hipovolêmico ainda não tratado?",
+   "alts": [
+    "Débito cardíaco alto, RVS baixa e pressões de enchimento baixas",
+    "Débito cardíaco baixo, RVS baixa e pressões de enchimento altas",
+    "Débito cardíaco baixo, RVS alta e pressões de enchimento baixas",
+    "Débito cardíaco normal, RVS alta e pressões de enchimento altas",
+    "Débito cardíaco alto, RVS alta e pressões de enchimento normais"
+   ],
+   "gab": 2,
+   "coment": "Na hipovolemia, a queda do volume circulante reduz o retorno venoso e a pré-carga (pressões de enchimento baixas), o volume sistólico cai e o débito cardíaco diminui. A resposta simpática eleva a resistência vascular sistêmica para sustentar a PAM. Esse perfil (débito baixo, RVS alta, enchimento baixo) diferencia a hipovolemia do choque cardiogênico, em que as pressões de enchimento estão altas, e do distributivo, em que a RVS está baixa.",
+   "porAlt": [
+    "Errada: débito alto com RVS baixa é o perfil distributivo, como na sepse hiperdinâmica.",
+    "Errada: RVS baixa com enchimento alto não corresponde a nenhum perfil típico de hipovolemia.",
+    "Correta: menos volume, menos pré-carga, menos débito e vasoconstrição compensatória.",
+    "Errada: pressões de enchimento altas com RVS alta sugerem choque cardiogênico ou obstrutivo.",
+    "Errada: débito alto não ocorre quando falta volume circulante."
+   ],
+   "base": "Fisiologia cardiovascular; Surviving Sepsis Campaign 2026"
+  },
+  {
+   "leitura": "hemodinamica-choque",
+   "nivel": "basico",
+   "enun": "Paciente com Hb 8 g/dL, SaO₂ 95%, PaO₂ 80 mmHg e débito cardíaco de 4 L/min. Qual das intervenções a seguir aumenta MENOS a oferta de oxigênio (DO₂)?",
+   "alts": [
+    "Elevar a PaO₂ de 80 para 200 mmHg mantendo Hb e débito",
+    "Elevar a hemoglobina de 8 para 10 g/dL mantendo o débito",
+    "Elevar o débito de 4 para 5 L/min mantendo a hemoglobina",
+    "Elevar a hemoglobina de 8 para 9 g/dL mantendo o débito",
+    "Elevar o débito de 4 para 4,5 L/min mantendo a hemoglobina"
+   ],
+   "gab": 0,
+   "coment": "O conteúdo arterial de oxigênio é CaO₂ = 1,34 × Hb × SaO₂ + 0,003 × PaO₂. Com Hb 8 e SaO₂ 95%, CaO₂ ≈ 10,4 mL/dL e DO₂ ≈ 416 mL/min. Subir a PaO₂ de 80 para 200 mmHg acrescenta só 0,003 × 120 = 0,36 mL/dL (cerca de 3%), porque o oxigênio dissolvido é pequeno. Qualquer aumento de hemoglobina ou de débito, mesmo modesto, rende 12% a 25%. Na prática, perseguir PaO₂ alta não melhora a oferta e expõe à hiperoxia.",
+   "porAlt": [
+    "Correta: o O₂ dissolvido contribui só 0,003 mL/dL por mmHg; o ganho é de cerca de 3%.",
+    "Errada: Hb 10 eleva o CaO₂ em cerca de 25%, com DO₂ perto de 519 mL/min.",
+    "Errada: débito de 5 L/min eleva a DO₂ em 25%, para cerca de 520 mL/min.",
+    "Errada: Hb 9 eleva a DO₂ em cerca de 12%, ainda muito mais que a PaO₂.",
+    "Errada: débito de 4,5 L/min eleva a DO₂ em 12,5%."
+   ],
+   "base": "Fisiologia do transporte de oxigênio; Surviving Sepsis Campaign 2026"
+  },
+  {
+   "leitura": "hemodinamica-choque",
+   "nivel": "intermediario",
+   "enun": "Paciente em choque séptico com norepinefrina 0,3 mcg/kg/min inicia epinefrina 0,1 mcg/kg/min por disfunção de VE. Em 2 horas, o lactato sobe de 3,1 para 4,6 mmol/L, com TEC de 2 segundos, diurese de 1 mL/kg/h e ScvO₂ de 74%. Qual a interpretação mais adequada?",
+   "alts": [
+    "Piora da perfusão, que indica novo bolus de 500 mL de cristaloide",
+    "Hipoperfusão oculta, que indica trocar epinefrina por dopamina",
+    "Falência hepática aguda, que exige suspender os vasopressores",
+    "Acidose láctica por metformina, que exige hemodiálise imediata",
+    "Efeito metabólico beta-2 da epinefrina, sem piora da perfusão"
+   ],
+   "gab": 4,
+   "coment": "A epinefrina estimula receptores beta-2 no músculo esquelético e acelera a glicólise aeróbia, elevando o lactato nas primeiras horas sem hipóxia tecidual (hiperlactatemia tipo B). Os marcadores clínicos de perfusão estão adequados: TEC normal, diurese preservada e ScvO₂ acima de 70%. A Surviving Sepsis Campaign 2026 sugere lactato seriado e TEC como adjuvante; o lactato isolado, nesse contexto, não justifica escalar volume ou vasopressor. O farmacêutico ajuda a equipe a reconhecer o efeito do fármaco.",
+   "porAlt": [
+    "Errada: TEC, diurese e ScvO₂ normais não indicam hipoperfusão; mais volume acrescenta risco sem benefício.",
+    "Errada: a dopamina causa mais arritmia e não é alternativa preferida; não há hipoperfusão a tratar.",
+    "Errada: não há dado de falência hepática, e suspender vasopressores seria perigoso.",
+    "Errada: não há relato de metformina; a elevação acompanha o início da epinefrina.",
+    "Correta: hiperlactatemia tipo B por estímulo beta-2, com perfusão clínica adequada."
+   ],
+   "base": "Surviving Sepsis Campaign 2026; Kraut e Madias, NEJM 2014"
+  },
+  {
+   "leitura": "hemodinamica-choque",
+   "nivel": "intermediario",
+   "enun": "Mulher de 58 anos em choque séptico, já com 30 mL/kg de cristaloide, em respiração espontânea com máscara e em fibrilação atrial. A equipe quer saber se ela ainda responde a volume. Qual método é o mais adequado?",
+   "alts": [
+    "Variação da pressão de pulso na linha arterial, com corte de 13%",
+    "Elevação passiva das pernas com medida do débito em tempo real",
+    "Valor absoluto da PVC, infundindo volume se estiver abaixo de 8",
+    "Variação da pressão sistólica medida após elevar as pernas a 45°",
+    "Variação da pressão de pulso após aumentar o volume corrente"
+   ],
+   "gab": 1,
+   "coment": "A variação da pressão de pulso só é válida em ventilação controlada sem esforço, com volume corrente de pelo menos 8 mL/kg e ritmo sinusal; a paciente respira espontaneamente e está em fibrilação atrial. A PVC isolada prediz mal a resposta. A elevação passiva das pernas transfere cerca de 300 mL de sangue ao compartimento central de forma reversível e funciona em respiração espontânea e em arritmia, desde que o efeito seja medido pelo débito cardíaco em tempo real (eco ou contorno de pulso), e não só pela pressão arterial.",
+   "porAlt": [
+    "Errada: a VPP não é válida com respiração espontânea e fibrilação atrial.",
+    "Correta: a elevação passiva das pernas com medida de débito vale em ventilação espontânea e arritmia.",
+    "Errada: medidas estáticas como a PVC predizem mal a fluidorresponsividade.",
+    "Errada: a pressão arterial é pouco sensível; a EPP deve ser avaliada pelo débito.",
+    "Errada: o desafio de volume corrente exige ventilação mecânica controlada."
+   ],
+   "base": "Monnet, Marik e Teboul, Ann Intensive Care 2016; Surviving Sepsis Campaign 2026"
+  },
+  {
+   "leitura": "hemodinamica-choque",
+   "nivel": "avancado",
+   "enun": "Norepinefrina preparada com 4 ampolas de 4 mL de hemitartarato 2 mg/mL em volume final de 250 mL, infundida a 15 mL/h em paciente de 80 kg. Qual a dose expressa em norepinefrina base?",
+   "alts": [
+    "0,40 mcg/kg/min (concentração de 128 mcg/mL)",
+    "0,10 mcg/kg/min (concentração de 32 mcg/mL)",
+    "0,02 mcg/kg/min (concentração de 6,4 mcg/mL)",
+    "0,20 mcg/kg/min (concentração de 64 mcg/mL)",
+    "0,80 mcg/kg/min (concentração de 256 mcg/mL)"
+   ],
+   "gab": 3,
+   "coment": "Quatro ampolas de 4 mL a 2 mg/mL somam 32 mg de hemitartarato. Como a massa molar do sal mono-hidratado (337 g/mol) é o dobro da base (169 g/mol), isso equivale a 16 mg de base. Em 250 mL: 64 mcg/mL. A 15 mL/h: 15 × 64 = 960 mcg/h = 16 mcg/min; dividido por 80 kg = 0,2 mcg/kg/min. Calcular pelo sal dobra o número (0,4). Diretrizes e estudos costumam usar a base, e a confusão entre sal e base altera a comparação com limiares de vasopressina e corticoide.",
+   "porAlt": [
+    "Errada: 128 mcg/mL é a concentração do sal; a dose fica superestimada em duas vezes.",
+    "Errada: 32 mcg/mL subestima a concentração da base pela metade.",
+    "Errada: erro de uma ordem de grandeza na concentração.",
+    "Correta: 16 mg de base em 250 mL = 64 mcg/mL; 15 × 64 / 60 / 80 = 0,2 mcg/kg/min.",
+    "Errada: concentração quatro vezes maior que a real."
+   ],
+   "base": "Cálculo farmacêutico; Surviving Sepsis Campaign 2026"
+  },
+  {
+   "leitura": "hemodinamica-choque",
+   "nivel": "avancado",
+   "enun": "Após 30 mL/kg de cristaloide, paciente em choque séptico mantém PAM de 60 mmHg com norepinefrina 0,15 mcg/kg/min. O ultrassom mostra linhas B difusas, veia cava pletórica e fluxo portal pulsátil; a elevação passiva das pernas aumenta o débito em 12%. Qual a conduta mais coerente?",
+   "alts": [
+    "Novo bolus de 1.000 mL de cristaloide, pois o teste de resposta foi positivo",
+    "Albumina a 20% com furosemida, para mobilizar líquido e elevar a PAM",
+    "Aumentar a norepinefrina e evitar novo volume, pela congestão presente",
+    "Trocar a norepinefrina por dopamina, que eleva o débito sem novo volume",
+    "Iniciar nitroglicerina para reduzir a pré-carga e a congestão venosa"
+   ],
+   "gab": 2,
+   "coment": "Responder a volume não significa tolerar volume. O paciente é fluidorresponsivo pela elevação passiva das pernas, mas tem sinais de congestão (linhas B, veia cava pletórica, fluxo portal pulsátil), o que indica baixa tolerância. A Surviving Sepsis Campaign 2026 aceita estratégia liberal ou restritiva após a fase inicial e enfatiza reavaliação para evitar sobrecarga. A PAM baixa com congestão pede ajuste do vasopressor (a norepinefrina ainda eleva o retorno venoso por venoconstrição), sem novo bolus.",
+   "porAlt": [
+    "Errada: a responsividade isolada não autoriza volume diante de congestão.",
+    "Errada: a SSC 2026 sugere cristaloide isolado; diurético com PAM de 60 agrava a hipotensão.",
+    "Correta: tratar a PAM com vasopressor e poupar volume no paciente congesto.",
+    "Errada: a dopamina causa mais arritmias e não é preferida à norepinefrina.",
+    "Errada: vasodilatador com PAM de 60 mmHg pioraria a hipotensão."
+   ],
+   "base": "Surviving Sepsis Campaign 2026; CLASSIC (NEJM 2022); CLOVERS (NEJM 2023)"
+  },
+  {
+   "leitura": "fisiologia-respiratoria-vm",
+   "nivel": "basico",
+   "enun": "Paciente em uso de fentanil e midazolam em doses altas, em ar ambiente ao nível do mar, tem PaCO₂ de 60 mmHg e PaO₂ de 55 mmHg. Qual o mecanismo mais provável da hipoxemia?",
+   "alts": [
+    "Shunt intrapulmonar, com gradiente alvéolo-arterial muito aumentado",
+    "Distúrbio de difusão, com gradiente alvéolo-arterial muito aumentado",
+    "Desequilíbrio V/Q por broncoespasmo, com gradiente bem aumentado",
+    "Espaço morto por embolia pulmonar, com gradiente alvéolo-arterial alto",
+    "Hipoventilação alveolar, com gradiente alvéolo-arterial quase normal"
+   ],
+   "gab": 4,
+   "coment": "PAO₂ = 0,21 × (760 − 47) − 60/0,8 = 149,7 − 75 ≈ 75 mmHg. Gradiente A-a = 75 − 55 ≈ 20 mmHg, próximo do normal para a idade. A hipoxemia se explica pela hipoventilação, coerente com depressão respiratória por opioide e benzodiazepínico. A intervenção é rever a sedoanalgesia e considerar antagonista, não investigar pneumonia ou embolia primeiro. O cálculo do gradiente é uma ferramenta simples para o farmacêutico reconhecer depressão respiratória medicamentosa.",
+   "porAlt": [
+    "Errada: shunt aumenta muito o gradiente A-a; aqui ele está quase normal.",
+    "Errada: distúrbio de difusão também aumenta o gradiente.",
+    "Errada: desequilíbrio V/Q aumenta o gradiente e não explica a PaCO₂ tão alta com sedativos.",
+    "Errada: embolia aumenta espaço morto e o gradiente; não há dado clínico que a sugira.",
+    "Correta: gradiente de cerca de 20 mmHg com PaCO₂ alta indica hipoventilação."
+   ],
+   "base": "Equação do gás alveolar; PADIS 2025 (Lewis et al., Crit Care Med 2025)"
+  },
+  {
+   "leitura": "fisiologia-respiratoria-vm",
+   "nivel": "basico",
+   "enun": "Qual o volume corrente inicial de ventilação protetora para uma mulher de 160 cm e 95 kg com SDRA?",
+   "alts": [
+    "570 mL, correspondentes a 6 mL/kg do peso real",
+    "314 mL, correspondentes a 6 mL/kg do peso predito",
+    "475 mL, correspondentes a 5 mL/kg do peso real",
+    "420 mL, correspondentes a 8 mL/kg do peso predito",
+    "760 mL, correspondentes a 8 mL/kg do peso real"
+   ],
+   "gab": 1,
+   "coment": "Peso predito da mulher = 45,5 + 0,91 × (160 − 152,4) = 52,4 kg. Volume corrente de 6 mL/kg = 314 mL. O peso predito representa o tamanho do pulmão, que depende da altura e do sexo, não da gordura. Na SDRA o pulmão aerado é reduzido, e o volume pelo peso real (570 mL) causaria hiperdistensão. A ESICM 2023 recomenda 4 a 8 mL/kg de peso predito; 8 mL/kg (420 mL) é o limite superior, não o ponto de partida.",
+   "porAlt": [
+    "Errada: usar o peso real quase dobra o volume corrente.",
+    "Correta: 6 × 52,4 kg de peso predito ≈ 314 mL.",
+    "Errada: o cálculo pelo peso real é inadequado, mesmo com 5 mL/kg.",
+    "Errada: 8 mL/kg é o limite superior aceitável, não o valor inicial recomendado.",
+    "Errada: peso real e 8 mL/kg produzem volume lesivo."
+   ],
+   "base": "ESICM 2023 (Grasselli et al.); ARDS Network, NEJM 2000"
+  },
+  {
+   "leitura": "fisiologia-respiratoria-vm",
+   "nivel": "intermediario",
+   "enun": "Paciente em volume controlado com volume corrente de 420 mL, fluxo de 60 L/min e PEEP de 10 cmH₂O: pico 38 e platô 24 cmH₂O. Após salbutamol em spray com espaçador, pico 31 e platô 24 cmH₂O. O que isso indica?",
+   "alts": [
+    "Queda da resistência das vias aéreas, com complacência inalterada",
+    "Melhora da complacência pulmonar, com resistência das vias inalterada",
+    "Queda da resistência das vias aéreas e piora da complacência do sistema",
+    "Redução do auto-PEEP, com complacência reduzida pela metade",
+    "Ausência de resposta, pois a pressão de platô não mudou após o spray"
+   ],
+   "gab": 0,
+   "coment": "A diferença entre pico e platô, com fluxo constante, reflete a resistência. Antes: (38 − 24)/1 L/s = 14 cmH₂O/L/s; depois: 7. A complacência estática, 420/(24 − 10) = 30 mL/cmH₂O, não mudou, porque o platô ficou igual. O broncodilatador agiu nas vias aéreas, como esperado. Registrar pico e platô antes e depois é o modo objetivo de documentar a resposta ao broncodilatador no paciente ventilado.",
+   "porAlt": [
+    "Correta: pico caiu com platô igual; resistência menor, complacência igual.",
+    "Errada: a complacência depende do platô, que não se alterou.",
+    "Errada: com o mesmo platô e a mesma PEEP, a complacência é a mesma.",
+    "Errada: não há medida de auto-PEEP, e a complacência não mudou.",
+    "Errada: o platô reflete elastância; a resposta aparece na queda do pico."
+   ],
+   "base": "Dhand, Respir Care 2017; fisiologia da mecânica respiratória"
+  },
+  {
+   "leitura": "fisiologia-respiratoria-vm",
+   "nivel": "intermediario",
+   "enun": "Durante nebulização de fenoterol com nebulizador a jato no circuito do ventilador, o broncoespasmo não melhora. O filtro trocador de calor e umidade (HME) está entre a peça em Y e o tubo. Qual a correção prioritária?",
+   "alts": [
+    "Dobrar a dose do broncodilatador e manter o HME onde está",
+    "Aumentar o fluxo do nebulizador a jato para 15 L/min ou mais",
+    "Trocar para salbutamol intravenoso contínuo em dose plena",
+    "Retirar o HME do trajeto entre o nebulizador e o paciente",
+    "Mover o nebulizador para o ramo expiratório, junto à válvula"
+   ],
+   "gab": 3,
+   "coment": "O HME retém partículas de aerossol; posicionado entre o nebulizador e o paciente, impede que o fármaco chegue às vias aéreas. A revisão de Dhand (2017) orienta retirá-lo ou contorná-lo durante a aerossolterapia. Dobrar a dose não resolve a barreira física, aumentar o fluxo do jato altera volume corrente e disparo, e o salbutamol intravenoso aumentou a mortalidade no BALTI-2 (em SDRA) e não é a correção indicada. No ramo expiratório, o aerossol não chega ao paciente.",
+   "porAlt": [
+    "Errada: a barreira física persiste com qualquer dose.",
+    "Errada: mais fluxo acrescenta volume e altera o disparo, sem resolver o filtro.",
+    "Errada: não corrige a falha técnica e tem riscos (BALTI-2).",
+    "Correta: sem o HME no trajeto, o aerossol chega ao paciente.",
+    "Errada: no ramo expiratório o aerossol vai para o ventilador, não para o pulmão."
+   ],
+   "base": "Dhand, Respir Care 2017; BALTI-2, Lancet 2012"
+  },
+  {
+   "leitura": "fisiologia-respiratoria-vm",
+   "nivel": "avancado",
+   "enun": "Paciente com SDRA grave (PaO₂/FiO₂ 85) no primeiro dia, em cisatracúrio contínuo, recebe amicacina, sulfato de magnésio e metilprednisolona. Na visita, a sequência de quatro estímulos está 0/4 e não há registro de RASS nem de sedação titulada. Qual a intervenção farmacêutica mais importante?",
+   "alts": [
+    "Suspender a metilprednisolona, contraindicada com bloqueador",
+    "Trocar cisatracúrio por rocurônio, que não sofre interações",
+    "Garantir sedação profunda e revisar potencializadores do bloqueio",
+    "Suspender a amicacina, contraindicada com uso de bloqueador",
+    "Manter tudo, pois 0/4 é o alvo ideal do bloqueio na SDRA grave"
+   ],
+   "gab": 2,
+   "coment": "O bloqueador neuromuscular não tem efeito sedativo nem analgésico; paciente paralisado sem sedação profunda documentada pode estar consciente e com dor. É a prioridade de segurança. Em seguida, reconhecer que aminoglicosídeo e magnésio potencializam o bloqueio (0/4 sugere bloqueio profundo, e muitos protocolos miram 1 a 2 de 4). O corticoide aumenta o risco de miopatia, mas não é contraindicado; a SDRA grave precoce tem sugestão condicional de bloqueio (ATS 2024) e de corticoide (SCCM 2024).",
+   "porAlt": [
+    "Errada: a associação aumenta o risco de miopatia, mas não é contraindicação absoluta.",
+    "Errada: o rocurônio também é potencializado por aminoglicosídeos e magnésio.",
+    "Correta: sedação profunda antes e durante o bloqueio e revisão das interações.",
+    "Errada: a interação exige vigilância, não suspensão automática do antimicrobiano.",
+    "Errada: sem sedação documentada há risco de consciência sob paralisia."
+   ],
+   "base": "ATS 2024 (Qadir et al.); SCCM 2024 (Chaudhuri et al.); PADIS 2025"
+  },
+  {
+   "leitura": "fisiologia-respiratoria-vm",
+   "nivel": "avancado",
+   "enun": "Paciente não intubado em cateter nasal de alto fluxo a 40 L/min, FiO₂ 0,5 e SpO₂ de 94%, com opacidades bilaterais 2 dias após pneumonia e sem insuficiência cardíaca. Pela definição global de SDRA de 2023, qual afirmação está correta?",
+   "alts": [
+    "Não é SDRA, pois a definição exige intubação e PEEP de 5 cmH₂O",
+    "É SDRA, pois a SpO₂/FiO₂ de 188 está abaixo de 315 em alto fluxo",
+    "Não é SDRA, pois SpO₂ acima de 92% invalida a razão SpO₂/FiO₂",
+    "É SDRA grave, pois SpO₂/FiO₂ abaixo de 235 define a forma grave",
+    "Não é SDRA, pois o diagnóstico exige gasometria arterial sempre"
+   ],
+   "gab": 1,
+   "coment": "A definição global (Matthay et al., 2024) inclui pacientes não intubados em alto fluxo com pelo menos 30 L/min e aceita SpO₂/FiO₂ ≤ 315 quando a SpO₂ é de até 97%. Aqui, 94/0,5 = 188: preenche o critério de oxigenação. Os graus leve, moderado e grave se aplicam a intubados; em intubados, SpO₂/FiO₂ entre 148 e 235 seria moderada. O limite de SpO₂ para usar a razão é 97%, não 92%. A gasometria deixou de ser obrigatória.",
+   "porAlt": [
+    "Errada: a nova definição inclui não intubados em alto fluxo.",
+    "Correta: 94/0,5 = 188, abaixo de 315, com fluxo de pelo menos 30 L/min.",
+    "Errada: o limite para usar a SpO₂ é 97%.",
+    "Errada: a graduação por gravidade vale para intubados, e ≤148 seria grave.",
+    "Errada: a SpO₂/FiO₂ substitui a gasometria na nova definição."
+   ],
+   "base": "Definição global de SDRA (Matthay et al., AJRCCM 2024)"
+  },
+  {
+   "leitura": "fisiologia-renal-lra",
+   "nivel": "basico",
+   "enun": "Segundo a KDIGO 2012, qual achado isolado é suficiente para definir lesão renal aguda?",
+   "alts": [
+    "Aumento da creatinina de 0,3 mg/dL em 48 horas",
+    "Aumento da creatinina de 0,2 mg/dL em 7 dias",
+    "Diurese de 0,8 mL/kg/h durante 6 horas seguidas",
+    "Ureia acima de 100 mg/dL com creatinina estável",
+    "Queda da TFG estimada de 5% em 72 horas seguidas"
+   ],
+   "gab": 0,
+   "coment": "A KDIGO 2012 define LRA por qualquer um de três critérios: aumento da creatinina de pelo menos 0,3 mg/dL em 48 horas, aumento para pelo menos 1,5 vez o basal conhecido ou presumido nos 7 dias anteriores, ou diurese abaixo de 0,5 mL/kg/h por 6 horas. Ureia isolada não é critério, porque varia com dieta, catabolismo, sangramento digestivo e corticoide. O rascunho KDIGO 2026 mantém esses critérios funcionais e acrescenta cistatina C e biomarcadores de dano.",
+   "porAlt": [
+    "Correta: é o critério de aumento absoluto em 48 horas.",
+    "Errada: 0,2 mg/dL não atinge o critério.",
+    "Errada: diurese acima de 0,5 mL/kg/h não preenche o critério de débito urinário.",
+    "Errada: ureia não faz parte da definição.",
+    "Errada: a definição não usa a variação percentual da TFG estimada."
+   ],
+   "base": "KDIGO 2012; KDIGO 2026, rascunho de consulta pública"
+  },
+  {
+   "leitura": "fisiologia-renal-lra",
+   "nivel": "basico",
+   "enun": "Qual associação compromete ao mesmo tempo o tônus da arteríola aferente e o da eferente, aumentando o risco de LRA hemodinâmica em paciente hipovolêmico?",
+   "alts": [
+    "Paracetamol e anlodipino",
+    "Dipirona e hidralazina",
+    "Omeprazol e metoprolol",
+    "Cetoprofeno e enalapril",
+    "Ondansetrona e losartana"
+   ],
+   "gab": 3,
+   "coment": "Em baixo fluxo, a filtração depende de prostaglandinas, que dilatam a aferente, e da angiotensina II, que contrai a eferente. O AINE (cetoprofeno) remove as prostaglandinas e contrai a aferente; o IECA (enalapril) remove a angiotensina II e dilata a eferente. Juntos, derrubam a pressão glomerular. Acrescido de diurético, forma o triplo golpe. Na UTI, a dipirona e o paracetamol são analgésicos preferíveis aos AINE em pacientes de risco.",
+   "porAlt": [
+    "Errada: nenhum dos dois age nas defesas da filtração de forma relevante.",
+    "Errada: a dipirona em dose usual não tem o efeito renal dos AINE clássicos, e a hidralazina não age na eferente.",
+    "Errada: nenhum dos dois interfere na autorregulação glomerular.",
+    "Correta: AINE contrai a aferente e IECA dilata a eferente.",
+    "Errada: a losartana age na eferente, mas a ondansetrona não age na aferente."
+   ],
+   "base": "KDIGO 2026, rascunho de consulta pública; fisiologia renal"
+  },
+  {
+   "leitura": "fisiologia-renal-lra",
+   "nivel": "intermediario",
+   "enun": "Homem de 45 anos com pneumocistose recebe sulfametoxazol-trimetoprima em dose alta. A creatinina sobe de 0,9 para 1,2 mg/dL em 3 dias, com diurese de 1,5 mL/kg/h, ureia estável e cistatina C inalterada. Qual a melhor interpretação?",
+   "alts": [
+    "LRA estágio 1 por nefrite intersticial, com suspensão do antimicrobiano",
+    "Necrose tubular por cristalúria, com troca imediata para pentamidina",
+    "Bloqueio da secreção de creatinina pela trimetoprima, sem queda da TFG",
+    "LRA pré-renal por hipovolemia, com expansão de 30 mL/kg de cristaloide",
+    "LRA estágio 2 por toxicidade direta, com redução da dose pela metade"
+   ],
+   "gab": 2,
+   "coment": "A trimetoprima inibe OCT2 e MATE no túbulo proximal e reduz a secreção de creatinina. O aumento costuma ser discreto (10% a 30%), sem queda da diurese, sem elevação proporcional da ureia e sem alteração da cistatina C, que não depende de secreção tubular. O rascunho KDIGO 2026 classifica a trimetoprima entre os fármacos sem disfunção nem dano. Suspender ou reduzir um tratamento indispensável para pneumocistose por esse achado seria erro; a vigilância continua (potássio, sedimento, diurese).",
+   "porAlt": [
+    "Errada: não há leucocitúria, exantema ou queda da função pela cistatina C.",
+    "Errada: não há sinais de cristalúria nem queda de diurese; a troca pioraria o tratamento.",
+    "Correta: elevação isolada da creatinina por bloqueio de secreção, com cistatina C estável.",
+    "Errada: diurese preservada e ureia estável não sugerem hipovolemia.",
+    "Errada: o aumento de 33% não corresponde a estágio 2 e não reflete lesão."
+   ],
+   "base": "KDIGO 2026, rascunho de consulta pública (março de 2026)"
+  },
+  {
+   "leitura": "fisiologia-renal-lra",
+   "nivel": "intermediario",
+   "enun": "Paciente de 1,90 m e 110 kg (superfície corporal de 2,4 m²) tem TFG por CKD-EPI 2021 de 40 mL/min/1,73 m². Qual valor deve ser usado para ajuste de dose, segundo o KDIGO?",
+   "alts": [
+    "29 mL/min, multiplicando por 1,73 e dividindo por 2,4",
+    "40 mL/min, pois a TFG indexada já é a usada para dose",
+    "69 mL/min, multiplicando a TFG apenas pelo fator 1,73",
+    "96 mL/min, multiplicando a TFG indexada apenas por 2,4",
+    "55 mL/min, multiplicando por 2,4 e dividindo por 1,73"
+   ],
+   "gab": 4,
+   "coment": "Para ajuste de dose, o KDIGO prefere a TFG não indexada, em mL/min, porque a quantidade de fármaco eliminada depende da filtração absoluta do paciente, e não da normalizada para 1,73 m². TFG não indexada = 40 × 2,4 / 1,73 ≈ 55 mL/min. Em pacientes grandes, usar a TFG indexada subestima a função e leva a subdose; em pacientes pequenos, o erro é o inverso. O padrão para estimar a TFG no ecossistema é o CKD-EPI 2021 sem raça.",
+   "porAlt": [
+    "Errada: a conta foi invertida.",
+    "Errada: a TFG indexada subestima a filtração absoluta de paciente grande.",
+    "Errada: falta dividir e multiplicar pela superfície corporal.",
+    "Errada: falta dividir por 1,73.",
+    "Correta: 40 × 2,4 / 1,73 ≈ 55 mL/min."
+   ],
+   "base": "KDIGO 2024 DRC; CKD-EPI 2021 (Inker et al., NEJM 2021)"
+  },
+  {
+   "leitura": "fisiologia-renal-lra",
+   "nivel": "avancado",
+   "enun": "Paciente séptico com creatinina subindo de 1,0 para 2,1 mg/dL em 24 horas e balanço hídrico de +5 L vai iniciar meropeném. Qual a conduta de dose mais adequada nas primeiras 24 a 48 horas?",
+   "alts": [
+    "Reduzir a dose de ataque e a manutenção pela TFG estimada do dia",
+    "Manter a dose de ataque plena e evitar reduzir cedo a manutenção",
+    "Calcular a dose pelo Cockcroft-Gault com a creatinina desta manhã",
+    "Suspender o carbapenêmico até a creatinina voltar ao valor basal",
+    "Reduzir todas as doses à metade até a creatinina se estabilizar"
+   ],
+   "gab": 1,
+   "coment": "A dose de ataque depende do volume de distribuição, que aumenta na sepse com expansão volêmica; nunca é reduzida pela função renal. Na LRA em evolução, a creatinina não está em equilíbrio, e o rascunho KDIGO 2026 afirma que doses não devem ser baseadas em equações que pressupõem estado estável, recomendando usar a tendência de creatinina e diurese. Como boa parte das LRA sépticas é transitória e o meropeném tem índice terapêutico amplo, reduzir precocemente expõe o paciente a subdose no momento mais crítico.",
+   "porAlt": [
+    "Errada: reduzir o ataque compromete a exposição inicial.",
+    "Correta: ataque pleno e manutenção reavaliada pela tendência nas 24 a 48 horas.",
+    "Errada: fórmulas de estado estável não se aplicam à creatinina em ascensão.",
+    "Errada: suspender o antimicrobiano no choque séptico é inaceitável.",
+    "Errada: redução empírica precoce favorece falha terapêutica."
+   ],
+   "base": "KDIGO 2026, rascunho de consulta pública (março de 2026)"
+  },
+  {
+   "leitura": "fisiologia-renal-lra",
+   "nivel": "avancado",
+   "enun": "Paciente com TFG de 25 mL/min/1,73 m², sem sobrecarga de volume, em uso de metformina, enalapril e furosemida, fará angiotomografia com contraste iodado. Segundo o rascunho KDIGO 2026, qual conjunto de medidas é o mais adequado?",
+   "alts": [
+    "SF 0,9% periprocedimento, suspender a metformina e manter o enalapril",
+    "Bicarbonato de sódio e N-acetilcisteína, mantendo a metformina em uso",
+    "Hemodiálise profilática logo após o exame e suspensão do enalapril",
+    "Adiar o exame, mesmo que necessário, até a TFG ficar acima de 30",
+    "Solução salina a 0,45% com furosemida, para acelerar a eliminação"
+   ],
+   "gab": 0,
+   "coment": "O rascunho KDIGO 2026 recomenda expansão periprocedimento com SF 0,9% em adultos de alto risco sem sobrecarga (1B), em vez de soluções hipotônicas, bicarbonato ou nenhuma hidratação; sugere não suspender de rotina os inibidores do sistema renina-angiotensina (2C) e considera apropriado suspender diuréticos durante a hidratação. Com TFG até 30, a metformina deve ser suspensa no exame e reavaliada após 48 horas. N-acetilcisteína não tem benefício consistente, e hemodiálise profilática pode ser prejudicial. Exame necessário não deve ser adiado.",
+   "porAlt": [
+    "Correta: hidratação isotônica, metformina suspensa e IECA mantido.",
+    "Errada: bicarbonato e NAC não têm benefício consistente, e a metformina deve ser suspensa.",
+    "Errada: hemodiálise profilática pode ser prejudicial.",
+    "Errada: quando o benefício supera o risco, o exame não deve ser adiado.",
+    "Errada: solução hipotônica e diurético não previnem e podem piorar a LRA."
+   ],
+   "base": "KDIGO 2026, rascunho de consulta pública; ACR-NKF 2020"
+  },
+  {
+   "leitura": "acido-base",
+   "nivel": "basico",
+   "enun": "Gasometria arterial: pH 7,30, PaCO₂ 30 mmHg e HCO₃⁻ 14 mEq/L. Qual a interpretação correta?",
+   "alts": [
+    "Acidose respiratória aguda com compensação metabólica adequada",
+    "Acidose metabólica com acidose respiratória associada importante",
+    "Alcalose respiratória primária com acidose metabólica compensatória",
+    "Acidose metabólica com compensação respiratória dentro do esperado",
+    "Acidose metabólica com alcalose respiratória primária associada"
+   ],
+   "gab": 3,
+   "coment": "O pH baixo com bicarbonato baixo indica acidose metabólica primária. Pela fórmula de Winter, a PaCO₂ esperada é 1,5 × 14 + 8 = 29 (27 a 31 mmHg). A PaCO₂ medida de 30 está dentro da faixa: a compensação respiratória é adequada, e não há segundo distúrbio respiratório. Se a PaCO₂ estivesse acima de 31, haveria acidose respiratória associada (sinal de fadiga); se abaixo de 27, alcalose respiratória associada. O próximo passo é calcular o ânion gap corrigido.",
+   "porAlt": [
+    "Errada: a PaCO₂ está baixa, não alta.",
+    "Errada: PaCO₂ dentro da faixa de Winter afasta acidose respiratória associada.",
+    "Errada: com pH ácido, o distúrbio primário não pode ser alcalose.",
+    "Correta: PaCO₂ esperada de 27 a 31; a medida é 30.",
+    "Errada: a PaCO₂ não está abaixo do esperado pela compensação."
+   ],
+   "base": "Berend et al., NEJM 2014; fórmula de Winter"
+  },
+  {
+   "leitura": "acido-base",
+   "nivel": "basico",
+   "enun": "Paciente com Na 140, Cl 108, HCO₃⁻ 20 mEq/L e albumina de 2 g/dL. Qual o ânion gap corrigido pela albumina?",
+   "alts": [
+    "12 mEq/L, dentro da faixa de referência",
+    "7 mEq/L, subtraindo a correção de 5",
+    "17 mEq/L, indicando ânions não medidos",
+    "22 mEq/L, somando o dobro da correção",
+    "14 mEq/L, somando 1 por g/dL de albumina"
+   ],
+   "gab": 2,
+   "coment": "AG = 140 − (108 + 20) = 12 mEq/L. Cada 1 g/dL de queda da albumina reduz o AG em cerca de 2,5 mEq/L. AG corrigido = 12 + 2,5 × (4 − 2) = 17 mEq/L, elevado. Sem a correção, o AG parece normal e a acidose por ânions não medidos (lactato, cetonas, uremia, tóxicos) passa despercebida. Como a hipoalbuminemia é quase universal na UTI, a correção deve ser rotina.",
+   "porAlt": [
+    "Errada: é o AG sem correção; subestima os ânions não medidos.",
+    "Errada: a correção é somada, não subtraída.",
+    "Correta: 12 + 2,5 × 2 = 17 mEq/L.",
+    "Errada: a correção é de 2,5 por g/dL, não o dobro disso.",
+    "Errada: o fator é 2,5 por g/dL, não 1."
+   ],
+   "base": "Berend et al., NEJM 2014; Kraut e Madias, NEJM 2014"
+  },
+  {
+   "leitura": "acido-base",
+   "nivel": "intermediario",
+   "enun": "Homem de 72 anos, diabético em uso de metformina, internado com sepse urinária e LRA (creatinina 3,8 mg/dL). Gasometria: pH 6,98, HCO₃⁻ 5 mEq/L e lactato de 16 mmol/L, com PAM de 70 mmHg em norepinefrina baixa. Qual a conduta de maior impacto?",
+   "alts": [
+    "Bicarbonato em bolus até normalizar o pH, sem outra medida",
+    "Aumentar a norepinefrina até lactato abaixo de 2 mmol/L",
+    "Iniciar infusão de insulina para cetoacidose associada",
+    "Suspender a metformina e aguardar a depuração pelos rins",
+    "Suspender a metformina e discutir hemodiálise precoce"
+   ],
+   "gab": 4,
+   "coment": "Lactato muito alto e acidemia grave desproporcionais a uma hemodinâmica pouco alterada, em usuário de metformina com LRA, sugerem acidose láctica associada à metformina. O fármaco se acumula na LRA e é dialisável; a hemodiálise remove a metformina e corrige a acidose e a sobrecarga de volume, algo que o bicarbonato isolado não faz. Com creatinina de 3,8 mg/dL, esperar a depuração renal é arriscado. Perseguir lactato normal com vasopressor ignora a causa tipo B.",
+   "porAlt": [
+    "Errada: bicarbonato isolado não remove a metformina e gera sódio e CO₂.",
+    "Errada: a causa não é só hipoperfusão; escalar vasopressor não trata a intoxicação.",
+    "Errada: não há dado de cetose; o lactato explica a acidose.",
+    "Errada: com LRA, a eliminação espontânea é lenta demais.",
+    "Correta: suspender e remover a metformina por hemodiálise."
+   ],
+   "base": "Kraut e Madias, NEJM 2014; KDIGO 2026, rascunho de consulta pública"
+  },
+  {
+   "leitura": "acido-base",
+   "nivel": "intermediario",
+   "enun": "Paciente com DPOC exacerbada, ventilado, com furosemida suspensa há 3 dias e sonda gástrica aberta drenando 1,2 L/dia. Gasometria: pH 7,52, PaCO₂ 50 mmHg, HCO₃⁻ 40 mEq/L, K 2,9 mEq/L e cloreto urinário de 8 mEq/L. Qual intervenção corrige os fatores de manutenção da alcalose?",
+   "alts": [
+    "Repor KCl e cloreto com SF 0,9% e reduzir as perdas gástricas",
+    "Bicarbonato de sódio para compensar a acidose respiratória",
+    "Aumentar a frequência do ventilador até PaCO₂ de 35 mmHg",
+    "Espironolactona para reduzir a perda urinária de potássio",
+    "Suspender o potássio e iniciar tiazídico em dose moderada"
+   ],
+   "gab": 0,
+   "coment": "A alcalose metabólica foi gerada pela perda de ácido gástrico e pelo diurético e é mantida por depleção de cloreto e de volume (cloreto urinário abaixo de 20 mEq/L, sem diurético recente) e por hipocalemia. Repor cloreto (SF 0,9% se houver hipovolemia, KCl pela hipocalemia) e reduzir as perdas gástricas (menos drenagem, inibidor de bomba de prótons) permite ao rim excretar o excesso de bicarbonato. Ventilar para PaCO₂ de 35 num DPOC com hipercapnia crônica aumentaria a alcalemia.",
+   "porAlt": [
+    "Correta: cloreto e potássio corrigem os fatores de manutenção.",
+    "Errada: bicarbonato agravaria a alcalose.",
+    "Errada: reduzir a PaCO₂ piora a alcalemia no DPOC crônico.",
+    "Errada: não corrige a depleção de cloreto e volume, que é o principal fator.",
+    "Errada: tiazídico e retirada de potássio agravam a alcalose e a hipocalemia."
+   ],
+   "base": "Berend et al., NEJM 2014; DIABOLO (Faisy et al., JAMA 2016)"
+  },
+  {
+   "leitura": "acido-base",
+   "nivel": "avancado",
+   "enun": "Mulher de 58 anos, desnutrida, com sepse, em uso regular de paracetamol 1 g a cada 6 horas há 3 semanas e de flucloxacilina. pH 7,22, HCO₃⁻ 11, AG corrigido 26, lactato 1,4 mmol/L, cetonas negativas, ureia normal e gap osmolar 4. Qual a hipótese mais provável?",
+   "alts": [
+    "Acidose láctica tipo B induzida pela flucloxacilina em dose alta",
+    "Acidose piroglutâmica por depleção de glutationa e paracetamol",
+    "Intoxicação por metanol com gap osmolar que já se normalizou",
+    "Cetoacidose de jejum não detectada pela fita de cetonúria usada",
+    "Acidose hiperclorêmica por perda digestiva de bicarbonato"
+   ],
+   "gab": 1,
+   "coment": "A acidose tem AG elevado não explicado por lactato, cetonas, uremia ou álcoois tóxicos (gap osmolar normal). Uso crônico de paracetamol, desnutrição, sepse e flucloxacilina esgotam a glutationa e acumulam 5-oxoprolina (ácido piroglutâmico). A conduta é suspender o paracetamol e considerar N-acetilcisteína para repor glutationa. O diagnóstico é de exclusão e pode ser confirmado por dosagem urinária de 5-oxoprolina onde houver.",
+   "porAlt": [
+    "Errada: o lactato está normal.",
+    "Correta: AG alto inexplicado com paracetamol crônico, desnutrição e flucloxacilina.",
+    "Errada: não há história de ingestão, e o gap osmolar normal não sustenta a hipótese.",
+    "Errada: as cetonas estão negativas.",
+    "Errada: com AG elevado, a acidose não é hiperclorêmica pura."
+   ],
+   "base": "Berend et al., NEJM 2014; Kraut e Madias, NEJM 2014"
+  },
+  {
+   "leitura": "acido-base",
+   "nivel": "avancado",
+   "enun": "Paciente em choque séptico com LRA KDIGO 3, pH 7,15, PaCO₂ 32 mmHg e HCO₃⁻ 11 mEq/L, sem hipercalemia, sem sobrecarga de volume e sem indicação urgente de diálise. Com base no BICARICU-2 e nas diretrizes de 2026, qual afirmação é correta?",
+   "alts": [
+    "Bicarbonato reduz a mortalidade em 90 dias e deve ser dado a todos",
+    "Bicarbonato é contraindicado, pois aumentou a necessidade de diálise",
+    "Bicarbonato só é indicado se o pH cair abaixo de 6,9 neste cenário",
+    "Diálise imediata é preferível ao bicarbonato para corrigir o pH",
+    "Bicarbonato pode reduzir diálise, sem ganho comprovado de sobrevida"
+   ],
+   "gab": 4,
+   "coment": "No BICARICU-2 (JAMA 2025), com acidemia grave e LRA estágio 2 ou 3, a mortalidade de 90 dias foi igual (62,1% contra 61,7%), mas a terapia renal substitutiva foi menos usada no grupo bicarbonato (35% contra 50%). A Surviving Sepsis Campaign 2026 sugere bicarbonato no choque séptico com pH ≤ 7,2 e LRA, e o rascunho KDIGO 2026 sugere bicarbonato em vez de diálise na LRA com pH abaixo de 7,20 sem outra indicação urgente. Ambas são recomendações condicionais.",
+   "porAlt": [
+    "Errada: não houve redução de mortalidade.",
+    "Errada: a diálise foi menos usada com bicarbonato.",
+    "Errada: o limiar das diretrizes é pH ≤ 7,2, não 6,9.",
+    "Errada: sem indicação urgente, o KDIGO 2026 sugere bicarbonato em vez de diálise.",
+    "Correta: menos diálise, sem diferença de mortalidade."
+   ],
+   "base": "BICARICU-2 (JAMA 2025); SSC 2026; KDIGO 2026, rascunho"
+  },
+  {
+   "leitura": "eletrolitos",
+   "nivel": "basico",
+   "enun": "Quantos mEq de potássio há em uma ampola de 10 mL de KCl 19,1%?",
+   "alts": [
+    "13,4 mEq, correspondentes a 1,34 mEq/mL",
+    "25,6 mEq, correspondentes a 2,56 mEq/mL",
+    "19,1 mEq, correspondentes a 1,91 mEq/mL",
+    "40,0 mEq, correspondentes a 4,00 mEq/mL",
+    "34,2 mEq, correspondentes a 3,42 mEq/mL"
+   ],
+   "gab": 1,
+   "coment": "KCl 19,1% contém 191 mg/mL. Dividindo pela massa molar do KCl (74,55 mg/mmol), obtém-se 2,56 mmol/mL, ou 2,56 mEq/mL de potássio (valência 1). A ampola de 10 mL tem 25,6 mEq. A de KCl 10% tem 1,34 mEq/mL e 13,4 mEq por ampola. Como as duas concentrações existem no Brasil, a prescrição em ampolas é ambígua e perigosa: prescreva sempre em mEq, com diluente, concentração final e velocidade.",
+   "porAlt": [
+    "Errada: é o conteúdo da ampola de KCl 10%.",
+    "Correta: 191 mg/mL ÷ 74,55 = 2,56 mEq/mL; 10 mL = 25,6 mEq.",
+    "Errada: confunde porcentagem com mEq/mL.",
+    "Errada: corresponde aproximadamente ao sulfato de magnésio 50%.",
+    "Errada: corresponde ao sódio do NaCl 20%."
+   ],
+   "base": "Cálculo farmacêutico; IMSN 2020"
+  },
+  {
+   "leitura": "eletrolitos",
+   "nivel": "basico",
+   "enun": "Na hiponatremia crônica sem fatores de alto risco, qual o limite de elevação do sódio proposto pela diretriz europeia de 2014?",
+   "alts": [
+    "Até 12 mEq/L em 24 h e 12 mEq/L a cada 24 h seguintes",
+    "Até 5 mEq/L em 24 h e 5 mEq/L a cada 24 h seguintes",
+    "Até 20 mEq/L em 24 h e 10 mEq/L a cada 24 h seguintes",
+    "Até 15 mEq/L em 24 h e 8 mEq/L a cada 24 h seguintes",
+    "Até 10 mEq/L em 24 h e 8 mEq/L a cada 24 h seguintes"
+   ],
+   "gab": 4,
+   "coment": "A diretriz europeia de 2014 (Spasovski) limita a elevação do sódio a 10 mEq/L nas primeiras 24 horas e a 8 mEq/L em cada 24 horas seguintes. O painel norte-americano de 2013 aceita 10 a 12 mEq/L em 24 horas e reduz o limite para 8 mEq/L em pacientes de alto risco (sódio até 105, hipocalemia, alcoolismo, desnutrição, hepatopatia). Metanálises recentes confirmaram associação entre correção acima de 8 mEq/L em 24 horas e desmielinização osmótica, embora o evento seja raro.",
+   "porAlt": [
+    "Errada: 12 mEq/L por dia excede o limite europeu.",
+    "Errada: é conservador demais e não é o limite proposto.",
+    "Errada: 20 mEq/L em 24 horas é correção perigosa.",
+    "Errada: 15 mEq/L no primeiro dia excede o limite.",
+    "Correta: 10 mEq/L no primeiro dia e 8 mEq/L nos seguintes."
+   ],
+   "base": "Spasovski et al., Eur J Endocrinol 2014"
+  },
+  {
+   "leitura": "eletrolitos",
+   "nivel": "intermediario",
+   "enun": "Mulher de 50 anos, 60 kg, com sódio de 112 mEq/L e sem sintomas graves. Pela fórmula de Adrogué-Madias, quanto 1 litro de NaCl 3% (513 mEq/L) elevaria o sódio?",
+   "alts": [
+    "Cerca de 6,6 mEq/L, com água corporal de 60 L",
+    "Cerca de 8,5 mEq/L, com água corporal de 46 L",
+    "Cerca de 17 mEq/L, com água corporal de 23 L",
+    "Cerca de 13 mEq/L, com água corporal de 30 L",
+    "Cerca de 11 mEq/L, com água corporal de 36 L"
+   ],
+   "gab": 3,
+   "coment": "Água corporal total de mulher adulta ≈ 0,5 × 60 = 30 L. Variação = (513 − 112) / (30 + 1) = 401 / 31 ≈ 12,9 mEq/L por litro. Para elevar 6 mEq/L, seriam cerca de 465 mL. A fórmula não considera a diurese: se houver aquarese (causa do ADH resolvida), o sódio sobe mais que o previsto. Por isso a fórmula serve para planejar, e o sódio seriado a cada 2 a 4 horas serve para decidir.",
+   "porAlt": [
+    "Errada: usa o peso inteiro como água corporal.",
+    "Errada: fração de água corporal sem base fisiológica.",
+    "Errada: água corporal subestimada.",
+    "Correta: (513 − 112)/31 ≈ 13 mEq/L.",
+    "Errada: 0,6 × 60 é a fração de homens adultos."
+   ],
+   "base": "Spasovski et al., Eur J Endocrinol 2014; Verbalis et al., Am J Med 2013"
+  },
+  {
+   "leitura": "eletrolitos",
+   "nivel": "intermediario",
+   "enun": "Paciente séptico com K de 2,8 mEq/L recebe KCl 40 mEq/dia há 3 dias sem melhora. Usa furosemida e anfotericina B desoxicolato. Qual a conduta prioritária?",
+   "alts": [
+    "Aumentar o KCl periférico para 20 mEq/h sem monitor cardíaco",
+    "Trocar a furosemida por hidroclorotiazida em dose plena",
+    "Dosar e repor magnésio, que mantém a perda renal de potássio",
+    "Diluir o KCl em glicose a 5% para facilitar a entrada celular",
+    "Suspender o potássio até retirar totalmente a anfotericina B"
+   ],
+   "gab": 2,
+   "coment": "Furosemida e anfotericina B espoliam potássio e magnésio. A hipomagnesemia libera os canais ROMK do túbulo distal e aumenta a perda renal de potássio, tornando a hipocalemia refratária à reposição. Repor magnésio é a medida que destrava a correção. KCl periférico a 20 mEq/h excede o limite usual (10 mEq/h) e exige monitor; glicose estimula insulina e desloca potássio para o intracelular, piorando o nível sérico; tiazídico também espolia potássio.",
+   "porAlt": [
+    "Errada: excede o limite periférico e exige monitorização.",
+    "Errada: tiazídico também causa perda de potássio e magnésio.",
+    "Correta: a hipomagnesemia mantém a caliurese.",
+    "Errada: a glicose estimula insulina e reduz o potássio sérico.",
+    "Errada: suspender a reposição agravaria a hipocalemia."
+   ],
+   "base": "Clase et al., Kidney Int 2020 (KDIGO Controversies Conference)"
+  },
+  {
+   "leitura": "eletrolitos",
+   "nivel": "avancado",
+   "enun": "Paciente com fósforo de 0,8 mg/dL, K de 5,4 mEq/L e LRA oligúrica. Prescrição: fosfato de potássio 2 mEq/mL, 15 mmol de fósforo em 1 hora por veia periférica. Qual a intervenção farmacêutica?",
+   "alts": [
+    "Sugerir glicerofosfato de sódio, pois a dose traria 27 mEq de K",
+    "Liberar, pois 15 mmol de fósforo trazem só cerca de 5 mEq de K",
+    "Sugerir diluir com gliconato de cálcio para proteger o miocárdio",
+    "Liberar a prescrição desde que seja infundida em 30 minutos",
+    "Sugerir bolus direto, pois o volume da prescrição é pequeno"
+   ],
+   "gab": 0,
+   "coment": "O fosfato de potássio 2 mEq/mL contém 1,1 mmol de fósforo e 2 mEq de potássio por mL. Para 15 mmol de fósforo: 15/1,1 = 13,6 mL, com 27 mEq de potássio. Em paciente com K de 5,4 e LRA oligúrica, isso pode precipitar hipercalemia grave; e 27 mEq em 1 hora por veia periférica excedem o limite de 10 mEq/h. O glicerofosfato de sódio (1 mmol de fosfato e 2 mEq de sódio por mL) evita a carga de potássio. Fosfato nunca é misturado com cálcio.",
+   "porAlt": [
+    "Correta: 13,6 mL trazem 27 mEq de K; trocar o sal é a medida segura.",
+    "Errada: o cálculo do potássio está errado.",
+    "Errada: fosfato precipita com cálcio.",
+    "Errada: infusão mais rápida agrava o risco.",
+    "Errada: fosfato de potássio nunca é dado em bolus."
+   ],
+   "base": "Bula de fosfato de potássio 2 mEq/mL (Brasil, 2023-2025); ASPEN 2020"
+  },
+  {
+   "leitura": "eletrolitos",
+   "nivel": "avancado",
+   "enun": "Homem com hiponatremia hipovolêmica por tiazídico (Na 114 mEq/L) recebe SF 0,9%. Em 6 horas, a diurese sobe para 300 mL/h com urina diluída e o sódio chega a 121 mEq/L. Qual a conduta?",
+   "alts": [
+    "Manter o SF 0,9% e repetir o sódio somente em 24 horas",
+    "Iniciar NaCl 3% para consolidar a correção já alcançada",
+    "Associar furosemida para aumentar a excreção de água livre",
+    "Dosar sódio a cada 2 horas e preparar desmopressina e água",
+    "Restringir a água livre e aumentar a vazão do SF 0,9%"
+   ],
+   "gab": 3,
+   "coment": "A reposição de volume e a suspensão do tiazídico removeram o estímulo ao ADH, e o rim passou a excretar água livre (aquarese). O sódio já subiu 7 mEq/L em 6 horas e vai ultrapassar o limite de 8 a 10 mEq/L em 24 horas. Sódio muito baixo inicial aumenta o risco de desmielinização. A conduta é vigiar de perto e, se o limite for atingido, repor água livre (glicose 5%) e usar desmopressina para frear ou reverter a correção. Mais sódio, diurético ou restrição hídrica acelerariam a sobrecorreção.",
+   "porAlt": [
+    "Errada: a correção está rápida e precisa de vigilância horária.",
+    "Errada: NaCl 3% aceleraria a sobrecorreção.",
+    "Errada: furosemida aumenta a perda de água livre e acelera a subida.",
+    "Correta: vigilância estreita e nova redução do sódio com desmopressina e água livre.",
+    "Errada: restringir água e dar mais sódio aceleram a correção."
+   ],
+   "base": "Spasovski et al., Eur J Endocrinol 2014; Verbalis et al., Am J Med 2013"
+  },
+  {
+   "leitura": "figado-coagulacao",
+   "nivel": "basico",
+   "enun": "Qual fator de coagulação explica a alteração precoce do INR na deficiência de vitamina K?",
+   "alts": [
+    "Fator II, por ter a meia-vida mais longa entre os dependentes",
+    "Fator IX, por ser o principal componente do complexo tenase",
+    "Fator VII, por ter a meia-vida mais curta entre os dependentes",
+    "Fator X, por ser o ponto de convergência das vias da cascata",
+    "Fator VIII, por ser sintetizado fora do hepatócito no cirrótico"
+   ],
+   "gab": 2,
+   "coment": "Os fatores dependentes de vitamina K são II, VII, IX e X, além das proteínas C e S. O fator VII tem a meia-vida mais curta, de cerca de 6 horas, e é avaliado pelo TP, não pelo TTPa. Na deficiência de vitamina K ou no início da varfarina, ele cai primeiro e prolonga o INR antes dos demais. A protrombina (II), de meia-vida longa, cai por último, e por isso o efeito antitrombótico pleno da varfarina demora dias. O fator VIII não depende de vitamina K.",
+   "porAlt": [
+    "Errada: a meia-vida longa do fator II faz com que ele caia por último.",
+    "Errada: o fator IX é avaliado pelo TTPa e não é o de meia-vida mais curta.",
+    "Correta: meia-vida de cerca de 6 horas, avaliado pelo TP.",
+    "Errada: o fator X tem meia-vida mais longa que o VII.",
+    "Errada: o fator VIII não depende de vitamina K."
+   ],
+   "base": "Hoffman e Monroe, Thromb Haemost 2001; fisiologia da hemostasia"
+  },
+  {
+   "leitura": "figado-coagulacao",
+   "nivel": "basico",
+   "enun": "No ROTEM de um paciente com sangramento ativo, qual achado indica reposição de fibrinogênio?",
+   "alts": [
+    "FIBTEM com firmeza máxima do coágulo reduzida",
+    "CT do EXTEM prolongado com o FIBTEM normal",
+    "Lise máxima do coágulo aumentada no EXTEM",
+    "CT do INTEM prolongado que corrige no HEPTEM",
+    "MCF do EXTEM reduzida, mas com o FIBTEM normal"
+   ],
+   "gab": 0,
+   "coment": "O canal FIBTEM inibe as plaquetas, e a firmeza do coágulo passa a depender só da fibrina; firmeza baixa indica déficit de fibrinogênio, tratado com crioprecipitado ou concentrado de fibrinogênio. CT prolongado com FIBTEM normal aponta para fatores (plasma ou complexo protrombínico). Lise aumentada indica hiperfibrinólise (ácido tranexâmico). CT do INTEM que corrige no canal com heparinase indica efeito de heparina (protamina). Firmeza baixa no EXTEM com FIBTEM normal aponta para plaquetas.",
+   "porAlt": [
+    "Correta: FIBTEM baixo reflete déficit de fibrinogênio.",
+    "Errada: indica deficiência de fatores, não de fibrinogênio.",
+    "Errada: indica hiperfibrinólise.",
+    "Errada: indica efeito de heparina.",
+    "Errada: com FIBTEM normal, o déficit é de plaquetas."
+   ],
+   "base": "Testes viscoelásticos; Metcalf et al., JAMA 2025"
+  },
+  {
+   "leitura": "figado-coagulacao",
+   "nivel": "intermediario",
+   "enun": "Paciente clínico em enoxaparina profilática desde a admissão. No 12º dia, as plaquetas caem de 180 para 120 × 10⁹/L, com pneumonia grave e CIVD em evolução, sem trombose. Qual a conduta mais adequada?",
+   "alts": [
+    "Suspender a enoxaparina e iniciar fondaparinux em dose plena",
+    "Não testar para TIH e manter a profilaxia, investigando a sepse",
+    "Pedir anti-PF4 e suspender toda heparina até sair o resultado",
+    "Trocar a enoxaparina por heparina não fracionada e repetir",
+    "Transfundir plaquetas e suspender a profilaxia até 150 mil"
+   ],
+   "gab": 1,
+   "coment": "Escore 4T: queda de 33% (1 ponto), início após o 10º dia (1 ponto), sem trombose (0), outra causa evidente, sepse com CIVD (0). Total de 2: baixa probabilidade. A diretriz ASH 2018 orienta não testar nem tratar para TIH quando o 4T é baixo, pelo alto valor preditivo negativo; testar nesse cenário gera falsos positivos e suspensões desnecessárias. A causa provável é o consumo pela sepse, e o paciente imóvel continua precisando de profilaxia de TEV.",
+   "porAlt": [
+    "Errada: não há indicação de trocar a anticoagulação com 4T baixo.",
+    "Correta: 4T de 2 dispensa teste; a causa provável é a sepse.",
+    "Errada: testar com probabilidade baixa gera falsos positivos.",
+    "Errada: a heparina não fracionada tem risco maior de TIH e não muda nada.",
+    "Errada: plaquetas de 120 mil não exigem transfusão nem suspensão da profilaxia."
+   ],
+   "base": "ASH 2018 (Cuker et al., Blood Adv 2018); Lo et al., J Thromb Haemost 2006"
+  },
+  {
+   "leitura": "figado-coagulacao",
+   "nivel": "intermediario",
+   "enun": "Cirrótico Child-Pugh C, INR 2,4 e plaquetas de 60 × 10⁹/L, sem sangramento, internado na UTI por pneumonia e acamado. Qual conduta sobre a profilaxia de TEV é a mais coerente?",
+   "alts": [
+    "Contraindicada, pois INR acima de 2 já anticoagula o paciente",
+    "Contraindicada até corrigir o INR com plasma fresco congelado",
+    "Indicada somente após transfusão de plaquetas acima de 100 mil",
+    "Indicada apenas com varfarina, ajustada pelo INR já alterado",
+    "Deve ser avaliada, pois INR alto não protege contra a trombose"
+   ],
+   "gab": 4,
+   "coment": "Na cirrose, a hemostasia é reequilibrada: caem fatores pró-coagulantes e também anticoagulantes (proteína C, antitrombina), enquanto o fator VIII e o von Willebrand aumentam. O INR mede só o lado pró-coagulante e não indica anticoagulação real nem protege contra TEV. O cirrótico internado e imóvel deve ter o risco trombótico avaliado como qualquer paciente. Corrigir o INR com plasma expõe a volume e aumento da pressão portal sem benefício, e varfarina não é profilaxia hospitalar.",
+   "porAlt": [
+    "Errada: o INR alto do cirrótico não reflete anticoagulação.",
+    "Errada: plasma não é pré-requisito e traz riscos.",
+    "Errada: não há exigência de transfusão para iniciar profilaxia.",
+    "Errada: a varfarina não é usada como profilaxia na UTI e seu controle pelo INR é inviável.",
+    "Correta: a avaliação de profilaxia é obrigatória apesar do INR."
+   ],
+   "base": "Hoffman e Monroe, Thromb Haemost 2001; Metcalf et al., JAMA 2025"
+  },
+  {
+   "leitura": "figado-coagulacao",
+   "nivel": "avancado",
+   "enun": "Pós-operatório de cirurgia cardíaca com heparina não fracionada desde o dia 0. No 7º dia, as plaquetas caem de 220 para 85 × 10⁹/L e surge TVP, sem outra causa. O paciente usa varfarina iniciada no 5º dia (INR 1,8). Qual conjunto de condutas é correto?",
+   "alts": [
+    "Suspender a heparina, manter a varfarina e transfundir plaquetas",
+    "Manter a heparina em dose plena pela TVP e solicitar o anti-PF4",
+    "Trocar a heparina por enoxaparina e manter a varfarina em curso",
+    "Suspender heparina, iniciar argatrobana e reverter a varfarina",
+    "Suspender heparina e varfarina e aguardar o teste funcional"
+   ],
+   "gab": 3,
+   "coment": "Escore 4T de 8 (queda acima de 50% com nadir acima de 20, início entre 5º e 10º dia, trombose nova, sem outra causa): alta probabilidade. A ASH 2018 orienta suspender toda heparina, iniciar anticoagulante não heparínico em dose terapêutica antes do resultado laboratorial, não transfundir plaquetas de rotina e, se o paciente já estiver em varfarina, revertê-la com vitamina K, pelo risco de gangrena venosa por queda precoce da proteína C. A enoxaparina tem reação cruzada com os anticorpos.",
+   "porAlt": [
+    "Errada: a varfarina com plaquetas baixas aumenta o risco de gangrena venosa, e plaquetas de rotina são desaconselhadas.",
+    "Errada: manter heparina na TIH agrava a trombose.",
+    "Errada: a heparina de baixo peso molecular tem reação cruzada.",
+    "Correta: anticoagulante não heparínico e reversão da varfarina.",
+    "Errada: com TVP e 4T alto, aguardar sem anticoagulante é perigoso."
+   ],
+   "base": "ASH 2018 (Cuker et al., Blood Adv 2018)"
+  },
+  {
+   "leitura": "figado-coagulacao",
+   "nivel": "avancado",
+   "enun": "Paciente em linezolida há 18 dias por osteomielite, com LRA estágio 2, tem plaquetas caindo de 210 para 70 × 10⁹/L; sem heparina, sem sangramento e com hemoglobina estável. Qual a hipótese mais provável e a conduta?",
+   "alts": [
+    "Mielotoxicidade da linezolida, com troca do antimicrobiano",
+    "TIH tardia, com início de argatrobana em dose terapêutica",
+    "CIVD pela osteomielite, com reposição de plasma e plaquetas",
+    "Pseudotrombocitopenia por EDTA, sem nenhuma investigação",
+    "Hiperesplenismo por cirrose oculta, com uso de betabloqueador"
+   ],
+   "gab": 0,
+   "coment": "A trombocitopenia por linezolida é dependente de dose e de duração, aparece sobretudo após 10 a 14 dias de uso e é mais frequente na disfunção renal, que aumenta a exposição ao fármaco e a seus metabólitos. Sem heparina, não há como ser TIH. A conduta é discutir a troca do antimicrobiano por alternativa adequada ao agente e ao sítio, e acompanhar a recuperação das plaquetas. A pseudotrombocitopenia precisa ser excluída com tubo de citrato, não ignorada.",
+   "porAlt": [
+    "Correta: uso prolongado e LRA favorecem a mielotoxicidade da linezolida.",
+    "Errada: sem exposição à heparina, não há TIH.",
+    "Errada: não há dados de CIVD nem sangramento que justifiquem hemocomponentes.",
+    "Errada: a pseudotrombocitopenia deve ser excluída com tubo de citrato.",
+    "Errada: não há dado que sugira cirrose ou hiperesplenismo."
+   ],
+   "base": "AABB/ICTMG 2025; KDIGO 2026, rascunho (gestão de fármacos)"
+  },
+  {
+   "leitura": "endocrino-metabolico",
+   "nivel": "basico",
+   "enun": "Segundo a ADA 2026, qual a faixa de glicemia recomendada para a maioria dos pacientes críticos em uso de insulina?",
+   "alts": [
+    "80 a 110 mg/dL, como no estudo original de Leuven",
+    "70 a 140 mg/dL, como no controle do ambulatório",
+    "180 a 215 mg/dL, como no grupo liberal do TGC-fast",
+    "110 a 140 mg/dL, como regra para todos os críticos",
+    "140 a 180 mg/dL, iniciando insulina a partir de 180"
+   ],
+   "gab": 4,
+   "coment": "A ADA 2026 (seção 16) recomenda iniciar insulina para hiperglicemia persistente de 180 mg/dL ou mais e manter a glicemia entre 140 e 180 mg/dL na maioria dos críticos. Alvos de 110 a 140 mg/dL podem ser apropriados para pacientes selecionados, como no pós-operatório de cirurgia cardíaca, se alcançáveis sem hipoglicemia significativa. O controle estrito de 80 a 110 mg/dL aumentou a mortalidade no NICE-SUGAR. A Surviving Sepsis Campaign 2026 também recomenda iniciar insulina a partir de 180 mg/dL.",
+   "porAlt": [
+    "Errada: alvo estrito associado a mais mortalidade e hipoglicemia no NICE-SUGAR.",
+    "Errada: é um alvo ambulatorial, inadequado para a UTI.",
+    "Errada: é a faixa do grupo liberal de um ensaio, não uma recomendação.",
+    "Errada: vale só para pacientes selecionados, não para todos.",
+    "Correta: é a recomendação da ADA 2026 para a maioria dos críticos."
+   ],
+   "base": "ADA Standards of Care 2026, seção 16"
+  },
+  {
+   "leitura": "endocrino-metabolico",
+   "nivel": "basico",
+   "enun": "Qual a dose diária de hidrocortisona usada nos principais ensaios de choque séptico?",
+   "alts": [
+    "50 mg/dia, em dose única pela manhã",
+    "100 mg/dia, divididos a cada 12 horas",
+    "200 mg/dia, em 4 doses ou em infusão",
+    "400 mg/dia, divididos a cada 6 horas",
+    "800 mg/dia, em pulsos durante 3 dias"
+   ],
+   "gab": 2,
+   "coment": "ADRENAL e APROCCHSS usaram hidrocortisona 200 mg/dia, em infusão contínua ou 50 mg IV a cada 6 horas (associada à fludrocortisona no APROCCHSS). A atualização SCCM 2024 sugere corticoide no choque séptico e recomenda contra doses altas por curto período (acima de 400 mg/dia de hidrocortisona por menos de 3 dias). Doses abaixo de 200 mg/dia ficam aquém da reposição de estresse, e doses de 400 mg/dia ou mais aumentam efeitos adversos sem benefício demonstrado.",
+   "porAlt": [
+    "Errada: dose insuficiente para a resposta ao estresse.",
+    "Errada: metade da dose usada nos ensaios.",
+    "Correta: 200 mg/dia, em 50 mg a cada 6 horas ou infusão contínua.",
+    "Errada: o dobro da dose dos ensaios, sem benefício adicional.",
+    "Errada: pulsos em dose alta por curto período são desaconselhados."
+   ],
+   "base": "ADRENAL e APROCCHSS (NEJM 2018); SCCM 2024"
+  },
+  {
+   "leitura": "endocrino-metabolico",
+   "nivel": "intermediario",
+   "enun": "Paciente em infusão de insulina regular a 4 UI/h com dieta enteral contínua. A dieta é suspensa às 22 horas para extubação pela manhã, e a infusão continua na mesma vazão. Qual o maior risco e a conduta?",
+   "alts": [
+    "Hiperglicemia de rebote; aumentar a infusão em 50%",
+    "Cetoacidose; manter a infusão e somar insulina basal",
+    "Hipocalemia; manter a infusão e repor KCl a 20 mEq/h",
+    "Hipoglicemia; reduzir a infusão e oferecer glicose IV",
+    "Hiperglicemia de estresse; trocar por NPH subcutânea"
+   ],
+   "gab": 3,
+   "coment": "A necessidade de insulina de um paciente com dieta contínua inclui a parcela que cobre os carboidratos da dieta. Com a dieta suspensa e a infusão mantida, a hipoglicemia é previsível, e no paciente sedado os sinais ficam mascarados. Todo protocolo deve ter regra de pausa da dieta: reduzir ou suspender a infusão conforme a glicemia, oferecer glicose intravenosa quando necessário e aumentar a frequência das glicemias. É um dos erros de medicação mais evitáveis na UTI.",
+   "porAlt": [
+    "Errada: sem aporte, não há razão para rebote; aumentar a insulina é perigoso.",
+    "Errada: a infusão mantida protege contra cetose; o risco é o oposto.",
+    "Errada: 20 mEq/h exige via central e monitor, e o risco principal é outro.",
+    "Correta: sem dieta, a dose atual causa hipoglicemia.",
+    "Errada: NPH sem dieta também causa hipoglicemia, e o paciente está instável."
+   ],
+   "base": "ADA Standards of Care 2026, seção 16"
+  },
+  {
+   "leitura": "endocrino-metabolico",
+   "nivel": "intermediario",
+   "enun": "Paciente em choque séptico com norepinefrina de 0,4 mcg/kg/min há 6 horas. A prescrição traz hidrocortisona 100 mg IV a cada 6 horas. Qual a intervenção farmacêutica?",
+   "alts": [
+    "Manter, pois 400 mg/dia é a dose recomendada no choque séptico",
+    "Sugerir 50 mg a cada 6 horas, somando 200 mg/dia como nos ensaios",
+    "Sugerir dexametasona 20 mg/dia, por não ter efeito mineralocorticoide",
+    "Suspender e dosar o cortisol, pois só se trata com cortisol baixo",
+    "Sugerir metilprednisolona 1 g/dia por 3 dias e retirada abrupta"
+   ],
+   "gab": 1,
+   "coment": "A dose estudada no ADRENAL e no APROCCHSS é 200 mg/dia de hidrocortisona. A atualização SCCM 2024 recomenda contra doses altas por curto período. A decisão de tratar não depende de dosar cortisol, porque não há teste único confiável (CIRCI 2017) e o benefício foi demonstrado sem seleção por exame. A dexametasona não tem ação mineralocorticoide, desejável no choque, e não foi o corticoide estudado. Pulsos de metilprednisolona não têm lugar no choque séptico.",
+   "porAlt": [
+    "Errada: 400 mg/dia é o dobro da dose estudada.",
+    "Correta: 200 mg/dia é a dose dos ensaios e da prática recomendada.",
+    "Errada: a ausência de efeito mineralocorticoide é desvantagem no choque.",
+    "Errada: o tratamento não depende de dosagem de cortisol.",
+    "Errada: dose alta por curto período é desaconselhada."
+   ],
+   "base": "SCCM 2024 (Chaudhuri et al.); CIRCI 2017; ADRENAL e APROCCHSS 2018"
+  },
+  {
+   "leitura": "endocrino-metabolico",
+   "nivel": "avancado",
+   "enun": "Um residente dosa o cortisol sérico 2 horas após a primeira dose de hidrocortisona 50 mg IV e obtém 48 mcg/dL. Ele propõe suspender o corticoide porque a função adrenal estaria preservada. Qual a melhor resposta?",
+   "alts": [
+    "O ensaio reage com a hidrocortisona; o valor não avalia a adrenal",
+    "O valor confirma função preservada; o corticoide deve ser suspenso",
+    "O valor indica insuficiência; a dose deve ser dobrada a 400 mg/dia",
+    "O teste só vale com cortisol salivar, que é o preferido na diretriz",
+    "O resultado exige teste com 1 mcg de cosintropina imediatamente"
+   ],
+   "gab": 0,
+   "coment": "A hidrocortisona é o próprio cortisol, e prednisolona e metilprednisolona também têm reação cruzada nos imunoensaios; a dexametasona praticamente não tem. Depois da dose, o cortisol medido reflete o fármaco, não a produção adrenal. Qualquer dosagem deve ser colhida antes da primeira dose. Além disso, a diretriz de CIRCI de 2017 sugere não usar cortisol livre ou salivar no lugar do total e não há teste único confiável; a decisão de usar corticoide no choque séptico não depende de exame.",
+   "porAlt": [
+    "Correta: o cortisol medido inclui a hidrocortisona administrada.",
+    "Errada: o valor não mede a função adrenal após a dose.",
+    "Errada: o resultado não indica insuficiência e 400 mg/dia é dose desaconselhada.",
+    "Errada: a diretriz sugere não usar cortisol salivar em vez do total.",
+    "Errada: nenhum teste é interpretável sob hidrocortisona, e a diretriz não indica 1 mcg."
+   ],
+   "base": "SCCM/ESICM CIRCI 2017 (Annane et al.)"
+  },
+  {
+   "leitura": "endocrino-metabolico",
+   "nivel": "avancado",
+   "enun": "No 10º dia de choque séptico, em uso de dopamina e hidrocortisona e sem história de doença tireoidiana, o paciente tem T3 livre baixo, T4 livre levemente baixo e TSH de 0,3 mUI/L. Qual a conduta mais adequada?",
+   "alts": [
+    "Iniciar levotiroxina IV, pelo risco de coma mixedematoso",
+    "Iniciar liotironina para corrigir a conversão periférica",
+    "Não repor, pois o quadro sugere doença não tireoidiana",
+    "Iniciar metimazol, pois o TSH baixo indica tireotoxicose",
+    "Suspender a hidrocortisona, causa de hipotireoidismo"
+   ],
+   "gab": 2,
+   "coment": "Na doença crítica prolongada, a conversão de T4 em T3 cai, o T3 reverso sobe, o T4 cai nos casos graves e o TSH fica normal ou baixo; dopamina e glicocorticoides em dose alta suprimem ainda mais o TSH. É a síndrome da doença não tireoidiana. Os níveis baixos se associam a pior prognóstico, mas a reposição de hormônio tireoidiano não mostrou benefício e não é recomendada. O TSH baixo com T3 e T4 baixos não indica tireotoxicose, e a hidrocortisona não causa hipotireoidismo primário.",
+   "porAlt": [
+    "Errada: não há quadro de coma mixedematoso, e a reposição não traz benefício.",
+    "Errada: corrigir o T3 não mostrou benefício clínico.",
+    "Correta: padrão típico da doença não tireoidiana, agravado por dopamina e corticoide.",
+    "Errada: tireotoxicose teria T4 ou T3 elevados.",
+    "Errada: glicocorticoides suprimem o TSH, não causam hipotireoidismo primário."
+   ],
+   "base": "Fliers et al., Lancet Diabetes Endocrinol 2015"
+  }
+ ]
+}

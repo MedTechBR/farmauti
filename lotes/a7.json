@@ -1,0 +1,1537 @@
+{
+ "leituras": [
+  {
+   "slug": "resistencia-bacteriana",
+   "titulo": "Resistência bacteriana e escolha terapêutica",
+   "dek": "Mecanismos de resistência dos Gram-negativos e Gram-positivos que importam na UTI e a escolha do antimicrobiano por fenótipo, com base na IDSA AMR Guidance (versão 5.0, julho de 2026), na Nota Técnica nº 74/2022 CGLAB/BrCAST/ANVISA sobre NDM e coprodução de carbapenemases e nos pontos de corte do BrCAST.",
+   "palavras": 5065,
+   "fontes": [
+    "IDSA 2026 Guidance on the Treatment of Antimicrobial-Resistant Gram-Negative Infections, versão 5.0 (jul. 2026)",
+    "IDSA 2024 Guidance AMR Gram-negativos (Clin Infect Dis 2024)",
+    "Nota Técnica nº 74/2022 CGLAB/BrCAST/ANVISA (NDM e coprodução KPC+NDM)",
+    "MERINO (JAMA 2018)",
+    "Consenso internacional de polimixinas (Pharmacotherapy 2019)",
+    "Consenso ASHP/IDSA/PIDS/SIDP de vancomicina (2020)"
+   ]
+  },
+  {
+   "slug": "antifungicos",
+   "titulo": "Antifúngicos e infecções fúngicas invasivas",
+   "dek": "Farmacologia dos antifúngicos sistêmicos e manejo de candidemia, candidíase invasiva, aspergilose e mucormicose no paciente crítico, com base nas diretrizes da IDSA de candidíase e aspergilose (2016), na diretriz global ECMM/ISHAM/ASM de candidíase (2025), na diretriz da ATS sobre antifúngicos em pacientes críticos (2025) e nas orientações da ANVISA sobre Candida auris.",
+   "palavras": 4169,
+   "fontes": [
+    "IDSA candidíase 2016",
+    "Diretriz global ECMM/ISHAM/ASM de candidíase (Lancet Infect Dis 2025)",
+    "IDSA aspergilose 2016",
+    "ATS 2025: aspergilose e antifúngico empírico no crítico (AJRCCM 2025)",
+    "Diretriz alemã AWMF de aspergilose em UTI (Infection 2025)",
+    "Diretriz global de mucormicose ECMM/MSG ERC (2019)",
+    "NT GVIMS/GGTES/ANVISA nº 02/2022 sobre Candida auris, atualizada em dez. 2024",
+    "SSC 2026"
+   ]
+  },
+  {
+   "slug": "antivirais-uti",
+   "titulo": "Antivirais e infecções oportunistas na UTI",
+   "dek": "Aciclovir, ganciclovir, foscarnete, oseltamivir e o tratamento da COVID-19 grave, além de pneumocistose, toxoplasmose e profilaxias no imunossuprimido internado em UTI, com base nas diretrizes da IDSA (encefalite 2008, influenza 2018, COVID-19 em atualização contínua), no ensaio RECOVERY, no ensaio PIC (2025) e nas diretrizes do ECIL para pneumocistose.",
+   "palavras": 3867,
+   "fontes": [
+    "IDSA encefalite 2008",
+    "IDSA influenza 2018 (Clin Infect Dis 2019)",
+    "RECOVERY dexametasona (NEJM 2021)",
+    "IDSA COVID-19, atualizações 2025",
+    "Ensaio PIC (Lancet Respir Med 2025)",
+    "ECIL pneumocistose (2016)",
+    "Diretrizes NIH/CDC/IDSA de infecções oportunistas no HIV (versão online 2026)",
+    "ATS PAC 2025"
+   ]
+  },
+  {
+   "slug": "sepse-choque-septico",
+   "titulo": "Sepse e choque séptico",
+   "dek": "Definições, reconhecimento e tratamento da sepse e do choque séptico no adulto, com ênfase na antibioticoterapia (tempo, escolha por foco, dose de ataque, infusão estendida, descalonamento e duração), segundo as diretrizes da Surviving Sepsis Campaign de 2026, o consenso Sepsis-3 e os ensaios BLING III, ADAPT-Sepsis e BALANCE.",
+   "palavras": 3694,
+   "fontes": [
+    "Surviving Sepsis Campaign 2026 (Crit Care Med/Intensive Care Med 2026)",
+    "Sepsis-3 (JAMA 2016)",
+    "Pacote da primeira hora SSC (2018)",
+    "BLING III (JAMA 2024)",
+    "Metanálise de infusão prolongada (JAMA 2024)",
+    "ADAPT-Sepsis (JAMA 2025)",
+    "BALANCE (NEJM 2025)",
+    "SPREAD (Lancet Infect Dis 2017)",
+    "SOFA-2 (JAMA 2025)"
+   ]
+  },
+  {
+   "slug": "pneumonias-uti",
+   "titulo": "Pneumonia hospitalar e associada à ventilação mecânica",
+   "dek": "Diagnóstico, escolha empírica, doses, duração e descalonamento na pneumonia hospitalar, na pneumonia associada à ventilação mecânica e na pneumonia comunitária grave, com base nas diretrizes IDSA/ATS 2016 e ERS/ESICM/ESCMID/ALAT 2017 (pneumonia hospitalar), ATS/IDSA 2019 com a atualização da ATS de 2025 e ERS/ESICM/ESCMID/ALAT 2023 (pneumonia comunitária grave), e na IDSA AMR Guidance 2026.",
+   "palavras": 3279,
+   "fontes": [
+    "IDSA/ATS PAH e PAV 2016",
+    "ERS/ESICM/ESCMID/ALAT PAH e PAV 2017",
+    "ATS/IDSA PAC 2019",
+    "ATS PAC 2025 (AJRCCM 2025)",
+    "ERS/ESICM/ESCMID/ALAT PAC grave 2023",
+    "CAPE COD (NEJM 2023)",
+    "IDSA AMR Guidance 2026",
+    "ZEPHyR (Clin Infect Dis 2012)"
+   ]
+  },
+  {
+   "slug": "outras-infeccoes-uti",
+   "titulo": "Infecções de corrente sanguínea, urinárias, intra-abdominais e do sistema nervoso central",
+   "dek": "Manejo farmacoterapêutico das infecções de corrente sanguínea associadas a cateter, das infecções urinárias associadas a cateter, das infecções intra-abdominais, da meningite e ventriculite, das infecções necrosantes de pele e partes moles e da infecção grave por Clostridioides difficile, com base nas diretrizes da IDSA (cateter 2009, meningite relacionada à assistência 2017, pele e partes moles 2014, ITU complicada 2025, C. difficile 2021), da ESCMID (meningite 2016), da SIS (2017) e nos ensaios STOP-IT e BALANCE.",
+   "palavras": 3639,
+   "fontes": [
+    "IDSA infecção relacionada a cateter 2009",
+    "IDSA ITU complicada 2025 (Clin Infect Dis 2026)",
+    "IDSA ITU associada a cateter 2009",
+    "STOP-IT (NEJM 2015)",
+    "SIS infecção intra-abdominal 2017",
+    "ESCMID meningite bacteriana 2016",
+    "IDSA ventriculite e meningite relacionadas à assistência 2017",
+    "IDSA pele e partes moles 2014",
+    "IDSA/SHEA C. difficile 2017 e atualização focada 2021",
+    "BALANCE (NEJM 2025)"
+   ]
+  },
+  {
+   "slug": "stewardship",
+   "titulo": "Gerenciamento do uso de antimicrobianos",
+   "dek": "Estrutura, estratégias, indicadores e papel do farmacêutico no programa de gerenciamento do uso de antimicrobianos (PGA) em hospital e UTI, com base na Diretriz Nacional da ANVISA (revisão de 2023), na diretriz IDSA/SHEA de 2016, nos elementos essenciais do CDC (2019), no índice ATC/DDD da OMS e nos ensaios recentes sobre biomarcadores e duração.",
+   "palavras": 3885,
+   "fontes": [
+    "Diretriz Nacional ANVISA de PGA, revisão 2023",
+    "NT GVIMS/GGTES/ANVISA nº 06/2021",
+    "IDSA/SHEA stewardship 2016",
+    "CDC Core Elements 2019",
+    "Índice ATC/DDD da OMS (atualização jan. 2026)",
+    "SSC 2026",
+    "ADAPT-Sepsis (JAMA 2025)",
+    "PRORATA (Lancet 2010)",
+    "CLSI M39 (2022)",
+    "Resolução CFF 585/2013"
+   ]
+  }
+ ],
+ "cartoes": [
+  {
+   "leitura": "resistencia-bacteriana",
+   "frente": "Quais classes de Ambler são serino-betalactamases e qual é a metalo-betalactamase?",
+   "verso": "A, C e D têm serina no sítio ativo. A classe B (NDM, VIM, IMP, SPM) usa zinco e não é inibida por avibactam, vaborbactam nem relebactam."
+  },
+  {
+   "leitura": "resistencia-bacteriana",
+   "frente": "Por que piperacilina-tazobactam não é sugerida para bacteremia por enterobactéria ESBL, mesmo com laudo sensível?",
+   "verso": "No MERINO (2018) teve mortalidade maior que meropeném. Teste de sensibilidade pouco reprodutível, efeito inóculo e coprodução de OXA-1 comprometem a eficácia."
+  },
+  {
+   "leitura": "resistencia-bacteriana",
+   "frente": "Quais enterobactérias têm risco moderado de AmpC induzível clinicamente significativa segundo a IDSA 2026?",
+   "verso": "Enterobacter cloacae complexo, Klebsiella aerogenes, Citrobacter freundii e Hafnia alvei (acrescentada na versão 2026)."
+  },
+  {
+   "leitura": "resistencia-bacteriana",
+   "frente": "Qual betalactâmico a IDSA sugere para infecção invasiva por E. cloacae sem ESBL e com CIM de cefepima de até 8 mg/L?",
+   "verso": "Cefepima: é indutora fraca de AmpC e resiste à hidrólise por ela. Evitar ceftriaxona, cefotaxima e ceftazidima."
+  },
+  {
+   "leitura": "resistencia-bacteriana",
+   "frente": "Qual inibidor de betalactamase disponível tem atividade contra OXA-48?",
+   "verso": "Avibactam. Vaborbactam e relebactam não inibem OXA-48, por isso ceftazidima-avibactam é a opção preferida para CRE produtora de OXA-48."
+  },
+  {
+   "leitura": "resistencia-bacteriana",
+   "frente": "Qual esquema, com fármacos disponíveis no Brasil, trata enterobactéria produtora de NDM?",
+   "verso": "Ceftazidima-avibactam 2,5 g IV a cada 8 horas em 2 horas associada a aztreonam 2 g IV a cada 8 horas, administrados juntos, com ajuste renal de ambos."
+  },
+  {
+   "leitura": "resistencia-bacteriana",
+   "frente": "Por que o aztreonam precisa do avibactam na infecção por NDM?",
+   "verso": "O aztreonam escapa da NDM, mas é hidrolisado pelas ESBL, AmpC ou KPC que a bactéria coproduz. O avibactam inibe essas enzimas e protege o aztreonam."
+  },
+  {
+   "leitura": "resistencia-bacteriana",
+   "frente": "Qual carbapenemase predomina no Acinetobacter baumannii resistente a carbapenêmicos no Brasil?",
+   "verso": "OXA-23, em mais de 95% dos isolados (NT 74/2022). Não é detectada pelos testes imunocromatográficos comerciais; exige método molecular."
+  },
+  {
+   "leitura": "resistencia-bacteriana",
+   "frente": "O que é a SPM e por que ela importa no laboratório?",
+   "verso": "São Paulo metalo-betalactamase, MBL de P. aeruginosa descrita no Brasil. Não é detectada pelos testes imunocromatográficos e responde por cerca de 25% das carbapenemases em Pseudomonas."
+  },
+  {
+   "leitura": "resistencia-bacteriana",
+   "frente": "Como se define P. aeruginosa com resistência difícil de tratar (DTR)?",
+   "verso": "Não sensibilidade a piperacilina-tazobactam, ceftazidima, cefepima, aztreonam, meropeném, imipeném, ciprofloxacino e levofloxacino."
+  },
+  {
+   "leitura": "resistencia-bacteriana",
+   "frente": "Qual a opção preferida pela IDSA 2026 para infecção invasiva por Stenotrophomonas maltophilia?",
+   "verso": "Cefiderocol em monoterapia, com base sobretudo em dados in vitro e animais. Alternativa: aztreonam-avibactam, de preferência com um segundo agente."
+  },
+  {
+   "leitura": "resistencia-bacteriana",
+   "frente": "Qual a dose de ampicilina-sulbactam para CRAB quando não há sulbactam-durlobactam?",
+   "verso": "9 g IV a cada 8 horas em infusão de 4 horas (3 g de sulbactam por dose), sempre associada a pelo menos um segundo agente ativo."
+  },
+  {
+   "leitura": "resistencia-bacteriana",
+   "frente": "Por que a polimixina B não serve para cistite por enterobactéria resistente a carbapenêmicos?",
+   "verso": "É eliminada sobretudo por via não renal e atinge concentração urinária baixa. A colistina, formada a partir do colistimetato no trato urinário, é alternativa."
+  },
+  {
+   "leitura": "resistencia-bacteriana",
+   "frente": "A resistência do patógeno exige tratar por mais tempo?",
+   "verso": "Não. A IDSA AMR Guidance afirma que a duração para infecções por patógenos resistentes em geral não difere da usada no mesmo sítio com patógeno sensível."
+  },
+  {
+   "leitura": "antifungicos",
+   "frente": "Qual o antifúngico inicial preferido na candidemia do paciente crítico?",
+   "verso": "Uma equinocandina (caspofungina, micafungina ou anidulafungina), segundo a IDSA 2016 e a diretriz global de 2025, exceto em infecção de SNC, olho e trato urinário."
+  },
+  {
+   "leitura": "antifungicos",
+   "frente": "Quais as doses de ataque e manutenção de caspofungina e anidulafungina?",
+   "verso": "Caspofungina 70 mg no 1º dia e depois 50 mg por dia. Anidulafungina 200 mg no 1º dia e depois 100 mg por dia. Micafungina 100 mg por dia sem ataque."
+  },
+  {
+   "leitura": "antifungicos",
+   "frente": "Quais os critérios para trocar a equinocandina por fluconazol na candidemia?",
+   "verso": "Estabilidade clínica, isolado sensível ao fluconazol, hemoculturas de controle negativas e controle de foco; a IDSA sugere em 5 a 7 dias."
+  },
+  {
+   "leitura": "antifungicos",
+   "frente": "A partir de quando se contam os 14 dias de tratamento da candidemia?",
+   "verso": "Da primeira hemocultura negativa, com resolução dos sintomas e sem complicações metastáticas."
+  },
+  {
+   "leitura": "antifungicos",
+   "frente": "Por que a anfotericina B desoxicolato não pode ser diluída em NaCl 0,9%?",
+   "verso": "Porque precipita em soluções com eletrólitos. Dilui-se em glicose 5%; o NaCl 0,9% é usado antes, como pré-hidratação, não como diluente."
+  },
+  {
+   "leitura": "antifungicos",
+   "frente": "Qual a dose máxima de anfotericina B desoxicolato e por que o erro com a lipossomal é grave?",
+   "verso": "Até 1 mg/kg por dia (nunca acima de 1,5 mg/kg). A lipossomal usa 3 a 5 mg/kg; trocar as formulações pode causar parada cardíaca."
+  },
+  {
+   "leitura": "antifungicos",
+   "frente": "Quais distúrbios eletrolíticos a anfotericina B causa?",
+   "verso": "Hipocalemia e hipomagnesemia por lesão tubular distal, além de acidose tubular renal tipo 1. Reposição programada e dosagem diária na primeira semana."
+  },
+  {
+   "leitura": "antifungicos",
+   "frente": "Quando colher o primeiro nível de voriconazol e qual o alvo?",
+   "verso": "Vale por volta do 5º dia de tratamento. Alvo de 1 a 5,5 mg/L (IDSA 2016); muitos serviços usam 2 a 5 mg/L em doença grave."
+  },
+  {
+   "leitura": "antifungicos",
+   "frente": "Qual antifúngico azólico encurta o QT e é contraindicado na síndrome do QT curto familiar?",
+   "verso": "Isavuconazol."
+  },
+  {
+   "leitura": "antifungicos",
+   "frente": "Qual a dose de isavuconazol?",
+   "verso": "200 mg a cada 8 horas por seis doses (48 horas) e depois 200 mg uma vez ao dia, IV ou oral, sem ajuste renal (372 mg de sulfato de isavuconazônio = 200 mg)."
+  },
+  {
+   "leitura": "antifungicos",
+   "frente": "Por que equinocandinas não tratam candidúria nem meningite?",
+   "verso": "Atingem concentração urinária baixa e penetram mal no SNC e no olho. Nesses sítios usa-se fluconazol ou anfotericina B."
+  },
+  {
+   "leitura": "antifungicos",
+   "frente": "Como ajustar fluconazol com clearance abaixo de 50 mL/min?",
+   "verso": "Manter a dose de ataque integral e reduzir a manutenção à metade. Na terapia de substituição renal contínua, doses altas (800 mg por dia ou mais)."
+  },
+  {
+   "leitura": "antifungicos",
+   "frente": "Qual a primeira linha na mucormicose e qual azol não tem atividade?",
+   "verso": "Anfotericina B lipossomal 5 a 10 mg/kg por dia com desbridamento cirúrgico. Voriconazol não cobre Mucorales."
+  },
+  {
+   "leitura": "antifungicos",
+   "frente": "O que a ATS 2025 recomenda sobre antifúngico empírico no paciente crítico sem neutropenia?",
+   "verso": "Recomendação condicional contra profilaxia ou terapia empírica de rotina dirigida a Candida em pacientes críticos sem neutropenia e sem transplante."
+  },
+  {
+   "leitura": "antivirais-uti",
+   "frente": "Qual a dose de aciclovir na encefalite herpética do adulto com função renal normal?",
+   "verso": "10 mg/kg IV a cada 8 horas por 14 a 21 dias, calculada por peso ideal ou ajustado no obeso conforme protocolo."
+  },
+  {
+   "leitura": "antivirais-uti",
+   "frente": "Como prevenir a nefropatia por cristais de aciclovir?",
+   "verso": "Infundir em pelo menos 1 hora, manter hidratação e diurese, evitar nefrotóxicos e ajustar a dose à função renal diariamente."
+  },
+  {
+   "leitura": "antivirais-uti",
+   "frente": "Qual o ajuste do aciclovir IV com clearance de 25 a 50 mL/min?",
+   "verso": "10 mg/kg a cada 12 horas. Com 10 a 25 mL/min, a cada 24 horas; abaixo de 10, 5 mg/kg a cada 24 horas."
+  },
+  {
+   "leitura": "antivirais-uti",
+   "frente": "Paciente em aciclovir com LRA fica confuso e com mioclonias. Qual hipótese precisa ser afastada?",
+   "verso": "Neurotoxicidade do aciclovir por dose não ajustada à função renal, que imita a progressão da encefalite."
+  },
+  {
+   "leitura": "antivirais-uti",
+   "frente": "Qual a dose de indução do ganciclovir para CMV?",
+   "verso": "5 mg/kg IV a cada 12 horas por 14 a 21 dias, com ajuste renal; manutenção de 5 mg/kg uma vez ao dia."
+  },
+  {
+   "leitura": "antivirais-uti",
+   "frente": "Qual a principal toxicidade do ganciclovir?",
+   "verso": "Mielotoxicidade: neutropenia, trombocitopenia e anemia. Hemograma duas a três vezes por semana na indução."
+  },
+  {
+   "leitura": "antivirais-uti",
+   "frente": "Quais eletrólitos o foscarnete altera?",
+   "verso": "Cálcio ionizado (quelação, com parestesia e arritmia), magnésio, potássio e fósforo; também é nefrotóxico."
+  },
+  {
+   "leitura": "antivirais-uti",
+   "frente": "O oseltamivir está indicado no paciente grave com influenza após 48 horas de sintomas?",
+   "verso": "Sim. No hospitalizado e grave, inicia-se o mais cedo possível, independentemente do tempo de sintomas (IDSA 2018)."
+  },
+  {
+   "leitura": "antivirais-uti",
+   "frente": "Qual a dose de oseltamivir com clearance de 10 a 30 mL/min?",
+   "verso": "30 mg uma vez ao dia. Com clearance acima de 30 até 60 mL/min, 30 mg a cada 12 horas."
+  },
+  {
+   "leitura": "antivirais-uti",
+   "frente": "Quem com COVID-19 internado se beneficia de dexametasona e em que dose?",
+   "verso": "Quem precisa de oxigênio ou ventilação: 6 mg por dia por até 10 dias (RECOVERY). Sem oxigênio, não se usa."
+  },
+  {
+   "leitura": "antivirais-uti",
+   "frente": "Qual a dose de sulfametoxazol-trimetoprima na pneumocistose?",
+   "verso": "15 a 20 mg/kg por dia do componente trimetoprima, dividida a cada 6 ou 8 horas, por 21 dias."
+  },
+  {
+   "leitura": "antivirais-uti",
+   "frente": "Por que a creatinina sobe com sulfametoxazol-trimetoprima em dose alta sem LRA verdadeira?",
+   "verso": "A trimetoprima inibe a secreção tubular de creatinina. Elevação discreta sem mudança de ureia e diurese não indica queda real da TFG."
+  },
+  {
+   "leitura": "antivirais-uti",
+   "frente": "Quando está indicado corticoide na pneumocistose associada ao HIV?",
+   "verso": "PaO2 abaixo de 70 mmHg em ar ambiente ou gradiente alvéolo-arterial de 35 mmHg ou mais, iniciado em até 72 horas."
+  },
+  {
+   "leitura": "antivirais-uti",
+   "frente": "O ácido folínico deve ser associado à pirimetamina? E ao sulfametoxazol-trimetoprima na PCP?",
+   "verso": "Sim com pirimetamina, que inibe a di-hidrofolato redutase humana. Não como rotina na PCP, pois se associou a falha terapêutica."
+  },
+  {
+   "leitura": "sepse-choque-septico",
+   "frente": "Como o Sepsis-3 define sepse?",
+   "verso": "Disfunção orgânica ameaçadora à vida por resposta desregulada à infecção; operacionalmente, aumento agudo de 2 ou mais pontos no SOFA."
+  },
+  {
+   "leitura": "sepse-choque-septico",
+   "frente": "Como o Sepsis-3 define choque séptico?",
+   "verso": "Sepse com vasopressor para manter PAM de 65 mmHg ou mais e lactato acima de 2 mmol/L apesar de reposição volêmica adequada."
+  },
+  {
+   "leitura": "sepse-choque-septico",
+   "frente": "Quais ferramentas a SSC 2026 prefere ao qSOFA para triagem?",
+   "verso": "NEWS, NEWS2, MEWS ou SIRS, em vez do qSOFA como ferramenta única."
+  },
+  {
+   "leitura": "sepse-choque-septico",
+   "frente": "Quais os cinco itens do pacote da primeira hora?",
+   "verso": "Lactato, hemoculturas antes do antimicrobiano, antimicrobiano de amplo espectro, 30 mL/kg de cristaloide se hipotensão ou lactato de 4 ou mais, e vasopressor se PAM abaixo de 65."
+  },
+  {
+   "leitura": "sepse-choque-septico",
+   "frente": "Qual o prazo do antimicrobiano na sepse possível sem choque (SSC 2026)?",
+   "verso": "Avaliação rápida e, se a suspeita persistir, antimicrobiano em até 3 horas (recomendação condicional)."
+  },
+  {
+   "leitura": "sepse-choque-septico",
+   "frente": "A dose de ataque do betalactâmico é ajustada pela função renal?",
+   "verso": "Não. Depende do volume de distribuição, aumentado no choque. O ajuste renal vale para a manutenção e deve ser revisto diariamente."
+  },
+  {
+   "leitura": "sepse-choque-septico",
+   "frente": "O que a SSC 2026 diz sobre infusão prolongada de betalactâmicos?",
+   "verso": "Recomenda infusão prolongada na manutenção, após dose de ataque, em vez de bolus (recomendação, certeza moderada)."
+  },
+  {
+   "leitura": "sepse-choque-septico",
+   "frente": "Qual foi o resultado principal do BLING III?",
+   "verso": "Mortalidade em 90 dias de 24,9% com infusão contínua contra 26,8% com intermitente, sem significância; cura clínica maior com infusão contínua."
+  },
+  {
+   "leitura": "sepse-choque-septico",
+   "frente": "Qual o papel da procalcitonina na SSC 2026?",
+   "verso": "Não usar para iniciar antimicrobiano; usar com avaliação clínica para suspender quando a duração ideal não é clara e o foco está controlado."
+  },
+  {
+   "leitura": "sepse-choque-septico",
+   "frente": "Quando associar vasopressina e em que dose?",
+   "verso": "Em doses crescentes de noradrenalina (referência usual de 0,25 a 0,5 mcg/kg/min); dose fixa de 0,03 unidades/min."
+  },
+  {
+   "leitura": "sepse-choque-septico",
+   "frente": "Qual o alvo de PAM no choque séptico em adulto de 70 anos pela SSC 2026?",
+   "verso": "60 a 65 mmHg (sugestão para 65 anos ou mais); 65 mmHg para os demais adultos."
+  },
+  {
+   "leitura": "sepse-choque-septico",
+   "frente": "Qual esquema de corticoide se usa no choque séptico?",
+   "verso": "Hidrocortisona 200 mg por dia (50 mg a cada 6 horas ou infusão contínua), com ou sem fludrocortisona 50 mcg por dia; a SSC 2026 sugere corticoide IV."
+  },
+  {
+   "leitura": "sepse-choque-septico",
+   "frente": "Qual cristaloide a SSC 2026 prefere e qual a exceção?",
+   "verso": "Cristaloide balanceado em vez de NaCl 0,9%, exceto no traumatismo cranioencefálico, em que o NaCl 0,9% é preferido."
+  },
+  {
+   "leitura": "sepse-choque-septico",
+   "frente": "O que mostrou o ensaio BALANCE?",
+   "verso": "Em bacteremia de pacientes hospitalizados, 7 dias de antimicrobiano foram não inferiores a 14 dias em mortalidade em 90 dias (excluídos S. aureus e candidemia)."
+  },
+  {
+   "leitura": "pneumonias-uti",
+   "frente": "Qual a diferença entre PAH e PAV?",
+   "verso": "PAH surge 48 horas ou mais após a internação em paciente não intubado; PAV surge mais de 48 horas após a intubação."
+  },
+  {
+   "leitura": "pneumonias-uti",
+   "frente": "Quais os fatores de risco para PAV por multirresistente na IDSA/ATS 2016?",
+   "verso": "Antimicrobiano IV em 90 dias, choque séptico na PAV, SDRA prévia, 5 dias ou mais de internação antes da PAV e terapia de substituição renal aguda prévia."
+  },
+  {
+   "leitura": "pneumonias-uti",
+   "frente": "Quais patógenos todo esquema empírico de PAV deve cobrir?",
+   "verso": "S. aureus, P. aeruginosa e outros bacilos Gram-negativos."
+  },
+  {
+   "leitura": "pneumonias-uti",
+   "frente": "Qual a duração recomendada para PAH e PAV?",
+   "verso": "7 dias (IDSA/ATS 2016), com procalcitonina e critérios clínicos como apoio à suspensão."
+  },
+  {
+   "leitura": "pneumonias-uti",
+   "frente": "Por que a daptomicina não trata pneumonia por MRSA?",
+   "verso": "É inativada pelo surfactante pulmonar."
+  },
+  {
+   "leitura": "pneumonias-uti",
+   "frente": "Qual o valor do swab nasal de MRSA por PCR negativo na pneumonia?",
+   "verso": "Alto valor preditivo negativo; apoia a suspensão de vancomicina ou linezolida em 48 a 72 horas."
+  },
+  {
+   "leitura": "pneumonias-uti",
+   "frente": "Pode o aminoglicosídeo ser o único antipseudomonas do esquema de PAV?",
+   "verso": "Não. Penetra mal no pulmão e perde atividade no pH ácido do tecido infectado."
+  },
+  {
+   "leitura": "pneumonias-uti",
+   "frente": "Quando a IDSA/ATS 2016 sugere antimicrobiano inalatório na PAV?",
+   "verso": "Associado ao sistêmico quando o Gram-negativo é sensível apenas a aminoglicosídeo ou polimixina."
+  },
+  {
+   "leitura": "pneumonias-uti",
+   "frente": "Qual o esquema empírico da PAC grave sem risco de MRSA ou Pseudomonas?",
+   "verso": "Betalactâmico (ceftriaxona, cefotaxima ou ampicilina-sulbactam) com macrolídeo, ou com quinolona respiratória."
+  },
+  {
+   "leitura": "pneumonias-uti",
+   "frente": "O que a ATS 2025 mudou sobre corticoide na PAC?",
+   "verso": "Sugere corticoide sistêmico na PAC grave (condicional), recomenda não usar na não grave e exclui pneumonia por influenza."
+  },
+  {
+   "leitura": "pneumonias-uti",
+   "frente": "Qual o esquema de hidrocortisona no CAPE COD?",
+   "verso": "200 mg por dia por 4 ou 8 dias, com desmame até 8 ou 14 dias, em PAC grave, excluindo influenza e choque na inclusão."
+  },
+  {
+   "leitura": "pneumonias-uti",
+   "frente": "Qual a duração da PAC não grave internada pela ATS 2025?",
+   "verso": "Menos de 5 dias após a estabilidade clínica, com mínimo de 3 dias; na PAC grave, 5 dias ou mais."
+  },
+  {
+   "leitura": "pneumonias-uti",
+   "frente": "Quando cobrir anaeróbios na pneumonia aspirativa?",
+   "verso": "Só com abscesso pulmonar ou empiema (ATS/IDSA 2019)."
+  },
+  {
+   "leitura": "pneumonias-uti",
+   "frente": "Quais os tratamentos da pneumonia por Legionella?",
+   "verso": "Levofloxacino 750 mg por dia ou azitromicina 500 mg por dia; betalactâmicos não têm atividade."
+  },
+  {
+   "leitura": "outras-infeccoes-uti",
+   "frente": "Como se confirma que o cateter é a fonte da bacteremia?",
+   "verso": "Mesmo agente na ponta (15 UFC ou mais em cultura semiquantitativa) e no sangue periférico, ou hemocultura do cateter positiva 2 horas ou mais antes da periférica."
+  },
+  {
+   "leitura": "outras-infeccoes-uti",
+   "frente": "Em quais agentes o cateter deve ser retirado obrigatoriamente?",
+   "verso": "S. aureus, P. aeruginosa, Candida e micobactérias."
+  },
+  {
+   "leitura": "outras-infeccoes-uti",
+   "frente": "Qual antimicrobiano tratar bacteremia por S. aureus sensível à oxacilina?",
+   "verso": "Oxacilina 2 g IV a cada 4 horas ou cefazolina 2 g IV a cada 8 horas. Vancomicina é inferior para MSSA."
+  },
+  {
+   "leitura": "outras-infeccoes-uti",
+   "frente": "Quando a bacteremia por S. aureus é considerada não complicada?",
+   "verso": "Sem endocardite e sem prótese, hemocultura de controle negativa em 2 a 4 dias, afebril em 72 horas e sem foco metastático; aí 14 dias bastam."
+  },
+  {
+   "leitura": "outras-infeccoes-uti",
+   "frente": "Qual a duração para estafilococo coagulase-negativo com cateter retirado?",
+   "verso": "5 a 7 dias; 10 a 14 dias com terapia de selo se o cateter for mantido."
+  },
+  {
+   "leitura": "outras-infeccoes-uti",
+   "frente": "Em quais agentes a terapia de selo não é recomendada?",
+   "verso": "S. aureus e Candida: nesses casos o cateter deve ser retirado."
+  },
+  {
+   "leitura": "outras-infeccoes-uti",
+   "frente": "Quando tratar bacteriúria em paciente com sonda vesical?",
+   "verso": "Só com sinais ou sintomas de infecção sem outro foco, antes de procedimento urológico com sangramento de mucosa ou na gestação."
+  },
+  {
+   "leitura": "outras-infeccoes-uti",
+   "frente": "Qual a duração da ITU complicada com melhora pela IDSA 2025?",
+   "verso": "7 dias de antimicrobiano que não seja quinolona ou 5 a 7 dias de quinolona, mesmo com bacteremia por Gram-negativo."
+  },
+  {
+   "leitura": "outras-infeccoes-uti",
+   "frente": "O que mostrou o STOP-IT?",
+   "verso": "Na infecção intra-abdominal com controle de foco, 4 dias fixos de antimicrobiano foram equivalentes a cerca de 8 dias guiados por febre, leucocitose e íleo."
+  },
+  {
+   "leitura": "outras-infeccoes-uti",
+   "frente": "Por que não somar metronidazol a piperacilina-tazobactam?",
+   "verso": "A piperacilina-tazobactam (como os carbapenêmicos) já cobre anaeróbios, incluindo Bacteroides fragilis; é duplicidade de espectro."
+  },
+  {
+   "leitura": "outras-infeccoes-uti",
+   "frente": "Qual o esquema empírico da meningite bacteriana comunitária em adulto de 60 anos?",
+   "verso": "Ceftriaxona 2 g a cada 12 horas, ampicilina 2 g a cada 4 horas e vancomicina conforme resistência local, com dexametasona 10 mg a cada 6 horas por 4 dias."
+  },
+  {
+   "leitura": "outras-infeccoes-uti",
+   "frente": "Quando iniciar a dexametasona na meningite bacteriana?",
+   "verso": "Antes ou junto com a primeira dose de antimicrobiano; manter 4 dias se pneumococo ou H. influenzae e suspender se outro agente."
+  },
+  {
+   "leitura": "outras-infeccoes-uti",
+   "frente": "Por que se associa clindamicina na fasciíte necrosante estreptocócica?",
+   "verso": "Inibe a síntese de exotoxinas e age independentemente da fase de crescimento (efeito Eagle). Dose de 600 a 900 mg IV a cada 8 horas."
+  },
+  {
+   "leitura": "outras-infeccoes-uti",
+   "frente": "Qual o tratamento da infecção fulminante por C. difficile com íleo?",
+   "verso": "Vancomicina 500 mg VO ou por sonda a cada 6 horas, metronidazol 500 mg IV a cada 8 horas e vancomicina retal 500 mg a cada 6 horas."
+  },
+  {
+   "leitura": "stewardship",
+   "frente": "Quais as duas estratégias de PGA com melhor evidência de eficácia?",
+   "verso": "Auditoria prospectiva com retroalimentação e pré-autorização (ANVISA 2023; IDSA/SHEA 2016)."
+  },
+  {
+   "leitura": "stewardship",
+   "frente": "O que a revisão de 2023 da diretriz da ANVISA acrescentou sobre o farmacêutico?",
+   "verso": "A orientação de nomear um farmacêutico para liderar os esforços de melhoria do uso de antimicrobianos."
+  },
+  {
+   "leitura": "stewardship",
+   "frente": "Quais os membros do time operacional do PGA?",
+   "verso": "Médico infectologista ou com experiência em doenças infecciosas, enfermeiro da CCIH, farmacêutico clínico e microbiologista."
+  },
+  {
+   "leitura": "stewardship",
+   "frente": "Quando a ANVISA sugere auditar a prescrição de antimicrobiano?",
+   "verso": "Preferencialmente 48 horas após a prescrição, priorizando reservados e de amplo espectro e pacientes com mais de 7 dias de uso."
+  },
+  {
+   "leitura": "stewardship",
+   "frente": "O que é o gerenciamento de aperto de mão (handshake stewardship)?",
+   "verso": "O time do PGA revisa todos os antimicrobianos e passa diariamente com cada equipe, dando retorno presencial sobre o uso."
+  },
+  {
+   "leitura": "stewardship",
+   "frente": "Qual o cuidado indispensável com a pré-autorização?",
+   "verso": "Não atrasar a primeira dose, sobretudo na sepse, em qualquer dia e horário."
+  },
+  {
+   "leitura": "stewardship",
+   "frente": "O que é DDD?",
+   "verso": "Dose média diária de manutenção de um fármaco em sua principal indicação em adulto de 70 kg, definida pela OMS; unidade técnica, não dose recomendada."
+  },
+  {
+   "leitura": "stewardship",
+   "frente": "Como calcular DDD por 1.000 pacientes-dia?",
+   "verso": "(Gramas consumidos ÷ DDD em gramas) ÷ pacientes-dia × 1.000."
+  },
+  {
+   "leitura": "stewardship",
+   "frente": "O que é DOT e por que é preferido para avaliar o PGA?",
+   "verso": "Dias em que o paciente recebeu cada antimicrobiano, independentemente da dose. Não é distorcido por doses diferentes da DDD."
+  },
+  {
+   "leitura": "stewardship",
+   "frente": "Qual a diferença entre DOT e LOT?",
+   "verso": "DOT conta cada antimicrobiano por dia; LOT conta os dias com qualquer antimicrobiano. LOT é menor ou igual a DOT."
+  },
+  {
+   "leitura": "stewardship",
+   "frente": "Quais as DDD parenterais da OMS de meropeném e piperacilina-tazobactam?",
+   "verso": "Meropeném 3 g; piperacilina-tazobactam 14 g (referente à piperacilina)."
+  },
+  {
+   "leitura": "stewardship",
+   "frente": "Quais as regras básicas do antibiograma cumulativo (CLSI M39)?",
+   "verso": "Primeiro isolado por paciente e espécie no período, espécies com pelo menos 30 isolados e estratificação por unidade e material quando possível."
+  },
+  {
+   "leitura": "stewardship",
+   "frente": "Qual o papel da procalcitonina no PGA de UTI?",
+   "verso": "Apoiar a suspensão com a avaliação clínica (queda abaixo de 0,5 ng/mL ou 80% do pico); não decidir o início."
+  },
+  {
+   "leitura": "stewardship",
+   "frente": "O que o PGA deve fazer para que testes rápidos melhorem desfechos?",
+   "verso": "Definir quem recebe o resultado, em quanto tempo, e a recomendação para cada agente e gene de resistência; teste sem ação não muda desfecho."
+  }
+ ],
+ "questoes": [
+  {
+   "leitura": "resistencia-bacteriana",
+   "nivel": "basico",
+   "enun": "Qual das enzimas abaixo é uma metalo-betalactamase, não inibida por avibactam, vaborbactam ou relebactam?",
+   "alts": [
+    "KPC, da classe A de Ambler",
+    "OXA-48, classe D de Ambler",
+    "NDM, da classe B de Ambler",
+    "CTX-M, da classe A de Ambler",
+    "CMY, da classe C de Ambler"
+   ],
+   "gab": 2,
+   "coment": "A classificação de Ambler separa as betalactamases de serina (classes A, C e D) das metalo-betalactamases (classe B), que usam zinco no sítio ativo. NDM, VIM, IMP e a brasileira SPM são da classe B e não são inibidas por nenhum dos inibidores de serina comercializados. Isso explica por que ceftazidima-avibactam não funciona contra NDM e por que se associa aztreonam, que escapa da hidrólise pelas MBL.",
+   "porAlt": [
+    "KPC é serino-carbapenemase da classe A, inibida por avibactam, vaborbactam e relebactam.",
+    "OXA-48 é serino-betalactamase da classe D, inibida por avibactam.",
+    "Correta. NDM é metalo-betalactamase da classe B, dependente de zinco.",
+    "CTX-M é ESBL da classe A, inibida pelos novos inibidores e parcialmente pelo tazobactam.",
+    "CMY é AmpC plasmidial da classe C, inibida por avibactam."
+   ],
+   "base": "IDSA AMR Guidance 2026; NT 74/2022 CGLAB/BrCAST/ANVISA"
+  },
+  {
+   "leitura": "resistencia-bacteriana",
+   "nivel": "basico",
+   "enun": "Na IDSA AMR Guidance 2026, qual é a opção preferida para infecção invasiva fora do trato urinário por enterobactéria produtora de ESBL em paciente crítico com hipoalbuminemia?",
+   "alts": [
+    "Meropeném ou imipeném em vez de ertapeném",
+    "Piperacilina-tazobactam em infusão estendida",
+    "Cefepima em dose alta e infusão estendida",
+    "Ertapeném 1 g IV uma vez ao dia sempre",
+    "Ceftriaxona 2 g IV a cada 12 horas em bolus"
+   ],
+   "gab": 0,
+   "coment": "Para ESBL fora do trato urinário, a guidance prefere carbapenêmico. No paciente crítico ou com hipoalbuminemia, meropeném ou imipeném são preferidos ao ertapeném porque o ertapeném é muito ligado à albumina: com albumina baixa, a fração livre sobe, o clearance aumenta e a meia-vida encurta, deixando parte do intervalo abaixo da CIM. Piperacilina-tazobactam e cefepima não são sugeridas para infecção invasiva por ESBL mesmo com laudo sensível.",
+   "porAlt": [
+    "Correta. É a sugestão da guidance para o paciente crítico ou hipoalbuminêmico.",
+    "Não sugerida para ESBL invasiva (MERINO; teste pouco reprodutível e efeito inóculo).",
+    "A cefepima deve ser evitada em infecção invasiva por ESBL, mesmo com CIM baixa.",
+    "O ertapeném perde exposição na hipoalbuminemia; não é o preferido no crítico.",
+    "Ceftriaxona é hidrolisada por ESBL; não trata a infecção."
+   ],
+   "base": "IDSA AMR Guidance 2026"
+  },
+  {
+   "leitura": "resistencia-bacteriana",
+   "nivel": "intermediario",
+   "enun": "Homem de 58 anos, em UTI, com bacteremia por Enterobacter cloacae complexo de foco em cateter (retirado). Antibiograma: ceftriaxona S, cefepima S (CIM 1 mg/L), meropeném S; sem ESBL. Está em ceftriaxona 2 g/dia há 48 horas, estável. Qual a melhor recomendação?",
+   "alts": [
+    "Manter ceftriaxona até o fim porque está sensível",
+    "Trocar ceftriaxona por meropeném 1 g IV a cada 8 h",
+    "Associar amicacina à ceftriaxona até completar 7 dias",
+    "Trocar ceftriaxona por piperacilina-tazobactam 4,5 g 6/6 h",
+    "Trocar ceftriaxona por cefepima 2 g IV a cada 8 horas"
+   ],
+   "gab": 4,
+   "coment": "E. cloacae tem AmpC cromossômica induzível. A ceftriaxona seleciona mutantes desreprimidos durante o tratamento de infecção invasiva, com risco em torno de 20% de resistência emergente. A cefepima é indutora fraca e resiste à hidrólise pela AmpC, e a IDSA 2026 a sugere quando a CIM é de até 8 mg/L e não há ESBL. Meropeném funcionaria, mas é espectro desnecessário; piperacilina-tazobactam não é sugerida para infecção invasiva por esses organismos.",
+   "porAlt": [
+    "A ceftriaxona seleciona desrepressão de AmpC; a flexibilização de 2026 vale para infecção não grave.",
+    "Meropeném é ativo, mas amplia o espectro sem necessidade diante de cefepima sensível.",
+    "Aminoglicosídeo não impede a seleção de AmpC pela ceftriaxona e acrescenta nefrotoxicidade.",
+    "Piperacilina-tazobactam não é sugerida para infecção invasiva por AmpC-E.",
+    "Correta. Cefepima é a sugestão para AmpC-E invasiva sem ESBL e com CIM de até 8 mg/L."
+   ],
+   "base": "IDSA AMR Guidance 2026"
+  },
+  {
+   "leitura": "resistencia-bacteriana",
+   "nivel": "intermediario",
+   "enun": "Mulher de 66 anos com pielonefrite e bacteremia por Klebsiella pneumoniae resistente a meropeném. O teste imunocromatográfico detecta NDM isolada. Qual esquema está correto, considerando fármacos disponíveis no hospital?",
+   "alts": [
+    "Ceftazidima-avibactam isolada, 2,5 g em infusão de 2 horas",
+    "Ceftazidima-avibactam com aztreonam, infundidos juntos",
+    "Meropeném-vaborbactam 4 g IV a cada 8 horas em 3 horas",
+    "Imipeném-relebactam 1,25 g IV a cada 6 horas em 30 min",
+    "Meropeném 2 g em 3 horas associado a polimixina B IV"
+   ],
+   "gab": 1,
+   "coment": "NDM é metalo-betalactamase e não é inibida por avibactam, vaborbactam ou relebactam. O aztreonam escapa da NDM, mas é destruído pelas serino-betalactamases coproduzidas; o avibactam as inibe e protege o aztreonam. A IDSA 2026 prefere aztreonam-avibactam (produto único) e aceita ceftazidima-avibactam com aztreonam ou cefiderocol. A administração simultânea garante avibactam presente enquanto o aztreonam está no alvo.",
+   "porAlt": [
+    "Ceftazidima-avibactam isolada não tem atividade contra NDM.",
+    "Correta. Associação que reproduz o aztreonam-avibactam com fármacos disponíveis.",
+    "O vaborbactam não inibe metalo-betalactamases.",
+    "O relebactam não inibe metalo-betalactamases.",
+    "Meropeném com polimixina é esquema de resgate inferior, com nefrotoxicidade."
+   ],
+   "base": "IDSA AMR Guidance 2026; NT 74/2022"
+  },
+  {
+   "leitura": "resistencia-bacteriana",
+   "nivel": "avancado",
+   "enun": "Paciente em PAV por Acinetobacter baumannii resistente a carbapenêmicos (OXA-23), sensível a polimixina B e minociclina. Não há sulbactam-durlobactam no Brasil. Qual conduta segue a lógica da IDSA 2026?",
+   "alts": [
+    "Polimixina B em monoterapia com dose de ataque de 2,5 mg/kg",
+    "Meropeném em infusão estendida associado a rifampicina oral",
+    "Tigeciclina 50 mg a cada 12 h isolada após ataque de 100 mg",
+    "Ampicilina-sulbactam 9 g a cada 8 h com um segundo agente ativo",
+    "Amicacina inalatória isolada por 7 dias como terapia única"
+   ],
+   "gab": 3,
+   "coment": "Sem sulbactam-durlobactam, a abordagem para CRAB invasivo é ampicilina-sulbactam em dose alta (9 g a cada 8 horas, em 4 horas) associada a pelo menos outro agente ativo, como polimixina B, minociclina, tigeciclina em dose alta ou cefiderocol. Monoterapia com polimixina é desaconselhada; rifamicinas e carbapenêmico em infusão estendida saíram da discussão da versão 2026; tigeciclina em dose padrão é insuficiente e nebulizado não substitui terapia sistêmica.",
+   "porAlt": [
+    "Polimixina em monoterapia tem desfecho pior e mais nefrotoxicidade.",
+    "Meropeném com rifampicina não é esquema sugerido para CRAB.",
+    "Dose padrão de tigeciclina é insuficiente; em CRAB usa-se dose alta e associada.",
+    "Correta. Esquema de ponte recomendado na ausência de sulbactam-durlobactam.",
+    "Nebulizados são adjuvantes, nunca terapia única."
+   ],
+   "base": "IDSA AMR Guidance 2026; consenso de polimixinas 2019"
+  },
+  {
+   "leitura": "resistencia-bacteriana",
+   "nivel": "avancado",
+   "enun": "Uma unidade tem surto de Klebsiella pneumoniae coprodutora de KPC e NDM. O médico pergunta por que a ceftazidima-avibactam, que funcionava para as KPC da unidade, falhou. Qual a explicação correta?",
+   "alts": [
+    "A NDM hidrolisa a ceftazidima e não é inibida pelo avibactam",
+    "O avibactam é hidrolisado pela KPC quando há coprodução de NDM",
+    "A NDM hidrolisa o próprio avibactam e libera a ação da KPC",
+    "A coprodução reduz porinas e impede a entrada do fármaco",
+    "A ceftazidima induz a expressão cromossômica do gene da NDM"
+   ],
+   "gab": 0,
+   "coment": "Na coprodução de KPC e NDM, o avibactam continua inibindo a KPC, mas a NDM, metalo-betalactamase, hidrolisa a ceftazidima e não é inibida pelo avibactam. Por isso a NT 74/2022 lembra que coprodutoras de KPC e NDM são resistentes a ceftazidima-avibactam. A saída é a associação com aztreonam (ou aztreonam-avibactam), já que o aztreonam escapa da NDM e o avibactam o protege da KPC.",
+   "porAlt": [
+    "Correta. A MBL destrói a ceftazidima sem ser inibida.",
+    "O avibactam não é hidrolisado pela KPC; ele a inibe.",
+    "A NDM não inativa o avibactam; o problema é a hidrólise da ceftazidima.",
+    "Perda de porina pode somar-se, mas não explica a resistência da coprodutora.",
+    "A NDM é plasmidial e não é induzida pela ceftazidima."
+   ],
+   "base": "NT 74/2022 CGLAB/BrCAST/ANVISA; IDSA AMR Guidance 2026"
+  },
+  {
+   "leitura": "antifungicos",
+   "nivel": "basico",
+   "enun": "Qual antifúngico NÃO deve ser usado para tratar pielonefrite por Candida albicans sensível?",
+   "alts": [
+    "Fluconazol 400 mg/dia VO",
+    "Micafungina 100 mg/dia IV",
+    "Anfotericina convencional",
+    "Anfotericina lipossomal",
+    "Fluconazol 800 mg/dia IV"
+   ],
+   "gab": 1,
+   "coment": "As equinocandinas atingem concentração urinária muito baixa, por isso não são adequadas para infecção do trato urinário por Candida. O fluconazol é eliminado inalterado na urina e é a escolha para C. albicans sensível; a anfotericina B também atinge o trato urinário e é alternativa em espécies resistentes a fluconazol. As alternativas curtas foram escritas com nomes para evitar pistas de tamanho.",
+   "porAlt": [
+    "Fluconazol é a escolha para candidúria sintomática por espécie sensível.",
+    "Correta. Micafungina, como as demais equinocandinas, não atinge a urina.",
+    "Anfotericina desoxicolato atinge a urina e é alternativa em espécies resistentes.",
+    "Anfotericina lipossomal tem atividade e é alternativa, embora menos concentrada na urina.",
+    "Fluconazol em dose maior segue adequado para pielonefrite."
+   ],
+   "base": "IDSA candidíase 2016"
+  },
+  {
+   "leitura": "antifungicos",
+   "nivel": "basico",
+   "enun": "Na candidemia de paciente não neutropênico, qual a duração mínima usual do antifúngico sem complicações metastáticas?",
+   "alts": [
+    "14 dias após a primeira dose do antifúngico",
+    "7 dias após a primeira hemocultura negativa",
+    "21 dias após a retirada do cateter venoso",
+    "14 dias após a primeira hemocultura negativa",
+    "Até negativar a beta-D-glucana sérica seriada"
+   ],
+   "gab": 3,
+   "coment": "A IDSA 2016 e a diretriz global de 2025 recomendam tratamento por 14 dias contados da primeira hemocultura negativa, com resolução dos sintomas e sem complicações metastáticas. Contar a partir do início do antifúngico encurta o tratamento quando a candidemia demora a negativar. A beta-D-glucana tem valor para excluir infecção, mas não é critério de duração.",
+   "porAlt": [
+    "Contar da primeira dose encurta o tratamento se a candidemia persistir.",
+    "7 dias é insuficiente para candidemia segundo as diretrizes.",
+    "A retirada do cateter é obrigatória, mas não é o marco da contagem.",
+    "Correta. A contagem parte da primeira hemocultura negativa.",
+    "A beta-D-glucana não é marcador validado de término."
+   ],
+   "base": "IDSA candidíase 2016; Global guideline ECMM/ISHAM/ASM 2025"
+  },
+  {
+   "leitura": "antifungicos",
+   "nivel": "intermediario",
+   "enun": "Paciente de 74 kg com candidemia por Nakaseomyces glabratus (C. glabrata), fluconazol com sensibilidade dose-dependente, em anidulafungina há 6 dias, estável e com hemoculturas negativas. A equipe quer passar para via oral. Qual a opção adequada?",
+   "alts": [
+    "Fluconazol 800 mg/dia ou voriconazol, se sensível",
+    "Fluconazol 400 mg/dia por mais 8 dias pela via oral",
+    "Manter anidulafungina IV até completar 21 dias",
+    "Suspender agora, pois as hemoculturas já negativaram",
+    "Itraconazol oral 200 mg a cada 12 h por mais 8 dias"
+   ],
+   "gab": 0,
+   "coment": "Para C. glabrata (N. glabratus), a IDSA 2016 aceita a troca apenas para fluconazol em dose alta (800 mg, ou 12 mg/kg, por dia) ou voriconazol, e somente se o isolado for sensível. Fluconazol 400 mg por dia subdosa um organismo com CIM alta. Suspender antes de 14 dias da primeira hemocultura negativa é insuficiente, e itraconazol não é opção de descalonamento em candidemia.",
+   "porAlt": [
+    "Correta. Dose alta de fluconazol ou voriconazol, condicionada ao teste de sensibilidade.",
+    "400 mg por dia é subdose para N. glabratus com sensibilidade dose-dependente.",
+    "Manter a equinocandina é possível, mas 21 dias não é a duração e a via oral é viável.",
+    "O tratamento dura 14 dias após a primeira hemocultura negativa.",
+    "Itraconazol não é recomendado para descalonamento na candidemia."
+   ],
+   "base": "IDSA candidíase 2016"
+  },
+  {
+   "leitura": "antifungicos",
+   "nivel": "intermediario",
+   "enun": "Paciente de 60 kg vai iniciar anfotericina B desoxicolato para histoplasmose disseminada. Qual prescrição está correta?",
+   "alts": [
+    "300 mg em glicose 5% em 2 h, com NaCl 0,9% antes da dose",
+    "45 mg em NaCl 0,9% em 4 h, sem hidratação prévia da dose",
+    "45 mg em glicose 5% em bolus de 15 min após a hidratação",
+    "180 mg em glicose 5% em 4 h, com NaCl 0,9% antes da dose",
+    "45 mg em glicose 5% em 4 h, com NaCl 0,9% antes da dose"
+   ],
+   "gab": 4,
+   "coment": "A dose de desoxicolato é de 0,7 a 1 mg/kg por dia; para 60 kg, 0,75 mg/kg dá 45 mg. O diluente é glicose 5% (precipita em NaCl 0,9%), a infusão dura de 2 a 6 horas e a pré-hidratação com 500 a 1.000 mL de NaCl 0,9% reduz a nefrotoxicidade. 300 mg (5 mg/kg) e 180 mg (3 mg/kg) são doses de formulação lipídica e, com desoxicolato, podem ser fatais.",
+   "porAlt": [
+    "300 mg é dose de lipossomal (5 mg/kg); com desoxicolato é potencialmente fatal.",
+    "NaCl 0,9% como diluente precipita o fármaco, e faltou pré-hidratação.",
+    "Infusão em bolus aumenta reação infusional e risco de arritmia.",
+    "180 mg equivale a 3 mg/kg, dose de lipossomal, fatal com desoxicolato.",
+    "Correta. Dose, diluente, tempo e pré-hidratação adequados."
+   ],
+   "base": "IDSA candidíase 2016; bula da anfotericina B desoxicolato"
+  },
+  {
+   "leitura": "antifungicos",
+   "nivel": "avancado",
+   "enun": "Transplantado renal em tacrolimo (nível 8 ng/mL) inicia voriconazol para aspergilose pulmonar. Qual conduta sobre o tacrolimo acompanha a bula e a prática?",
+   "alts": [
+    "Manter a dose de tacrolimo e dosar o nível em 2 semanas",
+    "Dobrar a dose do tacrolimo pela indução do voriconazol",
+    "Reduzir tacrolimo a cerca de 1/3 da dose e dosar o nível",
+    "Suspender o tacrolimo durante todo o curso do voriconazol",
+    "Trocar o tacrolimo por sirolimo na mesma dose diária"
+   ],
+   "gab": 2,
+   "coment": "O voriconazol inibe o CYP3A4 e eleva muito a exposição ao tacrolimo. A recomendação é reduzir o tacrolimo a cerca de um terço da dose ao iniciar o voriconazol e guiar por nível sérico, com reajuste ao suspender o azol. O voriconazol não é indutor. Suspender o imunossupressor põe o enxerto em risco, e sirolimo com voriconazol é contraindicado pela bula.",
+   "porAlt": [
+    "Esperar 2 semanas expõe a nível tóxico de tacrolimo.",
+    "O voriconazol é inibidor, não indutor, do CYP3A4.",
+    "Correta. Redução empírica a cerca de 1/3 com monitorização do nível.",
+    "Suspender o tacrolimo expõe o enxerto à rejeição.",
+    "Sirolimo com voriconazol é contraindicado pela bula."
+   ],
+   "base": "IDSA aspergilose 2016; bula do voriconazol"
+  },
+  {
+   "leitura": "antifungicos",
+   "nivel": "avancado",
+   "enun": "Paciente em choque séptico de foco pulmonar, sem neutropenia, sem transplante, colonizado por Candida em aspirado traqueal, sem melhora em 48 horas. A equipe sugere micafungina empírica. Qual resposta reflete as diretrizes mais recentes?",
+   "alts": [
+    "Iniciar sempre, pois Candida no aspirado indica pneumonia",
+    "Não usar de rotina; reservar a fatores de risco e biomarcador",
+    "Iniciar fluconazol 400 mg sem dose de ataque por 14 dias",
+    "Iniciar anfotericina lipossomal para cobrir fungos filamentosos",
+    "Iniciar voriconazol, pois a colonização sugere aspergilose"
+   ],
+   "gab": 1,
+   "coment": "A ATS 2025 fez recomendação condicional contra antifúngico profilático ou empírico de rotina em críticos sem neutropenia e sem transplante, e a SSC 2026 sugere não usar antifúngico empírico de rotina na sepse, reservando-o a fatores de risco específicos ou forte suspeita, com biomarcadores caso a caso. Candida em aspirado traqueal é quase sempre colonização. O EMPIRICUS não mostrou benefício de micafungina empírica nesse perfil.",
+   "porAlt": [
+    "Candida no aspirado quase nunca significa pneumonia fúngica.",
+    "Correta. Posição da ATS 2025 e da SSC 2026.",
+    "Fluconazol sem ataque e por 14 dias não tem indicação nesse cenário.",
+    "Não há indicação de cobrir fungos filamentosos sem suspeita clínica.",
+    "Colonização por Candida não sugere aspergilose."
+   ],
+   "base": "ATS 2025 (AJRCCM); SSC 2026"
+  },
+  {
+   "leitura": "antivirais-uti",
+   "nivel": "basico",
+   "enun": "Qual o mecanismo que explica a seletividade do aciclovir por células infectadas por HSV e VZV?",
+   "alts": [
+    "Ligação seletiva à neuraminidase na superfície viral",
+    "Inibição direta da DNA polimerase viral sem ativação prévia",
+    "Primeira fosforilação feita pela quinase UL97 do vírus",
+    "Bloqueio do canal iônico M2 da membrana do envelope viral",
+    "Primeira fosforilação feita pela timidina quinase viral"
+   ],
+   "gab": 4,
+   "coment": "O aciclovir é pró-fármaco que precisa ser monofosforilado pela timidina quinase codificada pelo HSV ou VZV; só depois quinases celulares completam a trifosforilação. Por isso é pouco ativado em células não infectadas e tem pouca atividade contra CMV, que não tem timidina quinase. O ganciclovir é fosforilado pela UL97 do CMV, o foscarnete age sem ativação e o oseltamivir inibe a neuraminidase.",
+   "porAlt": [
+    "Neuraminidase é o alvo do oseltamivir, não do aciclovir.",
+    "Ação direta sem ativação descreve o foscarnete.",
+    "UL97 é a quinase do CMV que ativa o ganciclovir.",
+    "Canal M2 é alvo dos adamantanos contra influenza A.",
+    "Correta. A timidina quinase viral ativa o aciclovir."
+   ],
+   "base": "IDSA encefalite 2008"
+  },
+  {
+   "leitura": "antivirais-uti",
+   "nivel": "basico",
+   "enun": "Qual esquema de oseltamivir é adequado para adulto intubado com influenza A e função renal normal?",
+   "alts": [
+    "150 mg por sonda a cada 12 horas por 10 dias",
+    "75 mg por sonda uma vez ao dia por 5 dias",
+    "75 mg por sonda a cada 12 horas por 5 dias",
+    "75 mg por sonda 12/12 h só até 48 h de sintoma",
+    "30 mg por sonda a cada 12 horas por 5 dias"
+   ],
+   "gab": 2,
+   "coment": "A dose de tratamento é 75 mg a cada 12 horas por 5 dias, podendo ser estendida no grave ou imunossuprimido com replicação persistente. A cápsula pode ser aberta e dispersa para a sonda. Dose dobrada não mostrou benefício. 75 mg uma vez ao dia é esquema de profilaxia, 30 mg a cada 12 horas é ajuste renal, e o prazo de 48 horas não se aplica ao paciente grave.",
+   "porAlt": [
+    "Dose dobrada não mostrou benefício e não é rotina.",
+    "Uma vez ao dia é o esquema de profilaxia.",
+    "Correta. Dose padrão de tratamento, válida por sonda.",
+    "No paciente grave, trata-se independentemente do tempo de sintomas.",
+    "30 mg a cada 12 horas é para clearance entre 30 e 60 mL/min."
+   ],
+   "base": "IDSA influenza 2018"
+  },
+  {
+   "leitura": "antivirais-uti",
+   "nivel": "intermediario",
+   "enun": "Homem de 1,75 m e 118 kg (peso ideal 70,5 kg), com suspeita de encefalite herpética e função renal normal. O protocolo usa peso ajustado para aciclovir no obeso. Qual dose por tomada?",
+   "alts": [
+    "1.180 mg IV a cada 8 horas em 1 hora",
+    "900 mg IV a cada 8 horas em 1 hora",
+    "700 mg IV a cada 8 horas em 30 min",
+    "900 mg IV a cada 12 horas em 1 hora",
+    "1.180 mg IV a cada 12 h em 30 min"
+   ],
+   "gab": 1,
+   "coment": "Peso ajustado = 70,5 + 0,4 × (118 − 70,5) = 89,5 kg; 10 mg/kg dá 895 mg, arredondados para 900 mg a cada 8 horas. A infusão deve durar pelo menos 1 hora para reduzir a cristalúria. Peso total (1.180 mg) aumenta o risco de nefrotoxicidade; peso ideal com infusão de 30 minutos erra no tempo; intervalo de 12 horas só se aplica com clearance de 25 a 50 mL/min.",
+   "porAlt": [
+    "Dose por peso total, contrária ao protocolo e mais nefrotóxica.",
+    "Correta. Peso ajustado, intervalo de 8 horas e infusão de 1 hora.",
+    "Infusão de 30 minutos favorece cristalúria; 700 mg seria peso ideal.",
+    "Intervalo de 12 horas só com clearance de 25 a 50 mL/min.",
+    "Peso total, intervalo errado e infusão rápida."
+   ],
+   "base": "IDSA encefalite 2008"
+  },
+  {
+   "leitura": "antivirais-uti",
+   "nivel": "intermediario",
+   "enun": "Transplantado renal com doença por CMV, 70 kg, clearance de 40 mL/min, vai iniciar ganciclovir IV. Qual dose de indução?",
+   "alts": [
+    "2,5 mg/kg (175 mg) IV a cada 24 horas",
+    "5 mg/kg (350 mg) IV a cada 12 horas",
+    "2,5 mg/kg (175 mg) IV a cada 12 horas",
+    "1,25 mg/kg (87,5 mg) IV a cada 24 h",
+    "5 mg/kg (350 mg) IV a cada 24 horas"
+   ],
+   "gab": 0,
+   "coment": "Com clearance de 25 a 49 mL/min, a indução do ganciclovir é 2,5 mg/kg a cada 24 horas. A dose plena (5 mg/kg a cada 12 horas) vale para clearance de 70 mL/min ou mais; 2,5 mg/kg a cada 12 horas, para 50 a 69; 1,25 mg/kg a cada 24 horas, para 10 a 24. O acúmulo por dose não ajustada agrava a mielotoxicidade, principal toxicidade do fármaco.",
+   "porAlt": [
+    "Correta. Faixa de 25 a 49 mL/min.",
+    "Dose para clearance de 70 mL/min ou mais.",
+    "Dose para clearance de 50 a 69 mL/min.",
+    "Dose para clearance de 10 a 24 mL/min.",
+    "5 mg/kg a cada 24 horas é manutenção com função normal."
+   ],
+   "base": "Bula do ganciclovir, tabela de ajuste renal do fabricante (consulta em 2026)"
+  },
+  {
+   "leitura": "antivirais-uti",
+   "nivel": "avancado",
+   "enun": "Mulher de 64 kg com pneumocistose grave, sem HIV. Prescrito sulfametoxazol-trimetoprima 15 mg/kg/dia de trimetoprima a cada 8 horas (ampola de 5 mL com 80 mg de trimetoprima). No 4º dia, creatinina de 0,9 para 1,1 mg/dL, diurese preservada, potássio 5,6 mEq/L em uso de enalapril. Qual a melhor intervenção?",
+   "alts": [
+    "Suspender o SMX-TMP por LRA e trocar por pentamidina",
+    "Reduzir o SMX-TMP à metade pela elevação da creatinina",
+    "Associar ácido folínico para reduzir a toxicidade",
+    "Suspender o enalapril e manter o SMX-TMP com K diário",
+    "Manter tudo como está e repetir o potássio em uma semana"
+   ],
+   "gab": 3,
+   "coment": "A trimetoprima bloqueia o canal epitelial de sódio distal (efeito amilorida-símile) e causa hipercalemia, agravada por IECA; também inibe a secreção tubular de creatinina, que sobe sem queda real da TFG. A conduta é retirar o fator agravante (enalapril), manter o tratamento eficaz e vigiar potássio diariamente. Reduzir dose por aumento discreto de creatinina é erro, e ácido folínico na PCP associa-se a falha.",
+   "porAlt": [
+    "Não há LRA verdadeira; pentamidina é mais tóxica.",
+    "A creatinina subiu por inibição de secreção, não por perda de TFG.",
+    "Ácido folínico na PCP associa-se a falha terapêutica.",
+    "Correta. Remove o agravante e mantém o tratamento eficaz.",
+    "Potássio de 5,6 com IECA exige ação e controle diário."
+   ],
+   "base": "Diretrizes NIH/CDC/IDSA de infecções oportunistas; ECIL 2016"
+  },
+  {
+   "leitura": "antivirais-uti",
+   "nivel": "avancado",
+   "enun": "Sobre corticoide adjuvante na pneumocistose, qual afirmação reflete a evidência atual?",
+   "alts": [
+    "Beneficia todos os pacientes, com ou sem HIV, mesmo sem hipoxemia",
+    "É contraindicado no HIV porque aumenta a mortalidade por PCP",
+    "Beneficia HIV com hipoxemia; sem HIV, o PIC não mostrou ganho",
+    "No PIC, sem HIV, reduziu mortalidade de forma significativa",
+    "Só deve ser iniciado após 7 dias de sulfametoxazol-trimetoprima"
+   ],
+   "gab": 2,
+   "coment": "Na PCP associada ao HIV com PaO2 abaixo de 70 mmHg ou gradiente alvéolo-arterial de 35 mmHg ou mais, o corticoide iniciado em até 72 horas reduz mortalidade. No ensaio PIC (2025), em 226 pacientes sem HIV, a metilprednisolona não reduziu de forma estatisticamente significativa a mortalidade em 28 dias. Não há indicação sem hipoxemia, e o início tardio perde o benefício.",
+   "porAlt": [
+    "Não há indicação sem hipoxemia.",
+    "No HIV com hipoxemia o corticoide reduz mortalidade.",
+    "Correta. Síntese da evidência no HIV e do ensaio PIC.",
+    "O PIC não mostrou redução significativa.",
+    "O corticoide deve começar em até 72 horas."
+   ],
+   "base": "PIC (Lancet Respir Med 2025); diretrizes NIH/CDC/IDSA"
+  },
+  {
+   "leitura": "sepse-choque-septico",
+   "nivel": "basico",
+   "enun": "Pelo consenso Sepsis-3, qual combinação define choque séptico?",
+   "alts": [
+    "Vasopressor para PAM de 65 mmHg ou mais e lactato acima de 2 mmol/L",
+    "Lactato acima de 4 mmol/L com qualquer valor de pressão arterial",
+    "Dois ou mais critérios de SIRS com hipotensão que responde a volume",
+    "PAM abaixo de 65 mmHg com qSOFA de 2 pontos ou mais na admissão",
+    "Vasopressor por mais de 6 horas e SOFA de 2 pontos ou mais em 24 h"
+   ],
+   "gab": 0,
+   "coment": "O Sepsis-3 define choque séptico como sepse com necessidade de vasopressor para manter PAM de 65 mmHg ou mais e lactato acima de 2 mmol/L apesar de reposição volêmica adequada. SIRS e qSOFA não fazem parte da definição de choque, lactato isolado sem necessidade de vasopressor não define choque, e não há critério de tempo de vasopressor.",
+   "porAlt": [
+    "Correta. Definição operacional do Sepsis-3.",
+    "Lactato alto sem vasopressor não define choque séptico.",
+    "SIRS saiu da definição; hipotensão responsiva a volume não é choque.",
+    "qSOFA é alerta de risco, não critério de choque.",
+    "Não há critério de duração do vasopressor na definição."
+   ],
+   "base": "Sepsis-3 (JAMA 2016)"
+  },
+  {
+   "leitura": "sepse-choque-septico",
+   "nivel": "basico",
+   "enun": "Segundo a SSC 2026, qual o prazo para o antimicrobiano em paciente com sepse provável sem choque?",
+   "alts": [
+    "Em até 3 horas, após avaliação clínica completa e exames",
+    "Em até 6 horas, após o resultado da procalcitonina sérica",
+    "Somente após o resultado do Gram das hemoculturas colhidas",
+    "Em até 24 horas, desde que as hemoculturas sejam colhidas",
+    "Imediatamente, idealmente em até 1 hora do reconhecimento"
+   ],
+   "gab": 4,
+   "coment": "A SSC 2026 recomenda (forte, certeza muito baixa) antimicrobiano imediatamente, idealmente em até 1 hora, tanto no choque séptico quanto na sepse provável ou definida sem choque. O prazo de até 3 horas vale para a sepse apenas possível sem choque, após avaliação rápida. A procalcitonina não deve ser usada para decidir o início, e esperar Gram ou culturas atrasa a terapia.",
+   "porAlt": [
+    "3 horas é o prazo da sepse apenas possível sem choque.",
+    "A SSC 2026 sugere não usar procalcitonina para iniciar.",
+    "Aguardar o Gram atrasa o tratamento sem benefício.",
+    "24 horas é atraso inaceitável na sepse provável.",
+    "Correta. Recomendação forte da SSC 2026."
+   ],
+   "base": "SSC 2026"
+  },
+  {
+   "leitura": "sepse-choque-septico",
+   "nivel": "intermediario",
+   "enun": "Homem de 76 kg em choque séptico de foco abdominal, creatinina 2,8 mg/dL na admissão (basal 0,9). Prescrito piperacilina-tazobactam 2,25 g IV a cada 8 horas em 30 minutos desde a primeira dose. Qual a melhor intervenção?",
+   "alts": [
+    "Manter 2,25 g a cada 8 horas até a creatinina se normalizar",
+    "Trocar por meropeném 500 mg a cada 12 horas por causa da LRA",
+    "Dar 2,25 g a cada 6 h em bolus para evitar acúmulo renal",
+    "Ataque de 4,5 g e manutenção estendida revista diariamente",
+    "Suspender e aguardar a avaliação da nefrologia para a dose"
+   ],
+   "gab": 3,
+   "coment": "A dose de ataque depende do volume de distribuição, aumentado no choque, e deve ser integral mesmo com LRA. O ajuste renal vale só para a manutenção e precisa ser revisto diariamente, pois a LRA da sepse costuma regredir; manter dose reduzida gera subexposição. A SSC 2026 recomenda infusão prolongada na manutenção após a dose de ataque. Trocar por carbapenêmico em dose baixa repete o erro.",
+   "porAlt": [
+    "Mantém subexposição no momento de maior volume de distribuição.",
+    "Troca desnecessária e em dose baixa, repetindo o erro.",
+    "Bolus não otimiza o tempo acima da CIM e a dose segue baixa.",
+    "Correta. Ataque integral, manutenção prolongada e reavaliação diária.",
+    "Atrasar o antimicrobiano no choque aumenta a mortalidade."
+   ],
+   "base": "SSC 2026; BLING III 2024"
+  },
+  {
+   "leitura": "sepse-choque-septico",
+   "nivel": "intermediario",
+   "enun": "Na prescrição de meropeném em infusão estendida para choque séptico, qual esquema segue a SSC 2026?",
+   "alts": [
+    "2 g a cada 8 h em 3 horas desde a primeira dose, sem bolus",
+    "1 g em bolus de 5 min a cada 8 horas, sem infusão estendida",
+    "2 g em 30 min na 1ª dose; depois 2 g a cada 8 h em 3 h",
+    "6 g em infusão contínua de 24 h numa única bolsa diária",
+    "2 g em 30 min a cada 12 horas para reduzir manipulação"
+   ],
+   "gab": 2,
+   "coment": "A SSC 2026 recomenda infusão prolongada na manutenção após uma dose de ataque. A primeira dose em 30 minutos atinge rapidamente a concentração-alvo; começar direto com infusão de 3 horas atrasa esse alvo. A infusão contínua de meropeném em bolsa única de 24 horas esbarra na estabilidade limitada em temperatura ambiente. Intervalo de 12 horas subdosa o paciente com função renal preservada.",
+   "porAlt": [
+    "Sem dose de ataque, o alvo farmacodinâmico demora a ser atingido.",
+    "Bolus intermitente é o que a SSC 2026 recomenda substituir.",
+    "Correta. Ataque rápido seguido de manutenção estendida.",
+    "O meropeném não é estável por 24 horas em temperatura ambiente.",
+    "Intervalo de 12 horas subdosa sem disfunção renal."
+   ],
+   "base": "SSC 2026; BLING III 2024"
+  },
+  {
+   "leitura": "sepse-choque-septico",
+   "nivel": "avancado",
+   "enun": "Mulher de 81 anos em choque séptico urinário, noradrenalina subindo para 0,3 mcg/kg/min após reposição adequada, PAM de 62 mmHg. Qual conduta está alinhada à SSC 2026?",
+   "alts": [
+    "Elevar a PAM-alvo para 75 mmHg com adrenalina em alta dose",
+    "Aceitar PAM de 60 a 65, associar vasopressina e hidrocortisona",
+    "Trocar noradrenalina por angiotensina II como droga única",
+    "Associar azul de metileno como segunda droga vasoativa de rotina",
+    "Repetir 30 mL/kg de cristaloide antes de qualquer outra ação"
+   ],
+   "gab": 1,
+   "coment": "Para adultos de 65 anos ou mais, a SSC 2026 sugere PAM inicial de 60 a 65 mmHg, portanto 62 mmHg é aceitável. Em doses crescentes de noradrenalina, sugere associar vasopressina, e sugere corticoide IV no choque séptico (hidrocortisona 200 mg por dia). Alvo de 75 mmHg não tem benefício, angiotensina II não é primeira linha, azul de metileno tem evidência insuficiente e repetir volume sem avaliação dinâmica pode causar sobrecarga.",
+   "porAlt": [
+    "Alvos mais altos não têm benefício e aumentam arritmias.",
+    "Correta. Combina alvo para idosos, vasopressina e corticoide.",
+    "Noradrenalina é a primeira linha sugerida sobre angiotensina II.",
+    "Azul de metileno ficou com evidência insuficiente.",
+    "Novo bolus deve ser guiado por medidas dinâmicas."
+   ],
+   "base": "SSC 2026"
+  },
+  {
+   "leitura": "sepse-choque-septico",
+   "nivel": "avancado",
+   "enun": "Paciente no 6º dia de tratamento de pneumonia com choque já resolvido, foco controlado, procalcitonina de 4,2 ng/mL no pico e 0,6 ng/mL hoje, clinicamente melhor. A proteína C reativa segue em 110 mg/L. Qual conduta é mais coerente com a evidência?",
+   "alts": [
+    "Manter até a proteína C reativa cair para menos de 50 mg/L",
+    "Manter até completar 14 dias porque houve choque séptico",
+    "Escalonar para carbapenêmico pela PCR ainda muito alta",
+    "Manter até a procalcitonina ficar abaixo de 0,1 ng/mL",
+    "Suspender, pois a procalcitonina caiu mais de 80% do pico"
+   ],
+   "gab": 4,
+   "coment": "A SSC 2026 sugere procalcitonina com avaliação clínica para decidir a suspensão quando o foco está controlado. Critério usual: valor abaixo de 0,5 ng/mL ou queda de 80% ou mais do pico; aqui a queda é de 86%. No ADAPT-Sepsis (2025), o protocolo guiado por procalcitonina reduziu a duração com segurança, e o guiado por proteína C reativa não. Choque prévio não obriga 14 dias, e alvo de 0,1 ng/mL prolonga sem ganho.",
+   "porAlt": [
+    "Guiar por PCR não reduziu duração com segurança no ADAPT-Sepsis.",
+    "A SSC 2026 prefere cursos curtos com foco controlado.",
+    "PCR elevada isolada não indica falha nem escalonamento.",
+    "Exigir 0,1 ng/mL prolonga o tratamento sem benefício.",
+    "Correta. Queda superior a 80% com melhora clínica apoia a suspensão."
+   ],
+   "base": "SSC 2026; ADAPT-Sepsis (JAMA 2025)"
+  },
+  {
+   "leitura": "pneumonias-uti",
+   "nivel": "basico",
+   "enun": "Qual a duração de antimicrobiano recomendada pela IDSA/ATS 2016 para PAV com boa resposta clínica?",
+   "alts": [
+    "14 dias de tratamento",
+    "10 dias de tratamento",
+    "21 dias de tratamento",
+    "7 dias de tratamento",
+    "5 dias de tratamento"
+   ],
+   "gab": 3,
+   "coment": "A IDSA/ATS 2016 recomenda 7 dias para PAH e PAV, com base em metanálises que não mostraram diferença em mortalidade, falha ou recorrência em comparação com 10 a 15 dias. Prolongamento fica reservado a resposta lenta, empiema, abscesso ou imunossupressão. A procalcitonina associada a critérios clínicos pode apoiar a suspensão. As alternativas são curtas para evitar pista de tamanho.",
+   "porAlt": [
+    "14 dias não trouxe benefício e aumenta resistência.",
+    "10 dias não é a recomendação padrão.",
+    "21 dias é excessivo para PAV não complicada.",
+    "Correta. Duração recomendada pela IDSA/ATS 2016.",
+    "5 dias não é a duração estudada para PAV."
+   ],
+   "base": "IDSA/ATS 2016"
+  },
+  {
+   "leitura": "pneumonias-uti",
+   "nivel": "basico",
+   "enun": "Qual antimicrobiano ativo contra MRSA NÃO deve ser usado para pneumonia?",
+   "alts": [
+    "Linezolida",
+    "Daptomicina",
+    "Vancomicina",
+    "Ceftarolina",
+    "Teicoplanina"
+   ],
+   "gab": 1,
+   "coment": "A daptomicina é inativada pelo surfactante pulmonar e falhou em pneumonia no desenvolvimento clínico, por isso não é usada nesse sítio, embora seja excelente para bacteremia e endocardite. Vancomicina e linezolida são as opções para pneumonia por MRSA. A ceftarolina tem registro para pneumonia comunitária e a teicoplanina é alternativa usada no Brasil.",
+   "porAlt": [
+    "Linezolida é opção para pneumonia por MRSA (ZEPHyR).",
+    "Correta. Inativada pelo surfactante.",
+    "Vancomicina com AUC no alvo é opção padrão.",
+    "Ceftarolina tem atividade e registro para pneumonia comunitária.",
+    "Teicoplanina é alternativa usada em pneumonia no Brasil."
+   ],
+   "base": "IDSA/ATS 2016"
+  },
+  {
+   "leitura": "pneumonias-uti",
+   "nivel": "intermediario",
+   "enun": "PAV em paciente de 80 kg em choque, no 9º dia de ventilação. Iniciados meropeném, amicacina e vancomicina. No 3º dia: P. aeruginosa sensível a cefepima (CIM 4 mg/L), resistente a meropeném; swab nasal de MRSA negativo; melhora clínica. Qual a melhor recomendação?",
+   "alts": [
+    "Manter os três até o 7º dia porque houve choque séptico antes",
+    "Trocar meropeném por cefepima e manter só a vancomicina",
+    "Cefepima 2 g a cada 8 h estendida; suspender os outros três",
+    "Manter amicacina com cefepima até o fim dos 7 dias de PAV",
+    "Trocar para ceftazidima-avibactam e manter a amicacina IV"
+   ],
+   "gab": 2,
+   "coment": "Com o antibiograma, a IDSA/ATS 2016 sugere monoterapia dirigida no paciente sem choque persistente. A P. aeruginosa é sensível a cefepima, que deve ser dada em infusão estendida; meropeném, ao qual ela é resistente, sai. Swab nasal negativo e ausência de MRSA nas culturas permitem suspender a vancomicina, e o segundo antipseudomonas perde indicação. Ceftazidima-avibactam seria espectro desnecessário.",
+   "porAlt": [
+    "Manter três fármacos ignora o antibiograma e a melhora.",
+    "A vancomicina perdeu indicação com swab e culturas negativos.",
+    "Correta. Descalonamento completo para monoterapia ativa.",
+    "Dupla cobertura não é necessária após sensibilidade conhecida.",
+    "Reserva-se ceftazidima-avibactam para resistência a cefepima."
+   ],
+   "base": "IDSA/ATS 2016"
+  },
+  {
+   "leitura": "pneumonias-uti",
+   "nivel": "intermediario",
+   "enun": "Paciente com PAC grave admitido na UTI, sem fatores de risco para MRSA ou Pseudomonas, teste de influenza negativo, sem choque. Qual esquema segue as diretrizes?",
+   "alts": [
+    "Ceftriaxona 2 g/dia, azitromicina 500 mg/dia e hidrocortisona",
+    "Ceftriaxona 2 g/dia com metronidazol 500 mg IV a cada 8 horas",
+    "Meropeném 1 g a cada 8 horas com vancomicina e linezolida",
+    "Piperacilina-tazobactam 4,5 g com amicacina e sem corticoide",
+    "Ceftriaxona 1 g/dia isolada, sem macrolídeo e sem corticoide"
+   ],
+   "gab": 0,
+   "coment": "A ATS/IDSA 2019 recomenda betalactâmico associado a macrolídeo (ou quinolona respiratória) na PAC grave sem risco de MRSA ou Pseudomonas, e a ERS/ESICM 2023 sugere acrescentar macrolídeo. A atualização da ATS de 2025 sugere corticoide sistêmico na PAC grave, com base no CAPE COD (hidrocortisona 200 mg por dia), excluindo influenza. Metronidazol não é indicado sem abscesso ou empiema, e cobertura ampliada sem risco não é recomendada.",
+   "porAlt": [
+    "Correta. Betalactâmico, macrolídeo e corticoide conforme ATS 2025.",
+    "Falta cobertura de atípicos; anaeróbio sem abscesso não se cobre.",
+    "Cobertura de MDR e MRSA sem fator de risco; duas anti-MRSA.",
+    "Espectro amplo sem risco e sem cobertura de atípicos.",
+    "Omite atípicos e subdosa ceftriaxona na PAC grave."
+   ],
+   "base": "ATS/IDSA 2019; ATS 2025; ERS/ESICM 2023"
+  },
+  {
+   "leitura": "pneumonias-uti",
+   "nivel": "avancado",
+   "enun": "Numa UTI, 35% das P. aeruginosa de secreção traqueal são resistentes a piperacilina-tazobactam e cefepima. Paciente com PAV, 12 dias de internação, em choque, sem culturas prévias. Qual princípio da IDSA/ATS 2016 orienta o empírico?",
+   "alts": [
+    "Um antipseudomonas só, pois o choque não altera o risco",
+    "Dois betalactâmicos antipseudomonas para ampliar espectro",
+    "Aminoglicosídeo como único antipseudomonas pela potência",
+    "Cobrir só MRSA e aguardar a cultura para Gram-negativos",
+    "Dois antipseudomonas de classes distintas e anti-MRSA"
+   ],
+   "gab": 4,
+   "coment": "Choque séptico e 5 dias ou mais de internação são fatores de risco para PAV por multirresistente, e a resistência local acima de 10% ao agente considerado também indica dupla cobertura. A IDSA/ATS 2016 sugere dois antipseudomonas de classes diferentes (betalactâmico com aminoglicosídeo, quinolona ou polimixina) e cobertura de MRSA quando há fator de risco para MDR. Dois betalactâmicos não somam cobertura útil, e aminoglicosídeo isolado penetra mal no pulmão.",
+   "porAlt": [
+    "Choque e internação prolongada elevam o risco de MDR.",
+    "Dois betalactâmicos compartilham mecanismos de resistência.",
+    "Aminoglicosídeo isolado penetra mal e perde atividade no pH ácido.",
+    "Adiar a cobertura de Gram-negativo no choque é inaceitável.",
+    "Correta. Aplica fatores de risco e resistência local."
+   ],
+   "base": "IDSA/ATS 2016"
+  },
+  {
+   "leitura": "pneumonias-uti",
+   "nivel": "avancado",
+   "enun": "PAV por P. aeruginosa DTR (resistente a todos os betalactâmicos tradicionais e quinolonas), sensível a ceftolozano-tazobactam, ceftazidima-avibactam e polimixina B. Qual escolha segue a IDSA AMR Guidance 2026?",
+   "alts": [
+    "Polimixina B em monoterapia com dose de ataque de 2,5 mg/kg",
+    "Ceftolozano-tazobactam 1,5 g a cada 8 horas por ser pneumonia",
+    "Meropeném em dose alta e infusão estendida pela CIM limítrofe",
+    "Ceftolozano-tazobactam 3 g a cada 8 horas, preferido na pneumonia",
+    "Amicacina inalatória isolada, para evitar a nefrotoxicidade sistêmica"
+   ],
+   "gab": 3,
+   "coment": "A IDSA 2026 lista ceftolozano-tazobactam, ceftazidima-avibactam, imipeném-relebactam e cefiderocol para DTR P. aeruginosa e passou a indicar preferência por ceftolozano-tazobactam na pneumonia. A dose para pneumonia é 3 g a cada 8 horas (1,5 g é a dose de outros sítios). Polimixina em monoterapia tem desfecho inferior, meropeném não é ativo em DTR e nebulizado isolado não substitui terapia sistêmica.",
+   "porAlt": [
+    "Polimixina isolada é inferior aos novos betalactâmicos.",
+    "1,5 g a cada 8 horas é a dose de sítios não pulmonares.",
+    "DTR é, por definição, não sensível a meropeném.",
+    "Correta. Fármaco preferido e dose de pneumonia.",
+    "Inalatório é adjuvante, nunca terapia única."
+   ],
+   "base": "IDSA AMR Guidance 2026"
+  },
+  {
+   "leitura": "outras-infeccoes-uti",
+   "nivel": "basico",
+   "enun": "Qual achado confirma, pelo tempo diferencial de positividade, que o cateter é a fonte da bacteremia?",
+   "alts": [
+    "Hemocultura periférica positiva 2 horas ou mais antes da do cateter",
+    "Hemocultura do cateter positiva até 30 minutos antes da periférica",
+    "Hemocultura do cateter positiva 2 horas ou mais antes da periférica",
+    "Ponta de cateter com menos de 15 UFC em cultura semiquantitativa",
+    "Hemocultura do cateter positiva e periférica colhida após o antibiótico"
+   ],
+   "gab": 2,
+   "coment": "Pela IDSA 2009, o tempo diferencial de positividade confirma a origem no cateter quando a hemocultura colhida pelo cateter positiva pelo menos 2 horas antes da colhida por veia periférica, ambas colhidas antes do antimicrobiano. A alternativa é o mesmo agente na ponta (15 UFC ou mais) e no sangue periférico. Diferença menor que 2 horas não confirma, e culturas colhidas após o antibiótico perdem validade.",
+   "porAlt": [
+    "O inverso sugere que o cateter não é a fonte.",
+    "Diferença menor que 2 horas não confirma a origem.",
+    "Correta. Critério do tempo diferencial da IDSA 2009.",
+    "Menos de 15 UFC na ponta não confirma infecção do cateter.",
+    "Coleta após o antibiótico compromete a comparação."
+   ],
+   "base": "IDSA cateter 2009"
+  },
+  {
+   "leitura": "outras-infeccoes-uti",
+   "nivel": "basico",
+   "enun": "Na infecção intra-abdominal complicada com controle de foco adequado, qual a duração apoiada pelo STOP-IT?",
+   "alts": [
+    "Cerca de 4 dias após o controle do foco",
+    "Cerca de 14 dias após o controle do foco",
+    "Até a normalização da proteína C reativa",
+    "Cerca de 10 dias a partir da primeira dose",
+    "Até a retirada dos drenos cavitários"
+   ],
+   "gab": 0,
+   "coment": "O STOP-IT (2015) mostrou que 4 dias fixos após controle de foco adequado tiveram desfechos semelhantes ao tratamento até 2 dias após a resolução de febre, leucocitose e íleo (média de cerca de 8 dias), com metade da exposição. A SIS 2017 incorporou o curso curto. Proteína C reativa e drenos não são critérios de término, e a regra não vale sem controle de foco.",
+   "porAlt": [
+    "Correta. Resultado do STOP-IT incorporado pela SIS 2017.",
+    "14 dias é exposição desnecessária com foco controlado.",
+    "A PCR não é critério validado de término.",
+    "10 dias dobra a exposição sem benefício demonstrado.",
+    "Drenos podem ficar por outros motivos; não definem término."
+   ],
+   "base": "STOP-IT (NEJM 2015); SIS 2017"
+  },
+  {
+   "leitura": "outras-infeccoes-uti",
+   "nivel": "intermediario",
+   "enun": "Paciente de UTI com bacteremia por S. aureus sensível à oxacilina, cateter central já retirado, em vancomicina empírica há 2 dias. Qual a melhor recomendação?",
+   "alts": [
+    "Manter vancomicina, pois já está no alvo de AUC há 2 dias",
+    "Trocar para cefazolina ou oxacilina e pedir ecocardiograma",
+    "Trocar para daptomicina 6 mg/kg e dispensar o ecocardiograma",
+    "Manter vancomicina e tratar por 7 dias da retirada do cateter",
+    "Trocar para linezolida oral e dar alta da UTI em seguida"
+   ],
+   "gab": 1,
+   "coment": "Para MSSA, betalactâmico antiestafilocócico (oxacilina ou cefazolina) é superior à vancomicina, e manter vancomicina associa-se a maior mortalidade. O manejo da bacteremia por S. aureus inclui ecocardiograma, hemoculturas de controle e duração mínima de 14 dias a partir da primeira hemocultura negativa se não complicada. O ensaio BALANCE excluiu S. aureus, e o curso de 7 dias não se aplica.",
+   "porAlt": [
+    "Vancomicina é inferior para MSSA, mesmo com AUC no alvo.",
+    "Correta. Betalactâmico para MSSA e investigação de endocardite.",
+    "Daptomicina não supera betalactâmico e o ecocardiograma é necessário.",
+    "7 dias é insuficiente para S. aureus.",
+    "Linezolida oral não é tratamento padrão de bacteremia por MSSA."
+   ],
+   "base": "IDSA cateter 2009; BALANCE 2025"
+  },
+  {
+   "leitura": "outras-infeccoes-uti",
+   "nivel": "intermediario",
+   "enun": "Adulto de 62 anos com meningite bacteriana comunitária, sem imunossupressão, função renal normal. Qual prescrição inicial está correta?",
+   "alts": [
+    "Ceftriaxona 1 g 24/24 h, vancomicina e dexametasona em 48 h",
+    "Ceftriaxona 2 g 12/12 h, sem ampicilina e sem dexametasona",
+    "Meropeném 1 g 8/8 h isolado, com dexametasona após 24 horas",
+    "Ceftriaxona 2 g 12/12 h, ampicilina 2 g 4/4 h e dexametasona",
+    "Cefepima 2 g 8/8 h, ampicilina 2 g 12/12 h e sem dexametasona"
+   ],
+   "gab": 3,
+   "coment": "Acima de 50 anos, a ESCMID 2016 inclui ampicilina (2 g a cada 4 horas) para Listeria, associada a ceftriaxona em dose de SNC (2 g a cada 12 horas), com vancomicina conforme resistência local do pneumococo. A dexametasona (10 mg a cada 6 horas por 4 dias) deve começar antes ou junto com a primeira dose. Doses usuais de ceftriaxona e meropeném são insuficientes para SNC, e a dexametasona tardia perde benefício.",
+   "porAlt": [
+    "1 g por dia é subdose para SNC e a dexametasona tardia perde benefício.",
+    "Falta a cobertura de Listeria acima de 50 anos e a dexametasona.",
+    "Meropeném 1 g é subdose para SNC e dexametasona foi tardia.",
+    "Correta. Dose de SNC, cobertura de Listeria e dexametasona precoce.",
+    "Ampicilina a cada 12 horas é subdose e falta dexametasona."
+   ],
+   "base": "ESCMID meningite 2016"
+  },
+  {
+   "leitura": "outras-infeccoes-uti",
+   "nivel": "avancado",
+   "enun": "Ventriculite por Acinetobacter baumannii resistente a carbapenêmicos, sensível apenas a polimixina B, em paciente com derivação ventricular externa. Qual conduta é adequada?",
+   "alts": [
+    "Polimixina B IV e intraventricular 5 mg/dia sem conservante",
+    "Polimixina B só IV em dose alta, sem via intraventricular",
+    "Polimixina B intraventricular 50 mg/dia diluída em água",
+    "Meropeném 2 g IV em 3 horas associado a rifampicina oral",
+    "Polimixina B intraventricular 5 mg/dia com diluente comum"
+   ],
+   "gab": 0,
+   "coment": "A polimixina penetra mal no líquor, e a IDSA 2017 indica via intraventricular quando o agente só é sensível a fármacos de má penetração: polimixina B 5 mg por dia (colistina 10 mg), associada à sistêmica, com preparação e diluente sem conservante e fechamento da derivação por 15 a 60 minutos. Conservantes como álcool benzílico são neurotóxicos. A dose de 50 mg é dez vezes a recomendada, e o meropeném não é ativo.",
+   "porAlt": [
+    "Correta. Associação sistêmica e intraventricular na dose da IDSA 2017.",
+    "Só IV não atinge concentração adequada no líquor.",
+    "50 mg é dez vezes a dose e água não é o diluente.",
+    "O agente é resistente a carbapenêmicos.",
+    "Diluente com conservante é neurotóxico por via intraventricular."
+   ],
+   "base": "IDSA ventriculite 2017"
+  },
+  {
+   "leitura": "outras-infeccoes-uti",
+   "nivel": "avancado",
+   "enun": "Paciente com infecção fulminante por C. difficile (choque, íleo e distensão). Prescrição atual: vancomicina 125 mg IV a cada 6 horas, loperamida e omeprazol. Qual a melhor intervenção?",
+   "alts": [
+    "Manter vancomicina IV e aumentar para 1 g a cada 12 horas",
+    "Trocar a vancomicina IV por metronidazol oral isolado",
+    "Fidaxomicina oral isolada, manter loperamida e omeprazol",
+    "Vancomicina 125 mg VO a cada 6 horas e manter loperamida",
+    "Vancomicina oral e retal, metronidazol IV, sem loperamida"
+   ],
+   "gab": 4,
+   "coment": "A vancomicina IV não atinge o lúmen do cólon e não trata C. difficile. Na forma fulminante, a IDSA/SHEA recomenda vancomicina 500 mg VO ou por sonda a cada 6 horas, metronidazol 500 mg IV a cada 8 horas e, com íleo, vancomicina retal 500 mg a cada 6 horas, além de avaliação cirúrgica. Antiperistálticos devem ser suspensos e o IBP reavaliado. Dose de 125 mg e fidaxomicina isolada não são o esquema da forma fulminante.",
+   "porAlt": [
+    "Vancomicina IV não chega ao cólon, em qualquer dose.",
+    "Metronidazol oral isolado é inferior e inadequado na forma grave.",
+    "Fidaxomicina isolada não é o esquema da forma fulminante com íleo.",
+    "125 mg é dose da forma não fulminante e loperamida é contraindicada.",
+    "Correta. Esquema da forma fulminante com íleo e retirada do antiperistáltico."
+   ],
+   "base": "IDSA/SHEA C. difficile 2017 e 2021"
+  },
+  {
+   "leitura": "stewardship",
+   "nivel": "basico",
+   "enun": "Segundo a diretriz nacional da ANVISA (2023), quais são as duas estratégias com melhor evidência para melhorar o uso de antimicrobianos?",
+   "alts": [
+    "Educação em aulas e cartazes e controle do custo de compras",
+    "Auditoria prospectiva com retroalimentação e pré-autorização",
+    "Rodízio de antimicrobianos e padronização por menor preço",
+    "Restrição do laboratório e antibiograma liberado só ao médico",
+    "Educação em aulas e cartazes com antibiograma cumulativo anual"
+   ],
+   "gab": 1,
+   "coment": "A diretriz da ANVISA, em linha com a IDSA/SHEA 2016, aponta auditoria prospectiva com retroalimentação e pré-autorização como as intervenções mais eficazes, e recomenda que o PGA tenha uma delas ou ambas. Educação é necessária, mas insuficiente sozinha; custo é consequência, não estratégia; rodízio de antimicrobianos não tem boa evidência; e o antibiograma cumulativo é ferramenta de apoio.",
+   "porAlt": [
+    "Educação isolada e custo não são as estratégias de maior eficácia.",
+    "Correta. As duas estratégias centrais da diretriz.",
+    "Rodízio não tem boa evidência e preço não é critério de PGA.",
+    "Restringir o laudo não é estratégia recomendada.",
+    "São ferramentas de apoio, não as intervenções centrais."
+   ],
+   "base": "ANVISA 2023; IDSA/SHEA 2016"
+  },
+  {
+   "leitura": "stewardship",
+   "nivel": "basico",
+   "enun": "Um paciente recebeu vancomicina e meropeném do dia 1 ao 3 e cefepima do dia 4 ao 7. Qual o DOT e o LOT desse tratamento?",
+   "alts": [
+    "DOT de 7 e LOT de 10",
+    "DOT de 10 e LOT de 10",
+    "DOT de 7 e LOT de 7",
+    "DOT de 13 e LOT de 7",
+    "DOT de 10 e LOT de 7"
+   ],
+   "gab": 4,
+   "coment": "DOT soma os dias de cada antimicrobiano: vancomicina 3, meropeném 3 e cefepima 4, total de 10. LOT conta os dias em que o paciente recebeu qualquer antimicrobiano sistêmico: do dia 1 ao 7, total de 7. LOT é sempre menor ou igual ao DOT, e a razão DOT/LOT de 1,43 indica uso de associação em parte do período.",
+   "porAlt": [
+    "Inverte os conceitos: LOT não pode ser maior que DOT.",
+    "LOT conta dias com qualquer antimicrobiano, não a soma.",
+    "DOT deve somar os dias de cada fármaco.",
+    "Soma errada: cefepima teve 4 dias, não 7.",
+    "Correta. 3 + 3 + 4 = 10 DOT, em 7 dias de terapia."
+   ],
+   "base": "ANVISA 2023"
+  },
+  {
+   "leitura": "stewardship",
+   "nivel": "intermediario",
+   "enun": "A UTI teve 285 pacientes-dia em setembro e consumiu 510 g de meropeném. Com a DDD da OMS de 3 g, qual o consumo em DDD por 1.000 pacientes-dia?",
+   "alts": [
+    "Cerca de 895 DDD por 1.000 pacientes-dia",
+    "Cerca de 170 DDD por 1.000 pacientes-dia",
+    "Cerca de 597 DDD por 1.000 pacientes-dia",
+    "Cerca de 298 DDD por 1.000 pacientes-dia",
+    "Cerca de 1.789 DDD por 1.000 pacientes-dia"
+   ],
+   "gab": 2,
+   "coment": "Número de DDD = 510 ÷ 3 = 170. Densidade = 170 ÷ 285 × 1.000 = 596,5 DDD por 1.000 pacientes-dia. Usar a DDD antiga de 2 g daria cerca de 895; 170 é o número absoluto de DDD sem dividir por pacientes-dia; 298 corresponderia a dividir por 6 g. Como a dose real no crítico costuma ser 6 g por dia, a DDD superestima os dias de tratamento em duas vezes, e por isso deve ser acompanhada do DOT.",
+   "porAlt": [
+    "Resultado com a DDD antiga de 2 g, não a vigente.",
+    "É o número absoluto de DDD, sem normalizar por pacientes-dia.",
+    "Correta. (510 ÷ 3) ÷ 285 × 1.000.",
+    "Resultado de dividir pela dose de 6 g, não pela DDD.",
+    "Não dividiu os gramas pela DDD de 3 g."
+   ],
+   "base": "Índice ATC/DDD OMS 2026; ANVISA 2023"
+  },
+  {
+   "leitura": "stewardship",
+   "nivel": "intermediario",
+   "enun": "O hospital quer implantar pré-autorização para polimixina B e ceftazidima-avibactam. Qual cuidado a diretriz da ANVISA destaca?",
+   "alts": [
+    "Liberar a primeira dose na sepse a qualquer hora e auditar depois",
+    "Liberar somente após o antibiograma confirmar a sensibilidade",
+    "Exigir parecer presencial do infectologista antes da primeira dose",
+    "Suspender a dispensação desses fármacos à noite e nos fins de semana",
+    "Restringir com base apenas no custo de aquisição do fármaco"
+   ],
+   "gab": 0,
+   "coment": "A diretriz da ANVISA (2023) afirma que a pré-autorização não pode atrasar o tratamento, sobretudo na sepse, independentemente do dia e do horário, e que a escolha dos restritos deve se basear no perfil microbiológico e na melhoria do uso, não nos custos. A estratégia usual é liberar a primeira dose ou as primeiras 24 a 72 horas e auditar em seguida. Aguardar antibiograma ou parecer presencial pode ser fatal no choque séptico.",
+   "porAlt": [
+    "Correta. Evita o principal efeito indesejado da restrição.",
+    "Aguardar o antibiograma atrasa o tratamento de pacientes graves.",
+    "Parecer presencial obrigatório pode atrasar a primeira dose.",
+    "Bloquear à noite e no fim de semana contraria a diretriz.",
+    "A diretriz foca a melhoria do uso, não o custo."
+   ],
+   "base": "ANVISA 2023"
+  },
+  {
+   "leitura": "stewardship",
+   "nivel": "avancado",
+   "enun": "Ao montar o antibiograma cumulativo da UTI, o laboratório incluiu todas as hemoculturas positivas do ano, com 14 isolados repetidos de um mesmo paciente com KPC. Qual crítica está correta?",
+   "alts": [
+    "Deve incluir todos os isolados para refletir a carga real",
+    "Deve excluir os isolados de UTI para não enviesar o total",
+    "Deve incluir só espécies com menos de 30 isolados no ano",
+    "Deve contar só o primeiro isolado por paciente e espécie",
+    "Deve contar só isolados sensíveis para orientar o empírico"
+   ],
+   "gab": 3,
+   "coment": "O documento CLSI M39 orienta contar apenas o primeiro isolado de cada espécie por paciente no período, para que culturas repetidas de um mesmo paciente não inflem a resistência; também recomenda relatar espécies com pelo menos 30 isolados e estratificar por unidade e material. Excluir a UTI eliminaria justamente o dado que orienta o empírico da UTI, e contar só sensíveis falsearia o relatório.",
+   "porAlt": [
+    "Isolados repetidos inflam artificialmente a resistência.",
+    "A UTI deve ser estratificada, não excluída.",
+    "O mínimo recomendado é de 30 isolados por espécie.",
+    "Correta. Regra do primeiro isolado do CLSI M39.",
+    "Contar só sensíveis tornaria o relatório inútil."
+   ],
+   "base": "CLSI M39 (2022)"
+  },
+  {
+   "leitura": "stewardship",
+   "nivel": "avancado",
+   "enun": "Após implantar painel molecular de hemocultura, o tempo até a identificação caiu 30 horas, mas o tempo até a terapia adequada e a duração não mudaram. Qual a explicação mais provável e a correção?",
+   "alts": [
+    "O painel é impreciso e deve dar lugar à cultura convencional",
+    "O painel só é útil em pediatria e deve ser suspenso em adultos",
+    "Sem fluxo de ação do PGA; definir quem recebe e recomenda",
+    "Falta liberar o painel também para uroculturas e swabs retais",
+    "O ganho exige esperar o antibiograma fenotípico para agir"
+   ],
+   "gab": 2,
+   "coment": "Metanálises mostram que testes rápidos reduzem mortalidade e tempo até a terapia adequada quando acompanhados de intervenção do PGA, e têm pouco efeito quando o resultado apenas aparece no sistema. A correção é definir quem recebe o resultado (farmacêutico ou infectologista), em quanto tempo e qual recomendação corresponde a cada agente e gene de resistência. O problema não é a acurácia do teste.",
+   "porAlt": [
+    "A acurácia não explica a falta de mudança de conduta.",
+    "Painéis têm benefício demonstrado em adultos com PGA.",
+    "Correta. Teste rápido precisa de ação rápida.",
+    "Ampliar o uso não resolve a falta de ação sobre o resultado.",
+    "Esperar o fenotípico anula a vantagem do teste rápido."
+   ],
+   "base": "IDSA/SHEA 2016; ANVISA 2023"
+  }
+ ]
+}

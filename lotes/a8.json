@@ -1,0 +1,1534 @@
+{
+ "leituras": [
+  {
+   "slug": "interacoes-fundamentos",
+   "titulo": "Interações medicamentosas: mecanismos e classificação",
+   "dek": "Definição, epidemiologia na UTI, mecanismos e sistemas de classificação das interações medicamentosas, com critérios para julgar relevância clínica, a escala DIPS (Horn, Hansten e Chan, 2007), o problema da fadiga de alertas e a forma de documentar e comunicar a intervenção. Baseado na revisão sistemática de Fitzmaurice e colaboradores (2019), nas definições da FDA (2020, tabela atualizada em 2023) e na literatura de apoio à decisão clínica.",
+   "palavras": 4414,
+   "fontes": [
+    "Fitzmaurice et al., Drug Saf 2019",
+    "Horn, Hansten e Chan, Ann Pharmacother 2007 (DIPS)",
+    "Hansten, Horn e Hazlet, J Am Pharm Assoc 2001 (ORCA)",
+    "FDA, tabela de substratos, inibidores e indutores, 2023",
+    "FDA, guia de estudos clínicos de interação, 2020",
+    "Abbas et al., Int J Clin Pharm 2022",
+    "van der Sijs et al., JAMIA 2006",
+    "Phansalkar et al., JAMIA 2012",
+    "Benet e Hoener, Clin Pharmacol Ther 2002",
+    "ANVISA, VigiMed Serviços de Saúde, 2026"
+   ]
+  },
+  {
+   "slug": "interacoes-cyp-transportadores",
+   "titulo": "Citocromo P450, transportadores e interações farmacocinéticas",
+   "dek": "Enzimas do citocromo P450 (CYP3A4, 2C9, 2C19, 2D6 e 1A2), glucuronidação e transportadores (P-glicoproteína, OATP1B1, OAT e OCT) aplicados às interações da UTI, com tabelas de substratos, inibidores e indutores, cinética de inibição e de indução e manejo dos pares clássicos. Baseado na tabela da FDA de substratos, inibidores e indutores (atualizada em 2023), no guia da FDA de estudos clínicos de interação (2020), nas bulas e no guia prático da EHRA para anticoagulantes orais diretos (2021).",
+   "palavras": 4132,
+   "fontes": [
+    "FDA, tabela de substratos, inibidores e indutores, 2023",
+    "FDA, guia de estudos clínicos de interação, 2020",
+    "Steffel et al., EHRA practical guide, Europace 2021",
+    "FDA, comunicação de segurança sobre sinvastatina, 2011",
+    "Bhatt et al., COGENT, N Engl J Med 2010",
+    "Bulas de voriconazol e posaconazol",
+    "Capone et al., J Clin Pharm Ther 2010"
+   ]
+  },
+  {
+   "slug": "interacoes-farmacodinamicas",
+   "titulo": "Interações farmacodinâmicas: QT, serotonina, sangramento, potássio e SNC",
+   "dek": "Interações farmacodinâmicas mais perigosas da UTI: prolongamento de QT e torsades de pointes (com escore de Tisdale e correção de Bazett e Fridericia), síndrome serotoninérgica pelos critérios de Hunter, sangramento, hipercalemia, depressão do sistema nervoso central e respiratória, nefro e ototoxicidade somadas, carga anticolinérgica e efeitos hemodinâmicos aditivos. Baseado na declaração científica AHA/ACCF sobre torsades em ambiente hospitalar (2010), em Tisdale e colaboradores (2013), em Dunkley e colaboradores (2003), nas comunicações da FDA de 2011 sobre linezolida e azul de metileno, na classificação CredibleMeds e no ensaio ACORN (2023).",
+   "palavras": 3892,
+   "fontes": [
+    "Drew et al., AHA/ACCF, J Am Coll Cardiol 2010",
+    "Tisdale et al., Circ Cardiovasc Qual Outcomes 2013",
+    "CredibleMeds QTdrugs List, consultado em 2026",
+    "Dunkley et al., QJM 2003",
+    "FDA, comunicações sobre linezolida e azul de metileno, 2011",
+    "Bai et al., JAMA Netw Open 2022",
+    "Luther et al., Crit Care Med 2018",
+    "Qian et al., ACORN, JAMA 2023",
+    "Perazella, Drug Saf 2000",
+    "Rybak et al., consenso de vancomicina 2020"
+   ]
+  },
+  {
+   "slug": "interacoes-antimicrobianos",
+   "titulo": "Interações envolvendo antimicrobianos",
+   "dek": "Antimicrobianos como agressores e como vítimas de interações: azóis, macrolídeos, rifampicina, linezolida, quinolonas, carbapenêmicos com valproato, SMX-TMP, metronidazol, ceftriaxona com cálcio, aminoglicosídeos, tigeciclina, daptomicina e cloranfenicol, com tabela-resumo de manejo. Baseado nas bulas (FDA, EMA e ANVISA), nas comunicações de segurança da FDA (ceftriaxona e cálcio, 2009; linezolida e azul de metileno, 2011; sinvastatina, 2011), na metanálise de Chai e colaboradores (2021) sobre carbapenêmicos e valproato e no guia da EHRA (2021).",
+   "palavras": 3420,
+   "fontes": [
+    "FDA, ceftriaxona e cálcio, 2009",
+    "FDA, linezolida e azul de metileno, 2011",
+    "FDA, sinvastatina, 2011",
+    "Chai et al., Expert Opin Drug Saf 2021",
+    "Carnovale et al., Clin Pharmacokinet 2019",
+    "Bai et al., JAMA Netw Open 2022",
+    "Steffel et al., EHRA 2021",
+    "FDA, tabela de interações, 2023",
+    "Bulas vigentes dos antimicrobianos (FDA e ANVISA)"
+   ]
+  },
+  {
+   "slug": "administracao-sondas",
+   "titulo": "Administração de medicamentos por sonda e interação com a dieta",
+   "dek": "Princípios de administração de medicamentos por sonda gástrica e pós-pilórica, formas farmacêuticas que não podem ser trituradas, técnica de preparo e lavagem, interações com a dieta enteral (fenitoína, levotiroxina, quinolonas, varfarina, carbamazepina), omeprazol por sonda, alternativas líquidas e manejo da obstrução. Baseado nas práticas seguras de nutrição enteral da ASPEN (Boullata e colaboradores, 2017), no Handbook of Drug Administration via Enteral Feeding Tubes (White e Bradnam) e nas bulas dos produtos comercializados no Brasil.",
+   "palavras": 3017,
+   "fontes": [
+    "Boullata et al., ASPEN Safe Practices for Enteral Nutrition Therapy, JPEN 2017",
+    "White e Bradnam, Handbook of Drug Administration via Enteral Feeding Tubes, 3ª ed., 2015",
+    "Johnson et al., Ann Pharmacother 2007",
+    "ISMP Brasil, Boletim 2019;8(1)",
+    "Bulas ANVISA"
+   ]
+  },
+  {
+   "slug": "compatibilidade-iv",
+   "titulo": "Estabilidade, compatibilidade e administração intravenosa",
+   "dek": "Estabilidade e compatibilidade de medicamentos intravenosos na UTI: mecanismos de incompatibilidade, administração em Y e uso de lúmens, fontes de consulta, escolha do diluente, fotossensibilidade, adsorção e extração de plastificantes, filtros, vesicantes e extravasamento com antídotos, e osmolaridade para via periférica. Baseado no ASHP Injectable Drug Information (sucessor do Trissel's Handbook), no Stabilis, nas normas da Infusion Nurses Society (9ª edição, 2024), na ASPEN e na comunicação da FDA sobre ceftriaxona e cálcio (2009).",
+   "palavras": 3222,
+   "fontes": [
+    "ASHP Injectable Drug Information, edição 2025",
+    "Stabilis, consultado em 2026",
+    "Nickel et al., INS Infusion Therapy Standards of Practice, 9ª ed., 2024",
+    "FDA, ceftriaxona e cálcio, 2009",
+    "ISMP Brasil, Boletim 2019;8(1)",
+    "Boullata et al., ASPEN, JPEN 2014"
+   ]
+  },
+  {
+   "slug": "medicamentos-alta-vigilancia",
+   "titulo": "Medicamentos de alta vigilância e erros de medicação",
+   "dek": "Medicamentos potencialmente perigosos (alta vigilância) na UTI, pela lista hospitalar vigente do ISMP Brasil (2019), com as barreiras que reduzem erros (padronização de concentrações, dupla checagem independente, bombas inteligentes, rotulagem, letra maiúscula diferenciada e armazenamento), tipos e classificação de erros de medicação (índice NCC MERP), notificação no Brasil, metas internacionais de segurança do paciente, Programa Nacional de Segurança do Paciente (Portaria MS 529/2013) e RDC 36/2013.",
+   "palavras": 3724,
+   "fontes": [
+    "ISMP Brasil, Boletim 2019;8(1)",
+    "ISMP Brasil, Boletim 2022;11(1)",
+    "ISMP Brasil, nomes semelhantes, Boletim 2014;3(1)",
+    "Portaria MS 529/2013 (PNSP)",
+    "ANVISA, RDC 36/2013",
+    "MS/ANVISA/Fiocruz, Protocolo de segurança na prescrição, uso e administração de medicamentos, 2013",
+    "ANVISA, VigiMed Serviços de Saúde, 2026",
+    "NCC MERP, índice de erros, 2001",
+    "OMS, Medication Without Harm, 2017"
+   ]
+  }
+ ],
+ "cartoes": [
+  {
+   "leitura": "interacoes-fundamentos",
+   "frente": "O que são o fármaco objeto e o precipitante em uma interação?",
+   "verso": "Objeto (vítima) é o fármaco cujo efeito muda; precipitante (agressor) é o que provoca a mudança. O mesmo fármaco pode ter os dois papéis: a amiodarona inibe o metabolismo da varfarina e soma efeito sobre o QT."
+  },
+  {
+   "leitura": "interacoes-fundamentos",
+   "frente": "Que proporção de pacientes de UTI é exposta a interação potencial, segundo a metanálise de 2019?",
+   "verso": "58% dos pacientes, em 39 estudos (Fitzmaurice et al., Drug Saf 2019), em geral com uma a cinco interações potenciais por paciente; só uma fração tem significado clínico."
+  },
+  {
+   "leitura": "interacoes-fundamentos",
+   "frente": "Como a FDA classifica inibidores pela magnitude?",
+   "verso": "Pelo aumento da AUC de substrato sensível: forte, 5 vezes ou mais; moderado, 2 a 5 vezes; fraco, 1,25 a 2 vezes."
+  },
+  {
+   "leitura": "interacoes-fundamentos",
+   "frente": "Como a FDA classifica indutores pela magnitude?",
+   "verso": "Pela redução da AUC de substrato sensível: forte, 80% ou mais; moderado, 50% a 80%; fraco, 20% a 50%."
+  },
+  {
+   "leitura": "interacoes-fundamentos",
+   "frente": "Por que o deslocamento de ligação proteica raramente causa toxicidade?",
+   "verso": "O aumento da fração livre aumenta a depuração do fármaco livre, e a concentração livre no equilíbrio volta ao valor prévio (Benet e Hoener, 2002). O impacto real é na interpretação de níveis totais, como na fenitoína."
+  },
+  {
+   "leitura": "interacoes-fundamentos",
+   "frente": "Quais são as classes de risco do Lexicomp?",
+   "verso": "A: sem interação; B: sem ação necessária; C: monitorar a terapia; D: considerar modificação; X: evitar a combinação."
+  },
+  {
+   "leitura": "interacoes-fundamentos",
+   "frente": "Quais as faixas de pontuação da escala DIPS?",
+   "verso": "Mais de 8: altamente provável; 5 a 8: provável; 2 a 4: possível; menos de 2: duvidosa (Horn, Hansten e Chan, 2007)."
+  },
+  {
+   "leitura": "interacoes-fundamentos",
+   "frente": "Por que não usar a escala de Naranjo para avaliar interação?",
+   "verso": "Foi construída para evento de um único fármaco e não distingue objeto de precipitante nem considera as propriedades interativas; a DIPS foi desenhada para interações."
+  },
+  {
+   "leitura": "interacoes-fundamentos",
+   "frente": "Com que frequência alertas de segurança são ignorados em prescrição eletrônica?",
+   "verso": "Entre 49% e 96% das vezes (van der Sijs et al., JAMIA 2006). É a base da fadiga de alertas."
+  },
+  {
+   "leitura": "interacoes-fundamentos",
+   "frente": "Qual a concordância entre Micromedex e Lexicomp na detecção de interações?",
+   "verso": "Moderada (kappa 0,546) em 720 prescrições: Micromedex detectou interação em 17,4% e Lexicomp em 31,9%; Micromedex classificou 61,6% como maiores, contra 30,8%."
+  },
+  {
+   "leitura": "interacoes-fundamentos",
+   "frente": "Cite uma interação fármaco-exame envolvendo creatinina.",
+   "verso": "Trimetoprima e cimetidina inibem OCT2 e MATE e reduzem a secreção tubular de creatinina: a creatinina sobe sem queda da filtração glomerular."
+  },
+  {
+   "leitura": "interacoes-fundamentos",
+   "frente": "O que é o ajuste reverso de uma interação?",
+   "verso": "Rever a dose do objeto quando o precipitante é suspenso. Após retirar indutor (rifampicina, fenitoína) o objeto sobe em 1 a 2 semanas; após retirar inibidor, cai."
+  },
+  {
+   "leitura": "interacoes-fundamentos",
+   "frente": "Que elementos deve ter uma recomendação escrita sobre interação?",
+   "verso": "Problema concreto, mecanismo com fonte, contexto do paciente, ação específica (dose, horário ou troca) e plano de seguimento com parâmetro, prazo e responsável."
+  },
+  {
+   "leitura": "interacoes-fundamentos",
+   "frente": "Quais são as classes da classificação ORCA?",
+   "verso": "1: evitar; 2: geralmente evitar; 3: minimizar risco; 4: sem precaução especial; 5: ignorar (Hansten, Horn e Hazlet, 2001)."
+  },
+  {
+   "leitura": "interacoes-cyp-transportadores",
+   "frente": "Quais os substratos-índice sensíveis do CYP3A na tabela da FDA?",
+   "verso": "Midazolam e triazolam. Inibidores-índice fortes: claritromicina e itraconazol; moderados: eritromicina, fluconazol e verapamil."
+  },
+  {
+   "leitura": "interacoes-cyp-transportadores",
+   "frente": "Qual a razão de AUC com inibição completa de uma via que responde por 90% da depuração?",
+   "verso": "1 ÷ (1 − 0,9) = 10 vezes. Com fm de 0,5 a AUC dobra; com 0,95, aumenta 20 vezes."
+  },
+  {
+   "leitura": "interacoes-cyp-transportadores",
+   "frente": "O que é inibição mecanismo-dependente e quais exemplos?",
+   "verso": "Inativação irreversível da enzima por intermediário reativo; a atividade só volta com síntese nova (dias). Claritromicina, eritromicina, diltiazem, verapamil, ritonavir, suco de toranja."
+  },
+  {
+   "leitura": "interacoes-cyp-transportadores",
+   "frente": "Qual o curso temporal da indução pela rifampicina?",
+   "verso": "Começa em dias, atinge o máximo em cerca de 1 semana e desaparece em cerca de 1 a 2 semanas após a suspensão."
+  },
+  {
+   "leitura": "interacoes-cyp-transportadores",
+   "frente": "Como ajustar tacrolimo ao iniciar voriconazol?",
+   "verso": "Reduzir a um terço da dose (bula do voriconazol) e dosar o vale em 48 a 72 horas, repetindo ajustes. Com posaconazol, também cerca de um terço."
+  },
+  {
+   "leitura": "interacoes-cyp-transportadores",
+   "frente": "Como ajustar ciclosporina com voriconazol e com posaconazol?",
+   "verso": "Voriconazol: reduzir à metade. Posaconazol: reduzir a cerca de três quartos. Em ambos, nível frequente durante e após o azol."
+  },
+  {
+   "leitura": "interacoes-cyp-transportadores",
+   "frente": "Quais os limites da sinvastatina com amiodarona e claritromicina?",
+   "verso": "Com amiodarona, no máximo 20 mg por dia; com claritromicina e outros inibidores fortes do CYP3A4, contraindicada (FDA, 2011)."
+  },
+  {
+   "leitura": "interacoes-cyp-transportadores",
+   "frente": "Por que evitar omeprazol com clopidogrel?",
+   "verso": "O clopidogrel depende do CYP2C19 para formar o metabólito ativo; omeprazol e esomeprazol inibem a enzima e reduzem a antiagregação. Preferir pantoprazol."
+  },
+  {
+   "leitura": "interacoes-cyp-transportadores",
+   "frente": "Como manejar varfarina ao iniciar amiodarona?",
+   "verso": "Reduzir a varfarina em cerca de 30% a 50% e dosar RNI semanalmente por várias semanas; o efeito é progressivo e persiste meses após a suspensão."
+  },
+  {
+   "leitura": "interacoes-cyp-transportadores",
+   "frente": "Por que o tabagismo importa para interações na UTI?",
+   "verso": "A fumaça induz CYP1A2; ao parar de fumar na internação, clozapina e olanzapina sobem em dias. A reposição de nicotina não mantém a indução."
+  },
+  {
+   "leitura": "interacoes-cyp-transportadores",
+   "frente": "Qual a interação entre valproato e lamotrigina?",
+   "verso": "O valproato inibe a glucuronidação (UGT) da lamotrigina e praticamente dobra sua meia-vida; a lamotrigina deve ser reduzida à metade."
+  },
+  {
+   "leitura": "interacoes-cyp-transportadores",
+   "frente": "Como a amiodarona afeta a digoxina e qual a conduta?",
+   "verso": "Inibe a P-glicoproteína e eleva a digoxina em cerca de 70% a 100%; reduzir a digoxina à metade e monitorar nível e potássio."
+  },
+  {
+   "leitura": "interacoes-cyp-transportadores",
+   "frente": "Como ajustar apixabana com inibidor combinado forte de CYP3A4 e P-gp?",
+   "verso": "Bula dos EUA: reduzir 50% se a dose for 5 ou 10 mg duas vezes ao dia; evitar se já for 2,5 mg duas vezes ao dia. Rivaroxabana: evitar."
+  },
+  {
+   "leitura": "interacoes-cyp-transportadores",
+   "frente": "O que acontece com o tramadol em uso de fluoxetina ou paroxetina?",
+   "verso": "A inibição do CYP2D6 reduz a formação de O-desmetiltramadol (menos analgesia) e mantém mais tramadol inalterado (mais risco serotoninérgico)."
+  },
+  {
+   "leitura": "interacoes-farmacodinamicas",
+   "frente": "Qual a fórmula de Bazett e sua limitação?",
+   "verso": "QTc = QT ÷ √RR (RR em segundos). Superestima o QTc em frequências altas e subestima em frequências baixas."
+  },
+  {
+   "leitura": "interacoes-farmacodinamicas",
+   "frente": "Qual a fórmula de Fridericia e quando preferi-la?",
+   "verso": "QTc = QT ÷ raiz cúbica do RR. Erra menos na taquicardia, comum na UTI."
+  },
+  {
+   "leitura": "interacoes-farmacodinamicas",
+   "frente": "Qual QTc é considerado de alto risco para torsades?",
+   "verso": "QTc acima de 500 ms ou aumento de mais de 60 ms em relação ao basal (AHA/ACCF, 2010)."
+  },
+  {
+   "leitura": "interacoes-farmacodinamicas",
+   "frente": "Quais as faixas do escore de Tisdale?",
+   "verso": "Baixo risco: 0 a 6; moderado: 7 a 10; alto: 11 a 21 pontos (Tisdale et al., 2013)."
+  },
+  {
+   "leitura": "interacoes-farmacodinamicas",
+   "frente": "Quais fatores valem 3 pontos no escore de Tisdale?",
+   "verso": "Sepse, insuficiência cardíaca, um fármaco que prolonga o QTc e o segundo (ou mais) fármaco que prolonga o QTc, somando mais 3."
+  },
+  {
+   "leitura": "interacoes-farmacodinamicas",
+   "frente": "Como tratar torsades de pointes induzida por fármaco?",
+   "verso": "Sulfato de magnésio 2 g IV, suspender fármacos causadores, potássio de 4,5 a 5 mEq/L, aumentar a frequência (marca-passo ou isoproterenol) se recorrente, desfibrilar se instável."
+  },
+  {
+   "leitura": "interacoes-farmacodinamicas",
+   "frente": "Quais são os critérios de Hunter?",
+   "verso": "Em uso de serotoninérgico: clônus espontâneo; clônus induzível ou ocular com agitação ou diaforese; tremor com hiper-reflexia; ou hipertonia com temperatura acima de 38 °C e clônus ocular ou induzível."
+  },
+  {
+   "leitura": "interacoes-farmacodinamicas",
+   "frente": "O que a FDA (2011) orienta quando linezolida ou azul de metileno são urgentes em paciente com ISRS?",
+   "verso": "Suspender o serotoninérgico e vigiar por 2 semanas (5 para fluoxetina) ou até 24 horas após a última dose de linezolida ou azul de metileno, o que ocorrer primeiro."
+  },
+  {
+   "leitura": "interacoes-farmacodinamicas",
+   "frente": "Por que antipirético não trata a hipertermia da síndrome serotoninérgica?",
+   "verso": "A febre é de origem muscular. Usar benzodiazepínicos, resfriamento físico e, se acima de cerca de 41 °C, sedação, intubação e bloqueio neuromuscular não despolarizante."
+  },
+  {
+   "leitura": "interacoes-farmacodinamicas",
+   "frente": "Qual a dose usual de cipro-heptadina na síndrome serotoninérgica?",
+   "verso": "12 mg por via oral ou sonda, seguidos de 2 mg a cada 2 horas enquanto houver sintomas."
+  },
+  {
+   "leitura": "interacoes-farmacodinamicas",
+   "frente": "Como a trimetoprima causa hipercalemia?",
+   "verso": "Bloqueia o canal epitelial de sódio (ENaC) do néfron distal, como a amilorida; efeito maior em doses altas, idosos e disfunção renal (Perazella, 2000)."
+  },
+  {
+   "leitura": "interacoes-farmacodinamicas",
+   "frente": "Como a heparina causa hipercalemia?",
+   "verso": "Inibe a síntese de aldosterona na suprarrenal, mesmo em dose profilática; o efeito aparece após alguns dias e soma com IECA, BRA e trimetoprima."
+  },
+  {
+   "leitura": "interacoes-farmacodinamicas",
+   "frente": "O que mostrou o ensaio ACORN (2023)?",
+   "verso": "Em 2.511 adultos (77% com vancomicina), cefepima e piperacilina-tazobactam não diferiram em lesão renal ou morte; a cefepima causou mais disfunção neurológica."
+  },
+  {
+   "leitura": "interacoes-farmacodinamicas",
+   "frente": "Quando a succinilcolina causa hipercalemia grave?",
+   "verso": "Queimadura após 24 a 48 horas, lesão medular ou desnervação, imobilização prolongada, rabdomiólise e hipercalemia prévia. Aumento habitual: cerca de 0,5 mEq/L."
+  },
+  {
+   "leitura": "interacoes-antimicrobianos",
+   "frente": "Qual o mecanismo da interação entre carbapenêmicos e valproato?",
+   "verso": "Inibição da acilpeptídeo hidrolase, que hidrolisa o glicuronídeo de valproato; o nível cai cerca de 44 mg/L em 1 a 3 dias e só se recupera 1 a 2 semanas após o carbapenêmico."
+  },
+  {
+   "leitura": "interacoes-antimicrobianos",
+   "frente": "Qual a conduta na associação de carbapenêmico com valproato?",
+   "verso": "Não associar: trocar o antimicrobiano ou o anticonvulsivante (ex.: levetiracetam). Aumentar a dose de valproato não compensa."
+  },
+  {
+   "leitura": "interacoes-antimicrobianos",
+   "frente": "Qual o intervalo entre ciprofloxacino e cátions polivalentes?",
+   "verso": "Ciprofloxacino ao menos 2 horas antes ou 6 horas depois de cálcio, magnésio, alumínio, ferro ou zinco."
+  },
+  {
+   "leitura": "interacoes-antimicrobianos",
+   "frente": "Qual o intervalo entre moxifloxacino e cátions polivalentes?",
+   "verso": "Moxifloxacino 4 horas antes ou 8 horas depois; levofloxacino, 2 horas antes ou depois."
+  },
+  {
+   "leitura": "interacoes-antimicrobianos",
+   "frente": "Como administrar ceftriaxona e cálcio em adultos?",
+   "verso": "Sequencialmente, lavando o equipo com solução compatível entre as infusões; nunca em Y ou na mesma solução. Em neonatos de até 28 dias, contraindicado (FDA, 2009)."
+  },
+  {
+   "leitura": "interacoes-antimicrobianos",
+   "frente": "Como a rifampicina altera a dose de caspofungina?",
+   "verso": "Induz a eliminação; a bula recomenda manutenção de 70 mg por dia quando associada a indutores."
+  },
+  {
+   "leitura": "interacoes-antimicrobianos",
+   "frente": "Qual o ajuste do omeprazol ao iniciar voriconazol?",
+   "verso": "Reduzir à metade doses de omeprazol de 40 mg ou mais; os dois se inibem mutuamente."
+  },
+  {
+   "leitura": "interacoes-antimicrobianos",
+   "frente": "Qual o cuidado da linezolida com vasopressores?",
+   "verso": "A inibição da MAO pode potencializar a resposta pressora; iniciar dopamina, adrenalina e simpatomiméticos em doses menores e titular."
+  },
+  {
+   "leitura": "interacoes-antimicrobianos",
+   "frente": "Por que claritromicina com colchicina é perigosa?",
+   "verso": "Inibe CYP3A4 e P-gp e aumenta muito a colchicina, com óbitos relatados; contraindicado em disfunção renal ou hepática."
+  },
+  {
+   "leitura": "interacoes-antimicrobianos",
+   "frente": "Qual a conduta com estatina durante daptomicina?",
+   "verso": "Considerar suspender a estatina e dosar CPK ao menos semanalmente, mais vezes se mantida ou em disfunção renal."
+  },
+  {
+   "leitura": "interacoes-antimicrobianos",
+   "frente": "Como os aminoglicosídeos interagem com bloqueadores neuromusculares?",
+   "verso": "Reduzem a liberação pré-sináptica de acetilcolina e prolongam o bloqueio; polimixinas, clindamicina e magnésio também. Monitorar com sequência de quatro estímulos."
+  },
+  {
+   "leitura": "interacoes-antimicrobianos",
+   "frente": "Qual o cuidado com tigeciclina em paciente com varfarina?",
+   "verso": "A bula relata aumento da exposição à varfarina, e a tigeciclina pode alterar a coagulação; monitorar RNI com frequência."
+  },
+  {
+   "leitura": "interacoes-antimicrobianos",
+   "frente": "Por que a azitromicina substitui a claritromicina em pacientes com tacrolimo?",
+   "verso": "A azitromicina praticamente não inibe CYP3A4 nem P-gp de forma relevante; ainda assim prolonga o QT."
+  },
+  {
+   "leitura": "interacoes-antimicrobianos",
+   "frente": "Qual o efeito do metronidazol sobre a varfarina?",
+   "verso": "Inibe o metabolismo da S-varfarina; o RNI sobe em 3 a 5 dias. Preferir alternativa ou reduzir a varfarina com RNI a cada 2 a 3 dias."
+  },
+  {
+   "leitura": "administracao-sondas",
+   "frente": "Por que não triturar formas de liberação prolongada?",
+   "verso": "A trituração destrói o sistema de controle e libera a dose inteira de uma vez (dose-dumping), com pico tóxico e vale subterapêutico."
+  },
+  {
+   "leitura": "administracao-sondas",
+   "frente": "Cite formas comercializadas no Brasil que não devem ser trituradas.",
+   "verso": "Nifedipino retard e OROS, metoprolol succinato, carbamazepina CR, divalproato, pantoprazol comprimido, morfina e oxicodona de liberação controlada, metformina XR."
+  },
+  {
+   "leitura": "administracao-sondas",
+   "frente": "Como preparar a suspensão simplificada de omeprazol?",
+   "verso": "Conteúdo de cápsula de 20 mg em 10 mL de bicarbonato de sódio 8,4% = 2 mg/mL; preferir sonda gástrica; conservar sob refrigeração."
+  },
+  {
+   "leitura": "administracao-sondas",
+   "frente": "Qual a estabilidade descrita para a suspensão de omeprazol com bicarbonato?",
+   "verso": "Pelo menos 45 dias sob refrigeração a 3 a 5 °C (Johnson et al., Ann Pharmacother 2007)."
+  },
+  {
+   "leitura": "administracao-sondas",
+   "frente": "Qual o volume de lavagem recomendado pela ASPEN?",
+   "verso": "Ao menos 15 mL de água antes, entre e depois de cada medicamento em adultos; em dieta contínua, 30 mL a cada 4 horas."
+  },
+  {
+   "leitura": "administracao-sondas",
+   "frente": "Que água usar para preparo e lavagem em pacientes críticos?",
+   "verso": "Água estéril, segundo a ASPEN (2017), pelo risco de contaminação da água de torneira em críticos e imunossuprimidos."
+  },
+  {
+   "leitura": "administracao-sondas",
+   "frente": "Como manejar fenitoína por sonda com dieta contínua?",
+   "verso": "Pausar a dieta 1 a 2 horas antes e depois, diluir, lavar e seguir o nível sérico; se as pausas prejudicam a nutrição, via intravenosa ou levetiracetam."
+  },
+  {
+   "leitura": "administracao-sondas",
+   "frente": "Por que não adicionar medicamento à bolsa de dieta?",
+   "verso": "Risco de incompatibilidade, contaminação, dose variável e interrupção da dose sempre que a dieta for suspensa."
+  },
+  {
+   "leitura": "administracao-sondas",
+   "frente": "A suspensão oral de ciprofloxacino pode ir pela sonda?",
+   "verso": "Não: é oleosa, com microcápsulas, e obstrui a sonda. Usar comprimido triturado com pausa da dieta ou a via intravenosa."
+  },
+  {
+   "leitura": "administracao-sondas",
+   "frente": "Qual o cuidado com carbamazepina suspensão por sonda?",
+   "verso": "Adsorve ao PVC da sonda: diluir com volume igual de água e lavar bem; seguir o nível sérico."
+  },
+  {
+   "leitura": "administracao-sondas",
+   "frente": "Qual a vazão para 1.800 mL de dieta com 6 horas de pausa por dia?",
+   "verso": "1.800 ÷ 18 horas = 100 mL/h. Sem compensar as pausas (75 mL/h), o paciente recebe 25% a menos."
+  },
+  {
+   "leitura": "administracao-sondas",
+   "frente": "Que implicações tem a sonda em posição pós-pilórica?",
+   "verso": "Sem ácido nem reservatório: soluções hiperosmolares causam diarreia, fármacos dependentes de acidez perdem absorção e o bicarbonato da suspensão de omeprazol perde utilidade."
+  },
+  {
+   "leitura": "administracao-sondas",
+   "frente": "Como desobstruir uma sonda enteral?",
+   "verso": "Água morna com seringa de 30 a 60 mL; se falhar, enzimas pancreáticas ativadas com bicarbonato por 30 minutos. Evitar refrigerante de cola e fio-guia fora de protocolo."
+  },
+  {
+   "leitura": "administracao-sondas",
+   "frente": "Para que servem os conectores enterais exclusivos (ENFit)?",
+   "verso": "Impedem a conexão de seringas e equipos enterais a acessos venosos, prevenindo a infusão intravenosa de dieta ou medicamento oral."
+  },
+  {
+   "leitura": "compatibilidade-iv",
+   "frente": "Qual a diferença entre estabilidade e compatibilidade?",
+   "verso": "Estabilidade: manutenção da concentração (em geral ao menos 90%) e das propriedades ao longo do tempo. Compatibilidade: ausência de reação entre produtos em contato."
+  },
+  {
+   "leitura": "compatibilidade-iv",
+   "frente": "Como infundir fenitoína intravenosa?",
+   "verso": "Diluir apenas em soro fisiológico, filtro em linha, lavar a linha antes e depois, no máximo 50 mg/min em adultos; não correr em Y com outros fármacos."
+  },
+  {
+   "leitura": "compatibilidade-iv",
+   "frente": "Qual o diluente da anfotericina B desoxicolato?",
+   "verso": "Soro glicosado 5%; precipita em soro fisiológico e com eletrólitos."
+  },
+  {
+   "leitura": "compatibilidade-iv",
+   "frente": "Pode-se usar filtro com anfotericina B lipossomal?",
+   "verso": "Sim, apenas com poro de pelo menos 1 mícron; filtros menores retêm os lipossomos."
+  },
+  {
+   "leitura": "compatibilidade-iv",
+   "frente": "Qual filtro usar em nutrição parenteral 2 em 1 e 3 em 1?",
+   "verso": "0,22 mícron para solução sem lipídio; 1,2 mícron para solução com lipídio (ASPEN)."
+  },
+  {
+   "leitura": "compatibilidade-iv",
+   "frente": "O que acontece com a nitroglicerina em equipo de PVC?",
+   "verso": "É adsorvida e absorvida pelo plástico, com perda que pode passar de 40%; usar equipo sem PVC e titular pelo efeito."
+  },
+  {
+   "leitura": "compatibilidade-iv",
+   "frente": "Por que a amiodarona exige cuidado com o equipo?",
+   "verso": "O polissorbato 80 extrai DEHP do PVC; usar vidro ou poliolefina em infusões longas. Diluir em soro glicosado 5% e usar acesso central acima de 2 mg/mL."
+  },
+  {
+   "leitura": "compatibilidade-iv",
+   "frente": "Como conservar o nitroprussiato diluído?",
+   "verso": "Proteger a bolsa da luz; descartar se a solução ficar azul, verde ou vermelho-escura (degradação com liberação de cianeto)."
+  },
+  {
+   "leitura": "compatibilidade-iv",
+   "frente": "Por que não fazer bolus no lúmen da noradrenalina?",
+   "verso": "O bolus empurra de uma vez a noradrenalina do espaço morto, causando pico pressórico, seguido de pausa na entrega."
+  },
+  {
+   "leitura": "compatibilidade-iv",
+   "frente": "Por que bicarbonato não corre com catecolaminas?",
+   "verso": "O pH alcalino oxida e inativa noradrenalina, adrenalina, dopamina e dobutamina; o bicarbonato também precipita cálcio."
+  },
+  {
+   "leitura": "compatibilidade-iv",
+   "frente": "Qual o antídoto do extravasamento de vasopressor?",
+   "verso": "Fentolamina 5 a 10 mg em 10 a 15 mL de soro fisiológico, subcutânea na área, o mais cedo possível; evitar compressa fria."
+  },
+  {
+   "leitura": "compatibilidade-iv",
+   "frente": "Quando usar hialuronidase em extravasamento?",
+   "verso": "Soluções hiperosmolares, cálcio, potássio, nutrição parenteral, contraste, alcaloides da vinca: em geral 150 unidades em cinco injeções de 0,2 mL, com compressa morna."
+  },
+  {
+   "leitura": "compatibilidade-iv",
+   "frente": "Quando e como usar dexrazoxano?",
+   "verso": "Extravasamento de antraciclinas: intravenoso no outro membro, iniciado em até 6 horas, esquema de 3 dias; não associar dimetilsulfóxido."
+  },
+  {
+   "leitura": "compatibilidade-iv",
+   "frente": "Qual o limite de osmolaridade para nutrição parenteral periférica?",
+   "verso": "Até 900 mOsm/L (ASPEN); acima disso, acesso central, também segundo as normas da INS de 2024."
+  },
+  {
+   "leitura": "medicamentos-alta-vigilancia",
+   "frente": "O que define um medicamento potencialmente perigoso?",
+   "verso": "Risco aumentado de causar dano significativo quando há falha no processo de utilização; o critério é a gravidade do erro, não a frequência."
+  },
+  {
+   "leitura": "medicamentos-alta-vigilancia",
+   "frente": "Qual a versão vigente da lista hospitalar do ISMP Brasil?",
+   "verso": "Lista atualizada de 2019 (Boletim ISMP Brasil, v. 8, n. 1). Em 2022 foram atualizadas as listas ambulatorial e de instituições de longa permanência."
+  },
+  {
+   "leitura": "medicamentos-alta-vigilancia",
+   "frente": "Quais os três princípios de prevenção de erros com esses medicamentos?",
+   "verso": "Reduzir a possibilidade de ocorrência de erros, tornar os erros visíveis e minimizar suas consequências."
+  },
+  {
+   "leitura": "medicamentos-alta-vigilancia",
+   "frente": "Quantos mEq tem a ampola de KCl 19,1%?",
+   "verso": "Cerca de 2,56 mEq/mL; 10 mL contêm cerca de 25,6 mEq. A ampola de 10% tem cerca de 1,34 mEq/mL."
+  },
+  {
+   "leitura": "medicamentos-alta-vigilancia",
+   "frente": "Como preparar 500 mL de salina a 3% com NaCl 20%?",
+   "verso": "Retirar 55 mL de 500 mL de soro fisiológico e acrescentar 55 mL de NaCl 20% (3,42 mEq/mL), obtendo cerca de 513 mEq/L."
+  },
+  {
+   "leitura": "medicamentos-alta-vigilancia",
+   "frente": "Quantos mEq/mL têm o sulfato de magnésio 10% e 50%?",
+   "verso": "Cerca de 0,81 mEq/mL (10%) e 4 mEq/mL (50%); a confusão entre as concentrações é causa conhecida de intoxicação."
+  },
+  {
+   "leitura": "medicamentos-alta-vigilancia",
+   "frente": "O que é dupla checagem independente?",
+   "verso": "Dois profissionais verificam separadamente, sem influência mútua, fármaco, dose, cálculo, via, programação e paciente, e depois comparam. Restringir aos pontos mais vulneráveis."
+  },
+  {
+   "leitura": "medicamentos-alta-vigilancia",
+   "frente": "Qual a diferença entre limites flexíveis e rígidos na bomba inteligente?",
+   "verso": "Flexível: alerta que o operador pode confirmar e seguir. Rígido: a bomba não permite a programação. A proteção se perde se a bomba for usada sem biblioteca."
+  },
+  {
+   "leitura": "medicamentos-alta-vigilancia",
+   "frente": "Qual a diferença entre as categorias D e E do NCC MERP?",
+   "verso": "D: erro atingiu o paciente e exigiu monitorização ou intervenção para evitar dano. E: erro contribuiu para dano temporário que exigiu intervenção."
+  },
+  {
+   "leitura": "medicamentos-alta-vigilancia",
+   "frente": "Quais os prazos de notificação da RDC 36/2013?",
+   "verso": "Eventos adversos: mensalmente, até o 15º dia útil do mês seguinte. Eventos com óbito: em até 72 horas."
+  },
+  {
+   "leitura": "medicamentos-alta-vigilancia",
+   "frente": "Onde notificar erro de medicação, segundo a orientação atual da ANVISA?",
+   "verso": "No VigiMed, que recebe eventos adversos a medicamentos, inclusive erros com ou sem dano; o Notivisa segue para incidentes da assistência e queixas técnicas."
+  },
+  {
+   "leitura": "medicamentos-alta-vigilancia",
+   "frente": "Quais são as seis metas internacionais de segurança do paciente?",
+   "verso": "Identificação correta, comunicação efetiva, segurança dos medicamentos de alta vigilância, cirurgia segura, redução de infecções (higiene das mãos) e redução de quedas."
+  },
+  {
+   "leitura": "medicamentos-alta-vigilancia",
+   "frente": "Qual portaria instituiu o PNSP e quais os protocolos básicos?",
+   "verso": "Portaria MS 529/2013. Protocolos (Portarias 1.377 e 2.095/2013): identificação, lesão por pressão, medicamentos, cirurgia segura, higiene das mãos e quedas."
+  },
+  {
+   "leitura": "medicamentos-alta-vigilancia",
+   "frente": "Quais abreviaturas e notações perigosas evitar na prescrição?",
+   "verso": "\"U\" para unidades, \"µg\" (usar mcg), zero à direita (5 mg, não 5,0 mg) e ausência de zero à esquerda (0,5 mg, não ,5 mg)."
+  }
+ ],
+ "questoes": [
+  {
+   "leitura": "interacoes-fundamentos",
+   "nivel": "basico",
+   "enun": "Em estudo de interação, a AUC do midazolam oral passou de 100 para 380 ng·h/mL após pré-tratamento com um novo fármaco. Pelas definições da FDA, esse fármaco se comporta como:",
+   "alts": [
+    "Inibidor forte do CYP3A (razão 3,8)",
+    "Inibidor fraco do CYP3A (razão 3,8)",
+    "Inibidor moderado do CYP3A (razão 3,8)",
+    "Indutor moderado do CYP3A (razão 3,8)",
+    "Substrato sensível do CYP3A (razão 3,8)"
+   ],
+   "gab": 2,
+   "coment": "A razão de AUC é 380 ÷ 100 = 3,8. A FDA classifica como inibidor forte o que aumenta a AUC de um substrato sensível em 5 vezes ou mais, moderado entre 2 e 5 vezes e fraco entre 1,25 e 2 vezes. Indutores reduzem a AUC. O midazolam é o substrato sensível (índice); o fármaco testado é o precipitante. A classificação permite comparar interações de forma objetiva, mas a relevância clínica depende do objeto e do paciente.",
+   "porAlt": [
+    "Errada: inibidor forte exige aumento de 5 vezes ou mais.",
+    "Errada: inibidor fraco eleva a AUC entre 1,25 e 2 vezes.",
+    "Correta: aumento de 3,8 vezes está entre 2 e 5 vezes.",
+    "Errada: indutor reduziria a AUC do midazolam, não aumentaria.",
+    "Errada: o substrato sensível é o midazolam, não o precipitante."
+   ],
+   "base": "FDA, tabela de substratos, inibidores e indutores (2023) e guia de interações (2020)"
+  },
+  {
+   "leitura": "interacoes-fundamentos",
+   "nivel": "basico",
+   "enun": "Sobre o deslocamento de fármacos da ligação a proteínas plasmáticas como mecanismo de interação, é correto afirmar que:",
+   "alts": [
+    "Costuma elevar a concentração livre de forma sustentada e exige reduzir a dose do objeto",
+    "É o principal mecanismo das interações graves com varfarina e fenitoína na terapia intensiva",
+    "Raramente causa toxicidade sustentada, mas altera a interpretação de níveis séricos totais",
+    "Só ocorre com fármacos de alta extração hepática administrados exclusivamente por via oral",
+    "Aumenta a fração livre e reduz a depuração, elevando a concentração livre no equilíbrio"
+   ],
+   "gab": 2,
+   "coment": "Benet e Hoener (2002) mostraram que, para a maioria dos fármacos, o aumento da fração livre é acompanhado de aumento da depuração do fármaco livre, e a concentração livre no equilíbrio volta ao valor anterior. O efeito prático está na interpretação de níveis totais: fenitoína total baixa com hipoalbuminemia pode corresponder a concentração livre normal. As interações graves da varfarina e da fenitoína decorrem sobretudo de inibição do CYP2C9.",
+   "porAlt": [
+    "Errada: o aumento da fração livre é transitório para a maioria dos fármacos.",
+    "Errada: as interações graves desses fármacos são principalmente metabólicas (CYP2C9).",
+    "Correta: o impacto maior é na leitura de níveis totais, como na fenitoína.",
+    "Errada: o fenômeno não se restringe a esse grupo nem a essa via.",
+    "Errada: a depuração do fármaco livre aumenta, e a concentração livre se normaliza."
+   ],
+   "base": "Benet e Hoener, Clin Pharmacol Ther 2002"
+  },
+  {
+   "leitura": "interacoes-fundamentos",
+   "nivel": "intermediario",
+   "enun": "Paciente intubado, em ventilação controlada, recebe fentanil e midazolam em infusão com meta de RASS −2. O sistema eletrônico dispara alerta de interação 'maior' por depressão respiratória aditiva. Qual a conduta farmacêutica mais adequada?",
+   "alts": [
+    "Recomendar suspender o midazolam, já que o alerta foi classificado como interação maior",
+    "Recomendar trocar o fentanil por morfina, que não soma efeito respiratório ao midazolam",
+    "Pedir dosagem sérica de midazolam e de fentanil antes de manter a associação prescrita",
+    "Considerar o alerta de baixo valor neste contexto e acompanhar a meta de sedação e dor",
+    "Reduzir as duas infusões à metade para compensar a sinergia sobre o centro respiratório"
+   ],
+   "gab": 3,
+   "coment": "Em paciente com via aérea protegida e ventilação controlada, a depressão respiratória aditiva é esperada e controlada; o risco relevante é a sedação excessiva, que se maneja titulando pelas escalas de sedação e dor. Alertas desse tipo, sem contexto, alimentam a fadiga de alertas (desconsideração de 49% a 96%, segundo van der Sijs, 2006). A mesma associação exige cautela após extubação.",
+   "porAlt": [
+    "Errada: a combinação é usual e controlada no paciente ventilado.",
+    "Errada: a morfina também soma depressão respiratória com benzodiazepínico.",
+    "Errada: não há indicação de dosagem sérica de rotina para decidir essa associação.",
+    "Correta: o alerta tem pouco valor aqui; titular pelas metas de RASS e dor.",
+    "Errada: redução empírica ignora a meta de sedação e pode causar despertar e dor."
+   ],
+   "base": "van der Sijs et al., JAMIA 2006; Phansalkar et al., JAMIA 2012"
+  },
+  {
+   "leitura": "interacoes-fundamentos",
+   "nivel": "intermediario",
+   "enun": "Paciente em varfarina iniciou metronidazol; o RNI subiu de 2,4 para 7 em cinco dias, com equimoses. Após suspender o metronidazol sem mudar a varfarina, o RNI voltou a 2,6. Na aplicação da escala DIPS, a soma foi 9 pontos. A classificação é:",
+   "alts": [
+    "Interação provável, pois a DIPS vai até 8",
+    "Interação altamente provável (acima de 8)",
+    "Interação possível, com causa alternativa",
+    "Interação duvidosa, sem reexposição realizada",
+    "Reação adversa isolada ao metronidazol"
+   ],
+   "gab": 1,
+   "coment": "A DIPS (Horn, Hansten e Chan, 2007) classifica a relação como altamente provável acima de 8 pontos, provável de 5 a 8, possível de 2 a 4 e duvidosa abaixo de 2. O caso reúne mecanismo conhecido (inibição do CYP2C9 pelo metronidazol), curso temporal compatível e regressão após retirada do precipitante. A escala de Naranjo não é adequada para interações, porque não distingue objeto e precipitante.",
+   "porAlt": [
+    "Errada: a faixa provável é de 5 a 8; acima de 8 é altamente provável.",
+    "Correta: 9 pontos correspondem a interação altamente provável.",
+    "Errada: possível corresponde a 2 a 4 pontos.",
+    "Errada: duvidosa corresponde a menos de 2 pontos; reexposição não é obrigatória.",
+    "Errada: o evento decorre do efeito do metronidazol sobre a varfarina, não de reação isolada."
+   ],
+   "base": "Horn, Hansten e Chan, Ann Pharmacother 2007"
+  },
+  {
+   "leitura": "interacoes-fundamentos",
+   "nivel": "avancado",
+   "enun": "Paciente em varfarina estável (RNI 2,5) iniciou amiodarona há 48 horas; o RNI de hoje é 2,6. O residente propõe manter a dose e só voltar a dosar o RNI no retorno ambulatorial, em 30 dias. A melhor resposta é:",
+   "alts": [
+    "Concordar, pois RNI estável em 48 horas afasta interação clinicamente relevante",
+    "Suspender a amiodarona, já que a combinação com varfarina é contraindicada",
+    "Discordar: a inibição progride em semanas; reduzir a varfarina e seguir o RNI",
+    "Trocar varfarina por dabigatrana, que não sofre qualquer efeito da amiodarona",
+    "Dobrar a frequência de vitamina K oral para prevenir a elevação do RNI futuro"
+   ],
+   "gab": 2,
+   "coment": "A amiodarona inibe CYP2C9 e CYP3A4 e tem meia-vida de semanas; o efeito sobre a varfarina cresce à medida que ela se acumula, e o RNI sobe ao longo de semanas. A prática usual é reduzir a varfarina em cerca de 30% a 50% e monitorar o RNI semanalmente por várias semanas. O efeito persiste meses após a suspensão da amiodarona. A dabigatrana também interage com a amiodarona via P-glicoproteína.",
+   "porAlt": [
+    "Errada: 48 horas é cedo demais; o efeito da amiodarona é progressivo.",
+    "Errada: a combinação é usada com frequência, com ajuste e monitorização.",
+    "Correta: reduzir a varfarina de forma antecipada e acompanhar o RNI de perto.",
+    "Errada: a amiodarona eleva a dabigatrana por inibir a P-glicoproteína.",
+    "Errada: vitamina K preventiva desestabiliza a anticoagulação e não é conduta."
+   ],
+   "base": "Steffel et al., EHRA 2021; bula da amiodarona"
+  },
+  {
+   "leitura": "interacoes-fundamentos",
+   "nivel": "avancado",
+   "enun": "Transplantado renal em tacrolimo recebia fenitoína há um mês, e a dose do tacrolimo foi aumentada de 3 para 8 mg a cada 12 horas para manter o nível. Hoje a fenitoína foi trocada por levetiracetam. O que o farmacêutico deve antecipar?",
+   "alts": [
+    "Queda do nível de tacrolimo em 24 horas, exigindo um novo aumento de dose imediato",
+    "Nenhuma mudança, pois o levetiracetam também é indutor enzimático potente",
+    "Nível estável, pois a indução por fenitoína desaparece antes da primeira dose",
+    "Elevação progressiva do tacrolimo em 1 a 2 semanas, com redução guiada por nível",
+    "Elevação imediata e máxima do tacrolimo, exigindo suspensão por 72 horas"
+   ],
+   "gab": 3,
+   "coment": "A indução depende de síntese de enzima e desaparece de forma gradual, em cerca de 1 a 2 semanas (ou mais, para indutores de meia-vida longa), à medida que a enzima induzida é degradada e a fenitoína é eliminada. O tacrolimo, que teve a dose aumentada para compensar a indução, vai subir progressivamente. A conduta é o ajuste reverso: reduzir de forma escalonada com nível a cada 2 a 3 dias. O levetiracetam não é indutor relevante.",
+   "porAlt": [
+    "Errada: a retirada do indutor eleva, e não reduz, o nível do objeto.",
+    "Errada: o levetiracetam não induz o CYP3A4 de forma relevante.",
+    "Errada: a indução desaparece em dias a semanas, não em horas.",
+    "Correta: elevação progressiva exige redução escalonada guiada por nível.",
+    "Errada: a elevação é gradual, sem indicação de suspensão empírica."
+   ],
+   "base": "FDA, guia de interações 2020; Hansten e Horn (ORCA) 2001"
+  },
+  {
+   "leitura": "interacoes-cyp-transportadores",
+   "nivel": "basico",
+   "enun": "Qual dos antimicrobianos abaixo é inibidor mecanismo-dependente (irreversível) do CYP3A4, cujo efeito persiste alguns dias após a suspensão?",
+   "alts": [
+    "Fluconazol (azol triazólico)",
+    "Claritromicina (macrolídeo)",
+    "Azitromicina (macrolídeo)",
+    "Levofloxacino (quinolona)",
+    "Meropeném (carbapenêmico)"
+   ],
+   "gab": 1,
+   "coment": "A claritromicina é metabolizada pelo CYP3A4 a um intermediário que se liga à enzima e a inativa de forma permanente. A atividade só volta com síntese de nova enzima, o que leva alguns dias após a suspensão. Fluconazol é inibidor reversível e moderado. Azitromicina praticamente não inibe o CYP3A4. Levofloxacino e meropeném não são inibidores relevantes do CYP3A4.",
+   "porAlt": [
+    "Errada: o fluconazol é inibidor reversível, moderado e dose-dependente.",
+    "Correta: inibidor forte e mecanismo-dependente do CYP3A4.",
+    "Errada: a azitromicina praticamente não inibe o CYP3A4.",
+    "Errada: o levofloxacino não é inibidor relevante do CYP3A4.",
+    "Errada: o meropeném não inibe enzimas do citocromo P450."
+   ],
+   "base": "FDA, tabela de inibidores (2023)"
+  },
+  {
+   "leitura": "interacoes-cyp-transportadores",
+   "nivel": "basico",
+   "enun": "Um fármaco é eliminado em 80% pelo CYP3A4 e em 20% pelo rim. Se um inibidor bloquear completamente o CYP3A4, a razão aproximada de AUC do fármaco será:",
+   "alts": [
+    "Cerca de 1,5 vez",
+    "Cerca de 2 vezes",
+    "Cerca de 4 vezes",
+    "Cerca de 5 vezes",
+    "Cerca de 10 vezes"
+   ],
+   "gab": 3,
+   "coment": "Com inibição completa, a razão de AUC é aproximadamente 1 ÷ (1 − fm). Com fm = 0,8, 1 ÷ 0,2 = 5. Com fm = 0,5 a AUC dobraria e com 0,9 aumentaria 10 vezes. A relação mostra por que substratos quase exclusivos de uma via sofrem as maiores interações e por que a FDA usa midazolam como substrato-índice do CYP3A.",
+   "porAlt": [
+    "Errada: 1,5 vez corresponderia a fm de cerca de 0,33.",
+    "Errada: 2 vezes corresponderia a fm de 0,5.",
+    "Errada: 4 vezes corresponderia a fm de 0,75.",
+    "Correta: 1 ÷ (1 − 0,8) = 5.",
+    "Errada: 10 vezes corresponderia a fm de 0,9."
+   ],
+   "base": "FDA, guia de estudos clínicos de interação (2020)"
+  },
+  {
+   "leitura": "interacoes-cyp-transportadores",
+   "nivel": "intermediario",
+   "enun": "Transplantado renal em tacrolimo 4 mg a cada 12 horas, vale de 8 ng/mL, inicia voriconazol para aspergilose. Pela bula do voriconazol, a conduta inicial com o tacrolimo é:",
+   "alts": [
+    "Reduzir a cerca de 1 mg a cada 12 horas e dosar o vale em 48 a 72 horas",
+    "Reduzir a 2 mg a cada 12 horas e dosar o vale apenas ao fim do tratamento",
+    "Manter 4 mg a cada 12 horas e dosar o vale 24 horas após iniciar o azol",
+    "Suspender o tacrolimo durante todo o curso de voriconazol planejado",
+    "Aumentar a 6 mg a cada 12 horas para evitar rejeição durante o azol"
+   ],
+   "gab": 0,
+   "coment": "A bula do voriconazol recomenda reduzir o tacrolimo a um terço da dose ao iniciar o azol e monitorar o nível com frequência. Um terço de 4 mg é cerca de 1,3 mg; com cápsulas de 1 mg, usa-se 1 mg a cada 12 horas e novo vale em 48 a 72 horas, repetindo ajustes. Dosar em 24 horas subestima a elevação, que progride por dias. Ao suspender o voriconazol, a dose retorna gradualmente guiada por nível.",
+   "porAlt": [
+    "Correta: redução a um terço, com vale em 48 a 72 horas.",
+    "Errada: a redução à metade é insuficiente e o nível precisa ser dosado cedo.",
+    "Errada: manter a dose causa elevação importante; 24 horas é cedo para concluir.",
+    "Errada: suspender expõe o enxerto à rejeição sem necessidade.",
+    "Errada: o voriconazol eleva o tacrolimo; aumentar a dose causaria toxicidade."
+   ],
+   "base": "Bula do voriconazol (Vfend); Capone et al., J Clin Pharm Ther 2010"
+  },
+  {
+   "leitura": "interacoes-cyp-transportadores",
+   "nivel": "intermediario",
+   "enun": "Paciente pós-angioplastia com stent em dupla antiagregação (ácido acetilsalicílico e clopidogrel) tem indicação de proteção gástrica. Qual escolha é mais coerente com a bula do clopidogrel e a farmacologia do CYP2C19?",
+   "alts": [
+    "Omeprazol 40 mg por dia, que é o mais estudado",
+    "Esomeprazol, o enantiômero mais potente",
+    "Nenhum inibidor de bomba nesse período",
+    "Omeprazol 20 mg, com 12 horas de intervalo",
+    "Pantoprazol, com menor inibição do CYP2C19"
+   ],
+   "gab": 4,
+   "coment": "O clopidogrel é pró-fármaco ativado em parte pelo CYP2C19. Omeprazol e esomeprazol inibem essa enzima e reduzem o metabólito ativo; a bula norte-americana orienta evitá-los. Separar os horários não resolve, porque a inibição persiste. O COGENT (2010) mostrou redução de sangramento digestivo com inibidor de bomba. O pantoprazol, com menor efeito sobre o CYP2C19, é a opção preferida.",
+   "porAlt": [
+    "Errada: o omeprazol inibe o CYP2C19 e a bula orienta evitá-lo.",
+    "Errada: o esomeprazol também inibe o CYP2C19.",
+    "Errada: a proteção gástrica reduz sangramento e está indicada aqui.",
+    "Errada: espaçar horários não evita a inibição enzimática.",
+    "Correta: pantoprazol tem menor efeito sobre o CYP2C19."
+   ],
+   "base": "Bula do clopidogrel (FDA); Bhatt et al., COGENT, NEJM 2010"
+  },
+  {
+   "leitura": "interacoes-cyp-transportadores",
+   "nivel": "avancado",
+   "enun": "Paciente em varfarina recebeu rifampicina por 4 semanas, período em que a dose de varfarina subiu de 5 para 15 mg por dia para manter RNI de 2 a 3. A rifampicina foi suspensa hoje. Qual o comportamento esperado do RNI com a dose mantida?",
+   "alts": [
+    "Queda progressiva do RNI, já que a varfarina deixa de ser ativada",
+    "RNI estável, pois a indução termina com a última dose tomada",
+    "Elevação imediata e máxima no dia seguinte à suspensão feita",
+    "Elevação progressiva em 1 a 2 semanas, com risco de sangramento",
+    "Elevação discreta, limitada pela indução pela própria varfarina"
+   ],
+   "gab": 3,
+   "coment": "A indução enzimática desaparece gradualmente, em cerca de 1 a 2 semanas após a suspensão da rifampicina, à medida que a enzima induzida é degradada. Mantida a dose de 15 mg, o RNI sobe progressivamente e pode chegar a níveis perigosos. A conduta é reduzir a varfarina de forma escalonada, com RNI a cada 2 a 3 dias. A varfarina não é pró-fármaco e não induz o próprio metabolismo.",
+   "porAlt": [
+    "Errada: a varfarina não depende de ativação; o RNI sobe.",
+    "Errada: a indução persiste por dias a semanas após a suspensão.",
+    "Errada: a elevação é gradual, não imediata.",
+    "Correta: elevação progressiva exige redução escalonada com RNI frequente.",
+    "Errada: a varfarina não é indutora do próprio metabolismo."
+   ],
+   "base": "FDA, guia de interações 2020; bula da rifampicina"
+  },
+  {
+   "leitura": "interacoes-cyp-transportadores",
+   "nivel": "avancado",
+   "enun": "Paciente com fibrilação atrial em apixabana 5 mg a cada 12 horas (sem critérios de redução) iniciará itraconazol por histoplasmose. Considerando a bula norte-americana da apixabana e o guia da EHRA (2021), a conduta mais adequada é:",
+   "alts": [
+    "Manter 5 mg a cada 12 horas e dosar anti-Xa semanalmente",
+    "Trocar por rivaroxabana, sem interação relevante com o itraconazol",
+    "Reduzir a apixabana a 2,5 mg a cada 12 horas ou usar heparina",
+    "Suspender toda anticoagulação durante o curso de itraconazol",
+    "Dobrar a apixabana para compensar a indução pelo itraconazol"
+   ],
+   "gab": 2,
+   "coment": "O itraconazol inibe fortemente o CYP3A4 e a P-glicoproteína, vias da apixabana. A bula norte-americana orienta reduzir a apixabana em 50% quando a dose é 5 ou 10 mg duas vezes ao dia e evitar quando já é 2,5 mg duas vezes ao dia. A rivaroxabana deve ser evitada com inibidores combinados fortes. Na UTI, heparina é alternativa prática. Suspender a anticoagulação expõe a eventos tromboembólicos.",
+   "porAlt": [
+    "Errada: manter a dose plena eleva o risco de sangramento.",
+    "Errada: a rivaroxabana deve ser evitada com inibidores combinados fortes.",
+    "Correta: redução de 50% ou troca temporária por heparina.",
+    "Errada: a suspensão expõe a tromboembolismo sem necessidade.",
+    "Errada: o itraconazol é inibidor, não indutor."
+   ],
+   "base": "Steffel et al., EHRA 2021; bula da apixabana (FDA)"
+  },
+  {
+   "leitura": "interacoes-farmacodinamicas",
+   "nivel": "basico",
+   "enun": "Na correção do intervalo QT de um paciente séptico com frequência cardíaca de 125 bpm, qual a limitação da fórmula de Bazett?",
+   "alts": [
+    "Subestima o QTc em frequências altas e mascara risco real de torsades",
+    "Superestima o QTc em frequências altas e pode levar a condutas indevidas",
+    "Só vale para ritmo com QRS largo, como bloqueio de ramo ou marca-passo",
+    "Exige o intervalo RR em milissegundos, o que torna o cálculo impreciso",
+    "Não se aplica a mulheres, que têm QTc basal mais longo do que o dos homens"
+   ],
+   "gab": 1,
+   "coment": "A fórmula de Bazett (QT ÷ √RR) superestima o QTc em frequências altas e subestima em frequências baixas. Na UTI, onde a taquicardia é comum, isso pode levar à suspensão de fármacos necessários por um QTc falsamente prolongado. A fórmula de Fridericia (QT ÷ raiz cúbica do RR) erra menos na taquicardia. O RR é usado em segundos, e o QRS largo exige correções específicas.",
+   "porAlt": [
+    "Errada: em frequências altas, Bazett superestima, não subestima.",
+    "Correta: superestimação na taquicardia é a limitação clássica.",
+    "Errada: QRS largo é justamente situação em que Bazett e Fridericia erram.",
+    "Errada: o RR é usado em segundos; a unidade não é a limitação.",
+    "Errada: a fórmula se aplica aos dois sexos; os limiares de normalidade é que diferem."
+   ],
+   "base": "Drew et al., AHA/ACCF 2010"
+  },
+  {
+   "leitura": "interacoes-farmacodinamicas",
+   "nivel": "basico",
+   "enun": "Paciente em uso de sertralina recebe tramadol no pós-operatório e, horas depois, apresenta tremor e hiper-reflexia, com temperatura de 37,6 °C. Pelos critérios de Hunter, o quadro:",
+   "alts": [
+    "Não fecha critérios, pois a temperatura precisa superar 38 °C nesse caso",
+    "Fecha critérios, pois tremor com hiper-reflexia basta para o diagnóstico",
+    "Não fecha critérios, pois é obrigatório haver clônus espontâneo associado",
+    "Fecha critérios apenas se houver rigidez em cano de chumbo associada",
+    "Não fecha critérios, pois exige ao menos três agentes serotoninérgicos"
+   ],
+   "gab": 1,
+   "coment": "Pelos critérios de Hunter (Dunkley e colaboradores, 2003), em uso de agente serotoninérgico, qualquer uma das combinações confirma a toxicidade: clônus espontâneo; clônus induzível com agitação ou diaforese; clônus ocular com agitação ou diaforese; tremor com hiper-reflexia; ou hipertonia com temperatura acima de 38 °C e clônus ocular ou induzível. A temperatura só entra na última combinação. Rigidez em cano de chumbo sugere síndrome neuroléptica maligna.",
+   "porAlt": [
+    "Errada: a febre acima de 38 °C só é exigida na combinação com hipertonia.",
+    "Correta: tremor com hiper-reflexia em uso de serotoninérgico preenche os critérios.",
+    "Errada: clônus espontâneo é uma das opções, não obrigatória.",
+    "Errada: rigidez em cano de chumbo aponta para síndrome neuroléptica maligna.",
+    "Errada: um único agente serotoninérgico já basta como pré-requisito."
+   ],
+   "base": "Dunkley et al., QJM 2003"
+  },
+  {
+   "leitura": "interacoes-farmacodinamicas",
+   "nivel": "intermediario",
+   "enun": "Homem de 70 anos, em sepse, com furosemida, potássio de 3,3 mEq/L e QTc de admissão de 440 ms, recebe ondansetrona como único fármaco que prolonga o QT. Qual o escore de Tisdale e sua faixa de risco?",
+   "alts": [
+    "Sete pontos, faixa de risco moderado",
+    "10 pontos, faixa de risco moderado",
+    "10 pontos, faixa de risco elevado",
+    "13 pontos, faixa de risco elevado",
+    "Seis pontos, faixa de risco baixo"
+   ],
+   "gab": 1,
+   "coment": "Pontos: idade de 68 anos ou mais (1) + sepse (3) + potássio de 3,5 mEq/L ou menos (2) + diurético de alça (1) + um fármaco que prolonga o QT (3) = 10. Sexo masculino e QTc de admissão abaixo de 450 ms não pontuam. Faixas: 0 a 6 baixo, 7 a 10 moderado, 11 a 21 alto (Tisdale e colaboradores, 2013). Um segundo fármaco que prolonga o QT acrescentaria 3 pontos e levaria ao alto risco. Corrigir potássio e magnésio e reavaliar a ondansetrona são intervenções simples.",
+   "porAlt": [
+    "Errada: a soma correta é 10, não 7.",
+    "Correta: 1 + 3 + 2 + 1 + 3 = 10, faixa moderada (7 a 10).",
+    "Errada: 10 pontos estão na faixa moderada; alto risco começa em 11.",
+    "Errada: 13 pontos exigiriam fatores que o paciente não tem.",
+    "Errada: a soma é 10, e 6 seria baixo risco."
+   ],
+   "base": "Tisdale et al., Circ Cardiovasc Qual Outcomes 2013"
+  },
+  {
+   "leitura": "interacoes-farmacodinamicas",
+   "nivel": "intermediario",
+   "enun": "Paciente de 74 anos com pneumocistose recebe SMX-TMP em dose alta, enoxaparina profilática e losartana. No quarto dia, o potássio é 6,1 mEq/L, com creatinina estável. Qual o principal mecanismo da contribuição da trimetoprima?",
+   "alts": [
+    "Bloqueio do canal epitelial de sódio no néfron distal",
+    "Inibição da síntese de aldosterona na zona glomerulosa",
+    "Liberação de potássio intracelular por despolarização",
+    "Redução da filtração glomerular por vasoconstrição",
+    "Inibição da bomba Na-K-ATPase no músculo esquelético"
+   ],
+   "gab": 0,
+   "coment": "A trimetoprima tem efeito semelhante ao da amilorida: bloqueia o canal epitelial de sódio (ENaC) do néfron distal e reduz a secreção de potássio. O efeito é maior em doses altas, idosos e disfunção renal. A heparina contribui inibindo a síntese de aldosterona, e a losartana reduz a ação da aldosterona. A despolarização com saída de potássio é o mecanismo da succinilcolina. A conduta é potássio diário, revisão de todas as fontes e suspensão temporária da losartana.",
+   "porAlt": [
+    "Correta: a trimetoprima bloqueia o ENaC, como a amilorida.",
+    "Errada: esse é o mecanismo da heparina, não da trimetoprima.",
+    "Errada: esse é o mecanismo da succinilcolina.",
+    "Errada: a creatinina está estável; o mecanismo é tubular.",
+    "Errada: esse é o mecanismo dos digitálicos em intoxicação."
+   ],
+   "base": "Perazella, Drug Saf 2000"
+  },
+  {
+   "leitura": "interacoes-farmacodinamicas",
+   "nivel": "avancado",
+   "enun": "No pós-operatório de cirurgia cardíaca, paciente em uso crônico de venlafaxina evolui com choque vasoplégico refratário, e a equipe propõe azul de metileno. Qual a conduta mais coerente com a comunicação da FDA de 2011?",
+   "alts": [
+    "Contraindicar o azul de metileno em qualquer circunstância, pelo risco fatal",
+    "Administrar com cipro-heptadina profilática e manter a venlafaxina em uso",
+    "Usar se o benefício for vital, suspender a venlafaxina e vigiar os sinais",
+    "Trocar a venlafaxina por fluoxetina antes de usar o azul de metileno hoje",
+    "Aguardar cinco semanas sem venlafaxina antes de iniciar o azul de metileno"
+   ],
+   "gab": 2,
+   "coment": "A FDA (2011) orienta que azul de metileno e linezolida geralmente não sejam usados em pacientes com serotoninérgicos, mas admite o uso em situações de risco de vida ou urgência. Nesse caso, suspende-se o serotoninérgico e monitora-se o paciente por duas semanas (cinco para fluoxetina) ou até 24 horas após a última dose do azul de metileno, o que ocorrer primeiro, vigiando critérios de Hunter. O azul de metileno é inibidor potente da MAO-A, com risco maior que a linezolida.",
+   "porAlt": [
+    "Errada: a FDA admite o uso em situação de risco de vida.",
+    "Errada: não há profilaxia validada e o serotoninérgico deve ser suspenso.",
+    "Correta: benefício vital justifica o uso com suspensão e vigilância.",
+    "Errada: fluoxetina tem meia-vida longa e piora o risco.",
+    "Errada: esperar semanas é incompatível com choque refratário."
+   ],
+   "base": "FDA Drug Safety Communication, 2011; Dunkley et al., QJM 2003"
+  },
+  {
+   "leitura": "interacoes-farmacodinamicas",
+   "nivel": "avancado",
+   "enun": "Paciente em vancomicina guiada por AUC e piperacilina-tazobactam tem elevação discreta de creatinina. Um colega sugere trocar para cefepima 'para proteger o rim'. Com base no ensaio ACORN (2023), a resposta mais adequada é:",
+   "alts": [
+    "Concordar: o ACORN mostrou menos lesão renal com cefepima nesses pacientes críticos",
+    "Concordar: a metanálise de 2018 foi confirmada em pacientes críticos no ACORN",
+    "Discordar: o ACORN mostrou mais lesão renal com cefepima que com a piperacilina",
+    "Discordar: não houve diferença renal, e a cefepima teve mais disfunção neurológica",
+    "Discordar: o ACORN excluiu quem recebia vancomicina e não responde à questão"
+   ],
+   "gab": 3,
+   "coment": "O ACORN (Qian e colaboradores, JAMA 2023) randomizou 2.511 adultos, 77% em uso de vancomicina, para cefepima ou piperacilina-tazobactam, sem diferença em lesão renal aguda ou morte; a cefepima causou menos dias vivos e livres de delirium e coma. A metanálise de Luther (2018) sugeria mais lesão com a associação, mas o subgrupo de críticos não mostrou diferença significativa contra cefepima ou carbapenêmico. O foco para proteger o rim é a dose de vancomicina e a redução de nefrotóxicos.",
+   "porAlt": [
+    "Errada: não houve diferença de lesão renal entre os grupos.",
+    "Errada: o ACORN não confirmou o sinal observacional da metanálise.",
+    "Errada: não houve excesso de lesão renal com cefepima.",
+    "Correta: sem diferença renal e mais disfunção neurológica com cefepima.",
+    "Errada: a maioria dos pacientes (77%) recebia vancomicina."
+   ],
+   "base": "Qian et al., JAMA 2023; Luther et al., Crit Care Med 2018"
+  },
+  {
+   "leitura": "interacoes-antimicrobianos",
+   "nivel": "basico",
+   "enun": "Paciente com epilepsia controlada com valproato (nível de 75 mg/L) desenvolve pneumonia por Klebsiella produtora de ESBL, e a equipe inicia meropeném. Qual a conduta mais adequada?",
+   "alts": [
+    "Dobrar a dose de valproato e dosar o nível a cada 48 horas",
+    "Manter tudo, pois a interação só ocorre com imipeném",
+    "Trocar o valproato ou o antimicrobiano durante o curso",
+    "Separar as doses em 6 horas para evitar a interação",
+    "Manter e dosar o valproato apenas se houver crise"
+   ],
+   "gab": 2,
+   "coment": "Carbapenêmicos reduzem o valproato de forma rápida e intensa, pela inibição da hidrólise do glicuronídeo de valproato. Na metanálise de Chai e colaboradores (2021), a queda média foi de cerca de 44 mg/L, com início em 1 a 3 dias, aumento de crises e retorno só 1 a 2 semanas após a suspensão. A queda independe da dose, e aumentar o valproato não resolve. A saída é trocar o anticonvulsivante (por exemplo, levetiracetam) ou o antimicrobiano, se houver alternativa.",
+   "porAlt": [
+    "Errada: aumentar a dose não compensa a interação.",
+    "Errada: todos os carbapenêmicos causam a interação.",
+    "Correta: não associar; trocar um dos dois fármacos.",
+    "Errada: o mecanismo não é local nem depende de horário.",
+    "Errada: esperar a crise expõe o paciente a risco evitável."
+   ],
+   "base": "Chai et al., Expert Opin Drug Saf 2021"
+  },
+  {
+   "leitura": "interacoes-antimicrobianos",
+   "nivel": "basico",
+   "enun": "Em adulto com indicação de ceftriaxona e de gluconato de cálcio intravenoso, a orientação vigente da FDA (2009) é:",
+   "alts": [
+    "Contraindicar a associação nas mesmas 48 horas",
+    "Infundir em Y, desde que em vazões muito baixas",
+    "Diluir a ceftriaxona em Ringer lactato e correr",
+    "Aplicar em sequência, lavando o equipo entre elas",
+    "Misturar na mesma bolsa se o volume passar de 250 mL"
+   ],
+   "gab": 3,
+   "coment": "Em abril de 2009 a FDA revisou a orientação: em pacientes com mais de 28 dias, ceftriaxona e produtos com cálcio podem ser administrados sequencialmente, desde que o equipo seja lavado com solução compatível entre as infusões. Em nenhuma idade devem correr simultaneamente em Y ou na mesma solução. Em neonatos de até 28 dias, a associação é contraindicada. Ringer lactato contém cálcio.",
+   "porAlt": [
+    "Errada: a restrição de 48 horas vale para neonatos.",
+    "Errada: a administração em Y é proibida em qualquer idade.",
+    "Errada: o Ringer lactato contém cálcio e é incompatível.",
+    "Correta: administração sequencial com lavagem do equipo.",
+    "Errada: a mistura na mesma solução é sempre proibida."
+   ],
+   "base": "FDA, ceftriaxona e cálcio, 2009"
+  },
+  {
+   "leitura": "interacoes-antimicrobianos",
+   "nivel": "intermediario",
+   "enun": "Paciente recebe ciprofloxacino 500 mg por sonda às 6 h e às 18 h e precisa de carbonato de cálcio duas vezes ao dia. Considerando a bula (quinolona 2 horas antes ou 6 horas depois de cátions), qual esquema de horários do cálcio é adequado?",
+   "alts": [
+    "Cálcio às 8 h e às 20 h",
+    "Cálcio às 13 h e às 15 h",
+    "Cálcio às 6 h e às 18 h",
+    "Cálcio às 10 h e às 22 h",
+    "Cálcio às 11 h e às 23 h"
+   ],
+   "gab": 1,
+   "coment": "Para cada dose de ciprofloxacino, a janela proibida para cátions vai de 2 horas antes a 6 horas depois. Dose das 6 h: 4 h a 12 h. Dose das 18 h: 16 h a 24 h. Horários livres: 0 h a 4 h e 12 h a 16 h, com limites exatos (4 h e 16 h) no limite da janela. Cálcio às 13 h e 15 h fica fora das janelas. Outra opção é usar ciprofloxacino intravenoso enquanto o suplemento for necessário.",
+   "porAlt": [
+    "Errada: 8 h e 20 h caem 2 horas após as doses, dentro da janela.",
+    "Correta: 13 h e 15 h ficam fora das duas janelas proibidas.",
+    "Errada: administração simultânea causa quelação máxima.",
+    "Errada: 10 h e 22 h estão dentro das 6 horas após as doses.",
+    "Errada: 11 h e 23 h ficam dentro das 6 horas após cada dose."
+   ],
+   "base": "Bula do ciprofloxacino (informações de prescrição FDA e bula ANVISA vigentes em 2026)"
+  },
+  {
+   "leitura": "interacoes-antimicrobianos",
+   "nivel": "intermediario",
+   "enun": "Paciente com tuberculose em uso de rifampicina há 10 dias recebe diagnóstico de aspergilose pulmonar invasiva. A equipe prescreve voriconazol. Qual a avaliação correta?",
+   "alts": [
+    "A associação é contraindicada na bula; trocar o azol ou a rifamicina",
+    "A associação é segura se o voriconazol for dado por via intravenosa",
+    "Basta dobrar a dose do voriconazol e dosar o nível em sete dias",
+    "A rifampicina eleva o voriconazol; reduzir a dose do azol à metade",
+    "A interação só ocorre após 30 dias de rifampicina, então pode ser mantida"
+   ],
+   "gab": 0,
+   "coment": "A rifampicina induz intensamente o metabolismo do voriconazol e reduz sua exposição a níveis ineficazes; a bula contraindica a associação, assim como com carbamazepina e barbitúricos de longa ação. A via intravenosa não evita a indução hepática. A indução já está plena em cerca de uma semana. As alternativas são trocar o antifúngico por um com menor impacto (por exemplo, formulação lipídica de anfotericina) ou substituir a rifampicina por rifabutina com ajuste, sob orientação especializada.",
+   "porAlt": [
+    "Correta: associação contraindicada; mudar um dos fármacos.",
+    "Errada: a indução é sistêmica e afeta também a via intravenosa.",
+    "Errada: aumentos empíricos não garantem nível eficaz e a bula contraindica.",
+    "Errada: a rifampicina reduz, não eleva, o voriconazol.",
+    "Errada: a indução atinge o máximo em cerca de uma semana."
+   ],
+   "base": "Bula do voriconazol (Vfend); FDA, guia de interações 2020"
+  },
+  {
+   "leitura": "interacoes-antimicrobianos",
+   "nivel": "avancado",
+   "enun": "Paciente com bacteremia por Enterococcus faecium resistente à vancomicina, em uso crônico de sertralina, está em noradrenalina. A linezolida é a melhor opção disponível. Qual a conduta mais adequada?",
+   "alts": [
+    "Contraindicar a linezolida e manter a vancomicina, apesar da resistência documentada",
+    "Iniciar a linezolida mantendo a sertralina e dobrar a dose da noradrenalina em curso",
+    "Iniciar a linezolida com cipro-heptadina profilática e manter a sertralina sem mudança",
+    "Iniciar a linezolida, suspender a sertralina, vigiar Hunter e titular a noradrenalina",
+    "Adiar a linezolida por cinco semanas até a eliminação completa da sertralina em uso"
+   ],
+   "gab": 3,
+   "coment": "A FDA (2011) admite o uso da linezolida em situação de urgência, com suspensão do serotoninérgico e vigilância por duas semanas ou até 24 horas após a última dose de linezolida. Dados populacionais mostram síndrome serotoninérgica rara (menos de 0,5%). A bula alerta para potencialização da resposta a vasopressores; a noradrenalina já é titulada por efeito, mas mudanças de dose devem ser graduais. Adiar o tratamento eficaz não é aceitável na bacteremia.",
+   "porAlt": [
+    "Errada: vancomicina é ineficaz contra o isolado resistente.",
+    "Errada: a linezolida pode potencializar o vasopressor; dobrar a dose é perigoso.",
+    "Errada: não há profilaxia validada; o serotoninérgico deve ser suspenso.",
+    "Correta: tratamento necessário com suspensão da sertralina e vigilância.",
+    "Errada: adiar o antimicrobiano eficaz é inaceitável na bacteremia."
+   ],
+   "base": "FDA Drug Safety Communication, 2011; Bai et al., JAMA Netw Open 2022"
+  },
+  {
+   "leitura": "interacoes-antimicrobianos",
+   "nivel": "avancado",
+   "enun": "No pós-operatório de laparotomia, paciente recebeu rocurônio e gentamicina intraoperatória. Na tentativa de extubação, apresenta fraqueza e sequência de quatro estímulos com razão de 0,6. Qual a explicação mais provável e a conduta?",
+   "alts": [
+    "Neuropatia do doente crítico; extubar e iniciar fisioterapia motora",
+    "Bloqueio residual potencializado; reverter e confirmar razão ≥ 0,9",
+    "Hipocalemia por gentamicina; repor potássio e extubar em seguida",
+    "Síndrome serotoninérgica; suspender opioide e usar cipro-heptadina",
+    "Efeito do rocurônio já eliminado; a fraqueza é só por sedação leve"
+   ],
+   "gab": 1,
+   "coment": "Aminoglicosídeos reduzem a liberação pré-sináptica de acetilcolina e potencializam bloqueadores neuromusculares; polimixinas e clindamicina têm efeito semelhante, e magnésio também. Uma razão de quatro estímulos de 0,6 indica bloqueio residual. A conduta é reverter (sugamadex ou neostigmina, conforme o caso) e confirmar razão de pelo menos 0,9 antes de extubar. A neuropatia do doente crítico não surge no pós-operatório imediato.",
+   "porAlt": [
+    "Errada: não há tempo de UTI para polineuropatia e a razão indica bloqueio residual.",
+    "Correta: bloqueio residual potencializado pelo aminoglicosídeo.",
+    "Errada: a razão de quatro estímulos baixa indica bloqueio, não hipocalemia.",
+    "Errada: não há clônus nem quadro serotoninérgico.",
+    "Errada: a razão de 0,6 prova que ainda há bloqueio."
+   ],
+   "base": "Bulas de gentamicina e rocurônio (ANVISA, versões vigentes em 2026)"
+  },
+  {
+   "leitura": "administracao-sondas",
+   "nivel": "basico",
+   "enun": "Paciente com sonda nasogástrica tem prescritos os itens abaixo por via enteral. Qual deles pode ser triturado e disperso em água para administração?",
+   "alts": [
+    "Nifedipino retard 20 mg em comprimido",
+    "Metoprolol succinato 50 mg, comprimido",
+    "Pantoprazol 40 mg, gastrorresistente",
+    "Morfina 30 mg de liberação controlada",
+    "Captopril 25 mg, comprimido simples"
+   ],
+   "gab": 4,
+   "coment": "Comprimidos simples de liberação imediata, como o captopril, podem em geral ser triturados e dispersos em água. Formas de liberação prolongada (nifedipino retard, metoprolol succinato, morfina de liberação controlada) liberam a dose inteira de uma vez quando trituradas, com pico tóxico e vale subterapêutico. O pantoprazol gastrorresistente é destruído pelo ácido quando triturado. A decisão final considera o produto padronizado na instituição.",
+   "porAlt": [
+    "Errada: forma de liberação prolongada; triturar causa pico de efeito.",
+    "Errada: o succinato é de liberação prolongada e não deve ser triturado.",
+    "Errada: o revestimento gastrorresistente protege o fármaco do ácido.",
+    "Errada: triturar libera a dose total, com risco de depressão respiratória.",
+    "Correta: comprimido de liberação imediata, sem revestimento funcional."
+   ],
+   "base": "White e Bradnam, Handbook of Drug Administration via Enteral Feeding Tubes 2015"
+  },
+  {
+   "leitura": "administracao-sondas",
+   "nivel": "basico",
+   "enun": "Na suspensão simplificada de omeprazol com bicarbonato, o conteúdo de uma cápsula de 20 mg é disperso em 10 mL de bicarbonato de sódio 8,4%. Qual a concentração final e a principal função do bicarbonato?",
+   "alts": [
+    "2 mg/mL; proteger o omeprazol do ácido gástrico",
+    "2 mg/mL; aumentar a solubilidade do revestimento",
+    "20 mg/mL; proteger o omeprazol do ácido gástrico",
+    "0,2 mg/mL; evitar a obstrução da sonda enteral",
+    "2 mg/mL; reduzir o sódio administrado ao doente"
+   ],
+   "gab": 0,
+   "coment": "20 mg em 10 mL resultam em 2 mg/mL. Os inibidores de bomba são instáveis em meio ácido; o bicarbonato neutraliza o ácido e protege o fármaco, que se degradaria sem o revestimento entérico. Cada 10 mL de bicarbonato 8,4% contêm 10 mEq de sódio, o que deve ser considerado em pacientes com restrição. A suspensão, preparada em farmácia, manteve estabilidade por pelo menos 45 dias sob refrigeração no estudo de Johnson e colaboradores (2007).",
+   "porAlt": [
+    "Correta: 20 mg em 10 mL e proteção contra o ácido.",
+    "Errada: os grânulos são dispersos; o bicarbonato não atua sobre o revestimento.",
+    "Errada: a concentração é 2 mg/mL, não 20 mg/mL.",
+    "Errada: a concentração é 2 mg/mL e a função não é evitar obstrução.",
+    "Errada: o bicarbonato acrescenta sódio, não reduz."
+   ],
+   "base": "Johnson et al., Ann Pharmacother 2007"
+  },
+  {
+   "leitura": "administracao-sondas",
+   "nivel": "intermediario",
+   "enun": "Paciente em dieta enteral contínua recebe fenitoína suspensão 100 mg a cada 8 horas por sonda, administrada com a dieta correndo. O nível de fenitoína corrigido pela albumina é 5 mg/L, sem mudança de dose recente. Qual a conduta mais adequada?",
+   "alts": [
+    "Dobrar a dose de fenitoína e manter a dieta contínua sem pausa alguma",
+    "Trocar a suspensão por comprimido triturado, que não interage com a dieta",
+    "Suspender a dieta enteral por 24 horas e dosar de novo a fenitoína sérica",
+    "Adicionar a fenitoína à bolsa de dieta para garantir absorção constante",
+    "Pausar a dieta 1 a 2 horas antes e depois, ou migrar para via intravenosa"
+   ],
+   "gab": 4,
+   "coment": "A fórmula enteral reduz de forma importante a absorção da fenitoína, por ligação a proteínas e à sonda. As condutas usuais são pausar a dieta por 1 a 2 horas antes e depois de cada dose, diluir a suspensão, lavar a sonda e seguir com nível sérico; se as pausas comprometerem a nutrição, migrar para via intravenosa ou trocar por levetiracetam. Aumentar a dose sem corrigir a causa gera toxicidade quando a dieta for suspensa.",
+   "porAlt": [
+    "Errada: o aumento sem pausa gera toxicidade quando a dieta parar.",
+    "Errada: o comprimido triturado também interage com a dieta.",
+    "Errada: suspender a nutrição por 24 horas não é necessário nem adequado.",
+    "Errada: medicamento nunca deve ser adicionado à bolsa de dieta.",
+    "Correta: pausa programada ou via intravenosa, com nível sérico."
+   ],
+   "base": "Boullata et al., ASPEN Safe Practices for Enteral Nutrition 2017"
+  },
+  {
+   "leitura": "administracao-sondas",
+   "nivel": "intermediario",
+   "enun": "A meta de dieta enteral de um paciente é 1.500 mL por dia em infusão contínua. As pausas para medicamentos somam 4 horas por dia. Qual a vazão necessária para atingir a meta?",
+   "alts": [
+    "75 mL/h",
+    "63 mL/h",
+    "90 mL/h",
+    "60 mL/h",
+    "80 mL/h"
+   ],
+   "gab": 0,
+   "coment": "Horas efetivas de infusão: 24 − 4 = 20 horas. Vazão: 1.500 ÷ 20 = 75 mL/h. Se a vazão for calculada sobre 24 horas (1.500 ÷ 24 ≈ 63 mL/h) e as pausas não forem compensadas, o paciente recebe 63 × 20 ≈ 1.250 mL, cerca de 17% abaixo da meta. Consolidar horários de medicamentos que exigem pausa reduz o problema.",
+   "porAlt": [
+    "Correta: 1.500 ÷ 20 horas = 75 mL/h.",
+    "Errada: 63 mL/h ignora as 4 horas de pausa.",
+    "Errada: 90 mL/h corresponderia a cerca de 16,7 horas de infusão.",
+    "Errada: 60 mL/h corresponde a 25 horas, impossível.",
+    "Errada: 80 mL/h corresponderia a 18,75 horas de infusão."
+   ],
+   "base": "Boullata et al., ASPEN Safe Practices for Enteral Nutrition 2017"
+  },
+  {
+   "leitura": "administracao-sondas",
+   "nivel": "avancado",
+   "enun": "Paciente com jejunostomia tem profilaxia de úlcera de estresse indicada e recebia pantoprazol comprimido triturado pela sonda. Qual a melhor recomendação?",
+   "alts": [
+    "Manter o pantoprazol triturado, pois no jejuno não há ácido que o degrade",
+    "Trocar por omeprazol em grânulos triturados e dispersos em suco de fruta",
+    "Pantoprazol intravenoso enquanto indicado, revendo a indicação diariamente",
+    "Suspensão de omeprazol com bicarbonato, com o mesmo efeito da via gástrica",
+    "Sucralfato pela jejunostomia, sem risco de obstrução e sem interação alguma"
+   ],
+   "gab": 2,
+   "coment": "Em posição pós-pilórica não há ácido nem reservatório: o benefício do bicarbonato da suspensão de omeprazol diminui, e triturar comprimido gastrorresistente não tem base farmacotécnica confiável. A via intravenosa garante o efeito enquanto a profilaxia for necessária, e a indicação deve ser revista diariamente. Grânulos não devem ser triturados. O sucralfato forma complexos com a dieta e obstrui sondas finas.",
+   "porAlt": [
+    "Errada: triturar destrói o revestimento e a exposição é imprevisível.",
+    "Errada: grânulos triturados perdem a proteção, e suco pode obstruir sonda fina.",
+    "Correta: via intravenosa com revisão diária da indicação.",
+    "Errada: o bicarbonato é menos útil fora do estômago.",
+    "Errada: o sucralfato obstrui sondas e interage com a dieta."
+   ],
+   "base": "Boullata et al., ASPEN 2017; Johnson et al., Ann Pharmacother 2007"
+  },
+  {
+   "leitura": "administracao-sondas",
+   "nivel": "avancado",
+   "enun": "Paciente com restrição hídrica recebe 6 medicamentos às 8 h e 6 às 20 h pela sonda, com lavagem de 15 mL antes, entre e depois de cada medicamento, além de 30 mL a cada 4 horas durante a dieta contínua. Qual o volume diário de água dessas lavagens?",
+   "alts": [
+    "390 mL",
+    "360 mL",
+    "180 mL",
+    "420 mL",
+    "210 mL"
+   ],
+   "gab": 0,
+   "coment": "Com 6 medicamentos por horário, há 7 lavagens (antes, 5 intermediárias e depois): 7 × 15 = 105 mL por horário, 210 mL nos dois horários. Lavagens de rotina: 6 × 30 = 180 mL. Total: 390 mL por dia. Esse volume deve entrar no balanço hídrico e na prescrição da dieta e dos fluidos, principalmente em pacientes com restrição.",
+   "porAlt": [
+    "Correta: 210 mL das lavagens de medicamentos + 180 mL de rotina.",
+    "Errada: 360 mL considera 6 lavagens por horário, omitindo uma.",
+    "Errada: 180 mL são apenas as lavagens de rotina.",
+    "Errada: 420 mL considera 8 lavagens por horário.",
+    "Errada: 210 mL são apenas as lavagens dos medicamentos."
+   ],
+   "base": "Boullata et al., ASPEN Safe Practices for Enteral Nutrition 2017"
+  },
+  {
+   "leitura": "compatibilidade-iv",
+   "nivel": "basico",
+   "enun": "Qual o diluente adequado para a infusão intravenosa de fenitoína em adulto?",
+   "alts": [
+    "Cloreto de sódio 0,9%",
+    "Glicose a 5% em água",
+    "Ringer lactato puro",
+    "Glicose a 10% em água",
+    "Água estéril injetável"
+   ],
+   "gab": 0,
+   "coment": "A fenitoína é formulada em pH em torno de 12 com propilenoglicol e etanol. Em soluções ácidas, como o soro glicosado, precipita. Deve ser diluída apenas em soro fisiológico, com filtro em linha e lavagem da linha antes e depois, respeitando velocidade máxima de 50 mg/min em adultos. Água estéril pura em grande volume causa hemólise e está na lista de medicamentos potencialmente perigosos.",
+   "porAlt": [
+    "Correta: único diluente adequado para a fenitoína.",
+    "Errada: soro glicosado precipita a fenitoína.",
+    "Errada: não é o diluente recomendado e contém cálcio.",
+    "Errada: a glicose também causa precipitação.",
+    "Errada: água pura em volume grande causa hemólise."
+   ],
+   "base": "ASHP Injectable Drug Information 2025; bula da fenitoína"
+  },
+  {
+   "leitura": "compatibilidade-iv",
+   "nivel": "basico",
+   "enun": "Na nutrição parenteral 3 em 1 (com emulsão lipídica), qual o filtro em linha recomendado pela ASPEN?",
+   "alts": [
+    "Filtro de 0,22 mícron",
+    "Filtro de 0,45 mícron",
+    "Filtro de 0,1 mícron",
+    "Filtro de 1,2 mícron",
+    "Filtro de 15 micra"
+   ],
+   "gab": 3,
+   "coment": "A ASPEN recomenda filtro de 1,2 mícron para soluções com lipídio e de 0,22 mícron para soluções sem lipídio (2 em 1). O filtro de 0,22 mícron retém as partículas lipídicas. O filtro protege contra precipitados, como o fosfato de cálcio, e contaminantes particulados.",
+   "porAlt": [
+    "Errada: 0,22 mícron é para soluções sem lipídio.",
+    "Errada: não é o poro padronizado para nutrição parenteral.",
+    "Errada: poro pequeno demais, que retém as partículas lipídicas.",
+    "Correta: 1,2 mícron para soluções com lipídio.",
+    "Errada: poro grande demais para a finalidade."
+   ],
+   "base": "Boullata et al., ASPEN, JPEN 2014"
+  },
+  {
+   "leitura": "compatibilidade-iv",
+   "nivel": "intermediario",
+   "enun": "Paciente em choque séptico com acidose recebe noradrenalina em infusão por um lúmen do cateter central, e a equipe quer iniciar bicarbonato de sódio 8,4% no mesmo lúmen por falta de via. Qual o problema e a conduta?",
+   "alts": [
+    "Nenhum, pois ambos são compatíveis quando correm em vazões baixas",
+    "Precipitação de sal de noradrenalina; usar filtro de 0,22 mícron",
+    "Oxidação da noradrenalina em meio alcalino; usar lúmen separado",
+    "Diluição excessiva da noradrenalina; aumentar a concentração da bolsa",
+    "Hemólise por hiperosmolaridade; diluir o bicarbonato em água pura"
+   ],
+   "gab": 2,
+   "coment": "Catecolaminas são inativadas por oxidação em pH alcalino; o bicarbonato também precipita cálcio e alguns fármacos. Além disso, qualquer bolus ou mudança de vazão no lúmen da noradrenalina altera a entrega do vasopressor. A conduta é usar lúmen separado ou outro acesso. Filtro não impede degradação química.",
+   "porAlt": [
+    "Errada: há incompatibilidade química independente da vazão.",
+    "Errada: o problema é degradação química, que o filtro não resolve.",
+    "Correta: inativação alcalina da catecolamina; separar o lúmen.",
+    "Errada: o problema não é de diluição.",
+    "Errada: diluir em água pura não resolve e pode causar hemólise."
+   ],
+   "base": "ASHP Injectable Drug Information 2025"
+  },
+  {
+   "leitura": "compatibilidade-iv",
+   "nivel": "intermediario",
+   "enun": "Houve extravasamento de noradrenalina em acesso periférico do antebraço, com palidez e frialdade local. Além de interromper a infusão, aspirar e elevar o membro, qual a conduta mais adequada?",
+   "alts": [
+    "Compressa fria e hialuronidase subcutânea na área afetada",
+    "Compressa fria e dexrazoxano intravenoso no outro membro",
+    "Compressa morna e tiossulfato de sódio infiltrado na área",
+    "Compressa fria e observação sem antídoto nas primeiras 24 h",
+    "Fentolamina subcutânea na área, evitando compressa fria"
+   ],
+   "gab": 4,
+   "coment": "Vasopressores causam lesão por vasoconstrição e isquemia. O antídoto é a fentolamina, 5 a 10 mg diluídos em 10 a 15 mL de soro fisiológico, infiltrada na área o mais cedo possível; na falta, nitroglicerina tópica ou terbutalina subcutânea são alternativas descritas. Frio piora a vasoconstrição. Hialuronidase é para soluções hiperosmolares e alcaloides da vinca, dexrazoxano para antraciclinas e tiossulfato para mecloretamina.",
+   "porAlt": [
+    "Errada: hialuronidase não reverte a vasoconstrição e o frio a agrava.",
+    "Errada: dexrazoxano é antídoto de antraciclinas.",
+    "Errada: tiossulfato é usado em extravasamento de mecloretamina.",
+    "Errada: frio agrava a isquemia e há antídoto disponível.",
+    "Correta: fentolamina local e evitar vasoconstrição por frio."
+   ],
+   "base": "INS Standards of Practice, 9ª ed., 2024; bula da noradrenalina"
+  },
+  {
+   "leitura": "compatibilidade-iv",
+   "nivel": "avancado",
+   "enun": "Qual a osmolaridade aproximada de uma solução de glicose a 10% com 40 mEq/L de cloreto de potássio, e como ela se situa em relação ao limite de 900 mOsm/L da ASPEN para via periférica?",
+   "alts": [
+    "Cerca de 636 mOsm/L, abaixo do limite de 900 mOsm/L",
+    "Cerca de 556 mOsm/L, abaixo do limite de 900 mOsm/L",
+    "Cerca de 1.036 mOsm/L, acima do limite de 900 mOsm/L",
+    "Cerca de 596 mOsm/L, abaixo do limite de 900 mOsm/L",
+    "Cerca de 916 mOsm/L, acima do limite de 900 mOsm/L"
+   ],
+   "gab": 0,
+   "coment": "Glicose: 100 g/L ÷ 180 g/mol ≈ 0,556 mol/L ≈ 556 mOsm/L. KCl: 40 mEq/L de potássio mais 40 mEq/L de cloreto = 80 mOsm/L. Total ≈ 636 mOsm/L. Está abaixo de 900 mOsm/L, mas acima de 600, faixa em que a literatura associa maior risco de flebite; exige veia calibrosa, tempo limitado e inspeção frequente.",
+   "porAlt": [
+    "Correta: 556 + 80 ≈ 636 mOsm/L.",
+    "Errada: 556 mOsm/L considera só a glicose.",
+    "Errada: soma incorreta; a solução não passa de 900.",
+    "Errada: conta só o potássio e esquece o cloreto.",
+    "Errada: soma incorreta das partículas osmóticas."
+   ],
+   "base": "Boullata et al., ASPEN, JPEN 2014; INS Standards 2024"
+  },
+  {
+   "leitura": "compatibilidade-iv",
+   "nivel": "avancado",
+   "enun": "Paciente em nitroglicerina intravenosa a 20 mL/h em equipo de PVC, com pressão estável. A instituição troca o equipo por um de poliolefina sem PVC, mantendo bolsa e vazão, e o paciente evolui com hipotensão. A explicação mais provável é:",
+   "alts": [
+    "Degradação da nitroglicerina pela luz, que gera nitritos vasoativos",
+    "Precipitação no equipo novo, com liberação súbita de bolus retido",
+    "Extração de DEHP pelo novo equipo, com efeito vasodilatador próprio",
+    "Menor adsorção no equipo novo, com maior dose entregue ao paciente",
+    "Incompatibilidade da poliolefina com o soro glicosado da diluição"
+   ],
+   "gab": 3,
+   "coment": "A nitroglicerina é adsorvida e absorvida pelo PVC, com perda de dose que pode passar de 40% nas primeiras horas. Ao trocar para equipo sem PVC, a mesma vazão entrega mais fármaco, e a pressão cai. A titulação deve sempre seguir o efeito, e a instituição deve padronizar o tipo de equipo e avisar a equipe em qualquer troca. A poliolefina não contém DEHP.",
+   "porAlt": [
+    "Errada: a fotodegradação não explica a hipotensão após troca do equipo.",
+    "Errada: a nitroglicerina não precipita no equipo.",
+    "Errada: poliolefina não contém DEHP, e DEHP não é vasodilatador.",
+    "Correta: sem adsorção ao PVC, a dose efetiva aumenta.",
+    "Errada: não há incompatibilidade entre poliolefina e soro glicosado."
+   ],
+   "base": "ASHP Injectable Drug Information 2025"
+  },
+  {
+   "leitura": "medicamentos-alta-vigilancia",
+   "nivel": "basico",
+   "enun": "Qual dos medicamentos abaixo consta como medicamento específico na lista hospitalar de medicamentos potencialmente perigosos do ISMP Brasil (2019)?",
+   "alts": [
+    "Dipirona sódica injetável 50%",
+    "Ceftriaxona sódica injetável",
+    "Omeprazol sódico para injeção",
+    "Furosemida injetável 10 mg/mL",
+    "Sulfato de magnésio injetável"
+   ],
+   "gab": 4,
+   "coment": "A lista de 2019 inclui como medicamentos específicos: cloreto de potássio concentrado, fosfato de potássio, epinefrina subcutânea, metotrexato oral de uso não oncológico, nitroprussiato de sódio, ocitocina intravenosa, prometazina injetável, sulfato de magnésio injetável e vasopressina. A confusão entre sulfato de magnésio 10% e 50% é causa conhecida de intoxicação.",
+   "porAlt": [
+    "Errada: a dipirona não está na lista.",
+    "Errada: a ceftriaxona não está na lista.",
+    "Errada: o omeprazol não está na lista.",
+    "Errada: a furosemida não está na lista.",
+    "Correta: sulfato de magnésio injetável é medicamento específico da lista."
+   ],
+   "base": "ISMP Brasil, Boletim 2019;8(1)"
+  },
+  {
+   "leitura": "medicamentos-alta-vigilancia",
+   "nivel": "basico",
+   "enun": "O farmacêutico intercepta, na validação, uma prescrição de enoxaparina 10 vezes maior que a pretendida, antes da dispensação. Pelo índice NCC MERP, esse erro é da categoria:",
+   "alts": [
+    "A, circunstância capaz de causar erro",
+    "B, erro que não atingiu o paciente",
+    "C, erro que atingiu sem causar dano",
+    "D, erro que exigiu monitorização",
+    "E, erro com dano temporário tratado"
+   ],
+   "gab": 1,
+   "coment": "Pelo NCC MERP, a categoria A é uma circunstância capaz de causar erro; B é erro que ocorreu mas não atingiu o paciente; C atingiu o paciente sem dano; D atingiu e exigiu monitorização ou intervenção para evitar dano; E a I envolvem dano progressivamente maior até o óbito. Um erro de prescrição interceptado antes da dispensação é B. Notificar erros interceptados ajuda a corrigir o processo sem o custo do dano.",
+   "porAlt": [
+    "Errada: o erro chegou a ocorrer na prescrição; não é só circunstância.",
+    "Correta: o erro ocorreu, mas não atingiu o paciente.",
+    "Errada: o erro não atingiu o paciente.",
+    "Errada: não houve exposição do paciente.",
+    "Errada: não houve dano."
+   ],
+   "base": "NCC MERP, índice de categorização de erros, 2001"
+  },
+  {
+   "leitura": "medicamentos-alta-vigilancia",
+   "nivel": "intermediario",
+   "enun": "Na UTI há duas concentrações de noradrenalina (4 mg e 16 mg em 250 mL). A bolsa instalada tinha 16 mg, mas a bomba foi programada com a concentração de 4 mg, e o paciente recebeu dose quatro vezes maior. Qual barreira atua mais diretamente contra esse tipo de erro?",
+   "alts": [
+    "Dupla checagem da prescrição médica pela enfermagem na admissão",
+    "Letra maiúscula diferenciada no nome da noradrenalina na etiqueta",
+    "Concentração única padronizada e bomba com biblioteca de fármacos",
+    "Notificação do evento ao Núcleo de Segurança do Paciente em 72 h",
+    "Armazenamento da noradrenalina separado da adrenalina na farmácia"
+   ],
+   "gab": 2,
+   "coment": "O erro nasceu da coexistência de concentrações e da programação manual. Padronizar uma concentração (ou uma padrão e uma concentrada claramente distinta) e usar bomba inteligente com biblioteca que associa fármaco, concentração e limites de dose reduzem diretamente esse erro. Notificar é necessário, mas não previne. Letra maiúscula diferenciada e armazenamento segregado atuam em trocas de fármaco, não de concentração.",
+   "porAlt": [
+    "Errada: a prescrição estava correta; o erro foi na programação.",
+    "Errada: o problema é de concentração, não de nome semelhante.",
+    "Correta: padronização e biblioteca da bomba atacam a causa.",
+    "Errada: a notificação é posterior e não previne o erro.",
+    "Errada: não houve troca de fármaco."
+   ],
+   "base": "ISMP Brasil, Boletim 2019;8(1)"
+  },
+  {
+   "leitura": "medicamentos-alta-vigilancia",
+   "nivel": "intermediario",
+   "enun": "Foi prescrito cloreto de potássio 30 mEq diluídos em 250 mL de soro fisiológico. A instituição padronizou apenas ampolas de KCl 19,1% (2,56 mEq/mL). Qual o volume de KCl a aspirar?",
+   "alts": [
+    "Cerca de 22,4 mL",
+    "Cerca de 7,8 mL",
+    "Exatamente 30 mL",
+    "Cerca de 14,9 mL",
+    "Cerca de 11,7 mL"
+   ],
+   "gab": 4,
+   "coment": "Volume = 30 mEq ÷ 2,56 mEq/mL ≈ 11,7 mL. Se fosse usada a ampola de 10% (1,34 mEq/mL), seriam cerca de 22,4 mL. Ter uma única concentração de ampola na instituição, prescrever em mEq com diluente e tempo de infusão e preferir soluções pré-diluídas são barreiras recomendadas para o KCl, medicamento específico da lista do ISMP Brasil.",
+   "porAlt": [
+    "Errada: 22,4 mL seria o volume da ampola de 10%.",
+    "Errada: 7,8 mL corresponde a 20 mEq da ampola de 19,1%.",
+    "Errada: confunde mEq com mL.",
+    "Errada: 14,9 mL seria o cálculo com 1,34 mEq/mL e entregaria cerca de 38 mEq.",
+    "Correta: 30 ÷ 2,56 ≈ 11,7 mL."
+   ],
+   "base": "ISMP Brasil, Boletim 2019;8(1)"
+  },
+  {
+   "leitura": "medicamentos-alta-vigilancia",
+   "nivel": "avancado",
+   "enun": "Um paciente morreu na UTI após erro de administração de insulina intravenosa. Segundo a RDC ANVISA 36/2013, qual o prazo para a notificação desse evento adverso pelo Núcleo de Segurança do Paciente?",
+   "alts": [
+    "Até 72 horas a partir do ocorrido",
+    "Até o 15º dia útil do mês seguinte",
+    "Até 24 horas a partir do ocorrido",
+    "Até 30 dias corridos após o óbito",
+    "Até 7 dias úteis após a análise"
+   ],
+   "gab": 0,
+   "coment": "A RDC 36/2013 determina a notificação mensal dos eventos adversos pelo NSP até o 15º dia útil do mês subsequente e a notificação em até 72 horas dos eventos adversos que evoluíram para óbito. A ANVISA orienta ainda que eventos adversos relacionados a medicamentos, incluindo erros de medicação, sejam notificados no VigiMed. A análise de causa raiz segue depois e não adia a notificação.",
+   "porAlt": [
+    "Correta: óbito deve ser notificado em até 72 horas.",
+    "Errada: esse é o prazo dos eventos adversos sem óbito.",
+    "Errada: a norma fixa 72 horas, não 24 horas.",
+    "Errada: 30 dias corridos não é prazo da norma.",
+    "Errada: a notificação não aguarda o fim da análise."
+   ],
+   "base": "ANVISA, RDC 36/2013"
+  },
+  {
+   "leitura": "medicamentos-alta-vigilancia",
+   "nivel": "avancado",
+   "enun": "Qual das situações abaixo descreve corretamente uma dupla checagem independente na programação de uma infusão de heparina?",
+   "alts": [
+    "A técnica lê a prescrição em voz alta e a enfermeira confirma que concorda",
+    "Cada profissional calcula a vazão sozinho e depois confrontam resultados",
+    "A enfermeira programa a bomba e a colega confere só o nome do paciente",
+    "O farmacêutico valida a prescrição e a enfermeira programa sem conferir",
+    "Duas enfermeiras calculam juntas a vazão e registram a mesma assinatura"
+   ],
+   "gab": 1,
+   "coment": "Na dupla checagem independente, dois profissionais verificam separadamente, sem influência mútua, medicamento, dose, cálculo, via, programação e paciente, e só então comparam. Ler em voz alta para o colega concordar ou calcular juntos não é independente, porque um influencia o outro. O ISMP Brasil recomenda restringir a dupla checagem aos pontos mais vulneráveis, como programação de bombas com medicamentos potencialmente perigosos.",
+   "porAlt": [
+    "Errada: a concordância com a leitura do colega não é independente.",
+    "Correta: cálculo separado e comparação posterior.",
+    "Errada: conferir só o paciente deixa dose e programação sem verificação.",
+    "Errada: validação da prescrição não substitui a checagem da programação.",
+    "Errada: calcular juntas elimina a independência."
+   ],
+   "base": "ISMP Brasil, Boletim 2019;8(1)"
+  }
+ ]
+}

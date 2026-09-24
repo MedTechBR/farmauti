@@ -1,0 +1,1528 @@
+{
+ "leituras": [
+  {
+   "slug": "farmacocinetica-basica",
+   "titulo": "Farmacocinética: absorção, distribuição, metabolismo e excreção",
+   "dek": "Absorção, distribuição, metabolismo e excreção de fármacos, com os conceitos de biodisponibilidade, primeira passagem, ligação a proteínas, fases I e II, excreção renal e biliar e circulação êntero-hepática, aplicados à rotina da UTI. Bases: Goodman & Gilman (14ª ed., 2023), Rowland & Tozer (5ª ed., 2019) e posicionamentos de toxicologia clínica sobre carvão ativado e alcalinização urinária.",
+   "palavras": 3919,
+   "fontes": [
+    "Brunton & Knollmann, Goodman & Gilman, 14ª ed., 2023",
+    "Rowland & Tozer, 5ª ed., 2019",
+    "AACT/EAPCCT, carvão ativado em doses múltiplas, 1999",
+    "Proudfoot et al., alcalinização urinária, 2004",
+    "Roberts & Lipman, Crit Care Med, 2009"
+   ]
+  },
+  {
+   "slug": "parametros-pk",
+   "titulo": "Parâmetros farmacocinéticos e seus cálculos",
+   "dek": "Volume de distribuição, depuração, constante de eliminação, meia-vida, área sob a curva, estado de equilíbrio, dose de ataque e de manutenção, cinética de ordem zero e de primeira ordem, modelos compartimentais e cinética de Michaelis-Menten da fenitoína, com exemplos resolvidos. Bases: Rowland & Tozer (5ª ed., 2019), Winter's Basic Clinical Pharmacokinetics (6ª ed., 2018) e consenso de vancomicina ASHP/IDSA/PIDS/SIDP (2020).",
+   "palavras": 3314,
+   "fontes": [
+    "Rowland & Tozer, 5ª ed., 2019",
+    "Winter's Basic Clinical Pharmacokinetics, 6ª ed., 2018",
+    "Bauer, Applied Clinical Pharmacokinetics, 3ª ed., 2014",
+    "Rybak et al., consenso ASHP/IDSA/PIDS/SIDP de vancomicina, 2020"
+   ]
+  },
+  {
+   "slug": "farmacodinamica",
+   "titulo": "Farmacodinâmica",
+   "dek": "Receptores, agonistas e antagonistas, afinidade, eficácia e potência, curva dose-resposta, índice terapêutico, tolerância, taquifilaxia e as mudanças de resposta a fármacos que acontecem no paciente crítico. Bases: Goodman & Gilman (14ª ed., 2023), Rowland & Tozer (5ª ed., 2019) e revisões sobre regulação de receptores em doença crítica.",
+   "palavras": 3152,
+   "fontes": [
+    "Brunton & Knollmann, Goodman & Gilman, 14ª ed., 2023",
+    "Rowland & Tozer, 5ª ed., 2019",
+    "Martyn & Richtsfeld, Anesthesiology, 2006",
+    "Landry et al., Circulation, 1997",
+    "Surviving Sepsis Campaign, 2026",
+    "Devlin et al., PADIS, 2018"
+   ]
+  },
+  {
+   "slug": "sistema-nervoso-autonomo",
+   "titulo": "Farmacologia do sistema nervoso autônomo",
+   "dek": "Organização do sistema nervoso autônomo, receptores alfa, beta, dopaminérgicos, de vasopressina, muscarínicos e nicotínicos, e a base farmacológica dos vasoativos, dos bloqueadores neuromusculares, dos colinérgicos, dos anticolinérgicos e das toxíndromes autonômicas. Bases: Goodman & Gilman (14ª ed., 2023), Surviving Sepsis Campaign 2026, ensaios SOAP II (2010) e ANZICS de dopamina (2000), revisão de organofosforados de Eddleston (2008) e bulas brasileiras registradas na ANVISA.",
+   "palavras": 3127,
+   "fontes": [
+    "Brunton & Knollmann, Goodman & Gilman, 14ª ed., 2023",
+    "Surviving Sepsis Campaign, 2026",
+    "De Backer et al., SOAP II, N Engl J Med, 2010",
+    "Bellomo et al., ANZICS, Lancet, 2000",
+    "Eddleston et al., Lancet, 2008",
+    "Panchal et al., AHA ACLS, 2020",
+    "Bulas ANVISA: norepinefrina, Fenilefrin, Encrise"
+   ]
+  },
+  {
+   "slug": "pk-paciente-critico",
+   "titulo": "Farmacocinética no paciente crítico",
+   "dek": "Como choque, ressuscitação volêmica, extravasamento capilar, hipoalbuminemia, depuração renal aumentada, lesão renal aguda, disfunção hepática e suportes extracorpóreos alteram absorção, distribuição e eliminação, e o que isso muda na dose de ataque e de manutenção de fármacos hidrofílicos e lipofílicos. Bases: Roberts e Lipman (2009), Blot, Pea e Lipman (2014), posicionamento de TDM de antimicrobianos em UTI (Abdul-Aziz e colaboradores, 2020), consensos de infusão prolongada de betalactâmicos (2023, atualização de 2026) e consenso de polimixinas (2019).",
+   "palavras": 3115,
+   "fontes": [
+    "Roberts & Lipman, Crit Care Med, 2009",
+    "Blot, Pea & Lipman, Adv Drug Deliv Rev, 2014",
+    "Ulldemolins et al., Clin Pharmacokinet, 2011",
+    "Udy et al., Crit Care, 2013",
+    "Dörffler-Melly et al., Lancet, 2002",
+    "Abdul-Aziz et al., Intensive Care Med, 2020",
+    "Rybak et al., 2020",
+    "Taccone et al., Crit Care, 2010",
+    "Tsuji et al., consenso de polimixinas, 2019",
+    "Hong et al., infusão prolongada de betalactâmicos, 2023 e 2026"
+   ]
+  },
+  {
+   "slug": "monitorizacao-terapeutica",
+   "titulo": "Monitorização terapêutica de fármacos",
+   "dek": "Princípios de monitorização terapêutica de fármacos na UTI, tempos de coleta e interpretação de vancomicina por AUC, aminoglicosídeos em dose estendida, fenitoína total e livre, digoxina, voriconazol e betalactâmicos. Bases: consenso de vancomicina ASHP/IDSA/PIDS/SIDP (2020), posicionamento de TDM de antimicrobianos em pacientes críticos da ESICM, ESCMID e IATDMCT (Abdul-Aziz e colaboradores, 2020), ensaios TARGET e DOLPHIN (2022), diretriz AHA/ACC/HFSA de insuficiência cardíaca (2022) e diretriz CPIC de voriconazol (2017).",
+   "palavras": 3852,
+   "fontes": [
+    "Rybak et al., consenso ASHP/IDSA/PIDS/SIDP de vancomicina, 2020",
+    "Abdul-Aziz et al., Intensive Care Med, 2020",
+    "Nicolau et al., Antimicrob Agents Chemother, 1995",
+    "Taccone et al., Crit Care, 2010",
+    "Kiang & Ensom, Ann Pharmacother, 2016",
+    "Rathore et al., JAMA, 2003",
+    "Heidenreich et al., AHA/ACC/HFSA, 2022",
+    "Moriyama et al., CPIC voriconazol, 2017",
+    "Hagel et al., TARGET, 2022",
+    "Ewoldt et al., DOLPHIN, 2022"
+   ]
+  },
+  {
+   "slug": "calculos-farmaceuticos",
+   "titulo": "Cálculos farmacêuticos na UTI",
+   "dek": "Concentração, porcentagem, diluição, conversão de mcg/kg/min para mL/h, mEq e mmol, osmolaridade, velocidade de infusão, peso ideal e ajustado e estimativa de função renal, com exemplos resolvidos a partir das apresentações brasileiras e das armadilhas de unidade mais comuns na UTI. Bases: lista de abreviaturas e designações de dose propensas a erro do ISMP (2024), consenso de segurança em nutrição parenteral da ASPEN (2014), CKD-EPI 2021, KDIGO 2024 e bulas registradas na ANVISA.",
+   "palavras": 4011,
+   "fontes": [
+    "ISMP, List of Error-Prone Abbreviations, 2024",
+    "Ayers et al., ASPEN, 2014",
+    "Inker et al., CKD-EPI 2021, N Engl J Med, 2021",
+    "KDIGO CKD, 2024",
+    "Cockcroft & Gault, 1976",
+    "Devine, 1974",
+    "Raschke et al., Ann Intern Med, 1993",
+    "Bulas ANVISA: norepinefrina, Encrise, fosfato de potássio 2 mEq/mL"
+   ]
+  }
+ ],
+ "cartoes": [
+  {
+   "leitura": "farmacocinetica-basica",
+   "frente": "O que é biodisponibilidade (F)?",
+   "verso": "Fração da dose que chega inalterada à circulação sistêmica. Na via IV, F = 1. Na via oral, F resulta de absorção incompleta, metabolismo na parede intestinal e primeira passagem hepática."
+  },
+  {
+   "leitura": "farmacocinetica-basica",
+   "frente": "Que antimicrobianos têm biodisponibilidade oral próxima de 100%?",
+   "verso": "Linezolida, fluconazol, metronidazol, levofloxacino, moxifloxacino e sulfametoxazol-trimetoprima. Permitem trocar IV por enteral sem ajuste de dose quando o paciente está estável."
+  },
+  {
+   "leitura": "farmacocinetica-basica",
+   "frente": "Por que a nitroglicerina não é usada por via oral para efeito rápido?",
+   "verso": "Tem primeira passagem hepática extensa: quase nada chega ao plasma. Usa-se via sublingual, transdérmica ou IV, que escapam da veia porta."
+  },
+  {
+   "leitura": "farmacocinetica-basica",
+   "frente": "Qual forma do fármaco atravessa membranas por difusão passiva?",
+   "verso": "A não ionizada, lipossolúvel. Ácidos fracos se ionizam quando o pH fica acima do pKa; bases fracas, quando o pH fica abaixo do pKa."
+  },
+  {
+   "leitura": "farmacocinetica-basica",
+   "frente": "Por que a absorção de itraconazol em cápsula cai com inibidor de bomba de prótons?",
+   "verso": "Sua dissolução depende de meio ácido. Com o pH gástrico elevado, a absorção diminui e a exposição fica menor."
+  },
+  {
+   "leitura": "farmacocinetica-basica",
+   "frente": "Que proteína plasmática liga sobretudo fármacos ácidos e qual liga os básicos?",
+   "verso": "Albumina liga ácidos (fenitoína, valproato, ceftriaxona). Alfa-1-glicoproteína ácida liga básicos (lidocaína, propranolol) e aumenta na inflamação e no trauma."
+  },
+  {
+   "leitura": "farmacocinetica-basica",
+   "frente": "O que acontece com o nível total de fenitoína na hipoalbuminemia?",
+   "verso": "Cai, enquanto a concentração livre fica semelhante. O nível total subestima a fração ativa; aumentar a dose com base nele expõe o paciente à toxicidade."
+  },
+  {
+   "leitura": "farmacocinetica-basica",
+   "frente": "Quais metabólitos da morfina acumulam na lesão renal aguda e com que efeito?",
+   "verso": "Morfina-6-glicuronídeo (ativo: sedação e depressão respiratória) e morfina-3-glicuronídeo (neuroexcitatório: mioclonia). Ambos dependem do rim."
+  },
+  {
+   "leitura": "farmacocinetica-basica",
+   "frente": "Por que a meperidina não é opção para analgesia contínua na UTI?",
+   "verso": "A normeperidina, metabólito neurotóxico de eliminação renal, acumula e pode causar convulsões."
+  },
+  {
+   "leitura": "farmacocinetica-basica",
+   "frente": "Qual a diferença de depuração entre fármacos de alta e de baixa extração hepática?",
+   "verso": "Alta extração (lidocaína, propofol, fentanil): depende do fluxo hepático, que cai no choque. Baixa extração (fenitoína, varfarina): depende da atividade enzimática e da fração livre."
+  },
+  {
+   "leitura": "farmacocinetica-basica",
+   "frente": "Como a trimetoprima pode elevar a creatinina sem lesão renal?",
+   "verso": "Inibe a secreção tubular de creatinina por transportadores de cátions orgânicos. A creatinina sérica sobe alguns décimos sem queda da TFG real."
+  },
+  {
+   "leitura": "farmacocinetica-basica",
+   "frente": "Quanto tempo a indução enzimática leva para se instalar e para se desfazer?",
+   "verso": "Cerca de 1 a 2 semanas em cada sentido, porque depende de síntese e degradação de enzima. A inibição enzimática é rápida, em horas a poucos dias."
+  },
+  {
+   "leitura": "farmacocinetica-basica",
+   "frente": "Por que a penetração liquórica de betalactâmicos cai conforme a meningite melhora?",
+   "verso": "A inflamação abre as junções firmes da barreira hematoencefálica. Com a resolução, a permeabilidade diminui, e a dose alta deve ser mantida até o fim do tratamento."
+  },
+  {
+   "leitura": "farmacocinetica-basica",
+   "frente": "Por que a ceftriaxona dispensa ajuste na disfunção renal isolada?",
+   "verso": "Tem eliminação mista, renal e biliar. A via biliar compensa parte da queda de filtração."
+  },
+  {
+   "leitura": "parametros-pk",
+   "frente": "Qual parâmetro define a dose de ataque?",
+   "verso": "O volume de distribuição: DA = Vd × C alvo ÷ F. A dose de ataque não depende da função renal nem hepática."
+  },
+  {
+   "leitura": "parametros-pk",
+   "frente": "Qual parâmetro define a dose de manutenção?",
+   "verso": "A depuração: DM = CL × Css × τ ÷ F. Em infusão contínua, a velocidade é R0 = CL × Css."
+  },
+  {
+   "leitura": "parametros-pk",
+   "frente": "Como se calcula a meia-vida a partir de Vd e CL?",
+   "verso": "t½ = 0,693 × Vd ÷ CL. É parâmetro derivado: aumenta quando o Vd aumenta ou quando a CL cai."
+  },
+  {
+   "leitura": "parametros-pk",
+   "frente": "Em quantas meias-vidas se atinge o estado de equilíbrio?",
+   "verso": "Em 4 a 5 meias-vidas (94% a 97% do valor final), independentemente da dose, do intervalo e da velocidade de infusão. Só a dose de ataque encurta o caminho."
+  },
+  {
+   "leitura": "parametros-pk",
+   "frente": "Como se calcula ke com duas concentrações?",
+   "verso": "ke = ln(C1 ÷ C2) ÷ (t2 − t1), com as duas amostras na fase de eliminação. Depois, t½ = 0,693 ÷ ke."
+  },
+  {
+   "leitura": "parametros-pk",
+   "frente": "Qual a relação entre AUC, dose e depuração?",
+   "verso": "AUC = F × dose ÷ CL. Para vancomicina, AUC24 = dose diária ÷ CL; por exemplo, 3.000 mg/dia ÷ 6 L/h = 500 mg·h/L."
+  },
+  {
+   "leitura": "parametros-pk",
+   "frente": "Qual a fórmula do fator de acúmulo com doses repetidas?",
+   "verso": "R = 1 ÷ (1 − e elevado a −ke × τ). Com t½ de 8 horas e intervalo de 12 horas, R fica em cerca de 1,55."
+  },
+  {
+   "leitura": "parametros-pk",
+   "frente": "O que caracteriza a cinética de ordem zero?",
+   "verso": "Eliminação de quantidade constante por unidade de tempo, por saturação. Não há meia-vida fixa, e a relação dose com concentração é desproporcional. Exemplos: etanol e fenitoína."
+  },
+  {
+   "leitura": "parametros-pk",
+   "frente": "Quais os parâmetros de Michaelis-Menten médios da fenitoína no adulto?",
+   "verso": "Vmax de cerca de 7 mg/kg/dia e Km de cerca de 4 mg/L, com grande variação individual. Como o Km fica abaixo da faixa terapêutica, a enzima trabalha perto da saturação."
+  },
+  {
+   "leitura": "parametros-pk",
+   "frente": "Fenitoína 300 mg/dia com Css de 8 mg/L e Km de 4 mg/L. Que dose leva a 15 mg/L?",
+   "verso": "Vmax = 300 × (4 + 8) ÷ 8 = 450 mg/dia. R = 450 × 15 ÷ (4 + 15) = cerca de 355 mg/dia, na prática 350 mg/dia."
+  },
+  {
+   "leitura": "parametros-pk",
+   "frente": "Por que o pico de vancomicina é colhido 1 a 2 horas após o fim da infusão?",
+   "verso": "Para evitar a fase de distribuição do modelo de dois compartimentos. Amostra precoce superestima a concentração e distorce ke e AUC."
+  },
+  {
+   "leitura": "parametros-pk",
+   "frente": "Qual a velocidade de vancomicina contínua para Css de 22 mg/L com CL de 4 L/h?",
+   "verso": "R0 = CL × Css = 4 × 22 = 88 mg/h, cerca de 2.100 mg por dia."
+  },
+  {
+   "leitura": "parametros-pk",
+   "frente": "Por que meia-vida longa não indica, sozinha, eliminação ruim?",
+   "verso": "Porque t½ = 0,693 × Vd ÷ CL. No séptico que recebeu muitos litros de fluido, o Vd aumenta e prolonga a meia-vida mesmo com depuração preservada."
+  },
+  {
+   "leitura": "parametros-pk",
+   "frente": "Qual a velocidade máxima de infusão IV de fenitoína no adulto?",
+   "verso": "50 mg/min, pelo risco de hipotensão e arritmia."
+  },
+  {
+   "leitura": "farmacodinamica",
+   "frente": "Qual a diferença entre potência e eficácia?",
+   "verso": "Potência é a quantidade necessária para determinado efeito (EC50). Eficácia é o efeito máximo alcançável (Emax). Clinicamente, eficácia importa mais."
+  },
+  {
+   "leitura": "farmacodinamica",
+   "frente": "O que um antagonista competitivo reversível faz na curva do agonista?",
+   "verso": "Desloca a curva para a direita sem reduzir o efeito máximo; é superável com mais agonista. Exemplos: naloxona, flumazenil, atropina."
+  },
+  {
+   "leitura": "farmacodinamica",
+   "frente": "O que um antagonista irreversível faz na curva do agonista?",
+   "verso": "Reduz o efeito máximo; mais agonista não restaura a resposta, que só volta com síntese de novos receptores."
+  },
+  {
+   "leitura": "farmacodinamica",
+   "frente": "O que é agonista parcial? Dê exemplos.",
+   "verso": "Fármaco que não atinge a resposta máxima mesmo ocupando todos os receptores e que pode reduzir o efeito de um agonista pleno. Exemplos: buprenorfina no receptor mu e clonidina no alfa-2."
+  },
+  {
+   "leitura": "farmacodinamica",
+   "frente": "Pelo modelo de Emax, qual o efeito com concentração igual a 9 vezes a EC50?",
+   "verso": "90% do efeito máximo (9 ÷ 10), com coeficiente de Hill igual a 1. Na parte alta da curva, ganhos de efeito exigem grandes aumentos de concentração."
+  },
+  {
+   "leitura": "farmacodinamica",
+   "frente": "Como se define o índice terapêutico?",
+   "verso": "Razão entre a dose tóxica mediana e a dose eficaz mediana. Quanto menor, mais estreita a margem entre efeito e toxicidade."
+  },
+  {
+   "leitura": "farmacodinamica",
+   "frente": "Qual a diferença entre tolerância e taquifilaxia?",
+   "verso": "Tolerância é perda gradual de resposta em dias a semanas. Taquifilaxia é perda rápida, em minutos a horas, como a da efedrina por depleção de noradrenalina."
+  },
+  {
+   "leitura": "farmacodinamica",
+   "frente": "Por que a sedação pode voltar após reversão com naloxona?",
+   "verso": "A naloxona dura de 30 a 90 minutos, menos que metadona, morfina na lesão renal ou fentanil após infusão longa. Quando ela deixa o receptor, o agonista volta a agir."
+  },
+  {
+   "leitura": "farmacodinamica",
+   "frente": "Por que a succinilcolina é evitada após imobilização prolongada?",
+   "verso": "Proliferam receptores nicotínicos extrajuncionais; a despolarização maciça libera potássio e pode causar hipercalemia grave. O risco surge cerca de 24 a 72 horas após a lesão."
+  },
+  {
+   "leitura": "farmacodinamica",
+   "frente": "Quais mecanismos explicam a vasoplegia com resposta reduzida a catecolaminas na sepse?",
+   "verso": "Óxido nítrico em excesso, abertura de canais de potássio sensíveis a ATP, dessensibilização e redução de receptores alfa-1, deficiência relativa de vasopressina, insuficiência adrenal relativa e acidose."
+  },
+  {
+   "leitura": "farmacodinamica",
+   "frente": "O que é margem de segurança da transmissão neuromuscular?",
+   "verso": "É preciso bloquear cerca de 70% a 75% dos receptores nicotínicos antes que a força caia. Uma sequência de quatro estímulos aparentemente normal pode coexistir com bloqueio residual."
+  },
+  {
+   "leitura": "farmacodinamica",
+   "frente": "Dê exemplos de antagonismo químico usados na UTI.",
+   "verso": "Protamina neutraliza heparina, sugamadex encapsula rocurônio e vecurônio, idarucizumabe liga dabigatrana."
+  },
+  {
+   "leitura": "farmacodinamica",
+   "frente": "O que indica histerese anti-horária na relação concentração-efeito?",
+   "verso": "Efeito atrasado em relação à concentração plasmática, por equilíbrio lento entre plasma e sítio de ação, como ocorre com a morfina."
+  },
+  {
+   "leitura": "farmacodinamica",
+   "frente": "Por que o efeito do clopidogrel dura dias após a suspensão?",
+   "verso": "A inibição do receptor P2Y12 é irreversível na plaqueta. O efeito só cede à medida que novas plaquetas são produzidas, ao longo de cerca de 7 a 10 dias."
+  },
+  {
+   "leitura": "sistema-nervoso-autonomo",
+   "frente": "Qual o acoplamento e o efeito principal do receptor alfa-1?",
+   "verso": "Proteína Gq, com IP3 e cálcio. Vasoconstrição no músculo liso vascular, midríase e contração do esfíncter vesical."
+  },
+  {
+   "leitura": "sistema-nervoso-autonomo",
+   "frente": "Quais efeitos do receptor beta-2 importam na UTI?",
+   "verso": "Broncodilatação, vasodilatação muscular, glicogenólise, entrada de potássio na célula e aumento de lactato durante infusão de adrenalina."
+  },
+  {
+   "leitura": "sistema-nervoso-autonomo",
+   "frente": "Qual a concentração de base da ampola brasileira de noradrenalina?",
+   "verso": "Hemitartarato de norepinefrina 2 mg/mL equivale a 1 mg/mL de base. A ampola de 4 mL tem 8 mg do sal e 4 mg de base."
+  },
+  {
+   "leitura": "sistema-nervoso-autonomo",
+   "frente": "Por que a dopamina em dose dita renal foi abandonada?",
+   "verso": "Não protegeu o rim em pacientes críticos (ANZICS, 2000) e causou mais arritmias que a noradrenalina no choque (SOAP II, 2010)."
+  },
+  {
+   "leitura": "sistema-nervoso-autonomo",
+   "frente": "Por que a dobutamina pode causar hipotensão?",
+   "verso": "O efeito beta-2 e o antagonismo alfa-1 do enantiômero (+) reduzem a resistência vascular. Em hipovolemia ou vasoplegia, a pressão cai."
+  },
+  {
+   "leitura": "sistema-nervoso-autonomo",
+   "frente": "Qual o perfil da fenilefrina e seu efeito reflexo?",
+   "verso": "Agonista alfa-1 puro: eleva a pressão por vasoconstrição e causa bradicardia reflexa pelo barorreflexo."
+  },
+  {
+   "leitura": "sistema-nervoso-autonomo",
+   "frente": "Qual a faixa de dose de vasopressina no choque séptico pela bula brasileira?",
+   "verso": "0,01 a 0,04 unidade por minuto (Encrise, 20 unidades/mL). O uso habitual é dose fixa de 0,03 unidade por minuto, sem titulação como catecolamina."
+  },
+  {
+   "leitura": "sistema-nervoso-autonomo",
+   "frente": "Por que usar milrinona em paciente betabloqueado com baixo débito?",
+   "verso": "Inibe a fosfodiesterase 3 e eleva o AMPc sem depender do receptor beta. A levosimendana, sensibilizador de cálcio, é outra opção."
+  },
+  {
+   "leitura": "sistema-nervoso-autonomo",
+   "frente": "Como diferenciar toxíndrome anticolinérgica de simpaticomimética à beira do leito?",
+   "verso": "Pela pele: seca e quente na anticolinérgica, úmida na simpaticomimética, porque o suor écrino é mediado por receptor muscarínico. Retenção urinária e íleo favorecem a anticolinérgica."
+  },
+  {
+   "leitura": "sistema-nervoso-autonomo",
+   "frente": "Quais os achados muscarínicos da síndrome colinérgica?",
+   "verso": "Miose, bradicardia, broncorreia, broncoespasmo, salivação, lacrimejamento, sudorese, vômitos, diarreia e micção."
+  },
+  {
+   "leitura": "sistema-nervoso-autonomo",
+   "frente": "Por que a neostigmina é associada a anticolinérgico na reversão do bloqueio neuromuscular?",
+   "verso": "Porque aumenta a acetilcolina também nos receptores muscarínicos, com bradicardia, broncorreia e broncoespasmo. Atropina ou glicopirrolato bloqueiam esses efeitos."
+  },
+  {
+   "leitura": "sistema-nervoso-autonomo",
+   "frente": "Qual a dose de atropina na bradicardia sintomática do adulto (AHA, 2020)?",
+   "verso": "1 mg IV, repetida a cada 3 a 5 minutos, até o total de 3 mg."
+  },
+  {
+   "leitura": "sistema-nervoso-autonomo",
+   "frente": "Por que o bolus rápido de dexmedetomidina pode elevar a pressão?",
+   "verso": "Estimula receptores alfa-2B no músculo liso vascular periférico, com vasoconstrição transitória, antes da simpatólise central que leva a hipotensão e bradicardia."
+  },
+  {
+   "leitura": "sistema-nervoso-autonomo",
+   "frente": "Por que o esmolol é titulável com segurança?",
+   "verso": "É hidrolisado por esterases eritrocitárias, com meia-vida de cerca de 9 minutos: o efeito cessa rapidamente ao reduzir ou suspender a infusão."
+  },
+  {
+   "leitura": "pk-paciente-critico",
+   "frente": "Por que o Vd de fármacos hidrofílicos aumenta na sepse?",
+   "verso": "Lesão do glicocálix e extravasamento capilar somados à ressuscitação volêmica expandem o líquido extracelular, onde esses fármacos se distribuem."
+  },
+  {
+   "leitura": "pk-paciente-critico",
+   "frente": "Que fármacos são pouco afetados pela expansão de volume?",
+   "verso": "Os lipofílicos (quinolonas, macrolídeos, tigeciclina, fentanil, midazolam, propofol), que já têm volume de distribuição grande."
+  },
+  {
+   "leitura": "pk-paciente-critico",
+   "frente": "Qual a dose de ataque de vancomicina no paciente crítico?",
+   "verso": "20 a 35 mg/kg de peso atual, máximo de 3.000 mg (ASHP/IDSA/PIDS/SIDP, 2020), sem redução pela função renal."
+  },
+  {
+   "leitura": "pk-paciente-critico",
+   "frente": "Qual a dose de ataque de amicacina no choque séptico e o pico desejado?",
+   "verso": "25 a 30 mg/kg de peso atual, com pico de 60 a 80 mg/L (Taccone e colaboradores, 2010)."
+  },
+  {
+   "leitura": "pk-paciente-critico",
+   "frente": "Qual a dose de ataque da polimixina B?",
+   "verso": "2 a 2,5 mg/kg, sem ajuste pela função renal (consenso internacional de polimixinas, 2019)."
+  },
+  {
+   "leitura": "pk-paciente-critico",
+   "frente": "Como se define depuração renal aumentada e como medi-la?",
+   "verso": "Depuração de creatinina de 130 mL/min/1,73 m² ou mais, idealmente medida em urina de 8 a 24 horas, porque as fórmulas baseadas em creatinina sérica a subestimam."
+  },
+  {
+   "leitura": "pk-paciente-critico",
+   "frente": "Quais itens compõem o escore ARC de Udy?",
+   "verso": "Idade de 50 anos ou menos (6 pontos), trauma (3 pontos) e SOFA modificado de 4 ou menos (1 ponto). Sete pontos ou mais indicam alto risco."
+  },
+  {
+   "leitura": "pk-paciente-critico",
+   "frente": "Que pacientes têm mais risco de depuração renal aumentada?",
+   "verso": "Jovens, homens, vítimas de trauma e de traumatismo cranioencefálico, queimados, neutropênicos febris, sépticos sem disfunção orgânica grave e pós-operatórios de grande porte."
+  },
+  {
+   "leitura": "pk-paciente-critico",
+   "frente": "Por que a hipoalbuminemia reduz a exposição a ceftriaxona e ertapenem?",
+   "verso": "A fração livre aumenta e é filtrada mais rápido, o que eleva a depuração e encurta o tempo com concentração acima da CIM."
+  },
+  {
+   "leitura": "pk-paciente-critico",
+   "frente": "O que acontece com a absorção subcutânea no paciente com vasopressor?",
+   "verso": "Diminui por vasoconstrição cutânea e edema. A atividade anti-Xa após enoxaparina profilática foi menor nesses pacientes (Dörffler-Melly, 2002)."
+  },
+  {
+   "leitura": "pk-paciente-critico",
+   "frente": "Por que a creatinina sérica engana na lesão renal aguda?",
+   "verso": "Demora 24 a 72 horas para refletir a queda da filtração e permanece alta dias após a recuperação. As equações pressupõem creatinina estável."
+  },
+  {
+   "leitura": "pk-paciente-critico",
+   "frente": "Por que a ECMO altera a farmacocinética?",
+   "verso": "O circuito adiciona volume e adsorve fármacos lipofílicos e muito ligados a proteínas, como fentanil, midazolam, propofol e voriconazol, sobretudo quando é novo."
+  },
+  {
+   "leitura": "pk-paciente-critico",
+   "frente": "Por que o coma pode persistir dias após suspender midazolam?",
+   "verso": "Saturação tecidual com infusão longa, metabolismo hepático reduzido, inibidores de CYP3A4 associados e acúmulo do glicuronídeo do alfa-hidroximidazolam na disfunção renal."
+  },
+  {
+   "leitura": "pk-paciente-critico",
+   "frente": "Para quais antimicrobianos o posicionamento de 2020 recomenda TDM de rotina na UTI?",
+   "verso": "Aminoglicosídeos, betalactâmicos, linezolida, teicoplanina, vancomicina e voriconazol (Abdul-Aziz e colaboradores, 2020)."
+  },
+  {
+   "leitura": "monitorizacao-terapeutica",
+   "frente": "Quais condições justificam monitorizar um fármaco pela concentração?",
+   "verso": "Janela estreita, grande variabilidade farmacocinética, relação estabelecida entre concentração e efeito ou toxicidade, efeito clínico difícil de medir e método disponível em tempo útil."
+  },
+  {
+   "leitura": "monitorizacao-terapeutica",
+   "frente": "Qual o alvo de vancomicina no consenso de 2020?",
+   "verso": "AUC de 24 horas de 400 a 600 mg·h/L, assumindo CIM de 1 mg/L. O vale isolado de 15 a 20 mg/L não é mais recomendado."
+  },
+  {
+   "leitura": "monitorizacao-terapeutica",
+   "frente": "Que AUC de vancomicina se associa a mais nefrotoxicidade?",
+   "verso": "Valores acima de cerca de 600 mg·h/L. Essa é a razão do abandono do alvo de vale alto."
+  },
+  {
+   "leitura": "monitorizacao-terapeutica",
+   "frente": "Qual a relação entre Css e AUC na vancomicina em infusão contínua?",
+   "verso": "AUC24 = Css × 24. Css de 20 a 25 mg/L corresponde a AUC24 de 480 a 600 mg·h/L."
+  },
+  {
+   "leitura": "monitorizacao-terapeutica",
+   "frente": "Quando colher pico e vale de vancomicina no método de primeira ordem?",
+   "verso": "Pico 1 a 2 horas após o fim da infusão, já fora da fase de distribuição, e vale no fim do intervalo, de preferência no equilíbrio."
+  },
+  {
+   "leitura": "monitorizacao-terapeutica",
+   "frente": "Quais os vales desejados de aminoglicosídeos em dose estendida?",
+   "verso": "Gentamicina e tobramicina abaixo de 0,5 mg/L; amicacina abaixo de 2,5 mg/L (Abdul-Aziz e colaboradores, 2020)."
+  },
+  {
+   "leitura": "monitorizacao-terapeutica",
+   "frente": "Qual o alvo de eficácia dos aminoglicosídeos?",
+   "verso": "Razão Cmax/CIM de 8 a 10, com o pico colhido 30 minutos após o fim de uma infusão de 30 minutos."
+  },
+  {
+   "leitura": "monitorizacao-terapeutica",
+   "frente": "Qual a limitação do nomograma de Hartford?",
+   "verso": "Foi validado para gentamicina e tobramicina a 7 mg/kg, com concentração colhida de 6 a 14 horas. Não se aplica a doses diferentes, a diálise nem a pacientes com Vd muito alterado."
+  },
+  {
+   "leitura": "monitorizacao-terapeutica",
+   "frente": "Qual a equação de Winter-Tozer para corrigir fenitoína pela albumina?",
+   "verso": "Concentração corrigida = medida ÷ (0,2 × albumina em g/dL + 0,1). Em disfunção renal grave ou diálise, usa-se o coeficiente 0,1."
+  },
+  {
+   "leitura": "monitorizacao-terapeutica",
+   "frente": "Qual a faixa de fenitoína livre e qual a fração livre habitual?",
+   "verso": "1 a 2 mg/L de fenitoína livre, cerca de 10% do total em condições normais. A fração livre sobe com hipoalbuminemia, uremia e ácido valproico."
+  },
+  {
+   "leitura": "monitorizacao-terapeutica",
+   "frente": "Quando colher nível de digoxina e qual a meta na insuficiência cardíaca?",
+   "verso": "No mínimo 6 a 8 horas após a dose ou antes da próxima. Meta de 0,5 a 0,9 ng/mL; valores de 1,2 ng/mL ou mais se associaram a maior mortalidade."
+  },
+  {
+   "leitura": "monitorizacao-terapeutica",
+   "frente": "Qual o alvo de vale do voriconazol e quando colher?",
+   "verso": "Vale de 2 a 6 mg/L no posicionamento de 2020, colhido entre o 2º e o 5º dia e repetido após mudança de dose ou de interação."
+  },
+  {
+   "leitura": "monitorizacao-terapeutica",
+   "frente": "Qual o alvo de eficácia de betalactâmicos no crítico e os limiares de toxicidade citados?",
+   "verso": "100% do intervalo com concentração livre acima da CIM. Toxicidade associada a vale acima de 44,5 mg/L para meropeném, 20 mg/L para cefepima e 361 mg/L para piperacilina."
+  },
+  {
+   "leitura": "monitorizacao-terapeutica",
+   "frente": "O que mostraram os ensaios TARGET e DOLPHIN?",
+   "verso": "TARGET: TDM diário de piperacilina-tazobactam em infusão contínua não reduziu o SOFA médio. DOLPHIN: dose guiada por modelo não reduziu o tempo de internação na UTI."
+  },
+  {
+   "leitura": "calculos-farmaceuticos",
+   "frente": "Como converter porcentagem em mg/mL?",
+   "verso": "Multiplicando por 10: 2% = 20 mg/mL; 19,1% = 191 mg/mL; 50% = 500 mg/mL. Porcentagem de solução é peso por volume, gramas em 100 mL."
+  },
+  {
+   "leitura": "calculos-farmaceuticos",
+   "frente": "Qual a fórmula de mL/h para doses em mcg/kg/min?",
+   "verso": "mL/h = dose × peso × 60 ÷ concentração em mcg/mL. O caminho inverso é dose = mL/h × concentração ÷ (peso × 60)."
+  },
+  {
+   "leitura": "calculos-farmaceuticos",
+   "frente": "Quantos mEq de potássio há em 1 mL de KCl 19,1%?",
+   "verso": "2,56 mEq (191 mg ÷ 74,55). A ampola de 10 mL tem 25,6 mEq. O KCl 10% tem 1,34 mEq/mL."
+  },
+  {
+   "leitura": "calculos-farmaceuticos",
+   "frente": "Quanto potássio acompanha 1 mL de fosfato de potássio 2 mEq/mL?",
+   "verso": "2 mEq de potássio e cerca de 1,1 mmol de fósforo. Repor fósforo traz junto uma carga expressiva de potássio."
+  },
+  {
+   "leitura": "calculos-farmaceuticos",
+   "frente": "Por que o fosfato deve ser prescrito em mmol e não em mEq?",
+   "verso": "Porque a valência do fosfato varia com o pH. A prescrição em mmol de fósforo é a única inequívoca."
+  },
+  {
+   "leitura": "calculos-farmaceuticos",
+   "frente": "Quanto cálcio elementar há em 10 mL de gluconato de cálcio 10% e de cloreto de cálcio 10%?",
+   "verso": "Cerca de 93 mg (4,6 mEq) no gluconato e 273 mg (13,6 mEq) no cloreto: cerca de três vezes mais."
+  },
+  {
+   "leitura": "calculos-farmaceuticos",
+   "frente": "Quanto magnésio há em 1 g de sulfato de magnésio?",
+   "verso": "Cerca de 8,1 mEq, ou 4 mmol. O MgSO4 50% tem 500 mg/mL, e o 10% tem 100 mg/mL."
+  },
+  {
+   "leitura": "calculos-farmaceuticos",
+   "frente": "Qual a osmolaridade do soro fisiológico e da salina 3%?",
+   "verso": "Cerca de 308 mOsm/L no soro fisiológico e cerca de 1.027 mOsm/L na salina 3%."
+  },
+  {
+   "leitura": "calculos-farmaceuticos",
+   "frente": "Qual o limite de osmolaridade para nutrição parenteral periférica (ASPEN, 2014)?",
+   "verso": "900 mOsm/L. Acima disso, a via central é indicada."
+  },
+  {
+   "leitura": "calculos-farmaceuticos",
+   "frente": "Como se calcula a osmolalidade plasmática com exames em unidades brasileiras?",
+   "verso": "2 × sódio + glicose ÷ 18 + ureia ÷ 6, com glicose e ureia em mg/dL. Intervalo osmolar acima de cerca de 10 sugere soluto não medido."
+  },
+  {
+   "leitura": "calculos-farmaceuticos",
+   "frente": "Qual a fórmula do peso ideal de Devine?",
+   "verso": "Homens: 50 + 0,91 × (altura em cm − 152,4). Mulheres: 45,5 + 0,91 × (altura em cm − 152,4)."
+  },
+  {
+   "leitura": "calculos-farmaceuticos",
+   "frente": "Como se calcula o peso ajustado e para que serve?",
+   "verso": "Peso ideal + 0,4 × (peso atual − peso ideal). Usado em obesos para fármacos hidrofílicos com distribuição parcial no tecido adiposo, como aminoglicosídeos."
+  },
+  {
+   "leitura": "calculos-farmaceuticos",
+   "frente": "Como desindexar uma TFG estimada por CKD-EPI para ajuste de dose?",
+   "verso": "TFG em mL/min = TFG em mL/min/1,73 m² × superfície corporal ÷ 1,73. A KDIGO orienta usar a TFG não indexada para dose."
+  },
+  {
+   "leitura": "calculos-farmaceuticos",
+   "frente": "Quais regras de notação do ISMP evitam erro de dez vezes?",
+   "verso": "Sem zero à direita (5 mg, nunca 5,0 mg), sempre zero à esquerda (0,5 mg), unidades por extenso e mcg em vez do símbolo grego."
+  }
+ ],
+ "questoes": [
+  {
+   "leitura": "farmacocinetica-basica",
+   "nivel": "basico",
+   "enun": "Paciente de UTI recebe fluconazol 400 mg IV uma vez ao dia para candidemia. Está estável, com dieta enteral plena e trato gastrointestinal funcionante. A equipe pergunta como passar para a sonda. Considerando a biodisponibilidade oral do fluconazol, acima de 90%, qual a conduta?",
+   "alts": [
+    "Manter 400 mg por dia pela sonda, pois a exposição é praticamente igual",
+    "Dobrar para 800 mg por dia pela sonda, pois metade se perde no fígado",
+    "Reduzir para 200 mg por dia pela sonda, pois a via enteral poupa o rim",
+    "Manter a via IV até o fim, pois azólicos não são absorvidos por sonda",
+    "Dar 400 mg a cada 12 horas pela sonda para compensar a ligação à dieta"
+   ],
+   "gab": 0,
+   "coment": "Biodisponibilidade (F) é a fração da dose que chega inalterada à circulação sistêmica, e a dose enteral equivalente a uma dose IV é dose IV ÷ F. Com F acima de 0,9, como no fluconazol, a dose é a mesma. A troca precoce para via enteral de antimicrobianos com F alta (fluconazol, linezolida, quinolonas, metronidazol) é intervenção farmacêutica clássica, desde que o paciente esteja estável e com trato gastrointestinal funcionante.",
+   "porAlt": [
+    "Correta. Com F próxima de 1, a dose enteral equivalente é igual à IV (dose IV ÷ F).",
+    "Errada. O fluconazol não tem primeira passagem relevante; dobrar a dose dobraria a exposição.",
+    "Errada. A via de administração não muda a eliminação renal do fluconazol; reduzir subdosaria.",
+    "Errada. O fluconazol é bem absorvido por sonda; manter IV sem necessidade eleva custo e risco de cateter.",
+    "Errada. O fluconazol não sofre perda relevante com a dieta enteral; o esquema dobraria a dose."
+   ],
+   "base": "Goodman & Gilman, 14ª ed., 2023; bula do fluconazol"
+  },
+  {
+   "leitura": "farmacocinetica-basica",
+   "nivel": "basico",
+   "enun": "Um ácido fraco com pKa de 3,0 é filtrado no glomérulo. Comparando urina com pH 8,0 e urina com pH 5,5, na urina alcalina:",
+   "alts": [
+    "a fração não ionizada aumenta e a reabsorção tubular sobe",
+    "a fração ionizada diminui e a excreção urinária fica menor",
+    "o pH não muda a ionização de ácidos com pKa abaixo de 7,4",
+    "a fração ionizada aumenta e a reabsorção tubular diminui",
+    "a fração ionizada aumenta, mas a reabsorção tubular sobe"
+   ],
+   "gab": 3,
+   "coment": "Para ácido fraco, log (ionizado/não ionizado) = pH menos pKa. Com pKa 3,0, a razão é de cerca de 316 para 1 em pH 5,5 e de 100.000 para 1 em pH 8,0. A fração não ionizada, única reabsorvida passivamente pelo túbulo, cai cerca de 300 vezes. É o aprisionamento iônico, princípio que explica por que o pH urinário altera a excreção de ácidos e bases fracas.",
+   "porAlt": [
+    "Errada. Para ácido fraco, o aumento do pH reduz a fração não ionizada.",
+    "Errada. É o contrário: a ionização aumenta e a excreção também.",
+    "Errada. Pela equação de Henderson-Hasselbalch, a razão depende de pH menos pKa em qualquer faixa.",
+    "Correta. Em pH acima do pKa o ácido se ioniza, e a forma ionizada não atravessa o epitélio tubular.",
+    "Errada. A forma ionizada não é reabsorvida; a reabsorção cai."
+   ],
+   "base": "Proudfoot, Krenzelok & Vale, J Toxicol Clin Toxicol, 2004"
+  },
+  {
+   "leitura": "farmacocinetica-basica",
+   "nivel": "intermediario",
+   "enun": "Mulher, 68 anos, lesão renal aguda (creatinina 3,1 mg/dL, diurese de 300 mL em 24 horas), recebe morfina 2 mg/h IV há 3 dias. Está sonolenta, com frequência respiratória de 9 irpm e mioclonias. Qual a explicação farmacocinética mais provável?",
+   "alts": [
+    "Queda do metabolismo hepático da morfina causada pela uremia, sem metabólitos",
+    "Acúmulo de glicuronídeos da morfina, eliminados pelo rim, com ação central",
+    "Deslocamento da morfina da albumina pela ureia, com aumento da fração livre",
+    "Tolerância aguda ao opioide, que exige elevar a infusão para manter analgesia",
+    "Hiperalgesia induzida por opioide, que melhora com aumento da dose de morfina"
+   ],
+   "gab": 1,
+   "coment": "A morfina é glicuronidada no fígado a morfina-6-glicuronídeo, agonista mu mais potente que a própria morfina, e a morfina-3-glicuronídeo, sem analgesia e neuroexcitatório. Ambos são eliminados pelo rim e acumulam na lesão renal aguda, com sedação prolongada, depressão respiratória e mioclonia. A conduta é reduzir ou suspender a morfina e preferir opioide sem metabólito ativo de eliminação renal, conforme protocolo.",
+   "porAlt": [
+    "Errada. A morfina é glicuronidada no fígado; o problema está na eliminação renal dos metabólitos.",
+    "Correta. M6G (sedação, depressão respiratória) e M3G (mioclonia) acumulam quando a filtração cai.",
+    "Errada. A morfina tem ligação proteica baixa; deslocamento não explica o quadro.",
+    "Errada. Tolerância reduziria o efeito; aqui há excesso de efeito opioide.",
+    "Errada. O quadro é de efeito opioide excessivo, e aumentar a dose o agravaria."
+   ],
+   "base": "Goodman & Gilman, 14ª ed., 2023"
+  },
+  {
+   "leitura": "farmacocinetica-basica",
+   "nivel": "intermediario",
+   "enun": "Paciente em choque cardiogênico com débito cardíaco muito baixo recebe lidocaína em infusão contínua para arritmia ventricular. Surgem parestesia perioral, confusão e tremor. Qual mecanismo farmacocinético explica melhor o quadro?",
+   "alts": [
+    "Indução do CYP3A4 pelo choque, com formação de metabólito mais neurotóxico",
+    "Aumento da alfa-1-glicoproteína ácida, que eleva a fração livre de lidocaína",
+    "Queda da filtração glomerular, principal via de eliminação da lidocaína",
+    "Saturação da glicuronidação, que torna a cinética da lidocaína de ordem zero",
+    "Queda do fluxo hepático, que reduz a depuração de fármaco de alta extração"
+   ],
+   "gab": 4,
+   "coment": "Fármacos de alta extração hepática (lidocaína, propofol, fentanil, morfina) têm depuração limitada pelo fluxo sanguíneo hepático. No choque cardiogênico o fluxo cai e a depuração acompanha, com acúmulo e manifestações neurológicas. Fármacos de baixa extração (fenitoína, varfarina) dependem mais da atividade enzimática e da fração livre. A intervenção é discutir a redução da infusão e monitorar sinais neurológicos.",
+   "porAlt": [
+    "Errada. O choque e a inflamação tendem a reduzir, não induzir, a atividade do CYP.",
+    "Errada. O aumento da alfa-1-glicoproteína ácida reduz a fração livre da lidocaína.",
+    "Errada. A lidocaína é eliminada por metabolismo hepático, não por filtração.",
+    "Errada. A lidocaína não segue cinética de ordem zero na faixa terapêutica.",
+    "Correta. A lidocaína é de alta extração: sua depuração depende do fluxo hepático, que cai no baixo débito."
+   ],
+   "base": "Rowland & Tozer, 5ª ed., 2019"
+  },
+  {
+   "leitura": "farmacocinetica-basica",
+   "nivel": "avancado",
+   "enun": "Paciente com albumina de 1,9 g/dL, função renal normal, recebe ácido valproico e fenitoína. Os níveis totais vieram no limite inferior da faixa. Sobre a interpretação desses níveis, assinale a correta.",
+   "alts": [
+    "O nível total superestima a exposição, pois a fração livre cai com a albumina",
+    "A hipoalbuminemia reduz a fração livre, que é eliminada mais devagar",
+    "O nível total tende a subestimar a fração livre ativa dos dois fármacos",
+    "O nível total é fiel, porque a globulina compensa a queda da albumina",
+    "O nível total é fiel sempre que a função renal está normal e sem uremia"
+   ],
+   "gab": 2,
+   "coment": "Fenitoína e valproato são ácidos fracos muito ligados à albumina. Na hipoalbuminemia, a fração livre aumenta, a eliminação dessa fração também aumenta, e a concentração livre no equilíbrio muda pouco, enquanto a total, medida pelo laboratório, cai. Um nível total baixo pode corresponder a exposição livre adequada. A conduta é medir a fração livre quando disponível ou usar correção por albumina com cautela, sem aumentar a dose apenas pelo total.",
+   "porAlt": [
+    "Errada. A fração livre aumenta, não diminui, na hipoalbuminemia.",
+    "Errada. A fração livre aumenta, e sua eliminação também aumenta.",
+    "Correta. Ambos são muito ligados à albumina; com albumina baixa, a fração livre aumenta e o total cai.",
+    "Errada. As globulinas não ligam fenitoína nem valproato de forma a compensar a albumina.",
+    "Errada. A função renal normal não corrige o efeito da hipoalbuminemia sobre a ligação."
+   ],
+   "base": "Rowland & Tozer, 5ª ed., 2019"
+  },
+  {
+   "leitura": "farmacocinetica-basica",
+   "nivel": "avancado",
+   "enun": "Homem de 40 anos em tratamento de tuberculose com rifampicina tem o esquema suspenso hoje por hepatotoxicidade. Ele também usa um substrato de CYP3A4 de janela estreita. Sobre a indução enzimática, é correto afirmar que:",
+   "alts": [
+    "desaparece em poucas horas, pois a rifampicina tem meia-vida curta no plasma",
+    "persiste por cerca de uma a duas semanas depois da suspensão da rifampicina",
+    "nunca se desfaz, porque a indução muda de forma permanente o gene do CYP3A4",
+    "se intensifica após a suspensão, por efeito rebote da transcrição do CYP3A4",
+    "não afeta substratos de CYP3A4, pois a rifampicina induz apenas o CYP2C9"
+   ],
+   "gab": 1,
+   "coment": "A indução enzimática exige síntese de nova proteína e, por isso, instala-se em uma a duas semanas e demora o mesmo tempo para se desfazer após a retirada do indutor. Depois de suspender rifampicina, carbamazepina, fenitoína ou fenobarbital, o substrato continua sendo metabolizado de forma acelerada por vários dias, e a dose ajustada durante a indução pode se tornar excessiva à medida que a atividade enzimática volta ao basal. Isso exige reavaliação programada, com nível sérico quando existir.",
+   "porAlt": [
+    "Errada. A meia-vida plasmática do indutor não determina a duração da indução.",
+    "Correta. A indução depende de enzima sintetizada, que precisa ser degradada; leva uma a duas semanas.",
+    "Errada. A indução é reversível: aumenta a expressão, não altera o gene.",
+    "Errada. Não há rebote de indução; a atividade retorna gradualmente ao basal.",
+    "Errada. A rifampicina é indutora potente de CYP3A4, além de outras isoformas e da glicoproteína P."
+   ],
+   "base": "Goodman & Gilman, 14ª ed., 2023"
+  },
+  {
+   "leitura": "parametros-pk",
+   "nivel": "basico",
+   "enun": "Um fármaco tem meia-vida de 12 horas e é iniciado sem dose de ataque. Em quanto tempo atinge, aproximadamente, o estado de equilíbrio?",
+   "alts": [
+    "Em 12 a 24 horas, se a dose de manutenção for dobrada no primeiro dia",
+    "Em 24 a 36 horas, pois o equilíbrio ocorre após duas ou três meias-vidas",
+    "Em 72 a 96 horas, pois o tempo de equilíbrio depende do intervalo de dose",
+    "Em 48 a 60 horas, mas só quando a infusão é contínua e não intermitente",
+    "Em 48 a 60 horas, independentemente da dose de manutenção escolhida"
+   ],
+   "gab": 4,
+   "coment": "Em cinética de primeira ordem, a fração do equilíbrio alcançada depende apenas do número de meias-vidas decorridas: 50% após uma, 75% após duas, 87,5% após três, cerca de 94% após quatro e 97% após cinco. Com meia-vida de 12 horas, são 48 a 60 horas. Dose, intervalo e velocidade de infusão mudam o patamar, não o tempo. Para chegar antes ao alvo usa-se dose de ataque, calculada pelo volume de distribuição.",
+   "porAlt": [
+    "Errada. Aumentar a manutenção eleva o patamar, mas não o alcança mais cedo; quem encurta é a dose de ataque.",
+    "Errada. Após 2 a 3 meias-vidas a concentração está em 75% a 87,5% do valor final.",
+    "Errada. O tempo para o equilíbrio depende só da meia-vida.",
+    "Errada. A regra vale para infusão contínua e para doses intermitentes.",
+    "Correta. São 4 a 5 meias-vidas, e o tempo não depende da dose."
+   ],
+   "base": "Rowland & Tozer, 5ª ed., 2019"
+  },
+  {
+   "leitura": "parametros-pk",
+   "nivel": "basico",
+   "enun": "Deseja-se concentração plasmática de 20 mg/L de um fármaco administrado por via IV, com volume de distribuição de 0,5 L/kg, em paciente de 60 kg. Qual a dose de ataque?",
+   "alts": [
+    "300 mg",
+    "900 mg",
+    "600 mg",
+    "150 mg",
+    "240 mg"
+   ],
+   "gab": 2,
+   "coment": "A dose de ataque enche o volume de distribuição até a concentração-alvo: DA = Vd × C alvo ÷ F. Na via IV, F = 1. O volume total é 0,5 L/kg × 60 kg = 30 L, e 30 L × 20 mg/L = 600 mg. Essa dose não depende da função renal nem hepática, porque não envolve depuração. No paciente crítico, o Vd de fármacos hidrofílicos costuma estar aumentado, e a dose de ataque tende a ser maior que a do paciente estável.",
+   "porAlt": [
+    "Errada. Corresponde a alvo de 10 mg/L ou a Vd de 0,25 L/kg.",
+    "Errada. Corresponde a alvo de 30 mg/L.",
+    "Correta. DA = Vd × C = 0,5 × 60 × 20 = 600 mg.",
+    "Errada. Resulta de usar Vd de 0,125 L/kg, sem relação com o enunciado.",
+    "Errada. Corresponde a Vd de 0,2 L/kg."
+   ],
+   "base": "Rowland & Tozer, 5ª ed., 2019"
+  },
+  {
+   "leitura": "parametros-pk",
+   "nivel": "intermediario",
+   "enun": "Homem de 70 kg usa fenitoína 300 mg/dia, com albumina normal e nível total de 8 mg/L no equilíbrio. O médico propõe 600 mg/dia para chegar a 16 mg/L. Considerando Km de 4 mg/L, qual a melhor análise?",
+   "alts": [
+    "A dose proposta supera o Vmax estimado, e o nível subiria sem equilíbrio",
+    "A proposta é adequada, pois a relação entre dose e nível é proporcional",
+    "A proposta subdosa, porque a fenitoína segue cinética de primeira ordem",
+    "A proposta é segura, pois Km baixo indica eliminação longe da saturação",
+    "O ideal é 450 mg/dia, dose igual ao Vmax, que leva o nível a 16 mg/L"
+   ],
+   "gab": 0,
+   "coment": "Pela equação de Michaelis-Menten no equilíbrio, velocidade de administração = Vmax × Css ÷ (Km + Css). Com 300 mg/dia, Css de 8 mg/L e Km de 4 mg/L, o Vmax estimado é 450 mg/dia. A dose para 16 mg/L seria 450 × 16 ÷ 20 = 360 mg/dia. Dobrar para 600 mg/dia excede o Vmax, e não existe estado de equilíbrio: o nível sobe continuamente. Ajustes de fenitoína perto da faixa são de 25 a 50 mg/dia por vez, com nível de controle.",
+   "porAlt": [
+    "Correta. Vmax = 300 × 12 ÷ 8 = 450 mg/dia; com velocidade acima do Vmax não há estado de equilíbrio.",
+    "Errada. A fenitoína segue Michaelis-Menten; a relação não é proporcional.",
+    "Errada. A fenitoína não segue primeira ordem na faixa terapêutica.",
+    "Errada. Km abaixo da faixa terapêutica indica enzima perto da saturação.",
+    "Errada. Com velocidade igual ao Vmax a Css tende ao infinito; para 16 mg/L são cerca de 360 mg/dia."
+   ],
+   "base": "Winter's Basic Clinical Pharmacokinetics, 6ª ed., 2018"
+  },
+  {
+   "leitura": "parametros-pk",
+   "nivel": "intermediario",
+   "enun": "Gentamicina: concentração de 10 mg/L às 2 horas e de 2,5 mg/L às 8 horas após o início da infusão, ambas na fase de eliminação. Qual a meia-vida?",
+   "alts": [
+    "6 horas",
+    "4 horas",
+    "2 horas",
+    "3 horas",
+    "5 horas"
+   ],
+   "gab": 3,
+   "coment": "ke = ln(C1 ÷ C2) ÷ (t2 − t1) = ln(10 ÷ 2,5) ÷ 6 = 1,386 ÷ 6 = 0,231 h elevado a menos um. A meia-vida é 0,693 ÷ 0,231 = 3 horas. A conferência intuitiva confirma: a concentração caiu à metade duas vezes em 6 horas. Esse cálculo com duas amostras é a base da individualização de aminoglicosídeos e do cálculo de AUC da vancomicina por equações de primeira ordem.",
+   "porAlt": [
+    "Errada. Seria o intervalo inteiro entre as amostras, que contém duas meias-vidas.",
+    "Errada. Com meia-vida de 4 horas, a concentração às 8 horas seria cerca de 3,5 mg/L.",
+    "Errada. Com meia-vida de 2 horas, a concentração às 8 horas seria 1,25 mg/L.",
+    "Correta. De 10 para 5 e de 5 para 2,5 são duas meias-vidas em 6 horas.",
+    "Errada. Com meia-vida de 5 horas, a concentração às 8 horas seria cerca de 4,4 mg/L."
+   ],
+   "base": "Rowland & Tozer, 5ª ed., 2019"
+  },
+  {
+   "leitura": "parametros-pk",
+   "nivel": "avancado",
+   "enun": "Paciente recebe vancomicina 1.250 mg a cada 12 horas. Pelo método de primeira ordem, com pico e vale no equilíbrio, a AUC de um intervalo foi de 330 mg·h/L. Qual a interpretação e a conduta?",
+   "alts": [
+    "AUC24 de 330, abaixo do alvo; subir para cerca de 1.900 mg a cada 12 horas",
+    "AUC24 de 660, dentro do alvo; manter a dose e repetir o nível em 7 dias",
+    "AUC24 de 660, acima do alvo; reduzir a dose diária para cerca de 1.900 mg",
+    "AUC24 de 165, bem abaixo do alvo; dobrar a dose e manter o intervalo",
+    "AUC24 de 330, adequada para CIM de 2 mg/L; manter o esquema em curso"
+   ],
+   "gab": 2,
+   "coment": "A AUC calculada por primeira ordem refere-se a um intervalo de dose. Com esquema a cada 12 horas, a AUC de 24 horas é o dobro: 660 mg·h/L, acima da faixa de 400 a 600 do consenso de 2020, na qual a nefrotoxicidade aumenta. Na cinética linear, a nova dose diária é proporcional: 2.500 × (500 ÷ 660), cerca de 1.900 mg por dia, por exemplo 1.000 mg a cada 12 horas, com nova dosagem depois do ajuste.",
+   "porAlt": [
+    "Errada. Deixou de multiplicar pelos dois intervalos do dia.",
+    "Errada. O alvo é 400 a 600 mg·h/L; 660 está acima e aumenta o risco de nefrotoxicidade.",
+    "Correta. 330 × 2 = 660 mg·h/L; a nova dose diária fica em 2.500 × 500 ÷ 660, cerca de 1.900 mg.",
+    "Errada. Dividiu em vez de multiplicar pelo número de intervalos.",
+    "Errada. O alvo assume CIM de 1 mg/L; com CIM de 2 a exposição exigida seria maior."
+   ],
+   "base": "Rybak et al., ASHP/IDSA/PIDS/SIDP, 2020"
+  },
+  {
+   "leitura": "parametros-pk",
+   "nivel": "avancado",
+   "enun": "Paciente séptico recebeu 7 litros de cristaloide nas primeiras 24 horas e mantém função renal normal. A meia-vida da amicacina, estimada por duas dosagens, está maior que a esperada. Qual interpretação é correta?",
+   "alts": [
+    "O aumento do Vd prolongou a meia-vida sem queda da depuração renal",
+    "A depuração renal caiu, pois meia-vida longa indica pior filtração",
+    "A dose de ataque deve ser reduzida, porque a eliminação ficou lenta",
+    "O Vd diminuiu com os fluidos e concentrou o fármaco no plasma",
+    "A meia-vida aumentou por saturação da secreção tubular do fármaco"
+   ],
+   "gab": 0,
+   "coment": "A meia-vida depende de dois parâmetros primários: t½ = 0,693 × Vd ÷ CL. Na sepse com ressuscitação volêmica e extravasamento capilar, o volume de distribuição de fármacos hidrofílicos como a amicacina aumenta. A depuração pode estar preservada ou até aumentada, e ainda assim a meia-vida fica maior. A implicação prática é dose de ataque maior por peso atual, com intervalo guiado por nível sérico, e não redução de dose.",
+   "porAlt": [
+    "Correta. t½ = 0,693 × Vd ÷ CL; um Vd maior prolonga a meia-vida com CL inalterada.",
+    "Errada. A meia-vida é parâmetro derivado; sozinha não indica qual dos dois mudou.",
+    "Errada. Com Vd maior, a dose de ataque precisa ser maior, não menor.",
+    "Errada. A ressuscitação volêmica aumenta o Vd de fármacos hidrofílicos.",
+    "Errada. Aminoglicosídeos são eliminados por filtração, sem saturação de secreção."
+   ],
+   "base": "Rowland & Tozer, 5ª ed., 2019; Roberts & Lipman, 2009"
+  },
+  {
+   "leitura": "farmacodinamica",
+   "nivel": "basico",
+   "enun": "O fentanil é cerca de 50 a 100 vezes mais potente que a morfina. Essa afirmação significa que:",
+   "alts": [
+    "o fentanil produz analgesia máxima maior que a da morfina em qualquer dose",
+    "o fentanil tem índice terapêutico maior que a morfina por ser mais potente",
+    "o fentanil é agonista pleno mu, enquanto a morfina é agonista parcial mu",
+    "o fentanil produz o mesmo efeito com dose numérica bem menor que a morfina",
+    "o fentanil tem mais eficácia intrínseca e trata a dor que a morfina não trata"
+   ],
+   "gab": 3,
+   "coment": "Potência reflete a quantidade de fármaco necessária para determinado efeito e se expressa pela EC50. Eficácia é o efeito máximo atingível. Fentanil e morfina são agonistas plenos do receptor mu e têm eficácia analgésica máxima semelhante; o fentanil apenas exige dose em microgramas. A maior potência tem implicação de segurança, porque erros de diluição são mais graves, mas não significa benefício clínico adicional.",
+   "porAlt": [
+    "Errada. Os dois são agonistas plenos mu, com eficácia máxima semelhante.",
+    "Errada. Potência e índice terapêutico são conceitos independentes.",
+    "Errada. A morfina também é agonista pleno do receptor mu.",
+    "Correta. Potência se refere à dose necessária para o efeito, expressa pela EC50.",
+    "Errada. Confunde potência com eficácia; ambos têm eficácia semelhante."
+   ],
+   "base": "Goodman & Gilman, 14ª ed., 2023"
+  },
+  {
+   "leitura": "farmacodinamica",
+   "nivel": "basico",
+   "enun": "Sobre o mecanismo da naloxona no paciente com depressão respiratória por opioide, assinale a correta.",
+   "alts": [
+    "É antagonista irreversível e protege até a eliminação completa do opioide",
+    "É antagonista competitivo, superável por concentração alta do agonista",
+    "É agonista parcial mu, que mantém analgesia enquanto reverte a sedação",
+    "É antagonista químico, que se liga ao opioide no plasma e o inativa",
+    "É antagonista fisiológico, que age em receptor adrenérgico contra a sedação"
+   ],
+   "gab": 1,
+   "coment": "Antagonistas competitivos reversíveis ocupam o mesmo sítio do agonista sem ativá-lo e deslocam a curva dose-resposta para a direita, sem reduzir o efeito máximo. Por isso a resposta depende da relação entre as concentrações dos dois. Como a naloxona dura de 30 a 90 minutos, menos que metadona, morfina na lesão renal ou fentanil após infusão prolongada, o efeito opioide pode reaparecer, e o paciente precisa de observação prolongada.",
+   "porAlt": [
+    "Errada. A ligação é reversível, e a naloxona dura menos que muitos opioides.",
+    "Correta. A naloxona compete com o opioide pelo receptor mu e desloca a curva para a direita.",
+    "Errada. Agonista parcial mu é a buprenorfina, não a naloxona.",
+    "Errada. Antagonismo químico é o da protamina com a heparina; a naloxona age no receptor.",
+    "Errada. A naloxona age no próprio receptor opioide, não em receptor adrenérgico."
+   ],
+   "base": "Goodman & Gilman, 14ª ed., 2023"
+  },
+  {
+   "leitura": "farmacodinamica",
+   "nivel": "intermediario",
+   "enun": "Homem, 45 anos, internado há 18 dias por politrauma, imobilizado, será reintubado após falha de extubação. O kit de intubação prescrito traz succinilcolina 1,5 mg/kg. Qual a intervenção farmacêutica?",
+   "alts": [
+    "Manter a succinilcolina e reduzir a dose à metade pela resistência ao bloqueio",
+    "Manter a succinilcolina e associar neostigmina para encurtar a despolarização",
+    "Trocar por cisatracúrio, pois a succinilcolina causa hipocalemia nesse cenário",
+    "Manter a succinilcolina, pois o risco de hipercalemia só existe nas 24 h iniciais",
+    "Trocar por rocurônio, pelo risco de hipercalemia por receptores extrajuncionais"
+   ],
+   "gab": 4,
+   "coment": "Em denervação, imobilização prolongada, queimaduras extensas, trauma muscular grave e doença crítica prolongada, o músculo passa a expressar receptores nicotínicos fora da placa motora. A succinilcolina despolariza todos eles e provoca efluxo maciço de potássio, com risco de arritmia grave (Martyn e Richtsfeld, 2006). A alternativa usual para sequência rápida é o rocurônio em dose adequada, com sugamadex disponível para reversão.",
+   "porAlt": [
+    "Errada. O problema é a hipercalemia, não a resistência; reduzir a dose não elimina o risco.",
+    "Errada. A neostigmina prolonga o bloqueio despolarizante e não previne a hipercalemia.",
+    "Errada. O risco é de hipercalemia; além disso, o cisatracúrio tem início lento para sequência rápida.",
+    "Errada. O risco começa cerca de 24 a 72 horas após a lesão e persiste enquanto dura a imobilização.",
+    "Correta. A imobilização prolongada induz receptores nicotínicos extrajuncionais, e a succinilcolina pode causar hipercalemia grave."
+   ],
+   "base": "Martyn & Richtsfeld, Anesthesiology, 2006"
+  },
+  {
+   "leitura": "farmacodinamica",
+   "nivel": "intermediario",
+   "enun": "Pelo modelo de Emax com coeficiente de Hill igual a 1, um fármaco está em concentração de 4 vezes a EC50. Se a concentração dobrar, o efeito passa de:",
+   "alts": [
+    "80% para 100% do efeito máximo teórico",
+    "50% para 80% do efeito máximo possível",
+    "40% para 80% do efeito máximo possível",
+    "80% para cerca de 89% do efeito máximo",
+    "80% para cerca de 95% do efeito máximo"
+   ],
+   "gab": 3,
+   "coment": "O modelo de Emax descreve uma curva hiperbólica: E = Emax × C ÷ (EC50 + C). Com concentração de 4 vezes a EC50 o efeito é 80%; dobrando para 8 vezes, sobe apenas para 89%. Na parte alta da curva, aumentos grandes de dose trazem ganho pequeno de efeito e aumento proporcional de toxicidade. É a base farmacodinâmica para limitar o escalonamento de diuréticos de alça e de opioides e buscar associação com outro mecanismo.",
+   "porAlt": [
+    "Errada. O modelo só se aproxima de 100% com concentrações muito altas.",
+    "Errada. O efeito de 50% corresponde a concentração igual à EC50.",
+    "Errada. Aplica proporcionalidade linear a uma curva hiperbólica.",
+    "Correta. E = 4 ÷ 5 = 80%; com 8 vezes a EC50, E = 8 ÷ 9, cerca de 89%.",
+    "Errada. Chegar a 95% exigiria concentração de 19 vezes a EC50."
+   ],
+   "base": "Rowland & Tozer, 5ª ed., 2019"
+  },
+  {
+   "leitura": "farmacodinamica",
+   "nivel": "avancado",
+   "enun": "Paciente em choque séptico com noradrenalina em dose alta, pH de 7,18 e lactato de 6 mmol/L. A equipe discute associar vasopressina. Qual justificativa farmacodinâmica é correta?",
+   "alts": [
+    "Aumenta a afinidade da noradrenalina pelo alfa-1 e desvia sua curva",
+    "Age no receptor V1, independente da via adrenérgica dessensibilizada",
+    "É agonista beta-1 potente e corrige a disfunção miocárdica da sepse",
+    "Bloqueia diretamente a guanilato ciclase e anula o óxido nítrico",
+    "Substitui a noradrenalina como primeira linha na Surviving Sepsis 2026"
+   ],
+   "gab": 1,
+   "coment": "No choque séptico, a resposta às catecolaminas cai por dessensibilização e redução dos receptores alfa-1, excesso de óxido nítrico, abertura de canais de potássio sensíveis a ATP e acidose. A vasopressina age em receptor diferente, o V1 acoplado a Gq, mantém efeito em acidose e repõe a deficiência relativa descrita no choque séptico (Landry e colaboradores, 1997). A recomendação atual mantém noradrenalina como primeira linha, com vasopressina associada.",
+   "porAlt": [
+    "Errada. A vasopressina não altera a afinidade da noradrenalina pelo receptor alfa-1.",
+    "Correta. O V1 usa a via Gq, independente dos receptores adrenérgicos, e repõe a deficiência relativa do hormônio.",
+    "Errada. A vasopressina não tem ação beta-1.",
+    "Errada. A vasopressina não é inibidor direto da guanilato ciclase.",
+    "Errada. A Surviving Sepsis 2026 mantém a noradrenalina como primeira linha."
+   ],
+   "base": "Landry et al., Circulation, 1997; Surviving Sepsis Campaign, 2026"
+  },
+  {
+   "leitura": "farmacodinamica",
+   "nivel": "avancado",
+   "enun": "Paciente em uso crônico de buprenorfina transdérmica chega à UTI com fratura de fêmur e dor intensa. A equipe prescreve bolus de morfina. Qual o raciocínio farmacodinâmico correto sobre a associação?",
+   "alts": [
+    "A buprenorfina é antagonista mu puro e anula por completo qualquer opioide pleno",
+    "A morfina desloca a buprenorfina com facilidade, pois tem afinidade muito maior",
+    "A associação é sinérgica porque as duas agem em receptores diferentes, mu e delta",
+    "A buprenorfina aumenta a eficácia máxima da morfina por agonismo inverso do mu",
+    "A buprenorfina, agonista parcial de alta afinidade, pode atenuar o efeito da morfina"
+   ],
+   "gab": 4,
+   "coment": "Agonistas parciais ocupam o receptor sem produzir a resposta máxima. Na presença de agonista pleno, competem pelos receptores e podem reduzir o efeito total. A buprenorfina tem afinidade muito alta pelo receptor mu e dissociação lenta, de modo que doses usuais de morfina podem ter efeito menor que o esperado. O manejo da dor aguda nesses pacientes exige plano específico, discutido com a equipe e com o serviço de dor, conforme protocolo institucional.",
+   "porAlt": [
+    "Errada. A buprenorfina é agonista parcial, não antagonista puro; o efeito do agonista pleno fica reduzido, não anulado.",
+    "Errada. A buprenorfina tem afinidade maior que a morfina pelo receptor mu.",
+    "Errada. As duas agem sobretudo no receptor mu.",
+    "Errada. A buprenorfina não é agonista inverso e não aumenta a eficácia da morfina.",
+    "Correta. Por ocupar receptores com alta afinidade e eficácia parcial, a buprenorfina compete com a morfina."
+   ],
+   "base": "Goodman & Gilman, 14ª ed., 2023"
+  },
+  {
+   "leitura": "sistema-nervoso-autonomo",
+   "nivel": "basico",
+   "enun": "Qual receptor medeia a bradicardia vagal no nó sinusal e é bloqueado pela atropina?",
+   "alts": [
+    "Muscarínico M3, acoplado à proteína Gq",
+    "Nicotínico Nn, canal iônico ganglionar",
+    "Muscarínico M2, acoplado à proteína Gi",
+    "Beta-1 cardíaco, acoplado à proteína Gs",
+    "Alfa-2 vascular, acoplado à proteína Gi"
+   ],
+   "gab": 2,
+   "coment": "A acetilcolina liberada pelo vago age em receptores muscarínicos M2 do nó sinusal e do nó atrioventricular, acoplados a Gi: reduzem o AMPc e abrem canais de potássio, o que diminui a frequência e a condução. A atropina é antagonista competitivo muscarínico e acelera a frequência. Por isso não funciona em coração transplantado, que não tem inervação vagal, e costuma falhar em bloqueios infranodais.",
+   "porAlt": [
+    "Errada. O M3 medeia secreção glandular, broncoconstrição e motilidade.",
+    "Errada. O Nn fica nos gânglios e na medula adrenal, e não é bloqueado pela atropina.",
+    "Correta. O M2 reduz o AMPc e abre canais de potássio no nó sinusal.",
+    "Errada. O beta-1 aumenta a frequência cardíaca; a atropina não age nele.",
+    "Errada. O alfa-2 age sobretudo no sistema nervoso central e na pré-sinapse."
+   ],
+   "base": "Goodman & Gilman, 14ª ed., 2023"
+  },
+  {
+   "leitura": "sistema-nervoso-autonomo",
+   "nivel": "basico",
+   "enun": "Sobre os efeitos metabólicos da adrenalina em infusão contínua, é correto afirmar que:",
+   "alts": [
+    "elevam glicemia e lactato e reduzem o potássio, por ação beta-2",
+    "reduzem glicemia e lactato e elevam o potássio, por ação alfa-1",
+    "elevam glicemia e potássio e reduzem o lactato, por ação beta-1",
+    "reduzem glicemia e potássio e elevam o lactato, por ação alfa-2",
+    "elevam o lactato só por hipoperfusão, sem ação metabólica direta"
+   ],
+   "gab": 0,
+   "coment": "A adrenalina estimula receptores beta-2 no fígado (glicogenólise e hiperglicemia), no músculo esquelético (glicólise aeróbia, com produção de piruvato e lactato) e nas membranas celulares (estímulo da Na/K-ATPase, com entrada de potássio e hipocalemia). Um lactato que sobe após o início da adrenalina pode ser efeito do fármaco, e a interpretação precisa considerar outros marcadores de perfusão, como enchimento capilar e diurese.",
+   "porAlt": [
+    "Correta. O beta-2 estimula glicogenólise, glicólise aeróbia e captação celular de potássio.",
+    "Errada. Os efeitos têm sentido oposto e não são mediados por alfa-1.",
+    "Errada. A adrenalina reduz o potássio sérico e eleva o lactato.",
+    "Errada. A glicemia sobe, e o receptor envolvido é o beta-2.",
+    "Errada. Há efeito metabólico direto; lactato alto nem sempre indica hipoperfusão."
+   ],
+   "base": "Goodman & Gilman, 14ª ed., 2023"
+  },
+  {
+   "leitura": "sistema-nervoso-autonomo",
+   "nivel": "intermediario",
+   "enun": "Prescrição de noradrenalina 0,1 mcg/kg/min, dose expressa em base, para paciente de 80 kg. A solução foi preparada com 4 ampolas de hemitartarato de norepinefrina 2 mg/mL, de 4 mL cada, em SG 5% até 250 mL. Qual a velocidade correta?",
+   "alts": [
+    "cerca de 3,8 mL/h",
+    "cerca de 15 mL/h",
+    "cerca de 30 mL/h",
+    "cerca de 6,3 mL/h",
+    "cerca de 7,5 mL/h"
+   ],
+   "gab": 4,
+   "coment": "Cada ampola brasileira tem 8 mg de hemitartarato, equivalentes a 4 mg de norepinefrina base. Quatro ampolas somam 16 mg de base em 250 mL, ou 64 mcg/mL. A velocidade é dose × peso × 60 ÷ concentração = 0,1 × 80 × 60 ÷ 64 = 7,5 mL/h. Se a concentração fosse tomada pelo sal com a dose pensada em base, a bomba seria programada em 3,75 mL/h e o paciente receberia metade do pretendido. Prescrição, rótulo e tabela devem usar a mesma forma.",
+   "porAlt": [
+    "Errada. Usa a concentração do sal, 128 mcg/mL, com dose em base: o paciente receberia metade.",
+    "Errada. Corresponde a 0,2 mcg/kg/min de base.",
+    "Errada. Corresponde a 0,4 mcg/kg/min de base.",
+    "Errada. Não corresponde a nenhuma conversão correta dos dados do enunciado.",
+    "Correta. São 16 mg de base em 250 mL, ou 64 mcg/mL; 0,1 × 80 × 60 ÷ 64 = 7,5 mL/h."
+   ],
+   "base": "Bula de hemitartarato de norepinefrina 2 mg/mL, ANVISA, consultada em 2026"
+  },
+  {
+   "leitura": "sistema-nervoso-autonomo",
+   "nivel": "intermediario",
+   "enun": "Idosa de 78 anos recebeu prometazina e amitriptilina. Apresenta agitação, FC de 124 bpm, temperatura de 38,4 °C, midríase, pele seca e quente, retenção urinária e ruídos intestinais reduzidos. Qual toxíndrome?",
+   "alts": [
+    "Simpaticomimética, por liberação de noradrenalina e dopamina",
+    "Colinérgica, por inibição da acetilcolinesterase nas sinapses",
+    "Anticolinérgica, por bloqueio muscarínico central e periférico",
+    "Serotoninérgica, por excesso de serotonina no sistema nervoso",
+    "Sedativo-hipnótica, por potencialização do receptor GABA-A"
+   ],
+   "gab": 2,
+   "coment": "Prometazina e amitriptilina têm forte atividade antimuscarínica. A síndrome anticolinérgica combina taquicardia, hipertermia, midríase, pele seca e ruborizada (o suor écrino é mediado por receptor muscarínico), retenção urinária, íleo e alteração do estado mental. A pele seca a distingue da simpaticomimética. O farmacêutico deve somar a carga anticolinérgica da prescrição de idosos e propor alternativas com menor efeito antimuscarínico.",
+   "porAlt": [
+    "Errada. Na simpaticomimética a pele é úmida e os ruídos intestinais estão presentes.",
+    "Errada. A colinérgica cursa com miose, secreções abundantes e bradicardia.",
+    "Correta. Pele seca, retenção urinária, íleo, midríase e agitação compõem o padrão anticolinérgico.",
+    "Errada. A serotoninérgica tem sudorese, diarreia, clônus e hiper-reflexia.",
+    "Errada. A sedativo-hipnótica não cursa com taquicardia, hipertermia e midríase."
+   ],
+   "base": "Goodman & Gilman, 14ª ed., 2023"
+  },
+  {
+   "leitura": "sistema-nervoso-autonomo",
+   "nivel": "avancado",
+   "enun": "Paciente em choque séptico com noradrenalina, fibrilação atrial de alta resposta e sinais de má perfusão. A equipe cogita trocar o vasopressor. Segundo a Surviving Sepsis Campaign 2026, qual conduta tem respaldo?",
+   "alts": [
+    "Manter a noradrenalina como primeira linha, preferida à dopamina no choque",
+    "Trocar a noradrenalina por dopamina, que preserva melhor a perfusão renal",
+    "Trocar a noradrenalina por dopamina em dose baixa para efeito D1 renal",
+    "Iniciar dobutamina isolada, retirando o vasopressor para reduzir a pós-carga",
+    "Trocar a noradrenalina por isoprenalina para melhorar o débito cardíaco"
+   ],
+   "gab": 0,
+   "coment": "A Surviving Sepsis Campaign 2026 recomenda noradrenalina como vasopressor de primeira linha no choque séptico, preferida a dopamina, adrenalina e selepressina. O ensaio SOAP II mostrou mais eventos arrítmicos com dopamina, e o estudo ANZICS de 2000 afastou o benefício renal da dopamina em dose baixa. Em paciente com taquiarritmia, a noradrenalina é especialmente preferível, porque eleva a pressão com pouco efeito cronotrópico.",
+   "porAlt": [
+    "Correta. A noradrenalina é o vasopressor de primeira linha, com menos arritmia que a dopamina.",
+    "Errada. A dopamina não preserva a função renal e causa mais arritmias.",
+    "Errada. A chamada dose renal de dopamina não protege o rim (ANZICS, 2000).",
+    "Errada. Dobutamina isolada em vasoplegia pode agravar a hipotensão.",
+    "Errada. A isoprenalina causa vasodilatação e taquicardia, inadequadas nesse quadro."
+   ],
+   "base": "Surviving Sepsis Campaign, 2026; De Backer et al., SOAP II, 2010"
+  },
+  {
+   "leitura": "sistema-nervoso-autonomo",
+   "nivel": "avancado",
+   "enun": "Paciente de 70 kg em pós-operatório recebeu rocurônio e apresenta bloqueio neuromuscular residual. Está prescrita neostigmina isolada. Qual a intervenção farmacêutica correta e seu fundamento?",
+   "alts": [
+    "Trocar a neostigmina por succinilcolina, que encerra o bloqueio competitivo",
+    "Trocar a neostigmina por fisostigmina, de ação central e efeito mais rápido",
+    "Manter apenas a neostigmina, pois seus efeitos seriam só os nicotínicos",
+    "Associar atropina ou glicopirrolato, pelos efeitos muscarínicos da neostigmina",
+    "Associar mais uma dose de rocurônio para completar a reversão do bloqueio"
+   ],
+   "gab": 3,
+   "coment": "A neostigmina inibe a acetilcolinesterase e aumenta a acetilcolina na fenda, o que desloca o bloqueador competitivo da placa motora. Como o efeito não é seletivo, a acetilcolina também se acumula nos receptores muscarínicos, causando bradicardia, broncorreia, broncoespasmo e hipermotilidade. Por isso a reversão é feita com anticolinérgico associado. Quando o bloqueio por rocurônio ou vecurônio é profundo, o sugamadex é a alternativa, por encapsular o bloqueador.",
+   "porAlt": [
+    "Errada. A succinilcolina é agonista despolarizante e aprofundaria a paralisia.",
+    "Errada. A fisostigmina é usada em síndrome anticolinérgica central, não em reversão de bloqueio.",
+    "Errada. A neostigmina aumenta a acetilcolina em receptores muscarínicos e nicotínicos.",
+    "Correta. A neostigmina eleva a acetilcolina também nas sinapses muscarínicas, com bradicardia e broncorreia.",
+    "Errada. Uma dose adicional de rocurônio aprofundaria ainda mais o bloqueio."
+   ],
+   "base": "Goodman & Gilman, 14ª ed., 2023"
+  },
+  {
+   "leitura": "pk-paciente-critico",
+   "nivel": "basico",
+   "enun": "Paciente de 80 kg com choque séptico e creatinina de 2,6 mg/dL recebe a primeira dose de vancomicina. Qual a conduta correta quanto à dose de ataque?",
+   "alts": [
+    "Metade da dose usual, porque a lesão renal reduz a depuração do fármaco",
+    "Dose plena de 20 a 35 mg/kg de peso atual, sem reduzir pela função renal",
+    "Dose de 10 mg/kg de peso ideal, para evitar nefrotoxicidade já na primeira dose",
+    "Adiar a vancomicina até a creatinina estabilizar e permitir o cálculo da TFG",
+    "Dose plena, mas apenas quando a diurese estiver acima de 0,5 mL/kg por hora"
+   ],
+   "gab": 1,
+   "coment": "A dose de ataque é calculada por Vd × concentração-alvo e, por isso, não depende da função renal ou hepática. No paciente crítico, o volume de distribuição de fármacos hidrofílicos está aumentado por ressuscitação volêmica e extravasamento capilar, o que justifica ataque de 20 a 35 mg/kg de peso atual (máximo de 3.000 mg) para vancomicina. O ajuste pela função renal se aplica à manutenção, guiada pela AUC.",
+   "porAlt": [
+    "Errada. Reduzir a primeira dose atrasa o alcance do alvo terapêutico sem ganho de segurança.",
+    "Correta. A dose de ataque depende do volume de distribuição, não da eliminação.",
+    "Errada. Peso ideal e dose baixa subdosam justamente quando o volume está expandido.",
+    "Errada. Na sepse, o antimicrobiano não deve ser adiado.",
+    "Errada. A diurese não condiciona a dose de ataque; ela orienta a manutenção."
+   ],
+   "base": "Rybak et al., ASHP/IDSA/PIDS/SIDP, 2020"
+  },
+  {
+   "leitura": "pk-paciente-critico",
+   "nivel": "basico",
+   "enun": "Comparando antimicrobianos hidrofílicos e lipofílicos no paciente crítico, é correto afirmar que os hidrofílicos:",
+   "alts": [
+    "têm Vd pequeno, eliminação renal e sofrem mais com fluidos e disfunção renal",
+    "têm Vd grande, eliminação hepática e sofrem pouco com a expansão de volume",
+    "têm Vd pequeno, eliminação hepática e alta penetração intracelular nos tecidos",
+    "têm Vd grande, eliminação renal e concentração pouco alterada por fluidos",
+    "têm Vd pequeno, eliminação renal e penetração intracelular alta nos tecidos"
+   ],
+   "gab": 0,
+   "coment": "Antimicrobianos hidrofílicos ficam restritos ao plasma e ao interstício, têm volume de distribuição pequeno, penetram pouco nas células e são eliminados pelo rim sem metabolização relevante. Por isso sofrem muito com a expansão do extracelular (queda da concentração inicial) e com as mudanças de filtração glomerular, nos dois sentidos. Lipofílicos têm volume grande, boa penetração intracelular e eliminação hepática.",
+   "porAlt": [
+    "Correta. É o perfil de betalactâmicos, aminoglicosídeos, glicopeptídeos e polimixinas.",
+    "Errada. Esse é o perfil dos lipofílicos, como quinolonas e macrolídeos.",
+    "Errada. Os hidrofílicos têm eliminação renal e baixa penetração intracelular.",
+    "Errada. O Vd dos hidrofílicos é pequeno, e a expansão de volume os afeta muito.",
+    "Errada. Erra na penetração intracelular, que é baixa nos hidrofílicos."
+   ],
+   "base": "Blot, Pea & Lipman, Adv Drug Deliv Rev, 2014"
+  },
+  {
+   "leitura": "pk-paciente-critico",
+   "nivel": "intermediario",
+   "enun": "Homem de 28 anos, politraumatizado, 5º dia de UTI, creatinina de 0,5 mg/dL, diurese de 3.600 mL em 24 horas, SOFA de 3. Recebe meropeném 1 g a cada 8 horas em 30 minutos para pneumonia associada à ventilação. Qual a melhor conduta farmacêutica?",
+   "alts": [
+    "Reduzir a dose do meropeném, pois a creatinina baixa indica má filtração",
+    "Manter o esquema atual, pois a creatinina normal indica boa exposição",
+    "Trocar o meropeném por ertapeném, cuja meia-vida longa evita o problema",
+    "Medir a depuração de creatinina na urina e propor infusão prolongada",
+    "Solicitar nova creatinina em 48 horas, mantendo a dose atual do fármaco"
+   ],
+   "gab": 3,
+   "coment": "Depuração renal aumentada é definida por depuração de creatinina medida de 130 mL/min/1,73 m² ou mais e é frequente em jovens traumatizados com SOFA baixo. As fórmulas baseadas em creatinina sérica a subestimam, e a medida em urina de 8 a 24 horas é o método indicado. Nesses pacientes, betalactâmicos em infusão curta ficam abaixo da CIM em parte do intervalo; infusão prolongada ou contínua e dose adequada são as respostas, com TDM quando disponível.",
+   "porAlt": [
+    "Errada. Creatinina baixa em jovem traumatizado sugere depuração alta, não baixa.",
+    "Errada. Creatinina normal não garante exposição; ela pode indicar hiperfiltração.",
+    "Errada. O ertapeném não cobre Pseudomonas e também sofre com depuração aumentada.",
+    "Correta. O perfil sugere depuração renal aumentada, subexposição provável e benefício de infusão prolongada.",
+    "Errada. Repetir creatinina não mede depuração aumentada nem corrige a subexposição."
+   ],
+   "base": "Udy et al., Crit Care, 2013; Hong et al., 2023 e 2026"
+  },
+  {
+   "leitura": "pk-paciente-critico",
+   "nivel": "intermediario",
+   "enun": "Paciente em choque séptico com noradrenalina 0,6 mcg/kg/min recebe enoxaparina 40 mg por via subcutânea como profilaxia de tromboembolismo. Qual a preocupação farmacocinética pertinente?",
+   "alts": [
+    "A noradrenalina desloca a enoxaparina das proteínas e aumenta o efeito dela",
+    "A perfusão cutânea reduzida diminui a absorção e a atividade anti-Xa obtida",
+    "A vasoconstrição acelera a absorção e eleva o risco de sangramento maior",
+    "A enoxaparina passa a ser eliminada pelo fígado, o que dispensa ajuste renal",
+    "A absorção subcutânea independe da perfusão, pois a difusão é passiva"
+   ],
+   "gab": 1,
+   "coment": "A absorção por via subcutânea depende da perfusão da pele e do tecido subcutâneo, reduzida pela vasoconstrição do choque e pelo uso de vasopressores, além do edema. Dörffler-Melly e colaboradores (2002) mostraram atividade anti-Xa menor em pacientes críticos com vasopressor. A consequência prática é discutir com a equipe a monitorização do anti-Xa ou alternativa por via intravenosa, conforme o protocolo da instituição.",
+   "porAlt": [
+    "Errada. Não há interação de ligação proteica relevante entre os dois.",
+    "Correta. Em pacientes com vasopressor, a atividade anti-Xa após dose profilática foi menor.",
+    "Errada. A vasoconstrição reduz, e não acelera, a absorção.",
+    "Errada. A enoxaparina continua com eliminação predominantemente renal.",
+    "Errada. A absorção subcutânea depende do fluxo sanguíneo local."
+   ],
+   "base": "Dörffler-Melly et al., Lancet, 2002"
+  },
+  {
+   "leitura": "pk-paciente-critico",
+   "nivel": "avancado",
+   "enun": "Paciente com albumina de 1,8 g/dL e depuração renal aumentada recebe ceftriaxona 2 g uma vez ao dia para infecção grave. Qual a análise farmacocinética correta?",
+   "alts": [
+    "A hipoalbuminemia reduz a fração livre e prolonga o efeito antimicrobiano",
+    "A ceftriaxona não se liga à albumina, de modo que a albumina não interfere",
+    "O aumento da depuração é compensado pela eliminação biliar da ceftriaxona",
+    "A conduta indicada é repor albumina para restaurar a ligação e a exposição",
+    "A fração livre alta é eliminada rápido e pode encurtar o tempo acima da CIM"
+   ],
+   "gab": 4,
+   "coment": "Ceftriaxona, ertapenem e teicoplanina são muito ligados à albumina. Na hipoalbuminemia, a fração livre aumenta e, como é ela que se filtra, a depuração total sobe e o volume de distribuição aparente também. O tempo com concentração livre acima da CIM diminui, efeito amplificado pela depuração renal aumentada. As respostas possíveis são fracionar a dose diária, aumentar a dose ou escolher outro agente, conforme o foco e o patógeno.",
+   "porAlt": [
+    "Errada. A hipoalbuminemia aumenta a fração livre.",
+    "Errada. A ceftriaxona é muito ligada à albumina.",
+    "Errada. A via biliar não compensa por completo a eliminação aumentada da fração livre.",
+    "Errada. Repor albumina para corrigir farmacocinética não tem respaldo.",
+    "Correta. Com mais fármaco livre e filtração alta, a concentração cai antes do fim do intervalo."
+   ],
+   "base": "Ulldemolins et al., Clin Pharmacokinet, 2011"
+  },
+  {
+   "leitura": "pk-paciente-critico",
+   "nivel": "avancado",
+   "enun": "Paciente em hemodiafiltração venovenosa contínua com taxa de efluente usual recebe meropeném. O plantonista propõe usar a dose de anúria da tabela de bolso, 500 mg a cada 24 horas. Qual a melhor análise?",
+   "alts": [
+    "A proposta é adequada, pois a diálise contínua remove muito pouco meropeném",
+    "A proposta é adequada, pois o meropeném tem eliminação predominantemente biliar",
+    "A proposta subdosa, pois a depuração do circuito soma-se à residual do paciente",
+    "A proposta superdosa, pois o meropeném se acumula muito na terapia contínua",
+    "A proposta é indiferente, pois a dose de ataque já garante a exposição do dia"
+   ],
+   "gab": 2,
+   "coment": "Na terapia renal substitutiva contínua, a depuração extracorpórea é aproximadamente a taxa de efluente multiplicada pelo coeficiente de peneiramento, próximo da fração livre. Para fármacos pequenos, hidrofílicos e pouco ligados a proteínas, como o meropeném, essa depuração pode equivaler à de uma filtração moderada, e somar-se à função renal residual. Aplicar tabelas de anúria resulta em subdose, um dos erros mais comuns nesse cenário.",
+   "porAlt": [
+    "Errada. O meropeném é pequeno, hidrofílico e pouco ligado a proteínas: é bem removido.",
+    "Errada. O meropeném tem eliminação predominantemente renal.",
+    "Correta. A depuração extracorpórea aproxima-se do efluente vezes o coeficiente de peneiramento.",
+    "Errada. O erro típico nesse cenário é a subdose, não o acúmulo.",
+    "Errada. A dose de ataque não sustenta a exposição ao longo do intervalo."
+   ],
+   "base": "Abdul-Aziz et al., Intensive Care Med, 2020; Roberts et al., Lancet Infect Dis, 2014"
+  },
+  {
+   "leitura": "monitorizacao-terapeutica",
+   "nivel": "basico",
+   "enun": "Paciente em vancomicina por MRSA. O laboratório informa vale de 17 mg/L, e o residente comemora 'nível dentro do alvo'. Qual a análise correta segundo o consenso de 2020?",
+   "alts": [
+    "O alvo continua sendo o vale de 15 a 20 mg/L para infecções graves por MRSA",
+    "O alvo é a AUC de 400 a 600; vales de 15 a 20 podem exceder essa exposição",
+    "O alvo é o pico de 30 a 40 mg/L, e o vale não tem utilidade na vancomicina",
+    "O vale de 17 mg/L indica subdose e exige aumento imediato da dose diária",
+    "O vale só vale como alvo quando a CIM do isolado for menor que 1 mg/L"
+   ],
+   "gab": 1,
+   "coment": "O consenso revisado de 2020 (ASHP, IDSA, PIDS e SIDP) adotou a AUC de 24 horas entre 400 e 600 mg·h/L, assumindo CIM de 1 mg/L, e afirma que a monitorização apenas pelo vale com meta de 15 a 20 mg/L não é mais recomendada, porque esses vales frequentemente correspondem a AUC acima de 600, com mais lesão renal aguda sem ganho de eficácia. A estimativa bayesiana é o método preferido.",
+   "porAlt": [
+    "Errada. O vale de 15 a 20 mg/L foi abandonado como alvo por dados de nefrotoxicidade.",
+    "Correta. O consenso substituiu o alvo de vale pelo de exposição e abandonou o vale isolado.",
+    "Errada. O pico isolado nunca foi alvo; o pico serve para calcular a AUC.",
+    "Errada. Um vale de 17 mg/L costuma corresponder a exposição alta, não baixa.",
+    "Errada. O consenso assume CIM de 1 mg/L e adota a AUC como alvo."
+   ],
+   "base": "Rybak et al., ASHP/IDSA/PIDS/SIDP, 2020"
+  },
+  {
+   "leitura": "monitorizacao-terapeutica",
+   "nivel": "basico",
+   "enun": "Paciente recebe vancomicina em infusão contínua e a concentração no equilíbrio é de 18 mg/L. Qual a AUC de 24 horas e a interpretação?",
+   "alts": [
+    "216 mg·h/L, abaixo do alvo, exigindo aumento imediato da dose diária",
+    "648 mg·h/L, acima do alvo, exigindo redução imediata da dose diária",
+    "180 mg·h/L, muito abaixo do alvo, exigindo dose de ataque adicional",
+    "864 mg·h/L, acima do alvo, com risco elevado de lesão renal aguda",
+    "432 mg·h/L, dentro do alvo de 400 a 600 do consenso de vancomicina"
+   ],
+   "gab": 4,
+   "coment": "Na infusão contínua, a concentração é estável, e a área sob a curva de 24 horas é simplesmente a concentração multiplicada por 24. Com Css de 18 mg/L, a AUC24 é 432 mg·h/L, dentro da faixa de 400 a 600. O consenso sugere, para infusão contínua, ataque de 15 a 20 mg/kg e manutenção de 30 a 40 mg/kg por dia, até 60 mg/kg por dia, visando concentração de equilíbrio de 20 a 25 mg/L.",
+   "porAlt": [
+    "Errada. Corresponderia a Css de 9 mg/L.",
+    "Errada. Corresponderia a Css de 27 mg/L.",
+    "Errada. Não corresponde a nenhuma conversão correta do enunciado.",
+    "Errada. Corresponderia a Css de 36 mg/L.",
+    "Correta. AUC24 = Css × 24 = 18 × 24 = 432 mg·h/L."
+   ],
+   "base": "Rybak et al., ASHP/IDSA/PIDS/SIDP, 2020"
+  },
+  {
+   "leitura": "monitorizacao-terapeutica",
+   "nivel": "intermediario",
+   "enun": "Paciente com estado de mal epiléptico usa fenitoína. Albumina de 2,0 g/dL, função renal normal, nível total de 7 mg/L. Qual o valor corrigido por Winter-Tozer e a conduta?",
+   "alts": [
+    "7 mg/L, abaixo da faixa: administrar dose adicional de ataque de 10 mg/kg",
+    "3,5 mg/L, muito abaixo da faixa: dobrar de imediato a dose de manutenção",
+    "14 mg/L, dentro da faixa: manter a dose e reavaliar o controle clínico",
+    "28 mg/L, acima da faixa: suspender a fenitoína e trocar por outro fármaco",
+    "10 mg/L, no limite inferior: aumentar a manutenção em 100 mg por dia"
+   ],
+   "gab": 2,
+   "coment": "A fenitoína é muito ligada à albumina, e na hipoalbuminemia o nível total subestima a fração livre ativa. A equação de Winter-Tozer estima o total equivalente com albumina normal: medida ÷ (0,2 × albumina + 0,1). Com 7 mg/L e albumina de 2,0 g/dL, o resultado é 14 mg/L, dentro da faixa de 10 a 20. Em disfunção renal grave o coeficiente passa a 0,1. A correção tem desempenho limitado, e a fenitoína livre é preferível quando disponível.",
+   "porAlt": [
+    "Errada. Ignora a correção pela albumina e expõe o paciente a excesso de fármaco.",
+    "Errada. Inverte a correção: a hipoalbuminemia faz o total subestimar, não superestimar.",
+    "Correta. 7 ÷ (0,2 × 2,0 + 0,1) = 7 ÷ 0,5 = 14 mg/L, dentro de 10 a 20 mg/L.",
+    "Errada. Usaria o coeficiente de diálise sem indicação, com função renal normal.",
+    "Errada. Aplica correção incorreta e propõe aumento desnecessário."
+   ],
+   "base": "Kiang & Ensom, Ann Pharmacother, 2016"
+  },
+  {
+   "leitura": "monitorizacao-terapeutica",
+   "nivel": "intermediario",
+   "enun": "Paciente em uso de digoxina para insuficiência cardíaca teve nível colhido 2 horas após a dose oral: 2,1 ng/mL, sem sintomas de toxicidade. Qual a conduta correta?",
+   "alts": [
+    "Repetir a coleta no mínimo 6 a 8 horas após a dose, pela fase de distribuição",
+    "Suspender a digoxina e indicar antídoto, pois o nível está em faixa tóxica",
+    "Reduzir já a dose à metade, pois o nível passou de 2 ng/mL nessa amostra",
+    "Manter o esquema e repetir o nível em 7 dias, pois o valor é o do equilíbrio",
+    "Considerar o valor válido, pois a digoxina se distribui de forma instantânea"
+   ],
+   "gab": 0,
+   "coment": "A digoxina segue modelo de dois compartimentos, com distribuição lenta para miocárdio e músculo esquelético. Amostras colhidas antes de 6 a 8 horas após a dose refletem a fase de distribuição e superestimam a concentração no sítio de ação. A coleta correta é no mínimo 6 a 8 horas após a dose ou imediatamente antes da próxima. Na insuficiência cardíaca a meta é de 0,5 a 0,9 ng/mL, e valores de 1,2 ng/mL ou mais se associaram a maior mortalidade.",
+   "porAlt": [
+    "Correta. Amostra precoce reflete a fase de distribuição e superestima a concentração tecidual.",
+    "Errada. O nível não é interpretável, e não há sinais de toxicidade.",
+    "Errada. Decidir com base em amostra colhida na fase de distribuição leva a subdose.",
+    "Errada. O valor colhido 2 horas após a dose não representa o equilíbrio tecidual.",
+    "Errada. A digoxina tem fase de distribuição lenta, de 6 a 8 horas."
+   ],
+   "base": "Rathore et al., JAMA, 2003; AHA/ACC/HFSA, 2022"
+  },
+  {
+   "leitura": "monitorizacao-terapeutica",
+   "nivel": "avancado",
+   "enun": "Amicacina 25 mg/kg em infusão de 30 minutos. Nível de 70 mg/L colhido 30 minutos após o fim da infusão (1 hora do início) e de 14 mg/L às 8 horas do início. Qual a análise?",
+   "alts": [
+    "Meia-vida de 7 horas e pico abaixo do alvo; aumentar a dose na próxima vez",
+    "Meia-vida de 3 horas e pico acima do alvo; reduzir a dose pela metade agora",
+    "Meia-vida de 1,5 hora e pico dentro do alvo; encurtar o intervalo para 12 horas",
+    "Meia-vida de 3 horas e pico dentro do alvo; intervalo de 24 horas adequado",
+    "Meia-vida de 5 horas e pico abaixo do alvo; associar outro aminoglicosídeo"
+   ],
+   "gab": 3,
+   "coment": "Com duas concentrações, ke = ln(C1 ÷ C2) ÷ intervalo entre elas = ln 5 ÷ 7 = 0,23 hora elevada a menos um, e a meia-vida é 3 horas. O pico extrapolado ao fim da infusão fica em cerca de 78 mg/L, dentro do alvo de 60 a 80 mg/L no choque séptico, que corresponde a Cmax/CIM de 8 a 10 para patógenos no limite de sensibilidade. Com essa meia-vida, a concentração cai abaixo de 2,5 mg/L bem antes de 24 horas, o que valida o intervalo diário.",
+   "porAlt": [
+    "Errada. A meia-vida calculada é de 3 horas, e o pico está na faixa de 60 a 80 mg/L.",
+    "Errada. O pico de cerca de 78 mg/L está dentro do alvo de 60 a 80 mg/L.",
+    "Errada. A meia-vida está incorreta, e encurtar o intervalo eleva o risco de toxicidade.",
+    "Correta. ke = ln(70 ÷ 14) ÷ 7 = 0,23; meia-vida de 3 horas e pico extrapolado de cerca de 78 mg/L.",
+    "Errada. A meia-vida está incorreta, e associar dois aminoglicosídeos não tem indicação."
+   ],
+   "base": "Taccone et al., Crit Care, 2010; Abdul-Aziz et al., 2020"
+  },
+  {
+   "leitura": "monitorizacao-terapeutica",
+   "nivel": "avancado",
+   "enun": "Sobre a monitorização de betalactâmicos em pacientes críticos, assinale a alternativa correta.",
+   "alts": [
+    "O alvo sugerido é 40% fT acima da CIM, com benefício de mortalidade comprovado",
+    "Os ensaios TARGET e DOLPHIN mostraram redução clara de mortalidade com TDM",
+    "O alvo sugerido é 100% fT acima da CIM, e o benefício clínico ainda é incerto",
+    "A coleta indicada em infusão intermitente é o pico, 1 hora após o fim da infusão",
+    "A monitorização é dispensável, pois os betalactâmicos têm exposição previsível"
+   ],
+   "gab": 2,
+   "coment": "O posicionamento de 2020 da ESICM com ESCMID e IATDMCT sugere, para pacientes críticos, manter a concentração livre acima da CIM durante todo o intervalo, com vale colhido até 30 minutos antes da dose seguinte, 24 a 48 horas após o início. Os limiares de toxicidade citados incluem vale acima de 44,5 mg/L para meropeném e de 20 mg/L para cefepima. Os ensaios TARGET e DOLPHIN não mostraram benefício nos desfechos primários, e a recomendação atual é usar TDM onde houver estrutura e resultado rápido.",
+   "porAlt": [
+    "Errada. O alvo de 40% a 50% vem de modelos animais e não é o recomendado no crítico.",
+    "Errada. Nenhum dos dois mostrou benefício no desfecho primário.",
+    "Correta. O posicionamento de 2020 sugere 100% fT acima da CIM; os ensaios ainda não confirmaram desfecho.",
+    "Errada. A coleta indicada é o vale, até 30 minutos antes da dose seguinte.",
+    "Errada. A exposição é justamente muito variável no paciente crítico."
+   ],
+   "base": "Abdul-Aziz et al., Intensive Care Med, 2020; Hagel et al., 2022; Ewoldt et al., 2022"
+  },
+  {
+   "leitura": "calculos-farmaceuticos",
+   "nivel": "basico",
+   "enun": "Dobutamina 250 mg diluída em volume final de 250 mL. Paciente de 70 kg com prescrição de 5 mcg/kg/min. Qual a velocidade de infusão?",
+   "alts": [
+    "cerca de 21 mL/h",
+    "cerca de 11 mL/h",
+    "cerca de 42 mL/h",
+    "cerca de 35 mL/h",
+    "cerca de 63 mL/h"
+   ],
+   "gab": 0,
+   "coment": "A concentração é 250 mg em 250 mL, ou 1 mg/mL, equivalente a 1.000 mcg/mL. A fórmula é mL/h = dose × peso × 60 ÷ concentração: 5 × 70 × 60 ÷ 1.000 = 21.000 ÷ 1.000 = 21 mL/h. O fator 60 converte a dose por minuto em dose por hora; esquecê-lo produz erro de sessenta vezes, um dos mais graves em bomba de infusão.",
+   "porAlt": [
+    "Correta. Concentração de 1.000 mcg/mL; 5 × 70 × 60 ÷ 1.000 = 21 mL/h.",
+    "Errada. Corresponde a cerca de 2,6 mcg/kg/min nessa solução.",
+    "Errada. Corresponde a 10 mcg/kg/min, o dobro do prescrito.",
+    "Errada. Corresponde a cerca de 8,3 mcg/kg/min nessa solução.",
+    "Errada. Corresponde a 15 mcg/kg/min, o triplo do prescrito."
+   ],
+   "base": "ISMP, 2024; bula da dobutamina"
+  },
+  {
+   "leitura": "calculos-farmaceuticos",
+   "nivel": "basico",
+   "enun": "Quantos mL de cloreto de potássio 19,1% contêm 30 mEq de potássio?",
+   "alts": [
+    "cerca de 22,4 mL",
+    "cerca de 5,9 mL",
+    "cerca de 30,3 mL",
+    "cerca de 11,7 mL",
+    "cerca de 15,7 mL"
+   ],
+   "gab": 3,
+   "coment": "O KCl 19,1% tem 191 mg/mL. A massa molar do cloreto de potássio é 74,55 g/mol, e o potássio é monovalente, então 191 ÷ 74,55 = 2,56 mmol, ou 2,56 mEq por mL. Para 30 mEq: 30 ÷ 2,56 = 11,7 mL. Trocar a apresentação de 19,1% pela de 10% no cálculo quase dobra a dose administrada, e por isso a prescrição deve ser em mEq, com a concentração explícita, nunca em ampolas.",
+   "porAlt": [
+    "Errada. Usa a concentração do KCl 10%, 1,34 mEq/mL.",
+    "Errada. Corresponde a 15 mEq de potássio, metade do prescrito.",
+    "Errada. Assume cerca de 1 mEq/mL, que não corresponde a apresentação usual.",
+    "Correta. 30 ÷ 2,56 mEq/mL = 11,7 mL.",
+    "Errada. Corresponde a cerca de 40 mEq."
+   ],
+   "base": "Bulas de cloreto de potássio 19,1% e 10%, ANVISA, consultadas em 2026"
+  },
+  {
+   "leitura": "calculos-farmaceuticos",
+   "nivel": "intermediario",
+   "enun": "Noradrenalina em bomba a 12 mL/h, solução com 64 mcg/mL de base, paciente de 60 kg. Qual a dose infundida?",
+   "alts": [
+    "0,13 mcg/kg/min",
+    "0,21 mcg/kg/min",
+    "0,43 mcg/kg/min",
+    "0,64 mcg/kg/min",
+    "0,11 mcg/kg/min"
+   ],
+   "gab": 1,
+   "coment": "O cálculo inverso parte da bomba: dose = mL/h × concentração ÷ (peso × 60) = 12 × 64 ÷ 3.600 = 0,21 mcg/kg/min. Fazer esse cálculo na visita, a partir do rótulo e do peso de prescrição, é a forma prática de auditar infusões e detectar discrepâncias, como peso desatualizado na bomba, solução fora do padrão ou troca de forma entre sal e base da noradrenalina.",
+   "porAlt": [
+    "Errada. Corresponde a metade da dose, como se a concentração fosse 128 mcg/mL.",
+    "Correta. 12 × 64 ÷ (60 × 60) = 768 ÷ 3.600 = 0,21 mcg/kg/min.",
+    "Errada. Corresponde ao dobro da dose correta.",
+    "Errada. Não resulta de nenhuma conversão correta dos dados.",
+    "Errada. Corresponde a cerca de 6 mL/h nessa solução."
+   ],
+   "base": "Bula de norepinefrina 2 mg/mL, ANVISA, 2026; ISMP, 2024"
+  },
+  {
+   "leitura": "calculos-farmaceuticos",
+   "nivel": "intermediario",
+   "enun": "Prescrição de 20 mmol de fósforo com fosfato de potássio 2 mEq/mL (1,1 mmol de fósforo por mL) em paciente com potássio sérico de 5,3 mEq/L e lesão renal aguda. Qual a análise farmacêutica?",
+   "alts": [
+    "São 18 mL, que trazem 18 mEq de potássio: seguro no cenário apresentado",
+    "São 10 mL, que trazem 20 mEq de potássio: seguro no cenário apresentado",
+    "São 40 mL, que trazem 40 mEq de potássio: reduzir apenas a velocidade",
+    "São 20 mL sem potássio associado, pois o sal contém apenas o fosfato",
+    "São 18 mL, que trazem 36 mEq de potássio: discutir alternativa com a equipe"
+   ],
+   "gab": 4,
+   "coment": "Cada mL de fosfato de potássio 2 mEq/mL fornece 2 mEq de potássio e cerca de 1,1 mmol de fósforo. Repor 20 mmol de fósforo significa infundir cerca de 36 mEq de potássio, dose inadequada em paciente com potássio de 5,3 mEq/L e lesão renal aguda. A intervenção é sinalizar a carga de cátion, propor fonte de fosfato sem potássio quando disponível ou reavaliar a urgência da reposição com a equipe.",
+   "porAlt": [
+    "Errada. Cada mL traz 2 mEq de potássio, e não 1.",
+    "Errada. Erra o volume e subestima a carga de potássio.",
+    "Errada. Erra o volume, e o problema não se resolve só com a velocidade.",
+    "Errada. O sal é fosfato de potássio, e o cátion acompanha a dose.",
+    "Correta. 20 ÷ 1,1 = 18 mL; 18 × 2 = 36 mEq de potássio, muito em hipercalemia e lesão renal."
+   ],
+   "base": "Bula de fosfato de potássio 2 mEq/mL, ANVISA, 2026; ASPEN, 2014"
+  },
+  {
+   "leitura": "calculos-farmaceuticos",
+   "nivel": "avancado",
+   "enun": "Para preparar 500 mL de salina 3% a partir de soro fisiológico 0,9% e cloreto de sódio 20%, quanto de NaCl 20% deve ser acrescentado, retirando volume igual do frasco?",
+   "alts": [
+    "Cerca de 30 mL",
+    "Cerca de 75 mL",
+    "Cerca de 15 mL",
+    "Cerca de 55 mL",
+    "Cerca de 100 mL"
+   ],
+   "gab": 3,
+   "coment": "A meta é 500 mL a 3%, ou 15 g de cloreto de sódio. Chamando de x o volume de NaCl 20% (0,2 g/mL) e considerando que o restante é soro fisiológico (0,009 g/mL): 0,2x + 0,009 × (500 − x) = 15, logo 0,191x = 10,5 e x = 55 mL. A conferência mostra 445 mL de soro (4 g) mais 55 mL de NaCl 20% (11 g), totalizando 15 g. Preparos hipertônicos devem seguir protocolo institucional quanto a via, velocidade e rotulagem.",
+   "porAlt": [
+    "Errada. Forneceria cerca de 10,2 g de NaCl, ou cerca de 2%.",
+    "Errada. Forneceria cerca de 18,8 g, acima de 3%.",
+    "Errada. Forneceria cerca de 7,4 g, menos de 1,5%.",
+    "Correta. 0,2x + 0,009 × (500 − x) = 15 g; x = 55 mL.",
+    "Errada. Forneceria cerca de 23,6 g, muito acima do alvo."
+   ],
+   "base": "ASPEN, 2014; bula de cloreto de sódio 20%, ANVISA, 2026"
+  },
+  {
+   "leitura": "calculos-farmaceuticos",
+   "nivel": "avancado",
+   "enun": "Homem de 175 cm e 120 kg receberá gentamicina em dose estendida de 5 mg/kg. Usando peso ajustado, qual a dose aproximada?",
+   "alts": [
+    "600 mg, calculada sobre o peso atual de 120 kg do paciente",
+    "450 mg, calculada sobre o peso ajustado de cerca de 90 kg",
+    "350 mg, calculada sobre o peso ideal de cerca de 70 kg apenas",
+    "250 mg, com redução empírica de metade da dose pela obesidade",
+    "750 mg, com acréscimo empírico pela obesidade do paciente"
+   ],
+   "gab": 1,
+   "coment": "O peso ideal de Devine para homem de 175 cm é 50 + 0,91 × (175 − 152,4) = 70,6 kg. O peso ajustado é peso ideal + 0,4 × (peso atual − peso ideal) = 70,6 + 19,8 = 90,4 kg. A 5 mg/kg, a dose fica em cerca de 450 mg. Aminoglicosídeos são hidrofílicos, mas se distribuem parcialmente no tecido adiposo, o que justifica o fator de 0,4. A dose seguinte deve ser guiada por pico e vale.",
+   "porAlt": [
+    "Errada. O peso atual superdosaria um fármaco hidrofílico em obeso.",
+    "Correta. Peso ideal de 70,6 kg; ajustado = 70,6 + 0,4 × 49,4 = 90,4 kg; 5 × 90,4 = 452 mg.",
+    "Errada. O peso ideal isolado subdosa, pois parte do fármaco se distribui no tecido adiposo.",
+    "Errada. Redução empírica pela metade não tem base farmacocinética.",
+    "Errada. Acréscimo empírico eleva o risco de nefrotoxicidade e de ototoxicidade."
+   ],
+   "base": "Devine, 1974; Abdul-Aziz et al., 2020"
+  }
+ ]
+}
