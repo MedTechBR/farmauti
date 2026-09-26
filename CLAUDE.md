@@ -52,8 +52,11 @@ leituras lidas ou das semanas já liberadas. "Dominado" = intervalo ≥ 21 dias.
 
 ## Questões
 Ordem de exibição das alternativas por `ordemAlts(q)` (hash do id); histórico grava o índice ORIGINAL.
-Filtros: área, leitura, nível, situação (não respondidas, caderno de erros, marcadas), misturar
-(Fisher-Yates + sorteio ponderado por leitura). Simulado com cronômetro e correção no fim.
+Filtros: áreas (várias de uma vez, `mtfiltro.js` de `~/Documents/Claude/_mtfiltro/`, não editar a cópia),
+leitura, nível, situação (não respondidas, caderno de erros, marcadas), misturar
+(Fisher-Yates + sorteio ponderado por leitura). Simulado com cronômetro e correção no fim, também com várias áreas.
+Filtro = `{areas: [...], ...}` (vazia = todas; até 25/09/2026 era `area` string, `normFiltro()` converte) e fica
+gravado em `ST.pos.q.f`, então recarregar mantém filtro e posição.
 
 ## Interações
 `analisaInt()`: pares específicos de `lotes/interacoes.json` primeiro; depois **efeitos somados** a

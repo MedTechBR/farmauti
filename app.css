@@ -140,7 +140,8 @@ input[type=text],input[type=number],input[type=search],input[type=date],select,t
 select{appearance:none;background-image:linear-gradient(45deg,transparent 50%,var(--ink2) 50%),linear-gradient(135deg,var(--ink2) 50%,transparent 50%);background-position:calc(100% - 18px) 18px,calc(100% - 13px) 18px;background-size:5px 5px;background-repeat:no-repeat;padding-right:34px}
 textarea{min-height:110px;resize:vertical;line-height:1.5}
 input:focus,select:focus,textarea:focus{border-color:var(--ac);box-shadow:0 0 0 4px color-mix(in srgb,var(--ac) 16%,transparent)}
-label.campo{display:flex;flex-direction:column;gap:6px;font-size:13px;font-weight:600;color:var(--ink2)}
+label.campo,div.campo{display:flex;flex-direction:column;gap:6px;font-size:13px;font-weight:600;color:var(--ink2)}
+div.campo .mtt-btn{font-size:14px;font-weight:500}
 .campos{display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:12px}
 .chips{display:flex;gap:8px;flex-wrap:wrap}
 .chip{display:inline-flex;align-items:center;gap:6px;border:1.5px solid var(--linhaF);background:var(--sup);border-radius:999px;padding:6px 14px;font-size:13px;font-weight:600;color:var(--ink2);cursor:pointer;transition:all .15s}
@@ -384,7 +385,13 @@ label.campo{display:flex;flex-direction:column;gap:6px;font-size:13px;font-weigh
 .filtroQ{display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin-bottom:14px}
 .fDet{margin-bottom:14px}.fDet>summary{display:none}
 .filtroQ select{width:auto;min-width:150px;border-radius:999px;min-height:38px;padding:6px 34px 6px 14px;font-size:13.5px}
-@media(max-width:640px){.fDet>summary{display:flex;align-items:center;gap:8px;list-style:none;cursor:pointer;border:1.5px solid var(--linhaF);border-radius:999px;padding:8px 16px;font-size:13.5px;font-weight:600;color:var(--ink2);background:var(--sup)}.fDet>summary::-webkit-details-marker{display:none}.fDet>summary .resumo{margin-left:auto;background:var(--acSup);color:var(--acInk);border-radius:999px;padding:2px 10px;font-size:12px;max-width:55%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.fDet[open]>summary{margin-bottom:10px}.filtroQ{margin-bottom:0}.qCard{padding:18px 16px;border-radius:22px}.enun{font-size:16px}.alt{padding:10px 11px;font-size:14.5px}.alt:not([disabled]):hover{transform:none}.filtroQ select{flex:1;min-width:0}}
+/* filtro de várias áreas (mtfiltro.js, 25/09/2026). O componente lê estes tokens no próprio botão/painel;
+   a cor da ação é a --acInk da aba (escurecida no claro, clareada no escuro) para o texto por cima passar de 4,5:1 */
+body{--mtt-cor:var(--acInk);--mtt-sobre:#fff;--mtt-superficie:var(--sup);--mtt-texto:var(--ink);--mtt-borda:var(--linhaF);--mtt-campo:var(--sup2);--mtt-realce:var(--sup2);--mtt-raio-btn:999px;--mtt-raio:22px}
+:root[data-tema="escuro"] body{--mtt-sobre:#0D1017}
+@media(prefers-color-scheme:dark){:root:not([data-tema="claro"]) body{--mtt-sobre:#0D1017}}
+.filtroQ .mtt-btn{min-height:38px;border-width:1.5px;padding:6px 14px;font-size:13.5px;max-width:min(100%,340px)}
+@media(max-width:640px){.fDet>summary{display:flex;align-items:center;gap:8px;list-style:none;cursor:pointer;border:1.5px solid var(--linhaF);border-radius:999px;padding:8px 16px;font-size:13.5px;font-weight:600;color:var(--ink2);background:var(--sup)}.fDet>summary::-webkit-details-marker{display:none}.fDet>summary .resumo{margin-left:auto;background:var(--acSup);color:var(--acInk);border-radius:999px;padding:2px 10px;font-size:12px;max-width:55%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.fDet[open]>summary{margin-bottom:10px}.filtroQ{margin-bottom:0}.qCard{padding:18px 16px;border-radius:22px}.enun{font-size:16px}.alt{padding:10px 11px;font-size:14.5px}.alt:not([disabled]):hover{transform:none}.filtroQ select,.filtroQ .mtt-btn{flex:1 1 calc(50% - 5px);min-width:0;max-width:100%}}
 
 /* ---------- casos ---------- */
 .casoCab{display:flex;gap:14px;flex-wrap:wrap;align-items:center}

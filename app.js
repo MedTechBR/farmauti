@@ -684,8 +684,30 @@ function avalia(nota) {
 /* ======================================================================
    QUESTÕES (treino e simulado)
    ====================================================================== */
-const FILTRO0 = {area: "", l: "", nivel: "", st: "", ate: null, sem: null};
+/* areas: lista de áreas (vazia = todas), via mtfiltro.js. Até 25/09/2026 era `area` (uma string só):
+   normFiltro() converte o estado antigo. A lista é congelada porque {...FILTRO0} a compartilha. */
+const FILTRO0 = {areas: Object.freeze([]), l: "", nivel: "", st: "", ate: null, sem: null};
 const QS = {filtro: {...FILTRO0}, misturar: false, lista: [], i: 0, assin: "", resp: null, combo: 0, dir: 1};
+const listaAreas = v => (window.MTTemas ? MTTemas.lista(v) : Array.isArray(v) ? v.map(String) : v ? [String(v)] : []);
+/* ordem fixa (a de E.areas) para a mesma escolha dar a mesma assinatura */
+const ordenaAreas = ids => { const k = new Set(listaAreas(ids)); return E.areas.map(a => a.id).filter(id => k.has(id)); };
+function normFiltro(f) {
+  const o = {...FILTRO0, ...(f || {})};
+  o.areas = ordenaAreas(f ? (f.areas ?? f.area) : []);
+  delete o.area;
+  return o;
+}
+const assinQ = () => JSON.stringify(QS.filtro) + QS.misturar;
+/* recarregar mantém o filtro: vem de ST.pos.q.f; no formato antigo (sem f) sai da própria assinatura */
+function restauraFiltroQ() {
+  const p = ST.pos && ST.pos.q; if (!p || typeof p !== "object") return;
+  let f = p.f, m = p.m;
+  if (!f && typeof p.assin === "string") { const r = /^(\{.*\})(true|false)$/.exec(p.assin); if (r) try { f = JSON.parse(r[1]); m = r[2] === "true"; } catch (e) {} }
+  if (!f || typeof f !== "object") return;
+  QS.filtro = normFiltro(f); QS.misturar = !!m;
+  p.assin = assinQ(); /* mesma escolha, formato novo: a ordem e a posição gravadas continuam valendo */
+}
+const QPA = {}; E.questoes.forEach(q => { const a = LEIT[q.l]?.area; if (a) QPA[a] = (QPA[a] || 0) + 1; });
 const NIVEL = {basico: "Básico", intermediario: "Intermediário", avancado: "Avançado"};
 function ordemAlts(q) {
   const o = [0, 1, 2, 3, 4]; let h = hash(q.id);
@@ -695,7 +717,7 @@ function ordemAlts(q) {
 function filtraQ(f) {
   return E.questoes.filter(q => {
     const l = LEIT[q.l]; if (!l) return false;
-    if (f.area && l.area !== f.area) return false;
+    if (f.areas && f.areas.length && !f.areas.includes(l.area)) return false;
     if (f.l && q.l !== f.l) return false;
     if (f.nivel && q.n !== f.nivel) return false;
     if (f.ate && l.sem > f.ate) return false;
@@ -708,7 +730,7 @@ function filtraQ(f) {
   });
 }
 function montaListaQ() {
-  const f = QS.filtro, assin = JSON.stringify(f) + QS.misturar;
+  const f = QS.filtro, assin = assinQ();
   if (assin === QS.assin && QS.lista.length) return;
   const salvo = ST.pos.q;
   let base = filtraQ(f);
@@ -724,7 +746,7 @@ function montaListaQ() {
   QS.assin = assin; QS.resp = null;
   guardaPosQ();
 }
-const guardaPosQ = () => { ST.pos.q = {assin: QS.assin, ordem: QS.lista, i: QS.i}; salva("pos"); };
+const guardaPosQ = () => { ST.pos.q = {assin: QS.assin, ordem: QS.lista, i: QS.i, f: QS.filtro, m: QS.misturar}; salva("pos"); };
 function pintaQuestoes(param) {
   if (param === "simulado") return pintaSimulado();
   if (SIM.ativo) { SIM.ativo = null; }
@@ -733,12 +755,12 @@ function pintaQuestoes(param) {
   const eq = estatQ();
   titulo("checklist", "Questões", `${E.questoes.length} questões comentadas alternativa por alternativa · ${eq.resp} respondidas · ${eq.taxa}% de acerto`,
     `<button class="bt mini" style="--ac:var(--c-laranja)" data-acao="abreSimulado"><i class="ti ti-stopwatch"></i>Simulado</button>`);
-  const ls = E.leituras.filter(l => (!f.area || l.area === f.area) && (QPL[l.slug] || []).length);
+  const ls = E.leituras.filter(l => (!f.areas.length || f.areas.includes(l.area)) && (QPL[l.slug] || []).length);
   const extra = f.ate ? `<span class="chipF">Semanas 1 a ${f.ate}<button data-acao="limpaQ" data-k="ate" aria-label="Remover">×</button></span>` : f.sem ? `<span class="chipF">Semana ${f.sem}<button data-acao="limpaQ" data-k="sem" aria-label="Remover">×</button></span>` : "";
   const s = $("#sec-questoes");
-  const resumo = [f.area && AREA[f.area]?.nome, f.l && LEIT[f.l]?.titulo, f.nivel && NIVEL[f.nivel], f.st && {nao: "não respondidas", erradas: "caderno de erros", fav: "marcadas"}[f.st], f.ate && "semanas 1 a " + f.ate, f.sem && "semana " + f.sem, QS.misturar && "misturadas"].filter(Boolean).join(" · ") || "todas";
+  const resumo = [f.areas.length === 1 ? AREA[f.areas[0]]?.nome : f.areas.length > 1 && f.areas.length + " áreas", f.l && LEIT[f.l]?.titulo, f.nivel && NIVEL[f.nivel], f.st && {nao: "não respondidas", erradas: "caderno de erros", fav: "marcadas"}[f.st], f.ate && "semanas 1 a " + f.ate, f.sem && "semana " + f.sem, QS.misturar && "misturadas"].filter(Boolean).join(" · ") || "todas";
   s.innerHTML = `<div class="qWrap"><details class="fDet" ${innerWidth > 640 || QS.fAberto ? "open" : ""}><summary><i class="ti ti-adjustments-horizontal"></i>Filtros<span class="resumo">${esc(resumo)}</span></summary><div class="filtroQ">
-     <select data-qf="area" aria-label="Área"><option value="">Todas as áreas</option>${E.areas.map(a => `<option value="${a.id}" ${f.area === a.id ? "selected" : ""}>${esc(a.nome)}</option>`).join("")}</select>
+     <button type="button" id="qfAreas"></button>
      <select data-qf="l" aria-label="Leitura"><option value="">Todas as leituras</option>${ls.map(l => `<option value="${l.slug}" ${f.l === l.slug ? "selected" : ""}>${esc(l.titulo)}</option>`).join("")}</select>
      <select data-qf="nivel" aria-label="Nível"><option value="">Todos os níveis</option>${Object.entries(NIVEL).map(([k, v]) => `<option value="${k}" ${f.nivel === k ? "selected" : ""}>${v}</option>`).join("")}</select>
      <select data-qf="st" aria-label="Situação"><option value="">Todas</option><option value="nao" ${f.st === "nao" ? "selected" : ""}>Não respondidas</option><option value="erradas" ${f.st === "erradas" ? "selected" : ""}>Caderno de erros</option><option value="fav" ${f.st === "fav" ? "selected" : ""}>Marcadas</option></select>
@@ -746,6 +768,11 @@ function pintaQuestoes(param) {
      <span class="sub" style="margin-left:auto">${QS.lista.length} ${QS.lista.length === 1 ? "questão" : "questões"}</span></div></details>
    <div id="qArea"></div></div>`;
   $(".fDet", s).addEventListener("toggle", e => { if (innerWidth <= 640) QS.fAberto = e.target.open; });
+  montaFiltroAreas($("#qfAreas", s), {
+    selecionados: f.areas,
+    conta: ids => filtraQ({...QS.filtro, areas: ids, l: ""}).length,
+    aoMudar: ids => { QS.filtro = {...QS.filtro, areas: ordenaAreas(ids), l: ""}; pintaQuestoes(); $("#qfAreas")?.focus({preventScroll: true}); }
+  });
   pintaQuestao();
 }
 function pintaQuestao(anim) {
@@ -789,7 +816,18 @@ function navQ(d) {
 }
 
 /* simulado */
-const SIM = {cfg: {n: 20, escopo: "liberadas", area: "", tarefa: ""}, ativo: null};
+const SIM = {cfg: {n: 20, escopo: "liberadas", areas: [], tarefa: ""}, ativo: null};
+/* botão de várias áreas (mtfiltro.js); sem o componente, cai num aviso em vez de quebrar a tela */
+function montaFiltroAreas(el, o) {
+  if (!el) return null;
+  if (!window.MTTemas) { el.textContent = "Filtro de áreas indisponível: recarregue a página"; el.disabled = true; return null; }
+  return MTTemas.monta(el, {
+    opcoes: E.areas.map(a => ({id: a.id, nome: a.nome, n: QPA[a.id] || 0})),
+    selecionados: listaAreas(o.selecionados), rotuloTodos: "Todas as áreas", titulo: "Áreas",
+    item: ["área", "áreas"], verbo: o.verbo || "Mostrar",
+    conta: o.conta, aoMudar: o.aoMudar
+  });
+}
 function pintaSimulado() {
   const s = $("#sec-questoes");
   if (SIM.ativo?.fim) return pintaResultadoSim();
@@ -803,14 +841,19 @@ function pintaSimulado() {
       <button class="chip" data-sim-e="liberadas" aria-pressed="${c.escopo === "liberadas"}">Semanas já liberadas (1 a ${semanaLiberada()})</button>
       <button class="chip" data-sim-e="todas" aria-pressed="${c.escopo === "todas"}">Todo o banco</button>
       <button class="chip" data-sim-e="erradas" aria-pressed="${c.escopo === "erradas"}">Caderno de erros</button></div>
-    <label class="campo">Área<select data-sim-area><option value="">Todas as áreas</option>${E.areas.map(a => `<option value="${a.id}" ${c.area === a.id ? "selected" : ""}>${esc(a.nome)}</option>`).join("")}</select></label>
+    <div class="campo"><span>Áreas</span><div><button type="button" id="simAreas"></button></div></div>
     <p class="sub" style="margin:14px 0">${disp} questões disponíveis nesse recorte. Tempo sugerido: ${Math.round(Math.min(c.n, disp) * 2.5)} min (2,5 min por questão).</p>
     <div class="linhaBt"><button class="bt" style="--ac:var(--c-laranja)" data-acao="comecaSim" ${disp ? "" : "disabled"}><i class="ti ti-player-play"></i>Começar</button><button class="bt sec" data-ir="questoes">Voltar ao treino</button></div></div>
    ${(ST.sims || []).length ? `<div class="cx" style="max-width:720px"><h3><i class="ti ti-history"></i>Simulados anteriores</h3>${ST.sims.slice(-8).reverse().map(x => `<div class="tarefa" style="--k:var(--c-laranja)"><span class="chk" style="border:0;background:var(--acSup);color:var(--acInk)"><b style="font-size:12px">${pct(x.ok, x.n)}%</b></span><div><div class="tt">${x.ok}/${x.n} acertos</div><div class="ds">${new Date(x.ts).toLocaleDateString("pt-BR")} · ${Math.round(x.dur / 60)} min</div></div><span></span></div>`).join("")}</div>` : ""}`;
+  montaFiltroAreas($("#simAreas", s), {
+    selecionados: c.areas,
+    conta: ids => poolSim({...SIM.cfg, areas: ids}).length, verbo: "Usar",
+    aoMudar: ids => { SIM.cfg.areas = ordenaAreas(ids); pintaSimulado(); $("#simAreas")?.focus({preventScroll: true}); }
+  });
 }
-function poolSim() {
-  const c = SIM.cfg, w = semanaLiberada();
-  return E.questoes.filter(q => { const l = LEIT[q.l]; if (!l) return false; if (c.area && l.area !== c.area) return false;
+function poolSim(c = SIM.cfg) {
+  const w = semanaLiberada(), ars = listaAreas(c.areas ?? c.area);
+  return E.questoes.filter(q => { const l = LEIT[q.l]; if (!l) return false; if (ars.length && !ars.includes(l.area)) return false;
     if (c.escopo === "liberadas" && l.sem > w && !ST.lidas[q.l]) return false;
     if (c.escopo === "erradas") { const u = ultimaResp(q.id); if (!u || u.ok) return false; }
     return true; });
@@ -1637,7 +1680,7 @@ document.addEventListener("click", e => {
     case "lida": return marcaLida(t.dataset.s);
     case "fonte": { const v = Math.max(.85, Math.min(1.3, (+ST.cfg.fonte || 1) + (+t.dataset.d) * .05)); ST.cfg.fonte = +v.toFixed(2); salva("cfg"); return aplicaFonte(); }
     case "qLeitura": QS.filtro = {...FILTRO0, l: t.dataset.s}; QS.misturar = false; return ir("questoes");
-    case "focoArea": QS.filtro = {...FILTRO0, area: t.dataset.area}; QS.misturar = true; return ir("questoes");
+    case "focoArea": QS.filtro = {...FILTRO0, areas: [t.dataset.area]}; QS.misturar = true; return ir("questoes");
     case "sessao": return iniciaSessao("");
     case "sairSessao": SES = null; return ir("cartoes");
     case "fav": { const id = t.dataset.q; if (ST.fav[id]) delete ST.fav[id]; else ST.fav[id] = 1; salva("fav"); t.classList.toggle("on", !!ST.fav[id]); t.innerHTML = `<i class="ti ti-star${ST.fav[id] ? "-filled" : ""}"></i>`; return; }
@@ -1666,8 +1709,7 @@ document.addEventListener("click", e => {
 });
 document.addEventListener("change", e => {
   const t = e.target;
-  if (t.dataset.qf) { QS.filtro[t.dataset.qf] = t.value; if (t.dataset.qf === "area") QS.filtro.l = ""; return pintaQuestoes(); }
-  if (t.hasAttribute("data-sim-area")) { SIM.cfg.area = t.value; return pintaSimulado(); }
+  if (t.dataset.qf) { QS.filtro[t.dataset.qf] = t.value; return pintaQuestoes(); }
   if (t.dataset.cfg) return mudaCfg(t);
 });
 document.addEventListener("input", e => { const t = e.target; if (t.dataset.cfg && t.type !== "date" && t.tagName !== "SELECT") mudaCfg(t); });
@@ -1706,6 +1748,7 @@ const PINTA = {
   const tinha = carrega();
   if (!tinha) { const ok = await restauraDoEspelho(); if (ok) setTimeout(() => aviso("Progresso restaurado da cópia interna de segurança."), 800); }
   aplicaTema(); aplicaFonte();
+  restauraFiltroQ();
   montaNav();
   addEventListener("hashchange", rota);
   if (navigator.storage?.persist) navigator.storage.persist().catch(() => {});
