@@ -21,6 +21,11 @@
   "use strict";
   if (window.MTTemas) return;
 
+  /* teclado: um ouvinte só, registrado ao CARREGAR (antes do script do app), no window e na captura —
+     assim fica à frente de qualquer atalho do app enquanto um painel está aberto */
+  let teclaAtiva = null;
+  addEventListener("keydown", e => { if (teclaAtiva) teclaAtiva(e); }, true);
+
   const ESTILO = `
 .mtt-btn{display:inline-flex;align-items:center;gap:8px;min-height:44px;max-width:100%;padding:0 14px;border-radius:var(--mtt-raio-btn,12px);
   border:1px solid var(--mtt-fio);background:var(--mtt-sup);color:var(--mtt-tinta);font:inherit;font-size:.95em;cursor:pointer;text-align:left}
@@ -145,7 +150,7 @@
     function fecha(confirmar) {
       if (!aberto) return;
       const {fundo, pai, rascunho, onKey, onResize} = aberto;
-      document.removeEventListener("keydown", onKey, true);
+      teclaAtiva = null;
       removeEventListener("resize", onResize);
       fundo.remove(); pai.remove();
       aberto = null;
@@ -211,7 +216,6 @@
         const temN = cfg.conta || opcoes.some(o => o.n != null);
         info.textContent = (ids.length ? (ids.length === 1 ? "1 " + item1 : ids.length + " " + itemN) : rotuloTodos) + (temN ? ` · ${n} ${n === 1 ? uni1 : uniN}` : "");
         ok.textContent = temN ? `${verbo} ${n} ${n === 1 ? uni1 : uniN}` : "Aplicar";
-        ok.disabled = temN && n === 0;
       }
       lista.addEventListener("change", e => {
         const c = e.target; if (c.type !== "checkbox") return;
@@ -236,18 +240,19 @@
         pai.style.left = left + "px"; pai.style.top = top + "px";
       }
       const onKey = e => {
-        if (e.key === "Escape") { e.preventDefault(); e.stopPropagation(); fecha(false); return; }
+        if (e.key === "Escape") { e.preventDefault(); e.stopImmediatePropagation(); fecha(false); return; }
         if (e.key === "Tab") { /* prende o foco no painel */
           const f = [...pai.querySelectorAll("button,input")].filter(x => !x.disabled && x.offsetParent !== null);
           if (!f.length) return;
           if (e.shiftKey && document.activeElement === f[0]) { e.preventDefault(); f[f.length - 1].focus(); }
           else if (!e.shiftKey && document.activeElement === f[f.length - 1]) { e.preventDefault(); f[0].focus(); }
         }
-        /* não deixa atalhos do app (A–E, setas, Enter) agirem com o painel aberto */
-        e.stopPropagation();
+        /* não deixa atalhos do app (A–E, setas, Enter) agirem com o painel aberto;
+           a ação padrão (digitar na busca, marcar com espaço, Enter no botão) continua */
+        e.stopImmediatePropagation();
       };
       const onResize = () => posiciona();
-      document.addEventListener("keydown", onKey, true);
+      teclaAtiva = onKey;
       addEventListener("resize", onResize);
       aberto = {fundo, pai, rascunho, onKey, onResize};
       btn.setAttribute("aria-expanded", "true");
@@ -273,5 +278,5 @@
     return [String(v)];
   }
 
-  window.MTTemas = {monta, lista, versao: 1};
+  window.MTTemas = {monta, lista, versao: 2};
 })();
