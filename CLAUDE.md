@@ -58,6 +58,11 @@ leitura, nível, situação (não respondidas, caderno de erros, marcadas), mist
 Filtro = `{areas: [...], ...}` (vazia = todas; até 25/09/2026 era `area` string, `normFiltro()` converte) e fica
 gravado em `ST.pos.q.f`, então recarregar mantém filtro e posição.
 
+Sinalizar erro (26/09/2026): bandeira `mtsinal.js` (cópia de `~/Documents/Claude/_mtsinal/`, não editar) no alto da
+questão, no gabarito do simulado e no cartão; `ST.sinal` (chave = id da questão/cartão) entra no backup; lista
+"Questões sinalizadas" no fim de Desempenho. Cada ação vai também à caixa central do Matheus
+(`medtechbr.com.br/sinalizacoes.html`, função `mtSinal`, app `farmauti`, sem conta: id aleatório do aparelho).
+
 ## Interações
 `analisaInt()`: pares específicos de `lotes/interacoes.json` primeiro; depois **efeitos somados** a
 partir das `tags` do bulário (QT, serotonina, sangramento, K+, SNC, nefro/oto/hepato/mielotox,

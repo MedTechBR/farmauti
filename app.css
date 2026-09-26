@@ -123,7 +123,7 @@ main{margin-left:var(--lat);padding:30px 40px 70px;max-width:calc(1240px + var(-
 .grade{display:grid;gap:16px}
 .g2{grid-template-columns:repeat(2,minmax(0,1fr))}.g3{grid-template-columns:repeat(3,minmax(0,1fr))}.g4{grid-template-columns:repeat(4,minmax(0,1fr))}
 @media(max-width:1100px){.g4{grid-template-columns:repeat(2,minmax(0,1fr))}.g3{grid-template-columns:repeat(2,minmax(0,1fr))}}
-@media(max-width:640px){.g2,.g3{grid-template-columns:1fr}.cx{padding:18px;border-radius:20px}.grade{gap:12px}}
+@media(max-width:640px){.g2,.g3{grid-template-columns:minmax(0,1fr)}.cx{padding:18px;border-radius:20px}.grade{gap:12px}}
 .bt{display:inline-flex;align-items:center;justify-content:center;gap:8px;border:1px solid var(--ac);background:var(--ac);color:#fff;border-radius:999px;min-height:42px;padding:9px 20px;font-weight:620;font-size:14px;cursor:pointer;text-decoration:none;white-space:nowrap;
   box-shadow:0 6px 16px color-mix(in srgb,var(--ac) 28%,transparent);transition:transform .15s var(--mola),box-shadow .2s,filter .2s}
 .bt:hover{filter:brightness(1.07);transform:translateY(-1px);box-shadow:0 10px 22px color-mix(in srgb,var(--ac) 34%,transparent)}
@@ -391,6 +391,17 @@ body{--mtt-cor:var(--acInk);--mtt-sobre:#fff;--mtt-superficie:var(--sup);--mtt-t
 :root[data-tema="escuro"] body{--mtt-sobre:#0D1017}
 @media(prefers-color-scheme:dark){:root:not([data-tema="claro"]) body{--mtt-sobre:#0D1017}}
 .filtroQ .mtt-btn{min-height:38px;border-width:1.5px;padding:6px 14px;font-size:13.5px;max-width:min(100%,340px)}
+/* sinalizar erro (mtsinal.js, 26/09/2026): mesma cor de ação da aba; vermelho de alerta escurecido/clareado para 4,5:1 */
+body{--msn-cor:var(--acInk);--msn-sobre:#fff;--msn-superficie:var(--sup);--msn-texto:var(--ink);--msn-borda:var(--linhaF);--msn-cor-alerta:#C4282E}
+:root[data-tema="escuro"] body{--msn-sobre:#0D1017;--msn-cor-alerta:#FF7B80}
+@media(prefers-color-scheme:dark){:root:not([data-tema="claro"]) body{--msn-sobre:#0D1017;--msn-cor-alerta:#FF7B80}}
+/* ciano (Desempenho) e âmbar (Cartões) com a --acInk não chegam a 4,5:1 com branco: mistura mais forte com a tinta */
+body[data-aba="desempenho"]{--msn-cor:color-mix(in srgb,var(--c-ciano) 62%,var(--ink))}
+body[data-aba="cartoes"]{--msn-cor:color-mix(in srgb,var(--c-ambar) 62%,var(--ink))}
+.qTopo .msn-btn{margin-left:auto;color:var(--ink2)}.qTopo .msn-btn+.btMarca{margin-left:0}
+.qTopo .msn-btn.msn-on{color:var(--msn-cor-alerta)}
+.inter .corpo .msn-btn{color:var(--ink2);padding:0 10px;margin-left:-8px}
+.flashTopo .msn-btn{color:var(--ink2)}.flashTopo .msn-btn.msn-on{color:var(--msn-cor-alerta)}
 @media(max-width:640px){.fDet>summary{display:flex;align-items:center;gap:8px;list-style:none;cursor:pointer;border:1.5px solid var(--linhaF);border-radius:999px;padding:8px 16px;font-size:13.5px;font-weight:600;color:var(--ink2);background:var(--sup)}.fDet>summary::-webkit-details-marker{display:none}.fDet>summary .resumo{margin-left:auto;background:var(--acSup);color:var(--acInk);border-radius:999px;padding:2px 10px;font-size:12px;max-width:55%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.fDet[open]>summary{margin-bottom:10px}.filtroQ{margin-bottom:0}.qCard{padding:18px 16px;border-radius:22px}.enun{font-size:16px}.alt{padding:10px 11px;font-size:14.5px}.alt:not([disabled]):hover{transform:none}.filtroQ select,.filtroQ .mtt-btn{flex:1 1 calc(50% - 5px);min-width:0;max-width:100%}}
 
 /* ---------- casos ---------- */
