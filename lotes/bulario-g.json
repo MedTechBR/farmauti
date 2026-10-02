@@ -187,7 +187,7 @@
   "administracao": "VO em jejum, 1 h antes ou 2 h após refeição. Por sonda: comprimido triturado e disperso em água, com pausa da dieta. Forma IV não disponível no Brasil.",
   "monitorizacao": "Provas hepáticas no início e periodicamente (semanal no crítico e nos de risco), sintomas de neuropatia, nível de fenitoína e carbamazepina se associadas.",
   "efeitos": "Hepatite (mais frequente com idade, álcool, rifampicina e pirazinamida), neuropatia periférica por depleção de piridoxina, convulsão (na intoxicação, refratária sem piridoxina), lúpus induzido, anemia sideroblástica.",
-  "interacoes": "Inibe CYP2C19, CYP2C9 e, em menor grau, CYP3A4: eleva fenitoína e carbamazepina (toxicidade). Rifampicina e pirazinamida somam hepatotoxicidade. Paracetamol em dose alta soma risco hepático. Antiácidos com alumínio reduzem a absorção.",
+  "interacoes": "Inibe de forma potente o CYP2C19 e o CYP3A (Desta, 2001), e o CYP2C9 em menor grau: eleva fenitoína e carbamazepina (toxicidade). Rifampicina e pirazinamida somam hepatotoxicidade. Paracetamol em dose alta soma risco hepático. Antiácidos com alumínio reduzem a absorção.",
   "perolas": "Prescreva piridoxina nos grupos de risco de neuropatia (diabetes, etilismo, desnutrição, HIV, gestação, DRC), conforme o manual. Na intoxicação com convulsão, o antídoto é piridoxina 1 g por grama ingerida. Paciente em RHZE com icterícia na UTI: suspenda o esquema e discuta com a equipe a reintrodução sequencial, não troque um fármaco isolado às cegas.",
   "tags": [
    "hepatotox",
@@ -269,7 +269,9 @@
   "efeitos": "Náusea, cefaleia, diarreia, reações no local de infusão; menos trombocitopenia que a linezolida no curso de 6 dias. Uso prolongado ainda pouco estudado quanto a neuropatia e mielotoxicidade.",
   "interacoes": "Interação serotoninérgica e pressórica menor que a da linezolida em estudos, mas pacientes com ISRS e IMAO foram excluídos dos ensaios: mantenha vigilância. Inibe BCRP intestinal na forma oral (pode elevar rosuvastatina e metotrexato).",
   "perolas": "Registrada na ANVISA (Sivextro), com disponibilidade hospitalar limitada: confirme na padronização local. Não foi estudada em neutropênicos: nesse grupo, prefira outra opção. A vantagem prática sobre a linezolida é o curso curto e o menor risco hematológico, não o espectro.",
-  "tags": [],
+  "tags": [
+   "serotonina"
+  ],
   "fonte": "Sivextro, bula (ANVISA e FDA); Prokocimer et al., ESTABLISH-1, JAMA (2013); Moran et al., ESTABLISH-2, Lancet Infect Dis (2014)",
   "altaVigilancia": false
  },
@@ -393,7 +395,8 @@
   "perolas": "O momento importa: o benefício está no paciente com oxigênio de baixo fluxo, não no intubado. Bradicardia sinusal nova durante o curso costuma ser benigna e reverter após o fim; revise betabloqueador e dexmedetomidina associados antes de atribuí-la. Confirme a disponibilidade e as regras de fornecimento na padronização local.",
   "tags": [
    "hepatotox",
-   "bradicardia"
+   "bradicardia",
+   "qt"
   ],
   "fonte": "Veklury, bula norte-americana (FDA, 2023); NIH COVID-19 Treatment Guidelines (2024); Health Canada, revisão de segurança sobre bradicardia sinusal com remdesivir (2021)",
   "altaVigilancia": false

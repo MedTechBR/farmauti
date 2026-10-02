@@ -33,7 +33,7 @@ ecossistema, sem selo MedTech. Repo `MedTechBR/farmauti`, no ar em `medtechbr.co
   (fora do git) para mexer na interface sem depender do conteúdo.
 
 ## Abas
-Início · Cronograma · Leituras · Cartões · Questões · Casos clínicos · Interações · Bulário ·
+Início · Cronograma · Leituras · Cartões · Questões · Casos clínicos · Prescrições · Interações · Bulário ·
 Calculadoras · Desempenho · Ajustes. Celular: Início, Leituras, Cartões, Questões + "Mais".
 Cor por seção via `body[data-aba]` → `--ac` (camada viva do ClínicaMed): índigo, verde, violeta, âmbar,
 azul, rosa, vermelho, teal, laranja, ciano, cinza. Sem gradiente, sem emoji, fonte do sistema.
@@ -93,6 +93,30 @@ antídotos, respiratório, hematologia, antiparasitários). Fichas em `lotes/bul
 `lotes/interacoes-2.json` (novos cardiovasculares/endócrino/GI/imuno) e `interacoes-3.json` (novos de
 sedação, psicofármacos, antídotos, anti-infecciosos). `monta.py` lê `interacoes*.json` em ordem e o par
 já existente vence. Total: 684 pares. Cota de 25 buscas por agente funcionou (usaram 0 a 12).
+
+## Rodada de 01/10/2026: revisão essencial, auditoria das interações, prescrições v2
+Pedidos dela: (1) "você aprofunda, mas não explica": conteúdo de revisão objetivo que ensina o básico e agrega
+nas questões, prescrições e casos; (2) "interação com o motivo errado (anlodipino e sinvastatina)": revisar
+TODAS; (3) prescrições "mais interativas, layout mais bonito, mais completas".
+- **Revisão essencial**: `conteudo/revisao/<slug>.html` para as 64 leituras (brief `docs/BRIEF_REVISAO.md`,
+  validador `docs/checa_revisao.py --todas`). Estrutura fixa: O que é e por que importa (glossário `dl.gl`),
+  Como funciona (`ol.passos`), O essencial em números, Como aparece na prescrição, Como cai nas questões e nos
+  casos, Teste rápido. Abre PRIMEIRO no leitor (`modoLeitura`, abas "Revisão essencial / Texto completo");
+  concluir a revisão (`ST.revs`) já cumpre a tarefa de leitura do cronograma. Busca por seção força o texto completo.
+- **Interações**: cada par tem `precipitante` e `objeto` (id ou "ambos"); o app mostra "A → B", a frase de
+  quem causa e quem sofre e três blocos (por que acontece, o que acontece com o paciente, o que o farmacêutico
+  faz). Auditoria em 6 fatias (`docs/BRIEF_AUDITORIA_INTERACOES.md`, `lotes/revisao-int/`), aplicada por
+  `docs/aplica_auditoria.py` (log em `docs/auditoria_interacoes_log.json`): 158 pares com conteúdo clínico
+  corrigido, 7 removidos (não eram interação), 677 no total. Tags do bulário auditadas (`docs/auditoria_tags.json`):
+  amiodarona deixou de ser `inib3a4`; QT entrou em propofol, dexmedetomidina, tramadol, terlipressina etc.
+  **Decisão**: fármacos de risco QT "condicional" na CredibleMeds (quetiapina, olanzapina, azóis…) MANTÊM a tag
+  `qt`, porque a condição (hipocalemia, outro QT, doença grave) é a regra na UTI.
+- **Prescrições v2**: etapas (paciente, triagem, correção, fixação), folha com faixa de alergia, dicas
+  progressivas, tipo + "sua intervenção" por linha, painel de resultado, "só os problemas", "por que esta linha
+  está certa" (`ok`), prioridade, raciocínio (`resumo`), modelo de comunicação (`intervencao`, copiar), 2 perguntas
+  de fixação; lista com acerto por tipo de erro, filtros de nível e situação, e Modo plantão (3 seguidas).
+  Os campos novos foram acrescentados SEM mexer em itens (progresso gravado por posição).
+- Divergências entre leituras e bulário encontradas pelos agentes e corrigidas: `docs/PENDENCIAS_01-10.md`.
 
 ## Pendências e ideias
 - Sincronizar o progresso numa conta (hoje só aparelho + backup por arquivo).

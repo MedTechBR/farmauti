@@ -1,0 +1,115 @@
+<p class="dek">Ao terminar, você sabe ler qualquer interação em cinco perguntas (quem muda, quem sofre, por qual via, com que consequência e em quanto tempo), separar o alerta que importa do ruído da base de dados e escrever uma recomendação que a equipe consegue executar.</p>
+
+<h2>O que é e por que importa</h2>
+
+<dl class="gl">
+<dt>Interação medicamentosa</dt><dd>Mudança no efeito de um fármaco provocada por outro fármaco, por alimento ou dieta enteral, por uma doença, por um procedimento ou por um exame.</dd>
+<dt>Objeto (vítima)</dt><dd>O fármaco cujo nível ou efeito muda. É nele que aparece o dano: o tacrolimo que sobe, a varfarina que sangra, o valproato que cai.</dd>
+<dt>Precipitante (agressor)</dt><dd>O fármaco que provoca a mudança. Em geral é um inibidor ou indutor de enzima, ou um fármaco com efeito que se soma ao do objeto.</dd>
+<dt>Substrato</dt><dd>Fármaco que é metabolizado por uma enzima ou carregado por um transportador. Todo objeto de interação metabólica é substrato da via afetada.</dd>
+<dt>Inibidor</dt><dd>Fármaco que reduz a atividade de uma enzima ou transportador. O substrato passa a ser eliminado mais devagar e acumula.</dd>
+<dt>Indutor</dt><dd>Fármaco que faz a célula produzir mais enzima ou transportador. O substrato passa a ser eliminado mais depressa e o nível cai.</dd>
+<dt>Índice terapêutico estreito</dt><dd>Distância pequena entre a dose que funciona e a dose que intoxica. Pequenas variações de nível já causam dano.</dd>
+<dt>Interação potencial e interação real</dt><dd>Potencial é a que a base de dados sinaliza; real (manifesta) é a que produz alteração mensurável no paciente, como RNI subindo ou QTc alargando.</dd>
+</dl>
+
+<p>O objeto e o precipitante podem ser o mesmo fármaco em pares diferentes, e às vezes os dois papéis coexistem: a amiodarona inibe o metabolismo da varfarina (precipitante) e ao mesmo tempo soma seu próprio efeito sobre o QT ao de outros fármacos. Por isso a pergunta "existe interação?" é pobre. A pergunta útil é "o que muda, em quem, por qual caminho, e o que isso faz com este paciente?".</p>
+
+<p>Na UTI essa triagem pesa mais do que em qualquer outro lugar. A metanálise de Fitzmaurice e colaboradores (2019) estimou que 58% dos pacientes críticos são expostos a pelo menos uma interação potencial, e o número de pares cresce de forma quase exponencial com o número de fármacos. Somam-se fármacos de índice estreito, disfunção renal e hepática, hipocalemia e hipomagnesemia, e um paciente sedado que não relata tontura nem zumbido. Quem tenta intervir em todo alerta perde credibilidade; o trabalho é achar as poucas interações que, naquele doente, têm chance real de causar dano ou falha.</p>
+
+<h2>Como funciona</h2>
+
+<p>Toda interação cabe em um de três mecanismos, e o mecanismo decide o manejo:</p>
+<ul>
+<li><b>Farmacêutica</b>: acontece fora do corpo, na bolsa ou no equipo (ceftriaxona com cálcio, fenitoína em soro glicosado). Não aparece em alerta de prescrição.</li>
+<li><b>Farmacocinética</b>: muda a quantidade de fármaco que chega ao alvo (absorção, distribuição, metabolismo ou excreção). A resposta por unidade de concentração é a mesma; o nível é que mudou. Por isso se monitora com nível sérico ou com um marcador do efeito (RNI).</li>
+<li><b>Farmacodinâmica</b>: os níveis não mudam; os dois fármacos agem no mesmo alvo ou desfecho e o efeito se soma ou se anula (dois fármacos que prolongam o QT, opioide com benzodiazepínico). Não adianta dosar nível nem espaçar horário.</li>
+</ul>
+
+<p>Para ler qualquer par sinalizado, siga a mesma sequência. Exemplo da base do app: anlodipino com sinvastatina.</p>
+<ol class="passos">
+<li><b>Quem é o precipitante?</b> O anlodipino, que além de substrato é um inibidor fraco do CYP3A4.</li>
+<li><b>Quem é o objeto?</b> A sinvastatina, substrato quase exclusivo do CYP3A4 e com enorme metabolismo de primeira passagem no intestino e no fígado. Substrato que depende de uma única via sofre muito quando ela é bloqueada.</li>
+<li><b>Qual a via?</b> Metabolismo: o anlodipino reduz parcialmente a atividade do CYP3A4, e menos sinvastatina é destruída antes de chegar à circulação.</li>
+<li><b>Qual a consequência?</b> A exposição à sinvastatina aumenta. Como a toxicidade muscular da estatina cresce com a exposição, sobe o risco de miopatia e, no extremo, rabdomiólise.</li>
+<li><b>Por que importa e o que fazer?</b> Como o inibidor é fraco, o aumento é modesto e a combinação é aceitável com teto de dose: sinvastatina até 20 mg por dia com anlodipino. Com um inibidor forte, como a claritromicina, o mesmo raciocínio leva à contraindicação.</li>
+</ol>
+
+<p>O tempo também segue uma lógica de causa e consequência:</p>
+<ol class="passos">
+<li>A inibição depende só da presença do inibidor no local da enzima, então começa nas primeiras doses e termina quando ele é eliminado.</li>
+<li>A indução depende de a célula fabricar enzima nova, o que leva dias para começar, cerca de 1 a 2 semanas para chegar ao máximo e 1 a 2 semanas para desaparecer depois da suspensão.</li>
+<li>Em ambos os casos, o objeto só chega ao novo equilíbrio após cerca de 4 a 5 das suas próprias meias-vidas. Nível dosado cedo demais engana.</li>
+<li>Ao retirar o precipitante, o processo se inverte. Quem aumentou a dose de tacrolimo durante a rifampicina precisa reduzi-la quando a indução se desfaz: é o ajuste reverso, o mais esquecido.</li>
+</ol>
+
+<div class="cx chave"><b>Ponto-chave</b><p>A gravidade de uma interação depende mais do objeto do que do precipitante. Dobrar o nível de um betalactâmico raramente causa dano; dobrar o de tacrolimo, digoxina, fenitoína, varfarina ou colchicina causa. As interações graves da UTI se concentram em poucos objetos de índice estreito e poucos precipitantes potentes (azóis, claritromicina, rifampicina, amiodarona, anticonvulsivantes indutores).</p></div>
+
+<p>A gravidade que a base de dados atribui é o pior desfecho plausível, sem considerar dose, via, duração nem se o paciente está monitorizado. Micromedex e Lexicomp concordam apenas moderadamente entre si (Abbas e colaboradores, 2022). Para decidir, considere: magnitude (razão de AUC), índice terapêutico do objeto, tempo de início, fatores do paciente (rim, fígado, eletrólitos, via oral ou intravenosa) e possibilidade de monitorizar ou de trocar. A via importa: por via oral, o objeto passa pela enzima do intestino e do fígado antes de circular; por via intravenosa, não. Por isso a interação com midazolam oral é muito maior que com midazolam intravenoso.</p>
+
+<h2>O essencial em números</h2>
+
+<div class="tab"><table><thead><tr><th>Valor</th><th>O que significa</th><th>Por que importa</th></tr></thead><tbody>
+<tr><td>58%</td><td>Pacientes de UTI expostos a ao menos uma interação potencial</td><td>Interação é regra, não exceção; a habilidade é triar</td></tr>
+<tr><td>Razão de AUC de 5 ou mais</td><td>Inibidor forte (FDA)</td><td>Com objeto de índice estreito, quase sempre exige troca ou ajuste antecipado</td></tr>
+<tr><td>Razão de 2 a 5</td><td>Inibidor moderado</td><td>Ajuste ou monitorização conforme o objeto</td></tr>
+<tr><td>Razão de 1,25 a 2</td><td>Inibidor fraco</td><td>Relevante só para objetos muito sensíveis ou dose-dependentes (teto de sinvastatina)</td></tr>
+<tr><td>Queda de AUC de 80% ou mais</td><td>Indutor forte</td><td>Falha terapêutica do objeto; rifampicina é o exemplo</td></tr>
+<tr><td>1 a 3 dias</td><td>Início típico de interação por inibição</td><td>Prazo para repetir nível ou RNI</td></tr>
+<tr><td>1 a 2 semanas</td><td>Máximo e desaparecimento da indução</td><td>Programar revisão na data da suspensão do indutor</td></tr>
+<tr><td>4 a 5 meias-vidas do objeto</td><td>Tempo até o novo equilíbrio</td><td>Nível colhido antes disso subestima a interação</td></tr>
+<tr><td>DIPS acima de 8, 5 a 8, 2 a 4, abaixo de 2</td><td>Altamente provável, provável, possível, duvidosa</td><td>Escala de causalidade própria para interação; Naranjo é para um fármaco só</td></tr>
+<tr><td>49% a 96%</td><td>Alertas de segurança ignorados pelos prescritores</td><td>Fadiga de alertas: o alerta importante se perde no meio do ruído</td></tr>
+</tbody></table></div>
+
+<h2>Como aparece na prescrição</h2>
+
+<p>Na lista de tipos de erro da atividade de prescrições, a interação aparece como erro próprio, mas puxa outros junto:</p>
+<ul>
+<li><b>Interação</b>: precipitante novo sobre objeto de índice estreito sem ajuste (voriconazol com tacrolimo em dose cheia, claritromicina com sinvastatina).</li>
+<li><b>Dose</b>: ajuste necessário pela interação não feito, ou ajuste reverso esquecido após suspender rifampicina, fenitoína ou azol.</li>
+<li><b>Monitorização</b>: combinação aceita sem parâmetro, prazo e limite de ação ("monitorar" sem dizer o quê).</li>
+<li><b>Contraindicação</b>: par proibido em bula, como sinvastatina com inibidor forte do CYP3A4.</li>
+<li><b>Via e horário</b>: interação de absorção resolvida por espaçamento (quinolona e cálcio por sonda) que não foi refletida nos horários.</li>
+<li><b>Interação intencional</b>: noradrenalina com vasopressina, naloxona para reverter opioide. Registrar como intencional, não intervir.</li>
+</ul>
+
+<p>A ordem das opções de manejo é quase sempre a mesma: trocar por alternativa sem a interação, ajustar a dose de forma antecipada com nível, separar no tempo quando o mecanismo é local, monitorizar com parâmetro definido, suspender temporariamente o que não é essencial, ou aceitar e registrar.</p>
+
+<div class="cx farma"><b>Na prescrição</b><p>Linha ERRADA: "Sinvastatina 40 mg VO à noite" mantida no dia em que entra "Claritromicina 500 mg IV 12/12 h". Linha CORRIGIDA: "Sinvastatina: suspensa durante a claritromicina; reintroduzir 40 mg à noite 2 a 3 dias após o término". Explicação: a claritromicina é inibidora forte e mecanismo-dependente do CYP3A4, a sinvastatina é substrato sensível, e a bula contraindica o par. Estatina não é essencial durante 5 a 7 dias de antibiótico, então suspender é a saída mais simples; a reintrodução espera alguns dias porque a enzima inativada precisa ser ressintetizada. Alternativa igualmente válida: trocar a claritromicina por azitromicina, que praticamente não inibe o CYP3A4.</p></div>
+
+<div class="cx calculo"><b>Conta rápida</b><p>Em um estudo, a AUC do midazolam oral passa de 120 para 1.080 ng·h/mL com um antifúngico. Razão = 1.080 ÷ 120 = 9, maior que 5: inibidor forte. Outro fármaco leva a AUC de 120 para 300: razão 2,5, inibidor moderado. Para um betalactâmico, 2,5 vezes seria irrelevante; para o tacrolimo, basta para causar nefrotoxicidade.</p></div>
+
+<p>A recomendação escrita tem cinco partes: risco concreto, mecanismo com fonte, contexto do paciente, ação com dose e horário, e seguimento com parâmetro e prazo. Risco imediato se comunica verbalmente e depois se registra.</p>
+
+<h2>Como cai nas questões e nos casos</h2>
+
+<p><strong>Se aparecer um alerta "maior" ou "contraindicado" da base</strong> pense em julgar o paciente antes de repetir o alerta, porque a gravidade da base é o pior cenário possível, sem dose, via, duração nem monitorização; consulte duas fontes e leia o mecanismo.</p>
+
+<p><strong>Se aparecer azitromicina tratada como claritromicina</strong> pense em efeito de classe falso, porque a azitromicina praticamente não inibe o CYP3A4; ela ainda prolonga o QT, mas não eleva tacrolimo nem sinvastatina.</p>
+
+<p><strong>Se aparecer nível de tacrolimo "normal" 24 horas após iniciar voriconazol</strong> pense em coleta precoce, porque a meia-vida do objeto se alonga sob inibição e o novo equilíbrio leva dias; a conduta correta é reduzir de forma antecipada e repetir o vale em 48 a 72 horas.</p>
+
+<p><strong>Se aparecer a suspensão de rifampicina, fenitoína ou carbamazepina</strong> pense nos objetos que tiveram a dose aumentada, porque a indução se desfaz em 1 a 2 semanas e os níveis sobem quando ninguém mais está olhando.</p>
+
+<p><strong>Se aparecer deslocamento de ligação a proteínas como explicação de toxicidade</strong> pense que o mecanismo é superestimado, porque o aumento da fração livre aumenta também a depuração e a concentração livre volta ao valor anterior; o efeito real é na interpretação do nível total, como na fenitoína com albumina baixa.</p>
+
+<p><strong>Se aparecer um evento adverso e a pergunta "foi a interação?"</strong> pense na escala DIPS, porque ela avalia precipitante e objeto separadamente, ao contrário da escala de Naranjo.</p>
+
+<div class="cx alerta"><b>Atenção</b><p>O erro que mais causa dano é esquecer o tempo: dosar cedo, concluir que "não houve interação" e manter a dose; ou retirar o precipitante sem ajustar o objeto. Interações de tempo, de dieta, de exame e de incompatibilidade no equipo raramente geram alerta, e revisar só o que o sistema sinaliza é terceirizar o raciocínio.</p></div>
+
+<h2>Teste rápido</h2>
+
+<details class="rev"><summary>Na interação anlodipino com sinvastatina, quem é o objeto e quem é o precipitante?</summary><p>A sinvastatina é o objeto (substrato sensível do CYP3A4, com grande primeira passagem) e o anlodipino é o precipitante (inibidor fraco do CYP3A4). A consequência é mais sinvastatina circulando e mais risco de miopatia, daí o teto de 20 mg por dia.</p></details>
+
+<details class="rev"><summary>Por que a inibição começa rápido e a indução demora?</summary><p>A inibição só exige que o inibidor esteja presente na enzima, o que acontece nas primeiras doses. A indução exige que a célula transcreva e fabrique enzima nova, processo que leva dias para começar e cerca de 1 a 2 semanas para atingir o máximo.</p></details>
+
+<details class="rev"><summary>Por que não adianta dosar nível sérico numa interação farmacodinâmica?</summary><p>Porque os níveis não mudam; o que muda é o efeito somado no mesmo alvo. Monitora-se o desfecho diretamente: ECG para QT, escala de sedação, potássio, creatinina.</p></details>
+
+<details class="rev"><summary>Como a FDA classifica um inibidor que aumenta a AUC de um substrato sensível em 3 vezes?</summary><p>Moderado (entre 2 e 5 vezes). Forte é 5 vezes ou mais; fraco, entre 1,25 e 2.</p></details>
+
+<details class="rev"><summary>Qual a primeira opção de manejo quando existe alternativa equivalente sem interação?</summary><p>A troca, porque elimina o risco sem exigir ajuste de dose nem monitorização. Exemplos: azitromicina no lugar de claritromicina em paciente com tacrolimo; pantoprazol no lugar de omeprazol em paciente com clopidogrel.</p></details>
+
+<details class="rev"><summary>Por que a mesma combinação é mais intensa com midazolam oral do que intravenoso?</summary><p>Porque por via oral o midazolam passa pelo CYP3A4 do intestino e do fígado antes de circular, e o inibidor bloqueia essa primeira passagem e a depuração. Por via intravenosa só a depuração sistêmica é afetada.</p></details>
+
+<details class="rev"><summary>O que falta na recomendação "monitorar interação entre voriconazol e tacrolimo"?</summary><p>Ação e prazo: reduzir o tacrolimo a um terço da dose ao iniciar o azol, colher vale em 48 a 72 horas, creatinina diária, e reavaliar a dose ao suspender o voriconazol.</p></details>

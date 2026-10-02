@@ -1,0 +1,1638 @@
+[
+ {
+  "par": [
+   "digoxina",
+   "verapamil"
+  ],
+  "acao": "corrigido",
+  "motivo": "O mecanismo atribuía à digoxina a redução de depuração total e extrarrenal (27% e 29%) que a bula descreve para a digitoxina; o mecanismo da digoxina é inibição da P-gp.",
+  "grav_antes": "grave",
+  "grav_depois": "grave"
+ },
+ {
+  "par": [
+   "propranolol",
+   "verapamil"
+  ],
+  "acao": "corrigido",
+  "motivo": "Tipo passou a PK/PD: além da soma de efeitos, o verapamil reduz a depuração do propranolol.",
+  "grav_antes": "grave",
+  "grav_depois": "grave"
+ },
+ {
+  "par": [
+   "propafenona",
+   "sotalol"
+  ],
+  "acao": "corrigido",
+  "motivo": "Intervalo de transição corrigido para 2 a 3 meias-vidas, como está na bula do sotalol.",
+  "grav_antes": "grave",
+  "grav_depois": "grave"
+ },
+ {
+  "par": [
+   "metoprolol",
+   "propafenona"
+  ],
+  "acao": "corrigido",
+  "motivo": "tipo corrigido de PK para PK/PD (ação betabloqueadora da propafenona)",
+  "grav_antes": "moderada",
+  "grav_depois": "moderada"
+ },
+ {
+  "par": [
+   "ciclosporina",
+   "rosuvastatina"
+  ],
+  "acao": "corrigido",
+  "motivo": "manejo sem a dose-limite da bula (5 mg/dia)",
+  "grav_antes": "grave",
+  "grav_depois": "grave"
+ },
+ {
+  "par": [
+   "rosuvastatina",
+   "ticagrelor"
+  ],
+  "acao": "corrigido",
+  "motivo": "dose-limite e magnitude atualizadas pela bula atual (máximo de 20 mg/dia; exposição cerca de 2,3 vezes)",
+  "grav_antes": "moderada",
+  "grav_depois": "moderada"
+ },
+ {
+  "par": [
+   "furosemida",
+   "hidroclorotiazida"
+  ],
+  "acao": "corrigido",
+  "motivo": "Fonte trocada: a anterior era bula de associação lisinopril-hidroclorotiazida, que não trata do bloqueio sequencial; mecanismo detalhado.",
+  "grav_antes": "moderada",
+  "grav_depois": "moderada"
+ },
+ {
+  "par": [
+   "alopurinol",
+   "hidroclorotiazida"
+  ],
+  "acao": "corrigido",
+  "motivo": "Evidência rebaixada para provável: a bula vigente diz que não se encontrou relação causal nem mecanismo.",
+  "grav_antes": "moderada",
+  "grav_depois": "moderada"
+ },
+ {
+  "par": [
+   "linezolida",
+   "metaraminol"
+  ],
+  "acao": "corrigido",
+  "motivo": "gravidade reduzida de grave para moderada: evidência teórica e uso sob monitorização contínua",
+  "grav_antes": "grave",
+  "grav_depois": "moderada"
+ },
+ {
+  "par": [
+   "enoxaparina",
+   "tenecteplase"
+  ],
+  "acao": "corrigido",
+  "motivo": "números de hemorragia intracraniana trocados pelos confirmados no ensaio; manejo com a dose ajustada explícita",
+  "grav_antes": "grave",
+  "grav_depois": "grave"
+ },
+ {
+  "par": [
+   "heparina",
+   "tenecteplase"
+  ],
+  "acao": "corrigido",
+  "motivo": "manejo ganhou a dose ajustada ao peso",
+  "grav_antes": "grave",
+  "grav_depois": "grave"
+ },
+ {
+  "par": [
+   "polimixina-b",
+   "vecuronio"
+  ],
+  "acao": "corrigido",
+  "motivo": "gravidade subiu de moderada para grave (advertência em tarja da bula da polimixina)",
+  "grav_antes": "moderada",
+  "grav_depois": "grave"
+ },
+ {
+  "par": [
+   "fenitoina",
+   "vecuronio"
+  ],
+  "acao": "corrigido",
+  "motivo": "tipo corrigido de PD para PK/PD; efeito com os números do estudo",
+  "grav_antes": "moderada",
+  "grav_depois": "moderada"
+ },
+ {
+  "par": [
+   "metilprednisolona",
+   "vecuronio"
+  ],
+  "acao": "corrigido",
+  "motivo": "Fonte trocada: a bula do vecurônio consultada não trata da associação com corticoide; a diretriz da SCCM de 2016 trata.",
+  "grav_antes": "moderada",
+  "grav_depois": "moderada"
+ },
+ {
+  "par": [
+   "glibenclamida",
+   "sulfametoxazol-trimetoprima"
+  ],
+  "acao": "corrigido",
+  "motivo": "Tipo passou a PK/PD: além da inibição do CYP2C9, as sulfonamidas têm efeito secretagogo próprio.",
+  "grav_antes": "grave",
+  "grav_depois": "grave"
+ },
+ {
+  "par": [
+   "metimazol",
+   "varfarina"
+  ],
+  "acao": "corrigido",
+  "motivo": "efeito detalhou o sentido mais comum da mudança do INR",
+  "grav_antes": "moderada",
+  "grav_depois": "moderada"
+ },
+ {
+  "par": [
+   "levotiroxina",
+   "sacarato-ferro"
+  ],
+  "acao": "removido",
+  "motivo": "Interação inexistente: o ferro IV não entra em contato com a levotiroxina no intestino. Mantido no verificador, o par geraria alerta falso; a orientação de que só o ferro oral exige espaçamento cabe no par levotiroxina com ferro oral ou na leitura."
+ },
+ {
+  "par": [
+   "cilostazol",
+   "esomeprazol"
+  ],
+  "acao": "corrigido",
+  "motivo": "evidência rebaixada para provável: o dado medido é do omeprazol",
+  "grav_antes": "moderada",
+  "grav_depois": "moderada"
+ },
+ {
+  "par": [
+   "claritromicina",
+   "loperamida"
+  ],
+  "acao": "corrigido",
+  "motivo": "faltava o prolongamento do QT pela própria claritromicina; tipo PK passou a PK/PD",
+  "grav_antes": "moderada",
+  "grav_depois": "moderada"
+ },
+ {
+  "par": [
+   "amiodarona",
+   "droperidol"
+  ],
+  "acao": "corrigido",
+  "motivo": "a bula não contraindica a associação em si: contraindica pelo QTc basal e pede ECG por 2 a 3 h",
+  "grav_antes": "grave",
+  "grav_depois": "grave"
+ },
+ {
+  "par": [
+   "sirolimo",
+   "voriconazol"
+  ],
+  "acao": "corrigido",
+  "motivo": "A magnitude citada (10,9 vezes) era do cetoconazol; trocada pelo dado do próprio voriconazol (AUC 11 vezes).",
+  "grav_antes": "contraindicada",
+  "grav_depois": "contraindicada"
+ },
+ {
+  "par": [
+   "rifampicina",
+   "sirolimo"
+  ],
+  "acao": "corrigido",
+  "motivo": "manejo sugeria rifamicina de menor indução, mas a bula também manda evitar a rifabutina",
+  "grav_antes": "grave",
+  "grav_depois": "grave"
+ },
+ {
+  "par": [
+   "ciclosporina",
+   "sirolimo"
+  ],
+  "acao": "corrigido",
+  "motivo": "Magnitude corrigida: com 4 h de intervalo a Cmax e a AUC sobem 37% e 80% (texto anterior dizia 33 a 80%).",
+  "grav_antes": "moderada",
+  "grav_depois": "moderada"
+ },
+ {
+  "par": [
+   "everolimo",
+   "voriconazol"
+  ],
+  "acao": "corrigido",
+  "motivo": "gravidade de contraindicada para grave: as bulas classificam como não recomendada",
+  "grav_antes": "contraindicada",
+  "grav_depois": "grave"
+ },
+ {
+  "par": [
+   "metotrexato",
+   "piperacilina-tazobactam"
+  ],
+  "acao": "corrigido",
+  "motivo": "mecanismo especificado (OAT1/OAT3) e manejo com resgate de folinato",
+  "grav_antes": "grave",
+  "grav_depois": "grave"
+ },
+ {
+  "par": [
+   "aas",
+   "metotrexato"
+  ],
+  "acao": "corrigido",
+  "motivo": "tipo corrigido de PK/PD para PK (mecanismo é de depuração e ligação proteica); manejo tornou-se específico",
+  "grav_antes": "grave",
+  "grav_depois": "grave"
+ },
+ {
+  "par": [
+   "ciclofosfamida",
+   "succinilcolina"
+  ],
+  "acao": "corrigido",
+  "motivo": "Tipo corrigido de PD para PK: o mecanismo é inibição da enzima que metaboliza a succinilcolina.",
+  "grav_antes": "moderada",
+  "grav_depois": "moderada"
+ },
+ {
+  "par": [
+   "alopurinol",
+   "ciclofosfamida"
+  ],
+  "acao": "corrigido",
+  "motivo": "Evidência rebaixada para provável (dados conflitantes) e manejo deixa claro que a associação é usual na lise tumoral.",
+  "grav_antes": "moderada",
+  "grav_depois": "moderada"
+ },
+ {
+  "par": [
+   "colchicina",
+   "voriconazol"
+  ],
+  "acao": "corrigido",
+  "motivo": "gravidade de contraindicada para grave: a bula só contraindica na disfunção renal ou hepática",
+  "grav_antes": "contraindicada",
+  "grav_depois": "grave"
+ },
+ {
+  "par": [
+   "colchicina",
+   "posaconazol"
+  ],
+  "acao": "corrigido",
+  "motivo": "gravidade de contraindicada para grave: a bula só contraindica na disfunção renal ou hepática; mecanismo acrescenta a P-gp",
+  "grav_antes": "contraindicada",
+  "grav_depois": "grave"
+ },
+ {
+  "par": [
+   "alopurinol",
+   "ciclosporina"
+  ],
+  "acao": "corrigido",
+  "motivo": "Evidência rebaixada para provável (relatos de caso, mecanismo não definido).",
+  "grav_antes": "moderada",
+  "grav_depois": "moderada"
+ },
+ {
+  "par": [
+   "ciclofosfamida",
+   "filgrastim"
+  ],
+  "acao": "corrigido",
+  "motivo": "Retirada a menção a toxicidade pulmonar, que se refere à bleomicina e não à ciclofosfamida.",
+  "grav_antes": "moderada",
+  "grav_depois": "moderada"
+ },
+ {
+  "par": [
+   "acetazolamida",
+   "fenitoina"
+  ],
+  "acao": "corrigido",
+  "motivo": "tipo corrigido para PK/PD (componente ósseo farmacodinâmico)",
+  "grav_antes": "moderada",
+  "grav_depois": "moderada"
+ },
+ {
+  "par": [
+   "bicarbonato-sodio",
+   "cloreto-calcio"
+  ],
+  "acao": "corrigido",
+  "motivo": "Fonte trocada: a diretriz de nutrição parenteral citada não trata do par; a bula do bicarbonato trata.",
+  "grav_antes": "moderada",
+  "grav_depois": "moderada"
+ },
+ {
+  "par": [
+   "meperidina",
+   "nirmatrelvir-ritonavir"
+  ],
+  "acao": "corrigido",
+  "motivo": "O mecanismo misturava efeito serotoninérgico (sem relação com o ritonavir) e não explicava a indução que aumenta a normeperidina; o manejo citava tremor por anfotericina sem relação com o par.",
+  "grav_antes": "grave",
+  "grav_depois": "grave"
+ },
+ {
+  "par": [
+   "apixabana",
+   "nirmatrelvir-ritonavir"
+  ],
+  "acao": "corrigido",
+  "motivo": "manejo ganhou a regra de dose concreta da bula",
+  "grav_antes": "grave",
+  "grav_depois": "grave"
+ },
+ {
+  "par": [
+   "nirmatrelvir-ritonavir",
+   "ticagrelor"
+  ],
+  "acao": "corrigido",
+  "motivo": "manejo antigo sugeria clopidogrel como alternativa, mas o ritonavir também reduz a ativação do clopidogrel",
+  "grav_antes": "grave",
+  "grav_depois": "grave"
+ },
+ {
+  "par": [
+   "clozapina",
+   "nirmatrelvir-ritonavir"
+  ],
+  "acao": "corrigido",
+  "motivo": "Retirada a miocardite do efeito (não é dose-dependente) e explicado o balanço entre inibição e indução do ritonavir.",
+  "grav_antes": "grave",
+  "grav_depois": "grave"
+ },
+ {
+  "par": [
+   "nirmatrelvir-ritonavir",
+   "rifampicina"
+  ],
+  "acao": "corrigido",
+  "motivo": "manejo sugeria rifabutina, que também interage com o ritonavir; a conduta correta é trocar o antiviral",
+  "grav_antes": "contraindicada",
+  "grav_depois": "contraindicada"
+ },
+ {
+  "par": [
+   "itraconazol",
+   "nirmatrelvir-ritonavir"
+  ],
+  "acao": "corrigido",
+  "motivo": "Acrescentado o limite de itraconazol de 200 mg/dia da bula do ritonavir, ausente no manejo.",
+  "grav_antes": "moderada",
+  "grav_depois": "moderada"
+ },
+ {
+  "par": [
+   "dolutegravir",
+   "rifampicina"
+  ],
+  "acao": "corrigido",
+  "motivo": "Magnitude corrigida: a queda de 54% é da AUC, não do Cmax (Cmax cai 43% e vale 72%).",
+  "grav_antes": "grave",
+  "grav_depois": "grave"
+ },
+ {
+  "par": [
+   "amiodarona",
+   "efavirenz"
+  ],
+  "acao": "corrigido",
+  "motivo": "tipo corrigido de PD para PK/PD (indução do CYP3A4 pelo efavirenz)",
+  "grav_antes": "grave",
+  "grav_depois": "grave"
+ },
+ {
+  "par": [
+   "efavirenz",
+   "voriconazol"
+  ],
+  "acao": "corrigido",
+  "motivo": "manejo deixa claro que, nas doses padrão, a associação é contraindicada",
+  "grav_antes": "grave",
+  "grav_depois": "grave"
+ },
+ {
+  "par": [
+   "efavirenz",
+   "rifampicina"
+  ],
+  "acao": "corrigido",
+  "motivo": "Magnitude confirmada (AUC 26% menor) e gravidade ajustada de grave para moderada, por exigir ajuste de dose, não evitação.",
+  "grav_antes": "grave",
+  "grav_depois": "moderada"
+ },
+ {
+  "par": [
+   "micofenolato",
+   "valganciclovir"
+  ],
+  "acao": "corrigido",
+  "motivo": "Gravidade reduzida de grave para moderada (coerente com ganciclovir mais micofenolato): é associação de rotina que exige monitorização, não evitada.",
+  "grav_antes": "grave",
+  "grav_depois": "moderada"
+ },
+ {
+  "par": [
+   "sulfametoxazol-trimetoprima",
+   "valganciclovir"
+  ],
+  "acao": "corrigido",
+  "motivo": "gravidade reduzida de grave para moderada; retirado ácido fólico, que não tem papel nessa conduta",
+  "grav_antes": "grave",
+  "grav_depois": "moderada"
+ },
+ {
+  "par": [
+   "foscarnet",
+   "gluconato-calcio"
+  ],
+  "acao": "corrigido",
+  "motivo": "Faltava a incompatibilidade química do foscarnete com soluções que contêm cálcio, que obriga vias separadas.",
+  "grav_antes": "moderada",
+  "grav_depois": "moderada"
+ },
+ {
+  "par": [
+   "micofenolato",
+   "valaciclovir"
+  ],
+  "acao": "corrigido",
+  "motivo": "Fonte trocada: a interação está descrita na bula do micofenolato, não na do valaciclovir; acrescentado que só pesa na disfunção renal.",
+  "grav_antes": "moderada",
+  "grav_depois": "moderada"
+ },
+ {
+  "par": [
+   "tenofovir-lamivudina",
+   "tobramicina"
+  ],
+  "acao": "corrigido",
+  "motivo": "faltava o componente farmacocinético: a lesão renal eleva o tenofovir",
+  "grav_antes": "grave",
+  "grav_depois": "grave"
+ },
+ {
+  "par": [
+   "itraconazol",
+   "ticagrelor"
+  ],
+  "acao": "corrigido",
+  "motivo": "mecanismo passou a nomear quem inibe; manejo ganhou alternativa concreta",
+  "grav_antes": "contraindicada",
+  "grav_depois": "contraindicada"
+ },
+ {
+  "par": [
+   "apixabana",
+   "itraconazol"
+  ],
+  "acao": "corrigido",
+  "motivo": "manejo passou a incluir o prazo de 2 semanas após o azol e a regra de dose da bula da apixabana",
+  "grav_antes": "grave",
+  "grav_depois": "grave"
+ },
+ {
+  "par": [
+   "itraconazol",
+   "rivaroxabana"
+  ],
+  "acao": "corrigido",
+  "motivo": "manejo incluiu o prazo de 2 semanas após o itraconazol",
+  "grav_antes": "grave",
+  "grav_depois": "grave"
+ },
+ {
+  "par": [
+   "itraconazol",
+   "quetiapina"
+  ],
+  "acao": "corrigido",
+  "motivo": "O manejo não trazia a redução a um sexto que a bula da quetiapina prevê para inibidor forte.",
+  "grav_antes": "grave",
+  "grav_depois": "grave"
+ },
+ {
+  "par": [
+   "isoniazida",
+   "itraconazol"
+  ],
+  "acao": "corrigido",
+  "motivo": "Evidência ajustada para teórica: o dado de base é com cetoconazol e com rifampicina associada, não com isoniazida isolada.",
+  "grav_antes": "grave",
+  "grav_depois": "grave"
+ },
+ {
+  "par": [
+   "fenitoina",
+   "itraconazol"
+  ],
+  "acao": "corrigido",
+  "motivo": "gravidade reduzida de contraindicada para grave (bula: não recomendada); retirada a inibição do metabolismo da fenitoína pelo azol, que não consta na bula",
+  "grav_antes": "contraindicada",
+  "grav_depois": "grave"
+ },
+ {
+  "par": [
+   "carbamazepina",
+   "itraconazol"
+  ],
+  "acao": "corrigido",
+  "motivo": "gravidade reduzida de contraindicada para grave: a bula classifica como não recomendada, não como contraindicação",
+  "grav_antes": "contraindicada",
+  "grav_depois": "grave"
+ },
+ {
+  "par": [
+   "fenitoina",
+   "isoniazida"
+  ],
+  "acao": "corrigido",
+  "motivo": "Vias corrigidas: a fenitoína é hidroxilada pelo CYP2C9 e CYP2C19; o CYP3A4 citado não é via relevante da fenitoína.",
+  "grav_antes": "grave",
+  "grav_depois": "grave"
+ },
+ {
+  "par": [
+   "isoniazida",
+   "paracetamol"
+  ],
+  "acao": "corrigido",
+  "motivo": "Tipo corrigido para PK (alteração do metabolismo do paracetamol pelo CYP2E1) e gravidade ajustada para moderada (base em relatos de caso).",
+  "grav_antes": "grave",
+  "grav_depois": "moderada"
+ },
+ {
+  "par": [
+   "aminofilina",
+   "isoniazida"
+  ],
+  "acao": "corrigido",
+  "motivo": "Gravidade reduzida para menor: a bula da teofilina considera o efeito da isoniazida clinicamente não significativo; a redução empírica de dose foi retirada.",
+  "grav_antes": "moderada",
+  "grav_depois": "menor"
+ },
+ {
+  "par": [
+   "isoniazida",
+   "rifampicina"
+  ],
+  "acao": "corrigido",
+  "motivo": "Direção definida (a rifampicina aumenta a formação de hidrazina a partir da isoniazida), tipo PK/PD e gravidade ajustada para moderada por ser associação obrigatória que exige monitorização.",
+  "grav_antes": "grave",
+  "grav_depois": "moderada"
+ },
+ {
+  "par": [
+   "isoniazida",
+   "pirazinamida"
+  ],
+  "acao": "corrigido",
+  "motivo": "Gravidade ajustada para moderada (associação obrigatória que exige monitorização, não evitação); a hiperuricemia deixou de ser atribuída à interação.",
+  "grav_antes": "grave",
+  "grav_depois": "moderada"
+ },
+ {
+  "par": [
+   "alopurinol",
+   "pirazinamida"
+  ],
+  "acao": "corrigido",
+  "motivo": "mecanismo citava aldeído oxidase; o alopurinol inibe a xantina oxidase que degrada o ácido pirazinoico; gravidade reduzida para menor",
+  "grav_antes": "moderada",
+  "grav_depois": "menor"
+ },
+ {
+  "par": [
+   "dapsona",
+   "rifampicina"
+  ],
+  "acao": "corrigido",
+  "motivo": "Acrescentada a magnitude da bula (níveis 7 a 10 vezes menores) e a consequência na profilaxia de pneumocistose.",
+  "grav_antes": "moderada",
+  "grav_depois": "moderada"
+ },
+ {
+  "par": [
+   "dapsona",
+   "nitrofurantoina"
+  ],
+  "acao": "corrigido",
+  "motivo": "Evidência ajustada para teórica: a bula lista os dois como hemolíticos, sem estudo da associação.",
+  "grav_antes": "moderada",
+  "grav_depois": "moderada"
+ },
+ {
+  "par": [
+   "rosuvastatina",
+   "tedizolida"
+  ],
+  "acao": "corrigido",
+  "motivo": "Acrescentado que a interação só ocorre com tedizolida oral (inibição da BCRP intestinal).",
+  "grav_antes": "moderada",
+  "grav_depois": "moderada"
+ },
+ {
+  "par": [
+   "rocuronio",
+   "tobramicina"
+  ],
+  "acao": "corrigido",
+  "motivo": "gravidade reduzida de grave para moderada, coerente com os demais pares aminoglicosídeo e bloqueador",
+  "grav_antes": "grave",
+  "grav_depois": "moderada"
+ },
+ {
+  "par": [
+   "carbamazepina",
+   "minociclina"
+  ],
+  "acao": "removido",
+  "motivo": "A bula da minociclina não descreve a interação e não há estudo com minociclina; o efeito foi extrapolado da doxiciclina. A leitura interacoes-antimicrobianos já restringe a interação com indutores à doxiciclina."
+ },
+ {
+  "par": [
+   "alopurinol",
+   "amoxicilina"
+  ],
+  "acao": "corrigido",
+  "motivo": "Gravidade reduzida de moderada para menor, coerente com o par alopurinol + ampicilina (exantema sem dano grave).",
+  "grav_antes": "moderada",
+  "grav_depois": "menor"
+ },
+ {
+  "par": [
+   "cefalexina",
+   "metformina"
+  ],
+  "acao": "corrigido",
+  "motivo": "Gravidade reduzida para menor: a bula mostra aumento pequeno (AUC 24% em dose única).",
+  "grav_antes": "moderada",
+  "grav_depois": "menor"
+ },
+ {
+  "par": [
+   "acido-valproico",
+   "meropenem-vaborbactam"
+  ],
+  "acao": "corrigido",
+  "motivo": "mecanismo citava distribuição eritrocitária como principal; o central é a inibição da acilpeptídeo hidrolase",
+  "grav_antes": "grave",
+  "grav_depois": "grave"
+ },
+ {
+  "par": [
+   "albendazol",
+   "fenitoina"
+  ],
+  "acao": "corrigido",
+  "motivo": "gravidade reduzida de grave para moderada",
+  "grav_antes": "grave",
+  "grav_depois": "moderada"
+ },
+ {
+  "par": [
+   "albendazol",
+   "carbamazepina"
+  ],
+  "acao": "corrigido",
+  "motivo": "gravidade reduzida de grave para moderada (falha terapêutica tratável, sem toxicidade aguda); efeito com os números próprios da carbamazepina",
+  "grav_antes": "grave",
+  "grav_depois": "moderada"
+ },
+ {
+  "par": [
+   "albendazol",
+   "fenobarbital"
+  ],
+  "acao": "corrigido",
+  "motivo": "gravidade reduzida de grave para moderada",
+  "grav_antes": "grave",
+  "grav_depois": "moderada"
+ },
+ {
+  "par": [
+   "albendazol",
+   "dexametasona"
+  ],
+  "acao": "corrigido",
+  "motivo": "Gravidade reduzida de moderada para menor: o aumento é desejado e não exige ajuste.",
+  "grav_antes": "moderada",
+  "grav_depois": "menor"
+ },
+ {
+  "par": [
+   "sulfadiazina",
+   "sulfametoxazol-trimetoprima"
+  ],
+  "acao": "corrigido",
+  "motivo": "hipercalemia é efeito da trimetoprima, não das sulfas; fonte de diretriz acrescentada",
+  "grav_antes": "moderada",
+  "grav_depois": "moderada"
+ },
+ {
+  "par": [
+   "micofenolato",
+   "pirimetamina"
+  ],
+  "acao": "corrigido",
+  "motivo": "Gravidade reduzida de grave para moderada e evidência para teórica: a bula traz só alerta de classe para mielossupressores, sem dado específico do par.",
+  "grav_antes": "grave",
+  "grav_depois": "moderada"
+ },
+ {
+  "par": [
+   "enalapril",
+   "litio"
+  ],
+  "acao": "corrigido",
+  "motivo": "Mecanismo reescrito por inteiro (o anterior só remetia a outro par).",
+  "grav_antes": "grave",
+  "grav_depois": "grave"
+ },
+ {
+  "par": [
+   "clortalidona",
+   "litio"
+  ],
+  "acao": "corrigido",
+  "motivo": "Mecanismo reescrito por inteiro (o anterior só remetia ao do tiazídico).",
+  "grav_antes": "grave",
+  "grav_depois": "grave"
+ },
+ {
+  "par": [
+   "litio",
+   "tenoxicam"
+  ],
+  "acao": "corrigido",
+  "motivo": "Mecanismo reescrito por inteiro (o anterior só remetia a outros anti-inflamatórios).",
+  "grav_antes": "grave",
+  "grav_depois": "grave"
+ },
+ {
+  "par": [
+   "litio",
+   "metronidazol"
+  ],
+  "acao": "corrigido",
+  "motivo": "evidência rebaixada de estabelecida para provável (relatos de caso); mecanismo exato não é conhecido",
+  "grav_antes": "grave",
+  "grav_depois": "grave"
+ },
+ {
+  "par": [
+   "clozapina",
+   "sulfametoxazol-trimetoprima"
+  ],
+  "acao": "corrigido",
+  "motivo": "Evidência ajustada para teórica: a soma de mielotoxicidade é inferida dos efeitos isolados, sem estudo da associação.",
+  "grav_antes": "grave",
+  "grav_depois": "grave"
+ },
+ {
+  "par": [
+   "clozapina",
+   "escopolamina"
+  ],
+  "acao": "corrigido",
+  "motivo": "Efeito ajustado: o butilbrometo de escopolamina não atravessa a barreira hematoencefálica, o risco somado é periférico (íleo e retenção).",
+  "grav_antes": "grave",
+  "grav_depois": "grave"
+ },
+ {
+  "par": [
+   "carbamazepina",
+   "olanzapina"
+  ],
+  "acao": "corrigido",
+  "motivo": "mecanismo passou a nomear a via correta (CYP1A2, não CYP3A4)",
+  "grav_antes": "moderada",
+  "grav_depois": "moderada"
+ },
+ {
+  "par": [
+   "azul-de-metileno",
+   "citalopram"
+  ],
+  "acao": "corrigido",
+  "motivo": "Retirada a afirmação de que o azul de metileno prolonga o QT, sem respaldo; mecanismo explicitado.",
+  "grav_antes": "grave",
+  "grav_depois": "grave"
+ },
+ {
+  "par": [
+   "azul-de-metileno",
+   "tramadol"
+  ],
+  "acao": "corrigido",
+  "motivo": "Gravidade elevada de grave para contraindicada, conforme a bula do tramadol, que tem substituto imediato.",
+  "grav_antes": "grave",
+  "grav_depois": "contraindicada"
+ },
+ {
+  "par": [
+   "azul-de-metileno",
+   "meperidina"
+  ],
+  "acao": "corrigido",
+  "motivo": "Gravidade elevada de grave para contraindicada, como na bula da meperidina, que tem substituto imediato.",
+  "grav_antes": "grave",
+  "grav_depois": "contraindicada"
+ },
+ {
+  "par": [
+   "bupropiona",
+   "tramadol"
+  ],
+  "acao": "corrigido",
+  "motivo": "Mecanismo corrigido: a bupropiona não é serotoninérgica; o risco vem da inibição do CYP2D6, que acumula tramadol, somada à redução do limiar convulsivo. Tipo passou a PK/PD.",
+  "grav_antes": "grave",
+  "grav_depois": "grave"
+ },
+ {
+  "par": [
+   "bupropiona",
+   "propafenona"
+  ],
+  "acao": "corrigido",
+  "motivo": "gravidade ajustada de grave para moderada: as bulas pedem redução de dose, e o cenário a evitar é o de inibidor do CYP2D6 somado a inibidor do CYP3A4",
+  "grav_antes": "grave",
+  "grav_depois": "moderada"
+ },
+ {
+  "par": [
+   "bupropiona",
+   "linezolida"
+  ],
+  "acao": "corrigido",
+  "motivo": "Gravidade elevada para contraindicada: a bula da bupropiona contraindica iniciá-la com linezolida e traz conduta específica (suspender, monitorar, reiniciar 24 h após a última dose).",
+  "grav_antes": "grave",
+  "grav_depois": "contraindicada"
+ },
+ {
+  "par": [
+   "citalopram",
+   "linezolida"
+  ],
+  "acao": "corrigido",
+  "motivo": "efeito dizia que os dois prolongam o QT; a linezolida não prolonga",
+  "grav_antes": "grave",
+  "grav_depois": "grave"
+ },
+ {
+  "par": [
+   "linezolida",
+   "meperidina"
+  ],
+  "acao": "corrigido",
+  "motivo": "gravidade subiu de grave para contraindicada: a bula da meperidina contraindica IMAO e nomeia a linezolida",
+  "grav_antes": "grave",
+  "grav_depois": "contraindicada"
+ },
+ {
+  "par": [
+   "amiodarona",
+   "citalopram"
+  ],
+  "acao": "corrigido",
+  "motivo": "manejo atribuía à bula um limite de 20 mg/dia ligado à amiodarona; a bula manda evitar o citalopram com antiarrítmicos de classe III",
+  "grav_antes": "grave",
+  "grav_depois": "grave"
+ },
+ {
+  "par": [
+   "codeina",
+   "paroxetina"
+  ],
+  "acao": "corrigido",
+  "motivo": "Gravidade rebaixada de grave para moderada: a consequência é falha terapêutica.",
+  "grav_antes": "grave",
+  "grav_depois": "moderada"
+ },
+ {
+  "par": [
+   "oxicodona",
+   "paroxetina"
+  ],
+  "acao": "corrigido",
+  "motivo": "Fonte corrigida (os números vêm do estudo oral de 2010 no Br J Clin Pharmacol, não do Clin Drug Investig 2011) e gravidade rebaixada para menor, já que a paroxetina isolada não altera a oxicodona.",
+  "grav_antes": "moderada",
+  "grav_depois": "menor"
+ },
+ {
+  "par": [
+   "mirtazapina",
+   "tramadol"
+  ],
+  "acao": "corrigido",
+  "motivo": "Gravidade rebaixada de grave para moderada: a mirtazapina é serotoninérgica fraca e não reduz o limiar convulsivo; as bulas pedem monitorização, não evitar.",
+  "grav_antes": "grave",
+  "grav_depois": "moderada"
+ },
+ {
+  "par": [
+   "codeina",
+   "fluoxetina"
+  ],
+  "acao": "corrigido",
+  "motivo": "Gravidade rebaixada de grave para moderada: a consequência é falha terapêutica.",
+  "grav_antes": "grave",
+  "grav_depois": "moderada"
+ },
+ {
+  "par": [
+   "bupropiona",
+   "codeina"
+  ],
+  "acao": "corrigido",
+  "motivo": "Gravidade rebaixada de grave para moderada: a consequência é falha terapêutica, resolvida com troca do analgésico.",
+  "grav_antes": "grave",
+  "grav_depois": "moderada"
+ },
+ {
+  "par": [
+   "aas",
+   "cetoprofeno"
+  ],
+  "acao": "corrigido",
+  "motivo": "competição pela COX-1 está demonstrada para ibuprofeno e naproxeno, não para o cetoprofeno",
+  "grav_antes": "grave",
+  "grav_depois": "grave"
+ },
+ {
+  "par": [
+   "cetoprofeno",
+   "espironolactona"
+  ],
+  "acao": "corrigido",
+  "motivo": "Gravidade reduzida de grave para moderada (exige monitorização, não proibição); fonte trocada para a bula da espironolactona, que lista anti-inflamatórios entre os que elevam o potássio.",
+  "grav_antes": "grave",
+  "grav_depois": "moderada"
+ },
+ {
+  "par": [
+   "clonazepam",
+   "fenitoina"
+  ],
+  "acao": "corrigido",
+  "motivo": "direção passou a ser bidirecional (a bula manda dosar fenitoína)",
+  "grav_antes": "moderada",
+  "grav_depois": "moderada"
+ },
+ {
+  "par": [
+   "acido-valproico",
+   "lorazepam"
+  ],
+  "acao": "corrigido",
+  "motivo": "números de efeito trocados pelos da bula (depuração 40% menor, concentração cerca de 2 vezes maior)",
+  "grav_antes": "moderada",
+  "grav_depois": "moderada"
+ },
+ {
+  "par": [
+   "rifampicina",
+   "zolpidem"
+  ],
+  "acao": "corrigido",
+  "motivo": "gravidade reduzida de grave para moderada: perda de efeito de hipnótico, sem risco grave ao paciente",
+  "grav_antes": "grave",
+  "grav_depois": "moderada"
+ },
+ {
+  "par": [
+   "acido-valproico",
+   "topiramato"
+  ],
+  "acao": "corrigido",
+  "motivo": "gravidade reduzida de grave para moderada (conduta é monitorização e suspensão se houver sintomas)",
+  "grav_antes": "grave",
+  "grav_depois": "moderada"
+ },
+ {
+  "par": [
+   "acetazolamida",
+   "topiramato"
+  ],
+  "acao": "corrigido",
+  "motivo": "gravidade reduzida de grave para moderada: a bula pede monitorização, não diz para evitar",
+  "grav_antes": "grave",
+  "grav_depois": "moderada"
+ },
+ {
+  "par": [
+   "hidroclorotiazida",
+   "oxcarbazepina"
+  ],
+  "acao": "corrigido",
+  "motivo": "gravidade reduzida de grave para moderada (manejo é monitorização do sódio)",
+  "grav_antes": "grave",
+  "grav_depois": "moderada"
+ },
+ {
+  "par": [
+   "clonazepam",
+   "flumazenil"
+  ],
+  "acao": "corrigido",
+  "motivo": "O manejo dizia para não usar benzodiazepínico na crise; a bula diz o contrário (benzodiazepínico em dose maior que a usual, fenitoína ou barbitúrico).",
+  "grav_antes": "grave",
+  "grav_depois": "grave"
+ },
+ {
+  "par": [
+   "morfina",
+   "naloxona"
+  ],
+  "acao": "corrigido",
+  "motivo": "Dose de titulação alinhada à bula (0,1 a 0,2 mg a cada 2 a 3 min), com 0,04 mg descrito como prática no paciente dependente.",
+  "grav_antes": "grave",
+  "grav_depois": "grave"
+ },
+ {
+  "par": [
+   "acetilcisteina",
+   "carvao-ativado"
+  ],
+  "acao": "corrigido",
+  "motivo": "Fonte trocada (a bula da acetilcisteína injetável não trata do carvão) e acrescentada a magnitude medida.",
+  "grav_antes": "moderada",
+  "grav_depois": "moderada"
+ },
+ {
+  "par": [
+   "carvao-ativado",
+   "fenobarbital"
+  ],
+  "acao": "corrigido",
+  "motivo": "fonte corrigida (o posicionamento de doses múltiplas é de 1999; o de 2005 é sobre dose única); efeito inclui o risco no uso crônico",
+  "grav_antes": "moderada",
+  "grav_depois": "moderada"
+ },
+ {
+  "par": [
+   "glucagon",
+   "propranolol"
+  ],
+  "acao": "removido",
+  "motivo": "Não é interação medicamentosa adversa: descreve o uso do glucagon como antídoto da intoxicação por betabloqueador, conteúdo da leitura toxicologia-antidotos. No verificador, o par alertaria sem motivo quando o glucagon é usado para hipoglicemia em quem toma propranolol."
+ },
+ {
+  "par": [
+   "emulsao-lipidica",
+   "verapamil"
+  ],
+  "acao": "removido",
+  "motivo": "Não é interação medicamentosa adversa: é uso terapêutico da emulsão em dose de resgate (1,5 mL/kg em bolus) na intoxicação, já tratado na leitura toxicologia-antidotos. No verificador, o par dispararia para todo paciente com nutrição parenteral contendo lipídio e verapamil, situação sem efeito clínico."
+ },
+ {
+  "par": [
+   "dantroleno",
+   "verapamil"
+  ],
+  "acao": "corrigido",
+  "motivo": "evidência rebaixada de estabelecida para provável (dado de modelo animal e relatos isolados)",
+  "grav_antes": "grave",
+  "grav_depois": "grave"
+ },
+ {
+  "par": [
+   "dantroleno",
+   "succinilcolina"
+  ],
+  "acao": "removido",
+  "motivo": "Não é interação medicamentosa: a relação é de gatilho (succinilcolina) e antídoto (dantroleno) da hipertermia maligna; o conteúdo pertence à leitura de bloqueadores neuromusculares, não ao verificador de pares."
+ },
+ {
+  "par": [
+   "dolutegravir",
+   "sacarato-ferro"
+  ],
+  "acao": "removido",
+  "motivo": "Não há interação: o sacarato de ferro é intravenoso, e a quelação descrita na bula ocorre apenas com ferro por via oral. Manter o par geraria alerta falso no verificador."
+ },
+ {
+  "par": [
+   "acido-valproico",
+   "aztreonam-avibactam"
+  ],
+  "acao": "removido",
+  "motivo": "Não é interação: o par registrava a ausência de interação. A informação (aztreonam-avibactam como alternativa ao carbapenêmico em quem usa valproato) cabe na leitura sobre carbapenêmicos e valproato, não na base de pares, onde faria o verificador acusar um par que não interage."
+ },
+ {
+  "par": [
+   "nimodipino",
+   "voriconazol"
+  ],
+  "acao": "corrigido",
+  "motivo": "O manejo sugeria 30 mg de 4/4 h, dose que a bula prevê para cirrose, não para inibidor forte; substituído pela orientação de evitar.",
+  "grav_antes": "grave",
+  "grav_depois": "grave"
+ },
+ {
+  "par": [
+   "fenitoina",
+   "posaconazol"
+  ],
+  "acao": "corrigido",
+  "motivo": "direção passou a ser bidirecional explícita, com a magnitude da bula; o mecanismo deixa claro que o CYP3A4 é via menor da fenitoína",
+  "grav_antes": "grave",
+  "grav_depois": "grave"
+ },
+ {
+  "par": [
+   "fenitoina",
+   "isavuconazol"
+  ],
+  "acao": "corrigido",
+  "motivo": "gravidade elevada de grave para contraindicada: a bula contraindica indutores fortes do CYP3A4 como classe, e a fenitoína é indutora forte",
+  "grav_antes": "grave",
+  "grav_depois": "contraindicada"
+ },
+ {
+  "par": [
+   "fluconazol",
+   "tacrolimo"
+  ],
+  "acao": "corrigido",
+  "motivo": "Faltava dizer que a interação é intestinal e relevante só com tacrolimo oral (até 5 vezes, sem efeito com tacrolimo intravenoso).",
+  "grav_antes": "grave",
+  "grav_depois": "grave"
+ },
+ {
+  "par": [
+   "amiodarona",
+   "fluconazol"
+  ],
+  "acao": "corrigido",
+  "motivo": "tipo corrigido de PD para PK/PD: a bula do fluconazol descreve ampliação do efeito da amiodarona por inibição do CYP3A4",
+  "grav_antes": "grave",
+  "grav_depois": "grave"
+ },
+ {
+  "par": [
+   "amiodarona",
+   "eritromicina"
+  ],
+  "acao": "corrigido",
+  "motivo": "tipo corrigido de PD para PK/PD (inibição do CYP3A4 pela eritromicina)",
+  "grav_antes": "grave",
+  "grav_depois": "grave"
+ },
+ {
+  "par": [
+   "amiodarona",
+   "azitromicina"
+  ],
+  "acao": "corrigido",
+  "motivo": "gravidade elevada de moderada para grave, coerente com os demais macrolídeos e quinolonas com amiodarona (bula da amiodarona manda evitar)",
+  "grav_antes": "moderada",
+  "grav_depois": "grave"
+ },
+ {
+  "par": [
+   "atorvastatina",
+   "rifampicina"
+  ],
+  "acao": "corrigido",
+  "motivo": "gravidade elevada de menor para moderada: a bula exige conduta específica (tomada simultânea) e a perda de efeito é grande com tomadas separadas",
+  "grav_antes": "menor",
+  "grav_depois": "moderada"
+ },
+ {
+  "par": [
+   "linezolida",
+   "sertralina"
+  ],
+  "acao": "corrigido",
+  "motivo": "efeito e manejo atualizados com as coortes de 2022 e 2023 e o prazo de vigilância da bula",
+  "grav_antes": "grave",
+  "grav_depois": "grave"
+ },
+ {
+  "par": [
+   "fluoxetina",
+   "linezolida"
+  ],
+  "acao": "corrigido",
+  "motivo": "manejo passou a trazer o prazo específico de 5 semanas da bula",
+  "grav_antes": "grave",
+  "grav_depois": "grave"
+ },
+ {
+  "par": [
+   "amitriptilina",
+   "linezolida"
+  ],
+  "acao": "corrigido",
+  "motivo": "mecanismo passou a dizer o que cada um faz; fonte da amitriptilina acrescentada",
+  "grav_antes": "grave",
+  "grav_depois": "grave"
+ },
+ {
+  "par": [
+   "linezolida",
+   "tramadol"
+  ],
+  "acao": "corrigido",
+  "motivo": "gravidade subiu de grave para contraindicada: a bula do tramadol contraindica IMAO e nomeia a linezolida",
+  "grav_antes": "grave",
+  "grav_depois": "contraindicada"
+ },
+ {
+  "par": [
+   "linezolida",
+   "noradrenalina"
+  ],
+  "acao": "corrigido",
+  "motivo": "mecanismo dizia que a MAO degrada a catecolamina exógena; a potencialização é sobretudo de agentes indiretos",
+  "grav_antes": "moderada",
+  "grav_depois": "moderada"
+ },
+ {
+  "par": [
+   "levofloxacino",
+   "sucralfato"
+  ],
+  "acao": "corrigido",
+  "motivo": "fonte trocada: a bula injetável não sustenta a quelação oral; mecanismo e manejo detalhados",
+  "grav_antes": "moderada",
+  "grav_depois": "moderada"
+ },
+ {
+  "par": [
+   "levofloxacino",
+   "varfarina"
+  ],
+  "acao": "corrigido",
+  "motivo": "tipo estava como PK, mas a própria bula mostra ausência de alteração farmacocinética",
+  "grav_antes": "moderada",
+  "grav_depois": "moderada"
+ },
+ {
+  "par": [
+   "ciclosporina",
+   "sulfametoxazol-trimetoprima"
+  ],
+  "acao": "corrigido",
+  "motivo": "mecanismo citava competição pela secreção tubular da ciclosporina, que não é o mecanismo; a competição é pela creatinina",
+  "grav_antes": "grave",
+  "grav_depois": "grave"
+ },
+ {
+  "par": [
+   "polimixina-b",
+   "vancomicina"
+  ],
+  "acao": "corrigido",
+  "motivo": "fonte Stockley's trocada por consenso de polimixinas e bula",
+  "grav_antes": "grave",
+  "grav_depois": "grave"
+ },
+ {
+  "par": [
+   "polimixina-b",
+   "rocuronio"
+  ],
+  "acao": "corrigido",
+  "motivo": "gravidade subiu para grave (advertência em tarja da bula); fonte Stockley's trocada pela bula",
+  "grav_antes": "moderada",
+  "grav_depois": "grave"
+ },
+ {
+  "par": [
+   "tigeciclina",
+   "varfarina"
+  ],
+  "acao": "corrigido",
+  "motivo": "efeito dizia aumento do INR, mas o estudo da bula não mostrou mudança significativa do INR; dados de PK acrescentados",
+  "grav_antes": "moderada",
+  "grav_depois": "moderada"
+ },
+ {
+  "par": [
+   "fentanil",
+   "midazolam"
+  ],
+  "acao": "corrigido",
+  "motivo": "Gravidade elevada de moderada para grave, coerente com a advertência em caixa e com os demais pares benzodiazepínico mais opioide da base.",
+  "grav_antes": "moderada",
+  "grav_depois": "grave"
+ },
+ {
+  "par": [
+   "sertralina",
+   "tramadol"
+  ],
+  "acao": "corrigido",
+  "motivo": "Mecanismo corrigido: o componente PK é a inibição do CYP2D6 pela sertralina; a redução do limiar convulsivo é atribuída ao tramadol.",
+  "grav_antes": "grave",
+  "grav_depois": "grave"
+ },
+ {
+  "par": [
+   "morfina",
+   "ticagrelor"
+  ],
+  "acao": "corrigido",
+  "motivo": "números de AUC corrigidos (36% para o ticagrelor, 37% para o metabólito ativo)",
+  "grav_antes": "moderada",
+  "grav_depois": "moderada"
+ },
+ {
+  "par": [
+   "paracetamol",
+   "varfarina"
+  ],
+  "acao": "corrigido",
+  "motivo": "tipo corrigido de PK/PD para PD; mecanismo especifica o metabólito e as enzimas",
+  "grav_antes": "moderada",
+  "grav_depois": "moderada"
+ },
+ {
+  "par": [
+   "amiodarona",
+   "haloperidol"
+  ],
+  "acao": "corrigido",
+  "motivo": "manejo sugeria quetiapina como alternativa segura, mas ela também prolonga o QT",
+  "grav_antes": "grave",
+  "grav_depois": "grave"
+ },
+ {
+  "par": [
+   "fenitoina",
+   "rocuronio"
+  ],
+  "acao": "corrigido",
+  "motivo": "tipo corrigido de PK/PD para PD: a bula atribui a resistência à suprarregulação de receptores, não à indução do metabolismo",
+  "grav_antes": "moderada",
+  "grav_depois": "moderada"
+ },
+ {
+  "par": [
+   "neostigmina",
+   "succinilcolina"
+  ],
+  "acao": "corrigido",
+  "motivo": "Fonte trocada de Stockley's para a bula da neostigmina; tipo passou a PK/PD (inibe a enzima que metaboliza a succinilcolina).",
+  "grav_antes": "moderada",
+  "grav_depois": "moderada"
+ },
+ {
+  "par": [
+   "cisatracurio",
+   "sugamadex"
+  ],
+  "acao": "corrigido",
+  "motivo": "Fonte trocada de Stockley's para a bula do sugamadex, que traz a orientação explícita.",
+  "grav_antes": "moderada",
+  "grav_depois": "moderada"
+ },
+ {
+  "par": [
+   "fenitoina",
+   "varfarina"
+  ],
+  "acao": "corrigido",
+  "motivo": "mecanismo explicitou a via comum (CYP2C9) e a direção em cada fase",
+  "grav_antes": "grave",
+  "grav_depois": "grave"
+ },
+ {
+  "par": [
+   "aas",
+   "varfarina"
+  ],
+  "acao": "corrigido",
+  "motivo": "manejo passou a dizer quando suspender o AAS",
+  "grav_antes": "grave",
+  "grav_depois": "grave"
+ },
+ {
+  "par": [
+   "alteplase",
+   "heparina"
+  ],
+  "acao": "corrigido",
+  "motivo": "diretriz de AVC atualizada de 2019 para 2026",
+  "grav_antes": "grave",
+  "grav_depois": "grave"
+ },
+ {
+  "par": [
+   "espironolactona",
+   "heparina"
+  ],
+  "acao": "corrigido",
+  "motivo": "fonte Stockley's trocada pela bula da heparina",
+  "grav_antes": "moderada",
+  "grav_depois": "moderada"
+ },
+ {
+  "par": [
+   "clopidogrel",
+   "enoxaparina"
+  ],
+  "acao": "corrigido",
+  "motivo": "fonte Stockley's trocada pela bula",
+  "grav_antes": "moderada",
+  "grav_depois": "moderada"
+ },
+ {
+  "par": [
+   "enoxaparina",
+   "rivaroxabana"
+  ],
+  "acao": "corrigido",
+  "motivo": "manejo corrigido para a janela de 0 a 2 h antes da próxima dose, conforme a bula",
+  "grav_antes": "grave",
+  "grav_depois": "grave"
+ },
+ {
+  "par": [
+   "carbamazepina",
+   "rivaroxabana"
+  ],
+  "acao": "corrigido",
+  "motivo": "manejo deixou de sugerir varfarina sem ressalva, já que a carbamazepina também a induz",
+  "grav_antes": "grave",
+  "grav_depois": "grave"
+ },
+ {
+  "par": [
+   "aas",
+   "rivaroxabana"
+  ],
+  "acao": "corrigido",
+  "motivo": "manejo passou a dizer quando suspender o AAS (AFIRE)",
+  "grav_antes": "grave",
+  "grav_depois": "grave"
+ },
+ {
+  "par": [
+   "amiodarona",
+   "sinvastatina"
+  ],
+  "acao": "corrigido",
+  "motivo": "mecanismo não dizia quem inibe nem que a sinvastatina é o substrato; magnitude conferida na bula",
+  "grav_antes": "moderada",
+  "grav_depois": "moderada"
+ },
+ {
+  "par": [
+   "amiodarona",
+   "metoprolol"
+  ],
+  "acao": "corrigido",
+  "motivo": "tipo corrigido de PD para PK/PD (inibição do CYP2D6 pela amiodarona)",
+  "grav_antes": "moderada",
+  "grav_depois": "moderada"
+ },
+ {
+  "par": [
+   "amiodarona",
+   "ciclosporina"
+  ],
+  "acao": "corrigido",
+  "motivo": "gravidade elevada de moderada para grave (imunossupressor de índice estreito, efeito persistente e nefrotoxicidade mesmo com redução de dose); mecanismo passou a dizer quem inibe e quais vias da ciclosporina",
+  "grav_antes": "moderada",
+  "grav_depois": "grave"
+ },
+ {
+  "par": [
+   "digoxina",
+   "espironolactona"
+  ],
+  "acao": "corrigido",
+  "motivo": "magnitude esclarecida: os 44% valem para digoxina IV; com digoxina oral, cerca de 25%",
+  "grav_antes": "moderada",
+  "grav_depois": "moderada"
+ },
+ {
+  "par": [
+   "carbamazepina",
+   "diltiazem"
+  ],
+  "acao": "corrigido",
+  "motivo": "faltava a indução do metabolismo do diltiazem pela carbamazepina (interação bidirecional)",
+  "grav_antes": "moderada",
+  "grav_depois": "moderada"
+ },
+ {
+  "par": [
+   "acido-valproico",
+   "fenobarbital"
+  ],
+  "acao": "corrigido",
+  "motivo": "direção passou a ser bidirecional, com a magnitude da bula",
+  "grav_antes": "grave",
+  "grav_depois": "grave"
+ },
+ {
+  "par": [
+   "ciclosporina",
+   "tacrolimo"
+  ],
+  "acao": "corrigido",
+  "motivo": "Retirada a afirmação de que a ciclosporina eleva o tacrolimo, que a bula vigente não sustenta; tipo passou de PK/PD a PD.",
+  "grav_antes": "contraindicada",
+  "grav_depois": "contraindicada"
+ },
+ {
+  "par": [
+   "ciclosporina",
+   "metilprednisolona"
+  ],
+  "acao": "corrigido",
+  "motivo": "Direção definida (metilprednisolona eleva a ciclosporina) e tipo passou a PK/PD por causa das convulsões.",
+  "grav_antes": "moderada",
+  "grav_depois": "moderada"
+ },
+ {
+  "par": [
+   "claritromicina",
+   "trazodona"
+  ],
+  "acao": "corrigido",
+  "motivo": "faltava o QT somado pela claritromicina; tipo PK passou a PK/PD",
+  "grav_antes": "moderada",
+  "grav_depois": "moderada"
+ },
+ {
+  "par": [
+   "cloreto-potassio",
+   "espironolactona"
+  ],
+  "acao": "corrigido",
+  "motivo": "Fonte Stockley's trocada pela bula da espironolactona, que traz a conduta de suspender a reposição.",
+  "grav_antes": "grave",
+  "grav_depois": "grave"
+ },
+ {
+  "par": [
+   "captopril",
+   "cloreto-potassio"
+  ],
+  "acao": "corrigido",
+  "motivo": "Fonte trocada de Stockley's para a bula do captopril.",
+  "grav_antes": "moderada",
+  "grav_depois": "moderada"
+ },
+ {
+  "par": [
+   "bicarbonato-sodio",
+   "noradrenalina"
+  ],
+  "acao": "corrigido",
+  "motivo": "Fonte trocada de Stockley's para as bulas.",
+  "grav_antes": "moderada",
+  "grav_depois": "moderada"
+ },
+ {
+  "par": [
+   "bicarbonato-sodio",
+   "dobutamina"
+  ],
+  "acao": "corrigido",
+  "motivo": "Fonte trocada de Stockley's para as bulas; deixado claro que é incompatibilidade na linha.",
+  "grav_antes": "moderada",
+  "grav_depois": "moderada"
+ },
+ {
+  "par": [
+   "dexametasona",
+   "insulina-regular"
+  ],
+  "acao": "corrigido",
+  "motivo": "Efeito corrigido: a dexametasona é de ação longa e a hiperglicemia não se concentra à tarde, padrão da prednisona.",
+  "grav_antes": "moderada",
+  "grav_depois": "moderada"
+ },
+ {
+  "par": [
+   "anlodipino",
+   "sinvastatina"
+  ],
+  "acao": "corrigido",
+  "motivo": "mecanismo não dizia quem inibe e quem é afetado (caso relatado pela usuária); magnitude conferida na bula",
+  "grav_antes": "moderada",
+  "grav_depois": "moderada"
+ }
+]

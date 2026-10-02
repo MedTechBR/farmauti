@@ -48,7 +48,7 @@ const debounce = (f, ms) => { let t; return (...a) => { clearTimeout(t); t = set
 /* ---------- armazenamento ---------- */
 const PADRAO = {
   cfg: {meta: {q: 20, c: 30, min: 60}, novos: 20, inicio: null, fonte: 1, nome: "", instalado: false},
-  lidas: {}, prog: {}, notas: {}, resp: {}, fav: {}, srs: {}, ativ: {}, tarefas: {}, casos: {}, presc: {}, sims: [],
+  lidas: {}, prog: {}, notas: {}, resp: {}, fav: {}, srs: {}, ativ: {}, tarefas: {}, casos: {}, presc: {}, revs: {}, sims: [],
   pos: {}, tema: "auto", recentes: [], sinal: {}
 };
 const CHAVES = Object.keys(PADRAO);
@@ -303,7 +303,7 @@ function semanaIdx(pl = plano(), d = iso()) {
 function semanaLiberada() { const k = semanaIdx(); return Math.max(1, k + 1); }
 function feitaAuto(t) {
   switch (t.tipo) {
-    case "L": return !!ST.lidas[t.s];
+    case "L": return !!ST.lidas[t.s] || !!ST.revs?.[t.s];
     case "C": { const cs = CPL[t.s] || []; return cs.length > 0 && cs.every(c => ST.srs[c.id]); }
     case "Q": { const qs = QPL[t.s] || []; return qs.length > 0 && qs.every(q => ST.resp[q.id]?.length); }
     case "K": return !!ST.casos[t.id]?.feito;
@@ -317,7 +317,7 @@ const feita = t => ST.tarefas[t.k] === true || feitaAuto(t);
 function descTarefa(t) {
   const l = t.s && LEIT[t.s];
   switch (t.tipo) {
-    case "L": return {ic: "book-2", k: corA(l.area), tt: `Ler: ${l.titulo}`, ds: `${l.min ? l.min + " min" : "leitura"} · ${AREA[l.area].nome}`};
+    case "L": return {ic: "book-2", k: corA(l.area), tt: `Revisar: ${l.titulo}`, ds: l.rev ? `revisão essencial ${l.rev} min · texto completo ${l.min} min para aprofundar` : `${l.min ? l.min + " min" : "leitura"} · ${AREA[l.area].nome}`};
     case "C": return {ic: "cards", k: "var(--c-ambar)", tt: `Fixar com ${(CPL[t.s] || []).length} cartões`, ds: l.titulo};
     case "Q": return {ic: "checklist", k: "var(--c-azul)", tt: `Resolver ${(QPL[t.s] || []).length} questões`, ds: l.titulo};
     case "M": return {ic: "arrows-shuffle", k: "var(--c-azul)", tt: `${t.n} questões intercaladas`, ds: `revisão das semanas 1 a ${t.ate}`};
@@ -498,67 +498,96 @@ function listaLeituras() {
   vivo($("#listaLeituras"));
 }
 function itemLeitura(l) {
-  const lida = !!ST.lidas[l.slug], p = lida ? 100 : ST.prog[l.slug] || 0;
+  const lida = !!ST.lidas[l.slug], rv = !!ST.revs?.[l.slug], p = lida ? 100 : ST.prog[l.slug] || 0;
   return `<button class="itemL${l.ok ? "" : " indisp"}" style="--k:${corA(l.area)}" ${l.ok ? `data-ir-l="${l.slug}"` : "disabled"}>
-    <div class="meta"><span>Semana ${l.sem}</span><span>·</span><span>${l.ok ? (l.min || "–") + " min" : "em preparação"}</span></div>
+    <div class="meta"><span>Semana ${l.sem}</span><span>·</span><span>${l.ok ? (l.rev ? `revisão ${l.rev} min · completo ${l.min} min` : (l.min || "–") + " min") : "em preparação"}</span></div>
+    ${l.rev ? `<div class="selosL"><span class="pil ${rv ? "ok" : ""}"><i class="ti ti-${rv ? "check" : "bolt"}"></i>Revisão essencial</span><span class="pil ${lida ? "ok" : ""}"><i class="ti ti-${lida ? "check" : "book"}"></i>Texto completo</span></div>` : ""}
     <h3>${esc(l.titulo)}</h3><p>${esc(l.dek || "")}</p>
     <div class="rod"><div class="barra"><i data-w="${p}"></i></div>${lida ? '<i class="ti ti-circle-check-filled ok" aria-label="lida"></i>' : `<span class="sub">${p}%</span>`}</div></button>`;
 }
 let leituraObs = null, mermaidP = null;
+/* Duas versões por tema (01/10/2026): a Revisão essencial (o básico explicado do zero, objetiva, ligada a
+   questões, prescrições e casos) abre primeiro; o texto completo fica como aprofundamento. */
+const MODO_L = {};
+const modoLeitura = l => l.rev ? (MODO_L[l.slug] || ST.pos.modoL?.[l.slug] || "rev") : "comp";
 async function abreLeitura(slug) {
   const l = LEIT[slug];
   if (!l) return ir("leituras");
   semTitulo();
-  const s = $("#sec-leituras");
+  const s = $("#sec-leituras"), modo = modoLeitura(l), rev = modo === "rev";
+  const chP = rev ? "r:" + slug : slug;
   ST.recentes = [slug, ...(ST.recentes || []).filter(x => x !== slug)].slice(0, 12); salva("recentes");
   const i = E.leituras.indexOf(l), ant = E.leituras[i - 1], prox = E.leituras[i + 1];
   const nc = (CPL[slug] || []).length, nq = (QPL[slug] || []).length;
+  const feito = rev ? !!ST.revs[slug] : !!ST.lidas[slug];
+  const rx = E.prescricoes.filter(r => (r.leituras || []).includes(slug)), cs = E.casos.filter(c => (c.leituras || []).includes(slug));
   s.innerHTML = `<div class="leitorTopo"><button class="bt sec mini" data-ir="leituras"><i class="ti ti-arrow-left"></i>Leituras</button>
-     <span class="kick" style="--k:${corA(l.area)}"><i class="ti ti-${icA(l.area)}"></i>${esc(AREA[l.area].nome)}</span><span class="sub">Semana ${l.sem} · ${l.min || "–"} min</span>
+     <span class="kick" style="--k:${corA(l.area)}"><i class="ti ti-${icA(l.area)}"></i>${esc(AREA[l.area].nome)}</span>
+     ${l.rev ? `<div class="tabs2 modoL"><button data-modo-l="rev" aria-pressed="${rev}"><i class="ti ti-bolt"></i>Revisão essencial · ${l.rev} min</button><button data-modo-l="comp" aria-pressed="${!rev}"><i class="ti ti-book"></i>Texto completo · ${l.min} min</button></div>` : `<span class="sub">Semana ${l.sem} · ${l.min || "–"} min</span>`}
      <span style="flex:1"></span>
      <button class="bt sec mini" data-acao="fonte" data-d="-1" aria-label="Diminuir letra">A−</button><button class="bt sec mini" data-acao="fonte" data-d="1" aria-label="Aumentar letra">A+</button>
-     <button class="bt mini ${ST.lidas[slug] ? "sec" : ""}" data-acao="lida" data-s="${slug}"><i class="ti ti-${ST.lidas[slug] ? "circle-check" : "check"}"></i>${ST.lidas[slug] ? "Lida" : "Marcar como lida"}</button></div>
-   <div class="leitor" style="--k:${corA(l.area)}">
+     <button class="bt mini ${feito ? "sec" : ""}" data-acao="${rev ? "revFeita" : "lida"}" data-s="${slug}"><i class="ti ti-${feito ? "circle-check" : "check"}"></i>${rev ? (feito ? "Revisada" : "Concluir revisão") : (feito ? "Lida" : "Marcar como lida")}</button></div>
+   <div class="leitor${rev ? " modoRev" : ""}" style="--k:${corA(l.area)}">
     <article class="texto" id="texto"><h1 class="titL">${esc(l.titulo)}</h1><div class="vazio"><i class="ti ti-loader-2"></i>Carregando…</div></article>
     <aside class="lado">
-     <div class="cx tocBox"><h3><i class="ti ti-list"></i>Nesta leitura</h3><nav class="toc" id="toc"></nav></div>
-     <div class="cx"><h3><i class="ti ti-bolt"></i>Praticar</h3><div class="linhaBt">
+     <div class="cx tocBox"><h3><i class="ti ti-list"></i>${rev ? "Nesta revisão" : "Nesta leitura"}</h3><nav class="toc" id="toc"></nav></div>
+     <div class="cx"><h3><i class="ti ti-bolt"></i>Praticar o tema</h3><div class="linhaBt">
        <button class="bt mini" style="--ac:var(--c-ambar)" data-ir-c="${slug}" ${nc ? "" : "disabled"}><i class="ti ti-cards"></i>${nc} cartões</button>
-       <button class="bt mini" style="--ac:var(--c-azul)" data-acao="qLeitura" data-s="${slug}" ${nq ? "" : "disabled"}><i class="ti ti-checklist"></i>${nq} questões</button></div></div>
-     <div class="cx"><h3><i class="ti ti-notes"></i>Minhas anotações</h3><textarea id="notaL" placeholder="Resumos, dúvidas para o preceptor, doses para decorar…">${esc(ST.notas[slug] || "")}</textarea><div class="sub" style="margin-top:6px">Ficam só neste aparelho e entram no backup.</div></div>
+       <button class="bt mini" style="--ac:var(--c-azul)" data-acao="qLeitura" data-s="${slug}" ${nq ? "" : "disabled"}><i class="ti ti-checklist"></i>${nq} questões</button>
+       ${rx.length ? `<button class="bt mini" style="--ac:var(--c-lima)" data-ir-rx="${rx[0].id}"><i class="ti ti-prescription"></i>${rx.length} ${rx.length > 1 ? "prescrições" : "prescrição"}</button>` : ""}
+       ${cs.length ? `<button class="bt mini" style="--ac:var(--c-rosa)" data-ir-k="${cs[0].id}"><i class="ti ti-clipboard-heart"></i>${cs.length} ${cs.length > 1 ? "casos" : "caso"}</button>` : ""}</div></div>
+     <div class="cx"><h3><i class="ti ti-notes"></i>Minhas anotações</h3><textarea id="notaL" placeholder="Resumos, dúvidas para o preceptor, doses para decorar…">${esc(ST.notas[slug] || "")}</textarea><div class="sub" style="margin-top:6px">Ficam neste aparelho e entram no backup.</div></div>
     </aside></div>`;
   $("#notaL").addEventListener("input", debounce(e => { if (e.target.value.trim()) ST.notas[slug] = e.target.value; else delete ST.notas[slug]; salva("notas"); }, 500));
   let html = "";
   try {
-    const r = await fetch(E.conteudo + slug + ".html");
+    const r = await fetch(E.conteudo + (rev ? "revisao/" : "") + slug + ".html");
     if (!r.ok) throw new Error(r.status);
     html = await r.text();
   } catch (e) {
-    $("#texto").innerHTML = `<h1 class="titL">${esc(l.titulo)}</h1><div class="vazio"><i class="ti ti-wifi-off"></i>Não foi possível abrir esta leitura agora. Sem internet, só abrem as leituras já baixadas (Ajustes, "Baixar para usar sem internet").</div>`;
+    $("#texto").innerHTML = `<h1 class="titL">${esc(l.titulo)}</h1><div class="vazio"><i class="ti ti-wifi-off"></i>Não foi possível abrir este texto agora. Sem internet, só abrem os textos já baixados (Ajustes, "Baixar para usar sem internet").</div>`;
     return;
   }
-  if (abaAtual !== "leituras" || paramAtual !== slug) return;
+  if (abaAtual !== "leituras" || paramAtual !== slug || modoLeitura(l) !== modo) return;
   const t = $("#texto");
-  t.innerHTML = `<h1 class="titL">${esc(l.titulo)}</h1>` + html + `<div class="fimL">
+  const fim = rev
+    ? `<div class="fimL fimRev"><div><b>Revisou o básico?</b><span class="sub">Fixe com cartões e questões, ou aprofunde no texto completo.</span></div>
+        <div class="linhaBt"><button class="bt" data-acao="revFeita" data-s="${slug}" data-fim="1"><i class="ti ti-check"></i>${ST.revs[slug] ? "Revisão concluída" : "Concluir revisão"}</button>
+        <button class="bt sec" data-modo-l="comp"><i class="ti ti-book"></i>Texto completo</button>
+        ${nq ? `<button class="bt sec" data-acao="qLeitura" data-s="${slug}"><i class="ti ti-checklist"></i>Questões</button>` : ""}</div></div>`
+    : `<div class="fimL">
      ${ant ? `<button class="bt sec" data-ir-l="${ant.slug}"><i class="ti ti-arrow-left"></i>Anterior</button>` : "<span></span>"}
      <button class="bt" data-acao="lida" data-s="${slug}" data-fim="1"><i class="ti ti-check"></i>${ST.lidas[slug] ? "Leitura concluída" : "Concluir leitura"}</button>
      ${prox ? `<button class="bt sec" data-ir-l="${prox.slug}">Próxima<i class="ti ti-arrow-right"></i></button>` : "<span></span>"}</div>`;
+  t.innerHTML = `<h1 class="titL">${esc(l.titulo)}</h1>${rev ? `<div class="kickRev"><i class="ti ti-bolt"></i>Revisão essencial: o básico, explicado do zero</div>` : ""}` + html + fim;
   const ICX = {chave: "bulb", alerta: "alert-triangle", farma: "stethoscope", calculo: "calculator"};
   $$(".cx", t).forEach(c => { const b = c.querySelector(":scope>b"); const tipo = Object.keys(ICX).find(k => c.classList.contains(k)); if (b && tipo) b.insertAdjacentHTML("afterbegin", `<i class="ti ti-${ICX[tipo]}"></i>`); });
+  const ICH = {"O que é e por que importa": "help-hexagon", "Como funciona": "settings-automation", "O essencial em números": "numbers", "Como aparece na prescrição": "prescription", "Como cai nas questões e nos casos": "target-arrow", "Teste rápido": "bolt"};
   const h2s = $$("h2", t).filter(h => !h.closest(".fontes"));
-  h2s.forEach((h, k) => h.id = "s-" + k);
+  h2s.forEach((h, k) => { h.id = "s-" + k; const ic = rev && ICH[h.textContent.trim()]; if (ic) { h.classList.add("h2ic"); h.insertAdjacentHTML("afterbegin", `<i class="ti ti-${ic}"></i>`); } });
   $("#toc").innerHTML = h2s.map((h, k) => `<a href="#" data-sec="${k}">${esc(h.textContent)}</a>`).join("");
   if (LER_SECAO != null) { const alvo = $("#s-" + LER_SECAO); LER_SECAO = null; if (alvo) setTimeout(() => alvo.scrollIntoView({behavior: "smooth"}), 60); }
-  else if (ST.prog[slug] && !ST.lidas[slug] && ST.prog[slug] > 5) {
-    const y = t.offsetTop + (t.offsetHeight - innerHeight) * ST.prog[slug] / 100;
+  else if (ST.prog[chP] && !feito && ST.prog[chP] > 5) {
+    const y = t.offsetTop + (t.offsetHeight - innerHeight) * ST.prog[chP] / 100;
     setTimeout(() => scrollTo({top: y - 80}), 60);
-    aviso(`Continuando de onde você parou (${ST.prog[slug]}%).`);
+    aviso(`Continuando de onde você parou (${ST.prog[chP]}%).`);
   }
   if (t.querySelector(".mermaid")) desenhaMermaid(t);
-  acompanhaLeitura(slug, t, h2s);
+  acompanhaLeitura(slug, t, h2s, chP);
+}
+function trocaModoLeitura(m) {
+  const l = LEIT[paramAtual]; if (!l) return;
+  MODO_L[l.slug] = m; ST.pos.modoL = {...(ST.pos.modoL || {}), [l.slug]: m}; salva("pos");
+  scrollTo(0, 0); abreLeitura(l.slug);
+}
+function marcaRevisao(slug) {
+  if (ST.revs[slug]) { delete ST.revs[slug]; salva("revs"); aviso("Revisão desmarcada."); rota(); return; }
+  ST.revs[slug] = iso(); ST.prog["r:" + slug] = 100; salva("revs"); salva("prog"); marca("l");
+  aviso("Revisão concluída. Fixe com os cartões e as questões do tema.");
+  confete(); rota();
 }
 let LER_SECAO = null;
-function acompanhaLeitura(slug, t, h2s) {
+function acompanhaLeitura(slug, t, h2s, chP = slug) {
   const barra = $("#progTopo"); barra.hidden = false;
   if (leituraObs) removeEventListener("scroll", leituraObs);
   const grava = debounce(() => salva("prog"), 1200);
@@ -567,7 +596,7 @@ function acompanhaLeitura(slug, t, h2s) {
     const tot = t.offsetHeight - innerHeight + 120;
     const p = Math.max(0, Math.min(100, Math.round((scrollY - t.offsetTop + 100) / tot * 100)));
     barra.firstElementChild.style.width = p + "%";
-    if (p > (ST.prog[slug] || 0)) { ST.prog[slug] = p; grava(); }
+    if (p > (ST.prog[chP] || 0)) { ST.prog[chP] = p; grava(); }
     let at = 0; h2s.forEach((h, k) => { if (h.getBoundingClientRect().top < 140) at = k; });
     $$("#toc a").forEach((a, k) => a.classList.toggle("on", k === at));
   };
@@ -664,7 +693,7 @@ function pintaSessao() {
       <span class="barra" style="width:160px"><i style="width:${pct(SES.i, SES.fila.length)}%"></i></span><span class="cSinal"></span></div>
     <div class="carta${SES.virada ? " virada" : ""}" id="carta" style="--k:${corA(l.area)}" role="button" tabindex="0" aria-label="Virar cartão">
      <div class="in"><div class="face frente"><div class="rot"><i class="ti ti-${icA(l.area)}"></i>${esc(l.titulo)}</div><div class="conteudo">${esc(c.f)}</div><div class="dica">toque ou barra de espaço para ver a resposta</div></div>
-      <div class="face verso"><div class="rot"><i class="ti ti-bulb"></i>Resposta</div><div class="conteudo">${esc(c.v)}</div><div class="dica"><a href="#leituras/${c.l}">abrir a leitura</a></div></div></div></div>
+      <div class="face verso"><div class="rot"><i class="ti ti-bulb"></i>Resposta</div><div class="conteudo">${esc(c.v)}</div><div class="dica"><a href="#leituras/${c.l}">revisar o básico do tema</a></div></div></div></div>
     <div class="notas4" ${SES.virada ? "" : "hidden"}>${notas.map(([n, nm, cor]) => `<button style="--k:${cor}" data-nota="${n}">${nm}<small>${rotInt(prever(c, n).i)}</small></button>`).join("")}</div>
     <p class="sub" style="text-align:center;margin-top:12px">Atalhos: espaço vira · 1 errei · 2 difícil · 3 bom · 4 fácil</p></div>`;
   if (SINAL) SINAL.botao($(".cSinal", s), {chave: c.id, q: c.f, tema: "Cartão · " + l.titulo, extra: "verso: " + String(c.v).replace(/\s+/g, " ").slice(0, 120)});
@@ -813,7 +842,7 @@ function pintaQuestao(anim) {
     <p class="enun">${esc(q.e)}</p><div class="alts">${alts}</div>
     ${r ? `<div class="coment ${r.ok ? "ok" : "er"}"><div class="cab"><i class="ti ti-${r.ok ? "circle-check" : "circle-x"}"></i>${r.ok ? "Resposta certa" : "Resposta errada: a correta é a " + "ABCDE"[ord.indexOf(q.g)]}
        <span class="pil cor" style="--k:${corA(l.area)}">${esc(AREA[l.area].nome)}</span><span class="pil">${NIVEL[q.n] || q.n}</span></div>
-       <div>${esc(q.c)}</div><div class="base"><i class="ti ti-book"></i> ${esc(q.b)} · <a href="#leituras/${q.l}">${esc(l.titulo)}</a></div></div>` : ""}
+       <div>${esc(q.c)}</div><div class="base"><i class="ti ti-book"></i> ${esc(q.b)} · revisar o básico: <a href="#leituras/${q.l}">${esc(l.titulo)}</a></div></div>` : ""}
     <div class="qPe"><button class="bt sec" data-acao="qNav" data-d="-1" ${QS.i ? "" : "disabled"}><i class="ti ti-arrow-left"></i>Anterior</button>
      <span class="sub" style="align-self:center">${r ? "" : "Atalhos: A a E · setas"}</span>
      <button class="bt" data-acao="qNav" data-d="1" ${QS.i < QS.lista.length - 1 ? "" : "disabled"}>Próxima<i class="ti ti-arrow-right"></i></button></div></div>`;
@@ -990,13 +1019,16 @@ function pintaCaso(id) {
    informado à parte, porque achar o problema já é o que mais pesa na prática.
    ====================================================================== */
 const TIPOS_RX = [
-  ["dose", "Dose"], ["renal", "Ajuste renal ou hepático"], ["intervalo", "Frequência ou duração"], ["interacao", "Interação"],
-  ["via", "Via ou forma farmacêutica"], ["admin", "Diluição, velocidade ou compatibilidade"], ["duplicidade", "Duplicidade"],
-  ["semindicacao", "Sem indicação"], ["contraindicacao", "Contraindicação ou alergia"], ["redacao", "Redação ou ambiguidade"],
-  ["monitorizacao", "Falta monitorização"]
+  ["dose", "Dose", "scale"], ["renal", "Ajuste renal ou hepático", "droplet-half-2"], ["intervalo", "Frequência ou duração", "clock"], ["interacao", "Interação", "arrows-exchange"],
+  ["via", "Via ou forma farmacêutica", "route"], ["admin", "Diluição, velocidade ou compatibilidade", "flask"], ["duplicidade", "Duplicidade", "copy"],
+  ["semindicacao", "Sem indicação", "circle-off"], ["contraindicacao", "Contraindicação ou alergia", "ban"], ["redacao", "Redação ou ambiguidade", "writing"],
+  ["monitorizacao", "Falta monitorização", "heart-rate-monitor"]
 ];
-const TIPO_RX = Object.fromEntries(TIPOS_RX);
-const RXS = {id: "", marc: {}, t0: 0, omiTxt: "", semFiltro: "liberadas"};
+const TIPO_RX = Object.fromEntries(TIPOS_RX.map(t => [t[0], t[1]]));
+const ICT_RX = Object.fromEntries(TIPOS_RX.map(t => [t[0], t[2]]));
+const PRIO = {alta: ["Prioridade alta", "er"], media: ["Prioridade média", "av"], baixa: ["Prioridade baixa", ""]};
+const RXS = {id: "", marc: {}, notas: {}, t0: 0, omiTxt: "", dicas: 0, semFiltro: "liberadas", nivel: "", st: "", soProb: false, plantao: null, fix: {}};
+const SETOR_IC = s => /neuro/i.test(s) ? "brain" : /card|coron/i.test(s) ? "heartbeat" : /cir|trauma/i.test(s) ? "cut" : /obst|gest/i.test(s) ? "baby-carriage" : /onco|hemat|medula/i.test(s) ? "ribbon-health" : /transpl/i.test(s) ? "heart-handshake" : "building-hospital";
 function notaRx(r, st) {
   const probs = r.itens.map((it, i) => it.problema ? i : -1).filter(i => i >= 0);
   const marc = st.marc || {};
@@ -1008,108 +1040,155 @@ function notaRx(r, st) {
   return {tp, fn, fp, tipoOk, om, tot, nota, nprob: probs.length};
 }
 function estatRx() {
-  let n = 0, soma = 0, tp = 0, fn = 0, fp = 0; const perd = {};
+  let n = 0, soma = 0, tp = 0, fn = 0, fp = 0; const perd = {}, porTipo = {};
   for (const r of E.prescricoes) {
     const st = ST.presc[r.id]; if (!st?.feito) continue;
     const x = notaRx(r, st); n++; soma += x.nota; tp += x.tp; fn += x.fn; fp += x.fp;
-    r.itens.forEach((it, i) => { if (it.problema && !(i in (st.marc || {}))) it.problema.tipos.forEach(t => perd[t] = (perd[t] || 0) + 1); });
+    r.itens.forEach((it, i) => { if (!it.problema) return; const achou = i in (st.marc || {});
+      it.problema.tipos.forEach(t => { (porTipo[t] ||= [0, 0])[1]++; if (achou) porTipo[t][0]++; else perd[t] = (perd[t] || 0) + 1; }); });
   }
-  return {n, media: n ? Math.round(soma / n) : 0, sens: pct(tp, tp + fn), fpPor: n ? fp / n : 0, perd};
+  return {n, media: n ? Math.round(soma / n) : 0, sens: pct(tp, tp + fn), fpPor: n ? fp / n : 0, perd, porTipo};
 }
 function pintaPrescricoes(id) {
   if (id && RX[id]) return pintaRx(id);
   const w = semanaLiberada(), e = estatRx();
-  titulo("prescription", "Avaliação de prescrições", `${E.prescricoes.length} prescrições fictícias de UTI com erros plantados: marque as linhas com problema, diga o tipo e compare com o gabarito`);
+  titulo("prescription", "Avaliação de prescrições", `${E.prescricoes.length} prescrições de UTI com erros plantados. Leia o paciente, marque o que está errado, diga o tipo e compare com o gabarito comentado`,
+    `<button class="bt" data-acao="rxPlantao"><i class="ti ti-player-play"></i>Modo plantão</button>`);
   const s = $("#sec-prescricoes");
   if (!E.prescricoes.length) { s.innerHTML = `<div class="cx vazio"><i class="ti ti-prescription"></i>As prescrições estão em preparação.</div>`; return; }
-  const lista = E.prescricoes.filter(r => RXS.semFiltro === "todas" || r.sem <= w || ST.presc[r.id]);
+  const lista = E.prescricoes.filter(r => {
+    const st = ST.presc[r.id], x = st?.feito ? notaRx(r, st) : null;
+    if (RXS.semFiltro !== "todas" && r.sem > w && !st) return false;
+    if (RXS.nivel && r.nivel !== RXS.nivel) return false;
+    if (RXS.st === "nao" && x) return false;
+    if (RXS.st === "feitas" && !x) return false;
+    if (RXS.st === "refazer" && !(x && x.nota < 70)) return false;
+    return true;
+  });
   const porSem = {}; lista.forEach(r => (porSem[r.sem] ||= []).push(r));
-  s.innerHTML = `<div class="kpis anima">
+  const tipos = TIPOS_RX.filter(([k]) => e.porTipo[k]).map(([k, nm, ic]) => { const [a, t] = e.porTipo[k]; return {k, nm, ic, p: pct(a, t), a, t}; }).sort((x, y) => x.p - y.p);
+  s.innerHTML = `<div class="rxPainel anima">
      <div class="kpi" style="--k:var(--c-lima)"><b data-conta="${e.n}">0</b><span>de ${E.prescricoes.length} avaliadas</span></div>
      <div class="kpi" style="--k:var(--c-azul)"><b data-conta="${e.media}" data-suf="%">0</b><span>nota média</span></div>
-     <div class="kpi" style="--k:var(--c-verde)"><b data-conta="${e.sens}" data-suf="%">0</b><span>dos problemas encontrados</span></div>
+     <div class="kpi" style="--k:var(--c-verde)"><b data-conta="${e.sens}" data-suf="%">0</b><span>dos erros encontrados</span></div>
      <div class="kpi" style="--k:var(--c-laranja)"><b>${num(e.fpPor, 1)}</b><span>falsos alarmes por prescrição</span></div></div>
-   <div class="filtros"><div class="tabs2"><button data-rx-f="liberadas" aria-pressed="${RXS.semFiltro === "liberadas"}">Liberadas até a semana ${w}</button><button data-rx-f="todas" aria-pressed="${RXS.semFiltro === "todas"}">Todas</button></div>
-     <span class="sub">Como no plantão: leia em 3 a 5 minutos, toque nas linhas com problema e só então corrija.</span></div>
-   ${Object.keys(porSem).map(Number).sort((a, b) => a - b).map(sm => `<h2 class="grupoL" style="--k:var(--c-lima)"><i class="ti ti-calendar"></i>Semana ${sm} <small>${esc(E.semanas[sm - 1]?.tema || "")}</small></h2>
-     <div class="listaL anima">${porSem[sm].map(r => { const st = ST.presc[r.id]; const x = st?.feito ? notaRx(r, st) : null;
-       return `<button class="itemL" style="--k:var(--c-lima)" data-ir-rx="${r.id}"><div class="meta"><span>${esc(r.setor)}</span><span>·</span><span>${NIVEL[r.nivel] || r.nivel}</span></div>
-        <h3>${esc(r.titulo)}</h3><p>${r.paciente.idade} anos, ${r.paciente.sexo === "F" ? "feminino" : "masculino"}, ${num(r.paciente.peso)} kg · ${r.itens.length} itens na prescrição</p>
-        <div class="rod">${x ? `<span class="pil ${x.nota >= 70 ? "ok" : x.nota >= 40 ? "av" : "er"}">nota ${x.nota}% · ${x.tp + x.om}/${x.tot} problemas</span>` : `<span class="sub">não avaliada</span>`}</div></button>`; }).join("")}</div>`).join("")}`;
+   ${tipos.length ? `<div class="cx rxTiposDesemp"><h3><i class="ti ti-target"></i>Seu acerto por tipo de erro</h3><div class="rxBarrasTipo">${tipos.map(t => `<div style="--k:${t.p >= 70 ? "var(--c-verde)" : t.p >= 40 ? "var(--c-ambar)" : "var(--c-vermelho)"}"><span class="ic"><i class="ti ti-${t.ic}"></i></span><b>${t.nm}</b><div class="barra"><i data-w="${t.p}"></i></div><em>${t.a}/${t.t}</em></div>`).join("")}</div></div>` : `<div class="cx rxComo"><h3><i class="ti ti-route"></i>Como funciona</h3><ol class="rxComoPassos"><li><i class="ti ti-user-heart"></i><b>Leia o paciente</b><span>idade, peso, alergias, função renal, exames do dia</span></li><li><i class="ti ti-hand-finger"></i><b>Toque nas linhas erradas</b><span>diga o tipo e, se quiser, escreva sua intervenção</span></li><li><i class="ti ti-checks"></i><b>Corrija</b><span>verde achou, vermelho passou, amarelo foi falso alarme</span></li><li><i class="ti ti-bulb"></i><b>Fixe</b><span>raciocínio, modelo de intervenção e 2 perguntas</span></li></ol></div>`}
+   <div class="filtros" style="margin-top:18px"><div class="tabs2"><button data-rx-f="liberadas" aria-pressed="${RXS.semFiltro === "liberadas"}">Até a semana ${w}</button><button data-rx-f="todas" aria-pressed="${RXS.semFiltro === "todas"}">Todas</button></div>
+     <div class="tabs2">${[["", "Todos os níveis"], ["basico", "Básico"], ["intermediario", "Intermediário"], ["avancado", "Avançado"]].map(([k, nm]) => `<button data-rx-nivel="${k}" aria-pressed="${RXS.nivel === k}">${nm}</button>`).join("")}</div>
+     <div class="tabs2">${[["", "Todas"], ["nao", "Não feitas"], ["feitas", "Feitas"], ["refazer", "Nota abaixo de 70"]].map(([k, nm]) => `<button data-rx-st="${k}" aria-pressed="${RXS.st === k}">${nm}</button>`).join("")}</div></div>
+   ${Object.keys(porSem).length ? Object.keys(porSem).map(Number).sort((a, b) => a - b).map(sm => `<h2 class="grupoL" style="--k:var(--c-lima)"><i class="ti ti-calendar"></i>Semana ${sm} <small>${esc(E.semanas[sm - 1]?.tema || "")}</small></h2>
+     <div class="rxLista anima">${porSem[sm].map(cartaoRx).join("")}</div>`).join("") : `<div class="cx vazio"><i class="ti ti-filter-off"></i>Nenhuma prescrição com esse filtro.</div>`}`;
   vivo(s);
+}
+function cartaoRx(r) {
+  const st = ST.presc[r.id], x = st?.feito ? notaRx(r, st) : null, p = r.paciente;
+  const cor = x ? (x.nota >= 70 ? "var(--c-verde)" : x.nota >= 40 ? "var(--c-ambar)" : "var(--c-vermelho)") : "var(--c-lima)";
+  return `<button class="rxCard" style="--k:${cor}" data-ir-rx="${r.id}">
+    <span class="rxIc"><i class="ti ti-${SETOR_IC(r.setor)}"></i></span>
+    <div class="rxCorpo"><div class="meta"><span>${esc(r.setor)}</span><span class="pil">${NIVEL[r.nivel] || r.nivel}</span></div>
+     <h3>${esc(r.titulo)}</h3>
+     <p>${p.idade} anos · ${p.sexo === "F" ? "feminino" : "masculino"} · ${num(p.peso)} kg · ${r.itens.length} itens${p.alergias && !/nega|nenhuma|sem alerg/i.test(p.alergias) ? ` · <span class="alergiaMini"><i class="ti ti-alert-triangle"></i>alergia</span>` : ""}</p></div>
+    <div class="rxNota">${x ? `<div class="vAnel" style="width:58px;height:58px">${anel(x.nota / 100, 58, cor, "var(--sup3)", 6)}<div class="val"><b style="font-size:15px;color:${cor}">${x.nota}</b></div></div>` : `<span class="rxIr"><i class="ti ti-arrow-right"></i></span>`}</div></button>`;
 }
 function pintaRx(id) {
   const r = RX[id], st = ST.presc[id] || {};
-  if (RXS.id !== id) { RXS.id = id; RXS.marc = st.feito && !st.refazer ? {...(st.marc || {})} : {}; RXS.t0 = Date.now(); RXS.omiTxt = st.omiTxt || ""; }
   const corrigida = !!st.feito && !st.refazer;
-  const i0 = E.prescricoes.indexOf(r), prox = E.prescricoes[i0 + 1];
-  titulo("prescription", esc(r.titulo), `${esc(r.setor)} · ${NIVEL[r.nivel] || r.nivel} · semana ${r.sem} do cronograma`,
-    `<button class="bt sec mini" data-ir="prescricoes"><i class="ti ti-arrow-left"></i>Prescrições</button>`);
+  if (RXS.id !== id) { RXS.id = id; RXS.marc = corrigida ? {...(st.marc || {})} : {}; RXS.notas = corrigida ? {...(st.notas || {})} : {}; RXS.t0 = Date.now(); RXS.omiTxt = st.omiTxt || ""; RXS.dicas = corrigida ? st.dicas || 0 : 0; RXS.soProb = false; RXS.fix = {...(st.fix || {})}; }
+  const i0 = E.prescricoes.indexOf(r), prox = RXS.plantao ? RX[RXS.plantao[RXS.plantao.indexOf(id) + 1]] : E.prescricoes[i0 + 1];
+  titulo("prescription", esc(r.titulo), `${esc(r.setor)} · ${NIVEL[r.nivel] || r.nivel} · semana ${r.sem}${RXS.plantao ? ` · plantão ${RXS.plantao.indexOf(id) + 1} de ${RXS.plantao.length}` : ""}`,
+    `<button class="bt sec mini" data-acao="rxVolta"><i class="ti ti-arrow-left"></i>Prescrições</button>`);
   const p = r.paciente, x = corrigida ? notaRx(r, st) : null;
+  const temAlergia = p.alergias && !/nega|nenhuma|sem alerg/i.test(p.alergias);
+  const passo = corrigida ? 3 : Object.keys(RXS.marc).length ? 1 : 0;
+  const etapas = ["Paciente", "Triagem", "Correção", "Fixação"].map((nm, k) => `<li class="${k < passo ? "feito" : k === passo ? "agora" : ""}"><span>${k < passo ? '<i class="ti ti-check"></i>' : k + 1}</span>${nm}</li>`).join("");
   const linha = (it, i) => {
     const m = i in RXS.marc, pr = it.problema;
     let est = "", ex = "";
     if (corrigida) {
+      const tipos = pr ? pr.tipos.map(t => `<span class="pil tipoRx"><i class="ti ti-${ICT_RX[t]}"></i>${esc(TIPO_RX[t])}</span>`).join("") : "";
+      const pri = pr?.prioridade ? `<span class="pil ${PRIO[pr.prioridade][1]}">${PRIO[pr.prioridade][0]}</span>` : "";
+      const sua = RXS.notas[i] ? `<p class="suaInt"><b>Sua intervenção:</b> ${esc(RXS.notas[i])}</p>` : "";
       if (pr && m) { est = " tp"; const tOk = RXS.marc[i] && pr.tipos.includes(RXS.marc[i]);
-        ex = `<div class="rxEx"><b><i class="ti ti-circle-check"></i> Problema encontrado</b>${RXS.marc[i] ? ` · você marcou <i>${esc(TIPO_RX[RXS.marc[i]])}</i>${tOk ? "" : `; o tipo esperado era <i>${pr.tipos.map(t => esc(TIPO_RX[t])).join(" ou ")}</i>`}` : ` · tipo: <i>${pr.tipos.map(t => esc(TIPO_RX[t])).join(" ou ")}</i>`}<p>${esc(pr.explicacao)}</p><p><b>Intervenção:</b> ${esc(pr.correcao)}</p></div>`; }
-      else if (pr) { est = " fn"; ex = `<div class="rxEx"><b><i class="ti ti-alert-circle"></i> Problema não marcado</b> · <i>${pr.tipos.map(t => esc(TIPO_RX[t])).join(" ou ")}</i><p>${esc(pr.explicacao)}</p><p><b>Intervenção:</b> ${esc(pr.correcao)}</p></div>`; }
-      else if (m) { est = " fp"; ex = `<div class="rxEx"><b><i class="ti ti-info-circle"></i> Falso alarme:</b> esta linha está adequada para o paciente.</div>`; }
-      else est = " ok";
+        ex = `<div class="rxEx"><div class="rxExCab"><b><i class="ti ti-circle-check"></i>Você achou</b>${tipos}${pri}${RXS.marc[i] ? `<span class="pil ${tOk ? "ok" : "av"}">${tOk ? "tipo certo" : "você marcou " + esc(TIPO_RX[RXS.marc[i]])}</span>` : ""}</div><p>${esc(pr.explicacao)}</p><p class="rxCorr"><i class="ti ti-arrow-big-right-line"></i><span><b>Intervenção:</b> ${esc(pr.correcao)}</span></p>${sua}</div>`; }
+      else if (pr) { est = " fn"; ex = `<div class="rxEx"><div class="rxExCab"><b><i class="ti ti-alert-circle"></i>Passou despercebido</b>${tipos}${pri}</div><p>${esc(pr.explicacao)}</p><p class="rxCorr"><i class="ti ti-arrow-big-right-line"></i><span><b>Intervenção:</b> ${esc(pr.correcao)}</span></p></div>`; }
+      else if (m) { est = " fp"; ex = `<div class="rxEx"><div class="rxExCab"><b><i class="ti ti-info-circle"></i>Falso alarme: esta linha está adequada</b></div>${it.ok ? `<p>${esc(it.ok)}</p>` : ""}${sua}</div>`; }
+      else { est = " ok"; ex = it.ok ? `<details class="rxPorque"><summary><i class="ti ti-help-circle"></i>Por que esta linha está certa</summary><p>${esc(it.ok)}</p></details>` : ""; }
+      if (RXS.soProb && !pr && !m) return "";
     }
     return `<div class="rxLinha${m ? " marcada" : ""}${est}" ${corrigida ? "" : `data-rxl="${i}" role="button" tabindex="0" aria-pressed="${m}"`}>
-      <span class="n">${i + 1}</span><div class="tx">${esc(it.texto)}
-      ${!corrigida && m ? `<div class="rxTipos">${TIPOS_RX.map(([k, nm]) => `<button class="chip" data-rxt="${i}" data-t="${k}" aria-pressed="${RXS.marc[i] === k}">${nm}</button>`).join("")}</div>` : ""}${ex}</div>
+      <span class="n">${i + 1}</span><div class="tx"><span class="rxTxt">${esc(it.texto)}</span>
+      ${!corrigida && m ? `<div class="rxEdita" data-pare="1"><div class="rxTipos">${TIPOS_RX.map(([k, nm, ic]) => `<button class="chip" data-rxt="${i}" data-t="${k}" aria-pressed="${RXS.marc[i] === k}"><i class="ti ti-${ic}"></i>${nm}</button>`).join("")}</div>
+        <input type="text" class="rxNota" data-rxnota="${i}" placeholder="Sua intervenção (opcional): o que você proporia?" value="${esc(RXS.notas[i] || "")}"></div>` : ""}${ex}</div>
       ${corrigida ? "" : `<i class="ti ti-${m ? "flag-filled" : "flag"} bandeira"></i>`}</div>`;
   };
   const s = $("#sec-prescricoes");
-  s.innerHTML = `<div class="rxGrade">
+  s.innerHTML = `<ol class="rxEtapas">${etapas}</ol>
+   <div class="rxGrade">
    <div>
     <div class="folhaRx">
-     <div class="rxCab"><div class="dadoPac">${p.idade ? `<span class="pil">${p.idade} anos</span>` : ""}<span class="pil">${p.sexo === "F" ? "feminino" : "masculino"}</span>${p.peso ? `<span class="pil">${num(p.peso)} kg</span>` : ""}${p.altura ? `<span class="pil">${p.altura} cm</span>` : ""}
-       <span class="pil ${/nega|nenhuma|sem alerg|nkda/i.test(p.alergias || "nega") ? "" : "er"}">alergias: ${esc(p.alergias || "nega")}</span></div>
+     <div class="rxCab"><div class="rxCabTopo"><span class="rxSetor"><i class="ti ti-${SETOR_IC(r.setor)}"></i>${esc(r.setor)}</span><span class="sub">Prescrição médica do dia</span></div>
+       <div class="dadoPac"><span class="pil"><i class="ti ti-user"></i>${p.idade} anos</span><span class="pil">${p.sexo === "F" ? "feminino" : "masculino"}</span>${p.peso ? `<span class="pil"><i class="ti ti-scale"></i>${num(p.peso)} kg</span>` : ""}${p.altura ? `<span class="pil"><i class="ti ti-ruler-measure"></i>${p.altura} cm</span>` : ""}</div>
+       ${temAlergia ? `<div class="faixaAlergia"><i class="ti ti-alert-triangle"></i>Alergia: ${esc(p.alergias)}</div>` : `<div class="sub" style="margin-top:8px">Alergias: ${esc(p.alergias || "nega")}</div>`}
        <p>${esc(r.contexto)}</p>
        <div class="rxDados">${(r.dados || []).map(([k, v]) => `<span><small>${esc(k)}</small><b>${esc(v)}</b></span>`).join("")}</div></div>
-     <div class="rxTit"><i class="ti ti-prescription"></i>Prescrição médica de hoje ${corrigida ? "" : '<span class="sub">toque nas linhas com problema</span>'}</div>
+     <div class="rxTit"><i class="ti ti-list-numbers"></i>Itens prescritos ${corrigida ? `<button class="chip" data-acao="rxSoProb" aria-pressed="${RXS.soProb}" style="margin-left:auto"><i class="ti ti-filter"></i>Só os problemas</button>` : '<span class="sub">toque nas linhas com problema</span>'}</div>
      ${r.itens.map(linha).join("")}
     </div>
-    ${corrigida ? `${(r.omissoes || []).length ? `<div class="cx" style="margin-top:16px"><h3><i class="ti ti-square-plus"></i>O que faltava na prescrição</h3><p class="sub" style="margin:-4px 0 6px">Marque o que você tinha apontado no campo de omissões.</p>
-       ${r.omissoes.map((o, k) => `<div class="prob${st.omi?.[k] ? " on" : ""}" data-acao="rxOmi" data-k="${id}" data-i="${k}" role="checkbox" aria-checked="${!!st.omi?.[k]}" tabindex="0"><span class="chk"><i class="ti ti-check"></i></span><div><b>${esc(o.texto)}</b><dl><dt>Por quê</dt><dd>${esc(o.explicacao)}</dd><dt>Intervenção</dt><dd>${esc(o.correcao)}</dd></dl></div></div>`).join("")}</div>` : ""}
-      <div class="cx" style="margin-top:16px"><h3><i class="ti ti-message-2"></i>Comentário</h3><p style="margin:0;line-height:1.7">${esc(r.comentario)}</p>
-       ${r.leituras?.length ? `<div class="chips" style="margin-top:12px">${r.leituras.map(sl => LEIT[sl] ? `<a class="chip" href="#leituras/${sl}" style="text-decoration:none"><i class="ti ti-book-2"></i>${esc(LEIT[sl].titulo)}</a>` : "").join("")}</div>` : ""}</div>`
-    : `<div class="cx" style="margin-top:16px"><h3><i class="ti ti-square-plus"></i>Falta alguma coisa?</h3><textarea id="rxOmi" placeholder="Indicação sem tratamento, profilaxia ausente, exame ou nível sérico que deveria estar pedido…">${esc(RXS.omiTxt)}</textarea></div>`}
+    ${corrigida ? posCorrecaoRx(r, st, id) : `<div class="cx" style="margin-top:16px"><h3><i class="ti ti-square-plus"></i>Falta alguma coisa?</h3><p class="sub" style="margin:-4px 0 8px">Indicação sem tratamento, profilaxia ausente, exame ou nível sérico que deveria estar pedido.</p><textarea id="rxOmi" placeholder="Ex.: falta profilaxia de tromboembolismo…">${esc(RXS.omiTxt)}</textarea></div>`}
    </div>
    <aside class="lado">
-    <div class="cx">${corrigida ? `<h3><i class="ti ti-report-analytics"></i>Resultado</h3>
-       <div class="vAnel" style="width:120px;height:120px;margin:4px auto 10px">${anel(x.nota / 100, 120, "var(--c-lima)", "var(--sup3)", 11)}<div class="val"><b data-conta="${x.nota}" data-suf="%" style="color:color-mix(in srgb,var(--c-lima) 80%,var(--ink));font-size:28px">0</b><span class="sub">nota</span></div></div>
-       ${linhaRx("Problemas encontrados", `${x.tp} de ${x.nprob}`)}${(r.omissoes || []).length ? linhaRx("Omissões apontadas", `${x.om} de ${r.omissoes.length}`) : ""}${linhaRx("Tipo certo", `${x.tipoOk} de ${x.tp}`)}${linhaRx("Falsos alarmes", x.fp)}${linhaRx("Tempo", `${Math.floor((st.seg || 0) / 60)} min ${(st.seg || 0) % 60} s`)}
-       <div class="linhaBt" style="margin-top:14px">${prox ? `<button class="bt" style="--ac:var(--c-lima)" data-ir-rx="${prox.id}">Próxima<i class="ti ti-arrow-right"></i></button>` : ""}<button class="bt sec" data-acao="rxRefaz" data-k="${id}"><i class="ti ti-refresh"></i>Refazer</button></div>`
-      : `<h3><i class="ti ti-stopwatch"></i>Triagem</h3><div class="rxRel" id="rxRel">${(sg => `${p2(Math.floor(sg / 60))}:${p2(sg % 60)}`)(Math.floor((Date.now() - RXS.t0) / 1000))}</div>
-       <p class="sub" style="margin:4px 0 12px"><b id="rxN">${Object.keys(RXS.marc).length}</b> ${Object.keys(RXS.marc).length === 1 ? "linha marcada" : "linhas marcadas"}. Escolher o tipo é opcional, mas conta à parte.</p>
-       <button class="bt" style="--ac:var(--c-lima);width:100%" data-acao="rxCorrige" data-k="${id}"><i class="ti ti-checks"></i>Corrigir</button>`}</div>
-    <div class="cx"><h3><i class="ti ti-help"></i>Tipos de problema</h3><div class="sub" style="line-height:1.7">${TIPOS_RX.map(t => t[1]).join(" · ")}</div></div>
+    ${corrigida ? `<div class="cx rxRes"><h3><i class="ti ti-report-analytics"></i>Resultado</h3>
+       <div class="vAnel" style="width:132px;height:132px;margin:4px auto 12px">${anel(x.nota / 100, 132, "var(--c-lima)", "var(--sup3)", 12)}<div class="val"><b data-conta="${x.nota}" data-suf="%" style="color:color-mix(in srgb,var(--c-lima) 80%,var(--ink));font-size:30px">0</b><span class="sub">nota</span></div></div>
+       <div class="rxResGrade"><span style="--k:var(--ok)"><b>${x.tp}/${x.nprob}</b>erros achados</span><span style="--k:var(--c-azul)"><b>${x.tipoOk}/${x.tp || 0}</b>tipo certo</span><span style="--k:var(--warn)"><b>${x.fp}</b>falsos alarmes</span>${(r.omissoes || []).length ? `<span style="--k:var(--c-violeta)"><b>${x.om}/${r.omissoes.length}</b>omissões</span>` : ""}<span style="--k:var(--ink3)"><b>${Math.floor((st.seg || 0) / 60)}:${p2((st.seg || 0) % 60)}</b>tempo</span><span style="--k:var(--c-ambar)"><b>${st.dicas || 0}</b>dicas usadas</span></div>
+       <div class="linhaBt" style="margin-top:14px">${prox ? `<button class="bt" data-ir-rx="${prox.id}">Próxima<i class="ti ti-arrow-right"></i></button>` : RXS.plantao ? `<button class="bt" data-acao="rxFimPlantao"><i class="ti ti-flag"></i>Fim do plantão</button>` : ""}<button class="bt sec" data-acao="rxRefaz" data-k="${id}"><i class="ti ti-refresh"></i>Refazer</button></div></div>`
+      : `<div class="cx"><h3><i class="ti ti-stopwatch"></i>Triagem</h3><div class="rxRel" id="rxRel">${(sg => `${p2(Math.floor(sg / 60))}:${p2(sg % 60)}`)(Math.floor((Date.now() - RXS.t0) / 1000))}</div>
+       <p class="sub" style="margin:4px 0 12px"><b>${Object.keys(RXS.marc).length}</b> ${Object.keys(RXS.marc).length === 1 ? "linha marcada" : "linhas marcadas"}. O tipo e a intervenção são opcionais; o tipo certo conta à parte.</p>
+       <button class="bt" style="width:100%" data-acao="rxCorrige" data-k="${id}"><i class="ti ti-checks"></i>Corrigir</button></div>
+       ${(r.dicas || []).length ? `<div class="cx rxDicas"><h3><i class="ti ti-bulb"></i>Dicas <small class="sub">${RXS.dicas}/${r.dicas.length}</small></h3>${r.dicas.slice(0, RXS.dicas).map((d, k) => `<p class="dica"><b>${k + 1}.</b> ${esc(d)}</p>`).join("")}${RXS.dicas < r.dicas.length ? `<button class="bt sec mini" data-acao="rxDica"><i class="ti ti-bulb"></i>${RXS.dicas ? "Mais uma dica" : "Pedir uma dica"}</button>` : ""}</div>` : ""}`}
+    <div class="cx"><h3><i class="ti ti-category"></i>Tipos de erro</h3><div class="rxLegenda">${TIPOS_RX.map(([k, nm, ic]) => `<span><i class="ti ti-${ic}"></i>${nm}</span>`).join("")}</div></div>
    </aside></div>`;
   if (!corrigida) {
     $("#rxOmi").addEventListener("input", e => RXS.omiTxt = e.target.value);
+    $$("[data-rxnota]", s).forEach(inp => { inp.addEventListener("input", e => RXS.notas[e.target.dataset.rxnota] = e.target.value); inp.addEventListener("click", e => e.stopPropagation()); });
     clearInterval(rxRelogio);
     rxRelogio = setInterval(() => { const el = $("#rxRel"); if (!el || RXS.id !== id) return clearInterval(rxRelogio); const sg = Math.floor((Date.now() - RXS.t0) / 1000); el.textContent = `${p2(Math.floor(sg / 60))}:${p2(sg % 60)}`; }, 1000);
   }
   vivo(s);
 }
+function posCorrecaoRx(r, st, id) {
+  const fx = r.fixacao || [];
+  return `${r.resumo ? `<div class="cx rxBloco" style="--k:var(--c-azul)"><h3><i class="ti ti-brain"></i>O raciocínio de quem tem experiência</h3><p>${esc(r.resumo)}</p></div>` : ""}
+   ${(r.omissoes || []).length ? `<div class="cx rxBloco" style="--k:var(--c-violeta)"><h3><i class="ti ti-square-plus"></i>O que faltava na prescrição</h3><p class="sub" style="margin:-4px 0 6px">Marque o que você tinha apontado.${st.omiTxt ? ` Você escreveu: "${esc(st.omiTxt)}"` : ""}</p>
+     ${r.omissoes.map((o, k) => `<div class="prob${st.omi?.[k] ? " on" : ""}" data-acao="rxOmi" data-k="${id}" data-i="${k}" role="checkbox" aria-checked="${!!st.omi?.[k]}" tabindex="0"><span class="chk"><i class="ti ti-check"></i></span><div><b>${esc(o.texto)}</b><dl><dt>Por quê</dt><dd>${esc(o.explicacao)}</dd><dt>Intervenção</dt><dd>${esc(o.correcao)}</dd></dl></div></div>`).join("")}</div>` : ""}
+   ${r.intervencao ? `<div class="cx rxBloco" style="--k:var(--c-lima)"><h3><i class="ti ti-message-2"></i>Como comunicar à equipe<button class="chip" data-acao="rxCopia" style="margin-left:auto"><i class="ti ti-copy"></i>Copiar</button></h3><div class="rxIntervencao" id="rxIntTxt">${esc(r.intervencao)}</div></div>` : ""}
+   ${fx.length ? `<div class="cx rxBloco" style="--k:var(--c-ambar)"><h3><i class="ti ti-bolt"></i>Fixação</h3>${fx.map((q, qi) => { const resp = RXS.fix[qi];
+      return `<div class="rxFix"><p class="rxFixP"><b>${qi + 1}.</b> ${esc(q.p)}</p><div class="alts">${q.alts.map((a, k) => `<button class="alt${resp != null ? (k === q.gab ? " certa" : k === resp ? " errada" : "") : ""}" data-rxfix="${qi}" data-k="${k}" ${resp != null ? "disabled" : ""}><span class="let">${"ABCD"[k]}</span><span class="tx">${esc(a)}</span></button>`).join("")}</div>${resp != null ? `<div class="coment ${resp === q.gab ? "ok" : "er"}">${esc(q.exp)}</div>` : ""}</div>`; }).join("")}</div>` : ""}
+   <div class="cx rxBloco" style="--k:var(--c-rosa)"><h3><i class="ti ti-message-circle"></i>Comentário</h3><p style="margin:0;line-height:1.7">${esc(r.comentario)}</p>
+     ${r.leituras?.length ? `<p class="sub" style="margin:12px 0 6px">Para revisar o básico:</p><div class="chips">${r.leituras.map(sl => LEIT[sl] ? `<a class="chip" href="#leituras/${sl}" style="text-decoration:none"><i class="ti ti-bolt"></i>${esc(LEIT[sl].titulo)}</a>` : "").join("")}</div>` : ""}</div>`;
+}
 let rxRelogio = null;
-const linhaRx = (a, b) => `<div class="linhaR" style="display:flex;justify-content:space-between;padding:6px 0;border-top:1px solid var(--linha);font-size:14px"><span>${a}</span><b>${b}</b></div>`;
 function marcaLinhaRx(i) {
-  if (i in RXS.marc) delete RXS.marc[i]; else RXS.marc[i] = "";
+  if (i in RXS.marc) { delete RXS.marc[i]; delete RXS.notas[i]; } else RXS.marc[i] = "";
   const y = scrollY; pintaRx(RXS.id); scrollTo(0, y);
 }
 function corrigeRx(id) {
   const r = RX[id], ant = ST.presc[id] || {};
-  const st = {marc: {...RXS.marc}, omi: (r.omissoes || []).map(() => false), omiTxt: RXS.omiTxt, seg: Math.round((Date.now() - RXS.t0) / 1000), feito: iso(), tent: (ant.tent || 0) + 1};
+  const st = {marc: {...RXS.marc}, notas: {...RXS.notas}, omi: (r.omissoes || []).map(() => false), omiTxt: RXS.omiTxt, seg: Math.round((Date.now() - RXS.t0) / 1000), dicas: RXS.dicas, feito: iso(), tent: (ant.tent || 0) + 1};
   ST.presc[id] = st; salva("presc");
   const a = ativ(); a.rx = (a.rx || 0) + 1; salva("ativ");
   const x = notaRx(r, st);
   if (x.nota >= 80) confete();
-  const y = scrollY; pintaRx(id); scrollTo(0, y);
-  aviso(`${x.tp} de ${x.nprob} problemas encontrados${x.fp ? `, ${x.fp} ${x.fp > 1 ? "falsos alarmes" : "falso alarme"}` : ""}.`);
+  RXS.fix = {};
+  scrollTo(0, 0); pintaRx(id);
+  aviso(`${x.tp} de ${x.nprob} erros encontrados${x.fp ? `, ${x.fp} ${x.fp > 1 ? "falsos alarmes" : "falso alarme"}` : ""}.`);
+}
+function iniciaPlantao() {
+  const w = semanaLiberada();
+  let pool = E.prescricoes.filter(r => r.sem <= w && !ST.presc[r.id]?.feito);
+  if (pool.length < 3) pool = E.prescricoes.filter(r => r.sem <= Math.max(w, 3));
+  RXS.plantao = embaralha([...pool]).slice(0, 3).map(r => r.id);
+  aviso("Plantão: 3 prescrições seguidas. Tente fazer cada uma em até 5 minutos.");
+  RXS.id = ""; ir("prescricoes", RXS.plantao[0]);
 }
 
 /* ======================================================================
@@ -1137,7 +1216,7 @@ const TAGS = {
   mielotox: {nm: "Mielotoxicidade", ef: "Supressão medular aditiva.", mn: "Hemograma seriado; rever a duração e a necessidade de cada fármaco."},
   bradicardia: {nm: "Bradicardia", ef: "Redução aditiva da frequência cardíaca ou da condução AV.", mn: "Monitorar FC e ECG; cuidado especial com bloqueios prévios."},
   hipotensao: {nm: "Hipotensão", ef: "Queda aditiva da pressão arterial.", mn: "Monitorar PA; escalonar doses com cautela em pacientes instáveis."},
-  convulsao: {nm: "Redução do limiar convulsivo", ef: "Risco somado de crise convulsiva.", mn: "Ajustar doses pela função renal; evitar em epilepsia não controlada; considerar alternativa."},
+  convulsao: {nm: "Redução do limiar convulsivo", ef: "Risco somado de crise convulsiva.", mn: "Corrigir a dose pela função renal quando o fármaco é eliminado pelo rim (betalactâmicos, carbapenêmicos); evitar a soma em epilepsia não controlada ou lesão cerebral aguda; preferir alternativa sem esse efeito."},
   anticolinergico: {nm: "Carga anticolinérgica", ef: "Delirium, retenção urinária, íleo, taquicardia.", mn: "Reduzir o número de anticolinérgicos, principalmente em idosos e em pacientes com delirium."},
   hipoglicemia: {nm: "Hipoglicemia", ef: "Risco somado de hipoglicemia.", mn: "Glicemia capilar mais frequente e protocolo de correção."}
 };
@@ -1193,9 +1272,9 @@ function analisaInt(ids) {
   }
   const pk = [];
   const regra = (fa, fb, rot, ef, mn) => { for (const a of ids.filter(id => tem(id, fa))) for (const b of ids.filter(id => tem(id, fb))) if (a !== b && !cob.has(par(a, b))) pk.push({a, b, rot, ef, mn}); };
-  regra("inib3a4", "sub3a4", "Inibição do CYP3A4", "O inibidor tende a aumentar a exposição ao substrato.", "Verificar magnitude na bula ou em base de interações; reduzir dose do substrato, monitorar nível sérico ou efeito, ou trocar um dos fármacos.");
-  regra("ind3a4", "sub3a4", "Indução do CYP3A4", "O indutor tende a reduzir a exposição ao substrato, com perda de efeito em dias a semanas; ao suspender o indutor, o nível volta a subir.", "Monitorar efeito e nível sérico; ajustar a dose do substrato na introdução e na retirada do indutor.");
-  regra("quelante", "quelavel", "Quelação ou adsorção no trato digestivo", "Menor absorção oral ou por sonda do fármaco quelável.", "Separar as administrações (em geral 2 h antes ou 4 a 6 h depois do quelante) ou usar a via intravenosa.");
+  regra("inib3a4", "sub3a4", "Inibição do CYP3A4", "O primeiro inibe o CYP3A4, enzima que metaboliza o segundo; com a enzima bloqueada, o segundo é eliminado mais devagar e a concentração dele sobe.", "Verificar magnitude na bula ou em base de interações; reduzir dose do substrato, monitorar nível sérico ou efeito, ou trocar um dos fármacos.");
+  regra("ind3a4", "sub3a4", "Indução do CYP3A4", "O primeiro induz (aumenta a produção de) CYP3A4, enzima que metaboliza o segundo; o segundo passa a ser eliminado mais rápido e perde efeito em dias a semanas. Ao suspender o indutor, o nível volta a subir.", "Monitorar efeito e nível sérico; ajustar a dose do substrato na introdução e na retirada do indutor.");
+  regra("quelante", "quelavel", "Quelação ou adsorção no trato digestivo", "O primeiro se liga ao segundo no estômago ou no intestino e forma um complexo que não é absorvido: o segundo, dado por boca ou sonda, deixa de chegar ao sangue.", "Separar as administrações (em geral 2 h antes ou 4 a 6 h depois do quelante) ou usar a via intravenosa.");
   return {esp, grupos, pk};
 }
 function pintaResultadoInt() {
@@ -1214,14 +1293,28 @@ function pintaResultadoInt() {
   box.innerHTML = `<div class="grade g4 anima" style="margin-bottom:6px">${["contraindicada", "grave", "moderada", "menor"].map(g => `<div class="kpi" style="--k:${GRAV[g].cor}"><b data-conta="${n[g] || 0}">0</b><span>${GRAV[g].nm.toLowerCase()}</span></div>`).join("")}</div>
    ${r.esp.length ? `<h2 class="grupoL" style="--k:var(--c-vermelho)"><i class="ti ti-arrows-exchange"></i>Pares específicos <small>${r.esp.length}</small></h2>${r.esp.map(x => htmlInter(x)).join("")}` : `<div class="cx" style="margin-top:12px"><p class="sub" style="margin:0">Nenhum par específico entre estes ${ids.length} fármacos na base.</p></div>`}
    ${r.grupos.length ? `<h2 class="grupoL" style="--k:var(--c-violeta)"><i class="ti ti-stack-2"></i>Efeitos somados <small>${r.grupos.length}</small></h2>${r.grupos.map(g => `<details class="inter" style="--k:var(--c-violeta)"><summary><span class="gv"><i class="ti ti-stack-2"></i></span><div><div class="par">${esc(g.meta.nm)}: ${g.m.map(id => esc(FARM[id].nome)).join(", ")}</div><div class="ef">${esc(g.meta.ef)}</div></div><i class="ti ti-chevron-down"></i></summary><div class="corpo"><p><b>Manejo.</b> ${esc(g.meta.mn)}</p><p class="sub">Regra geral a partir das fichas do bulário; o par específico, quando listado acima, tem prioridade.</p></div></details>`).join("")}` : ""}
-   ${r.pk.length ? `<h2 class="grupoL" style="--k:var(--c-ambar)"><i class="ti ti-route"></i>Alertas farmacocinéticos gerais <small>${r.pk.length}</small></h2>${r.pk.map(x => `<details class="inter" style="--k:var(--c-ambar)"><summary><span class="gv"><i class="ti ti-route"></i></span><div><div class="par">${esc(FARM[x.a].nome)} + ${esc(FARM[x.b].nome)}</div><div class="ef">${esc(x.rot)}</div></div><i class="ti ti-chevron-down"></i></summary><div class="corpo"><p>${esc(x.ef)}</p><p><b>Manejo.</b> ${esc(x.mn)}</p></div></details>`).join("")}` : ""}`;
+   ${r.pk.length ? `<h2 class="grupoL" style="--k:var(--c-ambar)"><i class="ti ti-route"></i>Alertas farmacocinéticos gerais <small>${r.pk.length}</small></h2>${r.pk.map(x => `<details class="inter" style="--k:var(--c-ambar)"><summary><span class="gv"><i class="ti ti-route"></i></span><div><div class="par">${esc(FARM[x.a].nome)} <i class="ti ti-arrow-right"></i> ${esc(FARM[x.b].nome)}</div><div class="ef">${esc(x.rot)}: ${esc(FARM[x.a].nome)} altera ${esc(FARM[x.b].nome)}</div></div><i class="ti ti-chevron-down"></i></summary><div class="corpo"><p>${esc(x.ef).replace("O primeiro", "<b>" + esc(FARM[x.a].nome) + "</b>").replace("o segundo", "<b>" + esc(FARM[x.b].nome) + "</b>").replace("o segundo", esc(FARM[x.b].nome)).replace("o segundo", esc(FARM[x.b].nome))}</p><p class="sub">Alerta geral a partir das fichas do bulário (não há par específico na base para estes dois). Confirme a magnitude na bula.</p><p><b>Manejo.</b> ${esc(x.mn)}</p></div></details>`).join("")}` : ""}`;
   vivo(box);
 }
-function htmlInter(x) {
-  const g = GRAV[x.grav] || GRAV.moderada;
-  return `<details class="inter" style="--k:${g.cor}"><summary><span class="gv" title="${g.nm}"><i class="ti ti-${g.ic}"></i></span>
-    <div><div class="par">${esc(FARM[x.a]?.nome || x.a)} + ${esc(FARM[x.b]?.nome || x.b)} <span class="pil cor" style="--k:${g.cor}">${g.nm}</span></div><div class="ef">${esc(x.efeito)}</div></div><i class="ti ti-chevron-down"></i></summary>
-    <div class="corpo"><p><b>Mecanismo (${esc(x.tipo)}).</b> ${esc(x.mecanismo)}</p><p><b>Manejo.</b> ${esc(x.manejo)}</p><p class="sub">Evidência: ${esc(x.evidencia || "não informada")} · ${esc(x.fonte)}</p></div></details>`;
+/* Cada par diz QUEM causa (precipitante) e QUEM sofre (objeto). Sem isso o texto "inibição do CYP3A4"
+   não dizia quem inibia quem, e a usuária leu como motivo errado (anlodipino + sinvastatina, 01/10/2026). */
+const nomeF = id => FARM[id]?.nome || id;
+function direcaoInt(x) {
+  const p = x.precipitante, o = x.objeto;
+  if (p && o && p !== "ambos" && o !== "ambos") return {tit: `${nomeF(p)} <i class="ti ti-arrow-right"></i> ${nomeF(o)}`, frase: `<b>${esc(nomeF(p))}</b> é quem causa a interação; <b>${esc(nomeF(o))}</b> é quem sofre o efeito.`};
+  if (p === "ambos") return {tit: `${nomeF(x.a)} <i class="ti ti-plus"></i> ${nomeF(x.b)}`, frase: "Os dois fármacos contribuem: o problema é a soma dos efeitos ou uma alteração recíproca."};
+  return {tit: `${nomeF(x.a)} <i class="ti ti-plus"></i> ${nomeF(x.b)}`, frase: ""};
+}
+function htmlInter(x, aberto) {
+  const g = GRAV[x.grav] || GRAV.moderada, d = direcaoInt(x);
+  const TIPO = {PK: "farmacocinética: um altera a concentração do outro", PD: "farmacodinâmica: os efeitos se somam ou se opõem", "PK/PD": "farmacocinética e farmacodinâmica"};
+  return `<details class="inter" style="--k:${g.cor}" ${aberto ? "open" : ""}><summary><span class="gv" title="${g.nm}"><i class="ti ti-${g.ic}"></i></span>
+    <div><div class="par">${d.tit} <span class="pil cor" style="--k:${g.cor}">${g.nm}</span></div><div class="ef">${esc(x.efeito)}</div></div><i class="ti ti-chevron-down"></i></summary>
+    <div class="corpo">${d.frase ? `<p class="dirInt"><i class="ti ti-route"></i><span>${d.frase} <span class="sub">Interação ${esc(TIPO[x.tipo] || x.tipo)}.</span></span></p>` : ""}
+     <div class="intBlocos"><div><h5><i class="ti ti-help-circle"></i>Por que acontece</h5><p>${esc(x.mecanismo)}</p></div>
+      <div><h5><i class="ti ti-heart-rate-monitor"></i>O que acontece com o paciente</h5><p>${esc(x.efeito)}</p></div>
+      <div><h5><i class="ti ti-stethoscope"></i>O que o farmacêutico faz</h5><p>${esc(x.manejo)}</p></div></div>
+     <p class="sub" style="margin-top:10px">Evidência: ${esc(x.evidencia || "não informada")} · ${esc(x.fonte)}</p></div></details>`;
 }
 
 /* ======================================================================
@@ -1613,7 +1706,7 @@ function importa(e) {
 async function baixaOffline() {
   const msg = $("#offMsg"), ls = E.leituras.filter(l => l.ok);
   let n = 0;
-  for (const l of ls) { try { const r = await fetch(E.conteudo + l.slug + ".html"); if (r.ok) n++; } catch (e) {} if (msg) msg.textContent = `Baixando ${n} de ${ls.length}…`; }
+  for (const l of ls) { try { const r = await fetch(E.conteudo + l.slug + ".html"); if (r.ok) n++; if (l.rev) await fetch(E.conteudo + "revisao/" + l.slug + ".html"); } catch (e) {} if (msg) msg.textContent = `Baixando ${n} de ${ls.length}…`; }
   if (msg) msg.textContent = n === ls.length ? `Pronto: as ${n} leituras estão disponíveis sem internet.` : `${n} de ${ls.length} baixadas. Tente de novo com uma conexão melhor.`;
 }
 
@@ -1663,10 +1756,10 @@ function abreMais() {
 
 /* ---------- eventos (delegação única) ---------- */
 document.addEventListener("click", e => {
-  const t = e.target.closest("[data-ir],[data-ir-l],[data-ir-c],[data-ir-k],[data-ir-b],[data-ir-calc],[data-ir-rx],[data-rxt],[data-rxl],[data-rx-f],[data-acao],[data-alt],[data-simalt],[data-simir],[data-nota],[data-qf],[data-lf-modo],[data-lf-st],[data-lf-area],[data-sim-n],[data-sim-e],[data-ex],[data-add],[data-rm],[data-bf-g],[data-fecha],#carta,.itR,.toc a");
+  const t = e.target.closest("[data-ir],[data-ir-l],[data-ir-c],[data-ir-k],[data-ir-b],[data-ir-calc],[data-ir-rx],[data-modo-l],[data-rxt],[data-rxl],[data-rx-f],[data-rx-nivel],[data-rx-st],[data-rxfix],[data-acao],[data-alt],[data-simalt],[data-simir],[data-nota],[data-qf],[data-lf-modo],[data-lf-st],[data-lf-area],[data-sim-n],[data-sim-e],[data-ex],[data-add],[data-rm],[data-bf-g],[data-fecha],#carta,.itR,.toc a");
   if (!t) return;
   if (t.dataset.fecha && e.target === t) return fechaCamada();
-  if (t.classList.contains("itR")) { fechaCamada(); if (t.dataset.sec != null) LER_SECAO = +t.dataset.sec; location.hash = t.dataset.h; if (location.hash === t.dataset.h) rota(); return; }
+  if (t.classList.contains("itR")) { fechaCamada(); if (t.dataset.sec != null) { LER_SECAO = +t.dataset.sec; MODO_L[t.dataset.h.split("/")[1]] = "comp"; } location.hash = t.dataset.h; if (location.hash === t.dataset.h) rota(); return; }
   if (t.matches(".toc a")) { e.preventDefault(); $("#s-" + t.dataset.sec)?.scrollIntoView({behavior: "smooth"}); return; }
   if (t.id === "carta") return viraCarta();
   if (t.dataset.ir) return ir(t.dataset.ir);
@@ -1676,9 +1769,13 @@ document.addEventListener("click", e => {
   if (t.dataset.irB) return ir("bulario", t.dataset.irB);
   if (t.dataset.irCalc) return ir("calculadoras", t.dataset.irCalc);
   if (t.dataset.irRx) return ir("prescricoes", t.dataset.irRx);
+  if (t.dataset.modoL) return trocaModoLeitura(t.dataset.modoL);
   if (t.dataset.rxt != null) { e.stopPropagation(); const i = t.dataset.rxt; RXS.marc[i] = RXS.marc[i] === t.dataset.t ? "" : t.dataset.t; const y = scrollY; pintaRx(RXS.id); scrollTo(0, y); return; }
   if (t.dataset.rxl != null) return marcaLinhaRx(t.dataset.rxl);
   if (t.dataset.rxF) { RXS.semFiltro = t.dataset.rxF; return pintaPrescricoes(); }
+  if (t.hasAttribute("data-rx-nivel")) { RXS.nivel = t.dataset.rxNivel; return pintaPrescricoes(); }
+  if (t.hasAttribute("data-rx-st")) { RXS.st = t.dataset.rxSt; return pintaPrescricoes(); }
+  if (t.dataset.rxfix != null) { const qi = +t.dataset.rxfix, k = +t.dataset.k; RXS.fix[qi] = k; const st = ST.presc[RXS.id]; if (st) { st.fix = {...RXS.fix}; salva("presc"); } const y = scrollY; pintaRx(RXS.id); scrollTo(0, y); return; }
   if (t.dataset.alt != null) return responde(+t.dataset.alt);
   if (t.dataset.simalt != null) { const A = SIM.ativo, id = A.ids[A.i]; A.resp[id] = +t.dataset.simalt; return pintaQuestaoSim(); }
   if (t.dataset.simir != null) { SIM.ativo.i = +t.dataset.simir; return pintaQuestaoSim(); }
@@ -1701,6 +1798,7 @@ document.addEventListener("click", e => {
     case "irTarefa": { const k = achaTarefa(t.dataset.tk); return k && irTarefa(k); }
     case "irHoje": { const k = semanaIdx(); const el = $("#sem-" + (k >= 0 ? k + 1 : 1)); if (el) { el.open = true; el.scrollIntoView({behavior: "smooth"}); } return; }
     case "lida": return marcaLida(t.dataset.s);
+    case "revFeita": return marcaRevisao(t.dataset.s);
     case "fonte": { const v = Math.max(.85, Math.min(1.3, (+ST.cfg.fonte || 1) + (+t.dataset.d) * .05)); ST.cfg.fonte = +v.toFixed(2); salva("cfg"); return aplicaFonte(); }
     case "qLeitura": QS.filtro = {...FILTRO0, l: t.dataset.s}; QS.misturar = false; return ir("questoes");
     case "focoArea": QS.filtro = {...FILTRO0, areas: [t.dataset.area]}; QS.misturar = true; return ir("questoes");
@@ -1720,6 +1818,12 @@ document.addEventListener("click", e => {
     case "marcaProb": { const id = t.dataset.k, i = +t.dataset.i, st = ST.casos[id]; const m = new Set(st.marc || []); m.has(i) ? m.delete(i) : m.add(i); st.marc = [...m]; salva("casos"); t.classList.toggle("on", m.has(i)); t.setAttribute("aria-checked", m.has(i)); const b = $('[data-acao="concluiCaso"]'); if (b) b.innerHTML = `<i class="ti ti-check"></i>${st.feito ? "Atualizar nota" : "Concluir caso"} (${m.size}/${CASO[id].gabarito.length})`; return; }
     case "concluiCaso": { const id = t.dataset.k, st = ST.casos[id]; const novo = !st.feito; st.feito = iso(); salva("casos"); if (novo) { confete(); aviso(`Caso concluído: ${st.marc?.length || 0} de ${CASO[id].gabarito.length} problemas identificados.`); } else aviso("Nota atualizada."); return ir("casos"); }
     case "rxCorrige": return corrigeRx(t.dataset.k);
+    case "rxDica": { const r = RX[RXS.id]; RXS.dicas = Math.min((r.dicas || []).length, RXS.dicas + 1); const y = scrollY; pintaRx(RXS.id); scrollTo(0, y); return; }
+    case "rxSoProb": { RXS.soProb = !RXS.soProb; const y = scrollY; pintaRx(RXS.id); scrollTo(0, y); return; }
+    case "rxPlantao": return iniciaPlantao();
+    case "rxFimPlantao": { const ids = RXS.plantao || []; RXS.plantao = null; const ns = ids.map(i => ST.presc[i]?.feito ? notaRx(RX[i], ST.presc[i]).nota : 0); aviso(`Plantão encerrado: média ${Math.round(ns.reduce((a, b) => a + b, 0) / Math.max(1, ns.length))}%.`); return ir("prescricoes"); }
+    case "rxVolta": RXS.plantao = null; RXS.id = ""; return ir("prescricoes");
+    case "rxCopia": { const tx = $("#rxIntTxt")?.textContent || ""; navigator.clipboard?.writeText(tx).then(() => aviso("Texto copiado."), () => aviso("Não foi possível copiar.")); return; }
     case "rxRefaz": { const st = ST.presc[t.dataset.k]; if (st) st.refazer = 1; RXS.id = ""; return pintaRx(t.dataset.k); }
     case "rxOmi": { const st = ST.presc[t.dataset.k], i = +t.dataset.i; st.omi[i] = !st.omi[i]; salva("presc"); const y = scrollY; pintaRx(t.dataset.k); scrollTo(0, y); return; }
     case "limpaInt": INT.ids = []; ST.pos.int = []; salva("pos"); return pintaResultadoInt();

@@ -296,7 +296,7 @@
   "renal": "ClCr 26 a 50: dose integral 12/12 h; 10 a 25: metade da dose 12/12 h; < 10: metade da dose 24/24 h. HD intermitente: 500 mg a 1 g 24/24 h, após a sessão. TRS contínua (CVVHDF, efluente 20 a 25 mL/kg/h, cerca de 2 L/h): ataque de 1 a 2 g e 1 g 8/8 h (ou 500 mg 6/6 h); 2 g 8/8 a 12/12 h no SNC ou com CIM de 4 mg/L.",
   "hepatico": "Sem ajuste.",
   "administracao": "Diluir preferencialmente em SF 0,9% (mais estável que em SG 5%); infusão de 15 a 30 min ou estendida de 3 h. A estabilidade em temperatura ambiente é curta (horas, conforme concentração e fabricante), o que limita a infusão contínua sem troca de bolsa. Via periférica.",
-  "monitorizacao": "Função renal, estado neurológico, diarreia, nível de valproato se associado, TDM quando disponível (vale acima de cerca de 45 mg/L associado a neurotoxicidade).",
+  "monitorizacao": "Função renal, estado neurológico, diarreia, nível de valproato se associado, TDM quando disponível (vale acima de cerca de 64 mg/L associado a neurotoxicidade e acima de cerca de 44 mg/L a nefrotoxicidade, Imani 2017).",
   "efeitos": "Diarreia, C. difficile, hipersensibilidade, elevação de transaminases, convulsão (risco menor que o do imipenem), trombocitopenia.",
   "interacoes": "Ácido valproico: queda de 60 a 100% do nível em 24 a 48 h, sem resposta a aumento de dose; evitar a associação. Probenecida eleva o nível do meropenem.",
   "perolas": "Carbapenêmico com valproato é interação a interceptar na hora: troque o anticonvulsivante ou o antimicrobiano. S. maltophilia crescendo em uso de meropenem é seleção, não falha de dose. Descalone para betalactâmico mais estreito assim que o antibiograma permitir.",
@@ -440,7 +440,7 @@
   "administracao": "Reconstituir com SF 0,9% ou SG 5% (solução laranja-amarelada) e diluir em 100 mL; infusão de 30 a 60 min. Via periférica.",
   "monitorizacao": "Provas hepáticas, amilase e lipase, fibrinogênio e coagulograma (hipofibrinogenemia com dose alta e uso prolongado), náusea.",
   "efeitos": "Náusea e vômito frequentes, pancreatite, hepatotoxicidade, hipofibrinogenemia e coagulopatia; aumento de mortalidade em metanálise dos estudos de registro (alerta da FDA).",
-  "interacoes": "Varfarina: aumento do RNI. Tacrolimo e ciclosporina: aumento de nível relatado. Reduz a eficácia de contraceptivos orais.",
+  "interacoes": "Varfarina: no estudo da bula a tigeciclina não alterou o RNI, mas reduziu a depuração da varfarina; há relatos de RNI elevado, então monitorar o RNI. Tacrolimo e ciclosporina: aumento de nível relatado. Reduz a eficácia de contraceptivos orais.",
   "perolas": "Concentração sérica baixa torna a tigeciclina ruim para bacteremia e ITU. Em dose alta e curso prolongado, peça fibrinogênio antes de procedimentos. Prescreva antiemético.",
   "altaVigilancia": false,
   "tags": [
@@ -544,13 +544,14 @@
   "monitorizacao": "QTc na presença de outros prolongadores ou distúrbio eletrolítico, glicemia, estado neurológico, dor tendínea.",
   "efeitos": "Prolongamento do QT, disglicemia (hipo e hiperglicemia), delirium e convulsão, tendinopatia e ruptura de tendão, neuropatia periférica, aneurisma e dissecção de aorta (alerta regulatório), C. difficile, fototoxicidade.",
   "interacoes": "Inibidor de CYP1A2: tizanidina (contraindicada), teofilina, clozapina e cafeína têm nível aumentado. Quelantes di/trivalentes, sevelâmer e dieta enteral reduzem a absorção oral. Prolongadores do QT somam risco. Varfarina: aumento do RNI. Sulfonilureias e insulina: hipoglicemia.",
-  "perolas": "É a única quinolona útil contra Pseudomonas; levofloxacino tem atividade menor. A troca IV para VO é possível, mas a dieta pela sonda reduz a absorção: separe as tomadas. Evite em idosos com aneurisma de aorta conhecido.",
+  "perolas": "É a quinolona mais ativa contra Pseudomonas; o levofloxacino 750 mg também tem atividade, um pouco menor. A troca IV para VO é possível, mas a dieta pela sonda reduz a absorção: separe as tomadas. Evite em idosos com aneurisma de aorta conhecido.",
   "altaVigilancia": false,
   "tags": [
    "qt",
    "convulsao",
    "hipoglicemia",
-   "quelavel"
+   "quelavel",
+   "inib3a4"
   ],
   "fonte": "IDSA AMR Guidance, Tamma et al., Clin Infect Dis (2026); Bula do produto (ANVISA); FDA Drug Safety Communications sobre fluoroquinolonas (2016, 2018); Hoff et al., Ann Pharmacother (2020); Nebraska Medicine/UNMC, doses em CRRT e PIRRT (2023)"
  },

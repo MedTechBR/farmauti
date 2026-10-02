@@ -80,6 +80,13 @@ for s, l in leituras.items():
         t = html.unescape(re.sub(r"<[^>]+>", "", m.group(1))).strip()
         if t in ("Referências", "Perguntas de revisão"): continue
         indice.append([s, k, t])
+    pr = os.path.join(T, "conteudo", "revisao", s + ".html")   # Revisão essencial (01/10/2026)
+    if os.path.exists(pr):
+        hr = open(pr, encoding="utf-8").read()
+        nr = len(re.findall(r"\w+", re.sub(r"<[^>]+>", " ", hr)))
+        l["rev"] = max(4, round(nr / 170))
+        m = re.search(r'<p class="dek">(.*?)</p>', hr, flags=re.S)
+        if m: l["revDek"] = html.unescape(re.sub(r"<[^>]+>", "", m.group(1))).strip()
     if not l.get("dek"):
         m = re.search(r'<p class="dek">(.*?)</p>', h, flags=re.S)
         if m: l["dek"] = html.unescape(re.sub(r"<[^>]+>", "", m.group(1))).strip()

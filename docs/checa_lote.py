@@ -116,9 +116,16 @@ def checa_bulario(d):
         if not re.search(r"(19|20)\d\d", str(f.get("fonte", ""))): A(f"{i}: fonte sem ano")
     print(f"  {len(d)} fármacos")
 
-def checa_interacoes(d):
+def checa_interacoes(d, auditoria=False):
     vistos = set()
     for k, x in enumerate(d):
+        if auditoria:
+            for c in ("precipitante", "objeto"):
+                v = x.get(c)
+                if v not in ("ambos", x.get("a"), x.get("b")): E(f"{x.get('a')}+{x.get('b')}: '{c}' deve ser a, b ou 'ambos' ({v})")
+            if x.get("remover") and not x.get("motivo_remocao"): E(f"{x.get('a')}+{x.get('b')}: remoção sem motivo")
+            if len(x.get("mecanismo", "")) < 60 and not x.get("remover"): A(f"{x.get('a')}+{x.get('b')}: mecanismo curto ({len(x.get('mecanismo',''))})")
+            if "—" in "".join(str(x.get(c, "")) for c in ("mecanismo", "efeito", "manejo")): A(f"{x.get('a')}+{x.get('b')}: travessão")
         a, b = x.get("a"), x.get("b")
         for v in (a, b):
             if v not in FARM: E(f"interação {k}: id desconhecido {v}")
@@ -166,6 +173,16 @@ def checa_prescricoes(d):
                 if not p.get("explicacao") or not p.get("correcao"): E(f"{i}: item {k} sem explicação ou correção")
         if not 3 <= np <= 6: E(f"{i}: {np} linhas com problema (3 a 6)")
         if len(r.get("omissoes", [])) > 2: E(f"{i}: mais de 2 omissões")
+        if "dicas" in r or "fixacao" in r:   # campos da versão 2 (01/10/2026)
+            if len(r.get("dicas", [])) != 3: E(f"{i}: dicas deve ter 3")
+            if not r.get("resumo") or not r.get("intervencao"): E(f"{i}: falta resumo ou intervencao")
+            for k, it in enumerate(its):
+                if it.get("problema") and it["problema"].get("prioridade") not in ("alta", "media", "baixa"): E(f"{i}: item {k} sem prioridade válida")
+                if not it.get("problema") and not it.get("ok"): E(f"{i}: item {k} correto sem 'ok'")
+            fx = r.get("fixacao", [])
+            if len(fx) != 2: E(f"{i}: fixacao deve ter 2 perguntas")
+            for q in fx:
+                if len(q.get("alts", [])) != 4 or not isinstance(q.get("gab"), int) or not 0 <= q["gab"] <= 3 or not q.get("exp") or not q.get("p"): E(f"{i}: pergunta de fixação inválida")
         for o in r.get("omissoes", []):
             if not (o.get("texto") and o.get("explicacao") and o.get("correcao")): E(f"{i}: omissão incompleta")
     print(f"  {len(d)} prescrições; por semana: {dict(sorted(porSem.items()))}")
@@ -191,6 +208,7 @@ for arq in sys.argv[1:]:
     b = os.path.basename(arq)
     if b.startswith("bulario"): checa_bulario(d)
     elif b.startswith("interacoes"): checa_interacoes(d)
+    elif b.startswith("parte-"): checa_interacoes(d, auditoria=True)
     elif b.startswith("casos"): checa_casos(d)
     elif b.startswith("prescricoes"): checa_prescricoes(d)
     else: checa_leituras(d, b)

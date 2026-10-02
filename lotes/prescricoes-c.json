@@ -54,7 +54,8 @@
   "itens": [
    {
     "texto": "Ceftriaxona 2 g IV 1x/dia",
-    "problema": null
+    "problema": null,
+    "ok": "Ceftriaxona 2 g 1x/dia é o betalactâmico padrão da pneumonia comunitária grave e não precisa de ajuste com TFG de 60 mL/min."
    },
    {
     "texto": "Claritromicina 500 mg IV 12/12 h, diluída em 250 mL de SF 0,9%, em 60 min",
@@ -63,20 +64,24 @@
       "interacao"
      ],
      "explicacao": "A claritromicina é inibidora potente do CYP3A4 e a associação com a sinvastatina 40 mg (linha 5) é contraindicada pelo risco de rabdomiólise; ainda soma QT em paciente com QTc de 470 ms e K de 3,3 mEq/L.",
-     "correcao": "Trocar por azitromicina 500 mg IV 1x/dia em 250 mL de SF 0,9% (2 mg/mL) em 1 h, que quase não inibe o CYP3A4. Manter ECG diário e corrigir K e Mg."
+     "correcao": "Trocar por azitromicina 500 mg IV 1x/dia em 250 mL de SF 0,9% (2 mg/mL) em 1 h, que quase não inibe o CYP3A4. Manter ECG diário e corrigir K e Mg.",
+     "prioridade": "alta"
     }
    },
    {
     "texto": "Hidrocortisona 50 mg IV 6/6 h (pneumonia comunitária grave, sem influenza)",
-    "problema": null
+    "problema": null,
+    "ok": "Hidrocortisona 200 mg/dia é o esquema do CAPE COD para pneumonia comunitária grave sem choque e sem influenza, que é o caso (PCR negativa)."
    },
    {
     "texto": "Varfarina 5 mg VO às 17 h, ajuste pelo RNI diário",
-    "problema": null
+    "problema": null,
+    "ok": "Manter a varfarina com RNI de 2,6, na faixa, é aceitável desde que o RNI seja diário, porque a ceftriaxona e a infecção tendem a elevá-lo."
    },
    {
     "texto": "Sinvastatina 40 mg VO à noite",
-    "problema": null
+    "problema": null,
+    "ok": "A sinvastatina pode continuar se o macrolídeo for trocado por azitromicina; o conflito se resolve na linha da claritromicina."
    },
    {
     "texto": "Enoxaparina 40 mg SC 1x/dia",
@@ -85,7 +90,8 @@
       "duplicidade"
      ],
      "explicacao": "O paciente já está anticoagulado com varfarina e RNI de 2,6, dentro da faixa terapêutica. Profilaxia com heparina somada à anticoagulação plena é duplicidade e aumenta o risco de sangramento.",
-     "correcao": "Suspender a enoxaparina. Se a varfarina for suspensa ou o RNI cair abaixo de 2, discutir a anticoagulação com heparina em dose adequada."
+     "correcao": "Suspender a enoxaparina. Se a varfarina for suspensa ou o RNI cair abaixo de 2, discutir a anticoagulação com heparina em dose adequada.",
+     "prioridade": "media"
     }
    },
    {
@@ -95,12 +101,14 @@
       "contraindicacao"
      ],
      "explicacao": "Paciente crítico, hipoxêmico e com lactato de 3,1 mmol/L: a metformina deve ser suspensa no crítico instável pelo risco de acidose láctica, independentemente da TFG de 60 mL/min.",
-     "correcao": "Suspender a metformina e controlar a glicemia com insulina pelo protocolo; reavaliar a reintrodução na estabilidade clínica, com função renal estável."
+     "correcao": "Suspender a metformina e controlar a glicemia com insulina pelo protocolo; reavaliar a reintrodução na estabilidade clínica, com função renal estável.",
+     "prioridade": "media"
     }
    },
    {
     "texto": "Insulina regular SC conforme protocolo institucional de glicemia capilar 6/6 h (alvo 140 a 180 mg/dL)",
-    "problema": null
+    "problema": null,
+    "ok": "Insulina por protocolo com alvo de 140 a 180 mg/dL é a conduta no crítico, ainda mais com glicemia de 238 mg/dL e corticoide."
    },
    {
     "texto": "Cloreto de potássio 19,1% 10 mL (25,6 mEq) em SF 0,9% 100 mL IV em 1 h, por veia periférica",
@@ -109,16 +117,19 @@
       "admin"
      ],
      "explicacao": "Por veia periférica o limite usual é de cerca de 10 mEq/100 mL e 10 mEq/h; a solução prescrita tem cerca de 23 mEq/100 mL e corre a 25,6 mEq/h, com risco de flebite, dor e arritmia.",
-     "correcao": "Por veia periférica: 20 mEq (7,8 mL de KCl 19,1%) em 200 mL de SF 0,9% a 100 mL/h (10 mEq/h, em 2 h), em bomba; repetir conforme K de controle. Concentrações maiores só por CVC."
+     "correcao": "Por veia periférica: 20 mEq (7,8 mL de KCl 19,1%) em 200 mL de SF 0,9% a 100 mL/h (10 mEq/h, em 2 h), em bomba; repetir conforme K de controle. Concentrações maiores só por CVC.",
+     "prioridade": "alta"
     }
    },
    {
     "texto": "Dipirona 1 g IV 6/6 h se dor ou temperatura acima de 37,8 °C",
-    "problema": null
+    "problema": null,
+    "ok": "Dipirona condicional na dose usual, sem alergia registrada e sem instabilidade hemodinâmica."
    },
    {
     "texto": "Dieta oral pastosa nos intervalos da VNI",
-    "problema": null
+    "problema": null,
+    "ok": "Dieta pastosa nos intervalos da VNI é aceitável com supervisão; a confusão pede avaliação da deglutição antes de liberar consistências mais finas."
    }
   ],
   "omissoes": [],
@@ -128,6 +139,37 @@
    "profilaxias-uti",
    "eletrolitos",
    "acido-base"
+  ],
+  "resumo": "Idoso anticoagulado com pneumonia grave: a primeira varredura é de interações do macrolídeo (CYP3A4 e QT), porque ele já usa sinvastatina e tem QTc de 470 ms com K de 3,3 mEq/L. Depois, conferir o que veio de casa e deixou de fazer sentido na UTI: metformina com lactato de 3,1 mmol/L e heparina somada à varfarina com RNI de 2,6.",
+  "dicas": [
+   "Antes das doses, leia os medicamentos de casa que foram mantidos e pergunte se ainda cabem neste paciente.",
+   "Um dos antimicrobianos é inibidor potente do CYP3A4, e há uma estatina na prescrição.",
+   "Olhe o RNI e conte quantos anticoagulantes estão prescritos; depois confira concentração e velocidade do potássio periférico."
+  ],
+  "intervencao": "Dr(a)., revisei a prescrição do leito e tenho quatro sugestões:\n1. Trocar claritromicina por azitromicina 500 mg IV 1x/dia em 250 mL de SF 0,9% em 1 h: a claritromicina é contraindicada com sinvastatina e soma QT (QTc de 470 ms, K de 3,3 mEq/L).\n2. KCl periférico: 20 mEq em 200 mL de SF 0,9% a 100 mL/h (10 mEq/h), em bomba.\n3. Suspender a enoxaparina, porque já está anticoagulado com varfarina (RNI de 2,6).\n4. Suspender a metformina (lactato de 3,1 mmol/L) e manter a insulina pelo protocolo.\nSugiro RNI diário e ECG com K e Mg de controle.",
+  "fixacao": [
+   {
+    "p": "Idoso em uso de sinvastatina 40 mg precisa de macrolídeo para pneumonia comunitária grave. Qual a conduta mais adequada?",
+    "alts": [
+     "Claritromicina, com sinvastatina de 20 mg/dia",
+     "Azitromicina, que quase não inibe o CYP3A4",
+     "Claritromicina, com CPK dosada a cada 48 horas",
+     "Eritromicina, que tem menor efeito sobre o QTc"
+    ],
+    "gab": 1,
+    "exp": "A azitromicina praticamente não inibe o CYP3A4 e resolve a interação sem mexer na estatina. A pegadinha é reduzir a sinvastatina: com claritromicina a associação é contraindicada em qualquer dose, e vigiar CPK não previne a rabdomiólise."
+   },
+   {
+    "p": "Por veia periférica, qual prescrição de KCl 19,1% respeita os limites usuais de concentração e de velocidade?",
+    "alts": [
+     "25,6 mEq em 100 mL de SF 0,9% em 1 hora",
+     "20 mEq em 100 mL de SF 0,9% em 2 horas",
+     "20 mEq em 200 mL de SF 0,9% em 2 horas",
+     "40 mEq em 250 mL de SF 0,9% em 2 horas"
+    ],
+    "gab": 2,
+    "exp": "20 mEq em 200 mL dão 10 mEq/100 mL e, em 2 h, 10 mEq/h, os dois limites periféricos. A pegadinha é a opção de 20 mEq em 100 mL em 2 h: a velocidade está certa, mas a concentração (20 mEq/100 mL) é de acesso central."
+   }
   ]
  },
  {
@@ -186,7 +228,8 @@
       "dose"
      ],
      "explicacao": "Paciente jovem, politraumatizado, com TFG não indexada de 151 mL/min: depuração renal aumentada, que reduz o tempo acima da CIM. A dose de 1 g em bolus curto é a dose usual de enfermaria.",
-     "correcao": "Meropeném 2 g IV 8/8 h em infusão estendida de 3 h (2 g em 100 mL de SF 0,9% a 33 mL/h). Se disponível, dosar meropeném ou medir a depuração de creatinina em urina de 8 h."
+     "correcao": "Meropeném 2 g IV 8/8 h em infusão estendida de 3 h (2 g em 100 mL de SF 0,9% a 33 mL/h). Se disponível, dosar meropeném ou medir a depuração de creatinina em urina de 8 h.",
+     "prioridade": "media"
     }
    },
    {
@@ -197,7 +240,8 @@
       "monitorizacao"
      ],
      "explicacao": "Não há MRSA: a cultura mostrou só Klebsiella ESBL e o swab nasal por PCR é negativo, o que sustenta suspender a cobertura em 48 a 72 h. Além disso, a monitorização por vale de 15 a 20 mg/L foi abandonada pelo consenso de 2020.",
-     "correcao": "Suspender a vancomicina. Quando for indicada, ajustar por AUC24 de 400 a 600 mg·h/L (estimativa bayesiana ou duas concentrações), não por vale."
+     "correcao": "Suspender a vancomicina. Quando for indicada, ajustar por AUC24 de 400 a 600 mg·h/L (estimativa bayesiana ou duas concentrações), não por vale.",
+     "prioridade": "baixa"
     }
    },
    {
@@ -207,7 +251,8 @@
       "dose"
      ],
      "explicacao": "O nível total de 6 mg/L com albumina de 2,0 g/dL corresponde, por Winter-Tozer, a 6 ÷ (0,2 × 2,0 + 0,1) = 12 mg/L, dentro da faixa; o valproato ainda desloca a fenitoína da albumina e aumenta a fração livre. Dobrar a dose de um fármaco de cinética saturável arrisca intoxicação.",
-     "correcao": "Manter fenitoína 100 mg IV 8/8 h e dosar fenitoína livre (alvo 1 a 2 mg/L) antes de qualquer mudança; vigiar nistagmo e ataxia."
+     "correcao": "Manter fenitoína 100 mg IV 8/8 h e dosar fenitoína livre (alvo 1 a 2 mg/L) antes de qualquer mudança; vigiar nistagmo e ataxia.",
+     "prioridade": "alta"
     }
    },
    {
@@ -217,32 +262,39 @@
       "interacao"
      ],
      "explicacao": "O meropeném (linha 1) inibe a hidrólise do glicuronídeo de valproato: o nível caiu de 71 para 38 mg/L em 48 h, e aumentar a dose não resolve. O paciente fica exposto a novas crises.",
-     "correcao": "Trocar o valproato por levetiracetam 1.000 mg IV 12/12 h (TFG alta, sem ajuste; considerar 1.500 mg 12/12 h pela depuração aumentada) enquanto durar o carbapenêmico e por até 2 semanas depois."
+     "correcao": "Trocar o valproato por levetiracetam 1.000 mg IV 12/12 h (TFG alta, sem ajuste; considerar 1.500 mg 12/12 h pela depuração aumentada) enquanto durar o carbapenêmico e por até 2 semanas depois.",
+     "prioridade": "alta"
     }
    },
    {
     "texto": "Fentanil 50 mcg/mL puro em BIC a 3 mL/h (150 mcg/h)",
-    "problema": null
+    "problema": null,
+    "ok": "Fentanil a 150 mcg/h (cerca de 1,8 mcg/kg/h) está na faixa de analgossedação do TCE grave em ventilação mecânica."
    },
    {
     "texto": "Propofol 1% em BIC a 24 mL/h (2,9 mg/kg/h), titular para RASS −2 a −3",
-    "problema": null
+    "problema": null,
+    "ok": "Propofol a 2,9 mg/kg/h fica abaixo do teto de 4 mg/kg/h e é sedativo adequado no TCE grave."
    },
    {
     "texto": "Enoxaparina 40 mg SC 12/12 h (protocolo de trauma)",
-    "problema": null
+    "problema": null,
+    "ok": "Enoxaparina 40 mg 12/12 h é esquema de profilaxia do trauma, com tomografia de controle estável e função renal alta."
    },
    {
     "texto": "Pantoprazol 40 mg IV 1x/dia (TCE grave em ventilação)",
-    "problema": null
+    "problema": null,
+    "ok": "TCE grave em ventilação mecânica é fator de risco para úlcera de estresse; a profilaxia com IBP está indicada."
    },
    {
     "texto": "Dieta enteral 1,5 kcal/mL a 55 mL/h por SNE",
-    "problema": null
+    "problema": null,
+    "ok": "Dieta enteral por SNE no D9 é adequada; lembrar de somar as calorias do propofol (cerca de 630 kcal/dia nesta vazão) ao total."
    },
    {
     "texto": "Dipirona 1 g IV 6/6 h se temperatura acima de 37,8 °C",
-    "problema": null
+    "problema": null,
+    "ok": "Antitérmico condicional na dose usual; no TCE, controlar a febre também protege o cérebro."
    }
   ],
   "omissoes": [],
@@ -252,6 +304,37 @@
    "resistencia-bacteriana",
    "pkpd-antimicrobianos",
    "anticonvulsivantes-status"
+  ],
+  "resumo": "Jovem politraumatizado com TFG não indexada de 151 mL/min: a depuração renal aumentada derruba a exposição a tudo que sai pelo rim, a começar pelo betalactâmico. Ao mesmo tempo, dois anticonvulsivantes com nível baixo pedem interpretação antes de mexer na dose: a albumina de 2,0 g/dL muda a leitura da fenitoína, e o meropeném explica a queda do valproato.",
+  "dicas": [
+   "Pense no que uma TFG de 151 mL/min faz com os fármacos de eliminação renal.",
+   "Antes de aceitar o aumento de dose de um anticonvulsivante, corrija o nível pela albumina.",
+   "Um dos níveis caiu quase pela metade em 48 h, depois que entrou um carbapenêmico."
+  ],
+  "intervencao": "Dr(a)., sugestões para o leito:\n1. Valproato em queda (71 para 38 mg/L) pela interação com o meropeném: sugiro trocar por levetiracetam 1.000 mg IV 12/12 h; aumentar o valproato não resolve.\n2. Fenitoína: corrigida pela albumina, o nível é de 12 mg/L, na faixa. Sugiro manter 100 mg 8/8 h e dosar fenitoína livre antes de aumentar.\n3. Meropeném 2 g IV 8/8 h em infusão de 3 h, pela depuração renal aumentada (151 mL/min).\n4. Swab de MRSA negativo e cultura só com Klebsiella: sugiro suspender a vancomicina.",
+  "fixacao": [
+   {
+    "p": "Fenitoína total de 6 mg/L, albumina de 2,0 g/dL e função renal normal. Pela equação de Winter-Tozer, qual o nível corrigido e a conduta?",
+    "alts": [
+     "12 mg/L; manter a dose e dosar fenitoína livre",
+     "6 mg/L; dobrar a dose para chegar à faixa-alvo",
+     "8 mg/L; aumentar a dose em cerca de 30% hoje",
+     "30 mg/L; suspender a dose por toxicidade provável"
+    ],
+    "gab": 0,
+    "exp": "6 ÷ (0,2 × 2,0 + 0,1) = 12 mg/L, dentro da faixa de 10 a 20 mg/L. A pegadinha é ler o total cru: com hipoalbuminemia a fração livre sobe, e dobrar a dose de um fármaco de cinética saturável leva à intoxicação."
+   },
+   {
+    "p": "Paciente em uso de valproato inicia meropeném. Qual o manejo recomendado?",
+    "alts": [
+     "Aumentar o valproato e dosar o nível em 48 horas",
+     "Manter as doses e dosar o valproato todo dia",
+     "Associar fenitoína até o fim do carbapenêmico",
+     "Trocar o anticonvulsivante ou o antimicrobiano"
+    ],
+    "gab": 3,
+    "exp": "O carbapenêmico bloqueia a reciclagem do glicuronídeo e o valproato cai em 1 a 3 dias, sem resposta a aumento de dose; por isso a saída é trocar um dos dois (levetiracetam, por exemplo). Aumentar a dose, a pegadinha mais comum, não corrige o nível."
+   }
   ]
  },
  {
@@ -301,7 +384,8 @@
   "itens": [
    {
     "texto": "Sulfametoxazol-trimetoprima 4 ampolas (320 mg de TMP) IV 8/8 h, cada ampola em 75 mL de SG 5%, em 90 min",
-    "problema": null
+    "problema": null,
+    "ok": "Trimetoprima de 960 mg/dia (12,3 mg/kg/dia) está na faixa de 10 a 15 mg/kg/dia para Stenotrophomonas, e 75 mL por ampola respeita a restrição hídrica do cardiopata."
    },
    {
     "texto": "Levofloxacino 750 mg (comprimido triturado) por SNE 1x/dia às 8 h",
@@ -311,7 +395,8 @@
       "via"
      ],
      "explicacao": "A dieta enteral contínua e o carbonato de cálcio das 8 h (linha 4) quelam a quinolona e podem reduzir muito sua absorção, justo no segundo agente ativo contra a Stenotrophomonas.",
-     "correcao": "Levofloxacino 750 mg IV 1x/dia em 90 min (bolsa de 5 mg/mL). Se for preciso usar a sonda, pausar a dieta 1 h antes e 2 h depois e separar o cálcio por pelo menos 2 h."
+     "correcao": "Levofloxacino 750 mg IV 1x/dia em 90 min (bolsa de 5 mg/mL). Se for preciso usar a sonda, pausar a dieta 1 h antes e 2 h depois e separar o cálcio por pelo menos 2 h.",
+     "prioridade": "media"
     }
    },
    {
@@ -322,12 +407,14 @@
       "monitorizacao"
      ],
      "explicacao": "O sulfametoxazol inibe o CYP2C9 e eleva o RNI em poucos dias, com risco de sangramento digestivo quase três vezes maior; o RNI já está em 2,4 e não há controle programado.",
-     "correcao": "Reduzir a varfarina (por exemplo, para 2,5 mg/dia) e dosar RNI diário na UTI, no mínimo a cada 2 a 3 dias, enquanto durar o SMX-TMP e após a suspensão."
+     "correcao": "Reduzir a varfarina (por exemplo, para 2,5 mg/dia) e dosar RNI diário na UTI, no mínimo a cada 2 a 3 dias, enquanto durar o SMX-TMP e após a suspensão.",
+     "prioridade": "media"
     }
    },
    {
     "texto": "Carbonato de cálcio 500 mg por SNE 8/8 h (8, 16 e 24 h)",
-    "problema": null
+    "problema": null,
+    "ok": "O carbonato de cálcio pode continuar; o conflito com a quinolona se resolve passando o levofloxacino para IV ou separando os horários."
    },
    {
     "texto": "Espironolactona 25 mg por SNE 1x/dia",
@@ -336,7 +423,8 @@
       "interacao"
      ],
      "explicacao": "A trimetoprima bloqueia o canal epitelial de sódio e soma hipercalemia à espironolactona; com K de 5,1 mEq/L antes do início, a associação é classificada como grave.",
-     "correcao": "Suspender a espironolactona durante o curso de SMX-TMP e dosar K diariamente; reintroduzir ao fim do tratamento com K normal."
+     "correcao": "Suspender a espironolactona durante o curso de SMX-TMP e dosar K diariamente; reintroduzir ao fim do tratamento com K normal.",
+     "prioridade": "alta"
     }
    },
    {
@@ -346,28 +434,34 @@
       "semindicacao"
      ],
      "explicacao": "Reposição de potássio mantida com K de 5,1 mEq/L, em paciente que acaba de iniciar trimetoprima em dose alta.",
-     "correcao": "Suspender o KCl oral; repor apenas se o K cair abaixo da meta, guiado por dosagem diária."
+     "correcao": "Suspender o KCl oral; repor apenas se o K cair abaixo da meta, guiado por dosagem diária.",
+     "prioridade": "alta"
     }
    },
    {
     "texto": "Furosemida 40 mg IV 12/12 h",
-    "problema": null
+    "problema": null,
+    "ok": "Furosemida 40 mg 12/12 h é coerente com IC de fração reduzida e balanço acumulado de +3,2 L."
    },
    {
     "texto": "Fentanil 50 mcg/mL puro em BIC a 1 mL/h (50 mcg/h)",
-    "problema": null
+    "problema": null,
+    "ok": "Fentanil a 50 mcg/h é analgesia de base baixa e adequada para paciente intubado."
    },
    {
     "texto": "Pantoprazol 40 mg IV 1x/dia",
-    "problema": null
+    "problema": null,
+    "ok": "Ventilação prolongada com anticoagulação plena (varfarina, RNI de 2,4) justifica a profilaxia de úlcera de estresse."
    },
    {
     "texto": "Dieta enteral 1,2 kcal/mL a 50 mL/h por SNE, contínua",
-    "problema": null
+    "problema": null,
+    "ok": "Dieta enteral contínua de 1,2 kcal/mL a 50 mL/h é adequada; ela só exige que a quinolona não seja dada pela sonda junto com a fórmula."
    },
    {
     "texto": "Dipirona 1 g IV 6/6 h se temperatura acima de 37,8 °C",
-    "problema": null
+    "problema": null,
+    "ok": "Antitérmico condicional na dose usual, sem contraindicação neste paciente."
    }
   ],
   "omissoes": [],
@@ -377,6 +471,37 @@
    "resistencia-bacteriana",
    "administracao-sondas",
    "interacoes-cyp-transportadores"
+  ],
+  "resumo": "Ao iniciar sulfametoxazol-trimetoprima em dose alta, o farmacêutico varre a prescrição atrás de três efeitos previsíveis: hipercalemia (a trimetoprima bloqueia o canal epitelial de sódio), aumento do RNI (o sulfametoxazol inibe o CYP2C9) e, aqui, a absorção do segundo agente pela sonda. Com K de 5,1 mEq/L, espironolactona e KCl na mesma folha, o potássio é a primeira conta.",
+  "dicas": [
+   "O antimicrobiano novo está certo; procure o que ele muda nos outros medicamentos.",
+   "Pense no que a trimetoprima faz com o potássio e no que o sulfametoxazol faz com o RNI.",
+   "Veja o horário do levofloxacino, a dieta contínua e o que mais entra pela sonda às 8 h."
+  ],
+  "intervencao": "Dr(a)., o SMX-TMP está na dose certa; sugiro ajustar o que está em volta dele:\n1. K de 5,1 mEq/L com trimetoprima: suspender o KCl xarope e a espironolactona durante o curso, com K diário.\n2. Levofloxacino 750 mg IV 1x/dia, porque a dieta contínua e o cálcio das 8 h reduzem a absorção pela sonda.\n3. Varfarina: reduzir (por exemplo, para 2,5 mg/dia) e dosar RNI diário enquanto durar o SMX-TMP.",
+  "fixacao": [
+   {
+    "p": "Paciente com IC em uso de espironolactona e K de 5,1 mEq/L inicia sulfametoxazol-trimetoprima em dose alta. Qual a conduta mais segura para o potássio?",
+    "alts": [
+     "Manter a espironolactona e dosar o K em 1 semana",
+     "Manter a espironolactona e dobrar a dose de furosemida",
+     "Trocar a espironolactona por enalapril durante o curso",
+     "Suspender a espironolactona no curso e dosar K diário"
+    ],
+    "gab": 3,
+    "exp": "A trimetoprima age como a amilorida no túbulo e soma hipercalemia grave à espironolactona; suspender durante o curso e dosar K diariamente é o manejo. Trocar por IECA, a pegadinha, mantém o mesmo risco, porque a associação com IECA também é grave."
+   },
+   {
+    "p": "Como manter levofloxacino em paciente com dieta enteral contínua e carbonato de cálcio pela sonda?",
+    "alts": [
+     "Dar o comprimido triturado junto com o cálcio das 8 h",
+     "Dobrar a dose do comprimido triturado pela sonda",
+     "Usar a via IV, ou pausar a dieta e separar o cálcio",
+     "Trocar o carbonato por citrato de cálcio às 8 h"
+    ],
+    "gab": 2,
+    "exp": "Cátions divalentes e a fórmula quelam a quinolona; a via IV elimina o problema e, pela sonda, exige pausa da dieta e cálcio separado por pelo menos 2 h. Dobrar a dose, a pegadinha, não compensa uma quelação de magnitude imprevisível."
+   }
   ]
  },
  {
@@ -428,7 +553,8 @@
       "admin"
      ],
      "explicacao": "5 mg/kg é a dose da formulação lipossomal; o desoxicolato não passa de 1 a 1,5 mg/kg/dia (350 mg seriam 5 vezes a dose máxima, com risco de parada cardíaca). Além disso, a anfotericina precipita em SF 0,9%.",
-     "correcao": "Anfotericina B lipossomal 5 mg/kg = 350 mg IV 1x/dia em SG 5% 250 mL (1,4 mg/mL) em 2 h, preferida também pela LRA. Prescrever sempre o nome completo da formulação."
+     "correcao": "Anfotericina B lipossomal 5 mg/kg = 350 mg IV 1x/dia em SG 5% 250 mL (1,4 mg/mL) em 2 h, preferida também pela LRA. Prescrever sempre o nome completo da formulação.",
+     "prioridade": "alta"
     }
    },
    {
@@ -438,20 +564,24 @@
       "semindicacao"
      ],
      "explicacao": "O voriconazol não tem atividade contra Mucorales; a mucormicose de escape em uso de voriconazol é situação clássica. Soma interações e hepatotoxicidade sem benefício.",
-     "correcao": "Suspender. Se for necessária alternativa ou consolidação oral, usar isavuconazol ou posaconazol, ativos contra Mucorales."
+     "correcao": "Suspender. Se for necessária alternativa ou consolidação oral, usar isavuconazol ou posaconazol, ativos contra Mucorales.",
+     "prioridade": "media"
     }
    },
    {
     "texto": "Insulina regular 100 UI em SF 0,9% 100 mL (1 UI/mL) em BIC a 3,5 mL/h (0,05 UI/kg/h), glicemia capilar 1/1 h",
-    "problema": null
+    "problema": null,
+    "ok": "Insulina a 0,05 UI/kg/h com glicemia de 210 mg/dL e soro glicosado é a fase de redução prevista no consenso de crises hiperglicêmicas de 2024."
    },
    {
     "texto": "SG 5% 1.000 mL + KCl 19,1% 10 mL (25,6 mEq) IV a 150 mL/h",
-    "problema": null
+    "problema": null,
+    "ok": "SG 5% com cerca de 25 mEq/L de KCl é a reposição indicada com K de 3,9 mEq/L e insulina em curso."
    },
    {
     "texto": "SF 0,9% 500 mL IV em 1 h antes da anfotericina",
-    "problema": null
+    "problema": null,
+    "ok": "SF 0,9% antes da anfotericina reduz a nefrotoxicidade e é bem-vindo na LRA em curso."
    },
    {
     "texto": "Sulfato de magnésio 50% 4 mL (2 g) IV em bolus",
@@ -460,7 +590,8 @@
       "admin"
      ],
      "explicacao": "O sulfato de magnésio a 50% deve ser diluído a no máximo 20% e infundido lentamente (cerca de 1 g/h na reposição eletiva); em bolus causa hipotensão e aumenta a perda urinária.",
-     "correcao": "Sulfato de magnésio 2 g (4 mL a 50%) em 100 mL de SF 0,9% IV em 2 h; repetir conforme Mg diário, que tende a cair com a anfotericina."
+     "correcao": "Sulfato de magnésio 2 g (4 mL a 50%) em 100 mL de SF 0,9% IV em 2 h; repetir conforme Mg diário, que tende a cair com a anfotericina.",
+     "prioridade": "media"
     }
    },
    {
@@ -470,16 +601,19 @@
       "semindicacao"
      ],
      "explicacao": "Na cetoacidose o bicarbonato só está indicado com pH abaixo de 7,0; com pH de 7,31 em resolução, só acrescenta sódio, hipocalemia e risco de alcalose de rebote.",
-     "correcao": "Suspender o bicarbonato; manter hidratação e insulina até resolver a cetose (beta-hidroxibutirato abaixo de 0,6 mmol/L)."
+     "correcao": "Suspender o bicarbonato; manter hidratação e insulina até resolver a cetose (beta-hidroxibutirato abaixo de 0,6 mmol/L).",
+     "prioridade": "media"
     }
    },
    {
     "texto": "Enoxaparina 40 mg SC 1x/dia",
-    "problema": null
+    "problema": null,
+    "ok": "Enoxaparina 40 mg 1x/dia está adequada: TFG não indexada de 57 mL/min e sem sangramento."
    },
    {
     "texto": "Dipirona 1 g IV 6/6 h se dor",
-    "problema": null
+    "problema": null,
+    "ok": "Analgésico condicional na dose usual, adequado no pós-operatório do desbridamento."
    }
   ],
   "omissoes": [],
@@ -488,6 +622,37 @@
    "antifungicos",
    "insulina-corticoides",
    "eletrolitos"
+  ],
+  "resumo": "Mucormicose exige anfotericina lipossomal em dose alta e desbridamento; o primeiro olhar é para a formulação e o mg/kg, porque o desoxicolato na dose da lipossomal é erro potencialmente fatal. Em seguida, a cetoacidose em resolução define o que ainda cabe: insulina com glicose e potássio, sem bicarbonato com pH de 7,31, e magnésio reposto devagar.",
+  "dicas": [
+   "Confira a formulação de cada antifúngico e se o espectro cobre o fungo da biópsia.",
+   "Uma dose de 5 mg/kg só é correta para uma das duas formulações do mesmo fármaco.",
+   "Compare o pH de 7,31 com o limiar do bicarbonato na cetoacidose e veja como o magnésio está sendo dado."
+  ],
+  "intervencao": "Dr(a)., ponto urgente na antifúngica:\n1. A dose de 5 mg/kg é da anfotericina B lipossomal; o desoxicolato não passa de 1 a 1,5 mg/kg/dia. Sugiro anfotericina B lipossomal 350 mg IV 1x/dia em SG 5% 250 mL em 2 h (não diluir em SF).\n2. Voriconazol não cobre Mucorales: sugiro suspender.\n3. Bicarbonato sem indicação com pH de 7,31: sugiro suspender.\n4. Sulfato de magnésio 2 g em 100 mL de SF 0,9% em 2 h, em vez de bolus.",
+  "fixacao": [
+   {
+    "p": "Prescrição de anfotericina B 5 mg/kg/dia para mucormicose. O que o farmacêutico confere primeiro?",
+    "alts": [
+     "Se é a lipossomal, a única em que essa dose é segura",
+     "Se a infusão será em SF 0,9%, para proteger o rim",
+     "Se a dose usou o peso ideal em vez do peso real",
+     "Se há pré-medicação com paracetamol e corticoide"
+    ],
+    "gab": 0,
+    "exp": "Na lipossomal, 5 a 10 mg/kg é a dose da mucormicose; no desoxicolato, 5 mg/kg é cinco vezes o máximo, com risco de parada. Diluir em SF, a outra pegadinha, faz a anfotericina precipitar: as duas formulações vão em SG 5%."
+   },
+   {
+    "p": "Na cetoacidose diabética, quando o bicarbonato de sódio está indicado?",
+    "alts": [
+     "Com pH abaixo de 7,3",
+     "Com HCO3 abaixo de 15",
+     "Com lactato acima de 4",
+     "Com pH abaixo de 7,0"
+    ],
+    "gab": 3,
+    "exp": "O consenso de crises hiperglicêmicas de 2024 reserva o bicarbonato para pH abaixo de 7,0. Com pH perto de 7,3, a pegadinha, a acidose se corrige com insulina e volume, e o bicarbonato só traz hipocalemia e sobrecarga de sódio."
+   }
   ]
  },
  {
@@ -539,7 +704,8 @@
       "admin"
      ],
      "explicacao": "Dose por peso total em obesidade grave aumenta cristalúria e neurotoxicidade (a creatinina já subiu de 1,0 para 1,3), e a infusão em 30 min acentua a precipitação tubular; o mínimo é 1 hora.",
-     "correcao": "10 mg/kg × peso ajustado (90,7 kg) ≈ 900 mg IV 8/8 h em 250 mL de SF 0,9% (3,6 mg/mL) em 1 h, por 14 a 21 dias. A TFG não indexada de 98 mL/min mantém o intervalo de 8/8 h; recalcular diariamente."
+     "correcao": "10 mg/kg × peso ajustado (90,7 kg) ≈ 900 mg IV 8/8 h em 250 mL de SF 0,9% (3,6 mg/mL) em 1 h, por 14 a 21 dias. A TFG não indexada de 98 mL/min mantém o intervalo de 8/8 h; recalcular diariamente.",
+     "prioridade": "alta"
     }
    },
    {
@@ -549,7 +715,8 @@
       "semindicacao"
      ],
      "explicacao": "PCR de HSV positiva, líquor linfocítico, Gram e culturas negativas em 48 h: a meningite bacteriana foi descartada.",
-     "correcao": "Suspender a ceftriaxona e registrar o motivo."
+     "correcao": "Suspender a ceftriaxona e registrar o motivo.",
+     "prioridade": "baixa"
     }
    },
    {
@@ -559,16 +726,19 @@
       "semindicacao"
      ],
      "explicacao": "A dexametasona da meningite só se mantém se a etiologia for pneumocócica; com meningite bacteriana descartada deve ser suspensa, e não tem papel estabelecido na encefalite herpética.",
-     "correcao": "Suspender a dexametasona."
+     "correcao": "Suspender a dexametasona.",
+     "prioridade": "media"
     }
    },
    {
     "texto": "Levetiracetam 1.000 mg IV 12/12 h",
-    "problema": null
+    "problema": null,
+    "ok": "Levetiracetam 1.000 mg 12/12 h trata a crise focal e não precisa de ajuste com TFG não indexada de 98 mL/min."
    },
    {
     "texto": "SF 0,9% IV a 100 mL/h",
-    "problema": null
+    "problema": null,
+    "ok": "Hidratação contínua é parte da prevenção da nefrotoxicidade do aciclovir."
    },
    {
     "texto": "Enoxaparina 40 mg SC 1x/dia",
@@ -577,20 +747,24 @@
       "dose"
      ],
      "explicacao": "Com IMC de 42,3 kg/m², a dose fixa de 40 mg/dia subdosa a profilaxia.",
-     "correcao": "Enoxaparina 40 mg SC 12/12 h (ou 0,5 mg/kg/dia), com anti-Xa de pico de 0,2 a 0,5 UI/mL se disponível."
+     "correcao": "Enoxaparina 40 mg SC 12/12 h (ou 0,5 mg/kg/dia), com anti-Xa de pico de 0,2 a 0,5 UI/mL se disponível.",
+     "prioridade": "media"
     }
    },
    {
     "texto": "Paracetamol 750 mg VO 6/6 h se temperatura acima de 37,8 °C",
-    "problema": null
+    "problema": null,
+    "ok": "Paracetamol até 3 g/dia, condicional, é antitérmico adequado e sem interação relevante."
    },
    {
     "texto": "Haloperidol 2,5 mg IV se agitação, até 3x/dia",
-    "problema": null
+    "problema": null,
+    "ok": "Haloperidol em dose baixa e com teto diário é opção para agitação com risco no delirium da encefalite."
    },
    {
     "texto": "Dieta oral branda, com supervisão",
-    "problema": null
+    "problema": null,
+    "ok": "Dieta oral branda com supervisão é adequada a paciente não intubado que deglute; a supervisão cobre o risco de aspiração pela confusão."
    }
   ],
   "omissoes": [],
@@ -600,6 +774,37 @@
    "profilaxias-uti",
    "calculos-farmaceuticos",
    "dose-disfuncao-renal"
+  ],
+  "resumo": "Encefalite herpética confirmada em obeso grave: o aciclovir é o tratamento, e o que define a segurança é o peso usado na conta e a velocidade de infusão, porque a creatinina já subiu de 1,0 para 1,3 mg/dL. Com PCR de HSV positiva e culturas negativas, o esquema empírico de meningite bacteriana perdeu a razão de existir.",
+  "dicas": [
+   "Pergunte qual peso foi usado em cada dose por quilo desta prescrição.",
+   "O diagnóstico foi confirmado; revise o que ficou do tratamento empírico da admissão.",
+   "Compare o tempo de infusão do aciclovir com o mínimo da bula e a dose de enoxaparina com o IMC."
+  ],
+  "intervencao": "Dr(a)., sugestões para o aciclovir e o esquema empírico:\n1. Aciclovir pelo peso ajustado (90,7 kg): 900 mg IV 8/8 h em 250 mL de SF 0,9% em 1 h, com hidratação e creatinina diária, já que subiu de 1,0 para 1,3 mg/dL.\n2. PCR de HSV positiva, Gram e culturas negativos: sugiro suspender ceftriaxona e dexametasona.\n3. Enoxaparina 40 mg SC 12/12 h, pelo IMC de 42 kg/m².",
+  "fixacao": [
+   {
+    "p": "Para aciclovir 10 mg/kg em paciente com IMC de 42 kg/m², qual peso se recomenda usar na conta?",
+    "alts": [
+     "Peso total, porque o fármaco é muito hidrofílico",
+     "Peso ideal ou ajustado, para reduzir nefrotoxicidade",
+     "Peso total, com teto fixo de 1.000 mg em cada dose",
+     "Peso ideal, com dose de 15 mg/kg para compensar"
+    ],
+    "gab": 1,
+    "exp": "Pelo peso total, o obeso recebe exposição maior, com cristalúria e neurotoxicidade; a bula e as tabelas usam peso ideal ou ajustado. Teto fixo de 1.000 mg, a pegadinha, ainda deixaria este paciente acima da dose pelo peso ajustado (cerca de 900 mg)."
+   },
+   {
+    "p": "Qual o tempo mínimo de infusão do aciclovir IV e por quê?",
+    "alts": [
+     "30 minutos, para atingir pico alto no líquor",
+     "15 minutos, porque a solução é pouco estável",
+     "4 horas, para manter o tempo acima da CIM",
+     "1 hora, para reduzir a precipitação tubular"
+    ],
+    "gab": 3,
+    "exp": "A infusão rápida gera concentração tubular alta e cristais (nefropatia obstrutiva); a bula pede pelo menos 1 hora e hidratação. A infusão de 30 min, a pegadinha, foi justamente o erro desta prescrição."
+   }
   ]
  },
  {
@@ -646,7 +851,8 @@
       "via"
      ],
      "explicacao": "Com TFG de 39 mL/min, o veículo SBECD da formulação IV acumula; a bula orienta preferir a via oral abaixo de 50 mL/min, e a paciente tem via oral funcionante.",
-     "correcao": "Voriconazol VO 400 mg 12/12 h nas 2 primeiras doses e depois 200 mg 12/12 h, em jejum (1 h antes ou depois das refeições), com vale no 5º dia."
+     "correcao": "Voriconazol VO 400 mg 12/12 h nas 2 primeiras doses e depois 200 mg 12/12 h, em jejum (1 h antes ou depois das refeições), com vale no 5º dia.",
+     "prioridade": "baixa"
     }
    },
    {
@@ -656,20 +862,24 @@
       "interacao"
      ],
      "explicacao": "O voriconazol (linha 1) inibe o CYP3A4 e eleva muito o tacrolimo, com nefrotoxicidade, neurotoxicidade e hipercalemia; a dose foi mantida integral.",
-     "correcao": "Ao iniciar o voriconazol, reduzir o tacrolimo a um terço: 1 mg VO 12/12 h, com vale a cada 2 a 3 dias. Programar a volta da dose ao suspender o azol."
+     "correcao": "Ao iniciar o voriconazol, reduzir o tacrolimo a um terço: 1 mg VO 12/12 h, com vale a cada 2 a 3 dias. Programar a volta da dose ao suspender o azol.",
+     "prioridade": "alta"
     }
    },
    {
     "texto": "Micofenolato de mofetila 500 mg VO 12/12 h",
-    "problema": null
+    "problema": null,
+    "ok": "O micofenolato não depende do CYP3A4 e não tem interação relevante com o voriconazol; a dose de manutenção é usual."
    },
    {
     "texto": "Prednisona 5 mg VO 1x/dia",
-    "problema": null
+    "problema": null,
+    "ok": "Prednisona 5 mg é parte da imunossupressão e não deve ser interrompida, pelo risco de insuficiência adrenal."
    },
    {
     "texto": "Sulfametoxazol-trimetoprima 800/160 mg VO 1x/dia (profilaxia de Pneumocystis)",
-    "problema": null
+    "problema": null,
+    "ok": "Profilaxia de Pneumocystis indicada no transplantado; TFG de 39 mL/min, acima do limiar de redução de 30 mL/min."
    },
    {
     "texto": "Sinvastatina 40 mg VO à noite",
@@ -678,7 +888,8 @@
       "interacao"
      ],
      "explicacao": "A associação de voriconazol com sinvastatina é contraindicada pelo risco de miopatia e rabdomiólise.",
-     "correcao": "Suspender a sinvastatina durante o tratamento antifúngico e retomar ao fim; se estatina for indispensável, pravastatina ou rosuvastatina em dose baixa."
+     "correcao": "Suspender a sinvastatina durante o tratamento antifúngico e retomar ao fim; se estatina for indispensável, pravastatina ou rosuvastatina em dose baixa.",
+     "prioridade": "media"
     }
    },
    {
@@ -689,20 +900,24 @@
       "dose"
      ],
      "explicacao": "O voriconazol eleva o omeprazol, e a bula recomenda reduzir à metade doses de 40 mg ou mais; 80 mg/dia também excede a necessidade de uma dispepsia sem sangramento.",
-     "correcao": "Omeprazol 20 mg VO 1x/dia (ou suspender, se a indicação não se confirmar)."
+     "correcao": "Omeprazol 20 mg VO 1x/dia (ou suspender, se a indicação não se confirmar).",
+     "prioridade": "baixa"
     }
    },
    {
     "texto": "Enoxaparina 40 mg SC 1x/dia",
-    "problema": null
+    "problema": null,
+    "ok": "Enoxaparina 40 mg 1x/dia está adequada com TFG não indexada de 39 mL/min, acima de 30."
    },
    {
     "texto": "Paracetamol 750 mg VO 6/6 h se dor ou febre",
-    "problema": null
+    "problema": null,
+    "ok": "Paracetamol até 3 g/dia, condicional, é o analgésico preferido no transplantado renal, que deve evitar AINE."
    },
    {
     "texto": "Dieta oral hipossódica",
-    "problema": null
+    "problema": null,
+    "ok": "Dieta oral hipossódica é compatível com paciente consciente que deglute."
    }
   ],
   "omissoes": [
@@ -718,6 +933,37 @@
    "interacoes-antimicrobianos",
    "monitorizacao-terapeutica",
    "interacoes-cyp-transportadores"
+  ],
+  "resumo": "Azol em transplantado é sinônimo de varredura de interações: o voriconazol inibe o CYP3A4 e muda de uma vez o tacrolimo, a estatina e o IBP. Antes disso, a TFG não indexada de 39 mL/min e a via oral funcionante já decidem a forma farmacêutica do próprio voriconazol.",
+  "dicas": [
+   "Toda vez que um azol entra, releia cada linha procurando substratos do CYP3A4.",
+   "Há um imunossupressor com dose mantida integral e uma estatina contraindicada com o azol.",
+   "Olhe a TFG abaixo de 50 mL/min e pergunte por que a forma IV seria problema se a paciente engole."
+  ],
+  "intervencao": "Dr(a)., com a entrada do voriconazol sugiro:\n1. Tacrolimo: reduzir para 1 mg VO 12/12 h (um terço da dose) e dosar vale em 48 a 72 h.\n2. Suspender a sinvastatina durante o tratamento (contraindicada com voriconazol).\n3. Voriconazol por via oral: 400 mg 12/12 h nas 2 primeiras doses e depois 200 mg 12/12 h, em jejum; com TFG de 39 mL/min, o veículo da forma IV acumula.\n4. Omeprazol 20 mg 1x/dia e vale de voriconazol no 5º dia.",
+  "fixacao": [
+   {
+    "p": "Transplantada em tacrolimo 3 mg 12/12 h inicia voriconazol. Qual o ajuste recomendado?",
+    "alts": [
+     "Manter a dose e dosar o vale só em 1 semana",
+     "Reduzir à metade só se o vale passar de 15 ng/mL",
+     "Reduzir a um terço e dosar o vale em 2 a 3 dias",
+     "Dobrar a dose, porque o azol induz o CYP3A4"
+    ],
+    "gab": 2,
+    "exp": "O voriconazol inibe o CYP3A4 e eleva muito o tacrolimo; a redução preventiva para um terço, com vale frequente, evita nefro e neurotoxicidade. Esperar o vale subir para agir, a pegadinha, expõe o enxerto à toxicidade nos primeiros dias."
+   },
+   {
+    "p": "Por que se prefere voriconazol oral ao IV com ClCr abaixo de 50 mL/min?",
+    "alts": [
+     "O veículo SBECD da forma IV acumula",
+     "O voriconazol ativo acumula no rim",
+     "A forma IV é nefrotóxica por si só",
+     "A forma oral é mais biodisponível"
+    ],
+    "gab": 0,
+    "exp": "O voriconazol em si não precisa de ajuste renal; quem acumula é a ciclodextrina (SBECD) do veículo IV. A pegadinha é reduzir a dose do voriconazol pela TFG, o que só gera subdose."
+   }
   ]
  },
  {
@@ -776,21 +1022,25 @@
       "dose",
       "renal"
      ],
-     "explicacao": "A primeira dose do choque séptico é integral, porque depende do volume de distribuição, e a LRA da sepse costuma regredir em 24 a 48 h. Mesmo para a TFG de 23 mL/min, a bula prevê 4,5 g 8/8 h; 2,25 g é subdose.",
-     "correcao": "Ataque de 4,5 g IV em 30 min agora e manutenção de 4,5 g IV 8/8 h em infusão estendida de 4 h (ClCr acima de 20); reavaliar a função renal em 24 a 48 h."
+     "explicacao": "A primeira dose do choque séptico é integral, porque depende do volume de distribuição, e a LRA da sepse costuma regredir em 24 a 48 h. Mesmo pela TFG de 23 mL/min, 2,25 g 8/8 h é a dose de ClCr abaixo de 20 no esquema intermitente; de 20 a 40 seriam 2,25 g 6/6 h, ou 4,5 g 8/8 h em infusão estendida, a escolha no choque.",
+     "correcao": "Ataque de 4,5 g IV em 30 min agora e manutenção de 4,5 g IV 8/8 h em infusão estendida de 4 h (ClCr acima de 20); reavaliar a função renal em 24 a 48 h.",
+     "prioridade": "alta"
     }
    },
    {
     "texto": "Noradrenalina 16 mg em SG 5% 234 mL (64 mcg/mL) em BIC a 16 mL/h (0,3 mcg/kg/min), PAM alvo de 60 a 65 mmHg",
-    "problema": null
+    "problema": null,
+    "ok": "Noradrenalina de 64 mcg/mL a 16 mL/h dá 0,29 mcg/kg/min para 58 kg; a conta da bomba confere com a dose descrita."
    },
    {
     "texto": "Hidrocortisona 50 mg IV 6/6 h",
-    "problema": null
+    "problema": null,
+    "ok": "Hidrocortisona 200 mg/dia está indicada: noradrenalina de 0,3 mcg/kg/min há mais de 4 horas."
    },
    {
     "texto": "Ringer lactato 250 mL IV em 15 min se houver fluidorresponsividade",
-    "problema": null
+    "problema": null,
+    "ok": "Bolus de cristaloide balanceado condicionado à fluidorresponsividade é a forma correta de continuar a ressuscitação."
    },
    {
     "texto": "Fluconazol 800 mg IV no D1 e 400 mg IV 1x/dia (cobertura empírica)",
@@ -799,7 +1049,8 @@
       "semindicacao"
      ],
      "explicacao": "Antifúngico empírico não é rotina na sepse (SSC 2026, ATS 2025): o foco é urinário por cálculo, sem candidúria, sem colonização multifocal nem outro fator de risco específico.",
-     "correcao": "Suspender. Reconsiderar apenas se surgir fator de risco ou cultura com levedura, com beta-D-glucana de apoio."
+     "correcao": "Suspender. Reconsiderar apenas se surgir fator de risco ou cultura com levedura, com beta-D-glucana de apoio.",
+     "prioridade": "baixa"
     }
    },
    {
@@ -809,7 +1060,8 @@
       "renal"
      ],
      "explicacao": "Com TFG não indexada de 23 mL/min, a enoxaparina acumula; a dose profilática deve ser reduzida abaixo de 30 mL/min.",
-     "correcao": "Enoxaparina 20 a 30 mg SC 1x/dia, conforme o protocolo, ou heparina não fracionada 5.000 UI SC 12/12 h, preferível enquanto a função renal estiver instável."
+     "correcao": "Enoxaparina 20 a 30 mg SC 1x/dia, conforme o protocolo, ou heparina não fracionada 5.000 UI SC 12/12 h, preferível enquanto a função renal estiver instável.",
+     "prioridade": "media"
     }
    },
    {
@@ -820,24 +1072,29 @@
       "via"
      ],
      "explicacao": "Betabloqueador em choque séptico com noradrenalina a 0,3 mcg/kg/min agrava a hipotensão; além disso, o succinato de liberação prolongada não pode ser triturado para sonda.",
-     "correcao": "Suspender e registrar o motivo. Na estabilidade, sem vasopressor, reintroduzir em dose menor como tartarato de liberação imediata (por exemplo, 12,5 mg por SNE 12/12 h), titulado pela FC."
+     "correcao": "Suspender e registrar o motivo. Na estabilidade, sem vasopressor, reintroduzir em dose menor como tartarato de liberação imediata (por exemplo, 12,5 mg por SNE 12/12 h), titulado pela FC.",
+     "prioridade": "alta"
     }
    },
    {
     "texto": "Insulina regular SC conforme glicemia capilar 4/4 h, alvo 140 a 180 mg/dL, pelo protocolo institucional",
-    "problema": null
+    "problema": null,
+    "ok": "Insulina por protocolo com alvo de 140 a 180 mg/dL é adequada com glicemia de 196 mg/dL e corticoide."
    },
    {
     "texto": "Pantoprazol 40 mg IV 1x/dia (choque)",
-    "problema": null
+    "problema": null,
+    "ok": "Choque em vasopressor é fator de risco de úlcera de estresse; a profilaxia com IBP está indicada."
    },
    {
     "texto": "Dipirona 1 g IV 6/6 h se temperatura acima de 37,8 °C, com a paciente deitada",
-    "problema": null
+    "problema": null,
+    "ok": "Antitérmico condicional; diluída, lenta e com a paciente deitada, a dipirona IV tem menos risco de hipotensão."
    },
    {
     "texto": "Dieta enteral 1,0 kcal/mL a 20 mL/h por SNE",
-    "problema": null
+    "problema": null,
+    "ok": "Dieta trófica de 20 mL/h com PAM na meta é aceitável; suspender se a noradrenalina subir, o lactato não cair ou surgir intolerância."
    }
   ],
   "omissoes": [],
@@ -847,6 +1104,37 @@
    "dose-disfuncao-renal",
    "profilaxias-uti",
    "antifungicos"
+  ],
+  "resumo": "Choque séptico com LRA de horas: a creatinina de 2,0 mg/dL tenta reduzir a dose do betalactâmico, mas a primeira dose é integral e a LRA da sepse costuma regredir em 24 a 48 h. A segunda prioridade é limpar o que agrava o choque ou não tem indicação: betabloqueador com noradrenalina a 0,3 mcg/kg/min e antifúngico empírico sem fator de risco.",
+  "dicas": [
+   "Pergunte de qual dose de antimicrobiano a paciente precisa nas primeiras 24 horas, antes de olhar a TFG.",
+   "Há um medicamento de casa que piora a hemodinâmica e ainda está numa forma que não pode ser triturada.",
+   "Confira a tabela de piperacilina-tazobactam para ClCr de 20 a 40 mL/min e a dose de enoxaparina abaixo de 30."
+  ],
+  "intervencao": "Dr(a)., sugestões para o choque séptico:\n1. Piperacilina-tazobactam: ataque de 4,5 g IV em 30 min agora e 4,5 g 8/8 h em infusão estendida de 4 h; 2,25 g 8/8 h é subdose mesmo para ClCr de 23 mL/min. Reavalio a função renal em 24 a 48 h.\n2. Suspender o metoprolol (choque em noradrenalina de 0,3 mcg/kg/min; o succinato não pode ser triturado).\n3. Suspender o fluconazol: não há fator de risco para candidíase invasiva.\n4. Enoxaparina 20 mg SC 1x/dia ou HNF 5.000 UI SC 12/12 h, pela TFG abaixo de 30.",
+  "fixacao": [
+   {
+    "p": "Choque séptico com creatinina de 2,0 mg/dL (basal 0,9) e ClCr estimado de 23 mL/min. Como fica a primeira dose de piperacilina-tazobactam?",
+    "alts": [
+     "Integral (4,5 g): a primeira dose segue o volume de distribuição",
+     "Reduzida a 2,25 g, porque a LRA já define a dose desde o início",
+     "Integral apenas se a creatinina basal da paciente for desconhecida",
+     "Reduzida à metade e repetida em 6 horas se não houver diurese"
+    ],
+    "gab": 0,
+    "exp": "Ataque e primeira dose seguem o volume de distribuição, aumentado no choque, e não a depuração. A pegadinha é ajustar já a primeira dose pela creatinina, que na sepse costuma refletir LRA transitória."
+   },
+   {
+    "p": "Paciente em choque séptico usa metoprolol succinato 50 mg em casa e recebe dieta por SNE. Qual a conduta?",
+    "alts": [
+     "Manter triturado pela sonda, na metade da dose",
+     "Trocar já por tartarato 25 mg 12/12 h pela sonda",
+     "Manter a dose e associar dobutamina para compensar",
+     "Suspender e voltar com tartarato após o choque"
+    ],
+    "gab": 3,
+    "exp": "Betabloqueador com noradrenalina em dose alta agrava a hipotensão; suspende-se e volta-se, depois do choque, como tartarato, que pode ser triturado. A troca imediata para tartarato, a pegadinha, corrige a forma farmacêutica mas não o problema hemodinâmico."
+   }
   ]
  },
  {
@@ -898,12 +1186,14 @@
       "renal"
      ],
      "explicacao": "A dose dobrada não mostrou benefício no paciente grave e não é rotina, e com TFG não indexada de 54 mL/min (faixa de 30 a 60) a dose indicada é menor. A duração padrão é de 5 dias.",
-     "correcao": "Oseltamivir 30 mg por SNE 12/12 h por 5 dias (cápsula aberta e dispersa em água), reajustando se a função renal mudar; estender só com replicação persistente."
+     "correcao": "Oseltamivir 30 mg por SNE 12/12 h por 5 dias (cápsula aberta e dispersa em água), reajustando se a função renal mudar; estender só com replicação persistente.",
+     "prioridade": "baixa"
     }
    },
    {
     "texto": "Ceftriaxona 2 g IV 1x/dia",
-    "problema": null
+    "problema": null,
+    "ok": "Ceftriaxona 2 g 1x/dia cobre pneumococo e Haemophilus, as coinfecções bacterianas mais comuns, até as culturas, sem ajuste renal."
    },
    {
     "texto": "Azitromicina 500 mg IV 1x/dia, diluída em SF 0,9% 100 mL, em 30 min",
@@ -912,7 +1202,8 @@
       "admin"
      ],
      "explicacao": "A 5 mg/mL e em 30 min, a infusão excede a concentração máxima de 2 mg/mL e o tempo mínimo de 60 min, com dor, flebite e risco de arritmia.",
-     "correcao": "Azitromicina 500 mg em 250 mL de SF 0,9% (2 mg/mL) em 1 h, ou em 500 mL (1 mg/mL) em 3 h."
+     "correcao": "Azitromicina 500 mg em 250 mL de SF 0,9% (2 mg/mL) em 1 h, ou em 500 mL (1 mg/mL) em 3 h.",
+     "prioridade": "media"
     }
    },
    {
@@ -922,7 +1213,8 @@
       "duplicidade"
      ],
      "explicacao": "O esquema da pneumonia comunitária grave é betalactâmico associado a macrolídeo ou a quinolona respiratória, não aos dois; a azitromicina (linha 3) já cobre os atípicos, e somar levofloxacino dobra o risco de QT sem ganho de espectro.",
-     "correcao": "Suspender o levofloxacino e manter ceftriaxona com azitromicina."
+     "correcao": "Suspender o levofloxacino e manter ceftriaxona com azitromicina.",
+     "prioridade": "media"
     }
    },
    {
@@ -932,32 +1224,39 @@
       "contraindicacao"
      ],
      "explicacao": "A pneumonia por influenza foi excluída da recomendação de corticoide na pneumonia comunitária grave (ATS 2025), e a noradrenalina de 0,08 mcg/kg/min não caracteriza necessidade persistente de vasopressor em dose que justifique hidrocortisona pelo choque.",
-     "correcao": "Suspender a hidrocortisona; reconsiderar apenas se evoluir com choque persistente em noradrenalina crescente."
+     "correcao": "Suspender a hidrocortisona; reconsiderar apenas se evoluir com choque persistente em noradrenalina crescente.",
+     "prioridade": "media"
     }
    },
    {
     "texto": "Noradrenalina 16 mg em SG 5% 234 mL (64 mcg/mL) em BIC a 7 mL/h (0,08 mcg/kg/min)",
-    "problema": null
+    "problema": null,
+    "ok": "Noradrenalina de 64 mcg/mL a 7 mL/h dá 0,08 mcg/kg/min para 95 kg; a conta confere."
    },
    {
     "texto": "Propofol 1% em BIC a 20 mL/h (2,1 mg/kg/h), titular para RASS −2",
-    "problema": null
+    "problema": null,
+    "ok": "Propofol a 2,1 mg/kg/h está na faixa e abaixo do teto de 4 mg/kg/h."
    },
    {
     "texto": "Fentanil 50 mcg/mL puro em BIC a 2 mL/h (100 mcg/h)",
-    "problema": null
+    "problema": null,
+    "ok": "Fentanil a 100 mcg/h é analgesia de base usual no paciente intubado."
    },
    {
     "texto": "Enoxaparina 40 mg SC 1x/dia",
-    "problema": null
+    "problema": null,
+    "ok": "Enoxaparina 40 mg 1x/dia está adequada: TFG não indexada de 54 mL/min, IMC de 29 kg/m² e sem sangramento."
    },
    {
     "texto": "Pantoprazol 40 mg IV 1x/dia (ventilação mecânica e choque)",
-    "problema": null
+    "problema": null,
+    "ok": "Ventilação mecânica com vasopressor justifica a profilaxia de úlcera de estresse."
    },
    {
     "texto": "Insulina regular SC conforme glicemia capilar 4/4 h, alvo 140 a 180 mg/dL",
-    "problema": null
+    "problema": null,
+    "ok": "Insulina por protocolo com alvo de 140 a 180 mg/dL é o padrão no crítico."
    }
   ],
   "omissoes": [],
@@ -967,6 +1266,37 @@
    "pneumonias-uti",
    "sepse-choque-septico",
    "outras-classes-antibacterianas"
+  ],
+  "resumo": "Influenza grave intubado: o oseltamivir está indicado mesmo após 48 horas de sintomas, mas a dose segue a TFG não indexada (54 mL/min) e a duração padrão é de 5 dias. O resto da folha é o pacote da pneumonia comunitária grave; o que se confere é se cada componente vale para influenza e se não há dois fármacos para o mesmo alvo.",
+  "dicas": [
+   "Compare cada antimicrobiano com o esquema padrão da pneumonia comunitária grave: quantos cobrem atípicos?",
+   "O corticoide da pneumonia comunitária grave tem uma exceção que se aplica a este paciente.",
+   "Confira a dose do antiviral para TFG de 30 a 60 mL/min e a concentração da azitromicina na bolsa."
+  ],
+  "intervencao": "Dr(a)., sugestões para o paciente com influenza:\n1. Oseltamivir 30 mg por SNE 12/12 h por 5 dias, pela TFG não indexada de 54 mL/min; reajusto se a função renal mudar.\n2. Suspender o levofloxacino: a azitromicina já cobre atípicos, e as duas somam QT.\n3. Azitromicina 500 mg em 250 mL de SF 0,9% em 1 h (máximo de 2 mg/mL).\n4. Suspender a hidrocortisona: a ATS 2025 recomenda contra corticoide na pneumonia grave por influenza, e a noradrenalina está em dose baixa.",
+  "fixacao": [
+   {
+    "p": "Paciente com influenza grave e TFG não indexada de 54 mL/min. Qual a dose de oseltamivir?",
+    "alts": [
+     "75 mg 12/12 h por 5 dias",
+     "150 mg 12/12 h por 10 dias",
+     "30 mg 12/12 h por 5 dias",
+     "30 mg 24/24 h por 5 dias"
+    ],
+    "gab": 2,
+    "exp": "Na faixa de 30 a 60 mL/min a dose é 30 mg 12/12 h, por 5 dias. A dose dobrada, pegadinha clássica do paciente grave, não mostrou benefício consistente e não é rotina; 30 mg 24/24 h é a dose de 10 a 30 mL/min."
+   },
+   {
+    "p": "Na pneumonia comunitária grave, o que se associa ao betalactâmico para cobrir atípicos?",
+    "alts": [
+     "Macrolídeo e quinolona respiratória, juntos",
+     "Macrolídeo ou quinolona respiratória, um só",
+     "Quinolona só se Legionella vier positiva",
+     "Doxiciclina associada ao macrolídeo por 7 dias"
+    ],
+    "gab": 1,
+    "exp": "O esquema é betalactâmico com macrolídeo ou com quinolona respiratória; somar os dois não amplia o espectro e dobra o risco de QT. A pegadinha é achar que mais cobertura de atípicos protege o paciente grave."
+   }
   ]
  },
  {
@@ -1021,12 +1351,14 @@
       "via"
      ],
      "explicacao": "A vancomicina intravenosa não chega à luz do cólon e não trata C. difficile; o tratamento da forma fulminante é por via oral ou sonda.",
-     "correcao": "Vancomicina 500 mg VO ou por SNE 6/6 h (solução preparada a partir do pó injetável pela farmácia), associada ao metronidazol IV."
+     "correcao": "Vancomicina 500 mg VO ou por SNE 6/6 h (solução preparada a partir do pó injetável pela farmácia), associada ao metronidazol IV.",
+     "prioridade": "alta"
     }
    },
    {
     "texto": "Metronidazol 500 mg IV 8/8 h",
-    "problema": null
+    "problema": null,
+    "ok": "Metronidazol IV é o componente sistêmico do tripé da forma fulminante e chega ao cólon pela circulação, mesmo com íleo."
    },
    {
     "texto": "Ceftriaxona 2 g IV 1x/dia (D9, pneumonia comunitária)",
@@ -1036,7 +1368,8 @@
       "semindicacao"
      ],
      "explicacao": "A pneumonia comunitária com estabilidade clínica desde o D4 já completou o tempo necessário (5 dias ou mais após estabilidade), e manter o antimicrobiano desencadeante piora a infecção por C. difficile.",
-     "correcao": "Suspender a ceftriaxona hoje e registrar o término do tratamento da pneumonia."
+     "correcao": "Suspender a ceftriaxona hoje e registrar o término do tratamento da pneumonia.",
+     "prioridade": "media"
     }
    },
    {
@@ -1046,7 +1379,8 @@
       "semindicacao"
      ],
      "explicacao": "Sem fator de risco para sangramento por estresse (sem choque, sem coagulopatia, sem hepatopatia, sem ventilação), e o IBP se associa a C. difficile.",
-     "correcao": "Suspender o omeprazol e registrar a ausência de indicação."
+     "correcao": "Suspender o omeprazol e registrar a ausência de indicação.",
+     "prioridade": "baixa"
     }
    },
    {
@@ -1056,28 +1390,34 @@
       "contraindicacao"
      ],
      "explicacao": "Antiperistálticos devem ser evitados na infecção grave por C. difficile: retêm a toxina e favorecem íleo e megacólon, que o paciente já apresenta.",
-     "correcao": "Suspender a loperamida."
+     "correcao": "Suspender a loperamida.",
+     "prioridade": "alta"
     }
    },
    {
     "texto": "Ringer lactato IV a 125 mL/h",
-    "problema": null
+    "problema": null,
+    "ok": "Ringer lactato a 125 mL/h repõe as perdas de 12 evacuações e trata o componente pré-renal da LRA."
    },
    {
     "texto": "Cloreto de potássio 19,1% 15 mL (38,4 mEq) em SF 0,9% 250 mL IV em 4 h por CVC",
-    "problema": null
+    "problema": null,
+    "ok": "KCl 38,4 mEq em 250 mL em 4 h pelo CVC dá cerca de 10 mEq/h e 15 mEq/100 mL, dentro do limite central, com K de 2,9 mEq/L."
    },
    {
     "texto": "Heparina não fracionada 5.000 UI SC 8/8 h",
-    "problema": null
+    "problema": null,
+    "ok": "HNF 5.000 UI 8/8 h é profilaxia adequada sem sangramento, com plaquetas e RNI normais."
    },
    {
     "texto": "Ondansetrona 4 mg IV 8/8 h se náusea",
-    "problema": null
+    "problema": null,
+    "ok": "Ondansetrona condicional em dose baixa é aceitável; com K de 2,9 mEq/L, corrigir o potássio e checar o QTc antes de usar."
    },
    {
     "texto": "Dieta zero; reavaliar em 24 h",
-    "problema": null
+    "problema": null,
+    "ok": "Dieta zero é coerente com íleo e distensão; reavaliar em 24 h."
    }
   ],
   "omissoes": [
@@ -1093,6 +1433,37 @@
    "trato-gastrointestinal",
    "outras-classes-antibacterianas",
    "pneumonias-uti"
+  ],
+  "resumo": "Colite por C. difficile com íleo é forma fulminante: a pergunta é se o tratamento chega ao cólon, e a vancomicina IV não chega. Depois, retirar tudo que alimenta a doença ou mascara a piora: o antimicrobiano desencadeante já sem função, o IBP sem indicação e o antiperistáltico.",
+  "dicas": [
+   "Pense em onde a infecção está e se cada via de administração alcança esse lugar.",
+   "Três linhas pioram a colite: uma mantém a pressão seletiva, outra reduz a acidez gástrica, outra retém a toxina.",
+   "Com íleo, falta uma via de administração no tripé da forma fulminante."
+  ],
+  "intervencao": "Dr(a)., a colite tem íleo, o que caracteriza forma fulminante. Sugiro:\n1. Trocar a vancomicina IV por vancomicina 500 mg VO ou por SNE 6/6 h, mantendo o metronidazol IV.\n2. Associar vancomicina 500 mg em 100 mL de SF 0,9% por via retal 6/6 h e pedir avaliação cirúrgica.\n3. Suspender a loperamida, a ceftriaxona (pneumonia já tratada) e o omeprazol (sem indicação).",
+  "fixacao": [
+   {
+    "p": "Na infecção fulminante por C. difficile com íleo, qual o esquema recomendado (IDSA/SHEA)?",
+    "alts": [
+     "Vancomicina IV 1 g 12/12 h com metronidazol oral",
+     "Vancomicina oral e retal com metronidazol IV",
+     "Metronidazol oral isolado, com loperamida",
+     "Vancomicina IV com metronidazol IV e dieta zero"
+    ],
+    "gab": 1,
+    "exp": "Com íleo, a vancomicina oral pode não chegar ao cólon, por isso se soma a retal; o metronidazol IV alcança o cólon pela circulação. A vancomicina IV, a pegadinha, não é excretada na luz intestinal e não trata C. difficile."
+   },
+   {
+    "p": "Por que a loperamida deve ser evitada na infecção grave por C. difficile?",
+    "alts": [
+     "Porque reduz o nível da vancomicina oral",
+     "Porque prolonga o QT com o metronidazol",
+     "Porque piora a hipocalemia pela diarreia",
+     "Porque retém a toxina e favorece megacólon"
+    ],
+    "gab": 3,
+    "exp": "O antiperistáltico mantém a toxina em contato com a mucosa e favorece íleo e megacólon tóxico. A pegadinha é tratar a diarreia como sintoma a controlar: ela é a via de eliminação da toxina e o marcador de resposta."
+   }
   ]
  },
  {
@@ -1152,7 +1523,8 @@
       "dose"
      ],
      "explicacao": "Na CVVHDF com efluente de 2 L/h a depuração do meropeném é de cerca de 33 mL/min; usar a dose de TFG abaixo de 10 mL/min gera subdose em choque séptico por Pseudomonas.",
-     "correcao": "Meropeném 1 g IV 8/8 h em infusão estendida de 3 h (dose de TRS contínua), reavaliando se o efluente ou as horas de terapia mudarem."
+     "correcao": "Meropeném 1 g IV 8/8 h em infusão estendida de 3 h (dose de TRS contínua), reavaliando se o efluente ou as horas de terapia mudarem.",
+     "prioridade": "alta"
     }
    },
    {
@@ -1162,12 +1534,14 @@
       "semindicacao"
      ],
      "explicacao": "Cultura com P. aeruginosa, swab nasal para MRSA por PCR negativo e hemoculturas negativas após 72 h: não há indicação de cobertura para MRSA, e a dose correta não justifica o fármaco.",
-     "correcao": "Suspender a vancomicina e registrar o descalonamento."
+     "correcao": "Suspender a vancomicina e registrar o descalonamento.",
+     "prioridade": "baixa"
     }
    },
    {
     "texto": "Citrato trissódico 4% pré-filtro conforme protocolo de anticoagulação regional",
-    "problema": null
+    "problema": null,
+    "ok": "Citrato pré-filtro é a anticoagulação regional preferida em TRS contínua; o cálcio pós-filtro de 0,31 mmol/L mostra circuito anticoagulado."
    },
    {
     "texto": "Gluconato de cálcio 10% em BIC conforme protocolo, conectado na linha pré-filtro junto ao citrato",
@@ -1176,7 +1550,8 @@
       "admin"
      ],
      "explicacao": "O cálcio infundido antes do filtro neutraliza o citrato e anula a anticoagulação do circuito. A reposição deve ser separada, pós-filtro ou em acesso central.",
-     "correcao": "Instalar o gluconato de cálcio na linha de retorno pós-filtro ou em lúmen central separado, titulado pelo cálcio ionizado sistêmico (alvo de 1 a 1,2 mmol/L)."
+     "correcao": "Instalar o gluconato de cálcio na linha de retorno pós-filtro ou em lúmen central separado, titulado pelo cálcio ionizado sistêmico (alvo de 1 a 1,2 mmol/L).",
+     "prioridade": "alta"
     }
    },
    {
@@ -1186,32 +1561,39 @@
       "semindicacao"
      ],
      "explicacao": "Paciente anúrico em TRS: a furosemida não tem efeito diurético e soma ototoxicidade.",
-     "correcao": "Suspender; reconsiderar apenas quando houver recuperação da diurese."
+     "correcao": "Suspender; reconsiderar apenas quando houver recuperação da diurese.",
+     "prioridade": "baixa"
     }
    },
    {
     "texto": "Heparina não fracionada 5.000 UI SC 8/8 h",
-    "problema": null
+    "problema": null,
+    "ok": "Com citrato regional o circuito está anticoagulado, mas o paciente não; a profilaxia sistêmica de TEV com HNF segue indicada."
    },
    {
     "texto": "Noradrenalina 16 mg em SG 5% 234 mL (64 mcg/mL) em BIC a 11 mL/h (0,15 mcg/kg/min)",
-    "problema": null
+    "problema": null,
+    "ok": "Noradrenalina de 64 mcg/mL a 11 mL/h dá 0,15 mcg/kg/min para 80 kg; a conta confere."
    },
    {
     "texto": "Fentanil 50 mcg/mL puro em BIC a 2 mL/h (100 mcg/h)",
-    "problema": null
+    "problema": null,
+    "ok": "Fentanil a 100 mcg/h, sem metabólito ativo relevante, é opção adequada na LRA anúrica."
    },
    {
     "texto": "Levetiracetam 500 mg IV 12/12 h (epilepsia prévia)",
-    "problema": null
+    "problema": null,
+    "ok": "Levetiracetam 500 mg 12/12 h está na faixa de 500 a 1.000 mg 12/12 h descrita para TRS contínua."
    },
    {
     "texto": "Pantoprazol 40 mg IV 1x/dia (choque)",
-    "problema": null
+    "problema": null,
+    "ok": "Choque em vasopressor e ventilação justificam a profilaxia de úlcera de estresse."
    },
    {
     "texto": "Dieta enteral 1,5 kcal/mL a 50 mL/h por SNE, hiperproteica",
-    "problema": null
+    "problema": null,
+    "ok": "Dieta hiperproteica faz sentido em TRS contínua, que remove aminoácidos pelo efluente."
    }
   ],
   "omissoes": [
@@ -1226,6 +1608,37 @@
    "trs-dialise-dose",
    "stewardship",
    "pneumonias-uti"
+  ],
+  "resumo": "Em CVVHDF a creatinina não serve para dose: quem dita a depuração é o efluente entregue (aqui 2 L/h por 22 h), e a dose de TFG abaixo de 10 mL/min gera subdose de betalactâmico em choque por Pseudomonas. O segundo olhar é para o circuito: citrato e cálcio precisam entrar em lados opostos do filtro.",
+  "dicas": [
+   "Estime a depuração do meropeném a partir do efluente entregue, não da creatinina.",
+   "No citrato regional, pense em onde o cálcio deve entrar em relação ao filtro.",
+   "Há dois fármacos que perderam a razão de existir: um pela cultura, outro pela anúria."
+  ],
+  "intervencao": "Dr(a)., sugestões para o leito em CVVHDF:\n1. Meropeném 1 g IV 8/8 h em infusão de 3 h: com efluente de 2 L/h a depuração fica perto de 33 mL/min, e 500 mg 12/12 h é subdose.\n2. Gluconato de cálcio na linha de retorno pós-filtro ou em lúmen central separado; antes do filtro ele anula o citrato.\n3. Suspender a vancomicina (sem MRSA) e a furosemida (anúria).\n4. Repor fósforo (1,9 mg/dL): glicerofosfato de sódio cerca de 25 mmol IV em 4 a 6 h, com fósforo diário.",
+  "fixacao": [
+   {
+    "p": "Homem de 80 kg em CVVHDF com efluente entregue de 2 L/h. Qual referência orienta a dose de meropeném?",
+    "alts": [
+     "A creatinina do dia, estimada pelo CKD-EPI",
+     "A dose de TFG abaixo de 10, por ser anúrico",
+     "O efluente: depuração perto de 33 mL/min",
+     "A dose de função renal normal, sem ajuste"
+    ],
+    "gab": 2,
+    "exp": "A depuração pela TRS é aproximadamente a fração livre vezes o efluente: 0,98 × 2 L/h ≈ 33 mL/min, o que leva a 1 g 8/8 h. A pegadinha é tratar o anúrico em TRS contínua como TFG abaixo de 10, o que gera subdose."
+   },
+   {
+    "p": "Na anticoagulação regional com citrato, onde se infunde a reposição de cálcio?",
+    "alts": [
+     "Na linha pré-filtro, junto com o citrato",
+     "Na linha pós-filtro ou em lúmen separado",
+     "Na solução de reposição pré-filtro da TRS",
+     "Em veia periférica, em bolus uma vez ao dia"
+    ],
+    "gab": 1,
+    "exp": "O citrato quela o cálcio dentro do circuito; o cálcio volta ao paciente depois do filtro ou por outro acesso, titulado pelo cálcio ionizado sistêmico. Antes do filtro, a pegadinha, ele neutraliza o citrato e o circuito coagula."
+   }
   ]
  },
  {
@@ -1275,7 +1688,8 @@
   "itens": [
    {
     "texto": "Linezolida 600 mg IV 12/12 h (D2)",
-    "problema": null
+    "problema": null,
+    "ok": "Linezolida 600 mg 12/12 h dispensa ajuste renal e é a melhor opção anti-MRSA após LRA pela vancomicina; a interação se resolve nas outras linhas."
    },
    {
     "texto": "Cefepima 2 g IV 8/8 h em infusão estendida de 3 h (D2)",
@@ -1284,7 +1698,8 @@
       "renal"
      ],
      "explicacao": "Com TFG de 34 mL/min, a dose de 2 g 8/8 h acumula; a cefepima não ajustada causa encefalopatia e crises não convulsivas, uma explicação possível para o delirium de ontem.",
-     "correcao": "Cefepima 2 g IV 12/12 h em infusão estendida (faixa de 30 a 60 mL/min), reajustando diariamente pela função renal; vigiar mioclonias e rebaixamento."
+     "correcao": "Cefepima 2 g IV 12/12 h em infusão estendida (faixa de 30 a 60 mL/min), reajustando diariamente pela função renal; vigiar mioclonias e rebaixamento.",
+     "prioridade": "alta"
     }
    },
    {
@@ -1295,7 +1710,8 @@
       "interacao"
      ],
      "explicacao": "Acima de 65 anos a dose máxima é de 10 mg/dia pelo prolongamento do QT, e a paciente tem QTc de 488 ms; além disso, soma serotonina com a linezolida e o tramadol.",
-     "correcao": "Reduzir para 10 mg/dia (ou suspender temporariamente enquanto durar a linezolida, com vigilância de descontinuação), ECG diário."
+     "correcao": "Reduzir para 10 mg/dia (ou suspender temporariamente enquanto durar a linezolida, com vigilância de descontinuação), ECG diário.",
+     "prioridade": "media"
     }
    },
    {
@@ -1305,7 +1721,8 @@
       "interacao"
      ],
      "explicacao": "Tramadol associado à linezolida (inibidor fraco da MAO) e ao escitalopram é combinação de risco grave para síndrome serotoninérgica, e ainda reduz o limiar convulsivo.",
-     "correcao": "Suspender o tramadol; analgesia com dipirona 1 g IV 6/6 h ou paracetamol, e fentanil em bolus se necessário."
+     "correcao": "Suspender o tramadol; analgesia com dipirona 1 g IV 6/6 h ou paracetamol, e fentanil em bolus se necessário.",
+     "prioridade": "alta"
     }
    },
    {
@@ -1315,28 +1732,34 @@
       "interacao"
      ],
      "explicacao": "Soma prolongamento do QT ao escitalopram em paciente com QTc de 488 ms e escore de Tisdale alto, sem náusea registrada que justifique o horário fixo.",
-     "correcao": "Suspender o horário fixo; se houver náusea, usar antiemético sem efeito relevante no QT e em dose se necessário."
+     "correcao": "Suspender o horário fixo; se houver náusea, usar antiemético sem efeito relevante no QT e em dose se necessário.",
+     "prioridade": "media"
     }
    },
    {
     "texto": "Furosemida 40 mg IV 12/12 h",
-    "problema": null
+    "problema": null,
+    "ok": "Furosemida pode ser mantida se há indicação volêmica; ela é fator de risco de QT e espolia K e Mg, o que reforça a reposição."
    },
    {
     "texto": "Fentanil 25 mcg IV se dor intensa, até 2/2 h",
-    "problema": null
+    "problema": null,
+    "ok": "Fentanil em bolus como resgate tem risco serotoninérgico muito menor que o do tramadol e não tem metabólito ativo na LRA."
    },
    {
     "texto": "Enoxaparina 40 mg SC 1x/dia",
-    "problema": null
+    "problema": null,
+    "ok": "Enoxaparina 40 mg 1x/dia está adequada com TFG não indexada de 34 mL/min, acima de 30."
    },
    {
     "texto": "Insulina regular SC conforme glicemia capilar 6/6 h, alvo 140 a 180 mg/dL",
-    "problema": null
+    "problema": null,
+    "ok": "Insulina por protocolo com alvo de 140 a 180 mg/dL é o padrão no pós-operatório crítico."
    },
    {
     "texto": "Dieta enteral 1,0 kcal/mL a 40 mL/h por SNE",
-    "problema": null
+    "problema": null,
+    "ok": "Dieta enteral de 1,0 kcal/mL a 40 mL/h é progressão adequada no D6 de laparotomia, sem náusea registrada."
    }
   ],
   "omissoes": [
@@ -1352,6 +1775,37 @@
    "gram-positivos-resistentes",
    "betalactamicos",
    "dose-disfuncao-renal"
+  ],
+  "resumo": "Linezolida em quem usa ISRS obriga a procurar outros serotoninérgicos (tramadol) e, com QTc de 488 ms, todos os fármacos que prolongam o QT. O delirium novo pede ainda a pergunta incômoda: a cefepima está ajustada à TFG de 34 mL/min? Neurotoxicidade por cefepima acumulada se parece com delirium comum.",
+  "dicas": [
+   "Antes de atribuir o delirium à idade, confira se algum betalactâmico está acima da dose renal.",
+   "Conte os fármacos serotoninérgicos e os que prolongam o QT nesta folha.",
+   "O escitalopram tem dose máxima própria acima dos 65 anos; e o potássio e o magnésio estão baixos."
+  ],
+  "intervencao": "Dr(a)., a paciente tem QTc de 488 ms e delirium novo; sugiro:\n1. Cefepima 2 g IV 12/12 h em infusão estendida, pela TFG de 34 mL/min; o delirium pode ser neurotoxicidade.\n2. Suspender o tramadol (risco grave de síndrome serotoninérgica com linezolida e escitalopram); analgesia com dipirona e fentanil se necessário.\n3. Escitalopram 10 mg/dia (máximo acima de 65 anos), ou pausa enquanto durar a linezolida, e suspender a ondansetrona fixa.\n4. Repor K e Mg (meta de K de 4 a 5 mEq/L) e ECG diário.",
+  "fixacao": [
+   {
+    "p": "Idosa com TFG de 34 mL/min recebe cefepima 2 g 8/8 h e desenvolve confusão e mioclonias. Qual hipótese o farmacêutico deve levantar?",
+    "alts": [
+     "Neurotoxicidade por acúmulo de cefepima",
+     "Síndrome serotoninérgica pela cefepima",
+     "Hipoglicemia grave induzida pela cefepima",
+     "Abstinência por pausa do escitalopram"
+    ],
+    "gab": 0,
+    "exp": "A cefepima acumula na disfunção renal e causa encefalopatia, mioclonias e crises não convulsivas; na faixa de 30 a 60 mL/min, 2 g 12/12 h. A pegadinha é atribuir a confusão só ao delirium do pós-operatório e não revisar a dose."
+   },
+   {
+    "p": "Paciente em escitalopram precisa de linezolida para MRSA e tem dor. Qual analgesia evita somar risco serotoninérgico?",
+    "alts": [
+     "Tramadol em dose reduzida de 50 mg",
+     "Meperidina em dose baixa e única",
+     "Dipirona, com fentanil em resgate",
+     "Metadona em dose baixa de manutenção"
+    ],
+    "gab": 2,
+    "exp": "Tramadol, meperidina e metadona têm efeito serotoninérgico e somam risco com linezolida e ISRS; dipirona e paracetamol não, e o fentanil tem risco bem menor. Reduzir a dose do tramadol, a pegadinha, não elimina a interação."
+   }
   ]
  },
  {
@@ -1401,11 +1855,13 @@
   "itens": [
    {
     "texto": "Sulfametoxazol-trimetoprima 4 ampolas (320 mg de TMP) IV 8/8 h, cada ampola em 125 mL de SG 5%, em 90 min",
-    "problema": null
+    "problema": null,
+    "ok": "Trimetoprima de 960 mg/dia para 55 kg dá 17,5 mg/kg/dia, dentro de 15 a 20 mg/kg/dia, sem ajuste com TFG de 75 mL/min; 125 mL por ampola é a diluição padrão."
    },
    {
     "texto": "Prednisona 40 mg VO 12/12 h do D1 ao D5, depois esquema regressivo até o D21",
-    "problema": null
+    "problema": null,
+    "ok": "Prednisona 40 mg 12/12 h por 5 dias com redução até o D21 é o esquema indicado com PaO2 abaixo de 70 mmHg, iniciado nas primeiras 72 h."
    },
    {
     "texto": "Ácido folínico 15 mg VO 1x/dia (prevenir mielotoxicidade)",
@@ -1414,7 +1870,8 @@
       "semindicacao"
      ],
      "explicacao": "Na pneumocistose, o ácido folínico associado ao sulfametoxazol-trimetoprima se associou a falha terapêutica e não deve ser usado para prevenir mielotoxicidade.",
-     "correcao": "Suspender; vigiar hemograma duas vezes por semana e agir sobre a dose se houver citopenia importante."
+     "correcao": "Suspender; vigiar hemograma duas vezes por semana e agir sobre a dose se houver citopenia importante.",
+     "prioridade": "media"
     }
    },
    {
@@ -1424,7 +1881,8 @@
       "duplicidade"
      ],
      "explicacao": "Clindamicina com primaquina é esquema alternativo para intolerância ao SMX-TMP, não um adjuvante; somada ao tratamento de escolha, é duplicidade. Além disso, a G6PD não foi dosada e a primaquina causa hemólise na deficiência.",
-     "correcao": "Suspender a primaquina. Se o SMX-TMP precisar ser trocado, dosar G6PD antes de clindamicina com primaquina."
+     "correcao": "Suspender a primaquina. Se o SMX-TMP precisar ser trocado, dosar G6PD antes de clindamicina com primaquina.",
+     "prioridade": "media"
     }
    },
    {
@@ -1434,7 +1892,8 @@
       "interacao"
      ],
      "explicacao": "A trimetoprima em dose de pneumocistose bloqueia o canal epitelial de sódio e, com IECA, aumenta em várias vezes o risco de hipercalemia; o K já está em 5,3 mEq/L no D1.",
-     "correcao": "Suspender o enalapril durante o curso de dose alta e dosar K e creatinina diários; se a PA exigir, usar anlodipino."
+     "correcao": "Suspender o enalapril durante o curso de dose alta e dosar K e creatinina diários; se a PA exigir, usar anlodipino.",
+     "prioridade": "alta"
     }
    },
    {
@@ -1444,20 +1903,24 @@
       "redacao"
      ],
      "explicacao": "A abreviação \"U\" pode ser lida como zero e transformar 5.000 U em 50.000; o ISMP recomenda escrever unidades por extenso ou UI.",
-     "correcao": "Reescrever: heparina não fracionada 5.000 UI SC 8/8 h. A heparina também contribui para a hipercalemia; manter K diário."
+     "correcao": "Reescrever: heparina não fracionada 5.000 UI SC 8/8 h. A heparina também contribui para a hipercalemia; manter K diário.",
+     "prioridade": "media"
     }
    },
    {
     "texto": "Fluconazol 200 mg VO 1x/dia (candidíase oral)",
-    "problema": null
+    "problema": null,
+    "ok": "Fluconazol 200 mg/dia é tratamento adequado da candidíase oral, sem interação relevante com o resto da prescrição."
    },
    {
     "texto": "Dipirona 1 g VO 6/6 h se temperatura acima de 37,8 °C",
-    "problema": null
+    "problema": null,
+    "ok": "Antitérmico condicional na dose usual; com leucócitos de 3.100/mm³ e SMX-TMP, o hemograma duas vezes por semana também vigia a rara agranulocitose da dipirona."
    },
    {
     "texto": "Dieta oral hiperproteica",
-    "problema": null
+    "problema": null,
+    "ok": "Dieta oral hiperproteica é adequada a paciente consciente, em cateter de alto fluxo, que se alimenta."
    }
   ],
   "omissoes": [],
@@ -1466,6 +1929,37 @@
    "antivirais-uti",
    "interacoes-farmacodinamicas",
    "outras-classes-antibacterianas"
+  ],
+  "resumo": "Pneumocistose grave com o tratamento principal correto (trimetoprima de 17,5 mg/kg/dia e corticoide por PaO2 abaixo de 70 mmHg): o trabalho do farmacêutico é proteger esse esquema. Isso significa tirar o que causa falha (ácido folínico), o que não acrescenta nada e pode hemolisar sem G6PD (primaquina) e o que soma hipercalemia a um K de 5,3 mEq/L no D1.",
+  "dicas": [
+   "Confira primeiro se o tratamento de escolha está na dose certa; o problema está nos adjuvantes.",
+   "Um adjuvante parece proteger a medula, mas compromete a eficácia; outro pertence a um esquema alternativo.",
+   "Olhe o K de 5,3 mEq/L e procure o que o eleva junto com a trimetoprima; leia também como a heparina foi escrita."
+  ],
+  "intervencao": "Dr(a)., o SMX-TMP e o corticoide estão corretos; sugiro proteger o tratamento:\n1. Suspender o enalapril: trimetoprima em dose alta com IECA e K de 5,3 mEq/L; K e creatinina diários (anlodipino se a PA exigir).\n2. Suspender o ácido folínico, associado a falha terapêutica na pneumocistose.\n3. Suspender a primaquina: pertence ao esquema alternativo e a G6PD não foi dosada.\n4. Reescrever a heparina como 5.000 UI, sem a abreviação U.",
+  "fixacao": [
+   {
+    "p": "Paciente em sulfametoxazol-trimetoprima para pneumocistose. Por que não associar ácido folínico para prevenir mielotoxicidade?",
+    "alts": [
+     "Porque reduz a absorção oral do SMX-TMP",
+     "Porque aumenta o risco de hipercalemia",
+     "Porque precipita com o SMX-TMP na via",
+     "Porque se associou a falha terapêutica"
+    ],
+    "gab": 3,
+    "exp": "O ácido folínico se associou a falha terapêutica na pneumocistose e não deve ser usado para proteger a medula. Na toxoplasmose com pirimetamina, ao contrário, ele é obrigatório: a pegadinha é transpor a regra de um esquema para o outro."
+   },
+   {
+    "p": "Por que a trimetoprima em dose alta eleva o potássio?",
+    "alts": [
+     "Bloqueia o canal epitelial de sódio no néfron distal",
+     "Inibe a aldosterona sintase na glândula suprarrenal",
+     "Causa hemólise intravascular, que libera potássio",
+     "Inibe a bomba de sódio e potássio do músculo estriado"
+    ],
+    "gab": 0,
+    "exp": "A trimetoprima bloqueia o canal epitelial de sódio, como a amilorida, reduz a secreção de potássio e soma efeito a IECA, espironolactona e heparina. A hemólise, a pegadinha, ocorre com primaquina e dapsona na deficiência de G6PD e não é o mecanismo da trimetoprima."
+   }
   ]
  },
  {
@@ -1519,11 +2013,13 @@
   "itens": [
    {
     "texto": "Ceftriaxona 2 g IV 1x/dia",
-    "problema": null
+    "problema": null,
+    "ok": "Ceftriaxona 2 g 1x/dia é tratamento adequado da PBE adquirida na comunidade, sem ajuste renal ou hepático."
    },
    {
     "texto": "Albumina 20% 108 g (1,5 g/kg) IV hoje e 72 g (1 g/kg) no D3",
-    "problema": null
+    "problema": null,
+    "ok": "Albumina 1,5 g/kg no D1 e 1 g/kg no D3 é o esquema que reduz LRA e mortalidade na PBE, ainda mais com bilirrubina acima de 4 mg/dL e creatinina alta."
    },
    {
     "texto": "Midazolam 5 mg IV se agitação",
@@ -1533,7 +2029,8 @@
       "renal"
      ],
      "explicacao": "Benzodiazepínicos são o principal precipitante iatrogênico de encefalopatia hepática; em Child-Pugh C o midazolam tem depuração reduzida e efeito prolongado, e a agitação aqui é da própria encefalopatia.",
-     "correcao": "Suspender; tratar a encefalopatia (lactulose com meta, rifaximina) e, se agitação com risco, usar dose baixa de haloperidol com monitorização."
+     "correcao": "Suspender; tratar a encefalopatia (lactulose com meta, rifaximina) e, se agitação com risco, usar dose baixa de haloperidol com monitorização.",
+     "prioridade": "alta"
     }
    },
    {
@@ -1543,12 +2040,14 @@
       "dose"
      ],
      "explicacao": "Na encefalopatia aguda, 10 mL/dia é subtratamento: o paciente teve 1 evacuação em 24 h, e a meta de 2 a 3 evacuações pastosas precisa estar na prescrição.",
-     "correcao": "Lactulose 25 mL por SNE a cada 1 a 2 h até a primeira evacuação e depois 20 a 30 mL 2 a 4 vezes/dia, titulada para 2 a 3 evacuações pastosas por dia."
+     "correcao": "Lactulose 25 mL por SNE a cada 1 a 2 h até a primeira evacuação e depois 20 a 30 mL 2 a 4 vezes/dia, titulada para 2 a 3 evacuações pastosas por dia.",
+     "prioridade": "media"
     }
    },
    {
     "texto": "Rifaximina 550 mg por SNE 12/12 h",
-    "problema": null
+    "problema": null,
+    "ok": "Rifaximina 550 mg 12/12 h associada à lactulose é tratamento adequado da encefalopatia hepática."
    },
    {
     "texto": "Paracetamol 1 g por SNE 6/6 h, horário fixo",
@@ -1558,7 +2057,8 @@
       "renal"
      ],
      "explicacao": "4 g/dia excede o teto de 2 a 3 g/dia na hepatopatia, e o paciente tem desnutrição e etilismo prévio, situações em que a maioria dos serviços adota 2 g/dia.",
-     "correcao": "Paracetamol 500 mg por SNE 6/6 h (2 g/dia), fixo ou se dor."
+     "correcao": "Paracetamol 500 mg por SNE 6/6 h (2 g/dia), fixo ou se dor.",
+     "prioridade": "media"
     }
    },
    {
@@ -1569,7 +2069,8 @@
       "renal"
      ],
      "explicacao": "Não há sangramento digestivo. Na hepatopatia grave a dose de omeprazol é de 10 a 20 mg/dia; 80 mg/dia acumula e o IBP se associa a PBE e encefalopatia no cirrótico.",
-     "correcao": "Se mantida a profilaxia de estresse pela hepatopatia crônica, omeprazol 20 mg 1x/dia; suspender quando o fator de risco se resolver."
+     "correcao": "Se mantida a profilaxia de estresse pela hepatopatia crônica, omeprazol 20 mg 1x/dia; suspender quando o fator de risco se resolver.",
+     "prioridade": "baixa"
     }
    },
    {
@@ -1579,20 +2080,24 @@
       "contraindicacao"
      ],
      "explicacao": "LRA com K de 5,6 mEq/L e Na de 126 mEq/L na vigência de PBE: diuréticos devem ser suspensos, e a espironolactona agrava a hipercalemia.",
-     "correcao": "Suspender a espironolactona junto com a furosemida já suspensa; reintroduzir na proporção 100:40 após recuperação renal e correção do K e do Na."
+     "correcao": "Suspender a espironolactona junto com a furosemida já suspensa; reintroduzir na proporção 100:40 após recuperação renal e correção do K e do Na.",
+     "prioridade": "alta"
     }
    },
    {
     "texto": "Heparina não fracionada 5.000 UI SC 12/12 h",
-    "problema": null
+    "problema": null,
+    "ok": "HNF profilática está indicada: o RNI alargado da cirrose não protege contra trombose, e as plaquetas estão acima de 50.000/mm³."
    },
    {
     "texto": "Vitamina K 10 mg IV em 50 mL de SF 0,9% em 30 min, 1x/dia por 3 dias",
-    "problema": null
+    "problema": null,
+    "ok": "Teste de vitamina K por 3 dias é aceitável em etilista desnutrido sob antibiótico, que pode ter deficiência real; se o RNI não cair, a causa é síntese e não se repete."
    },
    {
     "texto": "Dieta enteral 1,5 kcal/mL a 50 mL/h por SNE, com proteína de 1,2 a 1,5 g/kg/dia",
-    "problema": null
+    "problema": null,
+    "ok": "Proteína de 1,2 a 1,5 g/kg/dia é a recomendação no cirrótico sarcopênico, mesmo com encefalopatia; restringir proteína piora a sarcopenia."
    }
   ],
   "omissoes": [],
@@ -1602,6 +2107,37 @@
    "trato-gastrointestinal",
    "fluidos-diureticos",
    "profilaxias-uti"
+  ],
+  "resumo": "Cirrótico Child-Pugh C com PBE, encefalopatia e LRA: o tratamento que reduz mortalidade (ceftriaxona e albumina) está certo, e o trabalho é retirar precipitantes. Benzodiazepínico, diurético com K de 5,6 mEq/L, IBP em dose alta e paracetamol acima do teto pioram o cérebro ou o rim; a lactulose sem meta deixa a encefalopatia sem tratamento real.",
+  "dicas": [
+   "Liste o que precipita encefalopatia hepática e LRA no cirrótico e procure na prescrição.",
+   "Uma linha trata a encefalopatia, mas numa dose que não produz o efeito esperado.",
+   "Compare paracetamol e omeprazol com os tetos da hepatopatia, e o potássio com o diurético."
+  ],
+  "intervencao": "Dr(a)., ceftriaxona e albumina estão corretas; sugiro retirar precipitantes:\n1. Suspender o midazolam (precipita encefalopatia e tem efeito prolongado no Child-Pugh C); se houver agitação com risco, haloperidol em dose baixa.\n2. Suspender a espironolactona: LRA, K de 5,6 e Na de 126 mEq/L.\n3. Lactulose 25 mL por SNE a cada 1 a 2 h até evacuar e depois titulada para 2 a 3 evacuações pastosas/dia.\n4. Paracetamol 500 mg 6/6 h (2 g/dia) e omeprazol 20 mg 1x/dia.",
+  "fixacao": [
+   {
+    "p": "Qual o teto diário de paracetamol mais adotado em cirrótico etilista e desnutrido?",
+    "alts": [
+     "4 g/dia, a dose máxima do adulto",
+     "1 g/dia, pela hepatotoxicidade alta",
+     "2 g/dia, dentro do teto de 2 a 3 g",
+     "Contraindicado em qualquer dose"
+    ],
+    "gab": 2,
+    "exp": "Na hepatopatia estável o teto é de 2 a 3 g/dia, e com etilismo e desnutrição a maioria dos serviços adota 2 g/dia. Contraindicar o paracetamol, a pegadinha, empurra o paciente para AINE ou opioide, que fazem mais mal ao cirrótico."
+   },
+   {
+    "p": "Na encefalopatia hepática aguda, como prescrever a lactulose?",
+    "alts": [
+     "10 mL 1x/dia, para não causar diarreia",
+     "Titulada para 2 a 3 evacuações pastosas",
+     "30 mL 8/8 h fixos, sem olhar a resposta",
+     "Só por enema, porque a via oral falha"
+    ],
+    "gab": 1,
+    "exp": "A lactulose é titulada pelo efeito: doses frequentes até a primeira evacuação e depois o que der 2 a 3 evacuações pastosas por dia. Dose fixa, a pegadinha, ou subtrata ou leva a desidratação, hipernatremia e LRA."
+   }
   ]
  },
  {
@@ -1647,11 +2183,13 @@
   "itens": [
    {
     "texto": "Noradrenalina 16 mg em SG 5% 234 mL (64 mcg/mL) em BIC a 9 mL/h (0,12 mcg/kg/min), lúmen distal exclusivo",
-    "problema": null
+    "problema": null,
+    "ok": "Noradrenalina de 64 mcg/mL a 9 mL/h dá 0,12 mcg/kg/min para 80 kg, em lúmen exclusivo, como deve ser."
    },
    {
     "texto": "Dobutamina 250 mg em SG 5% 230 mL (1 mg/mL) em BIC a 24 mL/h (5 mcg/kg/min), lúmen medial",
-    "problema": null
+    "problema": null,
+    "ok": "Dobutamina de 1 mg/mL a 24 mL/h dá 5 mcg/kg/min para 80 kg; a conta confere e o lúmen medial é dela."
    },
    {
     "texto": "Bicarbonato de sódio 8,4% 100 mL IV em 1 h, em Y no lúmen da noradrenalina",
@@ -1660,7 +2198,8 @@
       "admin"
      ],
      "explicacao": "O bicarbonato inativa catecolaminas na mesma linha e, correndo em Y no lúmen do vasopressor, ainda empurra em bolus a noradrenalina do espaço morto; o paciente pode ter pico e depois queda súbita da PA.",
-     "correcao": "Se mantido, infundir em lúmen exclusivo (proximal) e diluído para solução quase isotônica; nunca na via da noradrenalina."
+     "correcao": "Com pH de 7,24, acima do limiar de 7,20 do BICAR-ICU, e acidose láctica do choque, a indicação do bicarbonato é fraca: discutir a suspensão. Se mantido, infundir em lúmen exclusivo (proximal) e diluído para solução quase isotônica; nunca na via da noradrenalina.",
+     "prioridade": "alta"
     }
    },
    {
@@ -1670,7 +2209,8 @@
       "admin"
      ],
      "explicacao": "A amiodarona deve ser diluída em SG 5%, e acima de 2 mg/mL exige acesso central; em infusão longa, também pede bolsa e equipo sem PVC, porque o polissorbato extrai DEHP.",
-     "correcao": "Amiodarona 900 mg em SG 5% 500 mL (1,8 mg/mL) em 24 h, com bolsa e equipo sem PVC; ou, na concentração de 3,6 mg/mL, pelo lúmen proximal do CVC."
+     "correcao": "Amiodarona 900 mg em SG 5% 500 mL (1,8 mg/mL) em 24 h, com bolsa e equipo sem PVC; ou, na concentração de 3,6 mg/mL, pelo lúmen proximal do CVC.",
+     "prioridade": "media"
     }
    },
    {
@@ -1681,7 +2221,8 @@
       "renal"
      ],
      "explicacao": "A amiodarona (linha 4) eleva a digoxinemia e a bula orienta reduzir a digoxina à metade; a TFG de 44 mL/min exige ainda redução da manutenção, e a hipocalemia (3,4 mEq/L) aumenta a toxicidade.",
-     "correcao": "Reduzir para 0,0625 mg/dia (1,25 mL do elixir), repor K para 4 mEq/L ou mais e dosar digoxina 6 a 8 h após a dose em cerca de 1 semana (alvo de 0,5 a 0,9 ng/mL)."
+     "correcao": "Reduzir para 0,0625 mg/dia (1,25 mL do elixir), repor K para 4 mEq/L ou mais e dosar digoxina 6 a 8 h após a dose em cerca de 1 semana (alvo de 0,5 a 0,9 ng/mL).",
+     "prioridade": "media"
     }
    },
    {
@@ -1691,32 +2232,39 @@
       "admin"
      ],
      "explicacao": "A furosemida é alcalina e precipita com a dobutamina e outros fármacos ácidos; a incompatibilidade pode não ser visível e interromper as duas infusões.",
-     "correcao": "Passar a furosemida para lúmen próprio (proximal, ou acesso periférico se o proximal ficar com a amiodarona), sem Y com dobutamina."
+     "correcao": "Passar a furosemida para lúmen próprio (proximal, ou acesso periférico se o proximal ficar com a amiodarona), sem Y com dobutamina.",
+     "prioridade": "alta"
     }
    },
    {
     "texto": "Heparina 25.000 UI em SF 0,9% 250 mL (100 UI/mL) em BIC a 9,6 mL/h (12 UI/kg/h), ajuste por TTPa",
-    "problema": null
+    "problema": null,
+    "ok": "HNF a 12 UI/kg/h (960 UI/h, abaixo do teto de 1.000 UI/h), ajustada por TTPa, é o esquema da síndrome coronariana aguda e cobre a FA."
    },
    {
     "texto": "Ácido acetilsalicílico 100 mg por SNE 1x/dia",
-    "problema": null
+    "problema": null,
+    "ok": "AAS 100 mg é a dose de manutenção correta com ticagrelor; acima de 100 mg reduz a eficácia do ticagrelor."
    },
    {
     "texto": "Ticagrelor 90 mg por SNE 12/12 h",
-    "problema": null
+    "problema": null,
+    "ok": "Ticagrelor 90 mg 12/12 h após angioplastia é a dupla antiagregação indicada, e o comprimido pode ser triturado para a sonda."
    },
    {
     "texto": "Atorvastatina 80 mg por SNE 1x/dia",
-    "problema": null
+    "problema": null,
+    "ok": "Atorvastatina 80 mg é a estatina de alta intensidade pós-IAM e, ao contrário da sinvastatina, não exige teto com amiodarona."
    },
    {
     "texto": "Cloreto de potássio 19,1% 10 mL (25,6 mEq) em SF 0,9% 100 mL IV em 2 h pelo CVC",
-    "problema": null
+    "problema": null,
+    "ok": "KCl 25,6 mEq em 100 mL em 2 h pelo CVC dá 12,8 mEq/h, dentro do limite central de rotina, com K de 3,4 mEq/L."
    },
    {
     "texto": "Pantoprazol 40 mg IV 1x/dia (choque e dupla antiagregação com heparina)",
-    "problema": null
+    "problema": null,
+    "ok": "Choque com anticoagulação plena e dupla antiagregação justifica o IBP."
    }
   ],
   "omissoes": [],
@@ -1726,6 +2274,37 @@
    "cardiovasculares-antiarritmicos",
    "drogas-vasoativas",
    "monitorizacao-terapeutica"
+  ],
+  "resumo": "Choque cardiogênico com seis infusões e três lúmens: antes da dose, o farmacêutico monta o mapa de vias, porque bicarbonato e furosemida são alcalinos e não podem dividir lúmen com catecolaminas. Em seguida, a amiodarona recém-iniciada muda a digoxina, que precisa ser reduzida antes da primeira dose e não depois do nível alto.",
+  "dicas": [
+   "Desenhe os lúmens do CVC e o acesso periférico e coloque cada infusão no seu lugar.",
+   "Dois fármacos alcalinos estão em Y com aminas; um terceiro está no diluente e no acesso errados.",
+   "A amiodarona acabou de entrar: confira o que ela faz com outro fármaco de ritmo da prescrição."
+  ],
+  "intervencao": "Dr(a)., proponho reorganizar os lúmens e ajustar a digoxina:\n1. Tirar o bicarbonato do Y da noradrenalina (inativa a amina e empurra bolus); com pH de 7,24, sugiro discutir a suspensão.\n2. Furosemida em lúmen próprio, fora do Y com a dobutamina (precipita).\n3. Amiodarona 900 mg em SG 5% 500 mL (1,8 mg/mL) com equipo sem PVC; a 3,6 mg/mL, só pelo CVC.\n4. Digoxina 0,0625 mg/dia (1,25 mL do elixir) pela amiodarona e pela TFG de 44 mL/min, com K acima de 4 mEq/L e nível em 1 semana.",
+  "fixacao": [
+   {
+    "p": "Amiodarona 900 mg em 24 h por veia periférica. Qual preparo é adequado?",
+    "alts": [
+     "SF 0,9% 250 mL (3,6 mg/mL), equipo comum",
+     "SG 5% 250 mL (3,6 mg/mL), equipo sem PVC",
+     "SG 5% 500 mL (1,8 mg/mL), equipo sem PVC",
+     "SF 0,9% 500 mL (1,8 mg/mL), equipo comum"
+    ],
+    "gab": 2,
+    "exp": "Diluente só SG 5%, até 2 mg/mL na veia periférica e, em infusão longa, bolsa e equipo sem PVC. A opção de 3,6 mg/mL em SG 5% acerta o diluente, mas essa concentração exige acesso central."
+   },
+   {
+    "p": "Paciente em digoxina 0,25 mg/dia inicia amiodarona. Qual a conduta para a digoxina?",
+    "alts": [
+     "Manter e dosar o nível só se houver bradicardia",
+     "Reduzir à metade já e dosar o nível em 1 semana",
+     "Dobrar a dose, porque a amiodarona reduz o nível",
+     "Suspender a amiodarona: a associação é proibida"
+    ],
+    "gab": 1,
+    "exp": "A amiodarona eleva a digoxinemia, e a bula orienta reduzir a digoxina à metade ao iniciar; com TFG de 44 mL/min a redução é ainda maior. Esperar a bradicardia para agir, a pegadinha, é o caminho da intoxicação."
+   }
   ]
  },
  {
@@ -1771,7 +2350,8 @@
   "itens": [
    {
     "texto": "Sulfato de magnésio 50% 8 mL (4 g) + 12 mL de água destilada IV em 10 min (ataque, já administrado)",
-    "problema": null
+    "problema": null,
+    "ok": "Ataque de 4 g a 20% em 10 min é o esquema de Zuspan do Manual de Gestação de Alto Risco (2022)."
    },
    {
     "texto": "Sulfato de magnésio 50% 10 mL (5 g) + SF 0,9% 240 mL (20 mg/mL) em BIC a 50 mL/h (1 g/h)",
@@ -1780,12 +2360,14 @@
       "renal"
      ],
      "explicacao": "Com creatinina de 1,5 mg/dL, acima de 1,3 mg/dL, o Manual de Gestação de Alto Risco orienta metade da dose de manutenção e dosagem do magnésio, pelo risco de acúmulo e depressão respiratória.",
-     "correcao": "Reduzir para 0,5 g/h = 25 mL/h da mesma solução, com magnésio sérico (faixa de 4 a 7 mEq/L) e avaliação clínica a cada 4 h."
+     "correcao": "Reduzir para 0,5 g/h = 25 mL/h da mesma solução, com magnésio sérico (faixa de 4 a 7 mEq/L) e avaliação clínica a cada 4 h.",
+     "prioridade": "alta"
     }
    },
    {
     "texto": "Hidralazina 5 mg IV (ampola de 20 mg/mL diluída a 1 mg/mL) se PA de 160/110 mmHg ou mais, repetir a cada 20 min até 30 mg",
-    "problema": null
+    "problema": null,
+    "ok": "Hidralazina 5 mg IV a 1 mg/mL, repetida a cada 20 min até 30 mg, é o esquema do Manual para a crise hipertensiva na gestação."
    },
    {
     "texto": "Nifedipino 10 mg sublingual se PA de 160/110 mmHg ou mais",
@@ -1794,7 +2376,8 @@
       "via"
      ],
      "explicacao": "O nifedipino na crise hipertensiva da gestante é por via oral; a via sublingual causa queda abrupta e imprevisível da PA, com risco de hipoperfusão placentária.",
-     "correcao": "Nifedipino 10 mg VO (comprimido de liberação imediata, engolido), repetindo a cada 20 a 30 min até 30 mg, como alternativa à hidralazina."
+     "correcao": "Nifedipino 10 mg VO (comprimido de liberação imediata, engolido), repetindo a cada 20 a 30 min até 30 mg, como alternativa à hidralazina.",
+     "prioridade": "media"
     }
    },
    {
@@ -1804,7 +2387,8 @@
       "contraindicacao"
      ],
      "explicacao": "IECA é contraindicado na gestação (lesão renal fetal, oligoidrâmnio).",
-     "correcao": "Suspender. Para manutenção, metildopa ou nifedipino de liberação prolongada; o enalapril pode voltar no puerpério e é compatível com a amamentação."
+     "correcao": "Suspender. Para manutenção, metildopa ou nifedipino de liberação prolongada; o enalapril pode voltar no puerpério e é compatível com a amamentação.",
+     "prioridade": "media"
     }
    },
    {
@@ -1814,20 +2398,24 @@
       "contraindicacao"
      ],
      "explicacao": "Plaquetas de 62.000/mm³ (abaixo de 75.000/mm³) contraindicam a profilaxia farmacológica, e a cesárea com possível anestesia neuraxial está prevista para as próximas horas.",
-     "correcao": "Suspender; usar compressão pneumática intermitente e reavaliar a profilaxia no puerpério com plaquetas em recuperação, respeitando 12 h entre a dose profilática e a anestesia."
+     "correcao": "Suspender; usar compressão pneumática intermitente e reavaliar a profilaxia no puerpério com plaquetas em recuperação, respeitando 12 h entre a dose profilática e a anestesia.",
+     "prioridade": "alta"
     }
    },
    {
     "texto": "Gluconato de cálcio 10% 10 mL (1 g) IV em 3 min se FR abaixo de 12 irpm ou depressão respiratória",
-    "problema": null
+    "problema": null,
+    "ok": "Gluconato de cálcio 1 g IV em 3 min é o antídoto da depressão respiratória pelo magnésio e deve estar prescrito."
    },
    {
     "texto": "Paracetamol 750 mg VO 6/6 h se cefaleia",
-    "problema": null
+    "problema": null,
+    "ok": "Paracetamol condicional é o analgésico de escolha na gestação, que deve evitar AINE após 20 semanas."
    },
    {
     "texto": "Ondansetrona 4 mg IV 8/8 h se náusea",
-    "problema": null
+    "problema": null,
+    "ok": "Ondansetrona condicional em dose baixa é aceitável na gestação de 32 semanas."
    }
   ],
   "omissoes": [
@@ -1842,6 +2430,37 @@
    "obesidade-populacoes-especiais",
    "eletrolitos",
    "profilaxias-uti"
+  ],
+  "resumo": "Na pré-eclâmpsia grave o sulfato de magnésio é o fármaco central e o de alta vigilância: o farmacêutico confere ampola, concentração, vazão e ajuste à creatinina, porque a eliminação é renal e o acúmulo deprime a respiração. Com HELLP e cesárea iminente, a plaquetopenia decide a profilaxia de TEV, e os anti-hipertensivos precisam ser os aceitos na gestação, pela via correta.",
+  "dicas": [
+   "Refaça a conta da bomba do sulfato de magnésio e pergunte o que a creatinina de 1,5 mg/dL muda nela.",
+   "Um anti-hipertensivo é proibido na gestação e outro está na via errada.",
+   "Compare as plaquetas com o limiar para profilaxia farmacológica e para anestesia neuraxial."
+  ],
+  "intervencao": "Dr(a)., sugestões para a gestante com HELLP:\n1. Sulfato de magnésio: com creatinina de 1,5 mg/dL, reduzir a manutenção para 0,5 g/h (25 mL/h da mesma solução), com magnésio sérico e checagem de diurese, reflexo patelar e FR a cada 4 h.\n2. Suspender a enoxaparina: plaquetas de 62.000/mm³ e cesárea com possível anestesia neuraxial; usar compressão pneumática.\n3. Nifedipino 10 mg VO, engolido (não sublingual), e suspender o enalapril, contraindicado na gestação.\n4. Confirmar com a obstetrícia se o corticoide para maturação pulmonar fetal (32 semanas) já foi feito.",
+  "fixacao": [
+   {
+    "p": "Gestante com pré-eclâmpsia grave e creatinina de 1,5 mg/dL em sulfato de magnésio 1 g/h. Qual a conduta?",
+    "alts": [
+     "Manter 1 g/h e dosar o magnésio só se houver sintomas",
+     "Reduzir para 0,5 g/h, com magnésio e checagem clínica",
+     "Aumentar para 2 g/h, porque a creatinina reduz o efeito",
+     "Suspender a manutenção e repetir o ataque se convulsionar"
+    ],
+    "gab": 1,
+    "exp": "Com creatinina acima de 1,3 mg/dL o Manual orienta metade da manutenção e dosagem do magnésio (faixa de 4 a 7 mEq/L), pelo acúmulo renal. Suspender a manutenção, a pegadinha, deixa a gestante sem proteção contra eclâmpsia."
+   },
+   {
+    "p": "Qual a via correta do nifedipino na crise hipertensiva da gestante?",
+    "alts": [
+     "Oral, comprimido de liberação imediata engolido",
+     "Sublingual, pelo início de ação mais rápido",
+     "Oral, comprimido de liberação prolongada triturado",
+     "Intravenosa, em infusão contínua e titulada pela PA"
+    ],
+    "gab": 0,
+    "exp": "Na crise hipertensiva da gestante o nifedipino de liberação imediata é dado por via oral, 10 mg a cada 20 a 30 min até 30 mg. A via sublingual, a pegadinha, causa queda abrupta e imprevisível da PA e hipoperfusão placentária."
+   }
   ]
  },
  {
@@ -1892,7 +2511,8 @@
       "via"
      ],
      "explicacao": "O comprimido de liberação prolongada triturado libera a dose inteira de uma vez, com risco de bradicardia e hipotensão no pico e perda de efeito no fim do dia.",
-     "correcao": "Trocar por metoprolol tartarato 25 mg por SNE 12/12 h (liberação imediata, pode ser triturado), titulado pela FC."
+     "correcao": "Trocar por metoprolol tartarato 25 mg por SNE 12/12 h (liberação imediata, pode ser triturado), titulado pela FC.",
+     "prioridade": "media"
     }
    },
    {
@@ -1902,12 +2522,14 @@
       "dose"
      ],
      "explicacao": "A paciente tem dois critérios de redução de dose na fibrilação atrial (idade de 80 anos ou mais e peso de 60 kg ou menos); a dose correta é a que usava em casa.",
-     "correcao": "Apixabana 2,5 mg por SNE 12/12 h (comprimido triturado e disperso em água)."
+     "correcao": "Apixabana 2,5 mg por SNE 12/12 h (comprimido triturado e disperso em água).",
+     "prioridade": "alta"
     }
    },
    {
     "texto": "Sertralina 50 mg por SNE 1x/dia",
-    "problema": null
+    "problema": null,
+    "ok": "Sertralina de uso contínuo foi conciliada corretamente; suspender um ISRS de forma abrupta causa síndrome de descontinuação."
    },
    {
     "texto": "Tramadol 50 mg IV 6/6 h, horário fixo",
@@ -1916,7 +2538,8 @@
       "interacao"
      ],
      "explicacao": "Tramadol com sertralina tem risco de síndrome serotoninérgica e convulsão; em idosa com delirium e Parkinson, soma confusão.",
-     "correcao": "Suspender o tramadol; analgesia com paracetamol fixo e dipirona, e opioide em dose baixa (por exemplo, morfina 1 a 2 mg IV) só se necessário."
+     "correcao": "Suspender o tramadol; analgesia com paracetamol fixo e dipirona, e opioide em dose baixa (por exemplo, morfina 1 a 2 mg IV) só se necessário.",
+     "prioridade": "media"
     }
    },
    {
@@ -1926,7 +2549,8 @@
       "contraindicacao"
      ],
      "explicacao": "Anti-histamínico de primeira geração com carga anticolinérgica alta, a evitar no idoso e em quem tem delirium (Beers 2023); a prometazina injetável ainda é medicamento de alta vigilância por lesão tecidual.",
-     "correcao": "Suspender; medidas não farmacológicas de sono e controle do delirium."
+     "correcao": "Suspender; medidas não farmacológicas de sono e controle do delirium.",
+     "prioridade": "baixa"
     }
    },
    {
@@ -1936,24 +2560,29 @@
       "contraindicacao"
      ],
      "explicacao": "A metoclopramida é contraindicada na doença de Parkinson (antagonismo dopaminérgico central) e está entre os fármacos a evitar no idoso; a piora da rigidez e do tremor desde a admissão é compatível.",
-     "correcao": "Suspender; se houver náusea ou intolerância à dieta, reavaliar a causa e escolher antiemético sem ação dopaminérgica central."
+     "correcao": "Suspender; se houver náusea ou intolerância à dieta, reavaliar a causa e escolher antiemético sem ação dopaminérgica central.",
+     "prioridade": "alta"
     }
    },
    {
     "texto": "Quetiapina 12,5 mg por SNE à noite (delirium)",
-    "problema": null
+    "problema": null,
+    "ok": "Quetiapina em dose baixa é o antipsicótico preferido no paciente com Parkinson, por quase não bloquear D2."
    },
    {
     "texto": "Paracetamol 750 mg por SNE 6/6 h",
-    "problema": null
+    "problema": null,
+    "ok": "Paracetamol 3 g/dia está dentro do limite para idosa de 50 kg e é a base da analgesia."
    },
    {
     "texto": "Dipirona 1 g IV 6/6 h se dor",
-    "problema": null
+    "problema": null,
+    "ok": "Dipirona condicional completa a analgesia multimodal sem efeito serotoninérgico."
    },
    {
     "texto": "Dieta enteral 1,0 kcal/mL a 40 mL/h por SNE",
-    "problema": null
+    "problema": null,
+    "ok": "Dieta enteral por SNE é adequada pela disfagia; só exige pausa no horário da levotiroxina."
    }
   ],
   "omissoes": [
@@ -1974,6 +2603,37 @@
    "obesidade-populacoes-especiais",
    "interacoes-farmacodinamicas",
    "administracao-sondas"
+  ],
+  "resumo": "A conciliação chegou no D3 e muda a leitura do delirium: a paciente está há três dias sem levodopa e recebe metoclopramida, prometazina e tramadol, todos capazes de piorar rigidez e confusão. Em idosa de 81 anos e 50 kg, conferir também os critérios de redução da apixabana e se cada comprimido pode ser triturado para a sonda.",
+  "dicas": [
+   "Compare a sacola de medicamentos de casa com a prescrição, linha a linha.",
+   "Procure fármacos que pioram o Parkinson ou o delirium do idoso (Beers 2023).",
+   "A apixabana tem três critérios de redução de dose; esta paciente cumpre dois."
+  ],
+  "intervencao": "Dr(a)., a conciliação mostrou discrepâncias importantes:\n1. Reintroduzir levodopa com benserazida 100/25 mg por SNE 8/8 h, nos horários de casa (três dias sem a medicação), e levotiroxina 50 mcg em jejum.\n2. Suspender a metoclopramida (contraindicada no Parkinson), a prometazina e o tramadol (serotoninérgico com sertralina).\n3. Apixabana 2,5 mg 12/12 h: idade acima de 80 anos e peso de 50 kg.\n4. Metoprolol tartarato 25 mg 12/12 h por SNE, porque o succinato não pode ser triturado.",
+  "fixacao": [
+   {
+    "p": "Idosa de 81 anos, 50 kg, creatinina de 1,3 mg/dL, com fibrilação atrial. Qual a dose de apixabana?",
+    "alts": [
+     "5 mg 12/12 h, porque a creatinina é menor que 1,5 mg/dL",
+     "2,5 mg 1x/dia, por ser idosa frágil e de baixo peso",
+     "5 mg 1x/dia, para reduzir o risco de sangramento grave",
+     "2,5 mg 12/12 h, por cumprir os critérios de idade e peso"
+    ],
+    "gab": 3,
+    "exp": "A redução para 2,5 mg 12/12 h exige 2 de 3 critérios (80 anos ou mais, 60 kg ou menos, creatinina de 1,5 mg/dL ou mais); ela tem idade e peso. A pegadinha é olhar só a creatinina, que é um critério entre três."
+   },
+   {
+    "p": "Qual antiemético é contraindicado na doença de Parkinson, e por quê?",
+    "alts": [
+     "Metoclopramida, por bloquear receptores D2 centrais",
+     "Ondansetrona, por bloquear receptores D2 centrais",
+     "Domperidona, por atravessar bem a barreira cerebral",
+     "Dexametasona, por depletar dopamina no estriado"
+    ],
+    "gab": 0,
+    "exp": "A metoclopramida bloqueia D2 no sistema nervoso central e piora rigidez e tremor; no Parkinson, prefere-se ondansetrona ou domperidona, que quase não atravessa a barreira. A pegadinha é achar que todo antiemético tem o mesmo risco."
+   }
   ]
  },
  {
@@ -2025,12 +2685,14 @@
       "contraindicacao"
      ],
      "explicacao": "Na hipotermia a depuração do midazolam pelo CYP3A4 cai, e o metabólito ativo acumula na LRA; a sedação residual prolongada confunde o prognóstico neurológico, que não deve ser feito antes de 72 h e sem excluir efeito de sedativos.",
-     "correcao": "Trocar por propofol 1% titulado (por exemplo, 1 mg/kg/h = 9 mL/h) ou dexmedetomidina, registrando os horários de suspensão para a avaliação neurológica."
+     "correcao": "Trocar por propofol 1% titulado (por exemplo, 1 mg/kg/h = 9 mL/h) ou dexmedetomidina, registrando os horários de suspensão para a avaliação neurológica.",
+     "prioridade": "media"
     }
    },
    {
     "texto": "Fentanil 50 mcg/mL puro em BIC a 2 mL/h (100 mcg/h)",
-    "problema": null
+    "problema": null,
+    "ok": "Fentanil a 100 mcg/h é analgesia de base usual e não tem metabólito ativo que acumule na LRA; registrar também o horário de suspensão."
    },
    {
     "texto": "Rocurônio 10 mg/mL puro em BIC a 5 mL/h (9 mcg/kg/min), vazão fixa",
@@ -2039,7 +2701,8 @@
       "monitorizacao"
      ],
      "explicacao": "A hipotermia e a LRA prolongam o bloqueio do rocurônio; infusão em vazão fixa sem sequência de quatro estímulos leva a bloqueio excessivo e prolongado.",
-     "correcao": "Titular pela sequência de quatro estímulos (alvo de 1 a 2 respostas) ou preferir bolus intermitentes para o tremor refratário, sempre com sedação e analgesia adequadas."
+     "correcao": "Titular pela sequência de quatro estímulos (alvo de 1 a 2 respostas) ou preferir bolus intermitentes para o tremor refratário, sempre com sedação e analgesia adequadas.",
+     "prioridade": "media"
     }
    },
    {
@@ -2049,16 +2712,19 @@
       "contraindicacao"
      ],
      "explicacao": "A normeperidina acumula na LRA (creatinina de 2,0 mg/dL) e reduz o limiar convulsivo em paciente que já convulsionou.",
-     "correcao": "Suspender; seguir os degraus do tremor com buspirona, paracetamol, Mg no limite superior, aquecimento da pele e dexmedetomidina ou bolus de opioide."
+     "correcao": "Suspender; seguir os degraus do tremor com buspirona, paracetamol, Mg no limite superior, aquecimento da pele e dexmedetomidina ou bolus de opioide.",
+     "prioridade": "alta"
     }
    },
    {
     "texto": "Buspirona 30 mg por SNE 8/8 h",
-    "problema": null
+    "problema": null,
+    "ok": "Buspirona 30 mg 8/8 h é medida de base do protocolo de tremor."
    },
    {
     "texto": "Paracetamol 1 g por SNE 6/6 h",
-    "problema": null
+    "problema": null,
+    "ok": "Paracetamol fixo é medida de base contra o tremor e a febre no controle de temperatura."
    },
    {
     "texto": "Cloreto de potássio 19,1% 20 mL (51,2 mEq) em SF 0,9% 250 mL IV em 2 h pelo CVC; repetir se K abaixo de 4 mEq/L",
@@ -2068,32 +2734,39 @@
       "admin"
      ],
      "explicacao": "Durante o resfriamento o potássio entra nas células e sai no reaquecimento; repor agressivamente agora causa hipercalemia na fase de reaquecimento. A velocidade de 25,6 mEq/h também passa do limite de rotina de 20 mEq/h.",
-     "correcao": "Evitar reposição agressiva durante o resfriamento: se necessário, 20 mEq em 2 h pelo CVC (10 mEq/h), com K a cada 4 a 6 h e plano de redução antes do reaquecimento."
+     "correcao": "Evitar reposição agressiva durante o resfriamento: se necessário, 20 mEq em 2 h pelo CVC (10 mEq/h), com K a cada 4 a 6 h e plano de redução antes do reaquecimento.",
+     "prioridade": "alta"
     }
    },
    {
     "texto": "Levetiracetam 500 mg IV 12/12 h",
-    "problema": null
+    "problema": null,
+    "ok": "Levetiracetam 500 mg 12/12 h está na faixa de 250 a 750 mg 12/12 h para TFG de 30 a 50 mL/min."
    },
    {
     "texto": "Noradrenalina 16 mg em SG 5% 234 mL (64 mcg/mL) em BIC a 8 mL/h (0,09 mcg/kg/min)",
-    "problema": null
+    "problema": null,
+    "ok": "Noradrenalina de 64 mcg/mL a 8 mL/h dá 0,09 mcg/kg/min para 90 kg; a conta confere."
    },
    {
     "texto": "Ácido acetilsalicílico 100 mg por SNE 1x/dia",
-    "problema": null
+    "problema": null,
+    "ok": "AAS 100 mg com ticagrelor é a dupla antiagregação após angioplastia do IAM."
    },
    {
     "texto": "Ticagrelor 90 mg por SNE 12/12 h",
-    "problema": null
+    "problema": null,
+    "ok": "Ticagrelor 90 mg 12/12 h triturado por SNE é adequado após angioplastia no paciente comatoso."
    },
    {
     "texto": "Insulina regular IV conforme protocolo, glicemia capilar 1/1 h durante o resfriamento e o reaquecimento",
-    "problema": null
+    "problema": null,
+    "ok": "Insulina IV com glicemia horária é o padrão no resfriamento e no reaquecimento, quando a sensibilidade muda."
    },
    {
     "texto": "Pantoprazol 40 mg IV 1x/dia",
-    "problema": null
+    "problema": null,
+    "ok": "Ventilação mecânica com dupla antiagregação justifica o IBP."
    }
   ],
   "omissoes": [],
@@ -2103,6 +2776,37 @@
    "analgesia-sedacao-delirium",
    "bloqueadores-neuromusculares",
    "eletrolitos"
+  ],
+  "resumo": "No controle de temperatura pós-parada, a hipotermia reduz o metabolismo hepático e a LRA reduz a eliminação: tudo que acumula atrasa ou confunde a avaliação neurológica, que não se faz antes de 72 h. O farmacêutico passa sedativo, BNM e antitremor por esse filtro e trata o potássio pensando no reaquecimento, quando ele sai das células.",
+  "dicas": [
+   "Pergunte quais fármacos desta folha acumulam com hipotermia e com creatinina de 2,0 mg/dL.",
+   "Um opioide usado contra tremor tem metabólito que baixa o limiar convulsivo.",
+   "O potássio baixo no resfriamento não é igual ao de outro paciente: pense no reaquecimento."
+  ],
+  "intervencao": "Dr(a)., sugestões para o controle de temperatura:\n1. Suspender a meperidina (a normeperidina acumula na LRA e baixa o limiar convulsivo; já teve crise) e seguir os degraus do tremor.\n2. Reduzir o KCl: no resfriamento o K entra na célula e volta no reaquecimento; se precisar, 20 mEq em 2 h pelo CVC, com K a cada 4 a 6 h.\n3. Trocar o midazolam por propofol titulado e registrar os horários de suspensão para a avaliação neurológica.\n4. Rocurônio titulado pela sequência de quatro estímulos (1 a 2 respostas).",
+  "fixacao": [
+   {
+    "p": "No controle de temperatura com LRA e crise convulsiva na admissão, qual fármaco antitremor deve ser evitado, e por quê?",
+    "alts": [
+     "Meperidina, pela normeperidina pró-convulsivante",
+     "Buspirona, pelo metabólito que acumula na LRA",
+     "Dexmedetomidina, por baixar o limiar convulsivo",
+     "Paracetamol, pela hepatotoxicidade na hipotermia"
+    ],
+    "gab": 0,
+    "exp": "A meperidina é eficaz contra tremor, mas a normeperidina acumula na LRA e causa mioclonias e convulsões que a naloxona não reverte. Buspirona e dexmedetomidina são degraus seguros do protocolo; a pegadinha é escolher pelo efeito antitremor sem olhar o rim."
+   },
+   {
+    "p": "Paciente a 33 °C com K de 3,3 mEq/L. Qual a conduta mais segura para o potássio?",
+    "alts": [
+     "Repor 50 mEq em 2 h para chegar a 4 mEq/L antes do reaquecimento",
+     "Reposição moderada, K a cada 4 a 6 h e plano antes do reaquecimento",
+     "Não dosar o potássio até o fim do reaquecimento, quando normaliza",
+     "Associar insulina e glicose para manter o potássio nas células"
+    ],
+    "gab": 1,
+    "exp": "O resfriamento desloca o potássio para dentro das células, e o reaquecimento o devolve ao plasma; repor agressivamente agora causa hipercalemia depois. A pegadinha é repor como num paciente normotérmico, buscando 4 mEq/L a qualquer custo."
+   }
   ]
  },
  {
@@ -2153,7 +2857,8 @@
       "redacao"
      ],
      "explicacao": "\"2U/h\" pode ser lido como 20 UI/h (o U confundido com zero), erro de dez vezes com insulina, medicamento de alta vigilância.",
-     "correcao": "Reescrever: iniciar 2 UI/h (2 mL/h da solução de 1 UI/mL), com glicemia capilar 1/1 h pelo protocolo."
+     "correcao": "Reescrever: iniciar 2 UI/h (2 mL/h da solução de 1 UI/mL), com glicemia capilar 1/1 h pelo protocolo.",
+     "prioridade": "alta"
     }
    },
    {
@@ -2163,7 +2868,8 @@
       "redacao"
      ],
      "explicacao": "O símbolo \"µg\" pode ser lido como mg, erro de mil vezes com opioide; o ISMP recomenda escrever mcg.",
-     "correcao": "Reescrever: fentanil 50 mcg IV lento se dor intensa, intervalo mínimo de 4 h."
+     "correcao": "Reescrever: fentanil 50 mcg IV lento se dor intensa, intervalo mínimo de 4 h.",
+     "prioridade": "alta"
     }
    },
    {
@@ -2174,7 +2880,8 @@
       "admin"
      ],
      "explicacao": "Falta concentração final, diluente, volume e tempo de infusão; prescrito assim, o KCl concentrado pode ser injetado em bolus, com risco de parada cardíaca.",
-     "correcao": "KCl 20 mEq (7,8 mL de KCl 19,1%) em 100 mL de SF 0,9% IV em 2 h pelo CVC (10 mEq/h), em bomba; meta de K de 4 a 5 mEq/L após a FA."
+     "correcao": "KCl 20 mEq (7,8 mL de KCl 19,1%) em 100 mL de SF 0,9% IV em 2 h pelo CVC (10 mEq/h), em bomba; meta de K de 4 a 5 mEq/L após a FA.",
+     "prioridade": "alta"
     }
    },
    {
@@ -2184,12 +2891,14 @@
       "intervalo"
      ],
      "explicacao": "Profilaxia cirúrgica mantida no D3 sem infecção: o prazo da profilaxia (até 24 h) já passou, e o excesso só aumenta resistência e C. difficile.",
-     "correcao": "Suspender a cefazolina e registrar o término da profilaxia."
+     "correcao": "Suspender a cefazolina e registrar o término da profilaxia.",
+     "prioridade": "baixa"
     }
    },
    {
     "texto": "Amiodarona 900 mg em SG 5% 500 mL (1,8 mg/mL), bolsa e equipo sem PVC: 33 mL/h por 6 h (1 mg/min) e depois 17 mL/h por 18 h (0,5 mg/min)",
-    "problema": null
+    "problema": null,
+    "ok": "Amiodarona 900 mg em SG 5% 500 mL (1,8 mg/mL) com equipo sem PVC, a 1 mg/min por 6 h e 0,5 mg/min por 18 h, está correta em diluente, concentração e vazão."
    },
    {
     "texto": "Sinvastatina 40 mg VO à noite",
@@ -2198,28 +2907,34 @@
       "interacao"
      ],
      "explicacao": "A amiodarona inibe o metabolismo da sinvastatina e aumenta o risco de miopatia; com amiodarona, a sinvastatina deve ser limitada a 20 mg/dia.",
-     "correcao": "Reduzir a sinvastatina para 20 mg/dia ou trocar por atorvastatina, menos afetada, durante o uso de amiodarona."
+     "correcao": "Reduzir a sinvastatina para 20 mg/dia ou trocar por atorvastatina, menos afetada, durante o uso de amiodarona.",
+     "prioridade": "baixa"
     }
    },
    {
     "texto": "Nitroprussiato de sódio 50 mg em SG 5% 250 mL (200 mcg/mL), bolsa e equipo protegidos da luz, em BIC a 12 mL/h (0,5 mcg/kg/min), titular para PAS abaixo de 130 mmHg",
-    "problema": null
+    "problema": null,
+    "ok": "Nitroprussiato a 0,5 mcg/kg/min, protegido da luz e titulado, é dose baixa; a vigilância de cianeto pesa só com dose ou tempo maiores."
    },
    {
     "texto": "Sulfato de magnésio 2 g em SF 0,9% 100 mL IV em 1 h",
-    "problema": null
+    "problema": null,
+    "ok": "Sulfato de magnésio 2 g em 1 h é reposição adequada com Mg de 1,8 mg/dL após FA."
    },
    {
     "texto": "Ácido acetilsalicílico 100 mg VO 1x/dia",
-    "problema": null
+    "problema": null,
+    "ok": "AAS 100 mg é mantido após a revascularização para proteger as pontes."
    },
    {
     "texto": "Heparina não fracionada 5.000 UI SC 8/8 h",
-    "problema": null
+    "problema": null,
+    "ok": "HNF 5.000 UI 8/8 h é profilaxia adequada no D3 sem sangramento."
    },
    {
     "texto": "Furosemida 20 mg IV 12/12 h",
-    "problema": null
+    "problema": null,
+    "ok": "Furosemida 20 mg 12/12 h é dose baixa, compatível com o balanço do pós-operatório; a reposição de K e Mg acompanha."
    }
   ],
   "omissoes": [],
@@ -2229,6 +2944,37 @@
    "cardiovasculares-antiarritmicos",
    "stewardship",
    "interacoes-cyp-transportadores"
+  ],
+  "resumo": "Prescrição manuscrita e transcrita durante intercorrência é onde nascem os erros de redação, e eles se concentram nos medicamentos de alta vigilância: insulina, opioide e potássio concentrado. O farmacêutico lê cada linha procurando unidade por extenso, mcg em vez de µg e KCl com diluente, volume e tempo; depois revisa o que a amiodarona mudou e o que já passou do prazo.",
+  "dicas": [
+   "Leia as linhas de alta vigilância em voz alta e veja se alguma pode ser lida de outro jeito.",
+   "Uma linha de eletrólito concentrado não diz diluente, volume nem tempo.",
+   "Confira o prazo da profilaxia cirúrgica e o limite de sinvastatina com amiodarona."
+  ],
+  "intervencao": "Dr(a)., a prescrição transcrita tem três itens de alta vigilância que preciso confirmar:\n1. Insulina: iniciar 2 UI/h (2 mL/h da solução de 1 UI/mL), escrito por extenso.\n2. Fentanil 50 mcg IV (mcg, não µg) se dor intensa, intervalo mínimo de 4 h.\n3. KCl 20 mEq (7,8 mL de KCl 19,1%) em 100 mL de SF 0,9% em 2 h pelo CVC, em bomba.\n4. Sugiro suspender a cefazolina (profilaxia vencida) e reduzir a sinvastatina a 20 mg/dia com a amiodarona.",
+  "fixacao": [
+   {
+    "p": "Na prescrição 'insulina regular, iniciar 2U/h', qual é o risco que o ISMP descreve?",
+    "alts": [
+     "O U ser lido como zero e virar 20 UI/h",
+     "O U ser lido como mL e virar 2 mL/h",
+     "O U ser lido como mcg e virar 2 mcg/h",
+     "O U ser lido como dia e virar 2 UI/dia"
+    ],
+    "gab": 0,
+    "exp": "O U pode ser confundido com zero (ou com 4), e 2U vira 20 UI/h, erro de dez vezes com insulina. A correção é escrever unidades por extenso ou UI; a pegadinha é achar que a solução de 1 UI/mL impede o erro."
+   },
+   {
+    "p": "Profilaxia com cefazolina após revascularização miocárdica, no D3 e sem infecção. Qual a conduta?",
+    "alts": [
+     "Manter até a retirada dos drenos",
+     "Manter até completar os 7 dias",
+     "Suspender, pois o prazo já passou",
+     "Trocar por vancomicina até a alta"
+    ],
+    "gab": 2,
+    "exp": "A profilaxia cirúrgica se encerra em até 24 h na maioria dos protocolos, e prolongá-la não reduz infecção, só aumenta resistência e C. difficile. Manter até tirar os drenos, a pegadinha, é hábito sem respaldo."
+   }
   ]
  },
  {
@@ -2278,7 +3024,8 @@
   "itens": [
    {
     "texto": "Heparina 25.000 UI em SF 0,9% 250 mL (100 UI/mL) em BIC a 18 mL/h (18 UI/kg/h), ajuste por anti-Xa de 0,3 a 0,7 UI/mL",
-    "problema": null
+    "problema": null,
+    "ok": "HNF a 18 UI/kg/h com anti-Xa de 0,42 UI/mL, dentro da faixa de 0,3 a 0,7, anticoagula o circuito e já protege contra TEV."
    },
    {
     "texto": "Heparina não fracionada 5.000 UI SC 8/8 h (profilaxia de TEV)",
@@ -2287,7 +3034,8 @@
       "duplicidade"
      ],
      "explicacao": "O paciente já recebe HNF em dose plena para o circuito, com anti-Xa de 0,42 UI/mL; a profilaxia subcutânea é duplicidade de heparina e aumenta o risco de sangramento.",
-     "correcao": "Suspender a HNF subcutânea."
+     "correcao": "Suspender a HNF subcutânea.",
+     "prioridade": "media"
     }
    },
    {
@@ -2297,7 +3045,8 @@
       "dose"
      ],
      "explicacao": "A ECMO moderna altera pouco a depuração do meropeném, e o que domina é a função renal: com TFG não indexada de 147 mL/min, 1 g 12/12 h é subdose para Pseudomonas.",
-     "correcao": "Meropeném 2 g IV 8/8 h em infusão estendida de 3 h (depuração aumentada), com TDM de betalactâmico se disponível."
+     "correcao": "Meropeném 2 g IV 8/8 h em infusão estendida de 3 h (depuração aumentada), com TDM de betalactâmico se disponível.",
+     "prioridade": "media"
     }
    },
    {
@@ -2307,12 +3056,14 @@
       "monitorizacao"
      ],
      "explicacao": "Na ECMO a exposição à vancomicina é imprevisível (em série clínica, só 24% dos níveis ficaram no alvo), e o consenso de 2020 recomenda AUC em pacientes instáveis e com risco de nefrotoxicidade.",
-     "correcao": "Programar pico e vale nesta dose (ou estimativa bayesiana) para AUC24 de 400 a 600 mg·h/L, com creatinina diária."
+     "correcao": "Programar pico e vale nesta dose (ou estimativa bayesiana) para AUC24 de 400 a 600 mg·h/L, com creatinina diária.",
+     "prioridade": "media"
     }
    },
    {
     "texto": "Oseltamivir 75 mg por SNE 12/12 h",
-    "problema": null
+    "problema": null,
+    "ok": "Oseltamivir 75 mg 12/12 h é a dose padrão com TFG alta; não há ajuste pela ECMO."
    },
    {
     "texto": "Propofol 2% em BIC a 25 mL/h (500 mg/h, 5 mg/kg/h), titular para RASS −4",
@@ -2321,24 +3072,29 @@
       "dose"
      ],
      "explicacao": "Acima de 4 mg/kg/h por mais de 48 h há risco de síndrome de infusão do propofol; os triglicerídeos de 486 mg/dL já mostram a sobrecarga lipídica.",
-     "correcao": "Reduzir o propofol para no máximo 4 mg/kg/h (20 mL/h a 2%) e associar cetamina em infusão (e, se preciso, outro sedativo titulado por RASS); vigiar lactato, CPK e triglicerídeos, e descontar as calorias do propofol da dieta."
+     "correcao": "Reduzir o propofol para no máximo 4 mg/kg/h (20 mL/h a 2%) e associar cetamina em infusão (e, se preciso, outro sedativo titulado por RASS); vigiar lactato, CPK e triglicerídeos, e descontar as calorias do propofol da dieta.",
+     "prioridade": "alta"
     }
    },
    {
     "texto": "Fentanil 50 mcg/mL puro em BIC a 5 mL/h (250 mcg/h)",
-    "problema": null
+    "problema": null,
+    "ok": "Fentanil a 250 mcg/h parece alto, mas é esperado na ECMO: o circuito sequestra o fentanil, e a meta de sedação é profunda."
    },
    {
     "texto": "Pantoprazol 40 mg IV 1x/dia (anticoagulação plena em ventilação)",
-    "problema": null
+    "problema": null,
+    "ok": "Anticoagulação plena em ventilação mecânica é indicação de profilaxia de úlcera de estresse."
    },
    {
     "texto": "Dieta enteral 1,5 kcal/mL a 40 mL/h por SNE",
-    "problema": null
+    "problema": null,
+    "ok": "Dieta de 40 mL/h a 1,5 kcal/mL é progressão aceitável; as calorias do propofol (cerca de 660 kcal/dia) entram na conta."
    },
    {
     "texto": "Insulina regular SC conforme glicemia capilar 4/4 h, alvo 140 a 180 mg/dL",
-    "problema": null
+    "problema": null,
+    "ok": "Insulina por protocolo com alvo de 140 a 180 mg/dL é o padrão no crítico."
    }
   ],
   "omissoes": [],
@@ -2349,6 +3105,37 @@
    "analgesia-sedacao-delirium",
    "profilaxias-uti",
    "evolucao-farmaceutica"
+  ],
+  "resumo": "Na ECMO, a regra é não reduzir antimicrobiano por medo do circuito: com circuito moderno, quem manda é a função renal, e aqui a TFG não indexada de 147 mL/min pede dose alta de betalactâmico. A sedação profunda é necessária, mas o propofol tem teto, e os triglicerídeos de 486 mg/dL já mostram o preço de ultrapassá-lo.",
+  "dicas": [
+   "Pergunte o que domina a depuração do meropeném neste paciente: o circuito ou o rim?",
+   "Conte quantas heparinas o paciente recebe.",
+   "Converta a vazão do propofol em mg/kg/h e compare com o teto para mais de 48 h."
+  ],
+  "intervencao": "Dr(a)., sugestões para o paciente em ECMO:\n1. Propofol a 5 mg/kg/h há 72 h com triglicerídeos de 486 mg/dL: reduzir para até 4 mg/kg/h (20 mL/h a 2%) e associar cetamina, com lactato, CPK e triglicerídeos.\n2. Meropeném 2 g IV 8/8 h em infusão de 3 h: a ECMO altera pouco a depuração, e a TFG não indexada é de 147 mL/min.\n3. Suspender a HNF subcutânea: o paciente já recebe HNF plena (anti-Xa de 0,42 UI/mL).\n4. Programar níveis de vancomicina para AUC de 400 a 600 mg·h/L.",
+  "fixacao": [
+   {
+    "p": "Paciente em ECMO venovenosa, TFG não indexada de 147 mL/min, pneumonia por Pseudomonas. Como dosar o meropeném?",
+    "alts": [
+     "1 g 12/12 h, reduzido pelo sequestro no circuito",
+     "1 g 8/8 h em bolus, a dose usual sem ajuste algum",
+     "2 g 8/8 h em infusão estendida, guiado pelo rim",
+     "500 mg 6/6 h em infusão contínua pela instabilidade"
+    ],
+    "gab": 2,
+    "exp": "Com circuitos modernos, a ECMO muda pouco a farmacocinética do meropeném; a depuração renal aumentada é o que encurta o tempo acima da CIM. Reduzir a dose por medo do circuito, a pegadinha, gera subdose."
+   },
+   {
+    "p": "Qual limite de propofol reduz o risco de síndrome de infusão?",
+    "alts": [
+     "Evitar acima de 8 mg/kg/h por mais de 7 dias",
+     "Evitar acima de 1 mg/kg/h por mais de 12 h",
+     "Evitar acima de 6 mg/kg/h por mais de 24 h",
+     "Evitar acima de 4 mg/kg/h por mais de 48 h"
+    ],
+    "gab": 3,
+    "exp": "Acima de 4 mg/kg/h (cerca de 67 mcg/kg/min) por mais de 48 h aumenta o risco de síndrome de infusão do propofol (acidose, rabdomiólise, arritmia). Na sedação profunda a saída é associar outro fármaco, não subir o propofol, que é a pegadinha."
+   }
   ]
  },
  {
@@ -2399,7 +3186,8 @@
       "dose"
      ],
      "explicacao": "Na TIH com probabilidade alta, e ainda mais com trombose, a anticoagulação não heparínica deve ser em dose terapêutica; 2,5 mg é dose profilática.",
-     "correcao": "Fondaparinux 7,5 mg SC 1x/dia (faixa de 50 a 100 kg), com TFG não indexada de 44 mL/min (uso com cautela entre 30 e 50), creatinina diária e plaquetas diárias."
+     "correcao": "Fondaparinux 7,5 mg SC 1x/dia (faixa de 50 a 100 kg), com TFG não indexada de 44 mL/min (uso com cautela entre 30 e 50), creatinina diária e plaquetas diárias.",
+     "prioridade": "alta"
     }
    },
    {
@@ -2409,7 +3197,8 @@
       "contraindicacao"
      ],
      "explicacao": "Na TIH toda heparina deve ser suspensa, inclusive a de flush e pressurização de cateteres, porque pequenas quantidades mantêm a ativação plaquetária.",
-     "correcao": "Trocar por SF 0,9% puro na pressurização da linha arterial e retirar outras fontes de heparina (flush de cateteres, cateteres revestidos)."
+     "correcao": "Trocar por SF 0,9% puro na pressurização da linha arterial e retirar outras fontes de heparina (flush de cateteres, cateteres revestidos).",
+     "prioridade": "alta"
     }
    },
    {
@@ -2419,7 +3208,8 @@
       "contraindicacao"
      ],
      "explicacao": "Na TIH aguda a varfarina só deve ser iniciada com plaquetas acima de 150.000/mm³: a queda precoce da proteína C pode causar gangrena venosa de membro.",
-     "correcao": "Suspender. Iniciar a varfarina após recuperação das plaquetas acima de 150.000/mm³, com sobreposição ao fondaparinux por pelo menos 5 dias e até RNI no alvo."
+     "correcao": "Suspender. Iniciar a varfarina após recuperação das plaquetas acima de 150.000/mm³, com sobreposição ao fondaparinux por pelo menos 5 dias e até RNI no alvo.",
+     "prioridade": "media"
     }
    },
    {
@@ -2430,36 +3220,44 @@
       "dose"
      ],
      "explicacao": "O ajuste por vale foi abandonado pelo consenso de 2020; o vale de 22 mg/L, em paciente com LRA recente e piperacilina-tazobactam, sugere AUC acima de 600 mg·h/L e risco de nefrotoxicidade.",
-     "correcao": "Suspender a próxima dose, colher duas concentrações (ou estimar por método bayesiano) e redefinir a dose para AUC24 de 400 a 600 mg·h/L; creatinina diária."
+     "correcao": "Suspender a próxima dose, colher duas concentrações (ou estimar por método bayesiano) e redefinir a dose para AUC24 de 400 a 600 mg·h/L; creatinina diária.",
+     "prioridade": "media"
     }
    },
    {
     "texto": "Piperacilina-tazobactam 4,5 g IV 6/6 h em infusão estendida de 3 h (D5)",
-    "problema": null
+    "problema": null,
+    "ok": "Piperacilina-tazobactam 4,5 g 6/6 h em infusão estendida está correta para TFG não indexada de 44 mL/min, acima de 40."
    },
    {
     "texto": "Ácido acetilsalicílico 100 mg por SNE 1x/dia",
-    "problema": null
+    "problema": null,
+    "ok": "AAS 100 mg é prevenção secundária na doença aterosclerótica da aorta e não interfere no manejo da TIH."
    },
    {
     "texto": "Atorvastatina 40 mg por SNE 1x/dia",
-    "problema": null
+    "problema": null,
+    "ok": "Atorvastatina 40 mg é estatina de manutenção adequada, sem interação relevante na prescrição."
    },
    {
     "texto": "Metoprolol tartarato 25 mg por SNE 12/12 h",
-    "problema": null
+    "problema": null,
+    "ok": "Metoprolol tartarato 25 mg 12/12 h por SNE é a forma que pode ser triturada, em dose baixa."
    },
    {
     "texto": "Pantoprazol 40 mg IV 1x/dia (anticoagulação plena)",
-    "problema": null
+    "problema": null,
+    "ok": "Anticoagulação plena no paciente crítico justifica o IBP."
    },
    {
     "texto": "Dipirona 1 g IV 6/6 h se dor",
-    "problema": null
+    "problema": null,
+    "ok": "Dipirona condicional na dose usual, sem contraindicação neste paciente."
    },
    {
     "texto": "Insulina regular SC conforme glicemia capilar 6/6 h, alvo 140 a 180 mg/dL",
-    "problema": null
+    "problema": null,
+    "ok": "Insulina por protocolo com alvo de 140 a 180 mg/dL é o padrão no crítico."
    }
   ],
   "omissoes": [
@@ -2476,6 +3274,37 @@
    "profilaxias-uti",
    "monitorizacao-terapeutica",
    "evolucao-farmaceutica"
+  ],
+  "resumo": "TIH com trombose já diagnosticada: o risco agora é tratar pela metade. O farmacêutico confere três coisas: anticoagulante não heparínico em dose terapêutica, nenhuma heparina escondida (flush, pressurização, cateter revestido) e varfarina só depois da recuperação das plaquetas. Em paralelo, a vancomicina com vale de 22 mg/L e LRA recente pede AUC.",
+  "dicas": [
+   "Pergunte se o anticoagulante prescrito está em dose de profilaxia ou de tratamento.",
+   "Procure heparina fora das linhas de anticoagulação: há uma numa solução que não parece medicamento.",
+   "Compare as plaquetas com o limiar para iniciar varfarina na TIH."
+  ],
+  "intervencao": "Dr(a)., sugestões para a TIH com trombose:\n1. Fondaparinux 7,5 mg SC 1x/dia (dose de tratamento de 50 a 100 kg), com creatinina e plaquetas diárias.\n2. Trocar a pressurização da linha arterial por SF 0,9% puro e retirar toda fonte de heparina.\n3. Suspender a varfarina até plaquetas acima de 150.000/mm³.\n4. Vancomicina: suspender a próxima dose e ajustar por AUC (vale de 22 mg/L com LRA). Registrar a TIH como alergia e notificar no VigiMed.",
+  "fixacao": [
+   {
+    "p": "TIH com trombose venosa, 84 kg, ClCr de 44 mL/min, sem sangramento. Qual a dose de fondaparinux?",
+    "alts": [
+     "2,5 mg SC 1x/dia, pela função renal",
+     "5 mg SC 1x/dia, pela plaquetopenia",
+     "10 mg SC 1x/dia, por haver trombose",
+     "7,5 mg SC 1x/dia, dose de tratamento"
+    ],
+    "gab": 3,
+    "exp": "Na TIH com alta probabilidade, o anticoagulante não heparínico vai em dose terapêutica: 7,5 mg para 50 a 100 kg, com cautela entre 30 e 50 mL/min. A pegadinha é manter 2,5 mg, dose profilática, porque as plaquetas estão baixas."
+   },
+   {
+    "p": "Na TIH aguda, quando iniciar a varfarina?",
+    "alts": [
+     "No mesmo dia do anticoagulante não heparínico",
+     "Após recuperação das plaquetas acima de 150.000",
+     "Logo após o resultado positivo do teste anti-PF4",
+     "Somente 3 meses depois do diagnóstico da TIH"
+    ],
+    "gab": 1,
+    "exp": "Iniciar a varfarina com plaquetas baixas derruba a proteína C antes dos fatores pró-coagulantes e pode causar gangrena venosa; espera-se a recuperação acima de 150.000/mm³, com sobreposição de pelo menos 5 dias. A pegadinha é iniciar junto, como no TEV comum."
+   }
   ]
  },
  {
@@ -2521,7 +3350,8 @@
   "itens": [
    {
     "texto": "Ceftazidima-avibactam 2,5 g IV 8/8 h em 2 h",
-    "problema": null
+    "problema": null,
+    "ok": "Ceftazidima-avibactam 2,5 g 8/8 h está na faixa de TRS contínua para infecção grave; com o aztreonam, as duas passam a correr juntas em 3 h."
    },
    {
     "texto": "Polimixina B 50 mg (500.000 UI) IV 12/12 h, reduzida pela TRS",
@@ -2531,7 +3361,8 @@
       "renal"
      ],
      "explicacao": "A polimixina B tem eliminação não renal e não se ajusta em TRS; 50 mg equivale a 0,66 mg/kg, metade da dose mínima, e subdose favorece falha e resistência.",
-     "correcao": "Se mantida até o teste de sinergia: ataque de 2 a 2,5 mg/kg (150 a 190 mg) e 1,25 a 1,5 mg/kg (100 mg) IV 12/12 h, sem ajuste. Com aztreonam associado à ceftazidima-avibactam ativo, discutir sua suspensão."
+     "correcao": "Se mantida até o teste de sinergia: ataque de 2 a 2,5 mg/kg (150 a 190 mg) e 1,25 a 1,5 mg/kg (100 mg) IV 12/12 h, sem ajuste. Com aztreonam associado à ceftazidima-avibactam ativo, discutir sua suspensão.",
+     "prioridade": "alta"
     }
    },
    {
@@ -2542,7 +3373,8 @@
       "dose"
      ],
      "explicacao": "Em CVVHDF a depuração da vancomicina acompanha o efluente (cerca de 1 g/dia bastam); 3 g/dia produziram nível de 32 mg/L, com risco de nefrotoxicidade somada à polimixina e de ototoxicidade.",
-     "correcao": "Suspender a dose de hoje, repetir o nível em 12 a 24 h e retomar com cerca de 1 g IV 24/24 h (15 mg/kg), guiado por nível e AUC."
+     "correcao": "Suspender a dose de hoje, repetir o nível em 12 a 24 h e retomar com cerca de 1 g IV 24/24 h (15 mg/kg), guiado por nível e AUC. Rever também a indicação: sem Gram-positivo nas culturas, descalonar.",
+     "prioridade": "media"
     }
    },
    {
@@ -2552,16 +3384,19 @@
       "via"
      ],
      "explicacao": "O comprimido de liberação retardada não pode ser triturado nem partido; por sonda só a suspensão serve, com absorção imprevisível.",
-     "correcao": "Trocar por posaconazol IV 300 mg 1x/dia (sem ajuste em TRS contínua) ou por suspensão com dieta e nível sérico; como o nível de tacrolimo depende do azol, dosar tacrolimo 48 a 72 h após a troca."
+     "correcao": "Trocar por posaconazol IV 300 mg 1x/dia (sem ajuste em TRS contínua) ou por suspensão com dieta e nível sérico; como o nível de tacrolimo depende do azol, dosar tacrolimo 48 a 72 h após a troca.",
+     "prioridade": "media"
     }
    },
    {
     "texto": "Tacrolimo 1 mg por SNE 12/12 h (cápsula aberta e dispersa em água)",
-    "problema": null
+    "problema": null,
+    "ok": "Tacrolimo com vale de 9 ng/mL, dentro do alvo; a cápsula pode ser aberta e dispersa em água para a sonda. O reajuste vem com a troca do posaconazol."
    },
    {
     "texto": "Filgrastim 300 mcg SC 1x/dia",
-    "problema": null
+    "problema": null,
+    "ok": "Filgrastim 300 mcg/dia é adequado na neutropenia grave com choque séptico após o transplante, conforme o protocolo do serviço."
    },
    {
     "texto": "Enoxaparina 40 mg SC 1x/dia",
@@ -2570,28 +3405,34 @@
       "contraindicacao"
      ],
      "explicacao": "Plaquetas de 12.000/mm³ contraindicam a profilaxia farmacológica (limiar usual de 50.000/mm³).",
-     "correcao": "Suspender e usar compressão pneumática intermitente até a recuperação plaquetária."
+     "correcao": "Suspender e usar compressão pneumática intermitente até a recuperação plaquetária.",
+     "prioridade": "alta"
     }
    },
    {
     "texto": "Noradrenalina 16 mg em SG 5% 234 mL (64 mcg/mL) em BIC a 25 mL/h (0,35 mcg/kg/min)",
-    "problema": null
+    "problema": null,
+    "ok": "Noradrenalina de 64 mcg/mL a 25 mL/h dá 0,35 mcg/kg/min para 76 kg; a conta confere."
    },
    {
     "texto": "Vasopressina 20 UI em SF 0,9% 100 mL (0,2 UI/mL) em BIC a 9 mL/h (0,03 UI/min)",
-    "problema": null
+    "problema": null,
+    "ok": "Vasopressina 0,03 UI/min (9 mL/h da solução de 0,2 UI/mL) é a dose fixa recomendada em associação à noradrenalina."
    },
    {
     "texto": "Hidrocortisona 50 mg IV 6/6 h",
-    "problema": null
+    "problema": null,
+    "ok": "Hidrocortisona 200 mg/dia está indicada com noradrenalina de 0,35 mcg/kg/min e vasopressina."
    },
    {
     "texto": "Citrato regional com gluconato de cálcio em lúmen central separado, conforme protocolo da TRS",
-    "problema": null
+    "problema": null,
+    "ok": "Citrato regional com cálcio em lúmen separado é a anticoagulação preferida do circuito, ainda mais com plaquetas de 12.000/mm³."
    },
    {
     "texto": "Dieta enteral 1,5 kcal/mL a 30 mL/h por SNE",
-    "problema": null
+    "problema": null,
+    "ok": "Dieta enteral em vazão baixa é aceitável se a dose de vasopressor estiver estável ou em queda; suspender se o choque piorar ou houver intolerância."
    }
   ],
   "omissoes": [
@@ -2607,6 +3448,37 @@
    "trs-dialise-dose",
    "antifungicos",
    "carbapenemicos-novos-betalactamicos"
+  ],
+  "resumo": "Em bacteremia por produtora de NDM, a primeira pergunta é de espectro e não de dose: ceftazidima-avibactam sozinha não cobre metalobetalactamase, e sem aztreonam não há betalactâmico ativo. Depois vêm as doses em CVVHDF, guiadas pelo efluente e não pela creatinina: a polimixina B não se ajusta ao rim, e a vancomicina acumulou.",
+  "dicas": [
+   "Identifique a enzima e pergunte qual betalactâmico ainda funciona contra ela.",
+   "Um antimicrobiano foi reduzido pela TRS sem ter eliminação renal; outro acumulou até 32 mg/L.",
+   "Veja a forma farmacêutica do azol e as plaquetas antes de aceitar a profilaxia de TEV."
+  ],
+  "intervencao": "Dr(a)., ponto mais urgente: a ceftazidima-avibactam isolada não cobre NDM.\n1. Associar aztreonam 2 g IV de ataque e 2 g 8/8 h em 3 h, simultâneo à ceftazidima-avibactam em Y.\n2. A polimixina B não se ajusta à TRS: se mantida, ataque de 150 mg e 100 mg 12/12 h; com o aztreonam ativo, discutir a suspensão.\n3. Vancomicina com nível de 32 mg/L: suspender a dose de hoje, retomar por nível (cerca de 1 g/dia) e rever a indicação.\n4. Suspender a enoxaparina (plaquetas de 12.000/mm³) e trocar o posaconazol triturado por IV 300 mg 1x/dia, com tacrolimo em 48 a 72 h.",
+  "fixacao": [
+   {
+    "p": "Bacteremia por Klebsiella produtora de NDM. Qual esquema betalactâmico é ativo?",
+    "alts": [
+     "Ceftazidima-avibactam isolada em 3 horas",
+     "Meropeném em dose alta e infusão estendida",
+     "Ceftazidima-avibactam com aztreonam juntos",
+     "Ceftolozana-tazobactam em dose dobrada"
+    ],
+    "gab": 2,
+    "exp": "A NDM hidrolisa quase todos os betalactâmicos, menos o aztreonam; o avibactam protege o aztreonam das serino-betalactamases coproduzidas. A pegadinha é achar que o avibactam inibe metalobetalactamase: não inibe."
+   },
+   {
+    "p": "Paciente em CVVHDF recebe polimixina B. Como ajustar a dose?",
+    "alts": [
+     "Sem ajuste: a eliminação é não renal",
+     "Reduzir à metade pela TRS contínua",
+     "Usar a dose de TFG abaixo de 10 mL/min",
+     "Dobrar a manutenção por perda no filtro"
+    ],
+    "gab": 0,
+    "exp": "A polimixina B é eliminada por via não renal e não se ajusta em nenhuma faixa de TFG nem em TRS; reduzir aumenta o risco de falha e resistência. A pegadinha é aplicar à polimixina B a lógica da colistina, que tem ajuste renal."
+   }
   ]
  }
 ]

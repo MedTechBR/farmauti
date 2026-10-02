@@ -1,0 +1,20 @@
+# Divergências apontadas pelos agentes em 01/10/2026 (corrigir no fechamento)
+- avaliacao-paciente-critico: caso integrado diz enoxaparina 40 mg "aceitável com TFG > 30", mas a paciente (68 a, Cr 2,6) tem TFG ~20 por CKD-EPI 2021 e LRA em evolução. Corrigir item (6). Também vírgula "contexto, Na prescrição".
+- antivirais-uti: frase do oseltamivir "clearance acima de 30 a 60 mL/min, 30 mg 12/12 h" sem sentido; bulário: 30-60 → 30 mg 12/12 h; 10-30 → 30 mg 1x/dia.
+- resistencia-bacteriana: tabela "Doses de referência" diz ceftazidima-avibactam "em 2 horas"; o texto e o bulário dizem 3 h (IDSA 2026).
+- trs-dialise-dose × bulário: pip-tazo em TRS contínua (leitura 4,5 g 6/6 h; bulário 4,5 g 8/8 h estendida); vancomicina manutenção (leitura 7,5-15 mg/kg/dia; bulário 7,5-10 mg/kg 12/12 h); aciclovir (menor).
+- pkpd-antimicrobianos × bulário meropenem: limiar de neurotoxicidade (leitura ~64 mg/L Imani 2017; bulário ~45). Conferir Imani 2017.
+- gram-positivos-resistentes: vale de teicoplanina na endocardite (leitura 20; bulário 30-40 pela bula). Conferir bula.
+- bulário ciprofloxacino: "única quinolona útil contra Pseudomonas" errado (levofloxacino 750 mg também).
+- ecmo-hipotermia-plasmaferese: "meropeném 1 g a cada 8 h em infusão contínua" ambíguo.
+- farmacocinetica-basica (24-48 h) × pk-paciente-critico (24-72 h): atraso da creatinina.
+- outras-classes-antibacterianas: "levofloxacina" grafia.
+- interacoes-fundamentos: tabela "Grupos de fármacos que concentram as interações graves" mistura objetos e precipitantes na mesma linha; separar em duas listas.
+- interacoes-cyp-transportadores: anlodipino só como substrato; acrescentar que é inibidor fraco do CYP3A4 (justifica o teto de 20 mg da sinvastatina).
+- bulario-b albumina: ficha diz que SSC 2026 reserva albumina após grande volume (isso era 2021); SSC 2026 sugere cristaloide isolado. Corrigir ficha.
+- bulario-a cetamina: ficha diz bula da escetamina 1-2 mg/kg sem frisar metade da racêmica; leituras dizem metade. Alinhar.
+- bulario-a etomidato: ficha chama cetamina de "alternativa hemodinamicamente estável"; ensaio RSI 2025 teve mais colapso com cetamina. Alinhar.
+- bulario-a dexmedetomidina × leitura (SPICE III, A2B, PADIS 2025): harmonizar.
+- menores: milrinona faixa, rocurônio infusão, dipirona máx, filtro fenitoína, noradrenalina diluição padrão, paracetamol IV disponibilidade.
+- (auditoria int. fatia 3) bulário tedizolida sem tag serotonina; bula 2026 tem advertência. Acrescentar.
+- (auditoria int. fatia 3) tigeciclina + varfarina: estudo da bula sem alteração de INR; conferir o que o bulário diz.

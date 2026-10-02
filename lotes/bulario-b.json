@@ -18,7 +18,6 @@
    "qt",
    "bradicardia",
    "hipotensao",
-   "inib3a4",
    "hepatotox"
   ],
   "fonte": "ISMP Brasil, lista de uso hospitalar 2019 (antiarrítmicos IV); AHA ACLS, atualização focada 2018; Guia Farmacêutico HSL (2021); ACC/AHA/ACCP/HRS, diretriz de fibrilação atrial 2023"
@@ -256,7 +255,7 @@
   "nome": "Albumina humana",
   "classe": "Coloide natural (hemoderivado)",
   "mecanismo": "Proteína de 66 kDa responsável por cerca de 75% da pressão oncótica; a solução a 20% é hiperoncótica e expande o intravascular em volume maior que o infundido, puxando líquido do interstício. Também liga fármacos, bilirrubina e endotoxinas.",
-  "indicacoes": "Paracentese de grande volume, peritonite bacteriana espontânea, síndrome hepatorrenal (com terlipressina), ressuscitação de choque séptico em quem já recebeu grande volume de cristaloide e plasmaférese. Hipoalbuminemia isolada não é indicação.",
+  "indicacoes": "Paracentese de grande volume, peritonite bacteriana espontânea, síndrome hepatorrenal (com terlipressina), ressuscitação no choque séptico só em situações selecionadas (cirrose; a Surviving Sepsis 2026 sugere cristaloide isolado em vez de associar albumina) e plasmaférese. Hipoalbuminemia isolada não é indicação.",
   "dose": "Paracentese > 5 L: 6 a 8 g por litro retirado. PBE: 1,5 g/kg no diagnóstico e 1 g/kg no 3º dia. Síndrome hepatorrenal: 1 g/kg (máx. 100 g) no 1º dia e 20 a 40 g/dia com terlipressina (EASL 2018). Hipovolemia: 25 g (125 mL a 20%), repetível; máximo usual de 2 g/kg/dia.",
   "renal": "Sem ajuste.",
   "hepatico": "Sem ajuste; é pilar do manejo da cirrose descompensada.",
@@ -264,7 +263,7 @@
   "monitorizacao": "Sinais de sobrecarga (congestão pulmonar, turgência jugular, piora da oxigenação), PA, diurese, hemoglobina (hemodiluição) e, na cirrose, creatinina e sódio.",
   "efeitos": "Sobrecarga volêmica e edema pulmonar, reações alérgicas raras, febre. Em TCE, a albumina a 4% associou-se a maior mortalidade (SAFE-TBI).",
   "interacoes": "Sem interações farmacocinéticas relevantes; altera a fração livre de fármacos muito ligados à albumina (fenitoína, ácido valproico, ceftriaxona) quando a concentração sérica muda.",
-  "perolas": "A Surviving Sepsis 2026 sugere cristaloide isolado como regra, deixando a albumina para quem recebeu grande volume de cristaloide e para o cirrótico; evitar no TCE. Albumina para 'corrigir' albumina sérica baixa sem uma das indicações acima é desperdício de hemoderivado caro. Registre lote, como em todo hemoderivado.",
+  "perolas": "A Surviving Sepsis 2026 sugere cristaloide isolado em vez de cristaloide com albumina (a edição de 2021 reservava a albumina para quem recebia grande volume); o lugar dela ficou restrito, principalmente no cirrótico; evitar no TCE. Albumina para 'corrigir' albumina sérica baixa sem uma das indicações acima é desperdício de hemoderivado caro. Registre lote, como em todo hemoderivado.",
   "altaVigilancia": false,
   "tags": [],
   "fonte": "EASL, diretriz de cirrose descompensada 2018; Surviving Sepsis Campaign 2026; SAFE Study Investigators, NEJM 2007; Guia Farmacêutico HSL (2021)"
@@ -446,7 +445,9 @@
   "interacoes": "Praticamente sem interações farmacocinéticas; soma sedação com depressores do SNC.",
   "perolas": "Na TRS contínua e na hiperfiltração do jovem politraumatizado, doses baixas subtratam: ajuste pela depuração real. Agitação nova em paciente neurológico pode ser do levetiracetam; o residente deve lembrar disso antes de escalar antipsicótico. É a opção preferida quando o paciente usa imunossupressor, anticoagulante oral direto ou antifúngico azol.",
   "altaVigilancia": false,
-  "tags": [],
+  "tags": [
+   "qt"
+  ],
   "fonte": "Kapur et al., ESETT, NEJM 2019; Guia Farmacêutico HSL (levetiracetam); dados abertos de registro ANVISA (consulta 2026)"
  },
  {

@@ -1,0 +1,338 @@
+[
+ {
+  "id": "tramadol",
+  "arquivo": "lotes/bulario-a.json",
+  "tags_atuais": [
+   "snc",
+   "serotonina",
+   "convulsao",
+   "hipoglicemia"
+  ],
+  "tags_corretas": [
+   "snc",
+   "serotonina",
+   "convulsao",
+   "hipoglicemia",
+   "qt",
+   "sub3a4"
+  ],
+  "motivo": "qt: Possible Risk na CredibleMeds (lista revisada em 12/12/2023). sub3a4: a bula (advertência em caixa) cita inibidores e indutores do CYP3A4; inibidor eleva tramadol (convulsão, serotoninérgico), indutor reduz analgesia."
+ },
+ {
+  "id": "propofol",
+  "arquivo": "lotes/bulario-a.json",
+  "tags_atuais": [
+   "snc",
+   "hipotensao",
+   "bradicardia"
+  ],
+  "tags_corretas": [
+   "snc",
+   "hipotensao",
+   "bradicardia",
+   "qt"
+  ],
+  "motivo": "qt: Known Risk of TdP na CredibleMeds (lista revisada em 12/12/2023); faltava a tag."
+ },
+ {
+  "id": "dexmedetomidina",
+  "arquivo": "lotes/bulario-a.json",
+  "tags_atuais": [
+   "snc",
+   "bradicardia",
+   "hipotensao"
+  ],
+  "tags_corretas": [
+   "snc",
+   "bradicardia",
+   "hipotensao",
+   "qt"
+  ],
+  "motivo": "qt: Possible Risk na CredibleMeds (lista revisada em 12/12/2023); faltava a tag."
+ },
+ {
+  "id": "terlipressina",
+  "arquivo": "lotes/bulario-a.json",
+  "tags_atuais": [
+   "bradicardia"
+  ],
+  "tags_corretas": [
+   "bradicardia",
+   "qt"
+  ],
+  "motivo": "qt: Known Risk of TdP na CredibleMeds (lista revisada em 12/12/2023) (TdP relatada com bradicardia); faltava a tag."
+ },
+ {
+  "id": "haloperidol",
+  "arquivo": "lotes/bulario-a.json",
+  "tags_atuais": [
+   "qt",
+   "snc"
+  ],
+  "tags_corretas": [
+   "qt",
+   "snc",
+   "sub3a4"
+  ],
+  "motivo": "sub3a4: metabolizado pelo CYP3A4 (e 2D6); rifampicina e carbamazepina reduzem o nível em cerca de 50 a 70% e a bula orienta ajuste; inibidores fortes elevam o nível e o risco de QT e sintomas extrapiramidais."
+ },
+ {
+  "id": "quetiapina",
+  "arquivo": "lotes/bulario-a.json",
+  "tags_atuais": [
+   "qt",
+   "snc",
+   "anticolinergico",
+   "hipotensao",
+   "sub3a4"
+  ],
+  "tags_corretas": [
+   "snc",
+   "anticolinergico",
+   "hipotensao",
+   "sub3a4"
+  ],
+  "motivo": "qt: Conditional Risk na CredibleMeds (lista revisada em 12/12/2023) (só em superdose, hipocalemia ou interação), fora do critério. Continua sub3a4, então o risco de QT por inibidor do CYP3A4 segue coberto pelo alerta farmacocinético e pelos pares específicos."
+ },
+ {
+  "id": "amiodarona",
+  "arquivo": "lotes/bulario-b.json",
+  "tags_atuais": [
+   "qt",
+   "bradicardia",
+   "hipotensao",
+   "inib3a4",
+   "hepatotox"
+  ],
+  "tags_corretas": [
+   "qt",
+   "bradicardia",
+   "hipotensao",
+   "hepatotox"
+  ],
+  "motivo": "inib3a4: a amiodarona não é inibidor moderado nem forte do CYP3A4 na tabela da FDA (é inibidor fraco do 3A4 e relevante de P-gp, 2C9 e 2D6). A tag gerava alerta de 'inibição do CYP3A4' com motivo errado (ex.: amiodarona + midazolam). Os pares reais (sinvastatina, ciclosporina, digoxina, varfarina, dabigatrana) já estão como pares específicos; faltam amiodarona + tacrolimo e amiodarona + atorvastatina na base de pares."
+ },
+ {
+  "id": "levetiracetam",
+  "arquivo": "lotes/bulario-b.json",
+  "tags_atuais": [],
+  "tags_corretas": [
+   "qt"
+  ],
+  "motivo": "qt: Possible Risk na CredibleMeds (lista revisada em 12/12/2023). Efeito pequeno; a tag segue o critério do brief."
+ },
+ {
+  "id": "trazodona",
+  "arquivo": "lotes/bulario-b.json",
+  "tags_atuais": [
+   "serotonina",
+   "snc",
+   "qt",
+   "hipotensao",
+   "sub3a4"
+  ],
+  "tags_corretas": [
+   "serotonina",
+   "snc",
+   "hipotensao",
+   "sub3a4"
+  ],
+  "motivo": "qt: Conditional Risk na CredibleMeds (lista revisada em 12/12/2023), fora do critério."
+ },
+ {
+  "id": "amitriptilina",
+  "arquivo": "lotes/bulario-b.json",
+  "tags_atuais": [
+   "qt",
+   "anticolinergico",
+   "snc",
+   "serotonina",
+   "convulsao",
+   "hipotensao"
+  ],
+  "tags_corretas": [
+   "anticolinergico",
+   "snc",
+   "serotonina",
+   "convulsao",
+   "hipotensao"
+  ],
+  "motivo": "qt: Conditional Risk na CredibleMeds (lista revisada em 12/12/2023), fora do critério (o risco é de superdose, sobretudo pelo bloqueio de canal de sódio)."
+ },
+ {
+  "id": "ciprofloxacino",
+  "arquivo": "lotes/bulario-c.json",
+  "tags_atuais": [
+   "qt",
+   "convulsao",
+   "hipoglicemia",
+   "quelavel"
+  ],
+  "tags_corretas": [
+   "qt",
+   "convulsao",
+   "hipoglicemia",
+   "quelavel",
+   "inib3a4"
+  ],
+  "motivo": "inib3a4: a tabela da FDA classifica o ciprofloxacino como inibidor MODERADO do CYP3A4 (além de forte do CYP1A2). Magnitude clínica modesta; os pares de 1A2 (aminofilina, clozapina, duloxetina) seguem nos pares específicos."
+ },
+ {
+  "id": "voriconazol",
+  "arquivo": "lotes/bulario-c.json",
+  "tags_atuais": [
+   "qt",
+   "inib3a4",
+   "sub3a4",
+   "hepatotox"
+  ],
+  "tags_corretas": [
+   "inib3a4",
+   "sub3a4",
+   "hepatotox"
+  ],
+  "motivo": "qt: Conditional Risk na CredibleMeds (lista revisada em 12/12/2023), fora do critério. Mantém inib3a4 (forte), que gera os alertas de QT por elevação de substrato (ex.: quetiapina, metadona, domperidona) e os pares específicos."
+ },
+ {
+  "id": "posaconazol",
+  "arquivo": "lotes/bulario-c.json",
+  "tags_atuais": [
+   "qt",
+   "inib3a4",
+   "hepatotox",
+   "hipocalemia"
+  ],
+  "tags_corretas": [
+   "inib3a4",
+   "hepatotox",
+   "hipocalemia"
+  ],
+  "motivo": "qt: Conditional Risk na CredibleMeds (lista revisada em 12/12/2023), fora do critério. Mantém inib3a4 (forte)."
+ },
+ {
+  "id": "ivabradina",
+  "arquivo": "lotes/bulario-d.json",
+  "tags_atuais": [
+   "bradicardia",
+   "sub3a4",
+   "qt"
+  ],
+  "tags_corretas": [
+   "bradicardia",
+   "sub3a4"
+  ],
+  "motivo": "qt: Conditional Risk na CredibleMeds (lista revisada em 12/12/2023) (TdP associada à bradicardia), fora do critério. Mantém bradicardia e sub3a4."
+ },
+ {
+  "id": "cilostazol",
+  "arquivo": "lotes/bulario-d.json",
+  "tags_atuais": [
+   "sangramento",
+   "sub3a4"
+  ],
+  "tags_corretas": [
+   "sangramento",
+   "sub3a4",
+   "qt"
+  ],
+  "motivo": "qt: Known Risk of TdP na CredibleMeds (lista revisada em 12/12/2023); faltava a tag."
+ },
+ {
+  "id": "risperidona",
+  "arquivo": "lotes/bulario-e.json",
+  "tags_atuais": [
+   "qt",
+   "snc",
+   "hipotensao"
+  ],
+  "tags_corretas": [
+   "snc",
+   "hipotensao",
+   "sub3a4"
+  ],
+  "motivo": "qt: Conditional Risk na CredibleMeds (lista revisada em 12/12/2023), fora do critério. sub3a4: CYP3A4 é via relevante junto com 2D6; a bula orienta aumentar a dose com carbamazepina e outros indutores do CYP3A4 (queda de cerca de 50% da fração ativa)."
+ },
+ {
+  "id": "olanzapina",
+  "arquivo": "lotes/bulario-e.json",
+  "tags_atuais": [
+   "qt",
+   "snc",
+   "anticolinergico",
+   "hipotensao"
+  ],
+  "tags_corretas": [
+   "snc",
+   "anticolinergico",
+   "hipotensao"
+  ],
+  "motivo": "qt: Conditional Risk na CredibleMeds (lista revisada em 12/12/2023), fora do critério."
+ },
+ {
+  "id": "hidroxizina",
+  "arquivo": "lotes/bulario-e.json",
+  "tags_atuais": [
+   "snc",
+   "anticolinergico",
+   "qt"
+  ],
+  "tags_corretas": [
+   "snc",
+   "anticolinergico"
+  ],
+  "motivo": "qt: Conditional Risk na CredibleMeds (lista revisada em 12/12/2023), fora do critério."
+ },
+ {
+  "id": "litio",
+  "arquivo": "lotes/bulario-e.json",
+  "tags_atuais": [
+   "nefrotox",
+   "qt"
+  ],
+  "tags_corretas": [
+   "nefrotox",
+   "qt",
+   "serotonina"
+  ],
+  "motivo": "serotonina: relatos consistentes de síndrome serotoninérgica com ISRS/IRSN (lítio potencializa a transmissão serotoninérgica); a bula do lítio traz advertência de síndrome serotoninérgica e o par lítio + sertralina já existe na base."
+ },
+ {
+  "id": "loperamida",
+  "arquivo": "lotes/bulario-f.json",
+  "tags_atuais": [
+   "qt"
+  ],
+  "tags_corretas": [],
+  "motivo": "qt: Conditional Risk na CredibleMeds (lista revisada em 12/12/2023) (TdP em superdose ou com inibidor de CYP3A4/P-gp), fora do critério; em dose usual não soma risco de QT."
+ },
+ {
+  "id": "itraconazol",
+  "arquivo": "lotes/bulario-g.json",
+  "tags_atuais": [
+   "inib3a4",
+   "sub3a4",
+   "qt",
+   "hepatotox"
+  ],
+  "tags_corretas": [
+   "inib3a4",
+   "sub3a4",
+   "hepatotox"
+  ],
+  "motivo": "qt: Conditional Risk na CredibleMeds (lista revisada em 12/12/2023), fora do critério. Mantém inib3a4 (forte)."
+ },
+ {
+  "id": "remdesivir",
+  "arquivo": "lotes/bulario-g.json",
+  "tags_atuais": [
+   "hepatotox",
+   "bradicardia"
+  ],
+  "tags_corretas": [
+   "hepatotox",
+   "bradicardia",
+   "qt"
+  ],
+  "motivo": "qt: Possible Risk na CredibleMeds (lista revisada em 12/12/2023); faltava a tag (já tinha bradicardia)."
+ }
+]

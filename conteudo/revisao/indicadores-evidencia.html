@@ -1,0 +1,82 @@
+<p class="dek">Ao terminar, você deve saber calcular e interpretar os indicadores do serviço (aceitação, PRM por 100 pacientes-dia, DOT e DDD), transformar o resultado de um ensaio em risco absoluto e NNT, ler um intervalo de confiança sem cair na armadilha do valor de p e entender o que significa uma recomendação GRADE.</p>
+
+<h2>O que é e por que importa</h2>
+<dl class="gl">
+<dt>Indicador</dt><dd>Número calculado sempre do mesmo jeito, que permite comparar o serviço mês a mês. Tem numerador, denominador e definição escrita.</dd>
+<dt>Estrutura, processo e resultado</dt><dd>As três dimensões de Donabedian (1988): recursos disponíveis, o que é feito e o que acontece com o paciente.</dd>
+<dt>Paciente-dia</dt><dd>Cada paciente internado em cada dia. Dez pacientes por 30 dias somam 300 pacientes-dia; é o denominador que corrige o tamanho e a ocupação da UTI.</dd>
+<dt>DOT (dias de terapia)</dt><dd>Cada dia em que um antimicrobiano foi administrado, qualquer que seja a dose. Dois antimicrobianos no mesmo dia contam 2 DOT.</dd>
+<dt>DDD (dose diária definida)</dt><dd>Dose média de manutenção por dia em adulto, fixada pela OMS no índice ATC/DDD. Para meropeném parenteral, 3 g; para vancomicina parenteral, 2 g.</dd>
+<dt>Redução absoluta do risco e NNT</dt><dd>RAR é a diferença de risco entre controle e intervenção; NNT (número necessário para tratar) é 1 ÷ RAR, quantos pacientes tratar para evitar um evento.</dd>
+<dt>Intervalo de confiança de 95%</dt><dd>Faixa de valores do efeito compatíveis com os dados; mostra a precisão da estimativa.</dd>
+<dt>GRADE</dt><dd>Sistema (Guyatt, 2008) que separa a certeza da evidência (alta, moderada, baixa, muito baixa) da força da recomendação (forte ou condicional).</dd>
+</dl>
+<p>Medir é o que permite ao serviço mostrar o que faz, saber se melhorou e pedir mais farmacêuticos. As Resoluções CFF 585/2013 e 675/2019 incluem avaliar os resultados por indicadores entre as atribuições do farmacêutico. Os números nascem dos registros do residente: intervenção não registrada não entra em indicador nenhum.</p>
+<p>Ler evidência é o que permite argumentar no round. Uma recomendação apoiada em números absolutos e em fonte com ano convence; "a literatura diz" não. Indicadores de processo (prescrições revisadas, intervenções) são fáceis de medir e mudam rápido; indicadores de resultado (eventos adversos, níveis no alvo) importam mais, mas dependem de muitos fatores além do farmacêutico.</p>
+
+<h2>Como funciona</h2>
+<p>Medidas de efeito vêm de duas proporções: o risco do desfecho no grupo controle e no grupo intervenção. No ensaio REVISE (2024), em adultos ventilados, o sangramento digestivo alto clinicamente importante ocorreu em 84 de 2.377 com placebo e em 25 de 2.385 com pantoprazol 40 mg IV 1 vez ao dia. A sequência de contas é sempre a mesma:</p>
+<ol class="passos">
+<li>Risco no controle = 84 ÷ 2.377 ≈ 3,53%. Risco na intervenção = 25 ÷ 2.385 ≈ 1,05%.</li>
+<li>Risco relativo (RR) = 1,05 ÷ 3,53 ≈ 0,30. Abaixo de 1, a intervenção reduz o risco.</li>
+<li>Redução relativa do risco (RRR) = 1 − 0,30 = 70%. É o número que impressiona, mas não diz quantos pacientes se beneficiam.</li>
+<li>Redução absoluta do risco (RAR) = 3,53% − 1,05% ≈ 2,5 pontos percentuais.</li>
+<li>NNT = 1 ÷ 0,025 ≈ 40 (o valor exato, 40,2, arredondado para cima dá 41). Trata-se cerca de 40 ventilados para evitar um sangramento importante.</li>
+<li>Olhe o desfecho que mais importa: mortalidade em 90 dias de 29,1% contra 30,9%, razão de riscos (HR) 0,94, IC 95% de 0,85 a 1,04. O intervalo inclui 1, então não houve diferença demonstrada.</li>
+</ol>
+<p>Regras de leitura que acompanham essas contas:</p>
+<ul>
+<li>Para medidas relativas (RR, OR, HR), o intervalo que cruza 1 é compatível com ausência de efeito; para diferenças absolutas, a referência é 0.</li>
+<li>O valor de p é a probabilidade de um resultado tão extremo ou mais se não houvesse efeito. Não é a probabilidade de a hipótese ser verdadeira e não mede o tamanho do efeito.</li>
+<li>A razão de chances (OR) aproxima o RR quando o desfecho é raro e o exagera quando é frequente.</li>
+<li>Erro tipo I é falso positivo; erro tipo II é falso negativo, ligado ao poder do estudo. Muitos ensaios de UTI esperam efeito grande demais e terminam sem poder.</li>
+<li>Randomização com sigilo da alocação previne viés de seleção; cegamento reduz viés de aferição; confusão é o problema central dos estudos observacionais.</li>
+<li>No GRADE, ensaio randomizado começa com certeza alta e cai por risco de viés, inconsistência, evidência indireta, imprecisão ou viés de publicação; estudo observacional começa baixo e sobe por efeito grande, gradiente dose-resposta ou confusão que atuaria contra o efeito.</li>
+</ul>
+<div class="cx chave"><b>Ponto-chave</b><p>Ausência de evidência não é evidência de ausência. Um ensaio negativo com intervalo de confiança largo não prova que o tratamento é inútil; mostra que o estudo não conseguiu responder. Só um intervalo estreito em torno de 1 permite dizer que um efeito relevante é improvável.</p></div>
+
+<h2>O essencial em números</h2>
+<div class="tab"><table><thead><tr><th>Valor</th><th>O que significa</th><th>Por que importa</th></tr></thead><tbody>
+<tr><td>Aceitas ÷ propostas com desfecho conhecido × 100</td><td>Taxa de aceitação</td><td>Sozinha engana: 98% pode ser só intervenção trivial</td></tr>
+<tr><td>PRM ÷ pacientes-dia acompanhados × 100</td><td>PRM por 100 pacientes-dia</td><td>Sobe também com a experiência do farmacêutico, não só com a piora da prescrição</td></tr>
+<tr><td>Resolvidos ÷ aceitos × 100</td><td>Taxa de resolução</td><td>Exige voltar no dia seguinte para conferir</td></tr>
+<tr><td>Dias de uso ÷ pacientes-dia × 1.000</td><td>DOT por 1.000 pacientes-dia</td><td>Não muda com ajuste de dose</td></tr>
+<tr><td>(Gramas ÷ DDD) ÷ pacientes-dia × 1.000</td><td>DDD por 1.000 pacientes-dia</td><td>Cai com ajuste renal mesmo sem usar menos dias</td></tr>
+<tr><td>NNT = 1 ÷ RAR</td><td>Pacientes a tratar para evitar um evento</td><td>Forma útil de levar o benefício ao round</td></tr>
+<tr><td>IC 95% cruzando 1</td><td>Sem diferença demonstrada em medida relativa</td><td>Não confundir com "provou que não funciona"</td></tr>
+<tr><td>p &lt; 0,05</td><td>Nível usual de significância</td><td>Não diz se o efeito é clinicamente relevante</td></tr>
+<tr><td>4 níveis e 2 forças</td><td>GRADE: alta a muito baixa; forte ou condicional</td><td>Recomendação condicional de evidência baixa não é regra</td></tr>
+</tbody></table></div>
+
+<h2>Como aparece na prescrição</h2>
+<p>Cada intervenção feita na triagem vira linha de indicador. Para que o número no fim do mês signifique alguma coisa, o registro precisa ser sempre igual:</p>
+<ul>
+<li>Classifique o tipo de erro com a mesma lista todos os dias (dose, ajuste renal, intervalo, interação, via, diluição ou velocidade, duplicidade, sem indicação, contraindicação, redação, monitorização). A distribuição por tipo aponta onde fazer protocolo e educação.</li>
+<li>Registre a gravidade potencial. Uma interação grave evitada vale mais que dez acertos de horário, e é a gravidade que dá sentido à taxa de aceitação.</li>
+<li>Registre o desfecho da proposta (aceita, recusada, sem resposta). O denominador da aceitação são as propostas com desfecho conhecido.</li>
+<li>No dia seguinte, confira se a mudança entrou na prescrição e se o problema se resolveu. É a taxa de resolução.</li>
+<li>Nos antimicrobianos, lembre que o ajuste renal reduz gramas e DDD sem mudar o DOT, e que descalonar ou suspender no dia certo reduz o DOT.</li>
+<li>Economia direta é a diferença real de gasto (custo diário da troca vezes os dias restantes). Custo evitado é estimativa com premissas. Não some os dois.</li>
+<li>Ao discutir uma linha, use a evidência com o dado do paciente: o benefício de um fármaco vale para a população em que foi testado.</li>
+</ul>
+<div class="cx farma"><b>Na prescrição</b><p>Paciente extubado há dois dias, com dieta oral plena, sem sangramento e sem outra indicação de supressão ácida. Errada: "Pantoprazol 40 mg IV 1x/dia". O benefício medido no REVISE (NNT de cerca de 40 para evitar um sangramento importante, sem diferença de mortalidade) foi em adultos sob ventilação mecânica; este paciente não pertence mais a essa população, e a profilaxia esquecida na transferência é um dos medicamentos da UTI que mais sobram. Corrigida: suspender o pantoprazol. Registro: tipo "sem indicação", gravidade potencial baixa, proposta aceita no round, conferido na prescrição do dia seguinte. Esse registro alimenta, ao mesmo tempo, a aceitação, a resolução e a distribuição por tipo.</p></div>
+<div class="cx calculo"><b>Conta rápida</b><p>Setembro: 300 pacientes-dia, 180 g de meropeném em 75 dias de uso. DDD = 180 ÷ 3 = 60; por 1.000 pacientes-dia = 60 ÷ 300 × 1.000 = 200. DOT por 1.000 pacientes-dia = 75 ÷ 300 × 1.000 = 250. Em outubro, mais pacientes passam de 1 g 8/8 h para 1 g 12/12 h por ajuste renal, com os mesmos 75 dias: os gramas caem, a DDD cai e o DOT continua 250. A queda de DDD, sozinha, não prova que se usou menos meropeném.</p></div>
+
+<h2>Como cai nas questões e nos casos</h2>
+<p><strong>Se aparecer "o fármaco reduziu o risco em 70%"</strong> pense em redução relativa, porque ela não diz quantos se beneficiam; peça os riscos absolutos e calcule RAR e NNT.</p>
+<p><strong>Se aparecer HR 0,94 com IC 95% de 0,85 a 1,04</strong> pense em ausência de diferença demonstrada, porque o intervalo inclui 1 e é compatível desde uma redução de 15% até um aumento de 4%.</p>
+<p><strong>Se aparecer p = 0,08 com intervalo largo e a conclusão "o tratamento não funciona"</strong> pense em erro de leitura, porque o estudo foi impreciso; não demonstrou efeito, mas também não o excluiu.</p>
+<p><strong>Se aparecer queda da DDD de meropeném após o farmacêutico intensificar os ajustes renais</strong> pense em efeito de dose, e não de menos uso, porque a DDD sai dos gramas; para medir dias de exposição, use o DOT.</p>
+<p><strong>Se aparecer taxa de aceitação de 98% como prova de excelência</strong> pense em indicador isolado, porque é preciso ver a distribuição por tipo e gravidade potencial das intervenções.</p>
+<p><strong>Se aparecer um estudo caso-controle sobre reação adversa rara</strong> pense em desenho adequado ao evento raro, porque parte do desfecho e compara a exposição passada; a medida é a razão de chances, e o viés de memória é a limitação típica.</p>
+<div class="cx alerta"><b>Atenção</b><p>O erro que mais distorce decisões é levar ao round só a redução relativa ou tratar um subgrupo como conclusão. "Reduz 70%" e "tratar cerca de 40 para evitar um sangramento, sem mudar a mortalidade" descrevem o mesmo ensaio, mas só a segunda frase permite pesar benefício, dano e custo. Subgrupo gera hipótese; não muda protocolo.</p></div>
+
+<h2>Teste rápido</h2>
+<details class="rev"><summary>Qual a diferença entre indicador de processo e de resultado?</summary><p>Processo mede o que é feito (prescrições revisadas, intervenções, aceitação); resultado mede o que acontece com o paciente (eventos adversos, níveis no alvo). Processo é mais fácil de medir; resultado importa mais, mas sofre influência de muitos fatores.</p></details>
+<details class="rev"><summary>Em 340 pacientes-dia acompanhados foram achados 102 PRM. Qual o indicador?</summary><p>102 ÷ 340 × 100 = 30 PRM por 100 pacientes-dia.</p></details>
+<details class="rev"><summary>Por que o ajuste renal reduz a DDD e não o DOT?</summary><p>A DDD é calculada a partir dos gramas consumidos, que caem quando a dose diária cai. O DOT conta dias de administração, qualquer que seja a dose.</p></details>
+<details class="rev"><summary>Risco de 10% no controle e 6% na intervenção: quais RR, RRR, RAR e NNT?</summary><p>RR = 6 ÷ 10 = 0,6; RRR = 40%; RAR = 4 pontos percentuais; NNT = 1 ÷ 0,04 = 25.</p></details>
+<details class="rev"><summary>O que o valor de p não informa?</summary><p>Não é a probabilidade de a hipótese nula ser verdadeira, não mede o tamanho do efeito e não diz se o efeito é clinicamente relevante.</p></details>
+<details class="rev"><summary>No GRADE, como um ensaio randomizado perde certeza?</summary><p>Começa como alta e é rebaixado por risco de viés, inconsistência entre estudos, evidência indireta, imprecisão e viés de publicação.</p></details>
+<details class="rev"><summary>Por que a randomização é a força do ensaio clínico?</summary><p>Porque distribui por sorteio os fatores de confusão conhecidos e desconhecidos entre os grupos; com sigilo da alocação, previne o viés de seleção.</p></details>
+<details class="rev"><summary>Qual a diferença entre economia direta e custo evitado?</summary><p>Economia direta é a diferença real de gasto após a intervenção. Custo evitado é estimativa do gasto de um evento prevenido, baseada em premissas; deve ser apresentado separado e com a fonte das premissas.</p></details>

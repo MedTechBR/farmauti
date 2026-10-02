@@ -248,9 +248,10 @@
   "perolas": "Rigidez ou tremor novos em paciente com risperidona e metoclopramida são efeito extrapiramidal somado, não piora neurológica primária. A solução oral de 1 mg/mL exige seringa oral e prescrição em mg, não em mL.",
   "altaVigilancia": false,
   "tags": [
-   "qt",
    "snc",
-   "hipotensao"
+   "hipotensao",
+   "sub3a4",
+   "qt"
   ],
   "fonte": "Bula Risperdal, Janssen, ANVISA (consulta 2026); Devlin et al., diretriz PADIS da SCCM (2018) e Lewis et al., atualização focada PADIS (2025); CredibleMeds, lista QTdrugs (consulta 2026)"
  },
@@ -680,7 +681,7 @@
   "administracao": "Comprimidos de liberação prolongada não podem ser partidos nem triturados (pico alto aumenta o risco de convulsão). Sem alternativa por sonda na maioria das padronizações: suspender temporariamente ou trocar.",
   "monitorizacao": "Crises convulsivas, PA, agitação e insônia, interações pelo CYP2D6.",
   "efeitos": "Convulsões dose-dependentes (risco maior acima de 450 mg/dia, com bulimia, anorexia, TCE, abstinência alcoólica ou de benzodiazepínico), insônia, agitação, hipertensão, boca seca; em superdose, convulsões, taquicardia e QRS largo.",
-  "interacoes": "Inibidor forte do CYP2D6: reduz o efeito de codeína e tramadol e eleva metoprolol, tricíclicos, risperidona e haloperidol. Soma redução do limiar convulsivo com tramadol, imipenem, quinolonas, meperidina e teofilina. Contraindicada com IMAO; linezolida exige cautela pelo efeito pressor.",
+  "interacoes": "Inibidor forte do CYP2D6: reduz o efeito de codeína e tramadol e eleva metoprolol, tricíclicos, risperidona e haloperidol. Soma redução do limiar convulsivo com tramadol, imipenem, quinolonas, meperidina e teofilina. Contraindicada com IMAO, inclusive linezolida e azul de metileno: a bula contraindica iniciar bupropiona em quem os usa, pelo risco de crise hipertensiva.",
   "perolas": "Paciente com bupropiona que convulsiona na UTI: avalie a soma com outros pró-convulsivantes e a abstinência de álcool ou benzodiazepínico. Flumazenil é arriscado em intoxicação mista com bupropiona.",
   "altaVigilancia": false,
   "tags": [
@@ -705,7 +706,8 @@
   "altaVigilancia": false,
   "tags": [
    "nefrotox",
-   "qt"
+   "qt",
+   "serotonina"
   ],
   "fonte": "Decker et al., recomendações EXTRIP para lítio, Clin J Am Soc Nephrol (2015); bula Carbolitium, ANVISA (consulta 2026); CredibleMeds, lista QTdrugs (consulta 2026)"
  },

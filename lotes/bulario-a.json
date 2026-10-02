@@ -171,7 +171,8 @@
   "perolas": "No CONFIRM (2021) houve mais óbitos por insuficiência respiratória com terlipressina: avaliar volemia, SpO2 e ajustar a albumina (sobrecarga). Contraindicada em isquemia coronariana, periférica ou mesentérica ativas. Não confundir com vasopressina em UI/min: terlipressina é prescrita em mg.",
   "altaVigilancia": false,
   "tags": [
-   "bradicardia"
+   "bradicardia",
+   "qt"
   ],
   "fonte": "Wong et al., CONFIRM, N Engl J Med (2021); EASL, diretriz de cirrose descompensada (2018); Baveno VII (2022); Guia Farmacêutico do Hospital Sírio-Libanês (consulta 2026)"
  },
@@ -316,7 +317,8 @@
   "tags": [
    "snc",
    "hipotensao",
-   "bradicardia"
+   "bradicardia",
+   "qt"
   ],
   "fonte": "Devlin et al., diretriz PADIS da SCCM (2018) e Lewis et al., atualização focada PADIS (2025); bula ANVISA do produto de referência (consulta 2026); Guia Farmacêutico do Hospital Sírio-Libanês (consulta 2026); ISMP Brasil, lista de medicamentos potencialmente perigosos de uso hospitalar (2019)"
  },
@@ -381,7 +383,8 @@
   "tags": [
    "snc",
    "bradicardia",
-   "hipotensao"
+   "hipotensao",
+   "qt"
   ],
   "fonte": "Devlin et al., diretriz PADIS da SCCM (2018) e Lewis et al., atualização focada PADIS (2025); Shehabi et al., SPICE III, N Engl J Med (2019); Walsh et al., A2B, JAMA (2025); bula Precedex, ANVISA (consulta 2026); ISMP Brasil, lista de medicamentos potencialmente perigosos de uso hospitalar (2019)"
  },
@@ -391,7 +394,7 @@
   "classe": "Anestésico dissociativo (antagonista NMDA)",
   "mecanismo": "Antagonista não competitivo do receptor NMDA, com analgesia intensa, amnésia e anestesia dissociativa; libera catecolaminas (mantém PA e FC) e causa broncodilatação. A escetamina (isômero S), apresentação predominante no Brasil, tem cerca de 2 vezes a potência da racêmica e menos reações de emergência.",
   "indicacoes": "Indução em sequência rápida no paciente instável ou broncoespástico, analgesia adjuvante poupadora de opioide (PADIS sugere dose baixa no pós-operatório), sedação de procedimentos, broncoespasmo refratário, estado de mal super-refratário.",
-  "dose": "Racêmica: indução 1 a 2 mg/kg IV; analgesia 0,1 a 0,5 mg/kg em bolus e 0,1 a 0,5 mg/kg/h em infusão (PADIS: 0,5 mg/kg e 1 a 2 mcg/kg/min). Com escetamina, muitos serviços usam cerca de metade da dose racêmica, embora a bula brasileira mantenha faixa de indução de 1 a 2 mg/kg IV; confirmar qual isômero está disponível.",
+  "dose": "Racêmica: indução 1 a 2 mg/kg IV; analgesia 0,1 a 0,5 mg/kg em bolus e 0,1 a 0,5 mg/kg/h em infusão (PADIS: 0,5 mg/kg e 1 a 2 mcg/kg/min). A escetamina é cerca de duas vezes mais potente: use cerca de metade da dose racêmica (indução em torno de 0,5 a 1 mg/kg), como dizem as leituras de sedação e de intubação; trocar o isômero sem reduzir a dose é erro de medicação. Confirme qual isômero está disponível.",
   "renal": "Sem ajuste.",
   "hepatico": "Metabolismo hepático (CYP3A4 e 2B6) a norcetamina: cautela e titulação na insuficiência hepática.",
   "administracao": "Frasco de 50 mg/mL (escetamina e racêmica). Bolus IV lento em 60 s (injeção rápida causa apneia e hipertensão); infusão diluída em SF 0,9% ou SG 5% (por exemplo 1 a 2 mg/mL). Pode correr em via periférica; aceita IM.",
@@ -418,7 +421,7 @@
   "monitorizacao": "PA e FC na indução, mioclonias, sinais de insuficiência adrenal nas horas seguintes em pacientes sépticos.",
   "efeitos": "Supressão adrenal transitória, mioclonias, dor à injeção, náusea e vômito, depressão respiratória.",
   "interacoes": "Sedação aditiva com opioides e benzodiazepínicos; nenhuma interação farmacocinética relevante em dose única.",
-  "perolas": "Na sepse, estudos observacionais associaram etomidato a maior mortalidade, mas ensaios e metanálises são conflitantes; alternativa hemodinamicamente estável é cetamina. Se o paciente séptico em choque refratário já recebeu etomidato, considere isso na decisão de corticoide.",
+  "perolas": "Na sepse, estudos observacionais associaram etomidato a maior mortalidade, mas ensaios e metanálises são conflitantes; no ensaio RSI (2025), etomidato e cetamina tiveram a mesma mortalidade, com mais colapso cardiovascular na cetamina, então o etomidato segue como boa escolha no instável. Se o paciente séptico em choque refratário já recebeu etomidato, considere isso na decisão de corticoide.",
   "altaVigilancia": true,
   "tags": [
    "snc"
@@ -533,7 +536,9 @@
    "snc",
    "serotonina",
    "convulsao",
-   "hipoglicemia"
+   "hipoglicemia",
+   "qt",
+   "sub3a4"
   ],
   "fonte": "Bula ANVISA do produto de referência (consulta 2026); ISMP Brasil, lista de medicamentos potencialmente perigosos de uso hospitalar (2019)"
  },
@@ -596,7 +601,8 @@
   "altaVigilancia": false,
   "tags": [
    "qt",
-   "snc"
+   "snc",
+   "sub3a4"
   ],
   "fonte": "Devlin et al., diretriz PADIS da SCCM (2018) e Lewis et al., atualização focada PADIS (2025); Andersen-Ranberg et al., AID-ICU, N Engl J Med (2022); CredibleMeds, lista QTdrugs (consulta 2026)"
  },
