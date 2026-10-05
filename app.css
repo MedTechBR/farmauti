@@ -4,7 +4,7 @@
    Continua fora: gradiente, emoji e fonte baixada da web. */
 :root{
   --papel:#F5F6FB; --sup:#FFFFFF; --sup2:#F1F3F9; --sup3:#E7EAF3;
-  --ink:#141827; --ink2:#5D6579; --ink3:#8E96AA; --linha:#E6E9F2; --linhaF:#D3D8E5;
+  --ink:#141827; --ink2:#5D6579; --ink3:#666E83; /* era #8E96AA (2,96:1); agora 4,7:1 sobre o papel */ --linha:#E6E9F2; --linhaF:#D3D8E5;
   --c-indigo:#5B5BF0; --c-azul:#2F7BF6; --c-laranja:#F76E1E; --c-verde:#11A870; --c-violeta:#8E5AF2;
   --c-ambar:#E89A00; --c-ciano:#0AA5C2; --c-rosa:#E8468E; --c-cinza:#667085; --c-vermelho:#E5484D; --c-teal:#0E9384; --c-lima:#4D9A12;
   --ac:var(--c-indigo);
@@ -20,14 +20,14 @@
 }
 :root[data-tema="escuro"]{
   --papel:#0D1017; --sup:#161B26; --sup2:#1C2230; --sup3:#252D3E;
-  --ink:#EDF0F7; --ink2:#A3ABBE; --ink3:#737C95; --linha:#252C3B; --linhaF:#343D51;
+  --ink:#EDF0F7; --ink2:#A3ABBE; --ink3:#8B94AB; --linha:#252C3B; --linhaF:#343D51;
   --okSup:#0F2A20; --errSup:#34181A; --warnSup:#33260C;
   --sombra:0 1px 2px rgba(0,0,0,.4); --sombraM:0 14px 34px rgba(0,0,0,.55);
   color-scheme:dark;
 }
 @media(prefers-color-scheme:dark){:root:not([data-tema="claro"]){
   --papel:#0D1017; --sup:#161B26; --sup2:#1C2230; --sup3:#252D3E;
-  --ink:#EDF0F7; --ink2:#A3ABBE; --ink3:#737C95; --linha:#252C3B; --linhaF:#343D51;
+  --ink:#EDF0F7; --ink2:#A3ABBE; --ink3:#8B94AB; --linha:#252C3B; --linhaF:#343D51;
   --okSup:#0F2A20; --errSup:#34181A; --warnSup:#33260C;
   --sombra:0 1px 2px rgba(0,0,0,.4); --sombraM:0 14px 34px rgba(0,0,0,.55);
   color-scheme:dark;
@@ -163,7 +163,7 @@ div.campo .mtt-btn{font-size:14px;font-weight:500}
 /* ---------- Início ---------- */
 .vIni{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:18px}
 .vIni>*{min-width:0}
-.vHero{grid-column:span 8;position:relative;overflow:hidden;border-radius:28px;padding:28px 30px;background:var(--c-indigo);color:#fff;display:flex;gap:24px;align-items:center;box-shadow:0 18px 40px color-mix(in srgb,var(--c-indigo) 30%,transparent)}
+.vHero{grid-column:span 8;position:relative;overflow:hidden;border-radius:28px;padding:28px 30px;background:#4545D8 /* índigo fechado: branco e as pílulas translúcidas passam 4,5:1 (era #5B5BF0, 3,8:1 nas pílulas) */;color:#fff;display:flex;gap:24px;align-items:center;box-shadow:0 18px 40px color-mix(in srgb,var(--c-indigo) 30%,transparent)}
 .vHero .bola{position:absolute;border-radius:50%;background:#fff;opacity:.09;pointer-events:none}
 .vHero .b1{width:260px;height:260px;right:-70px;top:-90px;animation:flutua 9s ease-in-out infinite}
 .vHero .b2{width:130px;height:130px;right:170px;bottom:-60px;opacity:.07;animation:flutua 7s ease-in-out infinite reverse}
@@ -214,7 +214,7 @@ div.campo .mtt-btn{font-size:14px;font-weight:500}
 .vLeit button{scroll-snap-align:start;flex:0 0 230px;text-align:left;border:1px solid var(--linha);background:var(--sup);border-radius:20px;padding:16px;cursor:pointer;position:relative;overflow:hidden;color:var(--ink);transition:transform .2s var(--mola),box-shadow .2s}
 .vLeit button::before{content:"";position:absolute;inset:0 0 auto 0;height:5px;background:var(--k)}
 .vLeit button:hover{transform:translateY(-4px);box-shadow:var(--sombraM)}
-.vLeit small{display:block;font-size:11.5px;font-weight:700;color:var(--k);text-transform:uppercase;letter-spacing:.04em;margin:4px 0 6px}
+.vLeit small{display:block;font-size:11.5px;font-weight:700;color:color-mix(in srgb,var(--k) 60%,var(--ink)) /* a cor da área puxada para a tinta: >= 5:1 nas 12 cores, nos dois temas */;text-transform:uppercase;letter-spacing:.04em;margin:4px 0 6px}
 .vLeit b{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;font-size:14.5px;line-height:1.35;min-height:2.7em}
 .vLeit .barra{margin-top:12px;height:6px}
 .vLeit em{display:block;font-style:normal;font-size:12px;color:var(--ink2);margin-top:6px}

@@ -384,7 +384,7 @@ function pintaInicio() {
     : `Faltam ${faltam} dias para a residência. Hoje: ${pendH.length ? pendH.length + (pendH.length > 1 ? " tarefas" : " tarefa") + " no cronograma" : "cronograma em dia"}${due ? ` e ${due} ${due > 1 ? "cartões" : "cartão"} para revisar` : ""}.`;
   const prox = pendH[0] || pend[0];
   const dias7 = [...Array(7)].map((_, k) => addD(hoje, k - 6));
-  s.innerHTML = `<div class="vIni anima">
+  s.innerHTML = `<h1 class="sr">FarmaUTI: início</h1><div class="vIni anima">
    <div class="vHero"><span class="bola b1"></span><span class="bola b2"></span><span class="bola b3"></span>
      <div class="txt"><small>${kick}</small><h2>${saudacao()}${nome}</h2><p>${frase}</p>
       <div class="linhaBt">${prox ? `<button class="bt" data-acao="irTarefa" data-tk="${esc(prox.k)}"><i class="ti ti-player-play"></i>${pendH.length ? "Começar o dia" : "Pôr em dia"}</button>` : `<button class="bt" data-ir="leituras"><i class="ti ti-book-2"></i>Abrir leituras</button>`}
@@ -477,7 +477,7 @@ function pintaLeituras(slug) {
   titulo("book-2", "Leituras", `${E.leituras.length} textos em ${E.areas.length} áreas, do básico ao avançado, escritos para a rotina do farmacêutico na UTI`);
   const s = $("#sec-leituras");
   s.innerHTML = `<div class="filtros">
-     <div class="busca"><i class="ti ti-search"></i><input type="search" id="lfBusca" placeholder="Filtrar leituras" value="${esc(LF.q)}"></div>
+     <div class="busca"><i class="ti ti-search"></i><input type="search" id="lfBusca" aria-label="Filtrar leituras" placeholder="Filtrar leituras" value="${esc(LF.q)}"></div>
      <div class="tabs2"><button data-lf-modo="area" aria-pressed="${LF.modo === "area"}">Por área</button><button data-lf-modo="semana" aria-pressed="${LF.modo === "semana"}">Por semana</button></div>
      <div class="tabs2"><button data-lf-st="" aria-pressed="${!LF.st}">Todas</button><button data-lf-st="nao" aria-pressed="${LF.st === "nao"}">A ler</button><button data-lf-st="lidas" aria-pressed="${LF.st === "lidas"}">Lidas</button></div>
    </div>
@@ -536,7 +536,7 @@ async function abreLeitura(slug) {
        <button class="bt mini" style="--ac:var(--c-azul)" data-acao="qLeitura" data-s="${slug}" ${nq ? "" : "disabled"}><i class="ti ti-checklist"></i>${nq} questões</button>
        ${rx.length ? `<button class="bt mini" style="--ac:var(--c-lima)" data-ir-rx="${rx[0].id}"><i class="ti ti-prescription"></i>${rx.length} ${rx.length > 1 ? "prescrições" : "prescrição"}</button>` : ""}
        ${cs.length ? `<button class="bt mini" style="--ac:var(--c-rosa)" data-ir-k="${cs[0].id}"><i class="ti ti-clipboard-heart"></i>${cs.length} ${cs.length > 1 ? "casos" : "caso"}</button>` : ""}</div></div>
-     <div class="cx"><h3><i class="ti ti-notes"></i>Minhas anotações</h3><textarea id="notaL" placeholder="Resumos, dúvidas para o preceptor, doses para decorar…">${esc(ST.notas[slug] || "")}</textarea><div class="sub" style="margin-top:6px">Ficam neste aparelho e entram no backup.</div></div>
+     <div class="cx"><h3><i class="ti ti-notes"></i>Minhas anotações</h3><textarea id="notaL" aria-label="Minhas anotações" placeholder="Resumos, dúvidas para o preceptor, doses para decorar…">${esc(ST.notas[slug] || "")}</textarea><div class="sub" style="margin-top:6px">Ficam neste aparelho e entram no backup.</div></div>
     </aside></div>`;
   $("#notaL").addEventListener("input", debounce(e => { if (e.target.value.trim()) ST.notas[slug] = e.target.value; else delete ST.notas[slug]; salva("notas"); }, 500));
   let html = "";
@@ -679,7 +679,7 @@ function pintaSessao() {
   if (!SES) return ir("cartoes");
   if (SES.i >= SES.fila.length) {
     semTitulo();
-    s.innerHTML = `<div class="flash"><div class="cx vazio anima"><i class="ti ti-confetti" style="color:var(--c-ambar)"></i><h2 style="margin-bottom:8px">Sessão concluída</h2>
+    s.innerHTML = `<h1 class="sr">Sessão de cartões</h1><div class="flash"><div class="cx vazio anima"><i class="ti ti-confetti" style="color:var(--c-ambar)"></i><h2 style="margin-bottom:8px">Sessão concluída</h2>
       <p>${SES.feitos} respostas · ${SES.erros} ${SES.erros === 1 ? "cartão voltou" : "cartões voltaram"} para a fila · ${Math.max(1, Math.round((Date.now() - SES.t0) / 60000))} min</p>
       <div class="linhaBt" style="justify-content:center;margin-top:16px"><button class="bt" data-ir="cartoes">Voltar aos cartões</button><button class="bt sec" data-ir="inicio">Início</button></div></div></div>`;
     vivo(s); SES = null; return;
@@ -687,7 +687,7 @@ function pintaSessao() {
   const c = SES.fila[SES.i], l = LEIT[c.l], st = ST.srs[c.id];
   semTitulo();
   const notas = [[1, "Errei", "var(--c-vermelho)"], [2, "Difícil", "var(--c-laranja)"], [3, "Bom", "var(--c-verde)"], [4, "Fácil", "var(--c-azul)"]];
-  s.innerHTML = `<div class="flash">
+  s.innerHTML = `<h1 class="sr">Sessão de cartões</h1><div class="flash">
     <div class="flashTopo"><button class="bt sec mini" data-acao="sairSessao"><i class="ti ti-x"></i>Sair</button>
       <span>${st ? "Revisão" : '<b style="color:var(--c-azul)">Novo</b>'} · ${SES.i + 1} de ${SES.fila.length}</span>
       <span class="barra" style="width:160px"><i style="width:${pct(SES.i, SES.fila.length)}%"></i></span><span class="cSinal"></span></div>
@@ -998,7 +998,7 @@ function pintaCaso(id) {
    <div class="cx"><h3><i class="ti ti-prescription"></i>Prescrição do dia</h3><div class="tabWrap"><table class="tabela"><tr><th>Item</th><th>Dose</th><th>Via</th><th>Frequência</th><th>Observação</th></tr>
      ${(c.prescricao || []).map(p => `<tr><td><b>${esc(p.item)}</b></td><td>${esc(p.dose)}</td><td>${esc(p.via)}</td><td>${esc(p.freq)}</td><td class="sub">${esc(p.obs || "")}</td></tr>`).join("")}</table></div></div>
    <div class="cx"><h3><i class="ti ti-pencil"></i>Sua análise</h3><p class="sub" style="margin:-4px 0 10px">${esc(c.tarefa)} Escreva antes de abrir o gabarito: é o que treina o round.</p>
-     <textarea id="casoTxt" style="min-height:160px" placeholder="Problema 1: …&#10;Intervenção: …">${esc(st.txt || "")}</textarea>
+     <textarea id="casoTxt" aria-label="Sua análise do caso" style="min-height:160px" placeholder="Problema 1: …&#10;Intervenção: …">${esc(st.txt || "")}</textarea>
      <div class="linhaBt" style="margin-top:12px">${st.rev ? "" : `<button class="bt" data-acao="revelaCaso" data-k="${id}"><i class="ti ti-eye"></i>Ver o gabarito</button>`}<span class="sub">Anotações ficam salvas neste aparelho.</span></div></div>
    ${st.rev ? `<div class="cx"><h3><i class="ti ti-list-check"></i>Gabarito: ${c.gabarito.length} problemas</h3><p class="sub" style="margin:-4px 0 6px">Marque os que você tinha identificado. A nota do caso é a proporção marcada.</p>
      ${c.gabarito.map((g, k) => `<div class="prob${marc.has(k) ? " on" : ""}" data-acao="marcaProb" data-k="${id}" data-i="${k}" role="checkbox" aria-checked="${marc.has(k)}" tabindex="0"><span class="chk"><i class="ti ti-check"></i></span>
@@ -1118,7 +1118,7 @@ function pintaRx(id) {
     return `<div class="rxLinha${m ? " marcada" : ""}${est}" ${corrigida ? "" : `data-rxl="${i}" role="button" tabindex="0" aria-pressed="${m}"`}>
       <span class="n">${i + 1}</span><div class="tx"><span class="rxTxt">${esc(it.texto)}</span>
       ${!corrigida && m ? `<div class="rxEdita" data-pare="1"><div class="rxTipos">${TIPOS_RX.map(([k, nm, ic]) => `<button class="chip" data-rxt="${i}" data-t="${k}" aria-pressed="${RXS.marc[i] === k}"><i class="ti ti-${ic}"></i>${nm}</button>`).join("")}</div>
-        <input type="text" class="rxNota" data-rxnota="${i}" placeholder="Sua intervenção (opcional): o que você proporia?" value="${esc(RXS.notas[i] || "")}"></div>` : ""}${ex}</div>
+        <input type="text" class="rxNota" data-rxnota="${i}" aria-label="Sua intervenção no item ${i + 1} (opcional)" placeholder="Sua intervenção (opcional): o que você proporia?" value="${esc(RXS.notas[i] || "")}"></div>` : ""}${ex}</div>
       ${corrigida ? "" : `<i class="ti ti-${m ? "flag-filled" : "flag"} bandeira"></i>`}</div>`;
   };
   const s = $("#sec-prescricoes");
@@ -1134,7 +1134,7 @@ function pintaRx(id) {
      <div class="rxTit"><i class="ti ti-list-numbers"></i>Itens prescritos ${corrigida ? `<button class="chip" data-acao="rxSoProb" aria-pressed="${RXS.soProb}" style="margin-left:auto"><i class="ti ti-filter"></i>Só os problemas</button>` : '<span class="sub">toque nas linhas com problema</span>'}</div>
      ${r.itens.map(linha).join("")}
     </div>
-    ${corrigida ? posCorrecaoRx(r, st, id) : `<div class="cx" style="margin-top:16px"><h3><i class="ti ti-square-plus"></i>Falta alguma coisa?</h3><p class="sub" style="margin:-4px 0 8px">Indicação sem tratamento, profilaxia ausente, exame ou nível sérico que deveria estar pedido.</p><textarea id="rxOmi" placeholder="Ex.: falta profilaxia de tromboembolismo…">${esc(RXS.omiTxt)}</textarea></div>`}
+    ${corrigida ? posCorrecaoRx(r, st, id) : `<div class="cx" style="margin-top:16px"><h3><i class="ti ti-square-plus"></i>Falta alguma coisa?</h3><p class="sub" style="margin:-4px 0 8px">Indicação sem tratamento, profilaxia ausente, exame ou nível sérico que deveria estar pedido.</p><textarea id="rxOmi" aria-label="O que falta na prescrição" placeholder="Ex.: falta profilaxia de tromboembolismo…">${esc(RXS.omiTxt)}</textarea></div>`}
    </div>
    <aside class="lado">
     ${corrigida ? `<div class="cx rxRes"><h3><i class="ti ti-report-analytics"></i>Resultado</h3>
@@ -1236,7 +1236,7 @@ function pintaInteracoes(id) {
   if (id && FARM[id] && !INT.ids.includes(id)) { INT.ids.push(id); ST.pos.int = INT.ids; salva("pos"); history.replaceState(null, "", "#interacoes"); paramAtual = ""; }
   titulo("arrows-exchange", "Interações", `Verificador com ${RF.interacoes.length} pares específicos e regras de efeito somado a partir de ${RF.bulario.length} fichas do bulário`);
   const s = $("#sec-interacoes");
-  s.innerHTML = `<div class="cx" style="margin-bottom:16px"><div class="seletor"><div class="filtros" style="margin:0"><div class="busca"><i class="ti ti-search"></i><input type="search" id="intBusca" placeholder="Adicionar fármaco da prescrição (digite 3 letras)" autocomplete="off"></div></div><div class="sugestoes" id="intSug" hidden></div></div>
+  s.innerHTML = `<div class="cx" style="margin-bottom:16px"><div class="seletor"><div class="filtros" style="margin:0"><div class="busca"><i class="ti ti-search"></i><input type="search" id="intBusca" aria-label="Adicionar fármaco da prescrição" placeholder="Adicionar fármaco da prescrição (digite 3 letras)" autocomplete="off"></div></div><div class="sugestoes" id="intSug" hidden></div></div>
      <div class="chips" id="intChips" style="margin-top:12px"></div>
      <div class="linhaBt" style="margin-top:14px"><span class="sub">Exemplos:</span>${EXEMPLOS.map((e, k) => `<button class="chip" data-ex="${k}">${e[0]}</button>`).join("")}<button class="chip" data-acao="limpaInt"><i class="ti ti-trash"></i>Limpar</button></div></div>
    <div id="intRes"></div>
@@ -1330,7 +1330,7 @@ function pintaBulario(id) {
   titulo("pill", "Bulário", `${RF.bulario.length} fichas de fármacos da UTI: dose, ajuste renal e hepático, administração, monitorização e interações`);
   const grupos = [...new Set(RF.farmacos.map(f => f.grupo))];
   const s = $("#sec-bulario");
-  s.innerHTML = `<div class="filtros"><div class="busca"><i class="ti ti-search"></i><input type="search" id="bfBusca" placeholder="Buscar fármaco ou classe" value="${esc(BF.q)}"></div></div>
+  s.innerHTML = `<div class="filtros"><div class="busca"><i class="ti ti-search"></i><input type="search" id="bfBusca" aria-label="Buscar fármaco ou classe" placeholder="Buscar fármaco ou classe" value="${esc(BF.q)}"></div></div>
    <div class="chips" style="margin-bottom:8px"><button class="chip" data-bf-g="" aria-pressed="${!BF.g}">Todos</button>${grupos.map(g => `<button class="chip" data-bf-g="${esc(g)}" aria-pressed="${BF.g === g}">${esc(g)}</button>`).join("")}</div>
    <div id="listaBul"></div>`;
   listaBulario();
@@ -1715,7 +1715,7 @@ async function baixaOffline() {
    ====================================================================== */
 function abreBusca() {
   const c = $("#camada");
-  c.innerHTML = `<div class="veu" data-fecha="1"><div class="caixaBusca" role="dialog" aria-label="Buscar"><div class="campoB"><i class="ti ti-search"></i><input type="search" id="bBusca" placeholder="Buscar leituras, seções, fármacos, casos, calculadoras…" autocomplete="off"><kbd>Esc</kbd></div><div class="res" id="bRes"></div></div></div>`;
+  c.innerHTML = `<div class="veu" data-fecha="1"><div class="caixaBusca" role="dialog" aria-label="Buscar"><div class="campoB"><i class="ti ti-search"></i><input type="search" id="bBusca" aria-label="Buscar em tudo" placeholder="Buscar leituras, seções, fármacos, casos, calculadoras…" autocomplete="off"><kbd>Esc</kbd></div><div class="res" id="bRes"></div></div></div>`;
   const inp = $("#bBusca"); inp.focus();
   let sel = 0;
   const roda = () => {
