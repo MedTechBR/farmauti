@@ -64,6 +64,16 @@ questão, no gabarito do simulado e no cartão; `ST.sinal` (chave = id da quest�
 "Questões sinalizadas" no fim de Desempenho. Cada ação vai também à caixa central do Matheus
 (`medtechbr.com.br/sinalizacoes.html`, função `mtSinal`, app `farmauti`, sem conta: id aleatório do aparelho).
 
+Erratas (10/10/2026): `mterrata.js` (cópia de `~/Documents/Claude/_mterrata/`, não editar) traz o que a administração
+corrigiu ou tirou do ar no painel de sinalizações (chave = id da questão/cartão). `aplicaErratas()` em app.js troca
+os campos no próprio objeto (questão: e, a, p, g, c; cartão: f, v; o original fica guardado e volta se a errata
+sumir) e monta a VISTA `QVIS`/`CVIS`/`QPL`/`CPL`/`QPA` só com o que está no ar: listas, filtros, simulado, sessão de
+cartões, contagens, busca e desempenho usam a vista; `E.questoes`/`E.cartoes`, `QID`/`CID` e o progresso não perdem
+nada. Gabarito trocado: `okH()` reavalia respostas antigas na exibição (o `fu_resp` não muda); anulada (g = -1) vale
+para qualquer resposta. Tiradas do ar continuam no fim de `ST.pos.q.ordem` (`QS.guarda`). Selo "corrigida em" no
+alto da questão, no simulado, no gabarito do simulado e na sessão de cartões; aviso de resposta à sinalização
+abre a questão por `abreSinalizada()`.
+
 ## Interações
 `analisaInt()`: pares específicos de `lotes/interacoes.json` primeiro; depois **efeitos somados** a
 partir das `tags` do bulário (QT, serotonina, sangramento, K+, SNC, nefro/oto/hepato/mielotox,

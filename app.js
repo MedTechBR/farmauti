@@ -113,14 +113,52 @@ const COR = {azul:"var(--c-azul)", ciano:"var(--c-ciano)", verde:"var(--c-verde)
 const corA = a => COR[AREA[a]?.cor] || COR.indigo;
 const icA = a => AREA[a]?.icone || "book";
 const LEIT = Object.fromEntries(E.leituras.map(l => [l.slug, l]));
-const CPL = {}, QPL = {};
-E.cartoes.forEach(c => (CPL[c.l] ||= []).push(c));
-E.questoes.forEach(q => (QPL[q.l] ||= []).push(q));
+/* QID/CID = o banco inteiro (busca por id). QVIS/CVIS, QPL/CPL e QPA = a VISTA: só o que está no ar (ver erratas). */
 const CID = Object.fromEntries(E.cartoes.map(c => [c.id, c]));
 const QID = Object.fromEntries(E.questoes.map(q => [q.id, q]));
+const QVIS = [], CVIS = [], CPL = {}, QPL = {}, QPA = {};
 const CASO = Object.fromEntries(E.casos.map(c => [c.id, c]));
 E.prescricoes ||= [];
 const RX = Object.fromEntries(E.prescricoes.map(r => [r.id, r]));
+
+/* ---------- erratas da administração (mterrata.js, 10/10/2026) ----------
+   Questão ou cartão corrigido no painel chega com os campos novos (o original fica guardado no objeto e volta
+   se a errata for desfeita). Tirado do ar some só da EXIBIÇÃO: E.questoes/E.cartoes não perdem nada e o
+   progresso dele (resp, srs, fav, sinal) fica guardado como está. A chave é o id do item (hash do conteúdo
+   ORIGINAL, vindo do banco), o mesmo que a bandeira de sinalizar manda. Todos os campos são desenhados com esc(). */
+const CAMPOS_Q = {enunciado: "e", alternativas: "a", porAlt: "p", gabarito: "g", comentario: "c"};
+const CAMPOS_C = {enunciado: "f", verso: "v"};
+function aplicaErratas(m, er) {
+  if (window.MTErrata) {
+    E.questoes.forEach(q => MTErrata.aplicaCampos(q, m.get(q.id), CAMPOS_Q));
+    E.cartoes.forEach(c => MTErrata.aplicaCampos(c, m.get(c.id), CAMPOS_C));
+  }
+  QVIS.splice(0, QVIS.length, ...E.questoes.filter(q => !er.oculta(q.id)));
+  CVIS.splice(0, CVIS.length, ...E.cartoes.filter(c => !er.oculta(c.id)));
+  [CPL, QPL, QPA].forEach(o => Object.keys(o).forEach(k => delete o[k]));
+  CVIS.forEach(c => (CPL[c.l] ||= []).push(c));
+  QVIS.forEach(q => { (QPL[q.l] ||= []).push(q); const a = LEIT[q.l]?.area; if (a) QPA[a] = (QPA[a] || 0) + 1; });
+}
+const ER_NULO = {oculta: () => false, corrigida: () => null, gabaritoMudou: () => false, selo: () => ""};
+const ER = window.MTErrata ? MTErrata.cria({app: "farmauti", nome: "FarmaUTI",
+  token: () => window.MTS && MTS.usuario ? MTS.usuario.getIdToken() : null,
+  aplica: aplicaErratas,
+  /* lista nova da rede: redesenha a tela, menos no meio de uma resposta, sessão de cartões ou simulado */
+  depois: () => {
+    QS.assin = "";   /* a lista do treino é refeita na próxima pintura (a ordem gravada continua valendo) */
+    if (!window.__fuPronto) return;
+    contadores();
+    if (["inicio", "cronograma", "desempenho", "leituras"].includes(abaAtual) && !(abaAtual === "leituras" && paramAtual)) return rota();
+    if (abaAtual === "cartoes" && !SES) return rota();
+    if (abaAtual === "questoes" && !paramAtual && !QS.resp) return rota();
+  },
+  abreQuestao: ch => abreSinalizada(ch)})
+  : (aplicaErratas(new Map(), ER_NULO), ER_NULO);
+/* anulada (gabarito -1): qualquer resposta vale, como numa prova */
+const certa = (q, a) => q.g < 0 || a === q.g;
+/* resposta antiga reavaliada pelo gabarito corrigido (h.a é o índice no banco); o histórico salvo não muda */
+const okH = (q, h) => !!h && (q && typeof h.a === "number" && ER.gabaritoMudou(q.id) ? certa(q, h.a) : !!h.ok);
+const LET = "ABCDEFGH";
 const FARM = Object.fromEntries(RF.farmacos.map(f => [f.id, f]));
 const BUL = Object.fromEntries(RF.bulario.map(b => [b.id, b]));
 const par = (a, b) => a < b ? a + "|" + b : b + "|" + a;
@@ -265,16 +303,16 @@ setInterval(() => {
 function ultimaResp(id) { const h = ST.resp[id]; return h && h.length ? h[h.length - 1] : null; }
 function estatQ(filtro = () => true) {
   let resp = 0, ok = 0, tent = 0, acTent = 0;
-  for (const q of E.questoes) {
+  for (const q of QVIS) {
     if (!filtro(q)) continue;
     const h = ST.resp[q.id]; if (!h || !h.length) continue;
-    resp++; if (h[h.length - 1].ok) ok++;
-    tent += h.length; acTent += h.filter(x => x.ok).length;
+    resp++; if (okH(q, h[h.length - 1])) ok++;
+    tent += h.length; acTent += h.filter(x => okH(q, x)).length;
   }
   return {resp, ok, tent, acTent, taxa: pct(acTent, tent)};
 }
 function estatArea(a) {
-  const qs = E.questoes.filter(q => LEIT[q.l]?.area === a);
+  const qs = QVIS.filter(q => LEIT[q.l]?.area === a);
   const e = estatQ(q => LEIT[q.l]?.area === a);
   const ls = E.leituras.filter(l => l.area === a);
   return {...e, total: qs.length, lidas: ls.filter(l => ST.lidas[l.slug]).length, nl: ls.length};
@@ -384,7 +422,7 @@ function pintaInicio() {
   const w = wi >= 0 ? pl.semanas[wi] : null;
   const eq = estatQ(), seq = sequencia();
   const lidas = Object.keys(ST.lidas).filter(k => LEIT[k]).length;
-  const dom = E.cartoes.filter(c => (ST.srs[c.id]?.i || 0) >= 21).length;
+  const dom = CVIS.filter(c => (ST.srs[c.id]?.i || 0) >= 21).length;
   const nome = ST.cfg.nome ? ", " + esc(ST.cfg.nome) : "";
   const kick = antes ? `<i class="ti ti-calendar"></i> O cronograma começa ${fmtDL(pl.ini)}` : w && difD(hoje, pl.fim) >= 0 ? `<i class="ti ti-calendar"></i> Semana ${w.n} de ${pl.semanas.length} · ${esc(w.tema)}` : `<i class="ti ti-flag"></i> Cronograma concluído`;
   const pendH = tHoje.filter(t => !feita(t));
@@ -634,10 +672,10 @@ function marcaLida(slug) {
 /* ======================================================================
    CARTÕES (repetição espaçada, variante do SM-2)
    ====================================================================== */
-function devidos() { const h = iso(); return Object.entries(ST.srs).filter(([id, s]) => CID[id] && s.d <= h).sort((a, b) => a[1].d < b[1].d ? -1 : 1).map(([id]) => CID[id]); }
+function devidos() { const h = iso(); return Object.entries(ST.srs).filter(([id, s]) => CID[id] && !ER.oculta(id) && s.d <= h).sort((a, b) => a[1].d < b[1].d ? -1 : 1).map(([id]) => CID[id]); }
 function novosLiberados() {
   const w = semanaLiberada();
-  return E.cartoes.filter(c => !ST.srs[c.id] && (ST.lidas[c.l] || (LEIT[c.l]?.sem || 99) <= w));
+  return CVIS.filter(c => !ST.srs[c.id] && (ST.lidas[c.l] || (LEIT[c.l]?.sem || 99) <= w));
 }
 function cotaNovos() { return Math.max(0, ST.cfg.novos - (ativ().cn || 0)); }
 function prever(c, nota) {
@@ -655,8 +693,8 @@ function pintaCartoes(slug) {
   if (slug && slug !== "sessao") { iniciaSessao(slug); return; }
   SES = null;
   const due = devidos(), nov = novosLiberados(), cota = cotaNovos();
-  const dom = E.cartoes.filter(c => (ST.srs[c.id]?.i || 0) >= 21).length, vistos = E.cartoes.filter(c => ST.srs[c.id]).length;
-  titulo("cards", "Cartões", `${E.cartoes.length} cartões com repetição espaçada: o app agenda cada um para o dia em que você está prestes a esquecer`);
+  const dom = CVIS.filter(c => (ST.srs[c.id]?.i || 0) >= 21).length, vistos = CVIS.filter(c => ST.srs[c.id]).length;
+  titulo("cards", "Cartões", `${CVIS.length} cartões com repetição espaçada: o app agenda cada um para o dia em que você está prestes a esquecer`);
   const s = $("#sec-cartoes");
   s.innerHTML = `<div class="painelCartoes anima">
      <div class="kpi" style="--k:var(--c-ambar)"><b data-conta="${due.length}">0</b><span>para revisar hoje</span></div>
@@ -698,7 +736,7 @@ function pintaSessao() {
   const notas = [[1, "Errei", "var(--c-vermelho)"], [2, "Difícil", "var(--c-laranja)"], [3, "Bom", "var(--c-verde)"], [4, "Fácil", "var(--c-azul)"]];
   s.innerHTML = `<h1 class="sr">Sessão de cartões</h1><div class="flash">
     <div class="flashTopo"><button class="bt sec mini" data-acao="sairSessao"><i class="ti ti-x"></i>Sair</button>
-      <span>${st ? "Revisão" : '<b style="color:var(--c-azul)">Novo</b>'} · ${SES.i + 1} de ${SES.fila.length}</span>
+      <span>${st ? "Revisão" : '<b style="color:var(--c-azul)">Novo</b>'} · ${SES.i + 1} de ${SES.fila.length}</span>${ER.selo(c.id)}
       <span class="barra" style="width:160px"><i style="width:${pct(SES.i, SES.fila.length)}%"></i></span><span class="cSinal"></span></div>
     <div class="carta${SES.virada ? " virada" : ""}" id="carta" style="--k:${corA(l.area)}" role="button" tabindex="0" aria-label="Virar cartão">
      <div class="in"><div class="face frente"><div class="rot"><i class="ti ti-${icA(l.area)}"></i>${esc(l.titulo)}</div><div class="conteudo">${esc(c.f)}</div><div class="dica">toque ou barra de espaço para ver a resposta</div></div>
@@ -740,13 +778,14 @@ const assinQ = () => JSON.stringify(QS.filtro) + QS.misturar;
 /* sinalizar erro (mtsinal.js, 26/09/2026): ST.sinal = {chave: item}; chave = id da questão/cartão (hash do conteúdo).
    Cada mudança também vai para a caixa central do Matheus (função mtSinal, app "farmauti"), com o token da conta. */
 const SINAL = window.MTSinal ? MTSinal.cria({app: "FarmaUTI", le: () => ST.sinal, grava: o => { ST.sinal = o; salva("sinal"); }, central: {app: "farmauti", token: () => window.MTS && MTS.usuario ? MTS.usuario.getIdToken() : null}, exemplo: "Ex.: a dose ou a interação descrita não procede, segundo… (se souber, diga a fonte e o ano)"}) : null;
-const letraGab = q => "ABCDE"[ordemAlts(q).indexOf(q.g)];
+const letraGab = q => q.g < 0 ? "anulada" : LET[ordemAlts(q).indexOf(q.g)];
 function bandeiraQ(el, q, rotulo) {
   if (!SINAL || !el || !q) return;
   const l = LEIT[q.l];
   SINAL.botao(el, {chave: q.id, q: q.e, tema: AREA[l?.area]?.nome || "", rotulo, extra: `leitura: ${l ? l.titulo : q.l} · gabarito: ${letraGab(q)}`});
 }
 function abreSinalizada(ch) {
+  if (ER.oculta(ch)) return aviso(CID[ch] ? "Esse cartão foi retirado do ar pela revisão." : "Essa questão foi retirada do ar pela revisão.");
   const q = QID[ch];
   if (q) { QS.filtro = {...FILTRO0, l: q.l}; QS.misturar = false; QS.alvo = ch; return ir("questoes"); }
   const c = CID[ch];
@@ -762,15 +801,15 @@ function restauraFiltroQ() {
   QS.filtro = normFiltro(f); QS.misturar = !!m;
   p.assin = assinQ(); /* mesma escolha, formato novo: a ordem e a posição gravadas continuam valendo */
 }
-const QPA = {}; E.questoes.forEach(q => { const a = LEIT[q.l]?.area; if (a) QPA[a] = (QPA[a] || 0) + 1; });
 const NIVEL = {basico: "Básico", intermediario: "Intermediário", avancado: "Avançado"};
+/* com 5 alternativas dá a mesma ordem de sempre; o tamanho genérico cobre errata que mude a quantidade */
 function ordemAlts(q) {
-  const o = [0, 1, 2, 3, 4]; let h = hash(q.id);
-  for (let i = 4; i > 0; i--) { h = Math.imul(h ^ (h >>> 15), 2246822507) >>> 0; const j = h % (i + 1); [o[i], o[j]] = [o[j], o[i]]; }
+  const n = q.a.length, o = [...Array(n).keys()]; let h = hash(q.id);
+  for (let i = n - 1; i > 0; i--) { h = Math.imul(h ^ (h >>> 15), 2246822507) >>> 0; const j = h % (i + 1); [o[i], o[j]] = [o[j], o[i]]; }
   return o;
 }
 function filtraQ(f) {
-  return E.questoes.filter(q => {
+  return QVIS.filter(q => {
     const l = LEIT[q.l]; if (!l) return false;
     if (f.areas && f.areas.length && !f.areas.includes(l.area)) return false;
     if (f.l && q.l !== f.l) return false;
@@ -779,7 +818,7 @@ function filtraQ(f) {
     if (f.sem && l.sem !== f.sem) return false;
     const u = ultimaResp(q.id);
     if (f.st === "nao" && u) return false;
-    if (f.st === "erradas" && (!u || u.ok)) return false;
+    if (f.st === "erradas" && (!u || okH(q, u))) return false;
     if (f.st === "fav" && !ST.fav[q.id]) return false;
     return true;
   });
@@ -792,16 +831,18 @@ function montaListaQ() {
   if (salvo && salvo.assin === assin) {
     const set = new Set(base.map(q => q.id));
     const ord = salvo.ordem.filter(id => set.has(id));
+    /* as tiradas do ar (errata) continuam na ordem gravada, no fim: se voltarem, voltam para a lista */
+    QS.guarda = salvo.ordem.filter(id => !set.has(id) && ER.oculta(id));
     const novos = base.filter(q => !ord.includes(q.id)).map(q => q.id);
     QS.lista = [...ord, ...novos]; QS.i = Math.min(salvo.i || 0, Math.max(0, QS.lista.length - 1));
   } else {
     QS.lista = (QS.misturar ? espalha(base, q => q.l) : base).map(q => q.id);
-    QS.i = 0;
+    QS.i = 0; QS.guarda = [];
   }
   QS.assin = assin; QS.resp = null;
   guardaPosQ();
 }
-const guardaPosQ = () => { ST.pos.q = {assin: QS.assin, ordem: QS.lista, i: QS.i, f: QS.filtro, m: QS.misturar}; salva("pos"); };
+const guardaPosQ = () => { ST.pos.q = {assin: QS.assin, ordem: [...QS.lista, ...(QS.guarda || [])], i: QS.i, f: QS.filtro, m: QS.misturar}; salva("pos"); };
 function pintaQuestoes(param) {
   if (param === "simulado") return pintaSimulado();
   if (SIM.ativo) { SIM.ativo = null; }
@@ -809,7 +850,7 @@ function pintaQuestoes(param) {
   if (QS.alvo) { const k = QS.lista.indexOf(QS.alvo); if (k >= 0) { QS.i = k; QS.resp = null; guardaPosQ(); } QS.alvo = null; }
   const f = QS.filtro;
   const eq = estatQ();
-  titulo("checklist", "Questões", `${E.questoes.length} questões comentadas alternativa por alternativa · ${eq.resp} respondidas · ${eq.taxa}% de acerto`,
+  titulo("checklist", "Questões", `${QVIS.length} questões comentadas alternativa por alternativa · ${eq.resp} respondidas · ${eq.taxa}% de acerto`,
     `<button class="bt mini" style="--ac:var(--c-laranja)" data-acao="abreSimulado"><i class="ti ti-stopwatch"></i>Simulado</button>`);
   const ls = E.leituras.filter(l => (!f.areas.length || f.areas.includes(l.area)) && (QPL[l.slug] || []).length);
   const extra = f.ate ? `<span class="chipF">Semanas 1 a ${f.ate}<button data-acao="limpaQ" data-k="ate" aria-label="Remover">×</button></span>` : f.sem ? `<span class="chipF">Semana ${f.sem}<button data-acao="limpaQ" data-k="sem" aria-label="Remover">×</button></span>` : "";
@@ -835,21 +876,21 @@ function pintaQuestao(anim) {
   const box = $("#qArea"); if (!box) return;
   if (!QS.lista.length) { box.innerHTML = `<div class="cx vazio"><i class="ti ti-filter-off"></i>Nenhuma questão com esse filtro.${QS.filtro.st === "erradas" ? " Caderno de erros vazio: bom sinal." : ""}</div>`; return; }
   const q = QID[QS.lista[QS.i]];
-  if (!q) { QS.lista.splice(QS.i, 1); return pintaQuestao(); }
+  if (!q || ER.oculta(q.id)) { if (q) (QS.guarda ||= []).push(q.id); QS.lista.splice(QS.i, 1); QS.i = Math.min(QS.i, Math.max(0, QS.lista.length - 1)); return pintaQuestao(); }
   const l = LEIT[q.l], ord = ordemAlts(q), r = QS.resp, u = ultimaResp(q.id);
   const alts = ord.map((oi, pos) => {
     let cls = "";
-    if (r) { if (oi === q.g) cls = " certa"; else if (oi === r.a) cls = " errada"; }
+    if (r) { if (oi === q.g) cls = " certa"; else if (oi === r.a) cls = r.ok ? " marcada" : " errada"; }
     const ex = r && q.p[oi] ? `<span class="expl">${esc(q.p[oi])}</span>` : "";
-    return `<button class="alt${cls}" data-alt="${oi}" ${r ? "disabled" : ""}><span class="let">${"ABCDE"[pos]}</span><span class="tx">${esc(q.a[oi])}${ex}</span></button>`;
+    return `<button class="alt${cls}" data-alt="${oi}" ${r ? "disabled" : ""}><span class="let">${LET[pos]}</span><span class="tx">${esc(q.a[oi])}${ex}</span></button>`;
   }).join("");
   box.innerHTML = `<div class="qCard${anim ? " entra" + (QS.dir < 0 ? " volta" : "") : ""}" style="--k:${corA(l.area)}">
     <div class="qTopo"><span class="qNum">Questão <b>${QS.i + 1}</b> de ${QS.lista.length}</span>
-     ${u && !r ? `<span class="pil ${u.ok ? "ok" : "er"}">última vez: ${u.ok ? "acertou" : "errou"}</span>` : ""}
+     ${u && !r ? `<span class="pil ${okH(q, u) ? "ok" : "er"}">última vez: ${okH(q, u) ? "acertou" : "errou"}</span>` : ""}
      ${QS.combo >= 3 && r?.ok ? `<span class="qCombo"><i class="ti ti-flame"></i>${QS.combo} seguidas</span>` : ""}
-     <span class="qSinal"></span><button class="btMarca${ST.fav[q.id] ? " on" : ""}" data-acao="fav" data-q="${q.id}" aria-label="Marcar para revisar" title="Marcar"><i class="ti ti-star${ST.fav[q.id] ? "-filled" : ""}"></i></button></div>
+     ${ER.selo(q.id)}<span class="qSinal"></span><button class="btMarca${ST.fav[q.id] ? " on" : ""}" data-acao="fav" data-q="${q.id}" aria-label="Marcar para revisar" title="Marcar"><i class="ti ti-star${ST.fav[q.id] ? "-filled" : ""}"></i></button></div>
     <p class="enun">${esc(q.e)}</p><div class="alts">${alts}</div>
-    ${r ? `<div class="coment ${r.ok ? "ok" : "er"}"><div class="cab"><i class="ti ti-${r.ok ? "circle-check" : "circle-x"}"></i>${r.ok ? "Resposta certa" : "Resposta errada: a correta é a " + "ABCDE"[ord.indexOf(q.g)]}
+    ${r ? `<div class="coment ${r.ok ? "ok" : "er"}"><div class="cab"><i class="ti ti-${r.ok ? "circle-check" : "circle-x"}"></i>${q.g < 0 ? "Questão anulada pela revisão: qualquer resposta vale" : r.ok ? "Resposta certa" : "Resposta errada: a correta é a " + LET[ord.indexOf(q.g)]}
        <span class="pil cor" style="--k:${corA(l.area)}">${esc(AREA[l.area].nome)}</span><span class="pil">${NIVEL[q.n] || q.n}</span></div>
        <div>${esc(q.c)}</div><div class="base"><i class="ti ti-book"></i> ${esc(q.b)} · revisar o básico: <a href="#leituras/${q.l}">${esc(l.titulo)}</a></div></div>` : ""}
     <div class="qPe"><button class="bt sec" data-acao="qNav" data-d="-1" ${QS.i ? "" : "disabled"}><i class="ti ti-arrow-left"></i>Anterior</button>
@@ -859,7 +900,7 @@ function pintaQuestao(anim) {
 }
 function responde(oi) {
   if (QS.resp) return;
-  const q = QID[QS.lista[QS.i]]; const ok = oi === q.g;
+  const q = QID[QS.lista[QS.i]]; const ok = certa(q, oi);
   (ST.resp[q.id] ||= []).push({t: Date.now(), a: oi, ok}); salva("resp");
   const a = ativ(); a.q = (a.q || 0) + 1; if (ok) a.qa = (a.qa || 0) + 1; salva("ativ");
   QS.combo = ok ? QS.combo + 1 : 0;
@@ -910,9 +951,9 @@ function pintaSimulado() {
 }
 function poolSim(c = SIM.cfg) {
   const w = semanaLiberada(), ars = listaAreas(c.areas ?? c.area);
-  return E.questoes.filter(q => { const l = LEIT[q.l]; if (!l) return false; if (ars.length && !ars.includes(l.area)) return false;
+  return QVIS.filter(q => { const l = LEIT[q.l]; if (!l) return false; if (ars.length && !ars.includes(l.area)) return false;
     if (c.escopo === "liberadas" && l.sem > w && !ST.lidas[q.l]) return false;
-    if (c.escopo === "erradas") { const u = ultimaResp(q.id); if (!u || u.ok) return false; }
+    if (c.escopo === "erradas") { const u = ultimaResp(q.id); if (!u || okH(q, u)) return false; }
     return true; });
 }
 function comecaSim() {
@@ -927,7 +968,7 @@ function pintaQuestaoSim() {
   titulo("stopwatch", "Simulado em andamento", `Questão ${A.i + 1} de ${A.ids.length} · <span id="relogio"></span>`,
     `<button class="bt mini" style="--ac:var(--c-laranja)" data-acao="fimSim"><i class="ti ti-flag"></i>Entregar</button>`);
   $("#sec-questoes").innerHTML = `<div class="qWrap"><div class="qCard" style="--ac:var(--c-laranja)">
-    <p class="enun">${esc(q.e)}</p><div class="alts">${ord.map((oi, pos) => `<button class="alt${A.resp[q.id] === oi ? " marcada" : ""}" data-simalt="${oi}"><span class="let">${"ABCDE"[pos]}</span><span class="tx">${esc(q.a[oi])}</span></button>`).join("")}</div>
+    ${ER.selo(q.id) ? `<p style="margin:0 0 6px">${ER.selo(q.id)}</p>` : ""}<p class="enun">${esc(q.e)}</p><div class="alts">${ord.map((oi, pos) => `<button class="alt${A.resp[q.id] === oi ? " marcada" : ""}" data-simalt="${oi}"><span class="let">${LET[pos]}</span><span class="tx">${esc(q.a[oi])}</span></button>`).join("")}</div>
     <div class="qPe"><button class="bt sec" data-acao="simNav" data-d="-1" ${A.i ? "" : "disabled"}><i class="ti ti-arrow-left"></i>Anterior</button>
      <button class="bt" style="--ac:var(--c-laranja)" data-acao="simNav" data-d="1">${A.i < A.ids.length - 1 ? 'Próxima<i class="ti ti-arrow-right"></i>' : 'Entregar<i class="ti ti-flag"></i>'}</button></div></div>
    <div class="cx" style="margin-top:16px"><div class="chips">${A.ids.map((id, k) => `<button class="chip" data-simir="${k}" aria-pressed="${k === A.i}" style="min-width:44px;justify-content:center${A.resp[id] != null && k !== A.i ? ";background:var(--acSup);border-color:transparent" : ""}">${k + 1}</button>`).join("")}</div></div></div>`;
@@ -943,7 +984,7 @@ function fimSim() {
   A.fim = Date.now();
   let ok = 0; const porArea = {};
   for (const id of A.ids) {
-    const q = QID[id], a = A.resp[id], certo = a === q.g, ar = LEIT[q.l].area;
+    const q = QID[id], a = A.resp[id], certo = a != null && certa(q, a), ar = LEIT[q.l].area;
     porArea[ar] ||= [0, 0]; porArea[ar][1]++;
     if (a != null) { (ST.resp[id] ||= []).push({t: A.fim, a, ok: certo, sim: 1}); }
     if (certo) { ok++; porArea[ar][0]++; }
@@ -963,9 +1004,9 @@ function pintaResultadoSim() {
     <div class="cx" style="display:flex;gap:22px;align-items:center"><div class="vAnel" style="width:130px;height:130px">${anel(p / 100, 130, "var(--c-laranja)", "var(--sup3)", 12)}<div class="val"><b data-conta="${p}" data-suf="%" style="color:var(--c-laranja)">0</b><span class="sub">acerto</span></div></div>
      <div><h3 style="margin-bottom:6px">${p >= 80 ? "Excelente" : p >= 65 ? "Bom resultado" : p >= 50 ? "No caminho" : "Vale revisar a base"}</h3><p class="sub">As erradas entraram no caderno de erros. Revise pelo gabarito abaixo, com o comentário de cada alternativa.</p></div></div>
     <div class="cx"><h3><i class="ti ti-chart-bar"></i>Por área</h3>${Object.entries(A.porArea).map(([ar, [o, n]]) => `<div class="vArea" style="--k:${corA(ar)};cursor:default"><span class="dot"><i class="ti ti-${icA(ar)}"></i></span><div><div class="nm">${esc(AREA[ar].nome)}</div><div class="barra"><i data-w="${pct(o, n)}"></i></div></div><span class="tx">${o}/${n}</span></div>`).join("")}</div></div>
-   <div class="cx" style="max-width:980px;margin-top:16px"><h3><i class="ti ti-list-check"></i>Gabarito</h3>${A.ids.map((id, k) => { const q = QID[id], ord = ordemAlts(q), a = A.resp[id], ok = a === q.g;
-     return `<details class="inter" style="--k:${ok ? "var(--ok)" : "var(--err)"}"><summary><span class="gv"><i class="ti ti-${ok ? "check" : "x"}"></i></span><div><div class="par">Questão ${k + 1}</div><div class="ef">${esc(q.e.slice(0, 140))}${q.e.length > 140 ? "…" : ""}</div></div><i class="ti ti-chevron-down"></i></summary>
-       <div class="corpo"><p>${esc(q.e)}</p>${ord.map((oi, pos) => `<p style="${oi === q.g ? "color:var(--ok);font-weight:650" : oi === a ? "color:var(--err)" : ""}">${"ABCDE"[pos]}) ${esc(q.a[oi])}${q.p[oi] ? `<br><span class="sub">${esc(q.p[oi])}</span>` : ""}</p>`).join("")}
+   <div class="cx" style="max-width:980px;margin-top:16px"><h3><i class="ti ti-list-check"></i>Gabarito</h3>${A.ids.map((id, k) => { const q = QID[id], ord = ordemAlts(q), a = A.resp[id], ok = a != null && certa(q, a);
+     return `<details class="inter" style="--k:${ok ? "var(--ok)" : "var(--err)"}"><summary><span class="gv"><i class="ti ti-${ok ? "check" : "x"}"></i></span><div><div class="par">Questão ${k + 1} ${ER.selo(id)}</div><div class="ef">${esc(q.e.slice(0, 140))}${q.e.length > 140 ? "…" : ""}</div></div><i class="ti ti-chevron-down"></i></summary>
+       <div class="corpo">${q.g < 0 ? `<p class="sub">Questão anulada pela revisão: qualquer resposta vale.</p>` : ""}<p>${esc(q.e)}</p>${ord.map((oi, pos) => `<p style="${oi === q.g ? "color:var(--ok);font-weight:650" : oi === a && !ok ? "color:var(--err)" : ""}">${LET[pos]}) ${esc(q.a[oi])}${q.p[oi] ? `<br><span class="sub">${esc(q.p[oi])}</span>` : ""}</p>`).join("")}
        <p><b>Comentário.</b> ${esc(q.c)}</p><p class="sub">${esc(q.b)} · <a href="#leituras/${q.l}">${esc(LEIT[q.l].titulo)}</a></p><span class="simSinal" data-q="${id}"></span></div></details>`; }).join("")}
     <div class="linhaBt" style="margin-top:16px"><button class="bt" style="--ac:var(--c-laranja)" data-acao="novoSim">Novo simulado</button><button class="bt sec" data-acao="sairSim">Voltar ao treino</button></div></div>`;
   $$(".simSinal", s).forEach(el => bandeiraQ(el, QID[el.dataset.q], "Sinalizar erro"));
@@ -1580,7 +1621,7 @@ function pintaDesempenho() {
   const eq = estatQ(), hoje = iso();
   const dias = Object.keys(ST.ativ).filter(estudou).length;
   const min = Object.values(ST.ativ).reduce((s, a) => s + (a.min || 0), 0);
-  const vistos = E.cartoes.filter(c => ST.srs[c.id]).length, dom = E.cartoes.filter(c => (ST.srs[c.id]?.i || 0) >= 21).length;
+  const vistos = CVIS.filter(c => ST.srs[c.id]).length, dom = CVIS.filter(c => (ST.srs[c.id]?.i || 0) >= 21).length;
   const lidas = Object.keys(ST.lidas).filter(k => LEIT[k]).length;
   titulo("chart-dots-3", "Desempenho", `Seu progresso desde o início · ${dias} ${dias === 1 ? "dia" : "dias"} de estudo · ${Math.floor(min / 60)} h ${min % 60} min`);
   const s = $("#sec-desempenho");
@@ -1614,7 +1655,7 @@ function pintaDesempenho() {
   const fracas = E.leituras.map(l => ({l, e: estatQ(q => q.l === l.slug)})).filter(x => x.e.tent >= 3).sort((a, b) => a.e.taxa - b.e.taxa).slice(0, 6);
   const niveis = Object.keys(NIVEL).map(n => ({n, e: estatQ(q => q.n === n)}));
   const est = {novo: 0, aprend: 0, jovem: 0, maduro: 0};
-  E.cartoes.forEach(c => { const x = ST.srs[c.id]; if (!x) est.novo++; else if (x.i < 3) est.aprend++; else if (x.i < 21) est.jovem++; else est.maduro++; });
+  CVIS.forEach(c => { const x = ST.srs[c.id]; if (!x) est.novo++; else if (x.i < 3) est.aprend++; else if (x.i < 21) est.jovem++; else est.maduro++; });
   const sims = ST.sims || [];
   s.innerHTML = `<div class="kpis anima">
      <div class="kpi" style="--k:var(--c-azul)"><b data-conta="${eq.taxa}" data-suf="%">0</b><span>acerto em ${eq.tent} respostas</span></div>
@@ -1630,7 +1671,7 @@ function pintaDesempenho() {
     <div class="grade" style="align-content:start">
      <div class="cx"><h3><i class="ti ti-alert-triangle"></i>Leituras com mais erros</h3>${fracas.length ? fracas.map(({l, e}) => `<div class="tarefa" style="--k:${corA(l.area)}"><span class="chk" style="border:0;background:color-mix(in srgb,var(--k) 14%,var(--sup));color:var(--k);font-size:11px;font-weight:800">${e.taxa}%</span><div><div class="tt">${esc(l.titulo)}</div><div class="ds">${e.acTent}/${e.tent} acertos</div></div><button class="ir" data-acao="qLeitura" data-s="${l.slug}" aria-label="Treinar"><i class="ti ti-player-play"></i></button></div>`).join("") : '<p class="sub">Aparece depois de 3 respostas numa mesma leitura.</p>'}</div>
      <div class="cx"><h3><i class="ti ti-stairs"></i>Por nível</h3>${niveis.map(({n, e}) => `<div class="metaItem" style="--k:var(--c-azul)"><span class="ic"><i class="ti ti-stairs-up"></i></span><div><b>${NIVEL[n]}</b><div class="barra"><i data-w="${e.taxa}"></i></div></div><em>${e.tent ? e.taxa + "%" : "–"}</em></div>`).join("")}</div>
-     <div class="cx"><h3><i class="ti ti-cards"></i>Cartões</h3>${[["novo", "Nunca vistos", "var(--ink3)"], ["aprend", "Aprendendo (menos de 3 dias)", "var(--c-laranja)"], ["jovem", "Jovens (3 a 20 dias)", "var(--c-ambar)"], ["maduro", "Maduros (21 dias ou mais)", "var(--c-verde)"]].map(([k, nm, cor]) => `<div class="metaItem" style="--k:${cor}"><span class="ic"><i class="ti ti-cards"></i></span><div><b>${nm}</b><div class="barra"><i data-w="${pct(est[k], E.cartoes.length)}"></i></div></div><em>${est[k]}</em></div>`).join("")}</div>
+     <div class="cx"><h3><i class="ti ti-cards"></i>Cartões</h3>${[["novo", "Nunca vistos", "var(--ink3)"], ["aprend", "Aprendendo (menos de 3 dias)", "var(--c-laranja)"], ["jovem", "Jovens (3 a 20 dias)", "var(--c-ambar)"], ["maduro", "Maduros (21 dias ou mais)", "var(--c-verde)"]].map(([k, nm, cor]) => `<div class="metaItem" style="--k:${cor}"><span class="ic"><i class="ti ti-cards"></i></span><div><b>${nm}</b><div class="barra"><i data-w="${pct(est[k], CVIS.length)}"></i></div></div><em>${est[k]}</em></div>`).join("")}</div>
      ${(() => { const r = estatRx(); if (!r.n) return ""; const perd = Object.entries(r.perd).sort((a, b) => b[1] - a[1]).slice(0, 4);
        return `<div class="cx"><h3><i class="ti ti-prescription"></i>Prescrições</h3>${[["Nota média", r.media, "var(--c-lima)"], ["Problemas encontrados", r.sens, "var(--c-verde)"]].map(([nm, v, cor]) => `<div class="metaItem" style="--k:${cor}"><span class="ic"><i class="ti ti-prescription"></i></span><div><b>${nm}</b><div class="barra"><i data-w="${v}"></i></div></div><em>${v}%</em></div>`).join("")}
         <p class="sub" style="margin:12px 0 4px">${r.n} avaliadas · ${num(r.fpPor, 1)} falso alarme por prescrição${perd.length ? " · o que mais escapa: " + perd.map(([t, n]) => `${TIPO_RX[t].toLowerCase()} (${n})`).join(", ") : ""}</p></div>`; })()}
@@ -1670,7 +1711,7 @@ function pintaAjustes() {
      <div class="linhaBt">${promptInstalar && !standalone ? `<button class="bt" data-acao="instalar"><i class="ti ti-download"></i>Instalar o FarmaUTI</button>` : ""}<button class="bt sec" data-acao="offline"><i class="ti ti-cloud-download"></i>Baixar as leituras para usar sem internet</button></div><p class="sub" id="offMsg"></p></div>
    <div class="cx" id="contaCartao"><h3><i class="ti ti-user-circle"></i>Conta</h3><p class="sub" style="margin-top:-4px">Abrindo sua conta…</p></div>
    <div class="cx"><h3><i class="ti ti-info-circle"></i>Sobre o conteúdo</h3>
-     <p class="sub" style="margin-top:-4px;line-height:1.6">${E.leituras.filter(l => l.ok).length} leituras, ${E.cartoes.length} cartões, ${E.questoes.length} questões, ${E.casos.length} casos, ${RF.bulario.length} fichas e ${RF.interacoes.length} pares de interação, escritos a partir de diretrizes com fonte e ano citados em cada texto. É material de estudo: não substitui a bula vigente, as bases de interação nem os protocolos da instituição. Versão ${VERSAO}.</p></div>
+     <p class="sub" style="margin-top:-4px;line-height:1.6">${E.leituras.filter(l => l.ok).length} leituras, ${CVIS.length} cartões, ${QVIS.length} questões, ${E.casos.length} casos, ${RF.bulario.length} fichas e ${RF.interacoes.length} pares de interação, escritos a partir de diretrizes com fonte e ano citados em cada texto. É material de estudo: não substitui a bula vigente, as bases de interação nem os protocolos da instituição. Versão ${VERSAO}.</p></div>
   </div>`;
   if (window.FUCONTA) FUCONTA.renderCartao($("#contaCartao"));
 }
@@ -1713,7 +1754,7 @@ function abreBusca() {
       ["Casos clínicos", E.casos.map(c => ({p: Math.max(pont(c.titulo), pont(c.resumo)), k: "var(--c-rosa)", ic: "clipboard-heart", t: c.titulo, s: c.resumo, h: "#casos/" + c.id}))],
       ["Prescrições", E.prescricoes.map(r => ({p: Math.max(pont(r.titulo), pont(r.setor), pont(r.itens.map(i => i.texto).join(" ")) > 0 ? 1 : -1), k: "var(--c-lima)", ic: "prescription", t: r.titulo, s: `${r.setor} · semana ${r.sem}`, h: "#prescricoes/" + r.id}))],
       ["Calculadoras", CALCS.map(c => ({p: Math.max(pont(c.nm) * 2, pont(c.ds)), k: c.k, ic: c.ic, t: c.nm, s: c.ds, h: "#calculadoras/" + c.id}))],
-      ["Cartões", E.cartoes.map(c => ({p: pont(c.f), k: "var(--c-ambar)", ic: "cards", t: c.f, s: LEIT[c.l]?.titulo, h: "#leituras/" + c.l}))]
+      ["Cartões", CVIS.map(c => ({p: pont(c.f), k: "var(--c-ambar)", ic: "cards", t: c.f, s: LEIT[c.l]?.titulo, h: "#leituras/" + c.l}))]
     ];
     let h = "", tot = 0;
     for (const [nm, it] of grupos) {
@@ -1833,14 +1874,14 @@ document.addEventListener("keydown", e => {
     if (/^[1-4]$/.test(e.key)) return avalia(+e.key);
   }
   if (abaAtual === "questoes" && !paramAtual && QS.lista.length) {
-    const k = e.key.toUpperCase(); const pos = "ABCDE".indexOf(k) >= 0 ? "ABCDE".indexOf(k) : "12345".indexOf(e.key);
-    if (pos >= 0 && !QS.resp) { const q = QID[QS.lista[QS.i]]; return responde(ordemAlts(q)[pos]); }
+    const k = e.key.toUpperCase(); const pos = /^[A-H]$/.test(k) ? LET.indexOf(k) : "12345678".indexOf(e.key);
+    if (pos >= 0 && !QS.resp) { const o = ordemAlts(QID[QS.lista[QS.i]]); if (pos < o.length) return responde(o[pos]); }
     if (e.key === "ArrowRight") return navQ(1);
     if (e.key === "ArrowLeft") return navQ(-1);
   }
   if (abaAtual === "questoes" && paramAtual === "simulado" && SIM.ativo && !SIM.ativo.fim) {
-    const k = e.key.toUpperCase(), pos = "ABCDE".indexOf(k);
-    if (pos >= 0) { const id = SIM.ativo.ids[SIM.ativo.i]; SIM.ativo.resp[id] = ordemAlts(QID[id])[pos]; return pintaQuestaoSim(); }
+    const k = e.key.toUpperCase(), pos = /^[A-H]$/.test(k) ? LET.indexOf(k) : -1;
+    if (pos >= 0) { const id = SIM.ativo.ids[SIM.ativo.i], o = ordemAlts(QID[id]); if (pos < o.length) { SIM.ativo.resp[id] = o[pos]; return pintaQuestaoSim(); } }
     if (e.key === "ArrowRight" && SIM.ativo.i < SIM.ativo.ids.length - 1) { SIM.ativo.i++; return pintaQuestaoSim(); }
     if (e.key === "ArrowLeft" && SIM.ativo.i > 0) { SIM.ativo.i--; return pintaQuestaoSim(); }
   }
@@ -1865,7 +1906,7 @@ const PINTA = {
   rota();
   if ("serviceWorker" in navigator && location.protocol === "https:") navigator.serviceWorker.register("sw.js").catch(() => {});
   /* ganchos para conta-farmauti.js (e para os testes por DOM) */
-  window.__fu = {ST, E, RF, plano, ir, analisaInt, CALCULA, QS, SINAL, PADRAO, CHAVES, PREF, salva, rota, contadores, aplicaTema, aplicaFonte,
+  window.__fu = {ST, E, RF, ER, QVIS, CVIS, QID, CID, okH, plano, ir, analisaInt, CALCULA, QS, SINAL, PADRAO, CHAVES, PREF, salva, rota, contadores, aplicaTema, aplicaFonte,
     restaurou, corrompidas: [...CORROMPIDAS], get abaAtual() { return abaAtual; }, get paramAtual() { return paramAtual; }, get emSessao() { return !!(SES || SIM.ativo); }};
   window.__fuPronto = true; window.dispatchEvent(new Event("fu-pronto"));
 })();
