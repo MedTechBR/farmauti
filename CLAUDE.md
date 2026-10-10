@@ -8,9 +8,10 @@ farmácia clínica e ao acompanhamento farmacoterapêutico. Pediu também cronog
 (28/09/2026) até março, painel de desempenho e meta diária, e "layout semelhante ao do ClínicaMed
 (colorido, ícones arredondados e interativos)".
 
-Público de farmácia: **fica fora dos portais e da vitrine do MedTech** (regra de
-`reference_linhas_de_produto` e `feedback_publicos_e_layout_pwa`). Sem login MedTech, sem trocador do
-ecossistema, sem selo MedTech. Repo `MedTechBR/farmauti`, no ar em `medtechbr.com.br/farmauti/`.
+Público de farmácia. **Desde 10/10/2026 é vendido no MedTech** (produto `farmauti` do `planos.json`, linha
+provas, R$ 49,90/mês ou R$ 397/ano) e **só abre com conta MedTech** (ver "Conta e venda"). Continua sem
+trocador de apps do ecossistema e sem links para apps de médicos (público diferente). Repo
+`MedTechBR/farmauti`, no ar em `medtechbr.com.br/farmauti/`.
 
 ## Arquitetura (sem framework, sem build)
 - `index.html` (casca) + `app.css` + `app.js`. Roteamento por hash (`#leituras/<slug>`, `#casos/<id>`,
@@ -24,7 +25,7 @@ ecossistema, sem selo MedTech. Repo `MedTechBR/farmauti`, no ar em `medtechbr.co
 - Ids de cartão/questão = hash do CONTEÚDO (leitura + texto), nunca posição.
 - Progresso: `localStorage` com prefixo `fu_` + espelho em IndexedDB (`farmauti/s/estado`) restaurado
   se o localStorage vier vazio; texto corrompido é guardado em `fu_<chave>_corrompido` antes de voltar
-  ao padrão; exportar/importar backup em Ajustes. Sem nuvem por enquanto (ver Pendências).
+  ao padrão. Desde 10/10/2026 também na conta MedTech (ver "Conta e venda"); o backup por arquivo saiu.
 - PWA: `sw.js` com três baldes (`fu-vN` casca, `fu-leituras-v1`, `fu-ext-v1`), HTML rede-primeiro,
   estáticos em stale-while-revalidate. **Antes de todo commit: `python3 bump.py`** (sobe `CACHE`, `V` e
   os `?v=` do index juntos).
@@ -118,7 +119,29 @@ TODAS; (3) prescrições "mais interativas, layout mais bonito, mais completas".
   Os campos novos foram acrescentados SEM mexer em itens (progresso gravado por posição).
 - Divergências entre leituras e bulário encontradas pelos agentes e corrigidas: `docs/PENDENCIAS_01-10.md`.
 
+## Conta e venda (10/10/2026)
+- `mtsync.js` = cópia SEM mudança de `~/Documents/Claude/_mtsync/mtsync.js`, síncrono no `<head>` (portão de login
+  antes do primeiro pixel). `conta-farmauti.js` = adaptador (desenho do `conta-estudo.js`): espera o evento
+  `fu-pronto` do app (ganchos em `window.__fu`), nuvem em `users/{uid}/apps/farmauti/sync`. `/_mtacesso.js?v=8`
+  (do site) faz CPF e paywall: `MTAcesso.verificar({appId: "farmauti"})`. SDK do Firebase vem de
+  `/vendor/firebase/` do site. Os três + `_mtacesso.js` estão no precache do `sw.js`; `/planos.json` é rede primeiro.
+  `bump.py` não mexe em `?v=` de caminho absoluto (o `_mtacesso.js?v=8` tem versão própria).
+- Coleções: `mapa` por item para lidas, prog, notas, resp, fav, srs, tarefas, casos, presc, revs, sinal (dois
+  aparelhos se unem item a item; no mesmo item a nuvem vence no primeiro login); `lista` sims (id = ts); `soma`
+  ativ (o adaptador converte `{dia: {q, qa, c, cn, min, l, rx}}` em `"dia|campo": n`; `seg` e `meta` ficam no
+  aparelho); `doc` cfg. Fora: pos, recentes, tema, fu_mts*, fu_*_corrompido.
+- **Regra do dono: nada do progresso no aparelho é apagado por causa da conta.** Primeiro login: cópia crua de
+  todas as chaves `fu_*` (+ espelho) no IndexedDB `farmauti-reserva`, chave `antes-da-conta` (imutável, conferida
+  lendo de volta). `limparLocal` (Sair da conta e troca de conta) NÃO apaga: grava `saida-<uid>-<momento>` na
+  reserva e guarda o estado do motor em `fu_mtsr:<uid>` (a mesma conta, ao voltar, continua sem somar de novo
+  as contagens). **Consequência aceita: outra conta que entrar no mesmo aparelho recebe esse progresso.**
+  O adaptador nunca grava vazio por cima de chave com itens; chave corrompida ou vazia aqui com a nuvem cheia
+  não sobe exclusões (a base do motor dela é zerada e a nuvem a devolve). "Apagar todo o progresso" saiu.
+- Primeiro login do aparelho: as contagens de `ativ` entram somadas às da conta (`somaIni` gravado antes de o motor
+  nascer), salvo se o estado veio do espelho IndexedDB.
+- Sinalizações vão à caixa central com o token da conta. Teste: cópia fora do repo com `fake-firebase.js`
+  (ver `_mtsync/README.md`) e um script que dá `getIdTokenResult` ao usuário falso (`__fakeMt`).
+
 ## Pendências e ideias
-- Sincronizar o progresso numa conta (hoje só aparelho + backup por arquivo).
 - Notificação diária de lembrete (precisa de push/servidor).
 - Revisão humana por amostragem das doses do bulário e dos gabaritos dos casos.

@@ -1,7 +1,8 @@
 /* FarmaUTI — app de preparação para a residência em Farmácia em Terapia Intensiva.
    Single-page sem framework. Dados em dados/estudo.js e dados/referencia.js (gerados por monta.py);
    leituras em conteudo/<slug>.html, buscadas sob demanda. Progresso no aparelho (localStorage com
-   espelho em IndexedDB) e backup por arquivo em Ajustes. */
+   espelho em IndexedDB) e na conta MedTech (desde 10/10/2026): mtsync.js + conta-farmauti.js sobem cada
+   gravação e trazem o que vem de outro aparelho. O app avisa que está pronto com o evento "fu-pronto". */
 "use strict";
 const E = window.FU_ESTUDO || {areas:[],leituras:[],semanas:[],cartoes:[],questoes:[],casos:[],prescricoes:[],indice:[],conteudo:"conteudo/",residencia:"2027-03-01"};
 const RF = window.FU_REF || {farmacos:[],bulario:[],interacoes:[]};
@@ -53,6 +54,7 @@ const PADRAO = {
 };
 const CHAVES = Object.keys(PADRAO);
 const ST = {};
+const CORROMPIDAS = new Set();   /* chaves cujo texto não abriu: a conta não as sobe vazias (conta-farmauti.js) */
 function carrega() {
   let algum = false;
   for (const k of CHAVES) {
@@ -63,6 +65,7 @@ function carrega() {
     catch (e) {
       /* não sobrescrever em silêncio: guarda o texto corrompido antes de voltar ao padrão */
       try { localStorage.setItem(PREF + k + "_corrompido", raw); } catch (e2) {}
+      CORROMPIDAS.add(k);
       ST[k] = clone(PADRAO[k]);
     }
   }
@@ -72,18 +75,24 @@ function carrega() {
 }
 function salva(k) {
   try { localStorage.setItem(PREF + k, JSON.stringify(ST[k])); }
-  catch (e) { aviso("Não foi possível gravar no aparelho. Exporte um backup em Ajustes."); }
+  catch (e) { aviso("Não foi possível gravar neste aparelho (armazenamento cheio). Com internet, o progresso continua indo para a sua conta."); }
   espelha();
+  try { if (window.FUCONTA) FUCONTA.aoSalvar(k); } catch (e) {}
 }
+/* cada uso abre e FECHA a conexão (não fica conexão pendurada entre abas) */
 function idb(cb) {
   try {
     const r = indexedDB.open("farmauti", 1);
     r.onupgradeneeded = () => r.result.createObjectStore("s");
-    r.onsuccess = () => cb(r.result);
+    r.onsuccess = () => { const db = r.result; try { cb(db); } finally { setTimeout(() => { try { db.close(); } catch (e) {} }, 0); } };
   } catch (e) {}
 }
 const espelha = debounce(() => idb(db => { try { db.transaction("s", "readwrite").objectStore("s").put(JSON.stringify(ST), "estado"); } catch (e) {} }), 1500);
 function restauraDoEspelho() {
+  /* teto de 4 s: IndexedDB travado não pode segurar a abertura do app (e o portão da conta espera o "fu-pronto") */
+  return Promise.race([new Promise(ok => setTimeout(() => ok(false), 4000)), restauraDoEspelho0()]);
+}
+function restauraDoEspelho0() {
   return new Promise(ok => idb(db => {
     try {
       const r = db.transaction("s").objectStore("s").get("estado");
@@ -536,7 +545,7 @@ async function abreLeitura(slug) {
        <button class="bt mini" style="--ac:var(--c-azul)" data-acao="qLeitura" data-s="${slug}" ${nq ? "" : "disabled"}><i class="ti ti-checklist"></i>${nq} questões</button>
        ${rx.length ? `<button class="bt mini" style="--ac:var(--c-lima)" data-ir-rx="${rx[0].id}"><i class="ti ti-prescription"></i>${rx.length} ${rx.length > 1 ? "prescrições" : "prescrição"}</button>` : ""}
        ${cs.length ? `<button class="bt mini" style="--ac:var(--c-rosa)" data-ir-k="${cs[0].id}"><i class="ti ti-clipboard-heart"></i>${cs.length} ${cs.length > 1 ? "casos" : "caso"}</button>` : ""}</div></div>
-     <div class="cx"><h3><i class="ti ti-notes"></i>Minhas anotações</h3><textarea id="notaL" aria-label="Minhas anotações" placeholder="Resumos, dúvidas para o preceptor, doses para decorar…">${esc(ST.notas[slug] || "")}</textarea><div class="sub" style="margin-top:6px">Ficam neste aparelho e entram no backup.</div></div>
+     <div class="cx"><h3><i class="ti ti-notes"></i>Minhas anotações</h3><textarea id="notaL" aria-label="Minhas anotações" placeholder="Resumos, dúvidas para o preceptor, doses para decorar…">${esc(ST.notas[slug] || "")}</textarea><div class="sub" style="margin-top:6px">Ficam salvas na sua conta.</div></div>
     </aside></div>`;
   $("#notaL").addEventListener("input", debounce(e => { if (e.target.value.trim()) ST.notas[slug] = e.target.value; else delete ST.notas[slug]; salva("notas"); }, 500));
   let html = "";
@@ -729,8 +738,8 @@ function normFiltro(f) {
 }
 const assinQ = () => JSON.stringify(QS.filtro) + QS.misturar;
 /* sinalizar erro (mtsinal.js, 26/09/2026): ST.sinal = {chave: item}; chave = id da questão/cartão (hash do conteúdo).
-   Cada mudança também vai para a caixa central do Matheus (função mtSinal, app "farmauti", sem conta: id do aparelho). */
-const SINAL = window.MTSinal ? MTSinal.cria({app: "FarmaUTI", le: () => ST.sinal, grava: o => { ST.sinal = o; salva("sinal"); }, central: {app: "farmauti"}, exemplo: "Ex.: a dose ou a interação descrita não procede, segundo… (se souber, diga a fonte e o ano)"}) : null;
+   Cada mudança também vai para a caixa central do Matheus (função mtSinal, app "farmauti"), com o token da conta. */
+const SINAL = window.MTSinal ? MTSinal.cria({app: "FarmaUTI", le: () => ST.sinal, grava: o => { ST.sinal = o; salva("sinal"); }, central: {app: "farmauti", token: () => window.MTS && MTS.usuario ? MTS.usuario.getIdToken() : null}, exemplo: "Ex.: a dose ou a interação descrita não procede, segundo… (se souber, diga a fonte e o ano)"}) : null;
 const letraGab = q => "ABCDE"[ordemAlts(q).indexOf(q.g)];
 function bandeiraQ(el, q, rotulo) {
   if (!SINAL || !el || !q) return;
@@ -999,7 +1008,7 @@ function pintaCaso(id) {
      ${(c.prescricao || []).map(p => `<tr><td><b>${esc(p.item)}</b></td><td>${esc(p.dose)}</td><td>${esc(p.via)}</td><td>${esc(p.freq)}</td><td class="sub">${esc(p.obs || "")}</td></tr>`).join("")}</table></div></div>
    <div class="cx"><h3><i class="ti ti-pencil"></i>Sua análise</h3><p class="sub" style="margin:-4px 0 10px">${esc(c.tarefa)} Escreva antes de abrir o gabarito: é o que treina o round.</p>
      <textarea id="casoTxt" aria-label="Sua análise do caso" style="min-height:160px" placeholder="Problema 1: …&#10;Intervenção: …">${esc(st.txt || "")}</textarea>
-     <div class="linhaBt" style="margin-top:12px">${st.rev ? "" : `<button class="bt" data-acao="revelaCaso" data-k="${id}"><i class="ti ti-eye"></i>Ver o gabarito</button>`}<span class="sub">Anotações ficam salvas neste aparelho.</span></div></div>
+     <div class="linhaBt" style="margin-top:12px">${st.rev ? "" : `<button class="bt" data-acao="revelaCaso" data-k="${id}"><i class="ti ti-eye"></i>Ver o gabarito</button>`}<span class="sub">Anotações ficam salvas na sua conta.</span></div></div>
    ${st.rev ? `<div class="cx"><h3><i class="ti ti-list-check"></i>Gabarito: ${c.gabarito.length} problemas</h3><p class="sub" style="margin:-4px 0 6px">Marque os que você tinha identificado. A nota do caso é a proporção marcada.</p>
      ${c.gabarito.map((g, k) => `<div class="prob${marc.has(k) ? " on" : ""}" data-acao="marcaProb" data-k="${id}" data-i="${k}" role="checkbox" aria-checked="${marc.has(k)}" tabindex="0"><span class="chk"><i class="ti ti-check"></i></span>
        <div><b>${esc(g.problema)}</b> <span class="pil ${g.prioridade === "alta" ? "er" : g.prioridade === "média" || g.prioridade === "media" ? "av" : ""}">prioridade ${esc(g.prioridade || "")}</span>
@@ -1640,8 +1649,7 @@ let promptInstalar = null;
 addEventListener("beforeinstallprompt", e => { e.preventDefault(); promptInstalar = e; if (abaAtual === "ajustes") rota(); });
 function pintaAjustes() {
   const c = ST.cfg, pl = plano();
-  titulo("settings", "Ajustes", "Metas, cronograma, aparência e seus dados");
-  const usados = (() => { try { let t = 0; for (let i = 0; i < localStorage.length; i++) { const k = localStorage.key(i); if (k.startsWith(PREF)) t += (localStorage.getItem(k) || "").length; } return t; } catch (e) { return 0; } })();
+  titulo("settings", "Ajustes", "Metas, cronograma, aparência e sua conta");
   const ios = /iphone|ipad|ipod/i.test(navigator.userAgent), standalone = matchMedia("(display-mode: standalone)").matches || navigator.standalone;
   $("#sec-ajustes").innerHTML = `<div class="grade g2">
    <div class="cx"><h3><i class="ti ti-target"></i>Meta diária</h3><div class="campos">
@@ -1660,14 +1668,11 @@ function pintaAjustes() {
    <div class="cx"><h3><i class="ti ti-device-mobile"></i>Instalar e usar sem internet</h3>
      <p class="sub" style="margin-top:-4px">${standalone ? "O app já está instalado neste aparelho." : ios ? "No iPhone: botão Compartilhar do Safari e depois “Adicionar à Tela de Início”." : "Instale para abrir como aplicativo, em tela cheia."}</p>
      <div class="linhaBt">${promptInstalar && !standalone ? `<button class="bt" data-acao="instalar"><i class="ti ti-download"></i>Instalar o FarmaUTI</button>` : ""}<button class="bt sec" data-acao="offline"><i class="ti ti-cloud-download"></i>Baixar as leituras para usar sem internet</button></div><p class="sub" id="offMsg"></p></div>
-   <div class="cx"><h3><i class="ti ti-database"></i>Seus dados</h3>
-     <p class="sub" style="margin-top:-4px">Tudo fica neste aparelho (${num(usados / 1024, 0)} KB), com uma cópia interna de segurança. Para trocar de aparelho ou não perder nada, exporte um backup de vez em quando.</p>
-     <div class="linhaBt"><button class="bt" data-acao="exporta"><i class="ti ti-file-export"></i>Exportar backup</button><label class="bt sec" style="cursor:pointer"><i class="ti ti-file-import"></i>Importar backup<input type="file" accept="application/json,.json" id="importa" hidden></label></div>
-     <div class="sep"></div><button class="bt perigo mini" data-acao="apaga"><i class="ti ti-trash"></i>Apagar todo o progresso</button></div>
+   <div class="cx" id="contaCartao"><h3><i class="ti ti-user-circle"></i>Conta</h3><p class="sub" style="margin-top:-4px">Abrindo sua conta…</p></div>
    <div class="cx"><h3><i class="ti ti-info-circle"></i>Sobre o conteúdo</h3>
      <p class="sub" style="margin-top:-4px;line-height:1.6">${E.leituras.filter(l => l.ok).length} leituras, ${E.cartoes.length} cartões, ${E.questoes.length} questões, ${E.casos.length} casos, ${RF.bulario.length} fichas e ${RF.interacoes.length} pares de interação, escritos a partir de diretrizes com fonte e ano citados em cada texto. É material de estudo: não substitui a bula vigente, as bases de interação nem os protocolos da instituição. Versão ${VERSAO}.</p></div>
   </div>`;
-  $("#importa").addEventListener("change", importa);
+  if (window.FUCONTA) FUCONTA.renderCartao($("#contaCartao"));
 }
 function mudaCfg(el) {
   const k = el.dataset.cfg; let v = el.value;
@@ -1682,27 +1687,6 @@ function mudaCfg(el) {
 }
 function aplicaTema() { const t = ST.tema; if (t === "claro" || t === "escuro") document.documentElement.dataset.tema = t; else delete document.documentElement.dataset.tema; }
 function aplicaFonte() { document.documentElement.style.setProperty("--fonteL", ST.cfg.fonte || 1); }
-function exporta() {
-  const d = {app: "farmauti", versao: VERSAO, data: new Date().toISOString(), estado: Object.fromEntries(CHAVES.map(k => [k, ST[k]]))};
-  const b = new Blob([JSON.stringify(d)], {type: "application/json"});
-  const a = document.createElement("a"); a.href = URL.createObjectURL(b); a.download = `farmauti-backup-${iso()}.json`; document.body.appendChild(a); a.click(); a.remove();
-  setTimeout(() => URL.revokeObjectURL(a.href), 2000);
-  aviso("Backup exportado.");
-}
-function importa(e) {
-  const f = e.target.files[0]; if (!f) return;
-  const r = new FileReader();
-  r.onload = () => {
-    try {
-      const d = JSON.parse(r.result);
-      if (d.app !== "farmauti" || !d.estado) throw new Error("arquivo não é um backup do FarmaUTI");
-      if (!confirm("Importar substitui o progresso deste aparelho pelo do arquivo. Continuar?")) return;
-      for (const k of CHAVES) if (d.estado[k] !== undefined) { ST[k] = d.estado[k]; salva(k); }
-      aviso("Backup importado."); setTimeout(() => location.reload(), 600);
-    } catch (err) { aviso("Não foi possível importar: " + err.message); }
-  };
-  r.readAsText(f);
-}
 async function baixaOffline() {
   const msg = $("#offMsg"), ls = E.leituras.filter(l => l.ok);
   let n = 0;
@@ -1830,8 +1814,6 @@ document.addEventListener("click", e => {
     case "verInt": INT.ids = [t.dataset.f]; ST.pos.int = INT.ids; salva("pos"); return ir("interacoes");
     case "instalar": if (promptInstalar) { promptInstalar.prompt(); promptInstalar.userChoice.finally(() => { promptInstalar = null; rota(); }); } return;
     case "offline": return baixaOffline();
-    case "exporta": return exporta();
-    case "apaga": if (prompt('Isto apaga todo o progresso deste aparelho. Para confirmar, digite APAGAR') === "APAGAR") { CHAVES.forEach(k => { try { localStorage.removeItem(PREF + k); } catch (e) {} }); idb(db => { try { db.transaction("s", "readwrite").objectStore("s").clear(); } catch (e) {} }); setTimeout(() => location.reload(), 300); } return;
   }
 });
 document.addEventListener("change", e => {
@@ -1873,7 +1855,8 @@ const PINTA = {
 };
 (async function inicia() {
   const tinha = carrega();
-  if (!tinha) { const ok = await restauraDoEspelho(); if (ok) setTimeout(() => aviso("Progresso restaurado da cópia interna de segurança."), 800); }
+  let restaurou = false;
+  if (!tinha) { restaurou = await restauraDoEspelho(); if (restaurou) setTimeout(() => aviso("Progresso restaurado da cópia interna de segurança."), 800); }
   aplicaTema(); aplicaFonte();
   restauraFiltroQ();
   montaNav();
@@ -1881,5 +1864,8 @@ const PINTA = {
   if (navigator.storage?.persist) navigator.storage.persist().catch(() => {});
   rota();
   if ("serviceWorker" in navigator && location.protocol === "https:") navigator.serviceWorker.register("sw.js").catch(() => {});
-  window.__fu = {ST, E, RF, plano, ir, analisaInt, CALCULA, QS, SINAL};
+  /* ganchos para conta-farmauti.js (e para os testes por DOM) */
+  window.__fu = {ST, E, RF, plano, ir, analisaInt, CALCULA, QS, SINAL, PADRAO, CHAVES, PREF, salva, rota, contadores, aplicaTema, aplicaFonte,
+    restaurou, corrompidas: [...CORROMPIDAS], get abaAtual() { return abaAtual; }, get paramAtual() { return paramAtual; }, get emSessao() { return !!(SES || SIM.ativo); }};
+  window.__fuPronto = true; window.dispatchEvent(new Event("fu-pronto"));
 })();

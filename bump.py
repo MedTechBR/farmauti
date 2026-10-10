@@ -9,6 +9,7 @@ sw = re.sub(r'const CACHE = "fu-v\d+"', f'const CACHE = "fu-v{n}"', sw)
 sw = re.sub(r'const V = "\d+"', f'const V = "{n}"', sw)
 open(os.path.join(R, "sw.js"), "w", encoding="utf-8").write(sw)
 ix = open(os.path.join(R, "index.html"), encoding="utf-8").read()
-ix = re.sub(r'\?v=\d+"', f'?v={n}"', ix)
+# só caminhos do próprio app: o /_mtacesso.js?v=8 é do site e tem versão própria
+ix = re.sub(r'((?:src|href)="(?!/|https?:)[^"?]*)\?v=\d+"', lambda m: f'{m.group(1)}?v={n}"', ix)
 open(os.path.join(R, "index.html"), "w", encoding="utf-8").write(ix)
 print(f"versão {n}")
