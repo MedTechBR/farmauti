@@ -155,3 +155,12 @@ TODAS; (3) prescrições "mais interativas, layout mais bonito, mais completas".
 ## Pendências e ideias
 - Notificação diária de lembrete (precisa de push/servidor).
 - Revisão humana por amostragem das doses do bulário e dos gabaritos dos casos.
+
+## Cronograma com término e Conquistas (22/10/2026)
+- Ajustes: início, término e data da residência (`cfg.inicio/fim/residencia`). Sem término, cada semana tem
+  7 dias. Com término, `plano()` divide os dias entre as 22 semanas de conteúdo e reposiciona as tarefas
+  (desenhadas para 6 dias + 1 livre) na proporção; mínimo de 1 dia por semana. Chaves das tarefas não mudam.
+- Aba Conquistas (`ST.conq` = data de cada emblema, sincroniza como mapa). Tudo é derivado do progresso
+  (`metricas()`); 76 emblemas em famílias com níveis Bronze a Lendária (10 a 150 pontos), 9 títulos por pontos.
+  Sequência com folga: 1 a cada 7 dias seguidos (máx. 2), gasta sozinha num dia sem estudo. Emblema de
+  sequência guarda os dias que a formaram. Comemoração em modal com fila; na primeira vez, um resumo.

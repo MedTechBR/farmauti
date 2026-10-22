@@ -66,7 +66,7 @@
      - Progresso grande vai como mapa POR ITEM: dois aparelhos que já tinham progresso se unem item a item no
        primeiro login (a versão da nuvem só vence no MESMO item).
        resp = respostas por questão; srs = cartões; lidas/revs/prog = leituras; tarefas = cronograma;
-       casos, presc = casos clínicos e prescrições; notas, fav, sinal = anotações, marcadas e sinalizadas.
+       casos, presc = casos clínicos e prescrições; conq = data de cada emblema ganho; notas, fav, sinal = anotações, marcadas e sinalizadas.
      - sims (simulados feitos) é lista com id = ts (momento do fim do simulado), em ordem cronológica.
      - ativ (atividade por dia) é soma: cada aparelho soma as próprias contagens. O valor local é
        {dia: {q, qa, c, cn, min, l, rx, ...}}; o motor vê "dia|campo": número (ler/gravar convertem).
@@ -78,7 +78,7 @@
     cfg: { tipo: "doc", vazio: {} },
     lidas: { tipo: "mapa" }, prog: { tipo: "mapa" }, notas: { tipo: "mapa" }, resp: { tipo: "mapa" },
     fav: { tipo: "mapa" }, srs: { tipo: "mapa" }, tarefas: { tipo: "mapa" }, casos: { tipo: "mapa" },
-    presc: { tipo: "mapa" }, revs: { tipo: "mapa" }, sinal: { tipo: "mapa" },
+    presc: { tipo: "mapa" }, revs: { tipo: "mapa" }, sinal: { tipo: "mapa" }, conq: { tipo: "mapa" },
     sims: { tipo: "lista", id: "ts", ordena: (a, b) => (+a.ts || 0) - (+b.ts || 0) },
     ativ: { tipo: "soma" }
   };

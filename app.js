@@ -50,7 +50,7 @@ const debounce = (f, ms) => { let t; return (...a) => { clearTimeout(t); t = set
 const PADRAO = {
   cfg: {meta: {q: 20, c: 30, min: 60}, novos: 20, inicio: null, fim: null, residencia: null, fonte: 1, nome: "", instalado: false},
   lidas: {}, prog: {}, notas: {}, resp: {}, fav: {}, srs: {}, ativ: {}, tarefas: {}, casos: {}, presc: {}, revs: {}, sims: [],
-  pos: {}, tema: "auto", recentes: [], sinal: {}
+  pos: {}, tema: "auto", recentes: [], sinal: {}, conq: {}
 };
 const CHAVES = Object.keys(PADRAO);
 const ST = {};
@@ -78,7 +78,9 @@ function salva(k) {
   catch (e) { aviso("Não foi possível gravar neste aparelho (armazenamento cheio). Com internet, o progresso continua indo para a sua conta."); }
   espelha();
   try { if (window.FUCONTA) FUCONTA.aoSalvar(k); } catch (e) {}
+  if (CONQ_GATILHO.has(k)) checaConqD();
 }
+const CONQ_GATILHO = new Set(["resp", "srs", "ativ", "lidas", "revs", "casos", "presc", "sims", "tarefas"]);
 /* cada uso abre e FECHA a conexão (não fica conexão pendurada entre abas) */
 function idb(cb) {
   try {
@@ -178,6 +180,7 @@ const ABAS = [
   {id:"interacoes", nome:"Interações", ic:"arrows-exchange", cor:"vermelho", g:"Ferramentas"},
   {id:"bulario", nome:"Bulário", ic:"pill", cor:"teal", g:"Ferramentas"},
   {id:"calculadoras", nome:"Calculadoras", ic:"calculator", cor:"laranja", g:"Ferramentas"},
+  {id:"conquistas", nome:"Conquistas", ic:"trophy", cor:"ambar", g:"Acompanhamento"},
   {id:"desempenho", nome:"Desempenho", ic:"chart-dots-3", cor:"ciano", g:"Acompanhamento"},
   {id:"ajustes", nome:"Ajustes", ic:"settings", cor:"cinza", g:"Acompanhamento"}
 ];
@@ -284,12 +287,6 @@ function checaMeta() {
   if (!a.meta && progMeta().tot >= 1) { a.meta = 1; salva("ativ"); confete(); aviso("Meta do dia cumprida. Bom trabalho."); }
 }
 const estudou = d => { const a = ST.ativ[d]; return !!a && ((a.q || 0) + (a.c || 0) > 0 || (a.min || 0) >= 10 || (a.l || 0) > 0); };
-function sequencia() {
-  let n = 0, d = iso();
-  if (!estudou(d)) d = addD(d, -1);
-  while (estudou(d)) { n++; d = addD(d, -1); }
-  return n;
-}
 /* tempo de estudo: conta só com a página visível, numa aba de estudo e com interação recente */
 let ultInter = Date.now();
 ["pointerdown", "keydown", "scroll", "touchstart", "wheel"].forEach(e => addEventListener(e, () => ultInter = Date.now(), {passive: true, capture: true}));
@@ -460,6 +457,7 @@ function pintaInicio() {
      <button class="vStat" style="--k:var(--c-violeta)" data-ir="leituras"><span class="ic"><i class="ti ti-book-2"></i></span><div><b data-conta="${lidas}">0</b><span>de ${E.leituras.length} leituras</span></div></button>
      <button class="vStat" style="--k:var(--c-verde)" data-ir="cartoes"><span class="ic"><i class="ti ti-brain"></i></span><div><b data-conta="${dom}">0</b><span>cartões dominados</span></div></button>
    </div>
+   ${htmlConqInicio()}
    <div class="vHoje"><div class="vTit"><i class="ti ti-calendar-check bolinha" style="--k:var(--c-verde)"></i><h3>${antes ? "Primeira semana" : "Hoje no cronograma"}</h3><button data-ir="cronograma">Ver cronograma</button></div>
      ${antes ? pl.semanas[0].dias.filter(d => d.t.length).slice(0, 3).map(d => `<div class="sub" style="margin:10px 0 2px;font-weight:650">${fmtDL(d.data)}</div>` + d.t.map(htmlTarefa).join("")).join("")
        : tHoje.length ? tHoje.map(htmlTarefa).join("") : `<div class="vazio" style="padding:18px"><i class="ti ti-mood-smile"></i>Dia livre no cronograma. Revise os cartões pendentes.</div>`}
@@ -1811,14 +1809,244 @@ function abreBusca() {
   });
   roda();
 }
-function fechaCamada() { $("#camada").innerHTML = ""; }
+function fechaCamada() { $("#camada").innerHTML = ""; if (FILA_CQ.length) setTimeout(mostraFilaCQ, 250); }
 function abreMais() {
   $("#camada").innerHTML = `<div class="veu" data-fecha="1" style="align-items:flex-end;padding:0"></div><div class="folha" role="dialog" aria-label="Mais seções"><div class="puxa"></div><div class="gradeMais">${ABAS.filter(a => !BARRA.includes(a.id)).map(a => `<button data-ir="${a.id}" style="--c:${COR[a.cor]}"><i class="ti ti-${a.ic}"></i>${a.nome}</button>`).join("")}</div></div>`;
 }
 
+/* ======================================================================
+   CONQUISTAS
+   ====================================================================== */
+/* Tudo é derivado do progresso já gravado (respostas, cartões, atividade por dia, leituras, casos, prescrições,
+   simulados, cronograma). ST.conq só guarda QUANDO cada emblema foi ganho e, nas sequências, os dias que a formaram. */
+const METAL = [null, {nm: "Bronze", c: "#B26A36"}, {nm: "Prata", c: "#7D8BA0"}, {nm: "Ouro", c: "#C99300"}, {nm: "Platina", c: "#1E9AAB"}, {nm: "Lendária", c: "#7F4BEA"}];
+const PTS = [0, 10, 20, 40, 80, 150];
+const NIVEIS = [[0, "Primeiros passos"], [50, "Pegando o ritmo"], [150, "Rotina de UTI"], [350, "Plantão seguro"], [650, "Olho clínico"], [1100, "Mão firme na prescrição"], [1700, "Referência da equipe"], [2500, "Preceptoria"], [3400, "Lenda da UTI"]];
+const SEQ_MARCOS = [3, 5, 7, 14, 21, 30, 45, 60, 100];
+/* sequência: 1 dia de folga guardado a cada 7 dias seguidos (no máximo 2); a folga é gasta sozinha num dia sem
+   estudo e a sequência não quebra. Hoje ainda sem estudo não conta contra. */
+function historicoSeq() {
+  const hoje = iso(), dias = Object.keys(ST.ativ).filter(estudou).sort();
+  const r = {atual: 0, folgas: 0, melhor: 0, marcos: {}, ini: null, usadas: []};
+  if (!dias.length) return r;
+  let n = 0, folgas = 0, ini = null;
+  for (let d = dias[0]; d <= hoje; d = addD(d, 1)) {
+    if (estudou(d)) {
+      if (!n) ini = d;
+      n++; if (n % 7 === 0) folgas = Math.min(2, folgas + 1);
+      r.melhor = Math.max(r.melhor, n);
+      if (SEQ_MARCOS.includes(n) && !r.marcos[n]) r.marcos[n] = {de: ini, ate: d};
+    } else if (d === hoje) continue;
+    else if (n && folgas) { folgas--; r.usadas.push(d); }
+    else { n = 0; folgas = 0; }
+  }
+  return Object.assign(r, {atual: n, folgas, ini});
+}
+function sequencia() { return historicoSeq().atual; }
+function metricas() {
+  const hs = historicoSeq(), todas = [];
+  let volta = 0;
+  for (const q of QVIS) {
+    const h = ST.resp[q.id]; if (!h) continue;
+    let errou = false, voltou = false;
+    for (const x of h) { const ok = okH(q, x); todas.push({t: x.t, ok}); if (!ok) errou = true; else if (errou) voltou = true; }
+    if (voltou) volta++;
+  }
+  todas.sort((a, b) => a.t - b.t);
+  let run = 0, runMax = 0;
+  for (const x of todas) { run = x.ok ? run + 1 : 0; if (run > runMax) runMax = run; }
+  const hr = x => new Date(x.t).getHours();
+  const dias = Object.keys(ST.ativ), pl = plano();
+  const rxs = Object.keys(ST.presc).filter(id => RX[id] && ST.presc[id]?.feito);
+  const sims = ST.sims || [];
+  return {
+    hs, seq: hs.melhor, q: todas.length, run: runMax, volta,
+    coruja: todas.filter(x => hr(x) >= 23 || hr(x) < 5).length, manha: todas.filter(x => hr(x) >= 5 && hr(x) < 7).length,
+    cartoes: dias.reduce((s, d) => s + (ST.ativ[d]?.c || 0), 0), dom: CVIS.filter(c => (ST.srs[c.id]?.i || 0) >= 21).length,
+    leit: E.leituras.filter(l => ST.lidas[l.slug] || ST.revs?.[l.slug]).length,
+    rx: rxs.length, olho: rxs.filter(id => { try { return notaRx(RX[id], ST.presc[id]).nota >= 90; } catch (e) { return false; } }).length,
+    casos: Object.keys(ST.casos).filter(id => CASO[id] && ST.casos[id]?.feito).length,
+    metas: dias.filter(d => progMeta(d).tot >= 1).length, maxQdia: Math.max(0, ...dias.map(d => ST.ativ[d]?.q || 0)),
+    fds: dias.filter(d => dt(d).getDay() === 6 && estudou(d) && estudou(addD(d, 1))).length,
+    sims: sims.length, sim70: sims.filter(s => s.n >= 20 && s.ok / s.n >= .7).length, simFinal: sims.some(s => s.tarefa === "X:final") ? 1 : 0,
+    semanas: pl.semanas.filter(w => { const ts = w.dias.flatMap(d => d.t.map(t => ({...t, data: d.data}))).filter(t => t.tipo !== "M"); return ts.length && ts.every(feita); }).length,
+    areas: Object.fromEntries(E.areas.map(a => [a.id, estatArea(a.id)]))
+  };
+}
+const FAM_CQ = [
+  {f: "seq", nm: "Sequência de estudo", ic: "flame", cor: "var(--c-laranja)", forma: "estrela", un: "dias", desc: m => `Estudar ${m} dias seguidos`,
+   l: [[3, "Faísca"], [5, "Cinco seguidos"], [7, "Semana inteira"], [14, "Quinzena acesa"], [21, "Hábito formado"], [30, "Um mês sem parar"], [45, "Chama que não apaga"], [60, "Dois meses firmes"], [100, "Cem dias"]]},
+  {f: "q", nm: "Questões respondidas", ic: "checklist", cor: "var(--c-azul)", forma: "hex", un: "questões", desc: m => `Responder ${m} questões`,
+   l: [[10, "Primeiras dez"], [50, "Meia centena"], [100, "Centena"], [250, "Banca aquecida"], [500, "Meio milhar"], [1000, "Mil respostas"], [2000, "Maratona de banca"]]},
+  {f: "run", nm: "Acertos seguidos", ic: "target-arrow", cor: "var(--c-verde)", forma: "hex", un: "seguidas", desc: m => `Acertar ${m} questões seguidas`,
+   l: [[5, "Mira certa"], [10, "Dez de dez"], [20, "Vinte sem errar"], [30, "Precisão de UTI"]]},
+  {f: "volta", nm: "Erro que vira acerto", ic: "refresh", cor: "var(--c-violeta)", forma: "hex", un: "questões", desc: m => `Acertar ${m} questões que você já tinha errado`,
+   l: [[5, "Aprendeu com o erro"], [25, "Virada de jogo"], [75, "Erro vira acerto"]]},
+  {f: "maxQdia", nm: "Maratonas", ic: "bolt", cor: "var(--c-azul)", forma: "estrela", un: "num dia", desc: m => `Responder ${m} questões em um só dia`,
+   l: [[30, "Dia produtivo"], [60, "Maratona"], [100, "Ultramaratona"]]},
+  {f: "cartoes", nm: "Cartões revisados", ic: "cards", cor: "var(--c-ambar)", forma: "circ", un: "cartões", desc: m => `Revisar ${m} cartões`,
+   l: [[25, "Primeiro maço"], [100, "Cem cartões"], [500, "Memória treinada"], [1000, "Mil revisões"], [3000, "Memória de elefante"]]},
+  {f: "dom", nm: "Cartões dominados", ic: "brain", cor: "var(--c-teal)", forma: "circ", un: "cartões", desc: m => `Dominar ${m} cartões (intervalo de 21 dias ou mais)`,
+   l: [[10, "Fixou"], [50, "Memória longa"], [150, "Arquivo vivo"], [400, "Biblioteca na cabeça"]]},
+  {f: "leit", nm: "Temas estudados", ic: "book-2", cor: "var(--c-violeta)", forma: "escudo", un: "temas", desc: m => `Concluir ${m} ${m === 1 ? "tema" : "temas"} (revisão essencial ou texto completo)`,
+   l: () => [[1, "Primeiro tema"], [5, "Cinco temas"], [16, "Um quarto do caminho"], [32, "Metade do conteúdo"], [E.leituras.length, "Conteúdo completo"]]},
+  {f: "semanas", nm: "Semanas do cronograma", ic: "calendar-check", cor: "var(--c-verde)", forma: "escudo", un: "semanas", desc: m => `Concluir ${m} ${m === 1 ? "semana inteira" : "semanas inteiras"} do cronograma`,
+   l: () => [[1, "Semana fechada"], [5, "Cinco semanas"], [11, "Metade do plano"], [E.semanas.length, "Plano completo"]]},
+  {f: "metas", nm: "Metas diárias", ic: "target", cor: "var(--c-indigo)", forma: "escudo", un: "dias", desc: m => `Cumprir a meta diária em ${m} ${m === 1 ? "dia" : "dias"}`,
+   l: [[1, "Meta batida"], [7, "Sete metas"], [15, "Quinze metas"], [30, "Trinta metas"], [60, "Disciplina de plantão"]]},
+  {f: "rx", nm: "Prescrições avaliadas", ic: "prescription", cor: "var(--c-lima)", forma: "losango", un: "prescrições", desc: m => `Avaliar ${m} ${m === 1 ? "prescrição" : "prescrições"}`,
+   l: () => [[1, "Primeira prescrição"], [5, "Cinco prescrições"], [15, "Olhar treinado"], [30, "Triagem de rotina"], [E.prescricoes.length, "Todas as prescrições"]]},
+  {f: "olho", nm: "Prescrições com 90 ou mais", ic: "eye-check", cor: "var(--c-ciano)", forma: "losango", un: "com 90+", desc: m => `Tirar 90 ou mais em ${m} ${m === 1 ? "prescrição" : "prescrições"}`,
+   l: [[1, "Olho clínico"], [5, "Nada passa"], [15, "Pente-fino"]]},
+  {f: "casos", nm: "Casos clínicos", ic: "clipboard-heart", cor: "var(--c-rosa)", forma: "losango", un: "casos", desc: m => `Concluir ${m} ${m === 1 ? "caso clínico" : "casos clínicos"}`,
+   l: () => [[1, "Primeiro caso"], [5, "Cinco casos"], [10, "Dez casos"], [E.casos.length, "Todos os casos"]]},
+  {f: "esp", nm: "Especiais", forma: "estrela", un: "", itens: [
+    {k: "sims", m: 1, nome: "Primeiro simulado", desc: "Terminar um simulado com cronômetro", ic: "stopwatch", cor: "var(--c-laranja)", nivel: 1},
+    {k: "sim70", m: 1, nome: "Acima de 70%", desc: "Acertar 70% ou mais num simulado de 20 questões ou mais", ic: "rosette", cor: "var(--c-laranja)", nivel: 3},
+    {k: "simFinal", m: 1, nome: "Simulado final", desc: "Fazer o simulado final do cronograma", ic: "flag-3", cor: "var(--c-laranja)", nivel: 4},
+    {k: "fds", m: 1, nome: "Fim de semana no foco", desc: "Estudar no sábado e no domingo do mesmo fim de semana", ic: "calendar-heart", cor: "var(--c-rosa)", nivel: 2},
+    {k: "fds", m: 4, nome: "Quatro fins de semana", desc: "Estudar sábado e domingo em 4 fins de semana", ic: "calendar-heart", cor: "var(--c-rosa)", nivel: 3},
+    {k: "coruja", m: 10, nome: "Coruja de plantão", desc: "Responder 10 questões entre 23 h e 5 h", ic: "moon-stars", cor: "var(--c-indigo)", nivel: 2},
+    {k: "manha", m: 10, nome: "Plantão da manhã", desc: "Responder 10 questões entre 5 h e 7 h", ic: "sunrise", cor: "var(--c-ambar)", nivel: 2}]},
+  {f: "area", nm: "Referência por área", forma: "escudo", un: "", areas: true}
+];
+const AREA_CQ = {n: 50, taxa: 80};
+let DEFS_CQ = null;
+function conquistasDef() {
+  if (DEFS_CQ) return DEFS_CQ;
+  const out = [];
+  for (const F of FAM_CQ) {
+    if (F.itens) { F.itens.forEach(x => out.push({...x, id: `${F.f}:${x.k}:${x.m}`, f: F.f, forma: F.forma, fita: ""})); continue; }
+    if (F.areas) { E.areas.forEach(a => out.push({id: "area:" + a.id, f: "area", area: a.id, nome: `Referência em ${a.nome}`, desc: `Responder ${AREA_CQ.n} questões de ${a.nome} com ${AREA_CQ.taxa}% de acerto ou mais`, ic: a.icone, cor: corA(a.id), forma: F.forma, nivel: 3, fita: ""})); continue; }
+    const l = typeof F.l === "function" ? F.l() : F.l;
+    l.forEach(([m, nome], i) => out.push({id: `${F.f}:${m}`, f: F.f, k: F.f, m, nome, desc: F.desc(m), ic: F.ic, cor: F.cor, forma: F.forma, un: F.un, fita: m >= 1000 ? (m / 1000).toLocaleString("pt-BR") + " mil" : String(m), nivel: l.length > 1 ? 1 + Math.round(i * 4 / (l.length - 1)) : 3}));
+  }
+  return DEFS_CQ = out;
+}
+function progCQ(d, X) {
+  if (d.f === "area") { const e = X.areas[d.area] || {tent: 0, taxa: 0}; return {ok: e.tent >= AREA_CQ.n && e.taxa >= AREA_CQ.taxa, frac: Math.min(1, e.tent / AREA_CQ.n) * (e.tent ? Math.min(1, e.taxa / AREA_CQ.taxa) : 0), txt: `${Math.min(e.tent, AREA_CQ.n)}/${AREA_CQ.n} respostas · ${e.tent ? e.taxa + "%" : "–"} de acerto`}; }
+  const v = X[d.k] || 0;
+  return {ok: v >= d.m, frac: Math.min(1, v / d.m), txt: `${Math.min(v, d.m).toLocaleString("pt-BR")} de ${d.m.toLocaleString("pt-BR")}`, falta: d.m - v};
+}
+const ptsCQ = () => conquistasDef().reduce((s, d) => s + (ST.conq[d.id] ? PTS[d.nivel] : 0), 0);
+function nivelCQ(p = ptsCQ()) {
+  let i = 0; while (i < NIVEIS.length - 1 && p >= NIVEIS[i + 1][0]) i++;
+  const prox = NIVEIS[i + 1];
+  return {n: i + 1, nome: NIVEIS[i][1], pts: p, ini: NIVEIS[i][0], prox: prox ? prox[0] : null, proxNome: prox ? prox[1] : null, frac: prox ? (p - NIVEIS[i][0]) / (prox[0] - NIVEIS[i][0]) : 1};
+}
+/* emblema: moldura no metal do nível, miolo na cor da família, ícone e fita com o número */
+const poly = (n, r, rot = -90) => [...Array(n)].map((_, k) => { const a = (rot + k * 360 / n) * Math.PI / 180; return `${(50 + r * Math.cos(a)).toFixed(1)},${(50 + r * Math.sin(a)).toFixed(1)}`; }).join(" ");
+const estrela = (n, r1, r2) => [...Array(n * 2)].map((_, k) => { const r = k % 2 ? r2 : r1, a = (-90 + k * 180 / n) * Math.PI / 180; return `${(50 + r * Math.cos(a)).toFixed(1)},${(50 + r * Math.sin(a)).toFixed(1)}`; }).join(" ");
+const FORMA = {
+  circ: (f, s) => `<circle cx="50" cy="50" r="${46 * s}" fill="${f}"/>`,
+  hex: (f, s) => `<polygon points="${poly(6, 48 * s)}" fill="${f}" stroke="${f}" stroke-width="6" stroke-linejoin="round"/>`,
+  escudo: (f, s) => `<path transform="translate(50 50) scale(${s}) translate(-50 -50)" d="M50 4 L88 16 Q90 17 90 20 V48 C90 72 73 88 50 96 C27 88 10 72 10 48 V20 Q10 17 12 16 Z" fill="${f}"/>`,
+  losango: (f, s) => `<rect x="${50 - 33 * s}" y="${50 - 33 * s}" width="${66 * s}" height="${66 * s}" rx="${13 * s}" transform="rotate(45 50 50)" fill="${f}"/>`,
+  estrela: (f, s) => s === 1 ? `<polygon points="${estrela(12, 49, 41)}" fill="${f}" stroke="${f}" stroke-width="3" stroke-linejoin="round"/>` : `<circle cx="50" cy="50" r="${40 * s}" fill="${f}"/>`
+};
+function emblema(d, ganho, tam = 84) {
+  const met = METAL[d.nivel]?.c || METAL[1].c, f = FORMA[d.forma] || FORMA.circ;
+  return `<span class="emb${ganho ? "" : " bloq"}" style="--t:${tam}px;--m:${met};--f:${d.cor}" aria-hidden="true"><svg viewBox="0 0 100 100">${f("var(--m)", 1)}${f("rgba(255,255,255,.55)", .86)}${f("var(--f)", .8)}<path d="M28 34 Q50 16 72 34" fill="none" stroke="#fff" stroke-opacity=".28" stroke-width="5" stroke-linecap="round"/></svg>
+    <i class="ti ti-${d.ic}"></i>${d.fita ? `<b class="fita">${d.fita}</b>` : ""}</span>`;
+}
+/* verificação: roda depois de qualquer gravação de progresso (com espera curta) */
+let FILA_CQ = [];
+function checaConquistas() {
+  if (!ST.conq) ST.conq = {};
+  const X = metricas(), antes = Object.keys(ST.conq).length, novos = [];
+  for (const d of conquistasDef()) {
+    if (ST.conq[d.id] || !progCQ(d, X).ok) continue;
+    const mk = d.f === "seq" ? X.hs.marcos[d.m] : null;
+    ST.conq[d.id] = mk ? {d: mk.ate, de: mk.de, ate: mk.ate} : {d: iso()};
+    novos.push(d.id);
+  }
+  if (!novos.length) return;
+  salva("conq");
+  if (!antes && novos.length > 3) FILA_CQ.push({resumo: novos});
+  else if (novos.length > 3) FILA_CQ.push({resumo: novos, agora: 1});
+  else novos.forEach(id => FILA_CQ.push({id}));
+  mostraFilaCQ();
+  if (abaAtual === "conquistas") rota();
+}
+const checaConqD = debounce(checaConquistas, 700);
+function mostraFilaCQ() {
+  if (!FILA_CQ.length || $("#camada").innerHTML || (SIM.ativo && !SIM.ativo.fim)) return;
+  const it = FILA_CQ.shift(), D = Object.fromEntries(conquistasDef().map(d => [d.id, d]));
+  const raios = `<svg class="cqRaios" viewBox="0 0 100 100" aria-hidden="true">${[...Array(12)].map((_, k) => `<polygon points="50,50 47,0 53,0" transform="rotate(${k * 30} 50 50)"/>`).join("")}</svg>`;
+  let h;
+  if (it.resumo) {
+    const ds = it.resumo.map(id => D[id]).filter(Boolean).sort((a, b) => b.nivel - a.nivel), p = ds.reduce((s, d) => s + PTS[d.nivel], 0);
+    h = `<div class="cqTopo">${raios}<div class="cqPilha">${ds.slice(0, 5).map(d => emblema(d, true, 74)).join("")}</div></div>
+      <small class="cqKick">${it.agora ? "Novas conquistas" : "Suas conquistas chegaram"}</small>
+      <h3>${it.agora ? `${ds.length} emblemas de uma vez` : `Você já tinha ${ds.length} emblemas`}</h3>
+      <p>${it.agora ? "Bom ritmo. Veja cada um na tela de conquistas." : "Contamos tudo o que você já fez no app até aqui. Daqui para frente, cada emblema novo aparece assim que você o conquista."}</p>
+      <div class="cqPts">+${p} pontos · nível ${nivelCQ().n}, ${esc(nivelCQ().nome)}</div>`;
+  } else {
+    const d = D[it.id]; if (!d) return mostraFilaCQ();
+    const g = ST.conq[d.id] || {};
+    h = `<div class="cqTopo">${raios}${emblema(d, true, 150)}</div>
+      <small class="cqKick" style="--m:${METAL[d.nivel].c}">Nova conquista · ${METAL[d.nivel].nm}</small>
+      <h3>${esc(d.nome)}</h3><p>${esc(d.desc)}${g.de ? `<br><span class="sub">Sua sequência: ${fmtD(g.de)} a ${fmtD(g.ate)}</span>` : ""}</p>
+      <div class="cqPts">+${PTS[d.nivel]} pontos</div>`;
+  }
+  $("#camada").innerHTML = `<div class="veu cqVeu" data-fecha="1"><div class="modal cqModal" role="dialog" aria-label="Nova conquista">${h}
+    <div class="linhaBt" style="justify-content:center;margin-top:18px"><button class="bt" data-acao="cqFecha">${FILA_CQ.length ? "Próxima" : "Continuar"}</button><button class="bt sec" data-acao="cqVer">Ver conquistas</button></div></div></div>`;
+  confete();
+}
+/* ---------- tela ---------- */
+const CQF = {st: ""};
+function pintaConquistas() {
+  checaConquistas();
+  const X = metricas(), defs = conquistasDef(), nv = nivelCQ(), hs = X.hs;
+  const ganhos = defs.filter(d => ST.conq[d.id]);
+  const prox = defs.filter(d => !ST.conq[d.id]).map(d => ({d, p: progCQ(d, X)})).filter(x => x.p.frac > 0 || x.d.nivel === 1).sort((a, b) => b.p.frac - a.p.frac || a.d.nivel - b.d.nivel).slice(0, 3);
+  const proxSeq = SEQ_MARCOS.find(m => m > hs.atual);
+  titulo("trophy", "Conquistas", `${ganhos.length} de ${defs.length} emblemas · ${nv.pts.toLocaleString("pt-BR")} pontos`);
+  const s = $("#sec-conquistas");
+  const tile = d => { const g = ST.conq[d.id], p = progCQ(d, X);
+    return `<button class="cqItem${g ? " ganho" : ""}" data-acao="cqVer1" data-k="${d.id}" style="--m:${METAL[d.nivel].c}">${emblema(d, !!g)}
+      <b>${esc(d.nome)}</b><small>${esc(d.desc)}</small>
+      ${g ? `<em class="cqData">${g.de ? `${fmtD(g.de)} a ${fmtD(g.ate)}` : "Conquistado em " + fmtD(g.d)}</em>` : `<div class="barra"><i data-w="${Math.round(p.frac * 100)}"></i></div><em>${p.txt}</em>`}</button>`; };
+  const grupos = FAM_CQ.map(F => ({F, ds: defs.filter(d => d.f === F.f).filter(d => !CQF.st || (CQF.st === "g") === !!ST.conq[d.id])})).filter(g => g.ds.length);
+  s.innerHTML = `<div class="cqHero anima">
+     <div class="cqNivel"><div class="cqAnel">${anel(nv.frac, 128, "var(--c-ambar)", "color-mix(in srgb,var(--c-ambar) 18%,transparent)", 11)}<div><small>nível</small><b>${nv.n}</b></div></div>
+       <div><small class="sub">Seu título</small><h2>${esc(nv.nome)}</h2><p class="sub">${nv.prox ? `${(nv.prox - nv.pts).toLocaleString("pt-BR")} pontos para ${esc(nv.proxNome)}.` : "Nível máximo."} Cada emblema vale de ${PTS[1]} (bronze) a ${PTS[5]} pontos (lendária).</p></div></div>
+     <div class="cqFogo"><span class="ic"><i class="ti ti-flame"></i></span><div><b data-conta="${hs.atual}">0</b><span>${hs.atual === 1 ? "dia seguido" : "dias seguidos"}</span></div>
+       <p class="sub">${hs.atual ? `Melhor sequência: ${hs.melhor} ${hs.melhor === 1 ? "dia" : "dias"}.` : "Estude hoje para acender a sequência."}${proxSeq ? ` ${proxSeq - hs.atual === 1 ? "Falta 1 dia" : `Faltam ${proxSeq - hs.atual} dias`} para o emblema de ${proxSeq} dias.` : ""}</p>
+       <div class="cqFolgas" title="A cada 7 dias seguidos você guarda 1 dia de folga (até 2). Se faltar um dia, a folga é usada e a sequência não quebra.">${[0, 1].map(k => `<i class="ti ti-shield${k < hs.folgas ? "-check-filled on" : ""}"></i>`).join("")}<span>${hs.folgas ? `${hs.folgas} ${hs.folgas === 1 ? "folga guardada" : "folgas guardadas"}` : "Folga: 7 dias seguidos dão 1"}</span></div></div>
+   </div>
+   ${prox.length ? `<h2 class="grupoL" style="--k:var(--c-ambar)"><i class="ti ti-progress"></i>Mais perto de conquistar</h2><div class="cqProx">${prox.map(({d}) => tile(d)).join("")}</div>` : ""}
+   <div class="chips" style="margin:18px 0 6px"><button class="chip" data-cq-st="" aria-pressed="${!CQF.st}">Todos</button><button class="chip" data-cq-st="g" aria-pressed="${CQF.st === "g"}">Conquistados (${ganhos.length})</button><button class="chip" data-cq-st="n" aria-pressed="${CQF.st === "n"}">A conquistar (${defs.length - ganhos.length})</button></div>
+   ${grupos.map(({F, ds}) => `<h2 class="grupoL" style="--k:${F.cor || "var(--c-ambar)"}"><i class="ti ti-${F.ic || (F.areas ? "award" : "sparkles")}"></i>${esc(F.nm)} <small>${defs.filter(d => d.f === F.f && ST.conq[d.id]).length}/${defs.filter(d => d.f === F.f).length}</small></h2><div class="cqGrade anima">${ds.map(tile).join("")}</div>`).join("")}
+   <div class="legCQ">${METAL.slice(1).map((m, i) => `<span style="--m:${m.c}"><i></i>${m.nm} · ${PTS[i + 1]} pontos</span>`).join("")}</div>`;
+  vivo(s);
+}
+function abreCQ(id) {
+  const d = conquistasDef().find(x => x.id === id); if (!d) return;
+  const g = ST.conq[d.id], p = progCQ(d, metricas());
+  $("#camada").innerHTML = `<div class="veu cqVeu" data-fecha="1"><div class="modal cqModal" role="dialog" aria-label="${esc(d.nome)}">
+    <div class="cqTopo">${g ? `<svg class="cqRaios" viewBox="0 0 100 100" aria-hidden="true">${[...Array(12)].map((_, k) => `<polygon points="50,50 47,0 53,0" transform="rotate(${k * 30} 50 50)"/>`).join("")}</svg>` : ""}${emblema(d, !!g, 140)}</div>
+    <small class="cqKick" style="--m:${METAL[d.nivel].c}">${METAL[d.nivel].nm} · ${PTS[d.nivel]} pontos</small>
+    <h3>${esc(d.nome)}</h3><p>${esc(d.desc)}</p>
+    ${g ? `<div class="cqPts">${g.de ? `Sequência de ${fmtD(g.de)} a ${fmtD(g.ate)}` : "Conquistado em " + fmtDL(g.d)}</div>` : `<div class="barra" style="max-width:280px;margin:6px auto"><i style="width:${Math.round(p.frac * 100)}%"></i></div><p class="sub">${p.txt}</p>`}
+    <div class="linhaBt" style="justify-content:center;margin-top:18px"><button class="bt" data-acao="cqFecha">Fechar</button></div></div></div>`;
+}
+/* cartão do Início */
+function htmlConqInicio() {
+  const X = metricas(), defs = conquistasDef(), nv = nivelCQ(), n = defs.filter(d => ST.conq[d.id]).length;
+  const prox = defs.filter(d => !ST.conq[d.id]).map(d => ({d, p: progCQ(d, X)})).filter(x => x.p.frac > 0).sort((a, b) => b.p.frac - a.p.frac).slice(0, 2);
+  const ult = defs.filter(d => ST.conq[d.id]).sort((a, b) => (ST.conq[b.id].d || "").localeCompare(ST.conq[a.id].d || "") || b.nivel - a.nivel).slice(0, 4);
+  return `<div class="vConq"><div class="vTit"><i class="ti ti-trophy bolinha" style="--k:var(--c-ambar)"></i><h3>Conquistas</h3><button data-ir="conquistas">Ver todas</button></div>
+    <div class="vConqG">
+     <button class="cqMini" data-ir="conquistas"><span class="cqNum">${nv.n}</span><div><b>${esc(nv.nome)}</b><div class="barra"><i data-w="${Math.round(nv.frac * 100)}"></i></div><small>${nv.pts.toLocaleString("pt-BR")} pontos · ${n} de ${defs.length} emblemas${X.hs.folgas ? ` · ${X.hs.folgas} ${X.hs.folgas === 1 ? "folga guardada" : "folgas guardadas"}` : ""}</small></div></button>
+     ${ult.length ? `<div class="cqUlt">${ult.map(d => `<button data-acao="cqVer1" data-k="${d.id}" title="${esc(d.nome)}">${emblema(d, true, 54)}</button>`).join("")}</div>` : ""}
+     ${prox.map(({d, p}) => `<button class="cqProxMini" data-acao="cqVer1" data-k="${d.id}">${emblema(d, false, 44)}<div><b>${esc(d.nome)}</b><div class="barra"><i data-w="${Math.round(p.frac * 100)}"></i></div><small>${p.txt}</small></div></button>`).join("")}
+    </div></div>`;
+}
+
 /* ---------- eventos (delegação única) ---------- */
 document.addEventListener("click", e => {
-  const t = e.target.closest("[data-ir],[data-ir-l],[data-ir-c],[data-ir-k],[data-ir-b],[data-ir-calc],[data-ir-rx],[data-modo-l],[data-rxt],[data-rxl],[data-rx-f],[data-rx-nivel],[data-rx-st],[data-rxfix],[data-acao],[data-alt],[data-simalt],[data-simir],[data-nota],[data-qf],[data-lf-modo],[data-lf-st],[data-lf-area],[data-sim-n],[data-sim-e],[data-ex],[data-add],[data-rm],[data-bf-g],[data-fecha],#carta,.itR,.toc a");
+  const t = e.target.closest("[data-ir],[data-ir-l],[data-ir-c],[data-ir-k],[data-ir-b],[data-ir-calc],[data-ir-rx],[data-modo-l],[data-rxt],[data-rxl],[data-rx-f],[data-rx-nivel],[data-rx-st],[data-rxfix],[data-cq-st],[data-acao],[data-alt],[data-simalt],[data-simir],[data-nota],[data-qf],[data-lf-modo],[data-lf-st],[data-lf-area],[data-sim-n],[data-sim-e],[data-ex],[data-add],[data-rm],[data-bf-g],[data-fecha],#carta,.itR,.toc a");
   if (!t) return;
   if (t.dataset.fecha && e.target === t) return fechaCamada();
   if (t.classList.contains("itR")) { fechaCamada(); if (t.dataset.sec != null) { LER_SECAO = +t.dataset.sec; MODO_L[t.dataset.h.split("/")[1]] = "comp"; } location.hash = t.dataset.h; if (location.hash === t.dataset.h) rota(); return; }
@@ -1838,6 +2066,7 @@ document.addEventListener("click", e => {
   if (t.hasAttribute("data-rx-nivel")) { RXS.nivel = t.dataset.rxNivel; return pintaPrescricoes(); }
   if (t.hasAttribute("data-rx-st")) { RXS.st = t.dataset.rxSt; return pintaPrescricoes(); }
   if (t.dataset.rxfix != null) { const qi = +t.dataset.rxfix, k = +t.dataset.k; RXS.fix[qi] = k; const st = ST.presc[RXS.id]; if (st) { st.fix = {...RXS.fix}; salva("presc"); } const y = scrollY; pintaRx(RXS.id); scrollTo(0, y); return; }
+  if (t.hasAttribute("data-cq-st")) { CQF.st = t.dataset.cqSt; return pintaConquistas(); }
   if (t.dataset.alt != null) return responde(+t.dataset.alt);
   if (t.dataset.simalt != null) { const A = SIM.ativo, id = A.ids[A.i]; A.resp[id] = +t.dataset.simalt; return pintaQuestaoSim(); }
   if (t.dataset.simir != null) { SIM.ativo.i = +t.dataset.simir; return pintaQuestaoSim(); }
@@ -1855,6 +2084,9 @@ document.addEventListener("click", e => {
   switch (a) {
     case "busca": return abreBusca();
     case "mais": return abreMais();
+    case "cqFecha": return fechaCamada();
+    case "cqVer": FILA_CQ = []; fechaCamada(); return ir("conquistas");
+    case "cqVer1": return abreCQ(t.dataset.k);
     case "tema": { const ciclo = {auto: escuro() ? "claro" : "escuro", claro: "escuro", escuro: "claro"}; ST.tema = ciclo[ST.tema] || "escuro"; salva("tema"); aplicaTema(); if (abaAtual === "leituras" && paramAtual) rota(); return; }
     case "tarefa": return alternaTarefa(t.dataset.tk);
     case "irTarefa": { const k = achaTarefa(t.dataset.tk); return k && irTarefa(k); }
@@ -1931,7 +2163,7 @@ const PINTA = {
   prescricoes: p => pintaPrescricoes(p),
   inicio: () => pintaInicio(), cronograma: () => pintaCronograma(), leituras: p => pintaLeituras(p), cartoes: p => pintaCartoes(p),
   questoes: p => pintaQuestoes(p), casos: p => pintaCasos(p), interacoes: p => pintaInteracoes(p), bulario: p => pintaBulario(p),
-  calculadoras: p => pintaCalculadoras(p), desempenho: () => pintaDesempenho(), ajustes: () => pintaAjustes()
+  calculadoras: p => pintaCalculadoras(p), conquistas: () => pintaConquistas(), desempenho: () => pintaDesempenho(), ajustes: () => pintaAjustes()
 };
 (async function inicia() {
   const tinha = carrega();
@@ -1948,4 +2180,5 @@ const PINTA = {
   window.__fu = {ST, E, RF, ER, QVIS, CVIS, QID, CID, okH, plano, ir, analisaInt, CALCULA, QS, SINAL, PADRAO, CHAVES, PREF, salva, rota, contadores, aplicaTema, aplicaFonte,
     restaurou, corrompidas: [...CORROMPIDAS], get abaAtual() { return abaAtual; }, get paramAtual() { return paramAtual; }, get emSessao() { return !!(SES || SIM.ativo); }};
   window.__fuPronto = true; window.dispatchEvent(new Event("fu-pronto"));
+  setTimeout(checaConquistas, 3000);
 })();
