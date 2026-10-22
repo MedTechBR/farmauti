@@ -48,7 +48,7 @@ const debounce = (f, ms) => { let t; return (...a) => { clearTimeout(t); t = set
 
 /* ---------- armazenamento ---------- */
 const PADRAO = {
-  cfg: {meta: {q: 20, c: 30, min: 60}, novos: 20, inicio: null, fonte: 1, nome: "", instalado: false},
+  cfg: {meta: {q: 20, c: 30, min: 60}, novos: 20, inicio: null, fim: null, residencia: null, fonte: 1, nome: "", instalado: false},
   lidas: {}, prog: {}, notas: {}, resp: {}, fav: {}, srs: {}, ativ: {}, tarefas: {}, casos: {}, presc: {}, revs: {}, sims: [],
   pos: {}, tema: "auto", recentes: [], sinal: {}
 };
@@ -319,33 +319,44 @@ function estatArea(a) {
 }
 
 /* ---------- cronograma ---------- */
+/* As semanas de conteúdo são etapas fixas; o calendário as espalha entre início e término.
+   Sem término escolhido, cada uma dura 7 dias. Com término, cada uma dura (dias do plano ÷ semanas),
+   e as tarefas, desenhadas para 6 dias úteis + 1 livre, são reposicionadas na proporção. */
 let PL = null;
+const resid = () => ST.cfg.residencia || E.residencia;
+const fimMin = ini => addD(ini, E.semanas.length - 1);
 function plano() {
-  const ini = ST.cfg.inicio || E.semanas[0]?.inicio || iso();
-  const assin = ini + "|" + E.casos.length + "|" + E.prescricoes.length;
-  if (PL && PL.assin === assin) return PL;
   const n = E.semanas.length;
+  const ini = ST.cfg.inicio || E.semanas[0]?.inicio || iso();
+  const fim = ST.cfg.fim && ST.cfg.fim >= fimMin(ini) ? ST.cfg.fim : addD(ini, n * 7 - 1);
+  const assin = ini + "|" + fim + "|" + E.casos.length + "|" + E.prescricoes.length;
+  if (PL && PL.assin === assin) return PL;
+  const D = difD(ini, fim) + 1;
   const semanas = E.semanas.map((w, wi) => {
-    const seg = addD(ini, wi * 7);
-    const dias = [...Array(7)].map((_, d) => ({data: addD(seg, d), t: []}));
+    const a = Math.floor(wi * D / n), b = Math.floor((wi + 1) * D / n), nd = b - a;
+    const seg = addD(ini, a);
+    const dias = [...Array(nd)].map((_, d) => ({data: addD(seg, d), t: []}));
+    const uteis = nd >= 7 ? nd - 1 : nd, em = d => dias[Math.min(uteis - 1, Math.floor(d * uteis / 6))].t;
     const L = w.leituras;
     const slots = L.length <= 2 ? [0, 2] : L.length === 3 ? [0, 2, 4] : [0, 1, 3, 4];
-    L.forEach((s, k) => dias[slots[k]].t.push({k: "L:" + s, tipo: "L", s}, {k: "C:" + s, tipo: "C", s}, {k: "Q:" + s, tipo: "Q", s}));
-    if (wi > 0) [1, 3].forEach(di => { if (!slots.includes(di)) dias[di].t.push({k: `M:${w.n}:${di}`, tipo: "M", n: 10, ate: w.n - 1}); });
-    E.casos.filter(c => Math.min(c.sem, n) === w.n).forEach((c, k) => dias[[3, 1, 5, 2, 4][k % 5]].t.push({k: "K:" + c.id, tipo: "K", id: c.id}));
-    E.prescricoes.filter(r => r.sem === w.n).forEach((r, k) => dias[[1, 3, 5, 2, 4, 0][k % 6]].t.push({k: "P:" + r.id, tipo: "P", id: r.id}));
-    dias[5].t.push({k: `R:${w.n}`, tipo: "R", n: 20, sem: w.n});
-    if (w.n === 12) dias[5].t.push({k: "X:12", tipo: "X", n: 30});
-    if (w.n === n) dias[4].t.push({k: "X:final", tipo: "X", n: 60});
-    return {...w, seg, dias};
+    L.forEach((s, k) => em(slots[k]).push({k: "L:" + s, tipo: "L", s}, {k: "C:" + s, tipo: "C", s}, {k: "Q:" + s, tipo: "Q", s}));
+    if (wi > 0) [1, 3].forEach(di => { if (!slots.includes(di)) em(di).push({k: `M:${w.n}:${di}`, tipo: "M", n: 10, ate: w.n - 1}); });
+    E.casos.filter(c => Math.min(c.sem, n) === w.n).forEach((c, k) => em([3, 1, 5, 2, 4][k % 5]).push({k: "K:" + c.id, tipo: "K", id: c.id}));
+    E.prescricoes.filter(r => r.sem === w.n).forEach((r, k) => em([1, 3, 5, 2, 4, 0][k % 6]).push({k: "P:" + r.id, tipo: "P", id: r.id}));
+    em(5).push({k: `R:${w.n}`, tipo: "R", n: 20, sem: w.n});
+    if (w.n === 12) em(5).push({k: "X:12", tipo: "X", n: 30});
+    if (w.n === n) em(4).push({k: "X:final", tipo: "X", n: 60});
+    return {...w, seg, ult: addD(seg, nd - 1), nd, dias};
   });
   const todas = semanas.flatMap(w => w.dias.flatMap(d => d.t.map(t => ({...t, data: d.data, sem: t.sem ?? w.n}))));
-  PL = {assin, ini, fim: addD(ini, n * 7 - 1), semanas, todas};
+  PL = {assin, ini, fim, D, padrao: D === n * 7, semanas, todas};
   return PL;
 }
 function semanaIdx(pl = plano(), d = iso()) {
-  const k = Math.floor(difD(pl.ini, d) / 7);
-  return k < 0 ? -1 : Math.min(k, pl.semanas.length - 1);
+  if (d < pl.ini) return -1;
+  let k = 0;
+  while (k < pl.semanas.length - 1 && pl.semanas[k + 1].seg <= d) k++;
+  return k;
 }
 function semanaLiberada() { const k = semanaIdx(); return Math.max(1, k + 1); }
 function feitaAuto(t) {
@@ -415,7 +426,7 @@ function saudacao() { const h = new Date().getHours(); return h < 12 ? "Bom dia"
 function pintaInicio() {
   semTitulo();
   const s = $("#sec-inicio"), hoje = iso(), pl = plano(), wi = semanaIdx(pl), m = progMeta(), a = ST.ativ[hoje] || {};
-  const faltam = difD(hoje, E.residencia), due = devidos().length;
+  const faltam = difD(hoje, resid()), due = devidos().length;
   const tHoje = pl.todas.filter(t => t.data === hoje);
   const pend = pendencias();
   const antes = difD(hoje, pl.ini) > 0;
@@ -481,21 +492,24 @@ function pintaCronograma() {
   const pl = plano(), hoje = iso(), wi = semanaIdx(pl);
   const cont = pl.todas.filter(t => t.tipo !== "M"), feitas = cont.filter(feita).length;
   const pend = pendencias();
-  titulo("calendar-event", "Cronograma", `${fmtD(pl.ini)} a ${fmtD(pl.fim)} · ${pl.semanas.length} semanas até a residência em ${fmtD(E.residencia)}`,
-    `<button class="bt sec mini" data-acao="irHoje"><i class="ti ti-calendar-down"></i>Ir para hoje</button>`);
+  titulo("calendar-event", "Cronograma", `${fmtD(pl.ini)} a ${fmtD(pl.fim)} · ${pl.semanas.length} semanas de conteúdo em ${pl.D} dias · residência em ${fmtD(resid())}`,
+    `<button class="bt sec mini" data-ir="ajustes"><i class="ti ti-adjustments"></i>Mudar datas</button><button class="bt sec mini" data-acao="irHoje"><i class="ti ti-calendar-down"></i>Ir para hoje</button>`);
   /* projeção: ritmo das últimas duas semanas */
   const d14 = addD(hoje, -14);
   const recentes = cont.filter(t => feita(t) && t.data >= d14 && t.data <= hoje).length;
   const restantes = cont.length - feitas;
   let proj = "";
-  if (wi >= 1 && recentes > 0) { const dias = Math.ceil(restantes / (recentes / 14)); const fim = addD(hoje, dias); proj = `No ritmo das últimas duas semanas, você termina em ${fmtD(fim)}${fim > E.residencia ? ", depois do início da residência" : ""}.`; }
+  if (wi >= 1 && recentes > 0) { const dias = Math.ceil(restantes / (recentes / 14)); const fim = addD(hoje, dias); proj = `No ritmo das últimas duas semanas, você termina em ${fmtD(fim)}${fim > resid() ? ", depois do início da residência" : ""}.`; }
   const s = $("#sec-cronograma");
   s.innerHTML = `<div class="grade g3 anima" style="margin-bottom:18px">
      <div class="kpi" style="--k:var(--c-verde)"><b data-conta="${pct(feitas, cont.length)}" data-suf="%">0</b><span>${feitas} de ${cont.length} tarefas concluídas</span></div>
      <div class="kpi" style="--k:var(--c-violeta)"><b data-conta="${Object.keys(ST.lidas).filter(k => LEIT[k]).length}">0</b><span>de ${E.leituras.length} leituras</span></div>
      <div class="kpi" style="--k:${pend.length ? "var(--c-laranja)" : "var(--c-azul)"}"><b data-conta="${pend.length}">0</b><span>${pend.length === 1 ? "tarefa atrasada" : "tarefas atrasadas"}</span></div>
    </div>
-   <p class="sub" style="margin:-4px 0 18px">Segunda, quarta e sexta são dias de leitura (com os cartões e as questões do texto). Terça, quinta e sábado têm uma prescrição para avaliar; terça e quinta também trazem revisão intercalada e casos clínicos, e o sábado fecha a semana com a revisão. Domingo é livre. As tarefas de leitura, cartões, questões e casos se marcam sozinhas quando você as faz.${proj ? " " + proj : ""}</p>
+   <p class="sub" style="margin:-4px 0 18px">${pl.padrao
+     ? "Cada semana tem 7 dias. O 1º, o 3º e o 5º são dias de leitura (com os cartões e as questões do texto). O 2º, o 4º e o 6º têm uma prescrição para avaliar; o 2º e o 4º também trazem revisão intercalada e casos clínicos, e o 6º fecha a semana com a revisão. O 7º é livre."
+     : `Você escolheu terminar em ${fmtD(pl.fim)}, então cada semana de conteúdo dura ${durSem(pl)} e as tarefas foram redistribuídas na mesma ordem: leituras primeiro, prescrições e casos no meio, revisão da semana no fim${pl.D / pl.semanas.length >= 7 ? ", com pelo menos 1 dia livre" : ""}.`}
+     As tarefas de leitura, cartões, questões e casos se marcam sozinhas quando você as faz.${proj ? " " + proj : ""}</p>
    ${pend.length ? `<div class="cx" style="margin-bottom:18px;--ac:var(--c-laranja)"><h3><i class="ti ti-alert-circle"></i>Atrasadas</h3>${pend.slice(0, 8).map(htmlTarefa).join("")}${pend.length > 8 ? `<p class="sub">e mais ${pend.length - 8} nas semanas abaixo.</p>` : ""}</div>` : ""}
    <div id="semanas">${pl.semanas.map((w, i) => htmlSemana(w, i, wi, hoje)).join("")}</div>`;
   vivo(s);
@@ -503,10 +517,10 @@ function pintaCronograma() {
 function htmlSemana(w, i, wi, hoje) {
   const ts = w.dias.flatMap(d => d.t.map(t => ({...t, data: d.data}))).filter(t => t.tipo !== "M");
   const f = ts.filter(feita).length, p = pct(f, ts.length);
-  const atual = i === wi, fim = addD(w.seg, 6);
+  const atual = i === wi, fim = w.ult;
   return `<details class="cx semana${atual ? " atual" : ""}${p === 100 ? " feita" : ""}" id="sem-${w.n}" ${atual || (wi < 0 && i === 0) ? "open" : ""}>
    <summary><span class="num">${p === 100 ? '<i class="ti ti-check"></i>' : w.n}</span>
-    <div><h3>${esc(w.tema)}</h3><div class="quando">Semana ${w.n} · ${fmtD(w.seg)} a ${fmtD(fim)} · ${w.leituras.length} leituras</div></div>
+    <div><h3>${esc(w.tema)}</h3><div class="quando">Semana ${w.n} · ${w.nd === 1 ? fmtD(w.seg) : fmtD(w.seg) + " a " + fmtD(fim)}${w.nd !== 7 ? ` (${w.nd} ${w.nd === 1 ? "dia" : "dias"})` : ""} · ${w.leituras.length} leituras</div></div>
     <div class="prog"><div class="barra"><i style="width:${p}%"></i></div><div class="sub" style="text-align:right;margin-top:4px">${f}/${ts.length}</div></div>
     <i class="ti ti-chevron-down seta"></i></summary>
    ${w.nota ? `<div class="nota"><i class="ti ti-info-circle"></i> ${esc(w.nota)}</div>` : ""}
@@ -538,7 +552,7 @@ function listaLeituras() {
   const ls = E.leituras.filter(l => (!LF.area || l.area === LF.area) && (!LF.st || (LF.st === "lidas") === !!ST.lidas[l.slug]) && (!q || norm(l.titulo + " " + (l.dek || "")).includes(q)));
   const grupos = LF.modo === "area"
     ? E.areas.map(a => ({k: a.id, nome: a.nome, ic: a.icone, cor: corA(a.id), ls: ls.filter(l => l.area === a.id)}))
-    : plano().semanas.map(w => ({k: w.n, nome: `Semana ${w.n} · ${w.tema}`, ic: "calendar", cor: "var(--c-verde)", sub: `${fmtD(w.seg)} a ${fmtD(addD(w.seg, 6))}`, ls: w.leituras.map(s => ls.find(l => l.slug === s)).filter(Boolean)}));
+    : plano().semanas.map(w => ({k: w.n, nome: `Semana ${w.n} · ${w.tema}`, ic: "calendar", cor: "var(--c-verde)", sub: `${fmtD(w.seg)} a ${fmtD(w.ult)}`, ls: w.leituras.map(s => ls.find(l => l.slug === s)).filter(Boolean)}));
   const h = grupos.filter(g => g.ls.length).map(g => `<h2 class="grupoL" style="--k:${g.cor}"><i class="ti ti-${g.ic}"></i>${esc(g.nome)} <small>${g.sub || g.ls.filter(l => ST.lidas[l.slug]).length + "/" + g.ls.length + " lidas"}</small></h2>
      <div class="listaL anima">${g.ls.map(itemLeitura).join("")}</div>`).join("");
   $("#listaLeituras").innerHTML = h || `<div class="cx vazio"><i class="ti ti-search-off"></i>Nenhuma leitura com esse filtro.</div>`;
@@ -1629,7 +1643,7 @@ function pintaDesempenho() {
   /* mapa de calor do começo do plano até a residência */
   const ini0 = [pl.ini, ...Object.keys(ST.ativ)].sort()[0];
   const ini = addD(ini0, -((dt(ini0).getDay() + 6) % 7));
-  const fim = E.residencia;
+  const fim = [resid(), pl.fim].sort()[1];
   let heat = "";
   for (let d = ini; d <= fim; d = addD(d, 1)) {
     const p = progMeta(d).tot, e = estudou(d);
@@ -1700,9 +1714,12 @@ function pintaAjustes() {
      <label class="campo">Cartões novos por dia<input type="number" min="0" max="200" data-cfg="novos" value="${c.novos}"></label></div>
      <p class="sub" style="margin-top:10px">Os minutos contam sozinhos enquanto você estuda no app, com a tela visível.</p></div>
    <div class="cx"><h3><i class="ti ti-calendar-event"></i>Cronograma</h3><div class="campos">
-     <label class="campo">Começa na segunda-feira de<input type="date" data-cfg="inicio" value="${pl.ini}"></label>
+     <label class="campo">Início do plano<input type="date" data-cfg="inicio" value="${pl.ini}"></label>
+     <label class="campo">Término do plano<input type="date" data-cfg="fim" value="${pl.fim}" min="${fimMin(pl.ini)}"></label>
+     <label class="campo">Início da residência<input type="date" data-cfg="residencia" value="${resid()}"></label>
      <label class="campo">Seu nome (para a saudação)<input type="text" data-cfg="nome" value="${esc(c.nome)}" placeholder="opcional"></label></div>
-     <p class="sub" style="margin-top:10px">São ${pl.semanas.length} semanas: com esta data, o plano termina em ${fmtD(pl.fim)}${pl.fim >= E.residencia ? `, <b style="color:var(--err)">depois</b> do início da residência (${fmtD(E.residencia)})` : ` e a residência começa em ${fmtD(E.residencia)}`}. Mudar a data desloca o plano inteiro; o que você já fez continua valendo.</p></div>
+     <p class="sub" style="margin-top:10px">${resumoPlano(pl)}</p>
+     <div class="linhaBt" style="margin-top:10px">${pl.fim !== addD(resid(), -1) && addD(resid(), -1) >= fimMin(pl.ini) ? `<button class="bt sec mini" data-acao="fimResid"><i class="ti ti-calendar-check"></i>Terminar na véspera da residência</button>` : ""}${c.fim ? `<button class="bt sec mini" data-acao="fimPadrao"><i class="ti ti-arrow-back-up"></i>Voltar a 7 dias por semana</button>` : ""}</div></div>
    <div class="cx"><h3><i class="ti ti-palette"></i>Aparência</h3><div class="campos">
      <label class="campo">Tema<select data-cfg="tema"><option value="auto" ${ST.tema === "auto" ? "selected" : ""}>Automático</option><option value="claro" ${ST.tema === "claro" ? "selected" : ""}>Claro</option><option value="escuro" ${ST.tema === "escuro" ? "selected" : ""}>Escuro</option></select></label>
      <label class="campo">Letra das leituras<select data-cfg="fonte">${[[.9, "Menor"], [1, "Padrão"], [1.1, "Maior"], [1.2, "Grande"]].map(([v, t]) => `<option value="${v}" ${+c.fonte === v ? "selected" : ""}>${t}</option>`).join("")}</select></label></div></div>
@@ -1719,12 +1736,32 @@ function mudaCfg(el) {
   const k = el.dataset.cfg; let v = el.value;
   if (k === "tema") { ST.tema = v; salva("tema"); aplicaTema(); return; }
   if (k === "fonte") { ST.cfg.fonte = +v; aplicaFonte(); }
-  else if (k === "inicio") { if (!v) return; const d = dt(v), seg = addD(v, -((d.getDay() + 6) % 7)); ST.cfg.inicio = seg; PL = null; if (seg !== v) aviso(`Ajustado para a segunda-feira, ${fmtD(seg)}.`); }
+  else if (k === "inicio") {
+    if (!v) return;
+    ST.cfg.inicio = v; PL = null;
+    if (ST.cfg.fim && ST.cfg.fim < fimMin(v)) { ST.cfg.fim = fimMin(v); aviso(`O término passou para ${fmtD(ST.cfg.fim)}: o plano precisa de pelo menos 1 dia por semana.`); }
+  }
+  else if (k === "fim") {
+    if (!v) return;
+    const ini = plano().ini, m = fimMin(ini);
+    ST.cfg.fim = v < m ? m : v; PL = null;
+    if (v < m) aviso(`O plano tem ${E.semanas.length} semanas de conteúdo e precisa de pelo menos 1 dia para cada: término ajustado para ${fmtD(m)}.`);
+  }
+  else if (k === "residencia") { if (!v) return; ST.cfg.residencia = v; }
   else if (k === "nome") ST.cfg.nome = v.trim().slice(0, 30);
   else if (k.startsWith("meta.")) ST.cfg.meta[k.slice(5)] = Math.max(0, parseInt(v) || 0);
   else if (k === "novos") ST.cfg.novos = Math.max(0, parseInt(v) || 0);
   salva("cfg");
-  if (k === "inicio") rota();
+  if (["inicio", "fim", "residencia"].includes(k)) rota();
+}
+const durSem = pl => { const m = pl.D / pl.semanas.length; return m >= 6.5 && m < 7.5 ? "cerca de 7 dias" : Math.abs(m - Math.round(m)) < .05 ? `${Math.round(m)} ${Math.round(m) === 1 ? "dia" : "dias"}` : `${Math.floor(m)} a ${Math.ceil(m)} dias`; };
+function resumoPlano(pl) {
+  const n = pl.semanas.length, m = pl.D / n, r = resid();
+  const tpd = pl.todas.filter(t => t.tipo !== "M").length / pl.semanas.reduce((s, w) => s + w.dias.filter(d => d.t.length).length, 0);
+  const ritmo = m < 3 ? ` <b style="color:var(--err)">Ritmo muito puxado</b>: cerca de ${tpd.toFixed(0)} tarefas por dia de estudo.` : m < 5 ? ` <b style="color:var(--warn)">Ritmo acelerado</b>: cerca de ${tpd.toFixed(0)} tarefas por dia de estudo.` : "";
+  return `${n} semanas de conteúdo em ${pl.D} dias, de ${fmtD(pl.ini)} a ${fmtD(pl.fim)}: cada semana ${pl.padrao ? "tem 7 dias" : "dura " + durSem(pl)}.${ritmo}
+    ${pl.fim >= r ? ` O plano termina <b style="color:var(--err)">depois</b> do início da residência (${fmtD(r)}).` : ` Sobram ${difD(pl.fim, r) - 1} ${difD(pl.fim, r) - 1 === 1 ? "dia" : "dias"} até a residência (${fmtD(r)}).`}
+    Mudar as datas redistribui as tarefas; o que você já fez continua valendo.`;
 }
 function aplicaTema() { const t = ST.tema; if (t === "claro" || t === "escuro") document.documentElement.dataset.tema = t; else delete document.documentElement.dataset.tema; }
 function aplicaFonte() { document.documentElement.style.setProperty("--fonteL", ST.cfg.fonte || 1); }
@@ -1821,6 +1858,8 @@ document.addEventListener("click", e => {
     case "tema": { const ciclo = {auto: escuro() ? "claro" : "escuro", claro: "escuro", escuro: "claro"}; ST.tema = ciclo[ST.tema] || "escuro"; salva("tema"); aplicaTema(); if (abaAtual === "leituras" && paramAtual) rota(); return; }
     case "tarefa": return alternaTarefa(t.dataset.tk);
     case "irTarefa": { const k = achaTarefa(t.dataset.tk); return k && irTarefa(k); }
+    case "fimResid": ST.cfg.fim = addD(resid(), -1); PL = null; salva("cfg"); aviso(`O plano agora termina em ${fmtD(ST.cfg.fim)}.`); return rota();
+    case "fimPadrao": ST.cfg.fim = null; PL = null; salva("cfg"); aviso("Cada semana voltou a ter 7 dias."); return rota();
     case "irHoje": { const k = semanaIdx(); const el = $("#sem-" + (k >= 0 ? k + 1 : 1)); if (el) { el.open = true; el.scrollIntoView({behavior: "smooth"}); } return; }
     case "lida": return marcaLida(t.dataset.s);
     case "revFeita": return marcaRevisao(t.dataset.s);
