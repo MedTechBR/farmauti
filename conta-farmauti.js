@@ -7,13 +7,20 @@
    este arquivo no fim do <body>. O motor só começa depois do evento "fu-pronto" do app (estado local
    carregado, inclusive o que veio do espelho IndexedDB). Ganchos do app em window.__fu.
 
-   REGRA DO DONO (10/10/2026): o progresso que já está no aparelho NUNCA é apagado por causa da conta.
-   - Primeiro login do aparelho: antes de o motor começar, cópia crua de todas as chaves fu_* (e do espelho
-     IndexedDB) vai para o IndexedDB "farmauti-reserva", chave "antes-da-conta" (só se ainda não existir,
-     conferida lendo de volta). Nada no código apaga essa reserva.
-   - Sair da conta e troca de conta (o mtsync chama limparLocal): NADA é apagado; só mais uma cópia na
-     reserva ("saida-<uid>-<momento>"). Consequência aceita: outra conta que entrar neste aparelho recebe
-     esse progresso.
+   REGRA DO DONO (22/10/2026, substitui a de 10/10/2026 "o progresso local nunca é apagado"):
+   O PROGRESSO É DA CONTA, NÃO DO APARELHO.
+   - Sair da conta (o mtsync espera a fila subir para a nuvem antes) e troca de conta (o mtsync chama
+     limparLocal e recarrega): primeiro uma cópia crua de todas as chaves fu_* (e do espelho IndexedDB) vai
+     para a reserva ("saida-<uid>-<momento>", conferida lendo de volta); DEPOIS saem do aparelho todas as
+     chaves fu_* (menos fu_tema, aparência do aparelho, e fu_mts/fu_mts_uid, que o mtsync trata), a fila
+     msn_fila:farmauti das sinalizações e o espelho IndexedDB "farmauti". Quem entrar em seguida vê só o que
+     é da própria conta; a mesma conta, ao voltar, recebe tudo da nuvem (conquistas inclusive, sem nova
+     comemoração). A remoção usa localStorage direto, com o motor desligado e o app travado
+     (window.__fuSaindo): nada vira exclusão na nuvem.
+   - Aparelho que ficou com progresso de outra conta da versão antiga (saiu sem limpar, há fu_mtsr:<outra>):
+     ao entrar uma conta diferente, o mesmo limparLocal roda antes de o motor nascer.
+   - Primeiro login do aparelho: cópia em "antes-da-conta" (só se ainda não existir). Nada no código apaga a
+     reserva "farmauti-reserva" (cópia de segurança local).
    - Chave que não abriu (JSON corrompido) ou que sumiu do aparelho enquanto a nuvem a tinha: não sobe
      vazia; a base do motor dessa coleção é zerada e a nuvem a devolve. */
 (function () {
@@ -122,7 +129,7 @@
     }
     const lista = COLECOES[c].tipo === "lista";
     if (lista ? !Array.isArray(v) : !ehObj(v)) return;
-    /* nunca troca o que existe aqui por vazio (regra do dono); exclusões item a item continuam valendo */
+    /* nunca troca o que existe aqui por vazio (proteção contra apagar por engano); exclusões item a item continuam valendo */
     const n = lista ? v.length : Object.keys(v).length, atual = s[c];
     if (!n && atual && (Array.isArray(atual) ? atual.length : Object.keys(atual).length)) return;
     s[c] = MTS.emLugar(s[c], v);
@@ -146,14 +153,31 @@
     } catch (e) {}
   }
 
-  /* troca de conta ou "Sair da conta" (o mtsync chama isto e depois apaga só fu_mts e fu_mts_uid):
-     NADA do progresso é apagado. Guarda uma cópia na reserva e o estado do motor desta conta em
-     fu_mtsr:<uid>, para a mesma conta, ao voltar, continuar de onde estava (sem somar de novo as contagens). */
-  async function limparLocal() {
-    let e = null; try { e = JSON.parse(localStorage.getItem(PREF + "mts")) } catch (x) {}
-    const uid = (e && e.uid) || (() => { try { return localStorage.getItem(PREF + "mts_uid") } catch (x) { return null } })() || "sem-conta";
-    if (e && e.uid) { try { localStorage.setItem(PREF + "mtsr:" + e.uid, localStorage.getItem(PREF + "mts")) } catch (x) {} }
-    await reserva("saida-" + uid + "-" + new Date().toISOString());
+  /* troca de conta ou "Sair da conta" (o mtsync chama isto e depois apaga só fu_mts e fu_mts_uid).
+     Regra de 22/10/2026: o progresso sai do aparelho. Ordem: trava o app (nenhuma gravação local nem
+     espelho a partir daqui), cópia na reserva, e só então remove. removeItem direto: o FarmaUTI não
+     embrulha o localStorage e o motor já está desligado, então nada disso chega à nuvem. */
+  const FICA = new Set([PREF + "tema", PREF + "mts", PREF + "mts_uid"]);
+  async function limparLocal(rotulo) {
+    window.__fuSaindo = true;
+    const uid = (typeof rotulo === "string" && rotulo) || (() => { try { return localStorage.getItem(PREF + "mts_uid") } catch (x) { return null } })() || "sem-conta";
+    const ok = await reserva("saida-" + uid + "-" + new Date().toISOString());
+    if (!ok) console.warn("FarmaUTI: cópia de saída não confirmada; o progresso já está na conta");
+    try {
+      const ks = []; for (let i = 0; i < localStorage.length; i++) { const k = localStorage.key(i); if (k && k.startsWith(PREF) && !FICA.has(k)) ks.push(k) }
+      ks.push("msn_fila:" + APP);
+      ks.forEach(k => { try { localStorage.removeItem(k) } catch (x) {} });
+    } catch (x) {}
+    await comTeto(new Promise(r => { try { const q = indexedDB.deleteDatabase(IDB); q.onsuccess = q.onerror = q.onblocked = () => r() } catch (x) { r() } }), 3000).catch(() => {});
+  }
+  /* versão antiga: "Sair" não limpava e guardava o motor em fu_mtsr:<uid>. Se o progresso aqui é de outra
+     conta (há fu_mtsr de outra e não desta), devolve o rótulo dessa outra conta. */
+  function deOutraConta(u) {
+    try {
+      if (localStorage.getItem(PREF + "mtsr:" + u.uid)) return null;
+      for (let i = 0; i < localStorage.length; i++) { const k = localStorage.key(i); if (k && k.startsWith(PREF + "mtsr:") && k.slice(PREF.length + 5) !== u.uid) return k.slice(PREF.length + 5) }
+    } catch (x) {}
+    return null;
   }
 
   /* Antes de o motor nascer (o mtsync espera esta função). Nunca bloqueia a entrada. */
@@ -206,7 +230,7 @@
       <p class="sub" id="contaSit" role="status" style="margin-top:6px;font-weight:600;color:${corSit(d.cl)}">${esc(d.txt)}</p>
       <p class="sub" style="margin-top:6px">O que você faz no app é salvo sozinho na sua conta e aparece igual no celular e no computador. Sem internet, o app continua funcionando e envia depois.</p>
       <div class="linhaBt"><button class="bt sec" id="contaSair" type="button"><i class="ti ti-logout" aria-hidden="true"></i>Sair da conta</button></div>`;
-    slot.querySelector("#contaSair").onclick = () => { if (confirm("Sair da conta? O FarmaUTI pede login, então a tela de entrada volta. Seu progresso fica salvo na conta e neste aparelho.")) MTS.sair() };
+    slot.querySelector("#contaSair").onclick = () => { if (confirm("Sair da conta? O FarmaUTI pede login, então a tela de entrada volta. Seu progresso fica salvo na conta e sai deste aparelho; ao entrar de novo, ele volta.")) MTS.sair() };
   }
 
   window.FUCONTA = {
@@ -229,7 +253,11 @@
         erro: escuro ? "#FF9B9B" : "#B42318", ok: escuro ? "#5EE6A8" : "#067647" },
       colecoes: COLECOES,
       ler, gravar, aoReceber, limparLocal,
-      async verificarAcesso(u) { await antesDoMotor(u); return true },
+      async verificarAcesso(u) {
+        const outra = deOutraConta(u);
+        if (outra) { await limparLocal(outra); try { localStorage.removeItem(PREF + "mts") } catch (x) {} location.reload(); return false }
+        await antesDoMotor(u); return true;
+      },
       aoEntrar(u) {
         if (window.MTAcesso) MTAcesso.verificar({ appId: ACESSO, user: u, signOut: () => MTS.sair() }).catch(() => {});
         pinta();

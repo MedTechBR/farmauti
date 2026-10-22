@@ -74,6 +74,7 @@ function carrega() {
   return algum;
 }
 function salva(k) {
+  if (window.__fuSaindo) return;   /* saindo/trocando de conta: o progresso está saindo do aparelho (conta-farmauti.js) */
   try { localStorage.setItem(PREF + k, JSON.stringify(ST[k])); }
   catch (e) { aviso("Não foi possível gravar neste aparelho (armazenamento cheio). Com internet, o progresso continua indo para a sua conta."); }
   espelha();
@@ -89,7 +90,7 @@ function idb(cb) {
     r.onsuccess = () => { const db = r.result; try { cb(db); } finally { setTimeout(() => { try { db.close(); } catch (e) {} }, 0); } };
   } catch (e) {}
 }
-const espelha = debounce(() => idb(db => { try { db.transaction("s", "readwrite").objectStore("s").put(JSON.stringify(ST), "estado"); } catch (e) {} }), 1500);
+const espelha = debounce(() => { if (!window.__fuSaindo) idb(db => { try { db.transaction("s", "readwrite").objectStore("s").put(JSON.stringify(ST), "estado"); } catch (e) {} }); }, 1500);
 function restauraDoEspelho() {
   /* teto de 4 s: IndexedDB travado não pode segurar a abertura do app (e o portão da conta espera o "fu-pronto") */
   return Promise.race([new Promise(ok => setTimeout(() => ok(false), 4000)), restauraDoEspelho0()]);

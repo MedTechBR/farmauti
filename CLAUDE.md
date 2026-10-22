@@ -140,11 +140,21 @@ TODAS; (3) prescrições "mais interativas, layout mais bonito, mais completas".
   aparelhos se unem item a item; no mesmo item a nuvem vence no primeiro login); `lista` sims (id = ts); `soma`
   ativ (o adaptador converte `{dia: {q, qa, c, cn, min, l, rx}}` em `"dia|campo": n`; `seg` e `meta` ficam no
   aparelho); `doc` cfg. Fora: pos, recentes, tema, fu_mts*, fu_*_corrompido.
-- **Regra do dono: nada do progresso no aparelho é apagado por causa da conta.** Primeiro login: cópia crua de
-  todas as chaves `fu_*` (+ espelho) no IndexedDB `farmauti-reserva`, chave `antes-da-conta` (imutável, conferida
-  lendo de volta). `limparLocal` (Sair da conta e troca de conta) NÃO apaga: grava `saida-<uid>-<momento>` na
-  reserva e guarda o estado do motor em `fu_mtsr:<uid>` (a mesma conta, ao voltar, continua sem somar de novo
-  as contagens). **Consequência aceita: outra conta que entrar no mesmo aparelho recebe esse progresso.**
+- **Regra do dono (22/10/2026, substitui a de 10/10 "nada do progresso no aparelho é apagado"): o progresso é
+  da CONTA, não do aparelho.** `limparLocal` (Sair da conta, depois de o mtsync esperar a fila subir; e troca de
+  conta, antes do reload) faz, nesta ordem: trava o app (`window.__fuSaindo`: `salva()` e o espelho param de
+  gravar), cópia crua de todas as chaves `fu_*` + espelho em `farmauti-reserva` (`saida-<uid>-<momento>`,
+  conferida lendo de volta), e só então remove do aparelho todas as `fu_*` (menos `fu_tema`, aparência, e
+  `fu_mts`/`fu_mts_uid`, que o mtsync trata), a fila `msn_fila:farmauti` e o IndexedDB `farmauti` (espelho;
+  sem isso o app o restauraria no boot seguinte). `removeItem` direto com o motor desligado: nada vira
+  exclusão na nuvem. Quem entra depois vê só a própria conta; a mesma conta, ao voltar, recebe tudo da nuvem
+  (conquistas chegam junto com o resto no mesmo recebimento, então não há nova comemoração).
+  Aparelho da versão antiga com progresso de outra conta (`fu_mtsr:<outra>` e nenhum `fu_mtsr:<esta>`): ao
+  entrar conta diferente, `verificarAcesso` roda o mesmo `limparLocal` e recarrega. Primeiro login: cópia
+  `antes-da-conta` (imutável). Nada no código apaga a reserva. Fica no aparelho: `fu_tema`, `msn_dispositivo`,
+  `mterr:*` (cache de erratas) e o cache do Firestore (offline do SDK). Testado em 22/10 com fake-firebase:
+  sair limpa e a nuvem fica com tudo; voltar com u1 traz respostas, leituras, marcadas, contagens e emblemas
+  sem comemoração; trocar para u2 mostra app vazio.
   O adaptador nunca grava vazio por cima de chave com itens; chave corrompida ou vazia aqui com a nuvem cheia
   não sobe exclusões (a base do motor dela é zerada e a nuvem a devolve). "Apagar todo o progresso" saiu.
 - Primeiro login do aparelho: as contagens de `ativ` entram somadas às da conta (`somaIni` gravado antes de o motor
